@@ -35,3 +35,10 @@ masudcl.com
 
 # https://github.com/disposable/disposable/issues/203
 revampall.com
+
+# https://github.com/disposable/disposable/issues/160
+letterguard.net
+lettershield.com
+
+gmail.pm
+khayden.com
