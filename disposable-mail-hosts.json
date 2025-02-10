@@ -1,0 +1,25 @@
+{
+    "temp-mail.org": {
+        "ip_addresses": [
+            "45.55.107.22",
+            "157.230.203.88",
+            "165.227.255.166",
+            "206.189.252.32",
+            "143.244.200.226",
+            "146.190.186.176",
+            "143.244.214.64"
+        ]
+    },
+    "emailfake.com": {
+        "mx_hosts": [
+            "emailfake.com",
+            "generator.email",
+            "tempm.com",
+            "mail-fake.com",
+            "email-fake.com"
+        ],
+        "ip_addresses": [
+            "91.196.52.205"
+        ]
+    }
+}
