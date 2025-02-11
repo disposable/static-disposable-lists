@@ -7,7 +7,8 @@
       "vip.citiz.net",
       "vnet.citiz.net"
     ],
-    "type": "free"
+    "type": "free",
+    "signup_verification": "mobile"
   },
   "freeola.com": {
     "hosts": [
@@ -35,7 +36,8 @@
       "ukcool.com",
       "x5g.com"
     ],
-    "type": "free"
+    "type": "free",
+    "signup_verification": "mobile"
   },
   "fastmail.com": {
     "hosts": [
@@ -158,18 +160,15 @@
       "in1-smtp.messagingengine.com",
       "in2-smtp.messagingengine.com"
     ],
-    "type": "paid"
-  },
-  "blu.it": {
-    "hosts": [
-      "blu.it"
-    ]
+    "type": "paid",
+    "signup_verification": "payment"
   },
   "bluewin.ch": {
     "hosts": [
       "bluewin.ch"
     ],
-    "type": "free"
+    "type": "free",
+    "signup_verification": "mobile"
   },
   "btinternet.com": {
     "hosts": [
@@ -181,7 +180,8 @@
     "hosts": [
       "freenet.de"
     ],
-    "type": "free"
+    "type": "free",
+    "signup_verification": "mobile"
   },
   "cock.li": {
     "hosts": [
@@ -215,7 +215,8 @@
       "wants.dicksinhisan.us",
       "wants.dicksinmyan.us"
     ],
-    "type": "free"
+    "type": "free",
+    "signup_verification": "none"
   },
   "daum.net": {
     "hosts": [
@@ -223,7 +224,8 @@
       "daum.net",
       "naver.com"
     ],
-    "type": "free"
+    "type": "free",
+    "signup_verification": "mobile"
   },
   "free.fr": {
     "hosts": [
@@ -237,37 +239,46 @@
       "freemail.hu",
       "freemail.c3.hu"
     ],
-    "type": "free"
+    "type": "free",
+    "signup_verification": "mobile"
   },
   "gmail.com": {
     "hosts": [
       "gmail.com",
       "googlemail.com"
     ],
-    "type": "free"
+    "type": "free",
+    "signup_verification": "mobile"
   },
   "hey.com": {
     "hosts": [
       "hey.com",
       "emailit.com"
     ],
-    "type": "paid"
+    "type": "paid",
+    "signup_verification": "payment"
   },
   "i.ua": {
     "hosts": [
       "i.ua"
     ],
-    "type": "free"
+    "type": "free",
+    "signup_verification": "mobile"
   },
   "iol.it": {
     "hosts": [
       "iol.it"
-    ]
+    ],
+    "type": "paid",
+    "signup_verification": "payment"
   },
   "libero.it": {
     "hosts": [
-      "libero.it"
-    ]
+      "libero.it",
+      "blu.it"
+    ],
+    "type": "free",
+    "signup_verification": "mobile"
   },
   "lycos.com": {
     "hosts": [
@@ -913,7 +924,6 @@
       "soldier.hu",
       "theend.hu",
       "warrior.hu",
-      "indamail.hu",
       "online.ee",
       "jubii.dk",
       "e-mail.dk",
@@ -2516,5 +2526,169 @@
     ],
     "type": "free",
     "signup_verification": "none"
+  },
+  "murena.io": {
+    "hosts": [
+      "murena.io"
+    ],
+    "type": "free",
+    "signup_verification": "none"
+  },
+  "t-online.de": {
+    "hosts": [
+      "t-online.de"
+    ],
+    "type": "free"
+  },
+  "inbox.lv": {
+    "hosts": [
+      "inbox.eu",
+      "inbox.lv"
+    ],
+    "type": "free",
+    "signup_verification": "mobile"
+  },
+  "xmail.net": {
+    "hosts": [
+      "xmail.net"
+    ],
+    "type": "free",
+    "signup_verification": "none"
+  },
+  "sapo.pt": {
+    "hosts": [
+      "sapo.pt"
+    ],
+    "type": "free",
+    "signup_verification": "none"
+  },
+  "inleed.xyz": {
+    "hosts": [
+      "inleed.xyz"
+    ],
+    "type": "free",
+    "signup_verification": "email"
+  },
+  "pissmail.com": {
+    "hosts": [
+      "pissmail.com",
+      "incel.email",
+      "shitposting.expert",
+      "hatesje.ws",
+      "child.pizza",
+      "genocide.fun",
+      "dmc.chat"
+    ],
+    "type": "free",
+    "signup_verification": "none"
+  },
+  "abv.bg": {
+    "hosts": [
+      "abv.bg"
+    ],
+    "type": "free",
+    "signup_verification": "mobile"
+  },
+  "mailbox.hu": {
+    "hosts": [
+      "mailbox.hu"
+    ],
+    "type": "paid",
+    "signup_verification": "email"
+  },
+  "my.id": {
+    "hosts": [
+      "my.id"
+    ],
+    "type": "free",
+    "signup_verification": "mobile"
+  },
+  "tildamail.com": {
+    "hosts": [
+      "tildamail.com"
+    ],
+    "type": "free",
+    "signup_verification": "none"
+  },
+  "paced.email": {
+    "hosts": [
+      "paced.email"
+    ],
+    "type": "free",
+    "signup_verification": "email"
+  },
+  "sibnet.ru": {
+    "hosts": [
+      "sibnet.ru"
+    ],
+    "type": "free",
+    "signup_verification": "email"
+  },
+  "beeble.com": {
+    "hosts": [
+      "beeble.com"
+    ],
+    "type": "free",
+    "signup_verification": "none"
+  },
+  "indapass.hu": {
+    "remark": "no signup possible since 2024",
+    "hosts": [
+      "indamail.hu",
+      "vipmail.hu",
+      "webmail.hu"
+    ],
+    "type": "free",
+    "signup_verification": "none"
+  },
+  "eclipso.de": {
+    "hosts": [
+      "eclipso.de",
+      "eclipso.at",
+      "eclipso.ch",
+      "eclipso.eu",
+      "eclipso.es",
+      "eclipso.it",
+      "eclipso.me",
+      "eclipso.nl",
+      "eclipso.email"
+    ],
+    "type": "free",
+    "signup_verification": "none"
+  },
+  "33mail.com": {
+    "hosts": [
+      "33mail.com"
+    ],
+    "type": "free",
+    "signup_verification": "none"
+  },
+  "2980.com": {
+    "hosts": [
+      "2980.com"
+    ],
+    "type": "free",
+    "signup_verification": "mobile"
+  },
+  "ubikom.cc": {
+    "hosts": [
+      "ubikom.cc"
+    ],
+    "type": "free",
+    "signup_verification": "none"
+  },
+  "mail.io": {
+    "hosts": [
+      "mail.io"
+    ],
+    "type": "free",
+    "signup_verification": "none"
+  },
+  "ploud.fr": {
+    "hosts": [
+      "ploud.fr"
+    ],
+    "type": "free",
+    "signup_verification": "email"
   }
 }
