@@ -19,12 +19,12 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'  # Adjust version as needed
+          python-version: '3.10'
 
       - name: Install dependencies
         run: |
           pip install -r scripts/requirements.txt
 
       - name: Run verify script
-        run: python scripts/verify_data.py  # Replace with your script name
+        run: python scripts/verify_data.py --github
 
