@@ -5,8 +5,10 @@ import sys
 
 
 ALLOWED_TYPES = ['free', 'paid']
+ALLOWED_VERIFICATIONS = ['none', 'email', 'mobile', 'payment', 'other']
 
-def validate_freemailer(filename: str):
+
+def validate_mailservices(filename: str):
     freemailer = {}
     errors = []
     with open(filename) as f:
@@ -44,6 +46,9 @@ def validate_freemailer(filename: str):
         if host_options.get('type') and host_options['type'] not in ALLOWED_TYPES:
             errors.append("Type {} for host group {} is not allowed.".format(host_options['type'], host_group))
 
+        if host_options.get('signup_verification') and host_options['signup_verification'] not in ALLOWED_VERIFICATIONS:
+            errors.append("Verification {} for host group {} is not allowed.".format(host_options['signup_verification'], host_group))
+
         if host_options.get('mx_hosts') and type(host_options['mx_hosts']) is not list:
             errors.append("MX hosts for host group {} are not a list.".format(host_group))
 
@@ -52,5 +57,9 @@ def validate_freemailer(filename: str):
             print(error)
         sys.exit(1)
 
+
 if __name__ == "__main__":
-    validate_freemailer(sys.argv[1])
+    filename = "mailservices.json"
+    if len(sys.argv) > 1:
+        filename = sys.argv[1]
+    validate_mailservices(filename)
