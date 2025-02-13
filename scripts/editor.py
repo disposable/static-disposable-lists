@@ -4,7 +4,8 @@ import os
 import sys
 from typing import List, Optional
 
-from verify_mailservices import ALLOWED_TYPES, ALLOWED_VERIFICATIONS
+from verify_data import ALLOWED_TYPES, ALLOWED_VERIFICATIONS
+
 
 def load_json(file_path):
     """Load JSON file or return an empty dict if file doesn't exist."""
@@ -18,8 +19,6 @@ def save_json(file_path, data):
     """Save data to JSON file."""
     with open(file_path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
-
-
 
 
 def update_json(
@@ -89,7 +88,7 @@ if __name__ == "__main__":
     parser.add_argument("--host", action="append", default=[], help="Hostnames (can be used multiple times).")
     parser.add_argument("--mx-host", action="append", default=[], help="MX Hostnames (can be used multiple times).")
     parser.add_argument("--stdin", action="store_true", help="Read hosts from stdin (line by line).")
-    parser.add_argument("--type", choices=ALLOWED_TYPES,  help="Account type (free or paid).")
+    parser.add_argument("--type", choices=ALLOWED_TYPES, help="Account type (free or paid).")
     parser.add_argument("--verify", choices=ALLOWED_VERIFICATIONS, help="Signup verification type.")
 
     args = parser.parse_args()

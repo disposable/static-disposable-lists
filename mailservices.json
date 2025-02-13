@@ -2690,5 +2690,47 @@
     ],
     "type": "free",
     "signup_verification": "email"
+  },
+  "simplelogin": {
+    "hosts": [
+      "simplelogin.com",
+      "silomails.com",
+      "slmails.com",
+      "simplelogin.fr",
+      "aleeas.com",
+      "slmail.me",
+      "8shield.net",
+      "dralias.com",
+      "passinbox.com",
+      "passfwd.com",
+      "passmail.com",
+      "passmail.net",
+      "simplelogin.co",
+      "simplelogin.io"
+    ],
+    "type": "forwarding",
+    "signup_verification": "email"
+  },
+  "duck.com": {
+    "hosts": [
+      "duck.com"
+    ],
+    "type": "forwarding",
+    "signup_verification": "email"
+  },
+  "mozmail.com": {
+    "hosts": [
+      "mozmail.com"
+    ],
+    "type": "forwarding",
+    "signup_verification": "email"
+  },
+  "addy.io": {
+    "hosts": [
+      "anonaddy.com",
+      "anonaddy.me"
+    ],
+    "type": "forwarding",
+    "signup_verification": "email"
   }
 }

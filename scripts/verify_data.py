@@ -6,7 +6,7 @@ import argparse
 import ipaddress
 import re
 
-ALLOWED_TYPES = ['free', 'paid']
+ALLOWED_TYPES = ['free', 'paid', 'forwarding']
 ALLOWED_VERIFICATIONS = ['none', 'email', 'mobile', 'payment', 'other']
 
 
