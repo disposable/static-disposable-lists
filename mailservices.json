@@ -2749,6 +2749,6 @@
       "opoczta.pl"
     ],
     "type": "free",
-    "signup_verification": "email"
+    "signup_verification": "phone"
   }
 }
