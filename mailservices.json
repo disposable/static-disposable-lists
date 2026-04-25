@@ -2521,6 +2521,7 @@
     "signup_verification": "mobile"
   },
   "c2.hu": {
+    "remark": "signup only possible from hungary IP",
     "hosts": [
       "c2.hu"
     ],
@@ -2532,7 +2533,7 @@
       "murena.io"
     ],
     "type": "free",
-    "signup_verification": "none"
+    "signup_verification": "email"
   },
   "t-online.de": {
     "hosts": [
@@ -2569,19 +2570,6 @@
     "type": "free",
     "signup_verification": "email"
   },
-  "pissmail.com": {
-    "hosts": [
-      "pissmail.com",
-      "incel.email",
-      "shitposting.expert",
-      "hatesje.ws",
-      "child.pizza",
-      "genocide.fun",
-      "dmc.chat"
-    ],
-    "type": "free",
-    "signup_verification": "none"
-  },
   "abv.bg": {
     "hosts": [
       "abv.bg"
@@ -2602,13 +2590,6 @@
     ],
     "type": "free",
     "signup_verification": "mobile"
-  },
-  "tildamail.com": {
-    "hosts": [
-      "tildamail.com"
-    ],
-    "type": "free",
-    "signup_verification": "none"
   },
   "paced.email": {
     "hosts": [
@@ -2660,7 +2641,7 @@
     "hosts": [
       "33mail.com"
     ],
-    "type": "free",
+    "type": "forwarding",
     "signup_verification": "none"
   },
   "2980.com": {
