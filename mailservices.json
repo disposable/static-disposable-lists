@@ -83,6 +83,7 @@
       "fastmail.se",
       "fastmail.to",
       "fastmail.tw",
+      "fastmail.uk",
       "fastmail.us",
       "fastmailbox.net",
       "fastmessaging.com",
@@ -222,6 +223,7 @@
     "hosts": [
       "hanmail.net",
       "daum.net",
+      "kakao.com",
       "naver.com"
     ],
     "type": "free",
@@ -547,6 +549,7 @@
       "gmx.de",
       "gmx.li",
       "gmx.net",
+      "gmx.us",
       "hab-verschlafen.de",
       "habmalnefrage.de",
       "herr-der-mails.de",
@@ -2561,7 +2564,7 @@
       "sapo.pt"
     ],
     "type": "free",
-    "signup_verification": "sms"
+    "signup_verification": "mobile"
   },
   "inleed.xyz": {
     "hosts": [
@@ -2731,5 +2734,53 @@
     ],
     "type": "free",
     "signup_verification": "phone"
+  },
+  "139.com": {
+    "hosts": [
+      "139.com"
+    ],
+    "type": "free",
+    "signup_verification": "mobile",
+    "remark": "China Mobile 139 Mail; official pages describe the mobile phone number as the mailbox address."
+  },
+  "hushmail.com": {
+    "hosts": [
+      "hushmail.com",
+      "hush.com",
+      "hush.ai",
+      "hushmail.me"
+    ],
+    "type": "paid",
+    "signup_verification": "payment",
+    "remark": "Hushmail encrypted email provider. These are the Hushmail domains from the source issue; Hushmail documentation also references mac.hush.com."
+  },
+  "spamgourmet.com": {
+    "hosts": [
+      "spamgourmet.com",
+      "spamgourmet.net",
+      "spamgourmet.org",
+      "spamcannon.com",
+      "spamcannon.net",
+      "antichef.com",
+      "antichef.net",
+      "dfgh.net",
+      "neverbox.com",
+      "recursor.net",
+      "spameater.org",
+      "xoxy.net"
+    ],
+    "type": "forwarding",
+    "signup_verification": "email",
+    "remark": "SpamGourmet free forwarding/disposable-address service. The protected forwarding address must exist and is confirmed by email."
+  },
+  "sneakemail.com": {
+    "hosts": [
+      "sneakemail.com",
+      "snkmail.com",
+      "snkml.com",
+      "liamekaens.com"
+    ],
+    "type": "forwarding",
+    "remark": "SneakEmail forwarding/alias service for hiding a real address; signup verification was not set because the current public pages I found do not clearly document the required verification step."
   }
 }
