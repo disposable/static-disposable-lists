@@ -1,4 +1,4 @@
-name: Run verify_mailservices
+name: Validate data files
 
 on:
   push:
@@ -16,15 +16,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
+      - name: Install check-jsonschema
+        run: pip install check-jsonschema
 
-      - name: Install dependencies
+      - name: Validate JSON files
         run: |
-          pip install -r scripts/requirements.txt
+          check-jsonschema --schemafile schemas/mailservices.schema.json mailservices.json
+          check-jsonschema --schemafile schemas/disposable-mail-hosts.schema.json disposable-mail-hosts.json
 
-      - name: Run verify script
-        run: python scripts/verify_data.py --github
+      - name: Validate hostname files
+        run: python scripts/validate_hostnames.py manual.txt mail-data-hosts-net.txt
 

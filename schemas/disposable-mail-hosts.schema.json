@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/disposable/disposable-mail-hosts/schemas/disposable-mail-hosts.schema.json",
+  "type": "object",
+  "description": "Disposable email host definitions with network metadata",
+  "patternProperties": {
+    "^[a-z0-9]([a-z0-9-]{0,61}[a-z0-9])?(\\.[a-z0-9]([a-z0-9-]{0,61}[a-z0-9])?)*$": {
+      "type": "object",
+      "description": "Domain name serving as disposable email host",
+      "properties": {
+        "ip_addresses": {
+          "type": "array",
+          "description": "List of IPv4 addresses associated with the domain",
+          "items": {
+            "type": "string",
+            "format": "ipv4"
+          }
+        },
+        "mx_hosts": {
+          "type": "array",
+          "description": "List of MX (mail exchange) hostnames for the domain",
+          "items": {
+            "type": "string",
+            "format": "hostname"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

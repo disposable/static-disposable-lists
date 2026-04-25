@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/disposable/disposable-mail-hosts/schemas/mailservices.schema.json",
+  "type": "object",
+  "description": "Email service definitions with host and verification metadata",
+  "patternProperties": {
+    "^[^:]+$": {
+      "type": "object",
+      "description": "Email service provider",
+      "properties": {
+        "hosts": {
+          "type": "array",
+          "description": "List of domain hostnames for this service",
+          "items": {
+            "type": "string",
+            "format": "hostname"
+          }
+        },
+        "type": {
+          "type": "string",
+          "description": "Service type classification",
+          "enum": ["free", "paid", "forwarding"]
+        },
+        "signup_verification": {
+          "type": "string",
+          "description": "Verification method required during signup",
+          "enum": ["none", "email", "mobile", "payment", "other", "sms", "phone"]
+        },
+        "mx_hosts": {
+          "type": "array",
+          "description": "List of MX (mail exchange) hostnames for the service",
+          "items": {
+            "type": "string",
+            "format": "hostname"
+          }
+        },
+        "remark": {
+          "type": "string",
+          "description": "Additional notes about the service"
+        }
+      },
+      "required": ["hosts"],
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

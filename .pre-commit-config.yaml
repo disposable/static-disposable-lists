@@ -1,0 +1,14 @@
+repos:
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.28.0
+    hooks:
+      - id: check-jsonschema
+        name: Validate disposable-mail-hosts.json
+        files: ^disposable-mail-hosts\.json$
+        args: ["--schemafile", "schemas/disposable-mail-hosts.schema.json"]
+        additional_dependencies: []
+      - id: check-jsonschema
+        name: Validate mailservices.json
+        files: ^mailservices\.json$
+        args: ["--schemafile", "schemas/mailservices.schema.json"]
+        additional_dependencies: []
