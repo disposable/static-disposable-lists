@@ -4,7 +4,33 @@ import os
 import sys
 from typing import List, Optional
 
-from verify_data import ALLOWED_TYPES, ALLOWED_VERIFICATIONS
+
+def load_schema(schema_path: str) -> dict:
+    """Load JSON schema file."""
+    with open(schema_path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def get_allowed_types(schema_path: str = "schemas/mailservices.schema.json") -> List[str]:
+    """Extract allowed types from schema."""
+    schema = load_schema(schema_path)
+    # Find the type property in patternProperties
+    pattern_props = schema.get("patternProperties", {})
+    for pattern, prop_schema in pattern_props.items():
+        type_prop = prop_schema.get("properties", {}).get("type", {})
+        return type_prop.get("enum", [])
+    return []
+
+
+def get_allowed_verifications(schema_path: str = "schemas/mailservices.schema.json") -> List[str]:
+    """Extract allowed verification types from schema."""
+    schema = load_schema(schema_path)
+    # Find the signup_verification property in patternProperties
+    pattern_props = schema.get("patternProperties", {})
+    for pattern, prop_schema in pattern_props.items():
+        verify_prop = prop_schema.get("properties", {}).get("signup_verification", {})
+        return verify_prop.get("enum", [])
+    return []
 
 
 def load_json(file_path):
@@ -27,7 +53,8 @@ def update_json(
     hosts: Optional[List[str]] = None,
     mx_hosts: Optional[List[str]] = None,
     account_type: Optional[str] = None,
-    signup_verification: Optional[str] = None
+    signup_verification: Optional[str] = None,
+    schema_path: str = "schemas/mailservices.schema.json"
 ) -> None:
     """Update or add a domain entry in the JSON file.
 
@@ -38,7 +65,11 @@ def update_json(
         mx_hosts: List of MX hostnames.
         account_type: Type of the account.
         signup_verification: Verification method used during signup.
+        schema_path: Path to the schema file for validation.
     """
+    allowed_types = get_allowed_types(schema_path)
+    allowed_verifications = get_allowed_verifications(schema_path)
+
     data = load_json(file_path)
 
     if service in data:
@@ -65,14 +96,14 @@ def update_json(
             data[service]["mx_hosts"] = mx_hosts
 
     if account_type:
-        if account_type not in ALLOWED_TYPES:
-            print(f"Invalid account type: {account_type}")
+        if account_type not in allowed_types:
+            print(f"Invalid account type: {account_type}. Allowed: {allowed_types}")
             sys.exit(1)
         data[service]["type"] = account_type
 
     if signup_verification:
-        if signup_verification not in ALLOWED_VERIFICATIONS:
-            print(f"Invalid signup verification: {signup_verification}")
+        if signup_verification not in allowed_verifications:
+            print(f"Invalid signup verification: {signup_verification}. Allowed: {allowed_verifications}")
             sys.exit(1)
         data[service]["signup_verification"] = signup_verification
 
@@ -88,10 +119,25 @@ if __name__ == "__main__":
     parser.add_argument("--host", action="append", default=[], help="Hostnames (can be used multiple times).")
     parser.add_argument("--mx-host", action="append", default=[], help="MX Hostnames (can be used multiple times).")
     parser.add_argument("--stdin", action="store_true", help="Read hosts from stdin (line by line).")
-    parser.add_argument("--type", choices=ALLOWED_TYPES, help="Account type (free or paid).")
-    parser.add_argument("--verify", choices=ALLOWED_VERIFICATIONS, help="Signup verification type.")
+    parser.add_argument("--type", help="Account type.")
+    parser.add_argument("--verify", help="Signup verification type.")
+    parser.add_argument("--schema", default="schemas/mailservices.schema.json", help="Path to the schema file.")
 
     args = parser.parse_args()
+
+    # Load allowed values from schema
+    allowed_types = get_allowed_types(args.schema)
+    allowed_verifications = get_allowed_verifications(args.schema)
+
+    # Validate type argument if provided
+    if args.type and args.type not in allowed_types:
+        print(f"Invalid account type: {args.type}. Allowed: {allowed_types}")
+        sys.exit(1)
+
+    # Validate verify argument if provided
+    if args.verify and args.verify not in allowed_verifications:
+        print(f"Invalid signup verification: {args.verify}. Allowed: {allowed_verifications}")
+        sys.exit(1)
 
     # Collect hosts from stdin if enabled
     stdin_hosts = []
@@ -102,4 +148,4 @@ if __name__ == "__main__":
     all_hosts = args.host + stdin_hosts
     all_mx_hosts = args.mx_host  # MX hosts are not read from stdin
 
-    update_json(args.file, args.service, all_hosts, all_mx_hosts, args.type, args.verify)
+    update_json(args.file, args.service, all_hosts, all_mx_hosts, args.type, args.verify, args.schema)

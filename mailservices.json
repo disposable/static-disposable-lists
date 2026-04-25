@@ -1,4 +1,11 @@
 {
+  "139.com": {
+    "hosts": [
+      "139.com"
+    ],
+    "signup_verification": "mobile",
+    "type": "free"
+  },
   "21cn.com": {
     "hosts": [
       "189.cn",
@@ -7,169 +14,51 @@
       "vip.citiz.net",
       "vnet.citiz.net"
     ],
-    "type": "free",
-    "signup_verification": "mobile"
+    "signup_verification": "mobile",
+    "type": "free"
   },
-  "freeola.com": {
+  "2980.com": {
     "hosts": [
-      "1me.net",
-      "1mum.com",
-      "4x4man.com",
-      "bikemechanics.com",
-      "boltonfans.com",
-      "bradfordfans.com",
-      "camidge.com",
-      "cd2.com",
-      "club4x4.net",
-      "clubalfa.com",
-      "clubhonda.net",
-      "dfwatson.com",
-      "f1fans.net",
-      "freeola.com",
-      "freeola.net",
-      "gazibooks.com",
-      "lagerlouts.com",
-      "liverpoolfans.com",
-      "uk2k.com",
-      "uk7.net",
-      "uk8.net",
-      "ukcool.com",
-      "x5g.com"
+      "2980.com"
     ],
-    "type": "free",
-    "signup_verification": "mobile"
+    "signup_verification": "mobile",
+    "type": "free"
   },
-  "fastmail.com": {
+  "33mail.com": {
     "hosts": [
-      "123mail.org",
-      "150mail.com",
-      "150ml.com",
-      "16mail.com",
-      "2-mail.com",
-      "4email.net",
-      "50mail.com",
-      "airpost.net",
-      "allmail.net",
-      "bestmail.us",
-      "cluemail.com",
-      "elitemail.org",
-      "emailcorner.net",
-      "emailengine.net",
-      "emailengine.org",
-      "emailgroups.net",
-      "emailplus.org",
-      "emailuser.net",
-      "eml.cc",
-      "f-m.fm",
-      "fast-email.com",
-      "fast-mail.org",
-      "fastem.com",
-      "fastemail.us",
-      "fastemailer.com",
-      "fastest.cc",
-      "fastimap.com",
-      "fastmail.ca",
-      "fastmail.cn",
-      "fastmail.co.uk",
-      "fastmail.com.au",
-      "fastmail.es",
-      "fastmail.fm",
-      "fastmail.im",
-      "fastmail.in",
-      "fastmail.jp",
-      "fastmail.mx",
-      "fastmail.net",
-      "fastmail.nl",
-      "fastmail.se",
-      "fastmail.to",
-      "fastmail.tw",
-      "fastmail.uk",
-      "fastmail.us",
-      "fastmailbox.net",
-      "fastmessaging.com",
-      "fea.st",
-      "fmail.co.uk",
-      "fmailbox.com",
-      "fmgirl.com",
-      "fmguy.com",
-      "ftml.net",
-      "h-mail.us",
-      "hailmail.net",
-      "hello.net.au",
-      "imap-mail.com",
-      "imap.cc",
-      "imapmail.org",
-      "inoutbox.com",
-      "internet-e-mail.com",
-      "internet-mail.org",
-      "internetemails.net",
-      "internetmailing.net",
-      "jetemail.net",
-      "justemail.net",
-      "letterboxes.org",
-      "mail-central.com",
-      "mail-page.com",
-      "mailandftp.com",
-      "mailas.com",
-      "mailbolt.com",
-      "mailc.net",
-      "mailcan.com",
-      "mailforce.net",
-      "mailftp.com",
-      "mailhaven.com",
-      "mailingaddress.org",
-      "mailite.com",
-      "mailmight.com",
-      "mailnew.com",
-      "mailsent.net",
-      "mailservice.ms",
-      "mailup.net",
-      "mailworks.org",
-      "ml1.net",
-      "mm.st",
-      "myfastmail.com",
-      "mymacmail.com",
-      "ownmail.net",
-      "petml.com",
-      "postinbox.com",
-      "postpro.net",
-      "proinbox.com",
-      "promessage.com",
-      "realemail.net",
-      "reallyfast.biz",
-      "reallyfast.info",
-      "rushpost.com",
-      "sent.as",
-      "sent.at",
-      "sent.com",
-      "speedpost.net",
-      "speedymail.org",
-      "ssl-mail.com",
-      "sudanmail.net",
-      "swift-mail.com",
-      "the-fastest.net",
-      "the-quickest.com",
-      "theinternetemail.com",
-      "veryfast.biz",
-      "veryspeedy.net",
-      "warpmail.net",
-      "xsmail.com",
-      "yepmail.net",
-      "your-mail.com"
+      "33mail.com"
     ],
-    "mx_hosts": [
-      "in1-smtp.messagingengine.com",
-      "in2-smtp.messagingengine.com"
+    "signup_verification": "none",
+    "type": "forwarding"
+  },
+  "abv.bg": {
+    "hosts": [
+      "abv.bg"
     ],
-    "type": "paid",
-    "signup_verification": "payment"
+    "signup_verification": "mobile",
+    "type": "free"
+  },
+  "addy.io": {
+    "hosts": [
+      "anonaddy.com",
+      "anonaddy.me"
+    ],
+    "signup_verification": "email",
+    "type": "forwarding"
+  },
+  "beeble.com": {
+    "hosts": [
+      "beeble.com"
+    ],
+    "signup_verification": "none",
+    "type": "free"
   },
   "bluewin.ch": {
     "hosts": [
       "bluewin.ch"
     ],
-    "type": "free",
-    "signup_verification": "mobile"
+    "signup_verification": "mobile",
+    "type": "free"
   },
   "btinternet.com": {
     "hosts": [
@@ -177,12 +66,13 @@
     ],
     "type": "paid"
   },
-  "freenet.de": {
+  "c2.hu": {
     "hosts": [
-      "freenet.de"
+      "c2.hu"
     ],
-    "type": "free",
-    "signup_verification": "mobile"
+    "remark": "signup only possible from hungary IP",
+    "signup_verification": "none",
+    "type": "free"
   },
   "cock.li": {
     "hosts": [
@@ -216,8 +106,16 @@
       "wants.dicksinhisan.us",
       "wants.dicksinmyan.us"
     ],
-    "type": "free",
-    "signup_verification": "none"
+    "signup_verification": "none",
+    "type": "free"
+  },
+  "countermail.com": {
+    "hosts": [
+      "countermail.com",
+      "cmail.nu"
+    ],
+    "signup_verification": "payment",
+    "type": "paid"
   },
   "daum.net": {
     "hosts": [
@@ -226,8 +124,181 @@
       "kakao.com",
       "naver.com"
     ],
-    "type": "free",
-    "signup_verification": "mobile"
+    "signup_verification": "mobile",
+    "type": "free"
+  },
+  "disroot.org": {
+    "hosts": [
+      "disroot.org"
+    ],
+    "signup_verification": "other",
+    "type": "free"
+  },
+  "duck.com": {
+    "hosts": [
+      "duck.com"
+    ],
+    "signup_verification": "email",
+    "type": "forwarding"
+  },
+  "eclipso.de": {
+    "hosts": [
+      "eclipso.de",
+      "eclipso.at",
+      "eclipso.ch",
+      "eclipso.eu",
+      "eclipso.es",
+      "eclipso.it",
+      "eclipso.me",
+      "eclipso.nl",
+      "eclipso.email"
+    ],
+    "signup_verification": "none",
+    "type": "free"
+  },
+  "fastmail.com": {
+    "hosts": [
+      "123mail.org",
+      "150mail.com",
+      "150ml.com",
+      "16mail.com",
+      "2-mail.com",
+      "4email.net",
+      "50mail.com",
+      "airpost.net",
+      "aliencamel.com",
+      "allmail.net",
+      "bestmail.us",
+      "cluemail.com",
+      "elitemail.org",
+      "emailcorner.net",
+      "emailengine.net",
+      "emailengine.org",
+      "emailgroups.net",
+      "emailplus.org",
+      "emailuser.net",
+      "eml.cc",
+      "f-m.fm",
+      "fast-email.com",
+      "fast-mail.org",
+      "fastem.com",
+      "fastemail.us",
+      "fastemailer.com",
+      "fastest.cc",
+      "fastimap.com",
+      "fastmail.ca",
+      "fastmail.cn",
+      "fastmail.co.uk",
+      "fastmail.com",
+      "fastmail.com.au",
+      "fastmail.de",
+      "fastmail.es",
+      "fastmail.fm",
+      "fastmail.fr",
+      "fastmail.im",
+      "fastmail.in",
+      "fastmail.jp",
+      "fastmail.mx",
+      "fastmail.net",
+      "fastmail.nl",
+      "fastmail.org",
+      "fastmail.se",
+      "fastmail.to",
+      "fastmail.tw",
+      "fastmail.uk",
+      "fastmail.us",
+      "fastmailbox.net",
+      "fastmessaging.com",
+      "fea.st",
+      "fmail.co.uk",
+      "fmailbox.com",
+      "fmgirl.com",
+      "fmguy.com",
+      "foobox.com",
+      "foobox.net",
+      "ftml.net",
+      "h-mail.us",
+      "hailmail.net",
+      "hello.net.au",
+      "imap-mail.com",
+      "imap.cc",
+      "imapmail.org",
+      "immerbox.com",
+      "immermail.com",
+      "inoutbox.com",
+      "internet-e-mail.com",
+      "internet-mail.org",
+      "internetemails.net",
+      "internetmailing.net",
+      "jetemail.net",
+      "justemail.net",
+      "lifetimeaddress.com",
+      "letterboxes.org",
+      "mail-central.com",
+      "mail-page.com",
+      "mailandftp.com",
+      "mailas.com",
+      "mailbolt.com",
+      "mailc.net",
+      "mailcan.com",
+      "mailforce.net",
+      "mailftp.com",
+      "mailhaven.com",
+      "mailingaddress.org",
+      "mailite.com",
+      "mailmight.com",
+      "mailnew.com",
+      "mailsent.net",
+      "mailservice.ms",
+      "mailup.net",
+      "mailworks.org",
+      "mailzone.com",
+      "ml1.net",
+      "mm.st",
+      "myfastmail.com",
+      "mymacmail.com",
+      "nospammail.net",
+      "onepost.net",
+      "ownmail.net",
+      "penguinmail.com",
+      "permanentmail.com",
+      "petml.com",
+      "pobox.com",
+      "postinbox.com",
+      "postpro.net",
+      "proinbox.com",
+      "promessage.com",
+      "realemail.net",
+      "reallyfast.biz",
+      "reallyfast.info",
+      "rushpost.com",
+      "sent.as",
+      "sent.at",
+      "sent.com",
+      "siemprebox.com",
+      "siempremail.com",
+      "speedpost.net",
+      "speedymail.org",
+      "ssl-mail.com",
+      "sudanmail.net",
+      "swift-mail.com",
+      "the-fastest.net",
+      "the-quickest.com",
+      "theinternetemail.com",
+      "veribox.net",
+      "veryfast.biz",
+      "veryspeedy.net",
+      "warpmail.net",
+      "xsmail.com",
+      "yepmail.net",
+      "your-mail.com"
+    ],
+    "mx_hosts": [
+      "in1-smtp.messagingengine.com",
+      "in2-smtp.messagingengine.com"
+    ],
+    "signup_verification": "payment",
+    "type": "paid"
   },
   "free.fr": {
     "hosts": [
@@ -241,46 +312,196 @@
       "freemail.hu",
       "freemail.c3.hu"
     ],
-    "type": "free",
-    "signup_verification": "mobile"
+    "signup_verification": "mobile",
+    "type": "free"
+  },
+  "freenet.de": {
+    "hosts": [
+      "freenet.de"
+    ],
+    "signup_verification": "mobile",
+    "type": "free"
+  },
+  "freeola.com": {
+    "hosts": [
+      "1me.net",
+      "1mum.com",
+      "4x4man.com",
+      "bikemechanics.com",
+      "boltonfans.com",
+      "bradfordfans.com",
+      "camidge.com",
+      "cd2.com",
+      "club4x4.net",
+      "clubalfa.com",
+      "clubhonda.net",
+      "dfwatson.com",
+      "f1fans.net",
+      "freeola.com",
+      "freeola.net",
+      "gazibooks.com",
+      "lagerlouts.com",
+      "liverpoolfans.com",
+      "uk2k.com",
+      "uk7.net",
+      "uk8.net",
+      "ukcool.com",
+      "x5g.com"
+    ],
+    "signup_verification": "mobile",
+    "type": "free"
   },
   "gmail.com": {
     "hosts": [
       "gmail.com",
       "googlemail.com"
     ],
-    "type": "free",
-    "signup_verification": "mobile"
+    "signup_verification": "mobile",
+    "type": "free"
   },
   "hey.com": {
     "hosts": [
       "hey.com",
       "emailit.com"
     ],
-    "type": "paid",
-    "signup_verification": "payment"
+    "signup_verification": "payment",
+    "type": "paid"
+  },
+  "hushmail.com": {
+    "hosts": [
+      "hushmail.com",
+      "hush.com",
+      "hush.ai",
+      "hushmail.me",
+      "mac.hush.com"
+    ],
+    "signup_verification": "payment",
+    "type": "paid"
   },
   "i.ua": {
     "hosts": [
       "i.ua"
     ],
-    "type": "free",
-    "signup_verification": "mobile"
+    "signup_verification": "mobile",
+    "type": "free"
+  },
+  "ik.me": {
+    "hosts": [
+      "ik.me",
+      "ikmail.com",
+      "etik.com"
+    ],
+    "remark": "Infomaniak free email domains.",
+    "type": "free"
+  },
+  "inbox.com": {
+    "hosts": [
+      "inbox.com",
+      "ak47.hu",
+      "avh.hu",
+      "cia.hu",
+      "coder.hu",
+      "cracker.hu",
+      "csinibaba.hu",
+      "eposta.hu",
+      "fbi.hu",
+      "irj.hu",
+      "jakuza.hu",
+      "kgb.hu",
+      "lamer.hu",
+      "levele.hu",
+      "maffia.hu",
+      "primposta.com",
+      "primposta.hu",
+      "pro.hu",
+      "reply.hu",
+      "send.hu",
+      "shotgun.hu",
+      "skizo.hu",
+      "sniper.hu",
+      "soldier.hu",
+      "theend.hu",
+      "warrior.hu",
+      "online.ee",
+      "jubii.dk",
+      "e-mail.dk",
+      "email.it",
+      "freestart.hu",
+      "hot.ee",
+      "jubiimail.dk",
+      "luukku.com",
+      "sol.dk",
+      "webmail.co.za",
+      "ravemail.co.za",
+      "starmail.co.za",
+      "thecricket.co.za",
+      "thegolf.co.za",
+      "thepub.co.za",
+      "therugby.co.za",
+      "websurfer.co.za",
+      "workmail.co.za",
+      "mailbox.co.za",
+      "exclusivemail.co.za",
+      "homemail.co.za",
+      "magicmail.co.za"
+    ],
+    "signup_verification": "payment",
+    "type": "paid"
+  },
+  "inbox.lv": {
+    "hosts": [
+      "inbox.eu",
+      "inbox.lv"
+    ],
+    "signup_verification": "mobile",
+    "type": "free"
+  },
+  "indapass.hu": {
+    "hosts": [
+      "indamail.hu",
+      "vipmail.hu",
+      "webmail.hu"
+    ],
+    "remark": "no signup possible since 2024",
+    "signup_verification": "none",
+    "type": "free"
+  },
+  "inleed.xyz": {
+    "hosts": [
+      "inleed.xyz"
+    ],
+    "signup_verification": "email",
+    "type": "free"
   },
   "iol.it": {
     "hosts": [
       "iol.it"
     ],
-    "type": "paid",
-    "signup_verification": "payment"
+    "signup_verification": "payment",
+    "type": "paid"
+  },
+  "kpnmail": {
+    "hosts": [
+      "kpnmail.nl",
+      "freeler.nl"
+    ],
+    "signup_verification": "payment",
+    "type": "paid"
+  },
+  "laposte.net": {
+    "hosts": [
+      "laposte.net"
+    ],
+    "signup_verification": "other",
+    "type": "free"
   },
   "libero.it": {
     "hosts": [
       "libero.it",
       "blu.it"
     ],
-    "type": "free",
-    "signup_verification": "mobile"
+    "signup_verification": "mobile",
+    "type": "free"
   },
   "lycos.com": {
     "hosts": [
@@ -293,325 +514,6 @@
       "lycos.com"
     ],
     "type": "free"
-  },
-  "mail.ru": {
-    "hosts": [
-      "xmail.ru",
-      "aport.ru",
-      "aport2000.ru",
-      "bk.ru",
-      "e-mail.ru",
-      "email.ru",
-      "fax.ru",
-      "goldmail.ru",
-      "hotmail.ru",
-      "icq.com",
-      "icqmail.com",
-      "imail.ru",
-      "inbox.ru",
-      "land.ru",
-      "list.ru",
-      "mail.ru",
-      "mailru.com",
-      "newmail.ru",
-      "omen.ru",
-      "supermail.ru",
-      "vipmail.ru",
-      "zmail.ru"
-    ],
-    "type": "free",
-    "signup_verification": "mobile"
-  },
-  "netease": {
-    "hosts": [
-      "163.com",
-      "126.com",
-      "188.com",
-      "yeah.net",
-      "tom.com",
-      "renren.com",
-      "pmail.net"
-    ],
-    "type": "free",
-    "signup_verification": "none"
-  },
-  "o2.pl": {
-    "hosts": [
-      "o2.pl"
-    ],
-    "type": "free",
-    "signup_verification": "email"
-  },
-  "outlook.com": {
-    "hosts": [
-      "hotmail.ca",
-      "hotmail.ch",
-      "hotmail.co.il",
-      "hotmail.co.uk",
-      "hotmail.com",
-      "hotmail.de",
-      "hotmail.es",
-      "hotmail.fr",
-      "hotmail.it",
-      "live.at",
-      "live.ca",
-      "live.cl",
-      "live.cn",
-      "live.co.uk",
-      "live.co.za",
-      "live.com",
-      "live.com.ar",
-      "live.com.au",
-      "live.com.mx",
-      "live.com.pt",
-      "live.com.sg",
-      "live.de",
-      "live.dk",
-      "live.fr",
-      "live.ie",
-      "live.in",
-      "live.it",
-      "live.jp",
-      "live.nl",
-      "live.ru",
-      "live.se",
-      "msn.com",
-      "outlook.at",
-      "outlook.be",
-      "outlook.cl",
-      "outlook.co.id",
-      "outlook.co.il",
-      "outlook.co.nz",
-      "outlook.co.th",
-      "outlook.com",
-      "outlook.com.au",
-      "outlook.com.br",
-      "outlook.com.gr",
-      "outlook.com.pe",
-      "outlook.com.tr",
-      "outlook.com.vn",
-      "outlook.cz",
-      "outlook.de",
-      "outlook.dk",
-      "outlook.es",
-      "outlook.fr",
-      "outlook.hu",
-      "outlook.ie",
-      "outlook.in",
-      "outlook.it",
-      "outlook.jp",
-      "outlook.kr",
-      "outlook.lv",
-      "outlook.my",
-      "outlook.ph",
-      "outlook.pt",
-      "outlook.sa",
-      "outlook.sg",
-      "outlook.sk",
-      "windowslive.com"
-    ],
-    "type": "free",
-    "signup_verification": "none"
-  },
-  "proton.me": {
-    "hosts": [
-      "proton.me",
-      "protonmail.ch",
-      "protonmail.com",
-      "pm.me"
-    ],
-    "type": "free",
-    "signup_verification": "email"
-  },
-  "qq.com": {
-    "hosts": [
-      "foxmail.com",
-      "mailpanda.com",
-      "penpen.com",
-      "qmail.com",
-      "qq.com",
-      "vip.qq.com"
-    ],
-    "type": "free",
-    "signup_verification": "mobile"
-  },
-  "rediff.com": {
-    "hosts": [
-      "rediff.com",
-      "rediffmail.com",
-      "rediffmailpro.com"
-    ],
-    "type": "free",
-    "signup_verification": "mobile"
-  },
-  "riseup.net": {
-    "remark": "signup only possible via invitation",
-    "hosts": [
-      "riseup.net"
-    ],
-    "type": "free",
-    "signup_verification": "other"
-  },
-  "sina.com": {
-    "hosts": [
-      "sina.com",
-      "sina.com.cn",
-      "sina.cn",
-      "vip.sina.com"
-    ],
-    "type": "free",
-    "signup_verification": "mobile"
-  },
-  "skiff.com": {
-    "hosts": [
-      "skiff.com"
-    ],
-    "type": "paid",
-    "signup_verification": "payment"
-  },
-  "sohu.com": {
-    "hosts": [
-      "sohu.com"
-    ],
-    "type": "free",
-    "signup_verification": "mobile"
-  },
-  "tiscali.it": {
-    "remark": "no signup possible since 2020",
-    "hosts": [
-      "tiscali.it"
-    ],
-    "type": "free"
-  },
-  "tutanota.com": {
-    "hosts": [
-      "tutanota.com",
-      "tutanota.de",
-      "tutamail.com",
-      "tuta.io",
-      "keemail.me"
-    ],
-    "type": "free",
-    "signup_verification": "none"
-  },
-  "ukr.net": {
-    "hosts": [
-      "ukr.net"
-    ],
-    "type": "free",
-    "signup_verification": "mobile"
-  },
-  "vfemail.net": {
-    "hosts": [
-      "vfemail.net",
-      "tushmail.com",
-      "toothandmail.com",
-      "tightmail.com",
-      "powdermail.com",
-      "openmail.cc",
-      "offensivelytolerant.com",
-      "offcolormail.com",
-      "metadatamitigator.com",
-      "manlymail.net",
-      "mail-on.us",
-      "isonews2.com",
-      "expressmail.dk",
-      "clovermail.net",
-      "chewiemail.com"
-    ],
-    "type": "free",
-    "signup_verification": "none"
-  },
-  "webgmx": {
-    "hosts": [
-      "abwesend.de",
-      "alpenjodel.de",
-      "alphafrau.de",
-      "baldmama.de",
-      "baldpapa.de",
-      "betriebsdirektor.de",
-      "bin-wieder-da.de",
-      "bleib-bei-mir.de",
-      "buerotiger.de",
-      "coole-files.de",
-      "die-besten-bilder.de",
-      "die-genossen.de",
-      "die-optimisten.net",
-      "digital-filestore.de",
-      "download-privat.de",
-      "fahr-zur-hoelle.org",
-      "feinripptraeger.de",
-      "fettabernett.de",
-      "freudenkinder.de",
-      "gentlemansclub.de",
-      "gmx.at",
-      "gmx.com",
-      "gmx.de",
-      "gmx.li",
-      "gmx.net",
-      "gmx.us",
-      "hab-verschlafen.de",
-      "habmalnefrage.de",
-      "herr-der-mails.de",
-      "ich-bin-verrueckt-nach-dir.de",
-      "ich-will-net.de",
-      "ist-allein.info",
-      "ist-einmalig.de",
-      "ist-ganz-allein.de",
-      "ist-willig.de",
-      "kaffeeschluerfer.com",
-      "kommespaeter.de",
-      "lass-es-geschehen.de",
-      "liebt-dich.info",
-      "loveyouforever.de",
-      "maennerversteherin.com",
-      "mailueberfall.de",
-      "meine-dateien.info",
-      "meine-diashow.de",
-      "meine-fotos.info",
-      "meine-urlaubsfotos.de",
-      "muskelshirt.de",
-      "netterchef.de",
-      "neue-dateien.de",
-      "office-dateien.de",
-      "partybombe.de",
-      "partyheld.de",
-      "polizisten-duzer.de",
-      "public-files.de",
-      "quantentunnel.de",
-      "raubtierbaendiger.de",
-      "saeuferleber.de",
-      "sags-per-mail.de",
-      "schmusemail.de",
-      "schreib-doch-mal-wieder.de",
-      "shared-files.de",
-      "sonnenkinder.org",
-      "streber24.de",
-      "terminverpennt.de",
-      "topmail-files.de",
-      "tortenboxer.de",
-      "turboprinz.de",
-      "turboprinzessin.de",
-      "unterderbruecke.de",
-      "verlass-mich-nicht.de",
-      "vollbio.de",
-      "volloeko.de",
-      "vorsicht-bissig.de",
-      "vorsicht-scharf.de",
-      "war-im-urlaub.de",
-      "weibsvolk.org",
-      "weinenvorglueck.de",
-      "will-hier-weg.de",
-      "wir-haben-nachwuchs.de",
-      "wir-sind-cool.org",
-      "wolke7.net",
-      "women-at-work.org",
-      "freemail.de",
-      "web.de",
-      "caramail.com"
-    ],
-    "type": "free",
-    "signup_verification": "mobile"
   },
   "mail.com": {
     "hosts": [
@@ -807,159 +709,54 @@
       "workmail.com",
       "writeme.com"
     ],
-    "type": "free",
-    "signup_verification": "mobile"
-  },
-  "yahoo/aol": {
-    "hosts": [
-      "aim.com",
-      "aol.com",
-      "citlink.net",
-      "compuserve.com",
-      "cox.net",
-      "cs.com",
-      "epix.net",
-      "frontier.com",
-      "frontiernet.net",
-      "kimo.com",
-      "oddpost.com",
-      "rocketmail.com",
-      "the-cowboy.com",
-      "verizon.net",
-      "y7mail.com",
-      "yahoo.at",
-      "yahoo.be",
-      "yahoo.ca",
-      "yahoo.co.id",
-      "yahoo.co.il",
-      "yahoo.co.in",
-      "yahoo.co.kr",
-      "yahoo.co.nz",
-      "yahoo.co.th",
-      "yahoo.co.uk",
-      "yahoo.co.za",
-      "yahoo.com",
-      "yahoo.com.ar",
-      "yahoo.com.au",
-      "yahoo.com.br",
-      "yahoo.com.co",
-      "yahoo.com.hk",
-      "yahoo.com.mx",
-      "yahoo.com.my",
-      "yahoo.com.ph",
-      "yahoo.com.sg",
-      "yahoo.com.tr",
-      "yahoo.com.tw",
-      "yahoo.com.vn",
-      "yahoo.cz",
-      "yahoo.de",
-      "yahoo.dk",
-      "yahoo.es",
-      "yahoo.fi",
-      "yahoo.fr",
-      "yahoo.gr",
-      "yahoo.hu",
-      "yahoo.ie",
-      "yahoo.in",
-      "yahoo.it",
-      "yahoo.nl",
-      "yahoo.no",
-      "yahoo.pl",
-      "yahoo.pt",
-      "yahoo.ro",
-      "yahoo.se",
-      "ymail.com",
-      "myyahoo.com",
-      "netscape.com",
-      "netscape.net",
-      "geocities.com"
-    ],
     "signup_verification": "mobile",
     "type": "free"
   },
-  "yandex.ru": {
+  "mail.de": {
     "hosts": [
-      "dezigner.ru",
-      "email.su",
-      "epage.ru",
-      "hu2.ru",
-      "mail2k.ru",
-      "nextmail.ru",
-      "nxt.ru",
-      "programist.ru",
-      "rin.ru",
-      "student.su",
-      "tut.by",
-      "xaker.ru",
-      "ya.ru",
-      "yandex.com",
-      "yandex.pl",
-      "yandex.ru"
+      "mail.de",
+      "mail.ch",
+      "mail.fr",
+      "mail.uk",
+      "mail.co.uk"
+    ],
+    "remark": "mail.de FreeMail provider and related country domains.",
+    "type": "free"
+  },
+  "mail.io": {
+    "hosts": [
+      "mail.io"
+    ],
+    "signup_verification": "none",
+    "type": "free"
+  },
+  "mail.ru": {
+    "hosts": [
+      "xmail.ru",
+      "aport.ru",
+      "aport2000.ru",
+      "bk.ru",
+      "e-mail.ru",
+      "email.ru",
+      "fax.ru",
+      "goldmail.ru",
+      "hotmail.ru",
+      "icq.com",
+      "icqmail.com",
+      "imail.ru",
+      "inbox.ru",
+      "land.ru",
+      "list.ru",
+      "mail.ru",
+      "mailru.com",
+      "newmail.ru",
+      "omen.ru",
+      "supermail.ru",
+      "vipmail.ru",
+      "zmail.ru"
     ],
     "signup_verification": "mobile",
     "type": "free"
-  },
-  "inbox.com": {
-    "hosts": [
-      "inbox.com",
-      "ak47.hu",
-      "avh.hu",
-      "cia.hu",
-      "coder.hu",
-      "cracker.hu",
-      "csinibaba.hu",
-      "eposta.hu",
-      "fbi.hu",
-      "irj.hu",
-      "jakuza.hu",
-      "kgb.hu",
-      "lamer.hu",
-      "levele.hu",
-      "maffia.hu",
-      "primposta.com",
-      "primposta.hu",
-      "pro.hu",
-      "reply.hu",
-      "send.hu",
-      "shotgun.hu",
-      "skizo.hu",
-      "sniper.hu",
-      "soldier.hu",
-      "theend.hu",
-      "warrior.hu",
-      "online.ee",
-      "jubii.dk",
-      "e-mail.dk",
-      "email.it",
-      "freestart.hu",
-      "hot.ee",
-      "jubiimail.dk",
-      "luukku.com",
-      "sol.dk",
-      "webmail.co.za",
-      "ravemail.co.za",
-      "starmail.co.za",
-      "thecricket.co.za",
-      "thegolf.co.za",
-      "thepub.co.za",
-      "therugby.co.za",
-      "websurfer.co.za",
-      "workmail.co.za",
-      "mailbox.co.za",
-      "exclusivemail.co.za",
-      "homemail.co.za",
-      "magicmail.co.za"
-    ],
-    "signup_verification": "payment",
-    "type": "paid"
-  },
-  "kpnmail": {
-    "hosts": [
-      "kpnmail.nl",
-      "freeler.nl"
-    ],
-    "signup_verification": "payment",
-    "type": "paid"
   },
   "mail2world.com": {
     "hosts": [
@@ -2213,8 +2010,74 @@
       "mail2diana.com",
       "mail2life.com"
     ],
-    "type": "free",
-    "signup_verification": "mobile"
+    "signup_verification": "mobile",
+    "type": "free"
+  },
+  "mailbox.hu": {
+    "hosts": [
+      "mailbox.hu"
+    ],
+    "signup_verification": "email",
+    "type": "paid"
+  },
+  "mailbox.org": {
+    "hosts": [
+      "mailbox.org",
+      "secure.mailbox.org"
+    ],
+    "signup_verification": "payment",
+    "type": "paid"
+  },
+  "mailfence.com": {
+    "hosts": [
+      "mailfence.com"
+    ],
+    "type": "free"
+  },
+  "mailo.com": {
+    "hosts": [
+      "mailo.com",
+      "netcourrier.com",
+      "netc.fr",
+      "francemel.fr",
+      "emailasso.net",
+      "lavache.com",
+      "monemail.com",
+      "mailo.fr",
+      "mailo.be",
+      "mailo.lu",
+      "mailo.es",
+      "mailo.it",
+      "mailo.uk",
+      "mailo.pt",
+      "mailo.eu",
+      "mailo.ca",
+      "mailo.bzh",
+      "mailo.alsace",
+      "mailo.corsica",
+      "mailo.cat",
+      "net-c.com",
+      "netc.eu",
+      "net-c.nl",
+      "net-c.be",
+      "netc.lu",
+      "netc.it",
+      "net-c.es",
+      "net-c.cat",
+      "netc.pl",
+      "net-c.ca",
+      "netcmail.com",
+      "europamel.net",
+      "africamel.net",
+      "brusseler.com",
+      "inmano.com",
+      "perso.be",
+      "teaser.fr",
+      "mailoo.org",
+      "mongenie.com",
+      "ntymail.com"
+    ],
+    "type": "free"
   },
   "me.com": {
     "hosts": [
@@ -2222,8 +2085,8 @@
       "mac.com",
       "me.com"
     ],
-    "type": "free",
-    "signup_verification": "mobile"
+    "signup_verification": "mobile",
+    "type": "free"
   },
   "memail.com": {
     "hosts": [
@@ -2509,8 +2372,189 @@
       "mx03.memail.com",
       "mx04.memail.com"
     ],
-    "type": "paid",
-    "signup_verification": "payment"
+    "signup_verification": "payment",
+    "type": "paid"
+  },
+  "mozmail.com": {
+    "hosts": [
+      "mozmail.com"
+    ],
+    "signup_verification": "email",
+    "type": "forwarding"
+  },
+  "murena.io": {
+    "hosts": [
+      "murena.io",
+      "e.email"
+    ],
+    "signup_verification": "email",
+    "type": "free"
+  },
+  "my.id": {
+    "hosts": [
+      "my.id"
+    ],
+    "signup_verification": "mobile",
+    "type": "free"
+  },
+  "netease": {
+    "hosts": [
+      "163.com",
+      "126.com",
+      "188.com",
+      "yeah.net",
+      "tom.com",
+      "renren.com",
+      "pmail.net"
+    ],
+    "signup_verification": "none",
+    "type": "free"
+  },
+  "o2.pl": {
+    "hosts": [
+      "o2.pl"
+    ],
+    "signup_verification": "email",
+    "type": "free"
+  },
+  "onet.pl": {
+    "hosts": [
+      "op.pl",
+      "onet.pl",
+      "poczta.onet.pl",
+      "vp.pl",
+      "onet.eu",
+      "autograf.pl",
+      "buziaczek.pl",
+      "spoko.pl",
+      "poczta.onet.eu",
+      "onet.com.pl",
+      "amorki.pl",
+      "opoczta.pl"
+    ],
+    "signup_verification": "phone",
+    "type": "free"
+  },
+  "orange.fr": {
+    "hosts": [
+      "orange.fr",
+      "wanadoo.fr"
+    ],
+    "type": "paid"
+  },
+  "outlook.com": {
+    "hosts": [
+      "hotmail.ca",
+      "hotmail.ch",
+      "hotmail.co.il",
+      "hotmail.co.uk",
+      "hotmail.com",
+      "hotmail.de",
+      "hotmail.es",
+      "hotmail.fr",
+      "hotmail.it",
+      "live.at",
+      "live.ca",
+      "live.cl",
+      "live.cn",
+      "live.co.uk",
+      "live.co.za",
+      "live.com",
+      "live.com.ar",
+      "live.com.au",
+      "live.com.mx",
+      "live.com.pt",
+      "live.com.sg",
+      "live.de",
+      "live.dk",
+      "live.fr",
+      "live.ie",
+      "live.in",
+      "live.it",
+      "live.jp",
+      "live.nl",
+      "live.ru",
+      "live.se",
+      "msn.com",
+      "outlook.at",
+      "outlook.be",
+      "outlook.cl",
+      "outlook.co.id",
+      "outlook.co.il",
+      "outlook.co.nz",
+      "outlook.co.th",
+      "outlook.com",
+      "outlook.com.au",
+      "outlook.com.br",
+      "outlook.com.gr",
+      "outlook.com.pe",
+      "outlook.com.tr",
+      "outlook.com.vn",
+      "outlook.cz",
+      "outlook.de",
+      "outlook.dk",
+      "outlook.es",
+      "outlook.fr",
+      "outlook.hu",
+      "outlook.ie",
+      "outlook.in",
+      "outlook.it",
+      "outlook.jp",
+      "outlook.kr",
+      "outlook.lv",
+      "outlook.my",
+      "outlook.ph",
+      "outlook.pt",
+      "outlook.sa",
+      "outlook.sg",
+      "outlook.sk",
+      "windowslive.com"
+    ],
+    "signup_verification": "none",
+    "type": "free"
+  },
+  "paced.email": {
+    "hosts": [
+      "paced.email"
+    ],
+    "signup_verification": "email",
+    "type": "free"
+  },
+  "ploud.fr": {
+    "hosts": [
+      "ploud.fr"
+    ],
+    "signup_verification": "email",
+    "type": "free"
+  },
+  "posteo.de": {
+    "hosts": [
+      "posteo.de"
+    ],
+    "signup_verification": "payment",
+    "type": "paid"
+  },
+  "proton.me": {
+    "hosts": [
+      "proton.me",
+      "protonmail.ch",
+      "protonmail.com",
+      "pm.me"
+    ],
+    "signup_verification": "email",
+    "type": "free"
+  },
+  "qq.com": {
+    "hosts": [
+      "foxmail.com",
+      "mailpanda.com",
+      "penpen.com",
+      "qmail.com",
+      "qq.com",
+      "vip.qq.com"
+    ],
+    "signup_verification": "mobile",
+    "type": "free"
   },
   "rambler.ru": {
     "hosts": [
@@ -2520,160 +2564,90 @@
       "rambler.ru",
       "ro.ru"
     ],
-    "type": "free",
-    "signup_verification": "mobile"
-  },
-  "c2.hu": {
-    "remark": "signup only possible from hungary IP",
-    "hosts": [
-      "c2.hu"
-    ],
-    "type": "free",
-    "signup_verification": "none"
-  },
-  "murena.io": {
-    "hosts": [
-      "murena.io"
-    ],
-    "type": "free",
-    "signup_verification": "email"
-  },
-  "t-online.de": {
-    "hosts": [
-      "t-online.de"
-    ],
+    "signup_verification": "mobile",
     "type": "free"
   },
-  "inbox.lv": {
+  "rediff.com": {
     "hosts": [
-      "inbox.eu",
-      "inbox.lv"
+      "rediff.com",
+      "rediffmail.com",
+      "rediffmailpro.com"
     ],
-    "type": "free",
-    "signup_verification": "mobile"
+    "signup_verification": "mobile",
+    "type": "free"
   },
-  "xmail.net": {
+  "riseup.net": {
     "hosts": [
-      "xmail.net"
+      "riseup.net"
     ],
-    "type": "free",
-    "signup_verification": "none"
+    "remark": "signup only possible via invitation",
+    "signup_verification": "other",
+    "type": "free"
+  },
+  "runbox.com": {
+    "hosts": [
+      "mailhost.work",
+      "mailhouse.biz",
+      "messagebox.email",
+      "offshore.rocks",
+      "rbox.co",
+      "rbox.me",
+      "rbx.email",
+      "rbx.life",
+      "rbx.run",
+      "rnbx.uk",
+      "run.box",
+      "runbox.at",
+      "runbox.biz",
+      "runbox.bz",
+      "runbox.ch",
+      "runbox.co",
+      "runbox.co.in",
+      "runbox.com",
+      "runbox.cz",
+      "runbox.dk",
+      "runbox.email",
+      "runbox.eu",
+      "runbox.io",
+      "runbox.is",
+      "runbox.it",
+      "runbox.ky",
+      "runbox.la",
+      "runbox.li",
+      "runbox.me",
+      "runbox.nl",
+      "runbox.no",
+      "runbox.pt",
+      "runbox.rocks",
+      "runbox.uk",
+      "runbox.us",
+      "runbox7.com",
+      "xobnur.uk"
+    ],
+    "signup_verification": "payment",
+    "type": "paid"
   },
   "sapo.pt": {
     "hosts": [
       "sapo.pt"
     ],
-    "type": "free",
-    "signup_verification": "mobile"
+    "signup_verification": "mobile",
+    "type": "free"
   },
-  "inleed.xyz": {
+  "seznam.cz": {
     "hosts": [
-      "inleed.xyz"
+      "seznam.cz",
+      "email.cz",
+      "post.cz"
     ],
-    "type": "free",
-    "signup_verification": "email"
-  },
-  "abv.bg": {
-    "hosts": [
-      "abv.bg"
-    ],
-    "type": "free",
-    "signup_verification": "mobile"
-  },
-  "mailbox.hu": {
-    "hosts": [
-      "mailbox.hu"
-    ],
-    "type": "paid",
-    "signup_verification": "email"
-  },
-  "my.id": {
-    "hosts": [
-      "my.id"
-    ],
-    "type": "free",
-    "signup_verification": "mobile"
-  },
-  "paced.email": {
-    "hosts": [
-      "paced.email"
-    ],
-    "type": "free",
-    "signup_verification": "email"
+    "type": "free"
   },
   "sibnet.ru": {
     "hosts": [
       "sibnet.ru"
     ],
-    "type": "free",
-    "signup_verification": "email"
-  },
-  "beeble.com": {
-    "hosts": [
-      "beeble.com"
-    ],
-    "type": "free",
-    "signup_verification": "none"
-  },
-  "indapass.hu": {
-    "remark": "no signup possible since 2024",
-    "hosts": [
-      "indamail.hu",
-      "vipmail.hu",
-      "webmail.hu"
-    ],
-    "type": "free",
-    "signup_verification": "none"
-  },
-  "eclipso.de": {
-    "hosts": [
-      "eclipso.de",
-      "eclipso.at",
-      "eclipso.ch",
-      "eclipso.eu",
-      "eclipso.es",
-      "eclipso.it",
-      "eclipso.me",
-      "eclipso.nl",
-      "eclipso.email"
-    ],
-    "type": "free",
-    "signup_verification": "none"
-  },
-  "33mail.com": {
-    "hosts": [
-      "33mail.com"
-    ],
-    "type": "forwarding",
-    "signup_verification": "none"
-  },
-  "2980.com": {
-    "hosts": [
-      "2980.com"
-    ],
-    "type": "free",
-    "signup_verification": "mobile"
-  },
-  "ubikom.cc": {
-    "hosts": [
-      "ubikom.cc"
-    ],
-    "type": "free",
-    "signup_verification": "none"
-  },
-  "mail.io": {
-    "hosts": [
-      "mail.io"
-    ],
-    "type": "free",
-    "signup_verification": "none"
-  },
-  "ploud.fr": {
-    "hosts": [
-      "ploud.fr"
-    ],
-    "type": "free",
-    "signup_verification": "email"
+    "signup_verification": "email",
+    "type": "free"
   },
   "simplelogin": {
     "hosts": [
@@ -2692,65 +2666,43 @@
       "simplelogin.co",
       "simplelogin.io"
     ],
-    "type": "forwarding",
-    "signup_verification": "email"
+    "signup_verification": "email",
+    "type": "forwarding"
   },
-  "duck.com": {
+  "sina.com": {
     "hosts": [
-      "duck.com"
+      "sina.com",
+      "sina.com.cn",
+      "sina.cn",
+      "vip.sina.com"
     ],
-    "type": "forwarding",
-    "signup_verification": "email"
+    "signup_verification": "mobile",
+    "type": "free"
   },
-  "mozmail.com": {
+  "skiff.com": {
     "hosts": [
-      "mozmail.com"
+      "skiff.com"
     ],
-    "type": "forwarding",
-    "signup_verification": "email"
+    "remark": "Skiff Mail was sunset on 2024-08-09; automatic forwarding continued only until 2025-02-09.",
+    "signup_verification": "payment",
+    "type": "paid"
   },
-  "addy.io": {
+  "sneakemail.com": {
     "hosts": [
-      "anonaddy.com",
-      "anonaddy.me"
+      "sneakemail.com",
+      "snkmail.com",
+      "snkml.com",
+      "liamekaens.com"
     ],
-    "type": "forwarding",
-    "signup_verification": "email"
+    "remark": "Account creation is currently disabled",
+    "type": "forwarding"
   },
-  "onet.pl": {
+  "sohu.com": {
     "hosts": [
-      "op.pl",
-      "onet.pl",
-      "poczta.onet.pl",
-      "vp.pl",
-      "onet.eu",
-      "autograf.pl",
-      "buziaczek.pl",
-      "spoko.pl",
-      "poczta.onet.eu",
-      "onet.com.pl",
-      "amorki.pl",
-      "opoczta.pl"
+      "sohu.com"
     ],
-    "type": "free",
-    "signup_verification": "phone"
-  },
-  "139.com": {
-    "hosts": [
-      "139.com"
-    ],
-    "type": "free",
-    "signup_verification": "mobile"
-  },
-  "hushmail.com": {
-    "hosts": [
-      "hushmail.com",
-      "hush.com",
-      "hush.ai",
-      "hushmail.me"
-    ],
-    "type": "paid",
-    "signup_verification": "payment"
+    "signup_verification": "mobile",
+    "type": "free"
   },
   "spamgourmet.com": {
     "hosts": [
@@ -2767,17 +2719,290 @@
       "spameater.org",
       "xoxy.net"
     ],
-    "type": "forwarding",
-    "signup_verification": "email"
+    "signup_verification": "email",
+    "type": "forwarding"
   },
-  "sneakemail.com": {
+  "startmail.com": {
     "hosts": [
-      "sneakemail.com",
-      "snkmail.com",
-      "snkml.com",
-      "liamekaens.com"
+      "startmail.com",
+      "use.startmail.com"
     ],
-    "type": "forwarding",
-    "remark": "Account creation is currently disabled"
+    "signup_verification": "payment",
+    "type": "paid"
+  },
+  "t-online.de": {
+    "hosts": [
+      "t-online.de",
+      "magenta.de"
+    ],
+    "type": "free"
+  },
+  "tiscali.it": {
+    "hosts": [
+      "tiscali.it"
+    ],
+    "remark": "no signup possible since 2020",
+    "type": "free"
+  },
+  "tutanota.com": {
+    "hosts": [
+      "tutanota.com",
+      "tutanota.de",
+      "tutamail.com",
+      "tuta.com",
+      "tuta.io",
+      "keemail.me"
+    ],
+    "signup_verification": "none",
+    "type": "free"
+  },
+  "ubikom.cc": {
+    "hosts": [
+      "ubikom.cc"
+    ],
+    "signup_verification": "none",
+    "type": "free"
+  },
+  "ukr.net": {
+    "hosts": [
+      "ukr.net"
+    ],
+    "signup_verification": "mobile",
+    "type": "free"
+  },
+  "vfemail.net": {
+    "hosts": [
+      "vfemail.net",
+      "tushmail.com",
+      "toothandmail.com",
+      "tightmail.com",
+      "powdermail.com",
+      "openmail.cc",
+      "offensivelytolerant.com",
+      "offcolormail.com",
+      "metadatamitigator.com",
+      "manlymail.net",
+      "mail-on.us",
+      "isonews2.com",
+      "expressmail.dk",
+      "clovermail.net",
+      "chewiemail.com"
+    ],
+    "signup_verification": "none",
+    "type": "free"
+  },
+  "vodafonemail.de": {
+    "hosts": [
+      "vodafonemail.de",
+      "arcor.de"
+    ],
+    "type": "free"
+  },
+  "webgmx": {
+    "hosts": [
+      "abwesend.de",
+      "alpenjodel.de",
+      "alphafrau.de",
+      "baldmama.de",
+      "baldpapa.de",
+      "betriebsdirektor.de",
+      "bin-wieder-da.de",
+      "bleib-bei-mir.de",
+      "buerotiger.de",
+      "coole-files.de",
+      "die-besten-bilder.de",
+      "die-genossen.de",
+      "die-optimisten.net",
+      "digital-filestore.de",
+      "download-privat.de",
+      "fahr-zur-hoelle.org",
+      "feinripptraeger.de",
+      "fettabernett.de",
+      "freudenkinder.de",
+      "gentlemansclub.de",
+      "gmx.at",
+      "gmx.ca",
+      "gmx.co.uk",
+      "gmx.com",
+      "gmx.de",
+      "gmx.es",
+      "gmx.fr",
+      "gmx.li",
+      "gmx.net",
+      "gmx.us",
+      "hab-verschlafen.de",
+      "habmalnefrage.de",
+      "herr-der-mails.de",
+      "ich-bin-verrueckt-nach-dir.de",
+      "ich-will-net.de",
+      "ist-allein.info",
+      "ist-einmalig.de",
+      "ist-ganz-allein.de",
+      "ist-willig.de",
+      "kaffeeschluerfer.com",
+      "kommespaeter.de",
+      "lass-es-geschehen.de",
+      "liebt-dich.info",
+      "loveyouforever.de",
+      "maennerversteherin.com",
+      "mailueberfall.de",
+      "meine-dateien.info",
+      "meine-diashow.de",
+      "meine-fotos.info",
+      "meine-urlaubsfotos.de",
+      "muskelshirt.de",
+      "netterchef.de",
+      "neue-dateien.de",
+      "office-dateien.de",
+      "partybombe.de",
+      "partyheld.de",
+      "polizisten-duzer.de",
+      "public-files.de",
+      "quantentunnel.de",
+      "raubtierbaendiger.de",
+      "saeuferleber.de",
+      "sags-per-mail.de",
+      "schmusemail.de",
+      "schreib-doch-mal-wieder.de",
+      "shared-files.de",
+      "sonnenkinder.org",
+      "streber24.de",
+      "terminverpennt.de",
+      "topmail-files.de",
+      "tortenboxer.de",
+      "turboprinz.de",
+      "turboprinzessin.de",
+      "unterderbruecke.de",
+      "verlass-mich-nicht.de",
+      "vollbio.de",
+      "volloeko.de",
+      "vorsicht-bissig.de",
+      "vorsicht-scharf.de",
+      "war-im-urlaub.de",
+      "weibsvolk.org",
+      "weinenvorglueck.de",
+      "will-hier-weg.de",
+      "wir-haben-nachwuchs.de",
+      "wir-sind-cool.org",
+      "wolke7.net",
+      "women-at-work.org",
+      "freemail.de",
+      "web.de",
+      "caramail.com"
+    ],
+    "signup_verification": "mobile",
+    "type": "free"
+  },
+  "xmail.net": {
+    "hosts": [
+      "xmail.net"
+    ],
+    "signup_verification": "none",
+    "type": "free"
+  },
+  "yahoo.co.jp": {
+    "hosts": [
+      "yahoo.co.jp",
+      "ymail.ne.jp"
+    ],
+    "remark": "Yahoo Japan Mail. @ymail.ne.jp is a free Yahoo Mail address domain separate from @yahoo.co.jp.",
+    "signup_verification": "mobile",
+    "type": "free"
+  },
+  "yahoo/aol": {
+    "hosts": [
+      "aim.com",
+      "aol.com",
+      "citlink.net",
+      "compuserve.com",
+      "cox.net",
+      "cs.com",
+      "epix.net",
+      "frontier.com",
+      "frontiernet.net",
+      "kimo.com",
+      "oddpost.com",
+      "rocketmail.com",
+      "the-cowboy.com",
+      "verizon.net",
+      "y7mail.com",
+      "yahoo.at",
+      "yahoo.be",
+      "yahoo.ca",
+      "yahoo.co.id",
+      "yahoo.co.il",
+      "yahoo.co.in",
+      "yahoo.co.kr",
+      "yahoo.co.nz",
+      "yahoo.co.th",
+      "yahoo.co.uk",
+      "yahoo.co.za",
+      "yahoo.com",
+      "yahoo.com.ar",
+      "yahoo.com.au",
+      "yahoo.com.br",
+      "yahoo.com.co",
+      "yahoo.com.hk",
+      "yahoo.com.mx",
+      "yahoo.com.my",
+      "yahoo.com.ph",
+      "yahoo.com.sg",
+      "yahoo.com.tr",
+      "yahoo.com.tw",
+      "yahoo.com.vn",
+      "yahoo.cz",
+      "yahoo.de",
+      "yahoo.dk",
+      "yahoo.es",
+      "yahoo.fi",
+      "yahoo.fr",
+      "yahoo.gr",
+      "yahoo.hu",
+      "yahoo.ie",
+      "yahoo.in",
+      "yahoo.it",
+      "yahoo.nl",
+      "yahoo.no",
+      "yahoo.pl",
+      "yahoo.pt",
+      "yahoo.ro",
+      "yahoo.se",
+      "ymail.com",
+      "myyahoo.com",
+      "netscape.com",
+      "netscape.net",
+      "geocities.com"
+    ],
+    "signup_verification": "mobile",
+    "type": "free"
+  },
+  "yandex.ru": {
+    "hosts": [
+      "dezigner.ru",
+      "email.su",
+      "epage.ru",
+      "hu2.ru",
+      "mail2k.ru",
+      "nextmail.ru",
+      "nxt.ru",
+      "programist.ru",
+      "rin.ru",
+      "student.su",
+      "tut.by",
+      "xaker.ru",
+      "ya.ru",
+      "yandex.com",
+      "yandex.pl",
+      "yandex.ru"
+    ],
+    "signup_verification": "mobile",
+    "type": "free"
+  },
+  "zohomail.com": {
+    "hosts": [
+      "zohomail.com"
+    ],
+    "remark": "Zoho personal mail domain.",
+    "type": "free"
   }
 }

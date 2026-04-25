@@ -1,4 +1,11 @@
 repos:
+  - repo: local
+    hooks:
+      - id: sort-json-keys
+        name: Sort JSON keys alphabetically
+        entry: python scripts/sort_json_keys.py
+        language: python
+        files: ^(mailservices|disposable-mail-hosts)\.json$
   - repo: https://github.com/python-jsonschema/check-jsonschema
     rev: 0.28.0
     hooks:
