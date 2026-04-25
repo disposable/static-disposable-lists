@@ -2740,8 +2740,7 @@
       "139.com"
     ],
     "type": "free",
-    "signup_verification": "mobile",
-    "remark": "China Mobile 139 Mail; official pages describe the mobile phone number as the mailbox address."
+    "signup_verification": "mobile"
   },
   "hushmail.com": {
     "hosts": [
@@ -2751,8 +2750,7 @@
       "hushmail.me"
     ],
     "type": "paid",
-    "signup_verification": "payment",
-    "remark": "Hushmail encrypted email provider. These are the Hushmail domains from the source issue; Hushmail documentation also references mac.hush.com."
+    "signup_verification": "payment"
   },
   "spamgourmet.com": {
     "hosts": [
@@ -2770,8 +2768,7 @@
       "xoxy.net"
     ],
     "type": "forwarding",
-    "signup_verification": "email",
-    "remark": "SpamGourmet free forwarding/disposable-address service. The protected forwarding address must exist and is confirmed by email."
+    "signup_verification": "email"
   },
   "sneakemail.com": {
     "hosts": [
@@ -2781,6 +2778,6 @@
       "liamekaens.com"
     ],
     "type": "forwarding",
-    "remark": "SneakEmail forwarding/alias service for hiding a real address; signup verification was not set because the current public pages I found do not clearly document the required verification step."
+    "remark": "Account creation is currently disabled"
   }
 }
