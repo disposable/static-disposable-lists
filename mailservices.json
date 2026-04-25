@@ -3,7 +3,9 @@
     "hosts": [
       "139.com"
     ],
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "21cn.com": {
@@ -14,28 +16,36 @@
       "vip.citiz.net",
       "vnet.citiz.net"
     ],
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "2980.com": {
     "hosts": [
       "2980.com"
     ],
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "33mail.com": {
     "hosts": [
       "33mail.com"
     ],
-    "signup_verification": "none",
+    "signup_verification": [
+      "none"
+    ],
     "type": "forwarding"
   },
   "abv.bg": {
     "hosts": [
       "abv.bg"
     ],
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "addy.io": {
@@ -43,21 +53,27 @@
       "anonaddy.com",
       "anonaddy.me"
     ],
-    "signup_verification": "email",
+    "signup_verification": [
+      "email"
+    ],
     "type": "forwarding"
   },
   "beeble.com": {
     "hosts": [
       "beeble.com"
     ],
-    "signup_verification": "none",
+    "signup_verification": [
+      "none"
+    ],
     "type": "free"
   },
   "bluewin.ch": {
     "hosts": [
       "bluewin.ch"
     ],
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "btinternet.com": {
@@ -71,7 +87,33 @@
       "c2.hu"
     ],
     "remark": "signup only possible from hungary IP",
-    "signup_verification": "none",
+    "signup_verification": [
+      "none"
+    ],
+    "type": "free"
+  },
+  "centrum.cz": {
+    "hosts": [
+      "centrum.cz",
+      "atlas.cz",
+      "volny.cz"
+    ],
+    "remark": "Czech Centrum/Atlas/Volny freemail family.",
+    "signup_verification": [
+      "mobile"
+    ],
+    "type": "free"
+  },
+  "centrum.sk": {
+    "hosts": [
+      "centrum.sk",
+      "atlas.sk",
+      "pobox.sk"
+    ],
+    "remark": "Slovak Centrum/Atlas/Pobox freemail family.",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "cock.li": {
@@ -106,7 +148,9 @@
       "wants.dicksinhisan.us",
       "wants.dicksinmyan.us"
     ],
-    "signup_verification": "none",
+    "signup_verification": [
+      "none"
+    ],
     "type": "free"
   },
   "countermail.com": {
@@ -114,7 +158,9 @@
       "countermail.com",
       "cmail.nu"
     ],
-    "signup_verification": "payment",
+    "signup_verification": [
+      "payment"
+    ],
     "type": "paid"
   },
   "daum.net": {
@@ -124,21 +170,27 @@
       "kakao.com",
       "naver.com"
     ],
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "disroot.org": {
     "hosts": [
       "disroot.org"
     ],
-    "signup_verification": "other",
+    "signup_verification": [
+      "other"
+    ],
     "type": "free"
   },
   "duck.com": {
     "hosts": [
       "duck.com"
     ],
-    "signup_verification": "email",
+    "signup_verification": [
+      "email"
+    ],
     "type": "forwarding"
   },
   "eclipso.de": {
@@ -151,9 +203,13 @@
       "eclipso.it",
       "eclipso.me",
       "eclipso.nl",
-      "eclipso.email"
+      "eclipso.email",
+      "eclipsomail.de",
+      "eclipsomail.com"
     ],
-    "signup_verification": "none",
+    "signup_verification": [
+      "none"
+    ],
     "type": "free"
   },
   "fastmail.com": {
@@ -297,7 +353,9 @@
       "in1-smtp.messagingengine.com",
       "in2-smtp.messagingengine.com"
     ],
-    "signup_verification": "payment",
+    "signup_verification": [
+      "payment"
+    ],
     "type": "paid"
   },
   "free.fr": {
@@ -312,14 +370,18 @@
       "freemail.hu",
       "freemail.c3.hu"
     ],
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "freenet.de": {
     "hosts": [
       "freenet.de"
     ],
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "freeola.com": {
@@ -348,7 +410,9 @@
       "ukcool.com",
       "x5g.com"
     ],
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "gmail.com": {
@@ -356,7 +420,9 @@
       "gmail.com",
       "googlemail.com"
     ],
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "hey.com": {
@@ -364,7 +430,9 @@
       "hey.com",
       "emailit.com"
     ],
-    "signup_verification": "payment",
+    "signup_verification": [
+      "payment"
+    ],
     "type": "paid"
   },
   "hushmail.com": {
@@ -375,14 +443,18 @@
       "hushmail.me",
       "mac.hush.com"
     ],
-    "signup_verification": "payment",
+    "signup_verification": [
+      "payment"
+    ],
     "type": "paid"
   },
   "i.ua": {
     "hosts": [
       "i.ua"
     ],
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "ik.me": {
@@ -392,6 +464,9 @@
       "etik.com"
     ],
     "remark": "Infomaniak free email domains.",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "inbox.com": {
@@ -445,39 +520,73 @@
       "homemail.co.za",
       "magicmail.co.za"
     ],
-    "signup_verification": "payment",
+    "signup_verification": [
+      "payment"
+    ],
     "type": "paid"
   },
   "inbox.lv": {
     "hosts": [
+      "inbox.lv",
+      "inbox.lt",
       "inbox.eu",
-      "inbox.lv"
+      "inbox.la",
+      "mail.ee"
     ],
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "indapass.hu": {
+    "discontinued": true,
     "hosts": [
       "indamail.hu",
       "vipmail.hu",
       "webmail.hu"
     ],
     "remark": "no signup possible since 2024",
-    "signup_verification": "none",
+    "signup_verification": [
+      "none"
+    ],
     "type": "free"
   },
   "inleed.xyz": {
     "hosts": [
       "inleed.xyz"
     ],
-    "signup_verification": "email",
+    "signup_verification": [
+      "email"
+    ],
+    "type": "free"
+  },
+  "interia.pl": {
+    "hosts": [
+      "interia.pl",
+      "interia.eu",
+      "poczta.fm",
+      "vip.interia.pl",
+      "intmail.pl",
+      "interia.com",
+      "interiowy.pl",
+      "adresik.net",
+      "pisz.to",
+      "pacz.to",
+      "ogarnij.se"
+    ],
+    "remark": "Poczta Interia domains. The wildcard *.hub.pl is documented by Interia but omitted here because it is not a concrete hostname.",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "iol.it": {
     "hosts": [
       "iol.it"
     ],
-    "signup_verification": "payment",
+    "signup_verification": [
+      "payment"
+    ],
     "type": "paid"
   },
   "kpnmail": {
@@ -485,25 +594,33 @@
       "kpnmail.nl",
       "freeler.nl"
     ],
-    "signup_verification": "payment",
+    "signup_verification": [
+      "payment"
+    ],
     "type": "paid"
   },
   "laposte.net": {
     "hosts": [
       "laposte.net"
     ],
-    "signup_verification": "other",
+    "signup_verification": [
+      "other"
+    ],
     "type": "free"
   },
   "libero.it": {
     "hosts": [
       "libero.it",
-      "blu.it"
+      "blu.it",
+      "virgilio.it"
     ],
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "lycos.com": {
+    "discontinued": true,
     "hosts": [
       "lycos.at",
       "lycos.co.uk",
@@ -512,6 +629,20 @@
       "lycos.it",
       "lycos.nl",
       "lycos.com"
+    ],
+    "remark": "Email services discontinued.",
+    "signup_verification": [
+      "none"
+    ],
+    "type": "free"
+  },
+  "mail.bg": {
+    "hosts": [
+      "mail.bg"
+    ],
+    "remark": "Mail.bg free Bulgarian mailbox provider.",
+    "signup_verification": [
+      "mobile"
     ],
     "type": "free"
   },
@@ -709,7 +840,9 @@
       "workmail.com",
       "writeme.com"
     ],
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "mail.de": {
@@ -721,13 +854,36 @@
       "mail.co.uk"
     ],
     "remark": "mail.de FreeMail provider and related country domains.",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "mail.io": {
     "hosts": [
       "mail.io"
     ],
-    "signup_verification": "none",
+    "signup_verification": [
+      "none"
+    ],
+    "type": "free"
+  },
+  "mail.kz": {
+    "hosts": [
+      "mail.kz",
+      "el.kz",
+      "mailto.kz",
+      "mbx.kz",
+      "hotmail.kz",
+      "edu.kz",
+      "edu.mail.kz",
+      "med.mail.kz",
+      "gov.mail.kz"
+    ],
+    "remark": "Mail.KZ mailbox domains shown in the current login/registration UI. Some domains are organization-specific, especially edu/gov/med.",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "mail.ru": {
@@ -745,6 +901,7 @@
       "icqmail.com",
       "imail.ru",
       "inbox.ru",
+      "internet.ru",
       "land.ru",
       "list.ru",
       "mail.ru",
@@ -755,7 +912,9 @@
       "vipmail.ru",
       "zmail.ru"
     ],
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "mail2world.com": {
@@ -2010,14 +2169,18 @@
       "mail2diana.com",
       "mail2life.com"
     ],
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "mailbox.hu": {
     "hosts": [
       "mailbox.hu"
     ],
-    "signup_verification": "email",
+    "signup_verification": [
+      "email"
+    ],
     "type": "paid"
   },
   "mailbox.org": {
@@ -2025,7 +2188,9 @@
       "mailbox.org",
       "secure.mailbox.org"
     ],
-    "signup_verification": "payment",
+    "signup_verification": [
+      "payment"
+    ],
     "type": "paid"
   },
   "mailfence.com": {
@@ -2085,7 +2250,9 @@
       "mac.com",
       "me.com"
     ],
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "memail.com": {
@@ -2372,14 +2539,28 @@
       "mx03.memail.com",
       "mx04.memail.com"
     ],
-    "signup_verification": "payment",
+    "signup_verification": [
+      "payment"
+    ],
     "type": "paid"
+  },
+  "meta.ua": {
+    "hosts": [
+      "meta.ua"
+    ],
+    "remark": "META.ua free Ukrainian mailbox provider.",
+    "signup_verification": [
+      "mobile"
+    ],
+    "type": "free"
   },
   "mozmail.com": {
     "hosts": [
       "mozmail.com"
     ],
-    "signup_verification": "email",
+    "signup_verification": [
+      "email"
+    ],
     "type": "forwarding"
   },
   "murena.io": {
@@ -2387,14 +2568,29 @@
       "murena.io",
       "e.email"
     ],
-    "signup_verification": "email",
+    "signup_verification": [
+      "email"
+    ],
     "type": "free"
   },
   "my.id": {
     "hosts": [
       "my.id"
     ],
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
+    "type": "free"
+  },
+  "nate.com": {
+    "hosts": [
+      "nate.com",
+      "empas.com"
+    ],
+    "remark": "Nate Mail. empas.com is supported as a legacy login/email domain according to Nate Mail login help.",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "netease": {
@@ -2407,14 +2603,22 @@
       "renren.com",
       "pmail.net"
     ],
-    "signup_verification": "none",
+    "signup_verification": [
+      "none"
+    ],
     "type": "free"
   },
   "o2.pl": {
     "hosts": [
-      "o2.pl"
+      "o2.pl",
+      "wp.pl",
+      "tlen.pl",
+      "go2.pl",
+      "prokonto.pl"
     ],
-    "signup_verification": "email",
+    "signup_verification": [
+      "email"
+    ],
     "type": "free"
   },
   "onet.pl": {
@@ -2432,7 +2636,9 @@
       "amorki.pl",
       "opoczta.pl"
     ],
-    "signup_verification": "phone",
+    "signup_verification": [
+      "phone"
+    ],
     "type": "free"
   },
   "orange.fr": {
@@ -2510,28 +2716,36 @@
       "outlook.sk",
       "windowslive.com"
     ],
-    "signup_verification": "none",
+    "signup_verification": [
+      "none"
+    ],
     "type": "free"
   },
   "paced.email": {
     "hosts": [
       "paced.email"
     ],
-    "signup_verification": "email",
+    "signup_verification": [
+      "email"
+    ],
     "type": "free"
   },
   "ploud.fr": {
     "hosts": [
       "ploud.fr"
     ],
-    "signup_verification": "email",
+    "signup_verification": [
+      "email"
+    ],
     "type": "free"
   },
   "posteo.de": {
     "hosts": [
       "posteo.de"
     ],
-    "signup_verification": "payment",
+    "signup_verification": [
+      "payment"
+    ],
     "type": "paid"
   },
   "proton.me": {
@@ -2541,7 +2755,9 @@
       "protonmail.com",
       "pm.me"
     ],
-    "signup_verification": "email",
+    "signup_verification": [
+      "email"
+    ],
     "type": "free"
   },
   "qq.com": {
@@ -2553,7 +2769,9 @@
       "qq.com",
       "vip.qq.com"
     ],
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "rambler.ru": {
@@ -2564,7 +2782,9 @@
       "rambler.ru",
       "ro.ru"
     ],
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "rediff.com": {
@@ -2573,7 +2793,9 @@
       "rediffmail.com",
       "rediffmailpro.com"
     ],
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "riseup.net": {
@@ -2581,7 +2803,9 @@
       "riseup.net"
     ],
     "remark": "signup only possible via invitation",
-    "signup_verification": "other",
+    "signup_verification": [
+      "other"
+    ],
     "type": "free"
   },
   "runbox.com": {
@@ -2624,14 +2848,18 @@
       "runbox7.com",
       "xobnur.uk"
     ],
-    "signup_verification": "payment",
+    "signup_verification": [
+      "payment"
+    ],
     "type": "paid"
   },
   "sapo.pt": {
     "hosts": [
       "sapo.pt"
     ],
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "seznam.cz": {
@@ -2640,13 +2868,18 @@
       "email.cz",
       "post.cz"
     ],
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "sibnet.ru": {
     "hosts": [
       "sibnet.ru"
     ],
-    "signup_verification": "email",
+    "signup_verification": [
+      "email"
+    ],
     "type": "free"
   },
   "simplelogin": {
@@ -2666,7 +2899,9 @@
       "simplelogin.co",
       "simplelogin.io"
     ],
-    "signup_verification": "email",
+    "signup_verification": [
+      "email"
+    ],
     "type": "forwarding"
   },
   "sina.com": {
@@ -2676,7 +2911,9 @@
       "sina.cn",
       "vip.sina.com"
     ],
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "skiff.com": {
@@ -2684,7 +2921,9 @@
       "skiff.com"
     ],
     "remark": "Skiff Mail was sunset on 2024-08-09; automatic forwarding continued only until 2025-02-09.",
-    "signup_verification": "payment",
+    "signup_verification": [
+      "payment"
+    ],
     "type": "paid"
   },
   "sneakemail.com": {
@@ -2701,7 +2940,9 @@
     "hosts": [
       "sohu.com"
     ],
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "spamgourmet.com": {
@@ -2719,7 +2960,9 @@
       "spameater.org",
       "xoxy.net"
     ],
-    "signup_verification": "email",
+    "signup_verification": [
+      "email"
+    ],
     "type": "forwarding"
   },
   "startmail.com": {
@@ -2727,7 +2970,9 @@
       "startmail.com",
       "use.startmail.com"
     ],
-    "signup_verification": "payment",
+    "signup_verification": [
+      "payment"
+    ],
     "type": "paid"
   },
   "t-online.de": {
@@ -2738,10 +2983,14 @@
     "type": "free"
   },
   "tiscali.it": {
+    "discontinued": true,
     "hosts": [
       "tiscali.it"
     ],
     "remark": "no signup possible since 2020",
+    "signup_verification": [
+      "none"
+    ],
     "type": "free"
   },
   "tutanota.com": {
@@ -2753,21 +3002,27 @@
       "tuta.io",
       "keemail.me"
     ],
-    "signup_verification": "none",
+    "signup_verification": [
+      "none"
+    ],
     "type": "free"
   },
   "ubikom.cc": {
     "hosts": [
       "ubikom.cc"
     ],
-    "signup_verification": "none",
+    "signup_verification": [
+      "none"
+    ],
     "type": "free"
   },
   "ukr.net": {
     "hosts": [
       "ukr.net"
     ],
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "vfemail.net": {
@@ -2788,13 +3043,19 @@
       "clovermail.net",
       "chewiemail.com"
     ],
-    "signup_verification": "none",
+    "signup_verification": [
+      "none"
+    ],
     "type": "free"
   },
   "vodafonemail.de": {
     "hosts": [
       "vodafonemail.de",
       "arcor.de"
+    ],
+    "signup_verification": [
+      "email",
+      "mobile"
     ],
     "type": "free"
   },
@@ -2890,14 +3151,18 @@
       "web.de",
       "caramail.com"
     ],
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "xmail.net": {
     "hosts": [
       "xmail.net"
     ],
-    "signup_verification": "none",
+    "signup_verification": [
+      "none"
+    ],
     "type": "free"
   },
   "yahoo.co.jp": {
@@ -2906,7 +3171,9 @@
       "ymail.ne.jp"
     ],
     "remark": "Yahoo Japan Mail. @ymail.ne.jp is a free Yahoo Mail address domain separate from @yahoo.co.jp.",
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "yahoo/aol": {
@@ -2973,7 +3240,9 @@
       "netscape.net",
       "geocities.com"
     ],
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "yandex.ru": {
@@ -2995,7 +3264,9 @@
       "yandex.pl",
       "yandex.ru"
     ],
-    "signup_verification": "mobile",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "zohomail.com": {
@@ -3003,6 +3274,9 @@
       "zohomail.com"
     ],
     "remark": "Zoho personal mail domain.",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   }
 }

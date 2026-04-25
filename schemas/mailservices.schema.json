@@ -22,9 +22,21 @@
           "enum": ["free", "paid", "forwarding"]
         },
         "signup_verification": {
-          "type": "string",
-          "description": "Verification method required during signup",
-          "enum": ["none", "email", "mobile", "payment", "other", "sms", "phone"]
+          "oneOf": [
+            {
+              "type": "string",
+              "description": "Verification method required during signup",
+              "enum": ["none", "email", "mobile", "payment", "other", "sms", "phone"]
+            },
+            {
+              "type": "array",
+              "description": "Verification methods required during signup",
+              "items": {
+                "type": "string",
+                "enum": ["none", "email", "mobile", "payment", "other", "sms", "phone"]
+              }
+            }
+          ]
         },
         "mx_hosts": {
           "type": "array",
@@ -37,6 +49,10 @@
         "remark": {
           "type": "string",
           "description": "Additional notes about the service"
+        },
+        "discontinued": {
+          "type": "boolean",
+          "description": "Whether the email service has been discontinued"
         }
       },
       "required": ["hosts"],
