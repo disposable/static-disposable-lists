@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/disposable/disposable-mail-hosts/schemas/disposable-mail-hosts.schema.json",
+  "$id": "https://disposable.github.io/static-disposable-lists/schemas/disposable-mail-hosts.schema.json",
   "type": "object",
   "description": "Disposable email host definitions with network metadata",
   "patternProperties": {
