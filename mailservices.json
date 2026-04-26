@@ -21,6 +21,17 @@
     ],
     "type": "free"
   },
+  "24-mail.com": {
+    "hosts": [
+      "24-mail.com"
+    ],
+    "remark": "Signup requires alternate email, CAPTCHA, and address fields.",
+    "signup_verification": [
+      "email",
+      "other"
+    ],
+    "type": "free"
+  },
   "2980.com": {
     "hosts": [
       "2980.com"
@@ -57,6 +68,30 @@
       "email"
     ],
     "type": "forwarding"
+  },
+  "atomicmail.io": {
+    "hosts": [
+      "atomicmail.io"
+    ],
+    "mx_hosts": [
+      "mail1.atomicmail.io"
+    ],
+    "remark": "Privacy-focused encrypted email service with free tier. Uses seed phrase for account recovery instead of personal data.",
+    "signup_verification": [
+      "none"
+    ],
+    "type": "free"
+  },
+  "autistici.org": {
+    "hosts": [
+      "autistici.org",
+      "inventati.org"
+    ],
+    "remark": "Free activist mailbox provider; account requests are acceptance/affinity-based rather than automated open registration.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
   },
   "beeble.com": {
     "hosts": [
@@ -175,6 +210,16 @@
     ],
     "type": "free"
   },
+  "dismail.de": {
+    "hosts": [
+      "dismail.de"
+    ],
+    "remark": "Registration requires invite link; email activation is manual/request-based.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "disroot.org": {
     "hosts": [
       "disroot.org"
@@ -209,6 +254,19 @@
     ],
     "signup_verification": [
       "none"
+    ],
+    "type": "free"
+  },
+  "emailn.de": {
+    "hosts": [
+      "emailn.de",
+      "emailn.eu",
+      "emailn.ch",
+      "emailn.at"
+    ],
+    "remark": "Signup requires alternate email for recovery; phone is optional; no CAPTCHA required.",
+    "signup_verification": [
+      "email"
     ],
     "type": "free"
   },
@@ -357,6 +415,19 @@
       "payment"
     ],
     "type": "paid"
+  },
+  "firemail.de": {
+    "hosts": [
+      "firemail.de",
+      "firemail.at",
+      "firemail.eu"
+    ],
+    "remark": "Signup form requires alternate email and CAPTCHA; mobile field appears optional.",
+    "signup_verification": [
+      "email",
+      "other"
+    ],
+    "type": "free"
   },
   "free.fr": {
     "hosts": [
@@ -2197,6 +2268,14 @@
     "hosts": [
       "mailfence.com"
     ],
+    "mx_hosts": [
+      "smtp1.mailfence.com",
+      "smtp2.mailfence.com"
+    ],
+    "remark": "Privacy-focused encrypted email service based in Belgium with OpenPGP support. Offers free tier with 500MB storage.",
+    "signup_verification": [
+      "email"
+    ],
     "type": "free"
   },
   "mailo.com": {
@@ -2241,6 +2320,11 @@
       "mailoo.org",
       "mongenie.com",
       "ntymail.com"
+    ],
+    "remark": "French email service offering free and premium accounts. Signup requires recovery email, personal information (name, DOB), and CAPTCHA verification.",
+    "signup_verification": [
+      "email",
+      "other"
     ],
     "type": "free"
   },
@@ -2721,6 +2805,19 @@
     ],
     "type": "free"
   },
+  "overmail.de": {
+    "hosts": [
+      "overmail.de",
+      "overmail.com",
+      "overmail.eu",
+      "overmail.ch"
+    ],
+    "remark": "Signup form shows free email registration and requires safe code/CAPTCHA; contact email/phone fields are not visibly marked required, but identity/address fields are requested.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "paced.email": {
     "hosts": [
       "paced.email"
@@ -2927,6 +3024,23 @@
     ],
     "type": "paid"
   },
+  "skymail.de": {
+    "hosts": [
+      "skymail.de",
+      "skymail.at",
+      "skymail.eu",
+      "maills.ch",
+      "maills.de",
+      "hemail.de",
+      "maills.net"
+    ],
+    "remark": "Signup page visibly offers skymail.de/skymail.at/skymail.eu; login page also lists maills.ch, maills.de, hemail.de, maills.net. Verify availability before merging.",
+    "signup_verification": [
+      "email",
+      "other"
+    ],
+    "type": "free"
+  },
   "sneakemail.com": {
     "hosts": [
       "sneakemail.com",
@@ -2976,6 +3090,16 @@
     ],
     "type": "paid"
   },
+  "systemli.org": {
+    "hosts": [
+      "systemli.org"
+    ],
+    "remark": "Requires invitation code; every account later receives invite codes.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "t-online.de": {
     "hosts": [
       "t-online.de",
@@ -2983,6 +3107,17 @@
     ],
     "signup_verification": [
       "mobile"
+    ],
+    "type": "free"
+  },
+  "tb9.de": {
+    "discontinued": true,
+    "hosts": [
+      "tb9.de"
+    ],
+    "remark": "German b1gMail-style provider. Signup is not possible due to broken CAPTCHA.",
+    "signup_verification": [
+      "other"
     ],
     "type": "free"
   },
@@ -3049,6 +3184,20 @@
     ],
     "signup_verification": [
       "none"
+    ],
+    "type": "free"
+  },
+  "vivaldi.net": {
+    "hosts": [
+      "vivaldi.net"
+    ],
+    "mx_hosts": [
+      "mxi-1.vivaldi.net",
+      "mxi-2.vivaldi.net"
+    ],
+    "remark": "Free email service for active Vivaldi Community members. Access granted through community reputation system (forum participation, social interactions, etc.) rather than traditional verification.",
+    "signup_verification": [
+      "other"
     ],
     "type": "free"
   },

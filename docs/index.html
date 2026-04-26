@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Disposable Lists - Mail Services Database</title>
+    <style>
+        :root {
+            --bg-color: #f6f8fa;
+            --card-bg: #ffffff;
+            --text-color: #24292f;
+            --text-secondary: #57606a;
+            --border-color: #d0d7de;
+            --accent-color: #0969da;
+            --accent-light: #ddf4ff;
+            --success-color: #1a7f37;
+            --warning-color: #9a6700;
+            --danger-color: #cf222e;
+        }
+        [data-theme="dark"] {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-color: #c9d1d9;
+            --text-secondary: #8b949e;
+            --border-color: #30363d;
+            --accent-color: #58a6ff;
+            --accent-light: #388bfd26;
+            --success-color: #3fb950;
+            --warning-color: #d29922;
+            --danger-color: #f85149;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            padding: 20px 0;
+            background: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 30px;
+        }
+        header h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .stat-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+        .stat-card .number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+        .stat-card .label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+        .section {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+        .section-header {
+            background: var(--accent-light);
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .section-header h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-header h2 .count {
+            background: var(--accent-color);
+            color: white;
+            font-size: 0.8rem;
+            padding: 2px 8px;
+            border-radius: 12px;
+        }
+        .search-box {
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .search-box input {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 0.95rem;
+        }
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px 20px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        th {
+            background: var(--bg-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        td {
+            font-size: 0.95rem;
+        }
+        tr:hover {
+            background: var(--bg-color);
+        }
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .badge-free {
+            background: #dafbe1;
+            color: var(--success-color);
+        }
+        .badge-paid {
+            background: #fff8c5;
+            color: var(--warning-color);
+        }
+        .badge-forwarding {
+            background: var(--accent-light);
+            color: var(--accent-color);
+        }
+        .badge-discontinued {
+            background: #ffebe9;
+            color: var(--danger-color);
+        }
+        .badge-unknown {
+            background: #f6f8fa;
+            color: var(--text-secondary);
+        }
+        [data-theme="dark"] .badge-unknown {
+            background: #21262d;
+        }
+        .theme-toggle {
+            background: var(--accent-light);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 8px 12px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: all 0.2s;
+        }
+        .theme-toggle:hover {
+            background: var(--border-color);
+        }
+        .filter-bar {
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            align-items: center;
+        }
+        .filter-group {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        .filter-group label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+        }
+        .filter-btn {
+            padding: 6px 12px;
+            border: 1px solid var(--border-color);
+            background: var(--card-bg);
+            color: var(--text-color);
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+        .filter-btn:hover {
+            background: var(--bg-color);
+            border-color: var(--accent-color);
+        }
+        .filter-btn.active {
+            background: var(--accent-color);
+            color: white;
+            border-color: var(--accent-color);
+        }
+        .hosts-list {
+            max-width: 300px;
+            font-size: 0.85rem;
+        }
+        .hosts-list .host {
+            display: inline-block;
+            background: var(--bg-color);
+            padding: 2px 6px;
+            margin: 2px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        .hosts-collapsible {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+        .hosts-collapsible.collapsed .host:nth-child(n+11) {
+            display: none;
+        }
+        .hosts-toggle {
+            background: var(--accent-light);
+            border: 1px solid var(--border-color);
+            color: var(--accent-color);
+            padding: 2px 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-top: 4px;
+        }
+        .hosts-toggle:hover {
+            background: var(--accent-color);
+            color: white;
+        }
+        .remark {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            max-width: 300px;
+        }
+        .verification-list {
+            font-size: 0.85rem;
+        }
+        .ip-list, .mx-list {
+            font-family: monospace;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+        .tab-container {
+            display: flex;
+            border-bottom: 1px solid var(--border-color);
+            background: var(--bg-color);
+        }
+        .tab {
+            padding: 12px 20px;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        .tab:hover {
+            background: rgba(9, 105, 218, 0.05);
+        }
+        .tab.active {
+            border-bottom-color: var(--accent-color);
+            color: var(--accent-color);
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-secondary);
+        }
+        .error {
+            background: #ffebe9;
+            border: 1px solid #ffcecb;
+            color: var(--danger-color);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            table {
+                font-size: 0.85rem;
+            }
+            th, td {
+                padding: 8px 12px;
+            }
+            .hosts-list, .remark {
+                max-width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                <div>
+                    <h1>📧 Static Disposable Lists</h1>
+                    <p>A comprehensive database of email services and disposable mail hosts</p>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    🌙
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="loading" class="loading">Loading data...</div>
+        <div id="error" class="error" style="display: none;"></div>
+
+        <div id="content" style="display: none;">
+            <div class="stats-grid" id="stats">
+                <!-- Stats populated by JS -->
+            </div>
+
+            <div class="section">
+                <div class="tab-container">
+                    <div class="tab active" data-tab="mail-services">Mail Services</div>
+                    <div class="tab" data-tab="disposable">Disposable Hosts</div>
+                </div>
+
+                <div id="mail-services" class="tab-content active">
+                    <div class="search-box">
+                        <input type="text" id="mailSearch" placeholder="Search mail services...">
+                    </div>
+                    <div class="filter-bar">
+                        <div class="filter-group">
+                            <label>Type:</label>
+                            <button class="filter-btn active" data-filter="type" data-value="all">All</button>
+                            <button class="filter-btn" data-filter="type" data-value="free">Free</button>
+                            <button class="filter-btn" data-filter="type" data-value="paid">Paid</button>
+                            <button class="filter-btn" data-filter="type" data-value="forwarding">Forwarding</button>
+                            <button class="filter-btn" data-filter="type" data-value="discontinued">Discontinued</button>
+                        </div>
+                        <div class="filter-group">
+                            <label>Verification:</label>
+                            <button class="filter-btn active" data-filter="verify" data-value="all">All</button>
+                            <button class="filter-btn" data-filter="verify" data-value="none">None</button>
+                            <button class="filter-btn" data-filter="verify" data-value="mobile">Mobile</button>
+                            <button class="filter-btn" data-filter="verify" data-value="email">Email</button>
+                            <button class="filter-btn" data-filter="verify" data-value="payment">Payment</button>
+                            <button class="filter-btn" data-filter="verify" data-value="other">Other</button>
+                        </div>
+                    </div>
+                    <div id="mail-services-content">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+
+                <div id="disposable" class="tab-content">
+                    <div class="search-box">
+                        <input type="text" id="disposableSearch" placeholder="Search disposable hosts...">
+                    </div>
+                    <div id="disposable-content">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Data sourced from <a href="https://github.com/disposable/static-disposable-lists">static-disposable-lists</a></p>
+            <p id="last-updated"></p>
+        </div>
+    </footer>
+
+    <script>
+        // Fetch and render data
+        function initTheme() {
+            const saved = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = saved || (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+            updateThemeIcon(theme);
+        }
+
+        function updateThemeIcon(theme) {
+            document.getElementById('theme-toggle').textContent = theme === 'dark' ? '☀️' : '🌙';
+        }
+
+        document.getElementById('theme-toggle').addEventListener('click', () => {
+            const current = document.documentElement.getAttribute('data-theme');
+            const next = current === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+            updateThemeIcon(next);
+        });
+
+        initTheme();
+
+        let currentFilters = { type: 'all', verify: 'all' };
+
+        function applyFilters() {
+            const rows = document.querySelectorAll('.service-row');
+            rows.forEach(row => {
+                const type = row.dataset.type;
+                const verifyList = row.dataset.verify || 'none';
+                const discontinued = row.dataset.discontinued === 'true';
+
+                let typeMatch = currentFilters.type === 'all' ||
+                    (currentFilters.type === 'discontinued' ? discontinued : type === currentFilters.type);
+                let verifyMatch = currentFilters.verify === 'all' ||
+                    (currentFilters.verify === 'none' ? verifyList === 'none' : verifyList.includes(currentFilters.verify));
+
+                row.style.display = (typeMatch && verifyMatch) ? '' : 'none';
+            });
+        }
+
+        function setupFilters() {
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const filterType = btn.dataset.filter;
+                    const value = btn.dataset.value;
+
+                    document.querySelectorAll(`.filter-btn[data-filter="${filterType}"]`).forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    currentFilters[filterType] = value;
+                    applyFilters();
+                });
+            });
+        }
+
+        async function loadData() {
+            try {
+                const [mailservices, disposable] = await Promise.all([
+                    fetch('../mailservices.json').then(r => r.json()),
+                    fetch('../disposable-mail-hosts.json').then(r => r.json())
+                ]);
+
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+
+                renderStats(mailservices, disposable);
+                renderMailServices(mailservices);
+                renderDisposable(disposable);
+
+                setupTabs();
+                setupSearch(mailservices, disposable);
+                setupFilters();
+
+                document.getElementById('last-updated').textContent = 'Last updated: ' + new Date().toLocaleDateString();
+            } catch (err) {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('error').style.display = 'block';
+                document.getElementById('error').textContent = 'Error loading data: ' + err.message;
+            }
+        }
+
+        function renderHostsCollapsible(hosts) {
+            if (hosts.length <= 10) {
+                return hosts.map(h => `<span class="host">${h}</span>`).join('');
+            }
+            const id = 'hosts-' + Math.random().toString(36).substr(2, 9);
+            return `
+                <div class="hosts-collapsible collapsed" id="${id}">
+                    ${hosts.map(h => `<span class="host">${h}</span>`).join('')}
+                </div>
+                <button class="hosts-toggle" onclick="toggleHosts('${id}', this)">
+                    Show all ${hosts.length}
+                </button>
+            `;
+        }
+
+        function toggleHosts(id, btn) {
+            const container = document.getElementById(id);
+            const isCollapsed = container.classList.contains('collapsed');
+            container.classList.toggle('collapsed');
+            btn.textContent = isCollapsed ? 'Show less' : `Show all ${container.querySelectorAll('.host').length}`;
+        }
+
+        function renderStats(mailservices, disposable) {
+            const types = {};
+            let totalDomains = 0;
+            let discontinued = 0;
+
+            for (const [name, data] of Object.entries(mailservices)) {
+                const type = data.type || 'unknown';
+                types[type] = (types[type] || 0) + 1;
+                totalDomains += (data.hosts || []).length;
+                if (data.discontinued) discontinued++;
+            }
+
+            let totalIPs = 0;
+            for (const data of Object.values(disposable)) {
+                totalIPs += (data.ip_addresses || []).length;
+            }
+
+            const stats = [
+                { number: Object.keys(mailservices).length, label: 'Mail Services' },
+                { number: totalDomains, label: 'Total Domains' },
+                { number: Object.keys(disposable).length, label: 'Disposable Hosts' },
+                { number: totalIPs, label: 'IP Addresses' },
+            ];
+
+            if (discontinued > 0) {
+                stats.push({ number: discontinued, label: 'Discontinued' });
+            }
+
+            document.getElementById('stats').innerHTML = stats.map(s => `
+                <div class="stat-card">
+                    <div class="number">${s.number.toLocaleString()}</div>
+                    <div class="label">${s.label}</div>
+                </div>
+            `).join('');
+        }
+
+        function renderMailServices(data) {
+            // Group by type
+            const byType = {};
+            for (const [name, service] of Object.entries(data)) {
+                const type = service.type || 'unknown';
+                if (!byType[type]) byType[type] = [];
+                byType[type].push({ name, ...service });
+            }
+
+            // Sort each group
+            for (const type in byType) {
+                byType[type].sort((a, b) => a.name.localeCompare(b.name));
+            }
+
+            const typeOrder = ['free', 'paid', 'forwarding', 'unknown'];
+            const typeLabels = {
+                free: 'Free Email Services',
+                paid: 'Paid Email Services',
+                forwarding: 'Email Forwarding Services',
+                unknown: 'Other Services'
+            };
+
+            let html = '';
+            for (const type of typeOrder) {
+                if (!byType[type] || byType[type].length === 0) continue;
+
+                html += `
+                    <div class="section-header">
+                        <h2>
+                            ${typeLabels[type]}
+                            <span class="count">${byType[type].length}</span>
+                        </h2>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Service</th>
+                                <th>Domains</th>
+                                <th>Verification</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${byType[type].map(s => `
+                                <tr class="service-row" data-name="${s.name.toLowerCase()}" data-hosts="${(s.hosts || []).join(' ').toLowerCase()}" data-type="${s.type || 'unknown'}" data-verify="${(s.signup_verification || ['none']).join(',')}" data-discontinued="${s.discontinued || false}">
+                                    <td>
+                                        <strong>${s.name}</strong>
+                                        ${s.discontinued ? '<span class="badge badge-discontinued">discontinued</span>' : ''}
+                                        <span class="badge badge-${s.type || 'unknown'}">${s.type || 'unknown'}</span>
+                                    </td>
+                                    <td class="hosts-list">
+                                        ${renderHostsCollapsible(s.hosts || [])}
+                                    </td>
+                                    <td class="verification-list">
+                                        ${(s.signup_verification || []).map(v => `<span class="badge badge-unknown">${v}</span>`).join(' ')}
+                                    </td>
+                                    <td class="remark">${s.remark || ''}</td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                `;
+            }
+
+            document.getElementById('mail-services-content').innerHTML = html;
+        }
+
+        function renderDisposable(data) {
+            const sorted = Object.entries(data).sort((a, b) => a[0].localeCompare(b[0]));
+
+            const html = `
+                <div class="section-header">
+                    <h2>
+                        Disposable Email Hosts
+                        <span class="count">${sorted.length}</span>
+                    </h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Host</th>
+                            <th>IP Addresses</th>
+                            <th>MX Hosts</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${sorted.map(([name, info]) => `
+                            <tr class="disposable-row" data-name="${name.toLowerCase()}">
+                                <td><strong>${name}</strong></td>
+                                <td class="ip-list">
+                                    ${(info.ip_addresses || []).join(', ')}
+                                </td>
+                                <td class="mx-list">
+                                    ${(info.mx_hosts || []).join(', ') || '-'}
+                                </td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            `;
+
+            document.getElementById('disposable-content').innerHTML = html;
+        }
+
+        function setupTabs() {
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const tabId = tab.dataset.tab;
+
+                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
+                    tab.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        }
+
+        function setupSearch(mailservices, disposable) {
+            document.getElementById('mailSearch').addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase();
+                document.querySelectorAll('.service-row').forEach(row => {
+                    const name = row.dataset.name;
+                    const hosts = row.dataset.hosts;
+                    row.style.display = (name.includes(query) || hosts.includes(query)) ? '' : 'none';
+                });
+            });
+
+            document.getElementById('disposableSearch').addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase();
+                document.querySelectorAll('.disposable-row').forEach(row => {
+                    const name = row.dataset.name;
+                    row.style.display = name.includes(query) ? '' : 'none';
+                });
+            });
+        }
+
+        loadData();
+    </script>
+</body>
+</html>
