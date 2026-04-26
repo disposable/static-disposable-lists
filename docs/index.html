@@ -229,11 +229,11 @@
             color: white;
             border-color: var(--accent-color);
         }
-        .hosts-list {
+        .hosts-list, .mx-list {
             max-width: 300px;
             font-size: 0.85rem;
         }
-        .hosts-list .host {
+        .hosts-list .host, .mx-list .host {
             display: inline-block;
             background: var(--bg-color);
             padding: 2px 6px;
@@ -247,6 +247,9 @@
             gap: 4px;
         }
         .hosts-collapsible.collapsed .host:nth-child(n+11) {
+            display: none;
+        }
+        .hosts-collapsible[data-limit="4"].collapsed .host:nth-child(n+5) {
             display: none;
         }
         .hosts-toggle {
@@ -276,6 +279,11 @@
             font-family: monospace;
             font-size: 0.8rem;
             color: var(--text-secondary);
+        }
+        .service-row .mx-list {
+            font-family: inherit;
+            font-size: 0.85rem;
+            color: inherit;
         }
         .tab-container {
             display: flex;
@@ -337,7 +345,7 @@
             th, td {
                 padding: 8px 12px;
             }
-            .hosts-list, .remark {
+            .hosts-list, .mx-list, .remark {
                 max-width: 150px;
             }
         }
@@ -503,13 +511,13 @@
             }
         }
 
-        function renderHostsCollapsible(hosts) {
-            if (hosts.length <= 10) {
+        function renderHostsCollapsible(hosts, limit = 10) {
+            if (hosts.length <= limit) {
                 return hosts.map(h => `<span class="host">${h}</span>`).join('');
             }
             const id = 'hosts-' + Math.random().toString(36).substr(2, 9);
             return `
-                <div class="hosts-collapsible collapsed" id="${id}">
+                <div class="hosts-collapsible collapsed" id="${id}" data-limit="${limit}">
                     ${hosts.map(h => `<span class="host">${h}</span>`).join('')}
                 </div>
                 <button class="hosts-toggle" onclick="toggleHosts('${id}', this)">
@@ -545,8 +553,8 @@
             const stats = [
                 { number: Object.keys(mailservices).length, label: 'Mail Services' },
                 { number: totalDomains, label: 'Total Domains' },
-                { number: Object.keys(disposable).length, label: 'Disposable Hosts' },
-                { number: totalIPs, label: 'IP Addresses' },
+                //{ number: Object.keys(disposable).length, label: 'Disposable Hosts' },
+                //{ number: totalIPs, label: 'IP Addresses' },
             ];
 
             if (discontinued > 0) {
@@ -575,23 +583,25 @@
                 byType[type].sort((a, b) => a.name.localeCompare(b.name));
             }
 
-            const typeOrder = ['free', 'paid', 'forwarding', 'unknown'];
-            const typeLabels = {
-                free: 'Free Email Services',
-                paid: 'Paid Email Services',
-                forwarding: 'Email Forwarding Services',
-                unknown: 'Other Services'
-            };
+            // Merge free + paid into "Email Services"
+            const emailServices = [...(byType['free'] || []), ...(byType['paid'] || [])];
+            emailServices.sort((a, b) => a.name.localeCompare(b.name));
+
+            const sections = [
+                { key: 'email', label: 'Email Services', items: emailServices },
+                { key: 'forwarding', label: 'Email Forwarding Services', items: byType['forwarding'] || [] },
+                { key: 'unknown', label: 'Other Services', items: byType['unknown'] || [] }
+            ];
 
             let html = '';
-            for (const type of typeOrder) {
-                if (!byType[type] || byType[type].length === 0) continue;
+            for (const section of sections) {
+                if (!section.items || section.items.length === 0) continue;
 
                 html += `
                     <div class="section-header">
                         <h2>
-                            ${typeLabels[type]}
-                            <span class="count">${byType[type].length}</span>
+                            ${section.label}
+                            <span class="count">${section.items.length}</span>
                         </h2>
                     </div>
                     <table>
@@ -599,12 +609,13 @@
                             <tr>
                                 <th>Service</th>
                                 <th>Domains</th>
+                                <th>MX Hosts</th>
                                 <th>Verification</th>
                                 <th>Notes</th>
                             </tr>
                         </thead>
                         <tbody>
-                            ${byType[type].map(s => `
+                            ${section.items.map(s => `
                                 <tr class="service-row" data-name="${s.name.toLowerCase()}" data-hosts="${(s.hosts || []).join(' ').toLowerCase()}" data-type="${s.type || 'unknown'}" data-verify="${(s.signup_verification || ['none']).join(',')}" data-discontinued="${s.discontinued || false}">
                                     <td>
                                         <strong>${s.name}</strong>
@@ -613,6 +624,9 @@
                                     </td>
                                     <td class="hosts-list">
                                         ${renderHostsCollapsible(s.hosts || [])}
+                                    </td>
+                                    <td class="mx-list">
+                                        ${s.mx_hosts && s.mx_hosts.length > 0 ? renderHostsCollapsible(s.mx_hosts, 4) : '-'}
                                     </td>
                                     <td class="verification-list">
                                         ${(s.signup_verification || []).map(v => `<span class="badge badge-unknown">${v}</span>`).join(' ')}

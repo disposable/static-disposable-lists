@@ -3,6 +3,11 @@
     "hosts": [
       "139.com"
     ],
+    "mx_hosts": [
+      "mx1.mail.139.com",
+      "mx2.mail.139.com",
+      "mx3.mail.139.com"
+    ],
     "signup_verification": [
       "mobile"
     ],
@@ -16,6 +21,14 @@
       "vip.citiz.net",
       "vnet.citiz.net"
     ],
+    "mx_hosts": [
+      "bent-hw.21cn.net",
+      "mta-189.21cn.com",
+      "mta.21cn.com",
+      "mta.bnet.cn",
+      "mx2-189.21cn.com",
+      "mx3-189.21cn.com"
+    ],
     "signup_verification": [
       "mobile"
     ],
@@ -23,6 +36,9 @@
   },
   "24-mail.com": {
     "hosts": [
+      "24-mail.com"
+    ],
+    "mx_hosts": [
       "24-mail.com"
     ],
     "remark": "Signup requires alternate email, CAPTCHA, and address fields.",
@@ -36,6 +52,9 @@
     "hosts": [
       "2980.com"
     ],
+    "mx_hosts": [
+      "mailmx01.2980.com"
+    ],
     "signup_verification": [
       "mobile"
     ],
@@ -44,6 +63,15 @@
   "33mail.com": {
     "hosts": [
       "33mail.com"
+    ],
+    "mx_hosts": [
+      "alt1.aspmx.l.google.com",
+      "alt2.aspmx.l.google.com",
+      "aspmx.l.google.com",
+      "aspmx2.googlemail.com",
+      "aspmx3.googlemail.com",
+      "aspmx4.googlemail.com",
+      "aspmx5.googlemail.com"
     ],
     "signup_verification": [
       "none"
@@ -54,6 +82,10 @@
     "hosts": [
       "abv.bg"
     ],
+    "mx_hosts": [
+      "pmx.abv.bg",
+      "smx.abv.bg"
+    ],
     "signup_verification": [
       "mobile"
     ],
@@ -63,6 +95,10 @@
     "hosts": [
       "anonaddy.com",
       "anonaddy.me"
+    ],
+    "mx_hosts": [
+      "mail.anonaddy.me",
+      "mail2.anonaddy.me"
     ],
     "signup_verification": [
       "email"
@@ -87,6 +123,11 @@
       "autistici.org",
       "inventati.org"
     ],
+    "mx_hosts": [
+      "mx1.investici.org",
+      "mx2.investici.org",
+      "mx3.investici.org"
+    ],
     "remark": "Free activist mailbox provider; account requests are acceptance/affinity-based rather than automated open registration.",
     "signup_verification": [
       "other"
@@ -97,6 +138,9 @@
     "hosts": [
       "beeble.com"
     ],
+    "mx_hosts": [
+      "m1c2.beeble.com"
+    ],
     "signup_verification": [
       "none"
     ],
@@ -105,6 +149,10 @@
   "bluewin.ch": {
     "hosts": [
       "bluewin.ch"
+    ],
+    "mx_hosts": [
+      "mx01.p.bluenet.ch",
+      "mx02.p.bluenet.ch"
     ],
     "signup_verification": [
       "mobile"
@@ -115,11 +163,17 @@
     "hosts": [
       "btinternet.com"
     ],
+    "mx_hosts": [
+      "mx.bt.prod.cloud.openwave.ai"
+    ],
     "type": "paid"
   },
   "c2.hu": {
     "hosts": [
       "c2.hu"
+    ],
+    "mx_hosts": [
+      "mail.c2.hu"
     ],
     "remark": "signup only possible from hungary IP",
     "signup_verification": [
@@ -133,6 +187,20 @@
       "atlas.cz",
       "volny.cz"
     ],
+    "mx_hosts": [
+      "atlas-cz-10mx1.eco-mx.cz",
+      "atlas-cz-10mx2.eco-mx.cz",
+      "atlas-cz-20mx1.eco-mx.cz",
+      "atlas-cz-20mx2.eco-mx.cz",
+      "centrum-cz-10mx1.eco-mx.cz",
+      "centrum-cz-10mx2.eco-mx.cz",
+      "centrum-cz-20mx1.eco-mx.cz",
+      "centrum-cz-20mx2.eco-mx.cz",
+      "volny-cz-10mx1.eco-mx.cz",
+      "volny-cz-10mx2.eco-mx.cz",
+      "volny-cz-20mx1.eco-mx.cz",
+      "volny-cz-20mx2.eco-mx.cz"
+    ],
     "remark": "Czech Centrum/Atlas/Volny freemail family.",
     "signup_verification": [
       "mobile"
@@ -144,6 +212,12 @@
       "centrum.sk",
       "atlas.sk",
       "pobox.sk"
+    ],
+    "mx_hosts": [
+      "nm-sk-10mx1.eco-mx.cz",
+      "nm-sk-10mx2.eco-mx.cz",
+      "nm-sk-20mx1.eco-mx.cz",
+      "nm-sk-20mx2.eco-mx.cz"
     ],
     "remark": "Slovak Centrum/Atlas/Pobox freemail family.",
     "signup_verification": [
@@ -183,6 +257,13 @@
       "wants.dicksinhisan.us",
       "wants.dicksinmyan.us"
     ],
+    "mx_hosts": [
+      "8chan.co",
+      "mx1.cock.li",
+      "mx1.improvmx.com",
+      "mx2.cock.li",
+      "mx2.improvmx.com"
+    ],
     "signup_verification": [
       "none"
     ],
@@ -192,6 +273,9 @@
     "hosts": [
       "countermail.com",
       "cmail.nu"
+    ],
+    "mx_hosts": [
+      "db1.countermail.com"
     ],
     "signup_verification": [
       "payment"
@@ -205,6 +289,22 @@
       "kakao.com",
       "naver.com"
     ],
+    "mx_hosts": [
+      "mx1.hanmail.net",
+      "mx1.kakao.com",
+      "mx1.naver.com",
+      "mx2.hanmail.net",
+      "mx2.kakao.com",
+      "mx2.naver.com",
+      "mx3.hanmail.net",
+      "mx3.kakao.com",
+      "mx3.naver.com",
+      "mx4.hanmail.net",
+      "mx4.kakao.com",
+      "mx4.mail.naver.com",
+      "mx5.mail.naver.com",
+      "mx6.mail.naver.com"
+    ],
     "signup_verification": [
       "mobile"
     ],
@@ -213,6 +313,10 @@
   "dismail.de": {
     "hosts": [
       "dismail.de"
+    ],
+    "mx_hosts": [
+      "mx1.dismail.de",
+      "mx2.dismail.de"
     ],
     "remark": "Registration requires invite link; email activation is manual/request-based.",
     "signup_verification": [
@@ -224,6 +328,9 @@
     "hosts": [
       "disroot.org"
     ],
+    "mx_hosts": [
+      "disroot.org"
+    ],
     "signup_verification": [
       "other"
     ],
@@ -232,6 +339,9 @@
   "duck.com": {
     "hosts": [
       "duck.com"
+    ],
+    "mx_hosts": [
+      "smtp-inbound1.duck.com"
     ],
     "signup_verification": [
       "email"
@@ -252,6 +362,9 @@
       "eclipsomail.de",
       "eclipsomail.com"
     ],
+    "mx_hosts": [
+      "mail.eclipso.de"
+    ],
     "signup_verification": [
       "none"
     ],
@@ -263,6 +376,9 @@
       "emailn.eu",
       "emailn.ch",
       "emailn.at"
+    ],
+    "mx_hosts": [
+      "mx1.emailn.de"
     ],
     "remark": "Signup requires alternate email for recovery; phone is optional; no CAPTCHA required.",
     "signup_verification": [
@@ -409,7 +525,8 @@
     ],
     "mx_hosts": [
       "in1-smtp.messagingengine.com",
-      "in2-smtp.messagingengine.com"
+      "in2-smtp.messagingengine.com",
+      "mail.b-io.co"
     ],
     "signup_verification": [
       "payment"
@@ -421,6 +538,9 @@
       "firemail.de",
       "firemail.at",
       "firemail.eu"
+    ],
+    "mx_hosts": [
+      "mx1.firemail.de"
     ],
     "remark": "Signup form requires alternate email and CAPTCHA; mobile field appears optional.",
     "signup_verification": [
@@ -434,12 +554,19 @@
       "free.fr",
       "chez.com"
     ],
+    "mx_hosts": [
+      "mx1.free.fr",
+      "mx2.free.fr"
+    ],
     "type": "paid"
   },
   "freemail.hu": {
     "hosts": [
       "freemail.hu",
       "freemail.c3.hu"
+    ],
+    "mx_hosts": [
+      "fmx.freemail.hu"
     ],
     "signup_verification": [
       "mobile"
@@ -449,6 +576,9 @@
   "freenet.de": {
     "hosts": [
       "freenet.de"
+    ],
+    "mx_hosts": [
+      "mx.freenet.de"
     ],
     "signup_verification": [
       "mobile"
@@ -481,6 +611,12 @@
       "ukcool.com",
       "x5g.com"
     ],
+    "mx_hosts": [
+      "mx2.freeola.com",
+      "mx3.freeola.com",
+      "mx4.freeola.com",
+      "mx5.freeola.com"
+    ],
     "signup_verification": [
       "mobile"
     ],
@@ -491,6 +627,13 @@
       "gmail.com",
       "googlemail.com"
     ],
+    "mx_hosts": [
+      "alt1.gmail-smtp-in.l.google.com",
+      "alt2.gmail-smtp-in.l.google.com",
+      "alt3.gmail-smtp-in.l.google.com",
+      "alt4.gmail-smtp-in.l.google.com",
+      "gmail-smtp-in.l.google.com"
+    ],
     "signup_verification": [
       "mobile"
     ],
@@ -500,6 +643,10 @@
     "hosts": [
       "hey.com",
       "emailit.com"
+    ],
+    "mx_hosts": [
+      "home-mx.app.hey.com",
+      "work-mx.app.hey.com"
     ],
     "signup_verification": [
       "payment"
@@ -514,6 +661,10 @@
       "hushmail.me",
       "mac.hush.com"
     ],
+    "mx_hosts": [
+      "plsmtp1.hushmail.com",
+      "plsmtp2.hushmail.com"
+    ],
     "signup_verification": [
       "payment"
     ],
@@ -522,6 +673,11 @@
   "i.ua": {
     "hosts": [
       "i.ua"
+    ],
+    "mx_hosts": [
+      "mx11.i.ua",
+      "mx2.i.ua",
+      "mx3.i.ua"
     ],
     "signup_verification": [
       "mobile"
@@ -533,6 +689,9 @@
       "ik.me",
       "ikmail.com",
       "etik.com"
+    ],
+    "mx_hosts": [
+      "mta-gw.infomaniak.ch"
     ],
     "remark": "Infomaniak free email domains.",
     "signup_verification": [
@@ -591,6 +750,11 @@
       "homemail.co.za",
       "magicmail.co.za"
     ],
+    "mx_hosts": [
+      "inmail1.index.hu",
+      "mail.index.hu",
+      "mx.dka.mailcore.net"
+    ],
     "signup_verification": [
       "payment"
     ],
@@ -604,6 +768,11 @@
       "inbox.la",
       "mail.ee"
     ],
+    "mx_hosts": [
+      "mx-in.inbox.eu",
+      "mx1.inbox.lv",
+      "mx2.inbox.lv"
+    ],
     "signup_verification": [
       "mobile"
     ],
@@ -616,6 +785,9 @@
       "vipmail.hu",
       "webmail.hu"
     ],
+    "mx_hosts": [
+      "mx.dka.mailcore.net"
+    ],
     "remark": "no signup possible since 2024",
     "signup_verification": [
       "none"
@@ -625,6 +797,9 @@
   "inleed.com": {
     "hosts": [
       "inleed.xyz"
+    ],
+    "mx_hosts": [
+      "mail.inleed.xyz"
     ],
     "signup_verification": [
       "other"
@@ -645,6 +820,9 @@
       "pacz.to",
       "ogarnij.se"
     ],
+    "mx_hosts": [
+      "mx.interia.pl"
+    ],
     "remark": "Poczta Interia domains. The wildcard *.hub.pl is documented by Interia but omitted here because it is not a concrete hostname.",
     "signup_verification": [
       "mobile"
@@ -654,6 +832,9 @@
   "iol.it": {
     "hosts": [
       "iol.it"
+    ],
+    "mx_hosts": [
+      "smtp-in.iol.it"
     ],
     "signup_verification": [
       "payment"
@@ -665,6 +846,9 @@
       "kpnmail.nl",
       "freeler.nl"
     ],
+    "mx_hosts": [
+      "mx.kpnmail.nl"
+    ],
     "signup_verification": [
       "payment"
     ],
@@ -673,6 +857,9 @@
   "laposte.net": {
     "hosts": [
       "laposte.net"
+    ],
+    "mx_hosts": [
+      "smtpz4.laposte.net"
     ],
     "signup_verification": [
       "other"
@@ -684,6 +871,11 @@
       "libero.it",
       "blu.it",
       "virgilio.it"
+    ],
+    "mx_hosts": [
+      "smtp-in.blu.it",
+      "smtp-in.libero.it",
+      "smtp-in.virgilio.it"
     ],
     "signup_verification": [
       "mobile"
@@ -701,6 +893,9 @@
       "lycos.nl",
       "lycos.com"
     ],
+    "mx_hosts": [
+      "mx.lycos.com.cust.b.hostedemail.com"
+    ],
     "remark": "Email services discontinued.",
     "signup_verification": [
       "none"
@@ -710,6 +905,10 @@
   "mail.bg": {
     "hosts": [
       "mail.bg"
+    ],
+    "mx_hosts": [
+      "mx2.mail.bg",
+      "mx3.mail.bg"
     ],
     "remark": "Mail.bg free Bulgarian mailbox provider.",
     "signup_verification": [
@@ -911,6 +1110,11 @@
       "workmail.com",
       "writeme.com"
     ],
+    "mx_hosts": [
+      "instruction.com",
+      "mx00.mail.com",
+      "mx01.mail.com"
+    ],
     "signup_verification": [
       "mobile"
     ],
@@ -924,6 +1128,10 @@
       "mail.uk",
       "mail.co.uk"
     ],
+    "mx_hosts": [
+      "mx01.mail.de",
+      "mx02.mail.de"
+    ],
     "remark": "mail.de FreeMail provider and related country domains.",
     "signup_verification": [
       "mobile"
@@ -933,6 +1141,9 @@
   "mail.io": {
     "hosts": [
       "mail.io"
+    ],
+    "mx_hosts": [
+      "inbound-smtp.us-west-2.amazonaws.com"
     ],
     "signup_verification": [
       "none"
@@ -950,6 +1161,12 @@
       "edu.mail.kz",
       "med.mail.kz",
       "gov.mail.kz"
+    ],
+    "mx_hosts": [
+      "mail.el.kz",
+      "mgw.gov.kz",
+      "post.mail.kz",
+      "post.mailto.kz"
     ],
     "remark": "Mail.KZ mailbox domains shown in the current login/registration UI. Some domains are organization-specific, especially edu/gov/med.",
     "signup_verification": [
@@ -982,6 +1199,21 @@
       "supermail.ru",
       "vipmail.ru",
       "zmail.ru"
+    ],
+    "mx_hosts": [
+      "e-mail.ru",
+      "e.nm.ru",
+      "emx.mail.ru",
+      "mail.email.ru",
+      "mx01.nicmail.ru",
+      "mx02.nicmail.ru",
+      "mx03.nicmail.ru",
+      "mx1.timeweb.ru",
+      "mx2.timeweb.ru",
+      "mx30.aha.ru",
+      "mxs.mail.ru",
+      "newmail.ru",
+      "supermail.ru"
     ],
     "signup_verification": [
       "mobile"
@@ -2240,6 +2472,17 @@
       "mail2diana.com",
       "mail2life.com"
     ],
+    "mx_hosts": [
+      "fallbackmx.spamesxperts.eu",
+      "lastmx.spamexperts.net",
+      "mx.spamexperts.com",
+      "mx1.spray.mail2world.com",
+      "mx2.spray.mail2world.com",
+      "mx3.spray.mail2world.com",
+      "publicms1.mail2world.com",
+      "publicms2.mail2world.com",
+      "publicms3.mail2world.com"
+    ],
     "signup_verification": [
       "mobile"
     ],
@@ -2248,6 +2491,9 @@
   "mailbox.hu": {
     "hosts": [
       "mailbox.hu"
+    ],
+    "mx_hosts": [
+      "mail.mailbox.hu"
     ],
     "signup_verification": [
       "email"
@@ -2258,6 +2504,14 @@
     "hosts": [
       "mailbox.org",
       "secure.mailbox.org"
+    ],
+    "mx_hosts": [
+      "mx-n.mailbox.org",
+      "mx1.mailbox.org",
+      "mx2.mailbox.org",
+      "mx3.mailbox.org",
+      "mxtls1.mailbox.org",
+      "mxtls2.mailbox.org"
     ],
     "signup_verification": [
       "payment"
@@ -2321,6 +2575,11 @@
       "mongenie.com",
       "ntymail.com"
     ],
+    "mx_hosts": [
+      "mongeniemx.mailobj.net",
+      "mx-domain.netcourrier.com",
+      "mx.mailo.com"
+    ],
     "remark": "French email service offering free and premium accounts. Signup requires recovery email, personal information (name, DOB), and CAPTCHA verification.",
     "signup_verification": [
       "email",
@@ -2333,6 +2592,11 @@
       "icloud.com",
       "mac.com",
       "me.com"
+    ],
+    "mx_hosts": [
+      "mx01.mail.icloud.com",
+      "mx02.mail.icloud.com",
+      "mx3.mail.icloud.com"
     ],
     "signup_verification": [
       "mobile"
@@ -2618,10 +2882,54 @@
       "it.de"
     ],
     "mx_hosts": [
+      "",
+      "abimail.com",
+      "actimail.com",
+      "alemail.com",
+      "bossmail.net",
+      "cubemail.com",
+      "dadmail.com",
+      "direct-mail.com",
+      "eforward1.registrar-servers.com",
+      "eforward2.registrar-servers.com",
+      "eforward3.registrar-servers.com",
+      "eforward4.registrar-servers.com",
+      "eforward5.registrar-servers.com",
+      "emailetiquette.com",
+      "emailhawaii.com",
+      "emailprime.com",
+      "frankenmail.com",
+      "fwd1.porkbun.com",
+      "fwd2.porkbun.com",
+      "greatemail.com",
+      "hallomail.com",
+      "ilovemail.com",
+      "lewismail.com",
+      "libertyemail.com",
+      "localhost",
+      "mail.likemail.com",
+      "mail.mailro.com",
+      "mail.nortonemail.com",
+      "mailaustria.com",
+      "mailboxus.com",
+      "mailler.com",
+      "mailnames.com",
+      "mailoffice.net",
+      "mx01.memail-dns.com",
       "mx01.memail.com",
       "mx02.memail.com",
       "mx03.memail.com",
-      "mx04.memail.com"
+      "mx04.memail.com",
+      "oromail.com",
+      "paxemail.com",
+      "privateemail.net",
+      "route1.mx.cloudflare.net",
+      "route2.mx.cloudflare.net",
+      "route3.mx.cloudflare.net",
+      "routemail.com",
+      "salesemail.com",
+      "schoolemail.com",
+      "worldemail.net"
     ],
     "signup_verification": [
       "payment"
@@ -2631,6 +2939,10 @@
   "meta.ua": {
     "hosts": [
       "meta.ua"
+    ],
+    "mx_hosts": [
+      "mxs2.meta.ua",
+      "mxs3.meta.ua"
     ],
     "remark": "META.ua free Ukrainian mailbox provider.",
     "signup_verification": [
@@ -2642,6 +2954,9 @@
     "hosts": [
       "mozmail.com"
     ],
+    "mx_hosts": [
+      "inbound-smtp.us-west-2.amazonaws.com"
+    ],
     "signup_verification": [
       "email"
     ],
@@ -2652,6 +2967,9 @@
       "murena.io",
       "e.email"
     ],
+    "mx_hosts": [
+      "mail.ecloud.global"
+    ],
     "signup_verification": [
       "email"
     ],
@@ -2661,6 +2979,7 @@
     "hosts": [
       "my.id"
     ],
+    "mx_hosts": [],
     "signup_verification": [
       "mobile"
     ],
@@ -2670,6 +2989,10 @@
     "hosts": [
       "nate.com",
       "empas.com"
+    ],
+    "mx_hosts": [
+      "mx1.empal.com",
+      "mx1.nate.com"
     ],
     "remark": "Nate Mail. empas.com is supported as a legacy login/email domain according to Nate Mail login help.",
     "signup_verification": [
@@ -2687,6 +3010,23 @@
       "renren.com",
       "pmail.net"
     ],
+    "mx_hosts": [
+      "126mx00.mxmail.netease.com",
+      "126mx01.mxmail.netease.com",
+      "126mx02.mxmail.netease.com",
+      "126mx03.mxmail.netease.com",
+      "163mx00.mxmail.netease.com",
+      "163mx01.mxmail.netease.com",
+      "163mx02.mxmail.netease.com",
+      "163mx03.mxmail.netease.com",
+      "188mx00.mxmail.netease.com",
+      "188mx01.mxmail.netease.com",
+      "hzmx01.mxmail.netease.com",
+      "hzmx02.mxmail.netease.com",
+      "tommx.tom.com",
+      "yeahmx00.mxmail.netease.com",
+      "yeahmx01.mxmail.netease.com"
+    ],
     "signup_verification": [
       "none"
     ],
@@ -2699,6 +3039,11 @@
       "tlen.pl",
       "go2.pl",
       "prokonto.pl"
+    ],
+    "mx_hosts": [
+      "mx.tlen.pl",
+      "mx.wp.pl",
+      "mx5.wp.pl"
     ],
     "signup_verification": [
       "mobile"
@@ -2720,6 +3065,9 @@
       "amorki.pl",
       "opoczta.pl"
     ],
+    "mx_hosts": [
+      "mx.poczta.onet.pl"
+    ],
     "signup_verification": [
       "mobile"
     ],
@@ -2729,6 +3077,10 @@
     "hosts": [
       "orange.fr",
       "wanadoo.fr"
+    ],
+    "mx_hosts": [
+      "smtp-in.orange.fr",
+      "smtp-in2.orange.fr"
     ],
     "type": "paid"
   },
@@ -2800,6 +3152,16 @@
       "outlook.sk",
       "windowslive.com"
     ],
+    "mx_hosts": [
+      "apc.olc.protection.outlook.com",
+      "eur.olc.protection.outlook.com",
+      "hotmail-com.olc.protection.outlook.com",
+      "live-com.olc.protection.outlook.com",
+      "msn-com.olc.protection.outlook.com",
+      "nam.olc.protection.outlook.com",
+      "outlook-com.olc.protection.outlook.com",
+      "outlook-cz.d-v1.mx.microsoft"
+    ],
     "signup_verification": [
       "none"
     ],
@@ -2812,6 +3174,11 @@
       "overmail.eu",
       "overmail.ch"
     ],
+    "mx_hosts": [
+      "mail.aikq.de",
+      "mail.overmail.de",
+      "mx1.aikq.de"
+    ],
     "remark": "Signup form shows free email registration and requires safe code/CAPTCHA; contact email/phone fields are not visibly marked required, but identity/address fields are requested.",
     "signup_verification": [
       "other"
@@ -2822,6 +3189,10 @@
     "hosts": [
       "paced.email"
     ],
+    "mx_hosts": [
+      "fb.mail.gandi.net",
+      "spool.mail.gandi.net"
+    ],
     "signup_verification": [
       "email"
     ],
@@ -2831,6 +3202,10 @@
     "hosts": [
       "ploud.fr"
     ],
+    "mx_hosts": [
+      "mxn1.psiade.com",
+      "mxn2.psiade.com"
+    ],
     "signup_verification": [
       "email"
     ],
@@ -2839,6 +3214,11 @@
   "posteo.de": {
     "hosts": [
       "posteo.de"
+    ],
+    "mx_hosts": [
+      "mx01.posteo.de",
+      "mx02.posteo.de",
+      "mx03.posteo.de"
     ],
     "signup_verification": [
       "payment"
@@ -2851,6 +3231,10 @@
       "protonmail.ch",
       "protonmail.com",
       "pm.me"
+    ],
+    "mx_hosts": [
+      "mail.protonmail.ch",
+      "mailsec.protonmail.ch"
     ],
     "signup_verification": [
       "email"
@@ -2866,6 +3250,13 @@
       "qq.com",
       "vip.qq.com"
     ],
+    "mx_hosts": [
+      "mx1.qq.com",
+      "mx2.qq.com",
+      "mx3.qq.com",
+      "mxbiz1.qq.com",
+      "mxbiz2.qq.com"
+    ],
     "signup_verification": [
       "mobile"
     ],
@@ -2879,6 +3270,9 @@
       "rambler.ru",
       "ro.ru"
     ],
+    "mx_hosts": [
+      "inmx.rambler.ru"
+    ],
     "signup_verification": [
       "mobile"
     ],
@@ -2890,6 +3284,10 @@
       "rediffmail.com",
       "rediffmailpro.com"
     ],
+    "mx_hosts": [
+      "mx.pro.rediff.akadns.net",
+      "mx.rediffmail.rediff.akadns.net"
+    ],
     "signup_verification": [
       "mobile"
     ],
@@ -2898,6 +3296,9 @@
   "riseup.net": {
     "hosts": [
       "riseup.net"
+    ],
+    "mx_hosts": [
+      "mx1.riseup.net"
     ],
     "remark": "signup only possible via invitation",
     "signup_verification": [
@@ -2945,6 +3346,10 @@
       "runbox7.com",
       "xobnur.uk"
     ],
+    "mx_hosts": [
+      "mail.eye-mail.net",
+      "mx.runbox.com"
+    ],
     "signup_verification": [
       "payment"
     ],
@@ -2953,6 +3358,9 @@
   "sapo.pt": {
     "hosts": [
       "sapo.pt"
+    ],
+    "mx_hosts": [
+      "mx.sapo.pt"
     ],
     "signup_verification": [
       "mobile"
@@ -2965,6 +3373,10 @@
       "email.cz",
       "post.cz"
     ],
+    "mx_hosts": [
+      "mx1.seznam.cz",
+      "mx2.seznam.cz"
+    ],
     "signup_verification": [
       "mobile"
     ],
@@ -2973,6 +3385,9 @@
   "sibnet.ru": {
     "hosts": [
       "sibnet.ru"
+    ],
+    "mx_hosts": [
+      "mx.sibnet.ru"
     ],
     "signup_verification": [
       "email",
@@ -2997,6 +3412,10 @@
       "simplelogin.co",
       "simplelogin.io"
     ],
+    "mx_hosts": [
+      "mx1.simplelogin.co",
+      "mx2.simplelogin.co"
+    ],
     "signup_verification": [
       "email"
     ],
@@ -3009,6 +3428,15 @@
       "sina.cn",
       "vip.sina.com"
     ],
+    "mx_hosts": [
+      "freemx1.sinamail.sina.com.cn",
+      "freemx2.sinamail.sina.com.cn",
+      "freemx3.sinamail.sina.com.cn",
+      "mx1.vip.sina.com",
+      "mx2.vip.sina.com",
+      "mx3.vip.sina.com",
+      "sinamx.vip.sina.com"
+    ],
     "signup_verification": [
       "mobile"
     ],
@@ -3016,6 +3444,9 @@
   },
   "skiff.com": {
     "hosts": [
+      "skiff.com"
+    ],
+    "mx_hosts": [
       "skiff.com"
     ],
     "remark": "Skiff Mail was sunset on 2024-08-09; automatic forwarding continued only until 2025-02-09.",
@@ -3034,6 +3465,9 @@
       "hemail.de",
       "maills.net"
     ],
+    "mx_hosts": [
+      "mx1.skymail.de"
+    ],
     "remark": "Signup page visibly offers skymail.de/skymail.at/skymail.eu; login page also lists maills.ch, maills.de, hemail.de, maills.net. Verify availability before merging.",
     "signup_verification": [
       "email",
@@ -3048,12 +3482,20 @@
       "snkml.com",
       "liamekaens.com"
     ],
+    "mx_hosts": [
+      "mail.sneakemail.com"
+    ],
     "remark": "Account creation is currently disabled",
     "type": "forwarding"
   },
   "sohu.com": {
     "hosts": [
       "sohu.com"
+    ],
+    "mx_hosts": [
+      "sohumx.h.a.sohu.com",
+      "sohumx1.sohu.com",
+      "sohumx2.sohu.com"
     ],
     "signup_verification": [
       "mobile"
@@ -3075,6 +3517,9 @@
       "spameater.org",
       "xoxy.net"
     ],
+    "mx_hosts": [
+      "gourmet7.spamgourmet.com"
+    ],
     "signup_verification": [
       "email"
     ],
@@ -3085,6 +3530,12 @@
       "startmail.com",
       "use.startmail.com"
     ],
+    "mx_hosts": [
+      "mx1.startmail.com",
+      "mx2.startmail.com",
+      "mx3.startmail.com",
+      "mx4.startmail.com"
+    ],
     "signup_verification": [
       "payment"
     ],
@@ -3093,6 +3544,9 @@
   "systemli.org": {
     "hosts": [
       "systemli.org"
+    ],
+    "mx_hosts": [
+      "mail.systemli.org"
     ],
     "remark": "Requires invitation code; every account later receives invite codes.",
     "signup_verification": [
@@ -3105,6 +3559,16 @@
       "t-online.de",
       "magenta.de"
     ],
+    "mx_hosts": [
+      "mx00.magenta.de",
+      "mx00.t-online.de",
+      "mx01.magenta.de",
+      "mx01.t-online.de",
+      "mx02.magenta.de",
+      "mx02.t-online.de",
+      "mx03.magenta.de",
+      "mx03.t-online.de"
+    ],
     "signup_verification": [
       "mobile"
     ],
@@ -3114,6 +3578,9 @@
     "discontinued": true,
     "hosts": [
       "tb9.de"
+    ],
+    "mx_hosts": [
+      "w01f166d.kasserver.com"
     ],
     "remark": "German b1gMail-style provider. Signup is not possible due to broken CAPTCHA.",
     "signup_verification": [
@@ -3125,6 +3592,13 @@
     "discontinued": true,
     "hosts": [
       "tiscali.it"
+    ],
+    "mx_hosts": [
+      "etb-1.mail.tiscali.it",
+      "etb-2.mail.tiscali.it",
+      "etb-3.mail.tiscali.it",
+      "etb-4.mail.tiscali.it",
+      "imp-5.mail.tiscali.it"
     ],
     "remark": "no signup possible since 2020",
     "signup_verification": [
@@ -3141,6 +3615,9 @@
       "tuta.io",
       "keemail.me"
     ],
+    "mx_hosts": [
+      "mail.tutanota.de"
+    ],
     "signup_verification": [
       "none"
     ],
@@ -3150,6 +3627,9 @@
     "hosts": [
       "ubikom.cc"
     ],
+    "mx_hosts": [
+      "mail.ubikom.cc"
+    ],
     "signup_verification": [
       "none"
     ],
@@ -3158,6 +3638,9 @@
   "ukr.net": {
     "hosts": [
       "ukr.net"
+    ],
+    "mx_hosts": [
+      "mxs.ukr.net"
     ],
     "signup_verification": [
       "mobile"
@@ -3182,6 +3665,11 @@
       "clovermail.net",
       "chewiemail.com"
     ],
+    "mx_hosts": [
+      "mx1.vfemail.net",
+      "mx2.vfemail.net",
+      "mx3.vfemail.net"
+    ],
     "signup_verification": [
       "none"
     ],
@@ -3205,6 +3693,10 @@
     "hosts": [
       "vodafonemail.de",
       "arcor.de"
+    ],
+    "mx_hosts": [
+      "mx3.vodafonemail.de",
+      "mx5.vodafonemail.de"
     ],
     "signup_verification": [
       "mobile"
@@ -3303,6 +3795,17 @@
       "web.de",
       "caramail.com"
     ],
+    "mx_hosts": [
+      "mx-ha01.web.de",
+      "mx-ha02.web.de",
+      "mx-ha03.web.de",
+      "mx00.caramail.com",
+      "mx00.emig.gmx.net",
+      "mx00.gmx.net",
+      "mx01.caramail.com",
+      "mx01.emig.gmx.net",
+      "mx01.gmx.net"
+    ],
     "signup_verification": [
       "mobile"
     ],
@@ -3311,6 +3814,9 @@
   "xmail.net": {
     "hosts": [
       "xmail.net"
+    ],
+    "mx_hosts": [
+      "mail.xmail.net"
     ],
     "signup_verification": [
       "none"
@@ -3321,6 +3827,13 @@
     "hosts": [
       "yahoo.co.jp",
       "ymail.ne.jp"
+    ],
+    "mx_hosts": [
+      "mx1.mail.yahoo.co.jp",
+      "mx2.mail.yahoo.co.jp",
+      "mx3.mail.yahoo.co.jp",
+      "mx5.mail.yahoo.co.jp",
+      "zmx1.mail.yahoo.co.jp"
     ],
     "remark": "Yahoo Japan Mail. @ymail.ne.jp is a free Yahoo Mail address domain separate from @yahoo.co.jp.",
     "signup_verification": [
@@ -3392,6 +3905,16 @@
       "netscape.net",
       "geocities.com"
     ],
+    "mx_hosts": [
+      "mta5.am0.yahoodns.net",
+      "mta6.am0.yahoodns.net",
+      "mta7.am0.yahoodns.net",
+      "mx-aol.mail.gm0.yahoodns.net",
+      "mx-apac.mail.gm0.yahoodns.net",
+      "mx-biz.mail.am0.yahoodns.net",
+      "mx-eu.mail.am0.yahoodns.net",
+      "mx-tw.mail.gm0.yahoodns.net"
+    ],
     "signup_verification": [
       "mobile"
     ],
@@ -3416,6 +3939,9 @@
       "yandex.pl",
       "yandex.ru"
     ],
+    "mx_hosts": [
+      "mx.yandex.ru"
+    ],
     "signup_verification": [
       "mobile"
     ],
@@ -3424,6 +3950,11 @@
   "zohomail.com": {
     "hosts": [
       "zohomail.com"
+    ],
+    "mx_hosts": [
+      "smtpin.zoho.com",
+      "smtpin2.zoho.com",
+      "smtpin3.zoho.com"
     ],
     "remark": "Zoho personal mail domain.",
     "signup_verification": [
