@@ -26,7 +26,7 @@
             {
               "type": "string",
               "description": "Verification method required during signup",
-              "enum": ["none", "email", "mobile", "payment", "other", "sms", "phone"]
+              "enum": ["none", "email", "mobile", "payment", "other", "phone"]
             },
             {
               "type": "array",

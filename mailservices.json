@@ -551,12 +551,12 @@
     ],
     "type": "free"
   },
-  "inleed.xyz": {
+  "inleed.com": {
     "hosts": [
       "inleed.xyz"
     ],
     "signup_verification": [
-      "email"
+      "other"
     ],
     "type": "free"
   },
@@ -2617,7 +2617,7 @@
       "prokonto.pl"
     ],
     "signup_verification": [
-      "email"
+      "mobile"
     ],
     "type": "free"
   },
@@ -2637,7 +2637,7 @@
       "opoczta.pl"
     ],
     "signup_verification": [
-      "phone"
+      "mobile"
     ],
     "type": "free"
   },
@@ -2878,7 +2878,8 @@
       "sibnet.ru"
     ],
     "signup_verification": [
-      "email"
+      "email",
+      "other"
     ],
     "type": "free"
   },
@@ -2980,6 +2981,9 @@
       "t-online.de",
       "magenta.de"
     ],
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "free"
   },
   "tiscali.it": {
@@ -3054,7 +3058,6 @@
       "arcor.de"
     ],
     "signup_verification": [
-      "email",
       "mobile"
     ],
     "type": "free"
