@@ -228,7 +228,6 @@
   "cock.li": {
     "hosts": [
       "420blaze.it",
-      "8chan.co",
       "aaathats3as.com",
       "airmail.cc",
       "cocaine.ninja",
@@ -240,7 +239,6 @@
       "dicksinmyan.us",
       "firemail.cc",
       "getbackinthe.kitchen",
-      "goat.si",
       "hitler.rocks",
       "horsefucker.org",
       "loves.dicksinhisan.us",
@@ -258,11 +256,12 @@
       "wants.dicksinmyan.us"
     ],
     "mx_hosts": [
-      "8chan.co",
       "mx1.cock.li",
-      "mx1.improvmx.com",
-      "mx2.cock.li",
-      "mx2.improvmx.com"
+      "mx2.cock.li"
+    ],
+    "old_hosts": [
+      "8chan.co",
+      "goat.si"
     ],
     "signup_verification": [
       "none"
@@ -1156,7 +1155,6 @@
       "el.kz",
       "mailto.kz",
       "mbx.kz",
-      "hotmail.kz",
       "edu.kz",
       "edu.mail.kz",
       "med.mail.kz",
@@ -1168,6 +1166,9 @@
       "post.mail.kz",
       "post.mailto.kz"
     ],
+    "old_hosts": [
+      "hotmail.kz"
+    ],
     "remark": "Mail.KZ mailbox domains shown in the current login/registration UI. Some domains are organization-specific, especially edu/gov/med.",
     "signup_verification": [
       "mobile"
@@ -1177,11 +1178,9 @@
   "mail.ru": {
     "hosts": [
       "xmail.ru",
-      "aport.ru",
       "aport2000.ru",
       "bk.ru",
       "e-mail.ru",
-      "email.ru",
       "fax.ru",
       "goldmail.ru",
       "hotmail.ru",
@@ -1197,7 +1196,6 @@
       "newmail.ru",
       "omen.ru",
       "supermail.ru",
-      "vipmail.ru",
       "zmail.ru"
     ],
     "mx_hosts": [
@@ -1214,6 +1212,11 @@
       "mxs.mail.ru",
       "newmail.ru",
       "supermail.ru"
+    ],
+    "old_hosts": [
+      "aport.ru",
+      "email.ru",
+      "vipmail.ru"
     ],
     "signup_verification": [
       "mobile"
@@ -2609,13 +2612,10 @@
       "abimail.com",
       "actimail.com",
       "adminteam.com",
-      "adriamail.com",
       "alemail.com",
       "americanemail.com",
       "androidmail.com",
       "apomail.com",
-      "arztmail.com",
-      "austinemail.com",
       "austria-mail.com",
       "baselmail.com",
       "bayernemail.com",
@@ -2636,7 +2636,6 @@
       "deutschlandmail.com",
       "direct-mail.com",
       "e--mail.com",
-      "e-mailadresse.com",
       "e-mailserver.com",
       "eavholdings.com",
       "einschreiben.com",
@@ -2655,7 +2654,6 @@
       "email-management.com",
       "emailhamburg.com",
       "emailberlin.com",
-      "email-tr.com",
       "email-service.com",
       "email123.com",
       "email-online.com",
@@ -2673,7 +2671,6 @@
       "fatmail.com",
       "firstmailer.com",
       "fischermail.com",
-      "floweremail.com",
       "frankenmail.com",
       "freememail.com",
       "fsmail.com",
@@ -2700,7 +2697,6 @@
       "ivanova.com",
       "johnsmail.com",
       "kr-mail.com",
-      "ladiesemail.com",
       "lawyer-email.com",
       "letsemail.com",
       "lewismail.com",
@@ -2730,7 +2726,6 @@
       "me-mail.com",
       "memailone.com",
       "memailer.com",
-      "memail-dns.com",
       "memailusa.com",
       "memailplus.com",
       "memail360.com",
@@ -2739,7 +2734,6 @@
       "memail-ag.com",
       "memailteam.com",
       "memail-inc.com",
-      "memailup.com",
       "memailteams.com",
       "memailme.com",
       "memailinc.com",
@@ -2906,7 +2900,6 @@
       "ilovemail.com",
       "lewismail.com",
       "libertyemail.com",
-      "localhost",
       "mail.likemail.com",
       "mail.mailro.com",
       "mail.nortonemail.com",
@@ -2930,6 +2923,17 @@
       "salesemail.com",
       "schoolemail.com",
       "worldemail.net"
+    ],
+    "old_hosts": [
+      "adriamail.com",
+      "arztmail.com",
+      "austinemail.com",
+      "e-mailadresse.com",
+      "email-tr.com",
+      "floweremail.com",
+      "ladiesemail.com",
+      "memail-dns.com",
+      "memailup.com"
     ],
     "signup_verification": [
       "payment"
@@ -2976,6 +2980,7 @@
     "type": "free"
   },
   "my.id": {
+    "discontinued": true,
     "hosts": [
       "my.id"
     ],
@@ -3698,6 +3703,7 @@
       "mx3.vodafonemail.de",
       "mx5.vodafonemail.de"
     ],
+    "remark": "Signup can be done via email-only validation, but e-mail activation needs phone validation",
     "signup_verification": [
       "mobile"
     ],

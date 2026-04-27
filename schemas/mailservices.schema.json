@@ -16,6 +16,14 @@
             "format": "hostname"
           }
         },
+        "old_hosts": {
+          "type": "array",
+          "description": "List of outdated/discontinued domain hostnames for this service",
+          "items": {
+            "type": "string",
+            "format": "hostname"
+          }
+        },
         "type": {
           "type": "string",
           "description": "Service type classification",

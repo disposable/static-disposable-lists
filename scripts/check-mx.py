@@ -62,22 +62,22 @@ def check_smtp(host: str, port: int = 25, timeout: float = 5.0) -> tuple[bool, s
         return False, ip
 
 
-def get_mail_hosts(hostname: str, check_a_fallback: bool = True) -> list[str]:
+def get_mail_hosts(hostname: str, check_a_fallback: bool = True) -> tuple[list[str], bool]:
     """
     Get mail server hosts for a domain.
-    Returns MX hosts if available, otherwise A record if check_a_fallback is True.
+    Returns (hosts_list, from_mx) tuple where from_mx indicates if hosts came from MX records.
     """
     mx_records = resolve_mx(hostname)
     if mx_records:
-        return [mx[0] for mx in mx_records]
+        return [mx[0] for mx in mx_records], True
 
     if check_a_fallback:
         a_records = resolve_a(hostname)
         if a_records:
             logging.info(f"No MX found for {hostname}, using A record fallback: {a_records}")
-            return [hostname]  # Return the hostname itself for SMTP check
+            return [hostname], False  # False indicates not from MX records
 
-    return []
+    return [], False
 
 def validate_freemailer(
     input_file: str,
@@ -139,7 +139,7 @@ def validate_freemailer(
         mx_list = set(current_mx_hosts)
 
         for host in hosts:
-            mail_hosts = get_mail_hosts(host, check_a_fallback=check_a_fallback)
+            mail_hosts, from_mx = get_mail_hosts(host, check_a_fallback=check_a_fallback)
             logging.info("{}: {}".format(host, mail_hosts if mail_hosts else "No mail hosts found"))
 
             for mail_host in mail_hosts:
@@ -159,11 +159,13 @@ def validate_freemailer(
                         log_func = logging.info if result else logging.warning
                         log_func(f"  SMTP {status}: {mail_host}:25 ({ip})")
 
-                mx_list.add(mail_host)
-                if current_mx_hosts and mail_host not in current_mx_hosts:
-                    logging.warning("New mail host detected for {}: {}".format(host, mail_host))
+                # Only add to mx_hosts if it came from actual MX records (not A fallback)
+                if from_mx:
+                    mx_list.add(mail_host)
+                    if current_mx_hosts and mail_host not in current_mx_hosts:
+                        logging.warning("New mail host detected for {}: {}".format(host, mail_host))
 
-        host_options['mx_hosts'] = sorted(mx_list)
+        host_options['mx_hosts'] = sorted(h for h in mx_list if h and h.lower() != 'localhost')
 
     # Determine where to write output
     if update:
