@@ -105,6 +105,21 @@
     ],
     "type": "forwarding"
   },
+  "astermail.org": {
+    "hosts": [
+      "aster.cx",
+      "astermail.org"
+    ],
+    "mx_hosts": [
+      "mx.aster.cx",
+      "mx.astermail.org"
+    ],
+    "remark": "Encrypted email with optional recovery email. Password recovery requires a downloaded security code.",
+    "signup_verification": [
+      "none"
+    ],
+    "type": "free"
+  },
   "atomicmail.io": {
     "hosts": [
       "atomicmail.io"
@@ -795,13 +810,15 @@
   },
   "inleed.com": {
     "hosts": [
-      "inleed.xyz"
+      "inleed.xyz",
+      "mail24.se"
     ],
     "mx_hosts": [
-      "mail.inleed.xyz"
+      "mail.inleed.xyz",
+      "mail.mail24.se"
     ],
     "signup_verification": [
-      "other"
+      "email"
     ],
     "type": "free"
   },
@@ -3203,6 +3220,26 @@
     ],
     "type": "free"
   },
+  "pissmail.com": {
+    "discontinued": true,
+    "hosts": [
+      "child.pizza",
+      "dmc.chat",
+      "genocide.fun",
+      "hatesje.ws",
+      "incel.email",
+      "pissmail.com",
+      "shitposting.expert"
+    ],
+    "mx_hosts": [
+      "mail.pissmail.com"
+    ],
+    "remark": "Self-hosted email service operated by a single person. Offline as of 2024.",
+    "signup_verification": [
+      "none"
+    ],
+    "type": "free"
+  },
   "ploud.fr": {
     "hosts": [
       "ploud.fr"
@@ -3593,6 +3630,33 @@
     ],
     "type": "free"
   },
+  "tildamail.com": {
+    "discontinued": true,
+    "hosts": [
+      "tildamail.com"
+    ],
+    "mx_hosts": [
+      "inbound-smtp.us-west-2.amazonaws.com"
+    ],
+    "remark": "Decentralized E2EE email with self-sovereign storage. Optional recovery email, no password.",
+    "signup_verification": [
+      "none"
+    ],
+    "type": "free"
+  },
+  "tinkmail.me": {
+    "hosts": [
+      "tinkmail.me"
+    ],
+    "mx_hosts": [
+      "mx1.tinkmail.me",
+      "mx2.tinkmail.me"
+    ],
+    "signup_verification": [
+      "email"
+    ],
+    "type": "free"
+  },
   "tiscali.it": {
     "discontinued": true,
     "hosts": [
@@ -3950,6 +4014,20 @@
     ],
     "signup_verification": [
       "mobile"
+    ],
+    "type": "free"
+  },
+  "z.org": {
+    "hosts": [
+      "elektrine.com",
+      "z.org"
+    ],
+    "mx_hosts": [
+      "mail.elektrine.com"
+    ],
+    "remark": "Short free email with aliases, XMPP, and static web hosting. Has TOR domain khav7sdajxu6om3arvglevskg2vwuy7luyjcwfwg6xnkd7qtskr2vhad.onion",
+    "signup_verification": [
+      "none"
     ],
     "type": "free"
   },
