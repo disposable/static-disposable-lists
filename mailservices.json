@@ -94,12 +94,15 @@
   },
   "addy.io": {
     "hosts": [
+      "addy.io",
       "anonaddy.com",
       "anonaddy.me"
     ],
     "mx_hosts": [
       "mail.anonaddy.me",
-      "mail2.anonaddy.me"
+      "mail2.anonaddy.me",
+      "mx1.addy.io",
+      "mx2.addy.io"
     ],
     "signup_verification": [
       "email"
@@ -583,6 +586,19 @@
       "other"
     ],
     "type": "free"
+  },
+  "forwardemail.net": {
+    "hosts": [
+      "forwardemail.net"
+    ],
+    "mx_hosts": [
+      "mx1.forwardemail.net",
+      "mx2.forwardemail.net"
+    ],
+    "signup_verification": [
+      "none"
+    ],
+    "type": "forwarding"
   },
   "free.fr": {
     "hosts": [
@@ -3148,6 +3164,18 @@
     ],
     "type": "free"
   },
+  "onsmail.com": {
+    "hosts": [
+      "onsmail.com"
+    ],
+    "mx_hosts": [
+      "mail.onsmail.com"
+    ],
+    "signup_verification": [
+      "none"
+    ],
+    "type": "free"
+  },
   "orange.fr": {
     "hosts": [
       "orange.fr",
@@ -3333,6 +3361,21 @@
     ],
     "type": "paid"
   },
+  "privatemail.com": {
+    "hosts": [
+      "private-mail.com",
+      "privatemail.com"
+    ],
+    "mx_hosts": [
+      "mx1.mailchannels.net",
+      "mx2.mailchannels.net",
+      "smtp.privatemail.com"
+    ],
+    "signup_verification": [
+      "payment"
+    ],
+    "type": "free"
+  },
   "proton.me": {
     "hosts": [
       "proton.me",
@@ -3367,6 +3410,18 @@
     ],
     "signup_verification": [
       "mobile"
+    ],
+    "type": "free"
+  },
+  "qrypty.com": {
+    "hosts": [
+      "qrypty.com"
+    ],
+    "mx_hosts": [
+      "mail.qrypty.com"
+    ],
+    "signup_verification": [
+      "none"
     ],
     "type": "free"
   },
@@ -3757,12 +3812,12 @@
   },
   "tutanota.com": {
     "hosts": [
-      "tutanota.com",
-      "tutanota.de",
-      "tutamail.com",
+      "keemail.me",
       "tuta.com",
       "tuta.io",
-      "keemail.me"
+      "tutamail.com",
+      "tutanota.com",
+      "tutanota.de"
     ],
     "mx_hosts": [
       "mail.tutanota.de"

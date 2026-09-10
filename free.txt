@@ -73,6 +73,7 @@ activist.com
 adam.com.au
 addcom.de
 address.com
+addy.io
 adelphia.net
 adexec.com
 adfarrow.com
@@ -98,6 +99,7 @@ albawaba.com
 algeria.com
 alhilal.net
 alibaba.com
+aliceadsl.fr
 alice.it
 alive.cz
 aliyun.com
@@ -178,6 +180,7 @@ atheist.com
 athenachu.net
 atina.cl
 atl.lv
+atomicmail.io
 atozasia.com
 atrus.ru
 attglobal.net
@@ -405,6 +408,7 @@ cluemail.com
 cmpmail.com
 cnnsimail.com
 cntv.cn
+cock.li
 codec.ro
 coder.hu
 coid.biz
@@ -519,6 +523,7 @@ discofan.com
 discovery.com
 discoverymail.com
 disposable.com
+disroot.org
 di-ve.com
 dm.w3internet.co.uk
 dnsmadeeasy.com
@@ -733,6 +738,7 @@ forpresident.com
 fortuncity.com
 fortunecity.com
 forum.dk
+forwardemail.net
 foxmail.com
 fr33mail.info
 freeaccess.nl
@@ -2546,6 +2552,7 @@ mail.co.za
 mail.ee
 mail.entrepeneurmag.com
 mailexcite.com
+mailfence.com
 mailforce.net
 mail.freetown.com
 mailftp.com
@@ -2825,6 +2832,7 @@ online.ie
 onlinewiz.com
 onmilwaukee.com
 onobox.com
+onsmail.com
 opayq.com
 operamail.com
 opoczta.pl
@@ -2974,6 +2982,8 @@ press.co.jp
 priest.com
 primposta.com
 primposta.hu
+private-mail.com
+privatemail.com
 privy-mail.com
 probemail.com
 prodigy.net
@@ -2998,6 +3008,7 @@ q.com
 qmail.com
 qprfans.com
 qq.com
+qrypty.com
 quackquack.com
 quakemail.com
 qualityservice.com
@@ -3054,6 +3065,7 @@ richmondhill.com
 rickymail.com
 rin.ru
 riopreto.com.br
+riseup.net
 rn.com
 roadrunner.com
 roanokemail.com
@@ -3062,6 +3074,7 @@ rocketmail.com
 rocketship.com
 rockfan.com
 rodrun.com
+rogers.com
 roosh.com
 rootprompt.org
 ro.ru
@@ -3128,10 +3141,12 @@ servemymail.com
 sesmail.com
 sexmagnet.com
 seznam.cz
+sfr.fr
 shahweb.net
 shaniastuff.com
 shared-files.de
 sharmaweb.com
+shaw.ca
 she.com
 shieldedmail.com
 shinedyoureyes.com
@@ -3270,6 +3285,7 @@ swissmail.com
 swissmail.net
 switchboardmail.com
 sx172.com
+sympatico.ca
 syom.com
 t2mail.com
 takuyakimura.com
@@ -3293,6 +3309,7 @@ technologist.com
 techscout.com
 techspot.com
 telebot.com
+telefonica.net
 teleline.es
 telerymd.com
 telinco.net
@@ -3376,6 +3393,7 @@ thirdage.com
 thisgirl.com
 tidni.com
 timein.net
+tin.it
 tiscali.co.uk
 tiscali.it
 tkcity.com
@@ -3409,6 +3427,8 @@ tungmail.com
 turboprinz.de
 turboprinzessin.de
 turkey.com
+tutamail.com
+tutanota.com
 tut.by
 tvstar.com
 twc.com
