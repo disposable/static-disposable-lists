@@ -2353,6 +2353,19 @@
     ],
     "type": "free"
   },
+  "netins.net": {
+    "hosts": [
+      "netins.net"
+    ],
+    "mx_hosts": [
+      "mx.netins.net.cust.b.hostedemail.com"
+    ],
+    "remark": "Free email for Aureon/NetIns customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "netvigator.com": {
     "hosts": [
       "netvigator.com"
@@ -2382,6 +2395,21 @@
     ],
     "signup_verification": [
       "mobile"
+    ],
+    "type": "free"
+  },
+  "oi.com.br": {
+    "hosts": [
+      "oi.com.br",
+      "oi.net.br"
+    ],
+    "mx_hosts": [
+      "mx7.oi.com.br",
+      "smtp.oi.net.br"
+    ],
+    "remark": "Free email for Oi customers.",
+    "signup_verification": [
+      "other"
     ],
     "type": "free"
   },
@@ -3571,6 +3599,21 @@
     ],
     "signup_verification": [
       "none"
+    ],
+    "type": "free"
+  },
+  "yaanimail.com": {
+    "hosts": [
+      "superonline.com",
+      "superonline.net",
+      "yaanimail.com"
+    ],
+    "mx_hosts": [
+      "mx.yaanimail.com"
+    ],
+    "remark": "YaaniMail free email for Turkcell/Superonline customers.",
+    "signup_verification": [
+      "other"
     ],
     "type": "free"
   },
