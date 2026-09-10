@@ -111,6 +111,21 @@
     ],
     "type": "forwarding"
   },
+  "anonymail.hu": {
+    "hosts": [
+      "anonymail.hu",
+      "posta.net"
+    ],
+    "mx_hosts": [
+      "mx1.anonymail.hu",
+      "mx2.anonymail.hu"
+    ],
+    "remark": "Hungarian free anonymous email service. posta.net is an A-record alias.",
+    "signup_verification": [
+      "none"
+    ],
+    "type": "free"
+  },
   "aon.at": {
     "hosts": [
       "aon.at"
@@ -135,6 +150,19 @@
     "remark": "Encrypted email with optional recovery email. Password recovery requires a downloaded security code.",
     "signup_verification": [
       "none"
+    ],
+    "type": "free"
+  },
+  "atlanticbb.net": {
+    "hosts": [
+      "atlanticbb.net"
+    ],
+    "mx_hosts": [
+      "mx.breezelineohio.net"
+    ],
+    "remark": "Free email for Breezeline/Atlantic Broadband customers.",
+    "signup_verification": [
+      "other"
     ],
     "type": "free"
   },
@@ -178,6 +206,37 @@
     ],
     "signup_verification": [
       "none"
+    ],
+    "type": "free"
+  },
+  "bestweb.net": {
+    "hosts": [
+      "bestweb.net"
+    ],
+    "mx_hosts": [
+      "gw1.bestweb.net",
+      "gw2.bestweb.net",
+      "smx-1.bestweb.net",
+      "smx-2.bestweb.net"
+    ],
+    "remark": "Free email for BestWeb/FirstLight customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
+  "blacksburg.net": {
+    "hosts": [
+      "blacksburg.net"
+    ],
+    "mx_hosts": [
+      "mx1.blacksburg.net",
+      "mx2.blacksburg.net",
+      "mx3.blacksburg.net"
+    ],
+    "remark": "Free email for Blacksburg.Net customers.",
+    "signup_verification": [
+      "other"
     ],
     "type": "free"
   },
@@ -272,6 +331,19 @@
     ],
     "type": "free"
   },
+  "centurylink.net": {
+    "hosts": [
+      "centurylink.net"
+    ],
+    "mx_hosts": [
+      "mx.centurylink.net"
+    ],
+    "remark": "Free email for CenturyLink/Lumen customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "charter.net": {
     "hosts": [
       "carolina.rr.com",
@@ -306,6 +378,33 @@
       "pkvw-mx.msg.pkvw.co.charter.net"
     ],
     "remark": "Free email for Charter/Spectrum customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
+  "chello.nl": {
+    "hosts": [
+      "chello.nl"
+    ],
+    "mx_hosts": [
+      "mxin10.ziggo.nl",
+      "mxin5.ziggo.nl"
+    ],
+    "remark": "Free email for Ziggo/Chello customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
+  "club-internet.fr": {
+    "hosts": [
+      "club-internet.fr"
+    ],
+    "mx_hosts": [
+      "smtp-in.sfr.fr"
+    ],
+    "remark": "Free email for SFR/Club Internet customers.",
     "signup_verification": [
       "other"
     ],
@@ -354,6 +453,20 @@
     ],
     "type": "free"
   },
+  "cogeco.ca": {
+    "hosts": [
+      "cogeco.ca"
+    ],
+    "mx_hosts": [
+      "mx.cogeco.ca",
+      "mx.cogeco.net"
+    ],
+    "remark": "Free email for Cogeco customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "comcast.net": {
     "hosts": [
       "comcast.net"
@@ -368,6 +481,22 @@
       "mx2c1.comcast.net",
       "mx2h1.comcast.net"
     ],
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
+  "concentric.net": {
+    "hosts": [
+      "concentric.net"
+    ],
+    "mx_hosts": [
+      "mx1c28.concentric.com",
+      "mx2c28.concentric.com",
+      "mx3c28.concentric.com",
+      "mx4c28.concentric.com"
+    ],
+    "remark": "Free email for Concentric/Lumen customers.",
     "signup_verification": [
       "other"
     ],
@@ -441,6 +570,19 @@
     ],
     "type": "free"
   },
+  "dslextreme.com": {
+    "hosts": [
+      "dslextreme.com"
+    ],
+    "mx_hosts": [
+      "dslextreme-com.mx.av-mx.com"
+    ],
+    "remark": "Free email for DSL Extreme customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "duck.com": {
     "hosts": [
       "duck.com"
@@ -452,6 +594,24 @@
       "email"
     ],
     "type": "forwarding"
+  },
+  "e-mail.jp": {
+    "hosts": [
+      "e-mail.jp"
+    ],
+    "mx_hosts": [
+      "kddi141.e-mail.jp",
+      "kddi142.e-mail.jp",
+      "kddi143.e-mail.jp",
+      "kddi144.e-mail.jp",
+      "kddi145.e-mail.jp",
+      "kddi146.e-mail.jp"
+    ],
+    "remark": "Japanese free email address creation service.",
+    "signup_verification": [
+      "none"
+    ],
+    "type": "free"
   },
   "eclipso.de": {
     "hosts": [
@@ -643,6 +803,19 @@
     ],
     "type": "paid"
   },
+  "fibertel.com.ar": {
+    "hosts": [
+      "fibertel.com.ar"
+    ],
+    "mx_hosts": [
+      "mx1.fibertel.com.ar"
+    ],
+    "remark": "Free email for Fibertel/Personal customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "firemail.de": {
     "hosts": [
       "firemail.de",
@@ -655,6 +828,20 @@
     "remark": "Signup form requires alternate email and CAPTCHA; mobile field appears optional.",
     "signup_verification": [
       "email",
+      "other"
+    ],
+    "type": "free"
+  },
+  "forthnet.gr": {
+    "hosts": [
+      "forthnet.gr"
+    ],
+    "mx_hosts": [
+      "mailrelay.nova.gr",
+      "mailrelay2.nova.gr"
+    ],
+    "remark": "Free email for Nova/Forthnet customers.",
+    "signup_verification": [
       "other"
     ],
     "type": "free"
@@ -763,6 +950,19 @@
     ],
     "type": "free"
   },
+  "hetnet.nl": {
+    "hosts": [
+      "hetnet.nl"
+    ],
+    "mx_hosts": [
+      "mx.kpnmail.nl"
+    ],
+    "remark": "Free email for KPN/HetNet customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "hey.com": {
     "hosts": [
       "hey.com",
@@ -815,6 +1015,20 @@
     "mx_hosts": [
       "ice.email"
     ],
+    "signup_verification": [
+      "none"
+    ],
+    "type": "free"
+  },
+  "ichimail.com": {
+    "hosts": [
+      "ichimail.com"
+    ],
+    "mx_hosts": [
+      "mx1.ichimail.com",
+      "mx2.ichimail.com"
+    ],
+    "remark": "Free personal/professional/anonymous email.",
     "signup_verification": [
       "none"
     ],
@@ -1124,6 +1338,20 @@
     "remark": "Free Danish/international email service powered by MailCore. Now part of Inbox.com.",
     "signup_verification": [
       "none"
+    ],
+    "type": "free"
+  },
+  "kabelmail.de": {
+    "hosts": [
+      "kabelmail.de"
+    ],
+    "mx_hosts": [
+      "mx3.vodafonemail.de",
+      "mx5.vodafonemail.de"
+    ],
+    "remark": "Free email for Vodafone/Kabel Deutschland customers.",
+    "signup_verification": [
+      "other"
     ],
     "type": "free"
   },
@@ -2125,6 +2353,20 @@
     ],
     "type": "free"
   },
+  "netvigator.com": {
+    "hosts": [
+      "netvigator.com"
+    ],
+    "mx_hosts": [
+      "imsmx1.netvigator.com",
+      "imsmx2.netvigator.com"
+    ],
+    "remark": "Free email for Netvigator/HKT customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "o2.pl": {
     "hosts": [
       "o2.pl",
@@ -2166,6 +2408,22 @@
     ],
     "type": "free"
   },
+  "online.no": {
+    "hosts": [
+      "online.no"
+    ],
+    "mx_hosts": [
+      "mx1c60.megamailservers.eu",
+      "mx2c60.megamailservers.eu",
+      "mx3c60.megamailservers.eu",
+      "mx4c60.megamailservers.eu"
+    ],
+    "remark": "Free email/magazine from Telenor Norway.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "onsmail.com": {
     "hosts": [
       "onsmail.com"
@@ -2175,6 +2433,19 @@
     ],
     "signup_verification": [
       "none"
+    ],
+    "type": "free"
+  },
+  "optimum.net": {
+    "hosts": [
+      "optimum.net"
+    ],
+    "mx_hosts": [
+      "mx.altice.prod.cloud.openwave.ai"
+    ],
+    "remark": "Free email for Optimum/Altice customers.",
+    "signup_verification": [
+      "other"
     ],
     "type": "free"
   },
@@ -2362,6 +2633,19 @@
     ],
     "type": "free"
   },
+  "planet.nl": {
+    "hosts": [
+      "planet.nl"
+    ],
+    "mx_hosts": [
+      "mx.kpnmail.nl"
+    ],
+    "remark": "Free email for KPN customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "ploud.fr": {
     "hosts": [
       "ploud.fr"
@@ -2418,6 +2702,19 @@
     ],
     "signup_verification": [
       "email"
+    ],
+    "type": "free"
+  },
+  "qis.net": {
+    "hosts": [
+      "qis.net"
+    ],
+    "mx_hosts": [
+      "mail.qis.net"
+    ],
+    "remark": "Free email for Quantum Internet & Telephone customers.",
+    "signup_verification": [
+      "other"
     ],
     "type": "free"
   },
@@ -2677,6 +2974,19 @@
     ],
     "type": "paid"
   },
+  "sky.com": {
+    "hosts": [
+      "sky.com"
+    ],
+    "mx_hosts": [
+      "mx-eu.mail.am0.yahoodns.net"
+    ],
+    "remark": "Free email for Sky UK customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "skymail.de": {
     "hosts": [
       "skymail.de",
@@ -2695,6 +3005,19 @@
     "remark": "Signup page visibly offers skymail.de/skymail.at/skymail.eu; login page also lists maills.ch, maills.de, hemail.de, maills.net. Verify availability before merging.",
     "signup_verification": [
       "email",
+      "other"
+    ],
+    "type": "free"
+  },
+  "skynet.be": {
+    "hosts": [
+      "skynet.be"
+    ],
+    "mx_hosts": [
+      "mx.gtm-tc2.proximus.be"
+    ],
+    "remark": "Free email for Proximus/Skynet customers.",
+    "signup_verification": [
       "other"
     ],
     "type": "free"
@@ -2763,6 +3086,19 @@
     ],
     "type": "forwarding"
   },
+  "speedy.com.ar": {
+    "hosts": [
+      "speedy.com.ar"
+    ],
+    "mx_hosts": [
+      "ar.vmx.terra.com"
+    ],
+    "remark": "Free email for Speedy/Movistar Argentina customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "startmail.com": {
     "hosts": [
       "startmail.com",
@@ -2778,6 +3114,19 @@
       "payment"
     ],
     "type": "paid"
+  },
+  "swva.net": {
+    "hosts": [
+      "swva.net"
+    ],
+    "mx_hosts": [
+      "gatewaymx.swva.net"
+    ],
+    "remark": "Free email for Citizens/SWVA customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
   },
   "systemli.org": {
     "hosts": [
@@ -2812,6 +3161,33 @@
     ],
     "type": "free"
   },
+  "t-online.hu": {
+    "hosts": [
+      "t-online.hu"
+    ],
+    "mx_hosts": [
+      "mx.t-online.hu"
+    ],
+    "remark": "Free email for Magyar Telekom customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
+  "talktalk.co.uk": {
+    "hosts": [
+      "talktalk.co.uk"
+    ],
+    "mx_hosts": [
+      "eu-smtp-inbound-1.mimecast.com",
+      "eu-smtp-inbound-2.mimecast.com"
+    ],
+    "remark": "Free email for TalkTalk customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "tb9.de": {
     "discontinued": true,
     "hosts": [
@@ -2821,6 +3197,20 @@
       "w01f166d.kasserver.com"
     ],
     "remark": "German b1gMail-style provider. Signup is not possible due to broken CAPTCHA.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
+  "telenet.be": {
+    "hosts": [
+      "telenet.be"
+    ],
+    "mx_hosts": [
+      "mx1.telenet-ops.be",
+      "mx2.telenet-ops.be"
+    ],
+    "remark": "Free email for Telenet customers.",
     "signup_verification": [
       "other"
     ],
@@ -3010,6 +3400,33 @@
     ],
     "type": "free"
   },
+  "voo.be": {
+    "hosts": [
+      "voo.be"
+    ],
+    "mx_hosts": [
+      "mrouterin.brutele.be"
+    ],
+    "remark": "Free email for VOO customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
+  "web-mail.de": {
+    "hosts": [
+      "web-mail.de"
+    ],
+    "mx_hosts": [
+      "mx00.ionos.de",
+      "mx01.ionos.de"
+    ],
+    "remark": "Free German email account with POP3 access.",
+    "signup_verification": [
+      "none"
+    ],
+    "type": "free"
+  },
   "webgmx": {
     "hosts": [
       "abwesend.de",
@@ -3021,6 +3438,7 @@
       "bin-wieder-da.de",
       "bleib-bei-mir.de",
       "buerotiger.de",
+      "caramail.com",
       "coole-files.de",
       "die-besten-bilder.de",
       "die-genossen.de",
@@ -3030,10 +3448,12 @@
       "fahr-zur-hoelle.org",
       "feinripptraeger.de",
       "fettabernett.de",
+      "freemail.de",
       "freudenkinder.de",
       "gentlemansclub.de",
       "gmx.at",
       "gmx.ca",
+      "gmx.ch",
       "gmx.co.uk",
       "gmx.com",
       "gmx.de",
@@ -3091,16 +3511,14 @@
       "vorsicht-bissig.de",
       "vorsicht-scharf.de",
       "war-im-urlaub.de",
+      "web.de",
       "weibsvolk.org",
       "weinenvorglueck.de",
       "will-hier-weg.de",
       "wir-haben-nachwuchs.de",
       "wir-sind-cool.org",
       "wolke7.net",
-      "women-at-work.org",
-      "freemail.de",
-      "web.de",
-      "caramail.com"
+      "women-at-work.org"
     ],
     "mx_hosts": [
       "mx-ha01.web.de",
