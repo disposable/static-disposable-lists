@@ -3,7 +3,7 @@
 import re
 import sys
 
-HOSTNAME_RE = re.compile(r"^(?!-)[A-Za-z0-9\-]{1,255}(?<!-)(\.[A-Za-z0-9\-]{2,64})+$")
+HOSTNAME_RE = re.compile(r"^(?!-)[A-Za-z0-9\-]{1,63}(?<!-)(\.[A-Za-z0-9\-]{1,63})+$")
 
 
 def is_valid_hostname(hostname: str) -> bool:

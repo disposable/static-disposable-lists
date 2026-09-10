@@ -109,6 +109,18 @@
     ],
     "type": "forwarding"
   },
+  "aon.at": {
+    "hosts": [
+      "aon.at"
+    ],
+    "mx_hosts": [
+      "smx01.a1.net"
+    ],
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "astermail.org": {
     "hosts": [
       "aster.cx",
@@ -298,6 +310,25 @@
     ],
     "signup_verification": [
       "none"
+    ],
+    "type": "free"
+  },
+  "comcast.net": {
+    "hosts": [
+      "comcast.net"
+    ],
+    "mx_hosts": [
+      "mx1.mxge.comcast.net",
+      "mx1a1.comcast.net",
+      "mx1c1.comcast.net",
+      "mx1h1.comcast.net",
+      "mx2.mxge.comcast.net",
+      "mx2a1.comcast.net",
+      "mx2c1.comcast.net",
+      "mx2h1.comcast.net"
+    ],
+    "signup_verification": [
+      "other"
     ],
     "type": "free"
   },
@@ -707,9 +738,9 @@
   },
   "hushmail.com": {
     "hosts": [
-      "hushmail.com",
-      "hush.com",
       "hush.ai",
+      "hush.com",
+      "hushmail.com",
       "hushmail.me",
       "mac.hush.com"
     ],
@@ -947,6 +978,19 @@
       "mobile"
     ],
     "type": "free"
+  },
+  "librem.one": {
+    "hosts": [
+      "librem.one"
+    ],
+    "mx_hosts": [
+      "mx.librem.one"
+    ],
+    "remark": "Free Librem One Basic covers Chat & Social only; Librem Mail is part of the paid Complete bundle.",
+    "signup_verification": [
+      "payment"
+    ],
+    "type": "paid"
   },
   "lycos.com": {
     "discontinued": true,
@@ -3187,6 +3231,19 @@
     ],
     "type": "paid"
   },
+  "orange.ro": {
+    "hosts": [
+      "orange.ro"
+    ],
+    "mx_hosts": [
+      "smtp-ina.orange.com",
+      "smtp-inb.orange.com"
+    ],
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "outlook.com": {
     "hosts": [
       "hotmail.ca",
@@ -3310,6 +3367,20 @@
     ],
     "signup_verification": [
       "email"
+    ],
+    "type": "free"
+  },
+  "passagen.se": {
+    "hosts": [
+      "passagen.se"
+    ],
+    "mx_hosts": [
+      "mx1.spray.mail2world.com",
+      "mx2.spray.mail2world.com",
+      "mx3.spray.mail2world.com"
+    ],
+    "signup_verification": [
+      "other"
     ],
     "type": "free"
   },
@@ -3518,6 +3589,19 @@
     ],
     "type": "paid"
   },
+  "sanipass.com": {
+    "hosts": [
+      "sanipass.com"
+    ],
+    "mx_hosts": [
+      "mx0.123-reg.co.uk",
+      "mx1.123-reg.co.uk"
+    ],
+    "signup_verification": [
+      "none"
+    ],
+    "type": "free"
+  },
   "sapo.pt": {
     "hosts": [
       "sapo.pt"
@@ -3667,6 +3751,20 @@
     ],
     "type": "free"
   },
+  "soverin.net": {
+    "hosts": [
+      "soverin.net"
+    ],
+    "mx_hosts": [
+      "mx.soverin.net",
+      "mx02.soverin.net",
+      "mx03.soverin.net"
+    ],
+    "signup_verification": [
+      "payment"
+    ],
+    "type": "paid"
+  },
   "spamgourmet.com": {
     "hosts": [
       "spamgourmet.com",
@@ -3752,6 +3850,19 @@
       "other"
     ],
     "type": "free"
+  },
+  "thexyz.com": {
+    "hosts": [
+      "thexyz.com"
+    ],
+    "mx_hosts": [
+      "mx.thexyz.com",
+      "mx2.thexyz.com"
+    ],
+    "signup_verification": [
+      "payment"
+    ],
+    "type": "paid"
   },
   "tildamail.com": {
     "discontinued": true,
@@ -4195,6 +4306,18 @@
       "none"
     ],
     "type": "free"
+  },
+  "zaclys.com": {
+    "hosts": [
+      "zaclys.com"
+    ],
+    "mx_hosts": [
+      "smtp.zaclys.com"
+    ],
+    "signup_verification": [
+      "payment"
+    ],
+    "type": "paid"
   },
   "zohomail.com": {
     "hosts": [
