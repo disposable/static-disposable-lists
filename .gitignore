@@ -4,3 +4,4 @@ tmp/
 /.vscode
 __pycache__
 check.log
+.playwright-mcp/
