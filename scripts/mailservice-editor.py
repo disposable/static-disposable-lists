@@ -1,123 +1,149 @@
-import json
+#!/usr/bin/env python3
+"""Add or update entries in mailservices.json."""
+
 import argparse
+import json
 import os
 import sys
-from typing import List, Optional
+
+try:
+    from validate_hostnames import is_valid_hostname
+except ImportError:  # pragma: no cover
+    from .validate_hostnames import is_valid_hostname
 
 
-def load_schema(schema_path: str) -> dict:
-    """Load JSON schema file."""
-    with open(schema_path, "r", encoding="utf-8") as f:
-        return json.load(f)
-
-
-def get_allowed_types(schema_path: str = "schemas/mailservices.schema.json") -> List[str]:
-    """Extract allowed types from schema."""
-    schema = load_schema(schema_path)
-    # Find the type property in patternProperties
-    pattern_props = schema.get("patternProperties", {})
-    for pattern, prop_schema in pattern_props.items():
-        type_prop = prop_schema.get("properties", {}).get("type", {})
-        return type_prop.get("enum", [])
-    return []
-
-
-def get_allowed_verifications(schema_path: str = "schemas/mailservices.schema.json") -> List[str]:
-    """Extract allowed verification types from schema."""
-    schema = load_schema(schema_path)
-    # Find the signup_verification property in patternProperties
-    pattern_props = schema.get("patternProperties", {})
-    for pattern, prop_schema in pattern_props.items():
-        verify_prop = prop_schema.get("properties", {}).get("signup_verification", {})
-        return verify_prop.get("enum", [])
-    return []
-
-
-def load_json(file_path):
-    """Load JSON file or return an empty dict if file doesn't exist."""
+def load_json(file_path: str) -> dict:
+    """Load JSON file or return an empty dict if it doesn't exist."""
     if os.path.exists(file_path):
         with open(file_path, "r", encoding="utf-8") as f:
             return json.load(f)
     return {}
 
 
-def save_json(file_path, data):
-    """Save data to JSON file."""
+def save_json(file_path: str, data: dict) -> None:
+    """Save data to a JSON file with a trailing newline."""
     with open(file_path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
+        f.write("\n")
+
+
+def load_schema(schema_path: str) -> dict:
+    """Load a JSON schema file."""
+    with open(schema_path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def get_allowed_values(schema_path: str = "schemas/mailservices.schema.json") -> tuple[list[str], list[str]]:
+    """Return (types, verifications) allowed by the schema."""
+    schema = load_schema(schema_path)
+    pattern_props = schema.get("patternProperties", {})
+
+    types: list[str] = []
+    verifications: set[str] = set()
+
+    for prop_schema in pattern_props.values():
+        props = prop_schema.get("properties", {})
+
+        type_prop = props.get("type", {})
+        types = type_prop.get("enum", [])
+
+        verify_prop = props.get("signup_verification", {})
+        if "enum" in verify_prop:
+            verifications.update(verify_prop["enum"])
+        elif "oneOf" in verify_prop:
+            for sub in verify_prop["oneOf"]:
+                verifications.update(sub.get("enum", []))
+
+    return types, sorted(verifications)
+
+
+def _validate_and_normalize(
+    service: str,
+    hosts: list[str] | None,
+    mx_hosts: list[str] | None,
+    account_type: str | None,
+    signup_verification: str | None,
+    allowed_types: list[str],
+    allowed_verifications: list[str],
+) -> tuple[list[str] | None, list[str] | None]:
+    """Validate arguments and return normalized host/mx lists."""
+    if hosts:
+        invalid = [h for h in hosts if not is_valid_hostname(h)]
+        if invalid:
+            print(f"Invalid hostnames for {service}: {invalid}")
+            sys.exit(1)
+        hosts = sorted(set(hosts))
+
+    if mx_hosts:
+        invalid = [h for h in mx_hosts if not is_valid_hostname(h)]
+        if invalid:
+            print(f"Invalid MX hostnames for {service}: {invalid}")
+            sys.exit(1)
+        mx_hosts = sorted(set(mx_hosts))
+
+    if account_type and account_type not in allowed_types:
+        print(f"Invalid account type: {account_type}. Allowed: {allowed_types}")
+        sys.exit(1)
+
+    if signup_verification and signup_verification not in allowed_verifications:
+        print(f"Invalid signup verification: {signup_verification}. Allowed: {allowed_verifications}")
+        sys.exit(1)
+
+    return hosts, mx_hosts
 
 
 def update_json(
     file_path: str,
     service: str,
-    hosts: Optional[List[str]] = None,
-    mx_hosts: Optional[List[str]] = None,
-    account_type: Optional[str] = None,
-    signup_verification: Optional[str] = None,
-    schema_path: str = "schemas/mailservices.schema.json"
+    hosts: list[str] | None = None,
+    mx_hosts: list[str] | None = None,
+    account_type: str | None = None,
+    signup_verification: str | None = None,
+    schema_path: str = "schemas/mailservices.schema.json",
 ) -> None:
-    """Update or add a domain entry in the JSON file.
-
-    Args:
-        file_path: Path to the JSON file.
-        domain: Domain name to update/add.
-        hosts: List of hostnames.
-        mx_hosts: List of MX hostnames.
-        account_type: Type of the account.
-        signup_verification: Verification method used during signup.
-        schema_path: Path to the schema file for validation.
-    """
-    allowed_types = get_allowed_types(schema_path)
-    allowed_verifications = get_allowed_verifications(schema_path)
+    """Update or add a service entry in the JSON file."""
+    allowed_types, allowed_verifications = get_allowed_values(schema_path)
+    hosts, mx_hosts = _validate_and_normalize(
+        service, hosts, mx_hosts, account_type, signup_verification,
+        allowed_types, allowed_verifications,
+    )
 
     data = load_json(file_path)
 
     if service in data:
-        # Update existing entry
-        new_hosts = set(data[service].get("hosts", []))
-        new_mx_hosts = set(data[service].get("mx_hosts", []))
+        existing = data[service]
+        new_hosts = set(existing.get("hosts", []))
+        new_mx_hosts = set(existing.get("mx_hosts", []))
 
         if hosts:
-            new_hosts = new_hosts.union(set(hosts))
-
+            new_hosts.update(hosts)
         if mx_hosts:
-            new_mx_hosts = new_mx_hosts.union(set(mx_hosts))
+            new_mx_hosts.update(mx_hosts)
 
-        data[service]["hosts"] = list(new_hosts)
-
+        existing["hosts"] = sorted(new_hosts)
         if new_mx_hosts:
-            data[service]["mx_hosts"] = list(new_mx_hosts)
+            existing["mx_hosts"] = sorted(new_mx_hosts)
     else:
-        # Add new entry
-        data[service] = {
-            "hosts": hosts,
-        }
+        data[service] = {"hosts": hosts or []}
         if mx_hosts:
             data[service]["mx_hosts"] = mx_hosts
 
     if account_type:
-        if account_type not in allowed_types:
-            print(f"Invalid account type: {account_type}. Allowed: {allowed_types}")
-            sys.exit(1)
         data[service]["type"] = account_type
-
     if signup_verification:
-        if signup_verification not in allowed_verifications:
-            print(f"Invalid signup verification: {signup_verification}. Allowed: {allowed_verifications}")
-            sys.exit(1)
-        data[service]["signup_verification"] = signup_verification
+        data[service]["signup_verification"] = [signup_verification]
 
     save_json(file_path, data)
     print(f"Updated {service} in {file_path}")
 
 
-if __name__ == "__main__":
+def main() -> None:
     parser = argparse.ArgumentParser(description="Update JSON file with service details.")
 
     parser.add_argument("--file", default="mailservices.json", help="Path to the JSON file.")
     parser.add_argument("--service", required=True, help="Service name to update/add.")
     parser.add_argument("--host", action="append", default=[], help="Hostnames (can be used multiple times).")
-    parser.add_argument("--mx-host", action="append", default=[], help="MX Hostnames (can be used multiple times).")
+    parser.add_argument("--mx-host", action="append", default=[], help="MX hostnames (can be used multiple times).")
     parser.add_argument("--stdin", action="store_true", help="Read hosts from stdin (line by line).")
     parser.add_argument("--type", help="Account type.")
     parser.add_argument("--verify", help="Signup verification type.")
@@ -125,27 +151,23 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    # Load allowed values from schema
-    allowed_types = get_allowed_types(args.schema)
-    allowed_verifications = get_allowed_verifications(args.schema)
-
-    # Validate type argument if provided
-    if args.type and args.type not in allowed_types:
-        print(f"Invalid account type: {args.type}. Allowed: {allowed_types}")
-        sys.exit(1)
-
-    # Validate verify argument if provided
-    if args.verify and args.verify not in allowed_verifications:
-        print(f"Invalid signup verification: {args.verify}. Allowed: {allowed_verifications}")
-        sys.exit(1)
-
-    # Collect hosts from stdin if enabled
     stdin_hosts = []
     if args.stdin:
         stdin_hosts = [line.strip() for line in sys.stdin if line.strip()]
 
-    # Combine hosts from CLI args and stdin
     all_hosts = args.host + stdin_hosts
-    all_mx_hosts = args.mx_host  # MX hosts are not read from stdin
+    all_mx_hosts = args.mx_host
 
-    update_json(args.file, args.service, all_hosts, all_mx_hosts, args.type, args.verify, args.schema)
+    update_json(
+        args.file,
+        args.service,
+        all_hosts,
+        all_mx_hosts,
+        args.type,
+        args.verify,
+        args.schema,
+    )
+
+
+if __name__ == "__main__":
+    main()

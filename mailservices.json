@@ -53,7 +53,8 @@
       "2980.com"
     ],
     "mx_hosts": [
-      "mailmx01.2980.com"
+      "mailmx01.2980.com",
+      "proxy.2980.com.dycdn.com"
     ],
     "signup_verification": [
       "mobile"
@@ -135,13 +136,15 @@
   },
   "autistici.org": {
     "hosts": [
-      "autistici.org",
       "inventati.org"
     ],
     "mx_hosts": [
       "mx1.investici.org",
       "mx2.investici.org",
       "mx3.investici.org"
+    ],
+    "old_hosts": [
+      "autistici.org"
     ],
     "remark": "Free activist mailbox provider; account requests are acceptance/affinity-based rather than automated open registration.",
     "signup_verification": [
@@ -318,6 +321,7 @@
     "mx_hosts": [
       "mx1.hanmail.net",
       "mx1.kakao.com",
+      "mx1.mail.naver.com",
       "mx1.naver.com",
       "mx2.hanmail.net",
       "mx2.kakao.com",
@@ -550,9 +554,14 @@
       "your-mail.com"
     ],
     "mx_hosts": [
+      "eu1-smtp.messagingengine.com",
+      "eu2-smtp.messagingengine.com",
       "in1-smtp.messagingengine.com",
       "in2-smtp.messagingengine.com",
-      "mail.b-io.co"
+      "mail.b-io.co",
+      "park-mx.above.com",
+      "us1-smtp.messagingengine.com",
+      "us2-smtp.messagingengine.com"
     ],
     "signup_verification": [
       "payment"
@@ -638,6 +647,7 @@
       "x5g.com"
     ],
     "mx_hosts": [
+      "bradfordfans.com",
       "mx2.freeola.com",
       "mx3.freeola.com",
       "mx4.freeola.com",
@@ -707,6 +717,18 @@
     ],
     "signup_verification": [
       "mobile"
+    ],
+    "type": "free"
+  },
+  "ice.email": {
+    "hosts": [
+      "ice.email"
+    ],
+    "mx_hosts": [
+      "ice.email"
+    ],
+    "signup_verification": [
+      "none"
     ],
     "type": "free"
   },
@@ -1229,6 +1251,7 @@
     ],
     "mx_hosts": [
       "e-mail.ru",
+      "e.m.onl",
       "e.nm.ru",
       "emx.mail.ru",
       "mail.email.ru",
@@ -2542,6 +2565,7 @@
       "mx1.mailbox.org",
       "mx2.mailbox.org",
       "mx3.mailbox.org",
+      "mx4.mailbox.org",
       "mxtls1.mailbox.org",
       "mxtls2.mailbox.org"
     ],
@@ -2693,7 +2717,6 @@
       "emailmemail.com",
       "emailsms.com",
       "emailhawaii.com",
-      "erosmail.com",
       "espmail.com",
       "ewebmail.com",
       "expomail.com",
@@ -2710,7 +2733,6 @@
       "globalmailservices.com",
       "gratisemail.com",
       "greatemail.com",
-      "hallomail.com",
       "hamburgemail.com",
       "happyemail.com",
       "harvardmail.com",
@@ -2736,7 +2758,6 @@
       "luxemail.com",
       "macmail.com",
       "mail-net.com",
-      "mailaustria.com",
       "mailus.com",
       "mailuno.com",
       "mailemail.com",
@@ -2793,7 +2814,6 @@
       "openmailbox.com",
       "oromail.com",
       "paxemail.com",
-      "pfalzmail.com",
       "platinmail.com",
       "platinummail.com",
       "pocketmail.com",
@@ -2802,7 +2822,6 @@
       "ppemail.com",
       "premiummail.com",
       "promemail.com",
-      "protonmailbox.com",
       "rexmail.com",
       "rheinmail.com",
       "rickymail.com",
@@ -2818,8 +2837,6 @@
       "securewebmail.com",
       "setmail.com",
       "simplyme.com",
-      "simplymymail.com",
-      "simplymemail.com",
       "southafricamail.com",
       "stanfordemail.com",
       "studentenwohnheim.com",
@@ -2832,7 +2849,6 @@
       "universityemail.com",
       "us-mail.com",
       "usawebmail.com",
-      "usmilitarymail.com",
       "vip-mail.com",
       "webmailportal.com",
       "webmailapp.com",
@@ -2855,8 +2871,6 @@
       "blackmail.net",
       "bossmail.net",
       "bulkmail.net",
-      "canadamail.net",
-      "companymail.net",
       "e-mailing.net",
       "e-mail.net",
       "emailaddress.net",
@@ -2880,7 +2894,6 @@
       "mailoffice.net",
       "mailmail.net",
       "macmail.net",
-      "memail-dns.net",
       "memail.net",
       "memaildns.net",
       "mimail.net",
@@ -2905,11 +2918,11 @@
       "it.de"
     ],
     "mx_hosts": [
-      "",
       "abimail.com",
       "actimail.com",
       "alemail.com",
       "bossmail.net",
+      "box.ozonagram.com",
       "cubemail.com",
       "dadmail.com",
       "direct-mail.com",
@@ -2930,13 +2943,18 @@
       "lewismail.com",
       "libertyemail.com",
       "mail.likemail.com",
+      "mail.mailnames.com",
       "mail.mailro.com",
       "mail.nortonemail.com",
+      "mail.southafricamail.com",
+      "mail1.namebrightmail.com",
+      "mail2.namebrightmail.com",
       "mailaustria.com",
       "mailboxus.com",
       "mailler.com",
       "mailnames.com",
       "mailoffice.net",
+      "mx.stackmail.com",
       "mx01.memail-dns.com",
       "mx01.memail.com",
       "mx02.memail.com",
@@ -2957,12 +2975,23 @@
       "adriamail.com",
       "arztmail.com",
       "austinemail.com",
+      "canadamail.net",
+      "companymail.net",
       "e-mailadresse.com",
       "email-tr.com",
+      "erosmail.com",
       "floweremail.com",
+      "hallomail.com",
       "ladiesemail.com",
+      "mailaustria.com",
       "memail-dns.com",
-      "memailup.com"
+      "memail-dns.net",
+      "memailup.com",
+      "pfalzmail.com",
+      "protonmailbox.com",
+      "simplymemail.com",
+      "simplymymail.com",
+      "usmilitarymail.com"
     ],
     "signup_verification": [
       "payment"
@@ -3031,6 +3060,18 @@
     "remark": "Nate Mail. empas.com is supported as a legacy login/email domain according to Nate Mail login help.",
     "signup_verification": [
       "mobile"
+    ],
+    "type": "free"
+  },
+  "neonmail.io": {
+    "hosts": [
+      "neonmail.io"
+    ],
+    "mx_hosts": [
+      "neonmail.io"
+    ],
+    "signup_verification": [
+      "none"
     ],
     "type": "free"
   },
@@ -3219,6 +3260,18 @@
     ],
     "type": "free"
   },
+  "ownmail.ai": {
+    "hosts": [
+      "ownmail.ai"
+    ],
+    "mx_hosts": [
+      "inbound-smtp.eu-west-1.amazonaws.com"
+    ],
+    "signup_verification": [
+      "none"
+    ],
+    "type": "free"
+  },
   "paced.email": {
     "hosts": [
       "paced.email"
@@ -3272,7 +3325,8 @@
     "mx_hosts": [
       "mx01.posteo.de",
       "mx02.posteo.de",
-      "mx03.posteo.de"
+      "mx03.posteo.de",
+      "mx04.posteo.de"
     ],
     "signup_verification": [
       "payment"
@@ -3516,11 +3570,13 @@
       "skymail.eu",
       "maills.ch",
       "maills.de",
-      "hemail.de",
-      "maills.net"
+      "hemail.de"
     ],
     "mx_hosts": [
       "mx1.skymail.de"
+    ],
+    "old_hosts": [
+      "maills.net"
     ],
     "remark": "Signup page visibly offers skymail.de/skymail.at/skymail.eu; login page also lists maills.ch, maills.de, hemail.de, maills.net. Verify availability before merging.",
     "signup_verification": [
@@ -3682,6 +3738,18 @@
       "imp-5.mail.tiscali.it"
     ],
     "remark": "no signup possible since 2020",
+    "signup_verification": [
+      "none"
+    ],
+    "type": "free"
+  },
+  "tungmail.com": {
+    "hosts": [
+      "tungmail.com"
+    ],
+    "mx_hosts": [
+      "mail.tungmail.com"
+    ],
     "signup_verification": [
       "none"
     ],
@@ -3893,12 +3961,38 @@
     ],
     "type": "free"
   },
+  "wiwimail.com": {
+    "hosts": [
+      "wiwimail.com"
+    ],
+    "mx_hosts": [
+      "mail.nirclemail.com"
+    ],
+    "signup_verification": [
+      "none"
+    ],
+    "type": "free"
+  },
+  "xmail.com": {
+    "hosts": [
+      "xmail.com"
+    ],
+    "mx_hosts": [
+      "mx.xmail.com",
+      "mx40.xmail.com"
+    ],
+    "signup_verification": [
+      "none"
+    ],
+    "type": "free"
+  },
   "xmail.net": {
     "hosts": [
       "xmail.net"
     ],
     "mx_hosts": [
-      "mail.xmail.net"
+      "mail.xmail.net",
+      "smtp-in.xmail.net"
     ],
     "signup_verification": [
       "none"
@@ -4014,7 +4108,6 @@
       "programist.ru",
       "rin.ru",
       "student.su",
-      "tut.by",
       "xaker.ru",
       "ya.ru",
       "yandex.com",
@@ -4024,6 +4117,9 @@
     "mx_hosts": [
       "mx.yandex.ru"
     ],
+    "old_hosts": [
+      "tut.by"
+    ],
     "signup_verification": [
       "mobile"
     ],
@@ -4031,11 +4127,13 @@
   },
   "z.org": {
     "hosts": [
-      "elektrine.com",
-      "z.org"
+      "elektrine.com"
     ],
     "mx_hosts": [
       "mail.elektrine.com"
+    ],
+    "old_hosts": [
+      "z.org"
     ],
     "remark": "Short free email with aliases, XMPP, and static web hosting. Has TOR domain khav7sdajxu6om3arvglevskg2vwuy7luyjcwfwg6xnkd7qtskr2vhad.onion",
     "signup_verification": [

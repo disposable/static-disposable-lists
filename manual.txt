@@ -396,3 +396,6 @@ mailers.edu.pl
 outlook.edu.pl
 privmail.edu.pl
 
+
+mailiy.com
+tempy.email

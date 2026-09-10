@@ -5,6 +5,12 @@ import sys
 
 HOSTNAME_RE = re.compile(r"^(?!-)[A-Za-z0-9\-]{1,255}(?<!-)(\.[A-Za-z0-9\-]{2,64})+$")
 
+
+def is_valid_hostname(hostname: str) -> bool:
+    """Return True if the string is a valid domain name."""
+    return bool(HOSTNAME_RE.match(hostname))
+
+
 def validate_hostnames(filename: str) -> bool:
     errors = []
     with open(filename) as f:
