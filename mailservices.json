@@ -3589,19 +3589,6 @@
     ],
     "type": "paid"
   },
-  "sanipass.com": {
-    "hosts": [
-      "sanipass.com"
-    ],
-    "mx_hosts": [
-      "mx0.123-reg.co.uk",
-      "mx1.123-reg.co.uk"
-    ],
-    "signup_verification": [
-      "none"
-    ],
-    "type": "free"
-  },
   "sapo.pt": {
     "hosts": [
       "sapo.pt"
