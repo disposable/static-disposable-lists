@@ -986,7 +986,7 @@
     "mx_hosts": [
       "mx.librem.one"
     ],
-    "remark": "Free Librem One Basic covers Chat & Social only; Librem Mail is part of the paid Complete bundle.",
+    "remark": "The free Basic tier is Chat & Social only. Librem Mail is part of the paid Complete bundle. The signup form asks for a Librem One address, which on the free tier is the Matrix/Mastodon username, not a mailbox.",
     "signup_verification": [
       "payment"
     ],
