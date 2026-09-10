@@ -3589,6 +3589,21 @@
     ],
     "type": "paid"
   },
+  "sanipass.com": {
+    "discontinued": true,
+    "hosts": [
+      "sanipass.com"
+    ],
+    "mx_hosts": [
+      "mx0.123-reg.co.uk",
+      "mx1.123-reg.co.uk"
+    ],
+    "remark": "Formerly advertised free email at sanipass.com/host/index.html; the service is now defunct and the MX only points to a parking/default 123-reg server.",
+    "signup_verification": [
+      "none"
+    ],
+    "type": "free"
+  },
   "sapo.pt": {
     "hosts": [
       "sapo.pt"
