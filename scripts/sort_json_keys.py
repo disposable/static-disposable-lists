@@ -26,8 +26,9 @@ def sort_json_keys(file_path: str):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: sort_json_keys.py <file.json>")
+    if len(sys.argv) < 2:
+        print("Usage: sort_json_keys.py <file.json> [file2.json ...]")
         sys.exit(1)
 
-    sort_json_keys(sys.argv[1])
+    for file_path in sys.argv[1:]:
+        sort_json_keys(file_path)
