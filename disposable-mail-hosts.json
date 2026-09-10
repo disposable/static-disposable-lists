@@ -11,6 +11,11 @@
       "email-fake.com"
     ]
   },
+  "svuntik.com": {
+    "mx_hosts": [
+      "mail.puretempmail.com"
+    ]
+  },
   "temp-mail.org": {
     "ip_addresses": [
       "45.55.107.22",
@@ -20,6 +25,15 @@
       "143.244.200.226",
       "146.190.186.176",
       "143.244.214.64"
+    ]
+  },
+  "tempgbox.net": {
+    "ip_addresses": [
+      "104.21.31.233",
+      "172.67.180.190"
+    ],
+    "mx_hosts": [
+      "tempgbox-net.mail.protection.outlook.com"
     ]
   }
 }
