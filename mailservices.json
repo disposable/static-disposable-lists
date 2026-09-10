@@ -1,4 +1,17 @@
 {
+  "013net.net": {
+    "hosts": [
+      "013net.net"
+    ],
+    "mx_hosts": [
+      "mx20.013net.net"
+    ],
+    "remark": "Free email for 013 Netvision customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "139.com": {
     "hosts": [
       "139.com"
@@ -81,6 +94,19 @@
     ],
     "type": "forwarding"
   },
+  "a1.net": {
+    "hosts": [
+      "a1.net"
+    ],
+    "mx_hosts": [
+      "smx01.a1.net"
+    ],
+    "remark": "Free email for A1 Austria customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "abv.bg": {
     "hosts": [
       "abv.bg"
@@ -133,6 +159,23 @@
     "mx_hosts": [
       "smx01.a1.net"
     ],
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
+  "asahi-net.jp": {
+    "hosts": [
+      "asahi-net.jp"
+    ],
+    "mx_hosts": [
+      "alt1.aspmx.l.google.com",
+      "alt2.aspmx.l.google.com",
+      "alt3.aspmx.l.google.com",
+      "alt4.aspmx.l.google.com",
+      "aspmx.l.google.com"
+    ],
+    "remark": "Free email for Asahi Net customers.",
     "signup_verification": [
       "other"
     ],
@@ -220,6 +263,20 @@
       "smx-2.bestweb.net"
     ],
     "remark": "Free email for BestWeb/FirstLight customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
+  "bezeqint.net": {
+    "hosts": [
+      "bezeqint.net"
+    ],
+    "mx_hosts": [
+      "mailmx.bezeqint.net",
+      "mailmx2.bezeqint.net"
+    ],
+    "remark": "Free email for Bezeq International customers.",
     "signup_verification": [
       "other"
     ],
@@ -397,6 +454,21 @@
     ],
     "type": "free"
   },
+  "clix.pt": {
+    "hosts": [
+      "clix.pt",
+      "mail.pt"
+    ],
+    "mx_hosts": [
+      "a.mx.gtt.smail.eu",
+      "b.mx.gtt.smail.eu"
+    ],
+    "remark": "Portuguese free webmail providers (Clix and Mail.pt).",
+    "signup_verification": [
+      "none"
+    ],
+    "type": "free"
+  },
   "club-internet.fr": {
     "hosts": [
       "club-internet.fr"
@@ -544,6 +616,19 @@
     ],
     "type": "free"
   },
+  "digi.ro": {
+    "hosts": [
+      "digi.ro"
+    ],
+    "mx_hosts": [
+      "mx.digi.ro"
+    ],
+    "remark": "Free email for DIGI Romania customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "dismail.de": {
     "hosts": [
       "dismail.de"
@@ -578,6 +663,19 @@
       "dslextreme-com.mx.av-mx.com"
     ],
     "remark": "Free email for DSL Extreme customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
+  "du.ae": {
+    "hosts": [
+      "du.ae"
+    ],
+    "mx_hosts": [
+      "du-ae.mail.protection.outlook.com"
+    ],
+    "remark": "Free email for du UAE customers.",
     "signup_verification": [
       "other"
     ],
@@ -648,6 +746,26 @@
     "remark": "Signup requires alternate email for recovery; phone is optional; no CAPTCHA required.",
     "signup_verification": [
       "email"
+    ],
+    "type": "free"
+  },
+  "etisalat": {
+    "hosts": [
+      "emirates.net.ae",
+      "etisalat.ae",
+      "etisalat.com.eg"
+    ],
+    "mx_hosts": [
+      "fmhimail01.emirates.net.ae",
+      "fmkimail01.emirates.net.ae",
+      "mail.etisalat.ae",
+      "mail.etisalat.com.eg",
+      "mail2.etisalat.ae",
+      "mx3.eand.com.eg"
+    ],
+    "remark": "Free email for e& (Etisalat) customers.",
+    "signup_verification": [
+      "other"
     ],
     "type": "free"
   },
@@ -859,6 +977,19 @@
     ],
     "type": "forwarding"
   },
+  "fpt.vn": {
+    "hosts": [
+      "fpt.vn"
+    ],
+    "mx_hosts": [
+      "mta.fpt.vn"
+    ],
+    "remark": "Free email for FPT Telecom Vietnam customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "free.fr": {
     "hosts": [
       "free.fr",
@@ -977,6 +1108,20 @@
     ],
     "type": "paid"
   },
+  "home.nl": {
+    "hosts": [
+      "home.nl"
+    ],
+    "mx_hosts": [
+      "mxin10.ziggo.nl",
+      "mxin5.ziggo.nl"
+    ],
+    "remark": "Free email for Ziggo/Home customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "hushmail.com": {
     "hosts": [
       "hush.ai",
@@ -1005,6 +1150,24 @@
     ],
     "signup_verification": [
       "mobile"
+    ],
+    "type": "free"
+  },
+  "iam.net.ma": {
+    "hosts": [
+      "iam.net.ma",
+      "menara.ma"
+    ],
+    "mx_hosts": [
+      "fai1.menara.ma",
+      "fsi1.menara.ma",
+      "mx1.menara.ma",
+      "mx2.menara.ma",
+      "mx3.menara.ma"
+    ],
+    "remark": "Free email for Maroc Telecom customers.",
+    "signup_verification": [
+      "other"
     ],
     "type": "free"
   },
@@ -1159,6 +1322,20 @@
     ],
     "type": "free"
   },
+  "inwi.ma": {
+    "hosts": [
+      "inwi.ma"
+    ],
+    "mx_hosts": [
+      "mail1.inwi.ma",
+      "mail2.inwi.ma"
+    ],
+    "remark": "Free email for Inwi Morocco customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "iol.it": {
     "hosts": [
       "iol.it"
@@ -1170,6 +1347,19 @@
       "payment"
     ],
     "type": "paid"
+  },
+  "iol.pt": {
+    "hosts": [
+      "iol.pt"
+    ],
+    "mx_hosts": [
+      "smtp-box-01.iol.pt"
+    ],
+    "remark": "IOL Portuguese portal free email.",
+    "signup_verification": [
+      "none"
+    ],
+    "type": "free"
   },
   "jubii.dk": {
     "hosts": [
@@ -1408,6 +1598,32 @@
       "payment"
     ],
     "type": "paid"
+  },
+  "link.net": {
+    "hosts": [
+      "link.net"
+    ],
+    "mx_hosts": [
+      "mx.linkdatacenter.net"
+    ],
+    "remark": "Free email for LINKdotNET Egypt customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
+  "liveinternet.ru": {
+    "hosts": [
+      "liveinternet.ru"
+    ],
+    "mx_hosts": [
+      "mx.li.ru"
+    ],
+    "remark": "LiveInternet Russian portal free email.",
+    "signup_verification": [
+      "none"
+    ],
+    "type": "free"
   },
   "lycos.com": {
     "discontinued": true,
@@ -2258,6 +2474,27 @@
     ],
     "type": "free"
   },
+  "mobily.com.sa": {
+    "hosts": [
+      "mobily.com.sa"
+    ],
+    "mx_hosts": [
+      "amber.mobily.com.sa",
+      "bmx1.mobily.com.sa",
+      "bmx2.mobily.com.sa",
+      "bmx3.mobily.com.sa",
+      "bmx4.mobily.com.sa",
+      "bronze.mobily.com.sa",
+      "garnet.mobily.com.sa",
+      "opal.mobily.com.sa",
+      "pearl.mobily.com.sa"
+    ],
+    "remark": "Free email for Mobily Saudi Arabia customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "mozmail.com": {
     "hosts": [
       "mozmail.com"
@@ -2269,6 +2506,33 @@
       "email"
     ],
     "type": "forwarding"
+  },
+  "mtnonline.com": {
+    "hosts": [
+      "mtnonline.com"
+    ],
+    "mx_hosts": [
+      "mailstore1.secureserver.net",
+      "smtp.secureserver.net"
+    ],
+    "remark": "Free email for MTN Nigeria customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
+  "mts.rs": {
+    "hosts": [
+      "mts.rs"
+    ],
+    "mx_hosts": [
+      "mailgw.mts.rs"
+    ],
+    "remark": "Free email for mts Serbia customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
   },
   "murena.io": {
     "hosts": [
@@ -2283,6 +2547,21 @@
     ],
     "type": "free"
   },
+  "mweb.co.za": {
+    "hosts": [
+      "mweb.co.za"
+    ],
+    "mx_hosts": [
+      "fallbackmx.spamexperts.eu",
+      "lastmx.spamexperts.net",
+      "mx.spamexperts.com"
+    ],
+    "remark": "Free email for MWEB South Africa customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "my.id": {
     "discontinued": true,
     "hosts": [
@@ -2291,6 +2570,19 @@
     "mx_hosts": [],
     "signup_verification": [
       "mobile"
+    ],
+    "type": "free"
+  },
+  "mynet.com": {
+    "hosts": [
+      "mynet.com"
+    ],
+    "mx_hosts": [
+      "mbmail.mynet.com"
+    ],
+    "remark": "Mynet Turkish portal free email.",
+    "signup_verification": [
+      "none"
     ],
     "type": "free"
   },
@@ -2318,6 +2610,19 @@
     ],
     "signup_verification": [
       "none"
+    ],
+    "type": "free"
+  },
+  "netcabo.pt": {
+    "hosts": [
+      "netcabo.pt"
+    ],
+    "mx_hosts": [
+      "2019102901.pamx1.hotmail.com"
+    ],
+    "remark": "Free email for NOS (Netcabo) Portugal customers.",
+    "signup_verification": [
+      "other"
     ],
     "type": "free"
   },
@@ -2488,6 +2793,20 @@
     ],
     "type": "paid"
   },
+  "orange.ma": {
+    "hosts": [
+      "orange.ma"
+    ],
+    "mx_hosts": [
+      "mx2.orange.ma",
+      "mx3.orange.ma"
+    ],
+    "remark": "Free email for Orange Morocco customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "orange.ro": {
     "hosts": [
       "orange.ro"
@@ -2496,6 +2815,22 @@
       "smtp-ina.orange.com",
       "smtp-inb.orange.com"
     ],
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
+  "otenet.gr": {
+    "hosts": [
+      "otenet.gr"
+    ],
+    "mx_hosts": [
+      "mx.otenet.gr",
+      "mx2.otenet.gr",
+      "mx3.otenet.gr",
+      "mx4.otenet.gr"
+    ],
+    "remark": "Free email for OTE Greece customers.",
     "signup_verification": [
       "other"
     ],
@@ -2687,6 +3022,21 @@
     ],
     "type": "free"
   },
+  "portugalmail.pt": {
+    "hosts": [
+      "portugalmail.pt"
+    ],
+    "mx_hosts": [
+      "a.mx.portugalmail.pt",
+      "b.mx.portugalmail.pt",
+      "f.mx.portugalmail.pt"
+    ],
+    "remark": "Portuguese free webmail provider.",
+    "signup_verification": [
+      "none"
+    ],
+    "type": "free"
+  },
   "posteo.de": {
     "hosts": [
       "posteo.de"
@@ -2730,6 +3080,19 @@
     ],
     "signup_verification": [
       "email"
+    ],
+    "type": "free"
+  },
+  "ptt.rs": {
+    "hosts": [
+      "ptt.rs"
+    ],
+    "mx_hosts": [
+      "it.ptt.rs"
+    ],
+    "remark": "Free email for Serbian PTT customers.",
+    "signup_verification": [
+      "other"
     ],
     "type": "free"
   },
@@ -2886,6 +3249,20 @@
       "payment"
     ],
     "type": "paid"
+  },
+  "safaricom.co.ke": {
+    "hosts": [
+      "safaricom.co.ke"
+    ],
+    "mx_hosts": [
+      "mx1.hc502-0.eu.iphmx.com",
+      "mx2.hc502-0.eu.iphmx.com"
+    ],
+    "remark": "Free email for Safaricom Kenya customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
   },
   "sanipass.com": {
     "discontinued": true,
@@ -3143,6 +3520,34 @@
     ],
     "type": "paid"
   },
+  "stc.com.sa": {
+    "hosts": [
+      "stc.com.sa"
+    ],
+    "mx_hosts": [
+      "imssvip1.stc.com.sa",
+      "imssvipdr1.stc.com.sa"
+    ],
+    "remark": "Free email for stc Saudi Arabia customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
+  "sunrise.ch": {
+    "hosts": [
+      "sunrise.ch"
+    ],
+    "mx_hosts": [
+      "mxin1-sunrise-ch.edge.unified.services",
+      "mxin2-sunrise-ch.edge.unified.services"
+    ],
+    "remark": "Free email for Sunrise Switzerland customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "swva.net": {
     "hosts": [
       "swva.net"
@@ -3164,6 +3569,21 @@
       "mail.systemli.org"
     ],
     "remark": "Requires invitation code; every account later receives invite codes.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
+  "t-com.hr": {
+    "hosts": [
+      "t-com.hr"
+    ],
+    "mx_hosts": [
+      "mx01.t-com.hr",
+      "mx02.t-com.hr",
+      "mx03.t-com.hr"
+    ],
+    "remark": "Free email for Hrvatski Telekom customers.",
     "signup_verification": [
       "other"
     ],
@@ -3230,6 +3650,47 @@
     ],
     "type": "free"
   },
+  "tdc.dk": {
+    "hosts": [
+      "tdc.dk"
+    ],
+    "mx_hosts": [
+      "mxa-00360101.gslb.pphosted.com",
+      "mxb-00360101.gslb.pphosted.com"
+    ],
+    "remark": "Free email for TDC Denmark customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
+  "tedata.net": {
+    "hosts": [
+      "tedata.net"
+    ],
+    "mx_hosts": [
+      "tedata-net.mail.protection.outlook.com"
+    ],
+    "remark": "Free email for TEData Egypt customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
+  "telecom.com.ar": {
+    "hosts": [
+      "personal.com.ar",
+      "telecom.com.ar"
+    ],
+    "mx_hosts": [
+      "buepac-mx-08.teco.com.ar"
+    ],
+    "remark": "Free email for Telecom Argentina / Personal customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "telenet.be": {
     "hosts": [
       "telenet.be"
@@ -3239,6 +3700,23 @@
       "mx2.telenet-ops.be"
     ],
     "remark": "Free email for Telenet customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
+  "telenor": {
+    "hosts": [
+      "telenor.dk",
+      "telenor.no",
+      "telenor.se"
+    ],
+    "mx_hosts": [
+      "telenor-dk.mail.protection.outlook.com",
+      "telenor-no.mail.protection.outlook.com",
+      "tsemx.telenor.se"
+    ],
+    "remark": "Free email for Telenor customers.",
     "signup_verification": [
       "other"
     ],
@@ -3314,6 +3792,20 @@
     ],
     "type": "free"
   },
+  "turknet.com.tr": {
+    "hosts": [
+      "turknet.com.tr"
+    ],
+    "mx_hosts": [
+      "smtpbackup.netonehosting.com",
+      "smtpgw.netonehosting.com"
+    ],
+    "remark": "Free email for TurkNet customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "tutanota.com": {
     "hosts": [
       "keemail.me",
@@ -3383,6 +3875,20 @@
     ],
     "type": "free"
   },
+  "viettel.vn": {
+    "hosts": [
+      "viettel.vn"
+    ],
+    "mx_hosts": [
+      "mtasvr01.viettel.vn",
+      "mtasvr02.viettel.vn"
+    ],
+    "remark": "Free email for Viettel Vietnam customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "virginmedia.com": {
     "hosts": [
       "blueyonder.co.uk",
@@ -3413,6 +3919,35 @@
     ],
     "type": "free"
   },
+  "vnpt.vn": {
+    "hosts": [
+      "vnpt.vn"
+    ],
+    "mx_hosts": [
+      "gw12-new.vnpt.vn"
+    ],
+    "remark": "Free email for VNPT Vietnam customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
+  "vodafone": {
+    "hosts": [
+      "vodafone.com.eg",
+      "vodafone.pt"
+    ],
+    "mx_hosts": [
+      "mxx.eu.mpssec.net",
+      "mxy.eu.mpssec.net",
+      "vodafone-com-eg.mail.protection.outlook.com"
+    ],
+    "remark": "Free email for Vodafone customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "vodafonemail.de": {
     "hosts": [
       "vodafonemail.de",
@@ -3428,6 +3963,22 @@
     ],
     "type": "free"
   },
+  "vodamail.co.za": {
+    "hosts": [
+      "vodamail.co.za"
+    ],
+    "mx_hosts": [
+      "mx1c51.megamailservers.com",
+      "mx2c51.megamailservers.eu",
+      "mx3c51.megamailservers.com",
+      "mx4c51.megamailservers.eu"
+    ],
+    "remark": "Free email for Vodacom South Africa customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "voo.be": {
     "hosts": [
       "voo.be"
@@ -3436,6 +3987,47 @@
       "mrouterin.brutele.be"
     ],
     "remark": "Free email for VOO customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
+  "walla.co.il": {
+    "hosts": [
+      "walla.co.il"
+    ],
+    "mx_hosts": [
+      "mx1.hc494-80.c3s2.iphmx.com",
+      "mx2.hc494-80.c3s2.iphmx.com"
+    ],
+    "remark": "Walla Israeli portal free email.",
+    "signup_verification": [
+      "none"
+    ],
+    "type": "free"
+  },
+  "wananchi.com": {
+    "hosts": [
+      "wananchi.com"
+    ],
+    "mx_hosts": [
+      "mta1.zos.wananchi.com",
+      "proxy.zos.wananchi.com"
+    ],
+    "remark": "Free email for Wananchi Kenya customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
+  "waoo.dk": {
+    "hosts": [
+      "waoo.dk"
+    ],
+    "mx_hosts": [
+      "spamfilter.fibia.dk"
+    ],
+    "remark": "Free email for Waoo Denmark customers.",
     "signup_verification": [
       "other"
     ],
@@ -3735,6 +4327,7 @@
       "xaker.ru",
       "ya.ru",
       "yandex.com",
+      "yandex.com.tr",
       "yandex.pl",
       "yandex.ru"
     ],
@@ -3746,6 +4339,20 @@
     ],
     "signup_verification": [
       "mobile"
+    ],
+    "type": "free"
+  },
+  "yousee.dk": {
+    "hosts": [
+      "yousee.dk"
+    ],
+    "mx_hosts": [
+      "mxa-00360101.gslb.pphosted.com",
+      "mxb-00360101.gslb.pphosted.com"
+    ],
+    "remark": "Free email for YouSee Denmark customers.",
+    "signup_verification": [
+      "other"
     ],
     "type": "free"
   },

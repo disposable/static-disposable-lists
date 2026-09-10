@@ -1,4 +1,5 @@
 0-mail.com
+013net.net
 0sg.net
 11mail.com
 123.com
@@ -58,6 +59,7 @@
 8848.net
 9260.dk
 97rock.com
+a1.net
 aaamail.zzn.com
 aamail.net
 aapt.net.au
@@ -173,6 +175,7 @@ aristotle.org
 army.net
 arnet.com.ar
 artlover.com
+asahi-net.jp
 asean-mail.com
 asheville.com
 asia-links.com
@@ -252,6 +255,7 @@ bestmail.us
 bestweb.net
 betriebsdirektor.de
 bettergolf.net
+bezeqint.net
 bharatmail.com
 bigassweb.com
 bigblue.net.au
@@ -429,6 +433,7 @@ claramail.com
 classicmail.co.za
 clerk.com
 cliffhanger.com
+clix.pt
 club-internet.fr
 club4x4.net
 clubalfa.com
@@ -553,6 +558,7 @@ die-genossen.de
 die-optimisten.de
 die-optimisten.net
 diemailbox.de
+digi.ro
 digibel.be
 digital-filestore.de
 diplomats.com
@@ -588,6 +594,7 @@ dr.com
 dropzone.com
 drotposta.hu
 dslextreme.com
+du.ae
 dublin.com
 dublin.ie
 dumpmail.com
@@ -663,6 +670,7 @@ emailto.de
 emailuser.net
 emailx.net
 embarqmail.com
+emirates.net.ae
 eml.cc
 end-war.com
 enel.net
@@ -678,6 +686,8 @@ eriksen.dk
 erols.com
 estranet.it
 ethos.st
+etisalat.ae
+etisalat.com.eg
 etrademail.com
 eudoramail.com
 europe.com
@@ -797,6 +807,7 @@ fortunecity.com
 forum.dk
 forwardemail.net
 foxmail.com
+fpt.vn
 fr33mail.info
 fraekkert.dk
 frandsen.dk
@@ -1032,6 +1043,7 @@ hockeymail.com
 hollywoodkids.com
 home-email.com
 home.de
+home.nl
 home.ro
 home.se
 homemail.co.za
@@ -1077,6 +1089,7 @@ i-mail.com.au
 i-p.com
 i.am
 i.ua
+iam.net.ma
 iamawoman.com
 ice.email
 icestorm.com
@@ -1164,11 +1177,13 @@ internetegypt.com
 internetemails.net
 internetmailing.net
 internode.on.net
+inwi.ma
 inwind.it
 io.dk
 iobox.com
 iobox.fi
 iol.it
+iol.pt
 iowaemail.com
 ip3.com
 iprimus.com.au
@@ -1304,6 +1319,7 @@ libero.it
 liberomail.com
 lick101.com
 liebt-dich.info
+link.net
 linkmaster.com
 linktrader.com
 linuxfreemail.com
@@ -1336,6 +1352,7 @@ live.jp
 live.nl
 live.ru
 live.se
+liveinternet.ru
 liverpoolfans.com
 llandudno.com
 llangollen.com
@@ -2769,6 +2786,7 @@ meine-fotos.info
 meine-urlaubsfotos.de
 mekhong.com
 melodymail.com
+menara.ma
 message.hu
 messages.to
 metacrawler.com
@@ -2796,6 +2814,7 @@ mjfrogmail.com
 ml1.net
 mm.st
 mns.ru
+mobily.com.sa
 mochamail.com
 mohammed.com
 moldova.cc
@@ -2818,6 +2837,8 @@ mr-potatohead.com
 msgbox.com
 msn.cn
 msn.com
+mtnonline.com
+mts.rs
 mttestdriver.com
 munich.com
 music.com
@@ -2828,6 +2849,7 @@ muslim.com
 muslimsonline.com
 musling.dk
 mutantweb.com
+mweb.co.za
 mybox.it
 mycity.com
 mydomain.com
@@ -2838,6 +2860,7 @@ mygo.com
 myiris.com
 mymacmail.com
 mynamedot.com
+mynet.com
 mynetaddress.com
 myownemail.com
 mypad.com
@@ -2887,6 +2910,7 @@ netbounce.com
 netbroadcaster.com
 netbruger.dk
 netby.dk
+netcabo.pt
 netcenter-vn.net
 netcourrier.com
 netexecutive.com
@@ -2995,6 +3019,7 @@ optimum.net
 optonline.net
 optusnet.com.au
 orange.fr
+orange.ma
 orange.ro
 orbitel.bg
 orgmail.net
@@ -3002,6 +3027,7 @@ orthodontist.net
 osite.com.br
 oso.com
 otakumail.com
+otenet.gr
 our-computer.com
 our-office.com
 our.st
@@ -3074,6 +3100,7 @@ penpen.com
 peoplepc.com
 peopleweb.com
 perfectmail.com
+personal.com.ar
 personal.ro
 personales.com
 petersen.dk
@@ -3167,6 +3194,7 @@ protestant.com
 prydirect.info
 psv-supporter.com
 ptd.net
+ptt.rs
 public-files.de
 public.usa.com
 publicist.com
@@ -3267,6 +3295,7 @@ rvshop.com
 s-mail.com
 sacbeemail.com
 saeuferleber.de
+safaricom.co.ke
 safrica.com
 sagra.lu
 sags-per-mail.de
@@ -3440,6 +3469,7 @@ starmedia.com
 starpower.net
 starspath.com
 start.com.au
+stc.com.sa
 stny.rr.com
 stoned.com
 stones.com
@@ -3458,6 +3488,7 @@ suhabi.com
 sukhumvit.net
 sunpoint.net
 sunrise-sunset.com
+sunrise.ch
 sunsgame.com
 sunumail.sn
 superbruger.dk
@@ -3490,6 +3521,7 @@ swva.net
 sx172.com
 sympatico.ca
 syom.com
+t-com.hr
 t-online.hu
 t2mail.com
 takuyakimura.com
@@ -3505,6 +3537,7 @@ tastmig.dk
 tatanova.com
 taxidriver.dk
 tbwt.com
+tdc.dk
 tds.net
 teachermail.net
 teachers.org
@@ -3517,12 +3550,17 @@ technisamail.co.za
 technologist.com
 techscout.com
 techspot.com
+tedata.net
 teens.dk
 teknik.dk
 telebot.com
+telecom.com.ar
 telefonica.net
 teleline.es
 telenet.be
+telenor.dk
+telenor.no
+telenor.se
 telerymd.com
 telinco.net
 telpage.net
@@ -3647,6 +3685,7 @@ tungmail.com
 turboprinz.de
 turboprinzessin.de
 turkey.com
+turknet.com.tr
 tut.by
 tutamail.com
 tutanota.com
@@ -3717,6 +3756,7 @@ veryspeedy.net
 vestergaard.dk
 video.dk
 videotron.ca
+viettel.vn
 vinbazar.com
 violinmakers.co.uk
 vip.126.com
@@ -3739,6 +3779,10 @@ vivavelocity.com
 vivianhsu.net
 vnet.citiz.net
 vnn.vn
+vnpt.vn
+vodafone.com.eg
+vodafone.pt
+vodamail.co.za
 volcanomail.com
 vollbio.de
 volloeko.de
@@ -3755,9 +3799,12 @@ vr9.com
 w3.to
 wahoye.com
 wales2000.net
+walla.co.il
 wam.co.za
 wanadoo.es
 wanadoo.fr
+wananchi.com
+waoo.dk
 war-im-urlaub.de
 warmmail.com
 warpmail.net
@@ -3915,6 +3962,7 @@ yalla.com.lb
 yalook.com
 yam.com
 yandex.com
+yandex.com.tr
 yandex.pl
 yandex.ru
 yandex.ua
@@ -3940,6 +3988,7 @@ yours.com
 yoursubdomain.zzn.com
 yourteacher.net
 yourwap.com
+yousee.dk
 yuuhuu.net
 yyhmail.com
 zahadum.com
