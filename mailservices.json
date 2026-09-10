@@ -16,6 +16,7 @@
   "21cn.com": {
     "hosts": [
       "189.cn",
+      "21cn.com",
       "citiz.net",
       "vip.21cn.com",
       "vip.citiz.net",
@@ -29,6 +30,7 @@
       "mx2-189.21cn.com",
       "mx3-189.21cn.com"
     ],
+    "remark": "Chinese portal and free email from 21CN/Tianyi.",
     "signup_verification": [
       "mobile"
     ],
