@@ -1171,6 +1171,24 @@
     ],
     "type": "free"
   },
+  "iana": {
+    "hosts": [
+      "example",
+      "example.com",
+      "example.edu",
+      "example.net",
+      "example.org",
+      "home.arpa",
+      "internal",
+      "invalid",
+      "local",
+      "localhost",
+      "test",
+      "test.de"
+    ],
+    "remark": "IANA/ICANN special-use and documentation domains (RFC 2606/6761/6762/8375, ICANN reserved .internal) - never real mail providers.",
+    "type": "reserved"
+  },
   "ice.email": {
     "hosts": [
       "ice.email"

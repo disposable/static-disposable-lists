@@ -27,7 +27,7 @@
         "type": {
           "type": "string",
           "description": "Service type classification",
-          "enum": ["free", "paid", "forwarding"]
+          "enum": ["free", "paid", "forwarding", "reserved"]
         },
         "signup_verification": {
           "oneOf": [

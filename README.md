@@ -14,6 +14,7 @@ Static data repository for disposable email domains and mail service definitions
 | [mail-data-hosts-net.txt](mail-data-hosts-net.txt) | Hostnames from mx.mail-data.net |
 | [manual.txt](manual.txt) | Manually curated list of disposable email domains |
 | [free.txt](free.txt) / [free.csv](free.csv) | Free email provider domain lists |
+| [reserved.txt](reserved.txt) | IANA/ICANN special-use and test domains (from `mailservices.json` entries of type `reserved`) |
 | [domains.csv](domains.csv) | Domain classification data |
 | [generator-email-hosts.txt](generator-email-hosts.txt) | Email generator service hostnames |
 

@@ -1,0 +1,12 @@
+example
+example.com
+example.edu
+example.net
+example.org
+home.arpa
+internal
+invalid
+local
+localhost
+test
+test.de

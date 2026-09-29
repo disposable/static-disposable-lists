@@ -137,6 +137,11 @@ def validate_freemailer(
             logging.info(f"Skipping discontinued provider: {host_group}")
             continue
 
+        # Skip reserved/special-use domains - they have no mail infra by design
+        if host_options.get('type') == 'reserved':
+            logging.info(f"Skipping reserved provider: {host_group}")
+            continue
+
         hosts = host_options.get('hosts', [])
         if not hosts:
             logging.warning(f"No hosts found for group {host_group}")
