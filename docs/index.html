@@ -873,10 +873,15 @@
 
         function renderOldHosts(data) {
             const rows = Object.entries(data)
-                .filter(([, info]) => (info.old_hosts || []).length > 0)
+                .map(([name, info]) => [
+                    name,
+                    info,
+                    [...new Set([...(info.old_hosts || []), ...(info.discontinued ? (info.hosts || []) : [])])],
+                ])
+                .filter(([, , retired]) => retired.length > 0)
                 .sort((a, b) => a[0].localeCompare(b[0]));
 
-            const totalOld = rows.reduce((n, [, info]) => n + info.old_hosts.length, 0);
+            const totalOld = rows.reduce((n, [, , retired]) => n + retired.length, 0);
 
             const html = `
                 <div class="section-header">
@@ -886,8 +891,8 @@
                     </h2>
                 </div>
                 <p class="empty-note">
-                    Discontinued or renamed domain hosts previously operated by providers in
-                    mailservices.json - kept for reference, not part of current classification.
+                    Renamed domains (old_hosts) plus all hosts of discontinued providers -
+                    kept for reference, not part of current classification.
                 </p>
                 <div class="table-wrap">
                 <table>
@@ -904,17 +909,17 @@
                         </tr>
                     </thead>
                     <tbody>
-                        ${rows.map(([name, info]) => `
+                        ${rows.map(([name, info, retired]) => `
                             <tr class="oldhost-row"
                                 data-name="${esc(name.toLowerCase())}"
-                                data-hosts="${esc(info.old_hosts.join(' ').toLowerCase())}"
+                                data-hosts="${esc(retired.join(' ').toLowerCase())}"
                                 data-sort-name="${esc(name.toLowerCase())}"
-                                data-sort-hosts="${info.old_hosts.length}">
+                                data-sort-hosts="${retired.length}">
                                 <td>
                                     <strong>${esc(name)}</strong>
                                     ${info.discontinued ? '<span class="badge badge-discontinued">discontinued</span>' : ''}
                                 </td>
-                                <td class="hosts-list">${info.old_hosts.map(h => `<span class="host">${esc(h)}</span>`).join('')}</td>
+                                <td class="hosts-list">${retired.map(h => `<span class="host">${esc(h)}</span>`).join('')}</td>
                                 <td class="remark">${esc(info.remark || '')}</td>
                             </tr>`).join('')}
                     </tbody>
