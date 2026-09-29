@@ -164,6 +164,22 @@
     ],
     "type": "free"
   },
+  "apple": {
+    "hosts": [
+      "privaterelay.appleid.com"
+    ],
+    "mx_hosts": [
+      "smtp1.privaterelay.appleid.com",
+      "smtp2.privaterelay.appleid.com",
+      "smtp3.privaterelay.appleid.com",
+      "smtp4.privaterelay.appleid.com"
+    ],
+    "remark": "Apple iCloud+ Hide My Email / Private Relay addresses.",
+    "signup_verification": [
+      "payment"
+    ],
+    "type": "forwarding"
+  },
   "asahi-net.jp": {
     "hosts": [
       "asahi-net.jp"
@@ -322,6 +338,19 @@
     ],
     "type": "free"
   },
+  "bravealias.com": {
+    "hosts": [
+      "bravealias.com"
+    ],
+    "mx_hosts": [
+      "inbound-smtp.us-west-2.amazonaws.com"
+    ],
+    "remark": "Brave Email Aliases (browser-integrated forwarding).",
+    "signup_verification": [
+      "email"
+    ],
+    "type": "forwarding"
+  },
   "btinternet.com": {
     "hosts": [
       "btinternet.com"
@@ -330,6 +359,22 @@
       "mx.bt.prod.cloud.openwave.ai"
     ],
     "type": "paid"
+  },
+  "bump.email": {
+    "hosts": [
+      "bump.email",
+      "bumpmail.io"
+    ],
+    "mx_hosts": [
+      "mailserver.purelymail.com",
+      "mx.bump.email",
+      "mx2.bump.email"
+    ],
+    "remark": "alias.email free email-alias service.",
+    "signup_verification": [
+      "email"
+    ],
+    "type": "forwarding"
   },
   "c2.hu": {
     "hosts": [
@@ -2515,7 +2560,8 @@
   },
   "mozmail.com": {
     "hosts": [
-      "mozmail.com"
+      "mozmail.com",
+      "relay.firefox.com"
     ],
     "mx_hosts": [
       "inbound-smtp.us-west-2.amazonaws.com"
