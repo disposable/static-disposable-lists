@@ -383,11 +383,11 @@
     "mx_hosts": [
       "mail.c2.hu"
     ],
-    "remark": "signup only possible from hungary IP",
+    "remark": "signup only possible from hungary IP Legitimate provider frequently abused for anonymous-ish signup - strict-tier (greylist) rather than freemail whitelist.",
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "grey"
   },
   "centrum.cz": {
     "hosts": [
@@ -2800,10 +2800,11 @@
     "mx_hosts": [
       "mx.poczta.onet.pl"
     ],
+    "remark": "Legitimate provider frequently abused for anonymous-ish signup - strict-tier (greylist) rather than freemail whitelist.",
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "grey"
   },
   "online.no": {
     "hosts": [
