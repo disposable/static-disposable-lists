@@ -26,19 +26,19 @@
         },
         "type": {
           "type": "string",
-          "description": "Service type classification: free/paid providers, forwarding/alias services, reserved = special-use names",
+          "description": "Service type classification: free/paid providers, forwarding/alias services (always strict-tier for consumers), reserved = special-use names",
           "enum": ["free", "paid", "forwarding", "reserved"]
         },
         "signup_verification": {
           "oneOf": [
             {
               "type": "string",
-              "description": "Verification method required during signup",
-              "enum": ["none", "email", "mobile", "payment", "other", "phone"]
+              "description": "Verification method required during signup. 'none' and 'email' still allow anonymous use (strict-tier for consumers); mobile/phone/sms/payment/other verify identity (whitelist-tier). Unset = unknown, treated as verified.",
+              "enum": ["none", "email", "mobile", "payment", "other", "phone", "sms"]
             },
             {
               "type": "array",
-              "description": "Verification methods required during signup",
+              "description": "Verification methods required during signup; anonymous use possible if 'none' or 'email' is present",
               "items": {
                 "type": "string",
                 "enum": ["none", "email", "mobile", "payment", "other", "sms", "phone"]
