@@ -25,6 +25,7 @@ The `type` and `signup_verification` fields determine how [disposable](https://g
 |----------------|------|
 | whitelist | `free`/`paid`/`reserved` with verified signup (`mobile`/`phone`/`sms`/`payment`/`other`) or unset verification |
 | strict tier (greylist) | `forwarding` always; `free`/`paid` offering `none` or `email` signup verification |
+| excluded entirely | `discontinued: true` services feed neither tier |
 
 `free.txt`/`free.csv` remain as broad reference lists when researching new catalog entries.
 

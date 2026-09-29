@@ -60,7 +60,7 @@
         },
         "discontinued": {
           "type": "boolean",
-          "description": "Whether the email service has been discontinued"
+          "description": "Whether the email service has been discontinued; discontinued services are excluded from whitelist and strict-tier classification entirely"
         }
       },
       "required": ["hosts"],
