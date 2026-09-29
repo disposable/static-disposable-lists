@@ -42,7 +42,7 @@
             line-height: 1.6;
         }
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 0 20px;
         }
@@ -743,6 +743,8 @@
                         <thead>
                             <tr>
                                 <th class="sortable" data-sort="Name">Service<span class="sort-arrow">▲</span></th>
+                                <th class="sortable" data-sort="Type">Type<span class="sort-arrow">▲</span></th>
+                                <th class="sortable" data-sort="Tier">Tier<span class="sort-arrow">▲</span></th>
                                 <th class="sortable" data-sort="Hosts" data-numeric="true">Domains<span class="sort-arrow">▲</span></th>
                                 <th class="sortable" data-sort="Mx" data-numeric="true">MX Hosts<span class="sort-arrow">▲</span></th>
                                 <th>Verification</th>
@@ -762,14 +764,16 @@
                                     data-tier="${tier}"
                                     data-discontinued="${s.discontinued || false}"
                                     data-sort-name="${esc(s.name.toLowerCase())}"
+                                    data-sort-type="${esc(s.type || 'unknown')}"
+                                    data-sort-tier="${tier}"
                                     data-sort-hosts="${(s.hosts || []).length}"
                                     data-sort-mx="${(s.mx_hosts || []).length}">
                                     <td>
                                         <strong>${esc(s.name)}</strong>
                                         ${s.discontinued ? '<span class="badge badge-discontinued">discontinued</span>' : ''}
-                                        <span class="badge badge-${esc(s.type || 'unknown')}">${esc(s.type || 'unknown')}</span>
-                                        <span class="badge badge-tier-${tier}">${TIER_LABELS[tier]}</span>
                                     </td>
+                                    <td><span class="badge badge-${esc(s.type || 'unknown')}">${esc(s.type || 'unknown')}</span></td>
+                                    <td><span class="badge badge-tier-${tier}">${TIER_LABELS[tier]}</span></td>
                                     <td class="hosts-list">
                                         ${renderHostsCollapsible(s.hosts || [])}
                                     </td>
