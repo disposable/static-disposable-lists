@@ -785,6 +785,22 @@
     ],
     "type": "free"
   },
+  "elektrine.com": {
+    "hosts": [
+      "elektrine.com"
+    ],
+    "mx_hosts": [
+      "mail.elektrine.com"
+    ],
+    "old_hosts": [
+      "z.org"
+    ],
+    "remark": "Short free email service (formerly z.org) with aliases, XMPP and static web hosting. Tor onion: elekhj7afj4qnrr4yd3bkzslsyo5jgfxw3orgjkhlcxifueodybyiiad.onion",
+    "signup_verification": [
+      "none"
+    ],
+    "type": "free"
+  },
   "emailn.de": {
     "hosts": [
       "emailn.de",
@@ -4457,22 +4473,6 @@
     "remark": "Free email for YouSee Denmark customers.",
     "signup_verification": [
       "other"
-    ],
-    "type": "free"
-  },
-  "z.org": {
-    "hosts": [
-      "elektrine.com"
-    ],
-    "mx_hosts": [
-      "mail.elektrine.com"
-    ],
-    "old_hosts": [
-      "z.org"
-    ],
-    "remark": "Short free email service (formerly z.org) with aliases, XMPP and static web hosting. Tor onion: elekhj7afj4qnrr4yd3bkzslsyo5jgfxw3orgjkhlcxifueodybyiiad.onion",
-    "signup_verification": [
-      "none"
     ],
     "type": "free"
   },
