@@ -2996,7 +2996,7 @@
       "outlook-com.olc.protection.outlook.com",
       "outlook-cz.d-v1.mx.microsoft"
     ],
-    "remark": "Microsoft freemail (Outlook/Hotmail/Live); anonymous signup possible.",
+    "remark": "Microsoft freemail (Outlook/Hotmail/Live); anonymous signup possible (CAPTCHA-only flow; phone demanded on risk-flagged attempts).",
     "signup_verification": [
       "none"
     ],
