@@ -139,6 +139,19 @@
     ],
     "type": "forwarding"
   },
+  "aliasvault.net": {
+    "hosts": [
+      "aliasvault.net"
+    ],
+    "mx_hosts": [
+      "mail.aliasvault.net"
+    ],
+    "remark": "AliasVault open-source password and email-alias manager; hosted aliases forward to real inbox.",
+    "signup_verification": [
+      "email"
+    ],
+    "type": "forwarding"
+  },
   "anonymail.hu": {
     "hosts": [
       "anonymail.hu",
@@ -3370,6 +3383,19 @@
     ],
     "type": "free"
   },
+  "purelymail.com": {
+    "hosts": [
+      "purelymail.com"
+    ],
+    "mx_hosts": [
+      "mailserver.purelymail.com"
+    ],
+    "remark": "Low-cost paid mailbox provider; also powers Bump email aliases.",
+    "signup_verification": [
+      "payment"
+    ],
+    "type": "paid"
+  },
   "qis.net": {
     "hosts": [
       "qis.net"
@@ -3824,6 +3850,19 @@
       "other"
     ],
     "type": "free"
+  },
+  "sudomail.com": {
+    "hosts": [
+      "sudomail.com"
+    ],
+    "mx_hosts": [
+      "t7vv3w4chgwc.wmjb.mail-manager-smtp.amazonaws.com"
+    ],
+    "remark": "MySudo (Anonyome Labs) in-app email addresses for privacy compartments.",
+    "signup_verification": [
+      "payment"
+    ],
+    "type": "paid"
   },
   "sunrise.ch": {
     "hosts": [
