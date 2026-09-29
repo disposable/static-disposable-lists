@@ -9,14 +9,24 @@ Static data repository for disposable email domains and mail service definitions
 
 | File | Description |
 |------|-------------|
-| [mailservices.json](mailservices.json) | Email service definitions with host and verification metadata |
+| [mailservices.json](mailservices.json) | Email service definitions with host and verification metadata; drives whitelist/strict-tier classification in disposable (see below) |
 | [disposable-mail-hosts.json](disposable-mail-hosts.json) | Disposable mail-backend fingerprints: MX hostnames, hostname suffixes, IPv4 addresses and CIDR ranges used to attribute disposable domains to a provider |
 | [mail-data-hosts-net.txt](mail-data-hosts-net.txt) | Hostnames from mx.mail-data.net |
 | [manual.txt](manual.txt) | Manually curated list of disposable email domains |
-| [free.txt](free.txt) / [free.csv](free.csv) | Free email provider domain lists |
-| [reserved.txt](reserved.txt) | IANA/ICANN special-use and test domains (from `mailservices.json` entries of type `reserved`) |
+| [free.txt](free.txt) / [free.csv](free.csv) | Free email provider domain lists (staging resource for new `mailservices.json` entries, not consumed directly) |
 | [domains.csv](domains.csv) | Domain classification data |
 | [generator-email-hosts.txt](generator-email-hosts.txt) | Email generator service hostnames |
+
+### mailservices.json classification
+
+The `type` and `signup_verification` fields determine how [disposable](https://github.com/disposable/disposable) treats each provider's hosts:
+
+| Classification | Rule |
+|----------------|------|
+| whitelist | `free`/`paid`/`reserved` with verified signup (`mobile`/`phone`/`sms`/`payment`/`other`) or unset verification |
+| strict tier (greylist) | `forwarding` always; `free`/`paid` offering `none` or `email` signup verification |
+
+`free.txt`/`free.csv` remain as broad reference lists when researching new catalog entries.
 
 
 ## JSON Schemas
