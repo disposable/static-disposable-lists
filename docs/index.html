@@ -134,9 +134,10 @@
         table {
             width: 100%;
             border-collapse: collapse;
+            table-layout: fixed;
         }
         th, td {
-            padding: 12px 20px;
+            padding: 10px 14px;
             text-align: left;
             border-bottom: 1px solid var(--border-color);
         }
@@ -272,7 +273,7 @@
             border-color: var(--accent-color);
         }
         .hosts-list, .mx-list {
-            max-width: 300px;
+            max-width: 220px;
             font-size: 0.85rem;
         }
         .hosts-list .host, .mx-list .host {
@@ -282,6 +283,7 @@
             margin: 2px;
             border-radius: 3px;
             font-family: monospace;
+            overflow-wrap: anywhere;
         }
         .hosts-collapsible {
             display: flex;
@@ -312,7 +314,7 @@
         .remark {
             color: var(--text-secondary);
             font-size: 0.85rem;
-            max-width: 300px;
+            overflow-wrap: anywhere;
         }
         .verification-list {
             font-size: 0.85rem;
@@ -321,6 +323,7 @@
             font-family: monospace;
             font-size: 0.8rem;
             color: var(--text-secondary);
+            overflow-wrap: anywhere;
         }
         .service-row .mx-list {
             font-family: inherit;
@@ -740,6 +743,15 @@
                     </div>
                     <div class="table-wrap">
                     <table>
+                        <colgroup>
+                            <col style="width: 13%">
+                            <col style="width: 8%">
+                            <col style="width: 10%">
+                            <col style="width: 24%">
+                            <col style="width: 20%">
+                            <col style="width: 10%">
+                            <col style="width: 15%">
+                        </colgroup>
                         <thead>
                             <tr>
                                 <th class="sortable" data-sort="Name">Service<span class="sort-arrow">▲</span></th>
@@ -811,6 +823,11 @@
                 </p>
                 <div class="table-wrap">
                 <table>
+                    <colgroup>
+                        <col style="width: 22%">
+                        <col style="width: 40%">
+                        <col style="width: 38%">
+                    </colgroup>
                     <thead>
                         <tr>
                             <th class="sortable" data-sort="Name">Host<span class="sort-arrow">▲</span></th>
