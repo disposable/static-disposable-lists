@@ -271,6 +271,20 @@
     ],
     "type": "free"
   },
+  "ayna.com": {
+    "hosts": [
+      "ayna.com"
+    ],
+    "mx_hosts": [
+      "alt1.aspmx.l.google.com",
+      "alt2.aspmx.l.google.com",
+      "alt3.aspmx.l.google.com",
+      "alt4.aspmx.l.google.com",
+      "aspmx.l.google.com"
+    ],
+    "remark": "Saudi freemail provider (Ayna).",
+    "type": "free"
+  },
   "beeble.com": {
     "hosts": [
       "beeble.com"
@@ -523,6 +537,19 @@
       "pkvw-mx.msg.pkvw.co.charter.net"
     ],
     "remark": "Free email for Charter/Spectrum customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
+  "chello.at": {
+    "hosts": [
+      "chello.at"
+    ],
+    "mx_hosts": [
+      "mx.mymagenta.at"
+    ],
+    "remark": "Free email for Magenta/Chello AT customers.",
     "signup_verification": [
       "other"
     ],
@@ -899,6 +926,19 @@
     ],
     "type": "forwarding"
   },
+  "ese.kr": {
+    "hosts": [
+      "lko.co.kr",
+      "mall.tko.co.kr",
+      "nuo.co.kr",
+      "tko.co.kr"
+    ],
+    "mx_hosts": [
+      "mail.ese.kr"
+    ],
+    "remark": "Korean freemail provider.",
+    "type": "free"
+  },
   "etisalat": {
     "hosts": [
       "emirates.net.ae",
@@ -917,6 +957,52 @@
     "signup_verification": [
       "other"
     ],
+    "type": "free"
+  },
+  "everyone.net": {
+    "hosts": [
+      "1nsyncfan.com",
+      "alecsmail.com",
+      "animalwoman.net",
+      "antongijsen.com",
+      "austrosearch.net",
+      "baudoinconsulting.com",
+      "birdowner.net",
+      "bmlsports.net",
+      "brazilmail.com.br",
+      "brittonsign.com",
+      "buryfans.com",
+      "close2you.net",
+      "cry4helponline.com",
+      "davegracey.com",
+      "ecbsolutions.net",
+      "from-belgium.com",
+      "from-france.net",
+      "from-germany.net",
+      "gencmail.com",
+      "globalsite.com.br",
+      "hackermail.net",
+      "i-mailbox.net",
+      "rxdoc.biz",
+      "sale-sale-sale.com",
+      "the-brazilian.com",
+      "the-madman.com",
+      "the-prayer.com",
+      "the-student.net",
+      "the-wild-west.com",
+      "thewizzkid.com",
+      "torchmail.com",
+      "urgentmail.biz",
+      "xzapmail.com"
+    ],
+    "mx_hosts": [
+      "mx.generic-isp.com",
+      "sitemail.everyone.net",
+      "sitemail2.everyone.net",
+      "sitemail3.everyone.net",
+      "sitemail4.everyone.net"
+    ],
+    "remark": "Everyone.net white-label freemail platform (legacy; signup closed).",
     "type": "free"
   },
   "fastmail.com": {
@@ -1565,6 +1651,17 @@
     ],
     "type": "forwarding"
   },
+  "japan.com": {
+    "hosts": [
+      "japan.com",
+      "london.com"
+    ],
+    "mx_hosts": [
+      "webmail.pear.com"
+    ],
+    "remark": "Pear webmail freemail (legacy Outblaze network).",
+    "type": "free"
+  },
   "jetable.org": {
     "hosts": [
       "jetable.org"
@@ -1762,10 +1859,24 @@
     ],
     "type": "free"
   },
+  "keko.com.ar": {
+    "hosts": [
+      "keko.com.ar"
+    ],
+    "mx_hosts": [
+      "correo.keko.com.ar",
+      "mail.keko.com.ar"
+    ],
+    "remark": "Argentinian freemail (Keko).",
+    "type": "free"
+  },
   "kpnmail": {
     "hosts": [
+      "freeler.nl",
       "kpnmail.nl",
-      "freeler.nl"
+      "telfort.nl",
+      "telfortglasvezel.nl",
+      "xs4all.nl"
     ],
     "mx_hosts": [
       "mx.kpnmail.nl"
@@ -1785,6 +1896,16 @@
     "signup_verification": [
       "other"
     ],
+    "type": "free"
+  },
+  "latino.com": {
+    "hosts": [
+      "latino.com"
+    ],
+    "mx_hosts": [
+      "mail.latino.com"
+    ],
+    "remark": "Latino.com freemail.",
     "type": "free"
   },
   "libero.it": {
@@ -1842,6 +1963,17 @@
     ],
     "type": "free"
   },
+  "love.cz": {
+    "hosts": [
+      "love.cz"
+    ],
+    "mx_hosts": [
+      "mailin1.love.cz",
+      "mailin2.love.cz"
+    ],
+    "remark": "Czech freemail (love.cz).",
+    "type": "free"
+  },
   "lycos.com": {
     "discontinued": true,
     "hosts": [
@@ -1895,8 +2027,8 @@
       "archaeologist.com",
       "arcticmail.com",
       "artlover.com",
-      "asia.com",
       "asia-mail.com",
+      "asia.com",
       "atheist.com",
       "auctioneer.net",
       "australiamail.com",
@@ -1928,10 +2060,10 @@
       "coolsite.net",
       "counsellor.com",
       "cutey.com",
+      "cyber-wizard.com",
       "cyberdude.com",
       "cybergal.com",
       "cyberservices.com",
-      "cyber-wizard.com",
       "dallasmail.com",
       "dbzmail.com",
       "deliveryman.com",
@@ -1987,12 +2119,14 @@
       "koreamail.com",
       "legislator.com",
       "linuxmail.org",
+      "lmxmail.sk",
       "lobbyist.com",
       "lovecat.com",
       "madonnafan.com",
-      "mail.com",
       "mail-me.com",
+      "mail.com",
       "marchmail.com",
+      "me-mail.hu",
       "metalfan.com",
       "mexicomail.com",
       "mindless.com",
@@ -2064,6 +2198,7 @@
       "toothfairy.com",
       "torontomail.com",
       "tvstar.com",
+      "uae.ac",
       "umpire.com",
       "usa.com",
       "uymail.com",
@@ -2074,6 +2209,7 @@
     ],
     "mx_hosts": [
       "instruction.com",
+      "mail.thirdechelon.net",
       "mx00.mail.com",
       "mx01.mail.com"
     ],
@@ -2158,7 +2294,6 @@
   },
   "mail.ru": {
     "hosts": [
-      "xmail.ru",
       "aport2000.ru",
       "bk.ru",
       "e-mail.ru",
@@ -2174,9 +2309,11 @@
       "list.ru",
       "mail.ru",
       "mailru.com",
+      "my.com",
       "newmail.ru",
       "omen.ru",
       "supermail.ru",
+      "xmail.ru",
       "zmail.ru"
     ],
     "mx_hosts": [
@@ -2257,6 +2394,22 @@
     ],
     "type": "paid"
   },
+  "mailerhost.net": {
+    "hosts": [
+      "deskmail.com",
+      "hookup.net",
+      "lovergirl.com",
+      "nameplanet.com",
+      "populus.net",
+      "unomail.com",
+      "xmsg.com"
+    ],
+    "mx_hosts": [
+      "mail.mailerhost.net"
+    ],
+    "remark": "Mailerhost white-label freemail platform (legacy).",
+    "type": "free"
+  },
   "mailexpire.com": {
     "hosts": [
       "mailexpire.com"
@@ -2284,6 +2437,32 @@
     ],
     "type": "free"
   },
+  "mailgenie.net": {
+    "hosts": [
+      "bikeracers.net",
+      "boyzoneclub.com",
+      "from-israel.com",
+      "from-korea.com",
+      "from-outerspace.com",
+      "from-spain.net",
+      "fromdelaware.com",
+      "fromflorida.net",
+      "fromillinois.com",
+      "frommaine.net",
+      "fromsouthdakota.com",
+      "kapoorweb.com",
+      "karachioye.com",
+      "khosropour.com",
+      "mahmoodweb.com",
+      "the-davis-home.com",
+      "the-hooligan.com"
+    ],
+    "mx_hosts": [
+      "mta1.mailgenie.net"
+    ],
+    "remark": "Mailgenie white-label freemail platform (legacy).",
+    "type": "free"
+  },
   "mailnull.com": {
     "hosts": [
       "mailnull.com"
@@ -2299,46 +2478,51 @@
   },
   "mailo.com": {
     "hosts": [
-      "mailo.com",
-      "netcourrier.com",
-      "netc.fr",
-      "francemel.fr",
-      "emailasso.net",
-      "lavache.com",
-      "monemail.com",
-      "mailo.fr",
-      "mailo.be",
-      "mailo.lu",
-      "mailo.es",
-      "mailo.it",
-      "mailo.uk",
-      "mailo.pt",
-      "mailo.eu",
-      "mailo.ca",
-      "mailo.bzh",
-      "mailo.alsace",
-      "mailo.corsica",
-      "mailo.cat",
-      "net-c.com",
-      "netc.eu",
-      "net-c.nl",
-      "net-c.be",
-      "netc.lu",
-      "netc.it",
-      "net-c.es",
-      "net-c.cat",
-      "netc.pl",
-      "net-c.ca",
-      "netcmail.com",
-      "europamel.net",
       "africamel.net",
       "brusseler.com",
+      "calidifontain.be",
+      "emailasso.net",
+      "europamel.net",
+      "francemel.fr",
       "inmano.com",
-      "perso.be",
-      "teaser.fr",
+      "lavache.com",
+      "mailo.alsace",
+      "mailo.be",
+      "mailo.bzh",
+      "mailo.ca",
+      "mailo.cat",
+      "mailo.com",
+      "mailo.corsica",
+      "mailo.es",
+      "mailo.eu",
+      "mailo.fr",
+      "mailo.it",
+      "mailo.lu",
+      "mailo.pt",
+      "mailo.uk",
       "mailoo.org",
+      "monemail.com",
       "mongenie.com",
-      "ntymail.com"
+      "net-c.be",
+      "net-c.ca",
+      "net-c.cat",
+      "net-c.com",
+      "net-c.es",
+      "net-c.fr",
+      "net-c.it",
+      "net-c.lu",
+      "net-c.nl",
+      "net-c.pl",
+      "netc.eu",
+      "netc.fr",
+      "netc.it",
+      "netc.lu",
+      "netc.pl",
+      "netcmail.com",
+      "netcourrier.com",
+      "ntymail.com",
+      "perso.be",
+      "teaser.fr"
     ],
     "mx_hosts": [
       "mongeniemx.mailobj.net",
@@ -3008,6 +3192,20 @@
     ],
     "type": "free"
   },
+  "online.nl": {
+    "hosts": [
+      "online.nl"
+    ],
+    "mx_hosts": [
+      "mx.capitar.com",
+      "smtp-in.online.nl"
+    ],
+    "remark": "Free email for Online.nl customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "online.no": {
     "hosts": [
       "online.no"
@@ -3106,16 +3304,24 @@
   },
   "outlook.com": {
     "hosts": [
+      "hotmail.be",
       "hotmail.ca",
       "hotmail.ch",
       "hotmail.co.il",
+      "hotmail.co.th",
       "hotmail.co.uk",
       "hotmail.com",
+      "hotmail.com.br",
+      "hotmail.com.hk",
+      "hotmail.com.tw",
       "hotmail.de",
       "hotmail.es",
       "hotmail.fr",
       "hotmail.it",
+      "hotmail.nl",
+      "hotmail.no",
       "live.at",
+      "live.be",
       "live.ca",
       "live.cl",
       "live.cn",
@@ -3125,6 +3331,7 @@
       "live.com.ar",
       "live.com.au",
       "live.com.mx",
+      "live.com.my",
       "live.com.pt",
       "live.com.sg",
       "live.de",
@@ -3135,9 +3342,12 @@
       "live.it",
       "live.jp",
       "live.nl",
+      "live.no",
       "live.ru",
       "live.se",
       "msn.com",
+      "msn.com.au",
+      "msn.nl",
       "outlook.at",
       "outlook.be",
       "outlook.cl",
@@ -3175,7 +3385,9 @@
     "mx_hosts": [
       "apc.olc.protection.outlook.com",
       "eur.olc.protection.outlook.com",
+      "extmail.msn.bigpond.com",
       "hotmail-com.olc.protection.outlook.com",
+      "hotmail-nl.b-v1.mx.microsoft",
       "live-com.olc.protection.outlook.com",
       "msn-com.olc.protection.outlook.com",
       "nam.olc.protection.outlook.com",
@@ -3294,6 +3506,16 @@
     ],
     "type": "free"
   },
+  "pobox.hu": {
+    "hosts": [
+      "pobox.hu"
+    ],
+    "mx_hosts": [
+      "pobox.hu"
+    ],
+    "remark": "Hungarian freemail (Pobox).",
+    "type": "free"
+  },
   "portugalmail.pt": {
     "hosts": [
       "portugalmail.pt"
@@ -3395,6 +3617,16 @@
       "payment"
     ],
     "type": "paid"
+  },
+  "qip.ru": {
+    "hosts": [
+      "qip.ru"
+    ],
+    "mx_hosts": [
+      "e.m.onl"
+    ],
+    "remark": "Russian freemail provider (QIP).",
+    "type": "free"
   },
   "qis.net": {
     "hosts": [
@@ -3592,6 +3824,30 @@
     ],
     "type": "free"
   },
+  "scarlet.nl": {
+    "hosts": [
+      "scarlet.nl"
+    ],
+    "mx_hosts": [
+      "mx.capitar.com"
+    ],
+    "remark": "Free email for Scarlet (Proximus) customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
+  "seckinmail.com": {
+    "hosts": [
+      "seckinmail.com"
+    ],
+    "mx_hosts": [
+      "seckinmail-com-bk.mr.outblaze.com",
+      "seckinmail-com.mr.outblaze.com"
+    ],
+    "remark": "Freemail hosted on the Outblaze platform.",
+    "type": "free"
+  },
   "seznam.cz": {
     "hosts": [
       "seznam.cz",
@@ -3757,6 +4013,22 @@
     ],
     "type": "free"
   },
+  "solcon.nl": {
+    "hosts": [
+      "solcon.nl"
+    ],
+    "mx_hosts": [
+      "mx101.solcon.nl",
+      "mx102.solcon.nl",
+      "mx103.solcon.nl",
+      "mx104.solcon.nl"
+    ],
+    "remark": "Free email for Solcon customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "soverin.net": {
     "hosts": [
       "soverin.net"
@@ -3846,6 +4118,19 @@
       "imssvipdr1.stc.com.sa"
     ],
     "remark": "Free email for stc Saudi Arabia customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
+  "stipte.nl": {
+    "hosts": [
+      "stipte.nl"
+    ],
+    "mx_hosts": [
+      "mx.capitar.com"
+    ],
+    "remark": "Free email for Stipte customers.",
     "signup_verification": [
       "other"
     ],
@@ -4007,6 +4292,20 @@
     ],
     "type": "free"
   },
+  "tele2.nl": {
+    "hosts": [
+      "tele2.nl"
+    ],
+    "mx_hosts": [
+      "mx10.se.isp-net.nl",
+      "mx20.se.isp-net.nl"
+    ],
+    "remark": "Free email for Tele2 NL customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "telecom.com.ar": {
     "hosts": [
       "personal.com.ar",
@@ -4156,6 +4455,16 @@
     ],
     "type": "free"
   },
+  "ubbi.com.br": {
+    "hosts": [
+      "ubbi.com.br"
+    ],
+    "mx_hosts": [
+      "mail.ubbi.com.br"
+    ],
+    "remark": "Brazilian freemail (Ubbi).",
+    "type": "free"
+  },
   "ubikom.cc": {
     "hosts": [
       "ubikom.cc"
@@ -4181,6 +4490,19 @@
     ],
     "type": "free"
   },
+  "utanet.at": {
+    "hosts": [
+      "utanet.at"
+    ],
+    "mx_hosts": [
+      "mail.drei.at"
+    ],
+    "remark": "Free email for Drei/UtaNet AT customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "uu.me": {
     "hosts": [
       "uu.me"
@@ -4193,6 +4515,21 @@
       "email"
     ],
     "type": "forwarding"
+  },
+  "versatel.nl": {
+    "hosts": [
+      "versatel.nl"
+    ],
+    "mx_hosts": [
+      "fallbackmx.spamexperts.eu",
+      "lastmx.spamexperts.net",
+      "mx.spamexperts.com"
+    ],
+    "remark": "Free email for Versatel customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
   },
   "vfemail.net": {
     "hosts": [
@@ -4236,6 +4573,17 @@
       "other"
     ],
     "type": "free"
+  },
+  "vip.163.com": {
+    "hosts": [
+      "vip.163.com"
+    ],
+    "mx_hosts": [
+      "vip163mx00.mxmail.netease.com",
+      "vip163mx01.mxmail.netease.com"
+    ],
+    "remark": "NetEase VIP mail.",
+    "type": "paid"
   },
   "virginmedia.com": {
     "hosts": [
@@ -4352,6 +4700,17 @@
     "signup_verification": [
       "none"
     ],
+    "type": "free"
+  },
+  "walla.com": {
+    "hosts": [
+      "walla.com"
+    ],
+    "mx_hosts": [
+      "mx1.hc49497.c3s2.iphmx.com",
+      "mx2.hc49497.c3s2.iphmx.com"
+    ],
+    "remark": "Israeli portal freemail (Walla!).",
     "type": "free"
   },
   "wananchi.com": {
@@ -4545,6 +4904,19 @@
     ],
     "type": "free"
   },
+  "xms.nl": {
+    "hosts": [
+      "xms.nl"
+    ],
+    "mx_hosts": [
+      "xms.nl"
+    ],
+    "remark": "Free email for XMS customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "yaanimail.com": {
     "hosts": [
       "superonline.com",
@@ -4583,6 +4955,7 @@
       "aim.com",
       "aol.co.uk",
       "aol.com",
+      "aol.fr",
       "aol.it",
       "bellatlantic.net",
       "citlink.net",
@@ -4590,6 +4963,7 @@
       "cox.net",
       "cs.com",
       "csi.com",
+      "currently.com",
       "epix.net",
       "frontier.com",
       "frontiernet.net",
@@ -4604,9 +4978,11 @@
       "verizon.net",
       "wow.com",
       "y7mail.com",
+      "yahoo.ar",
       "yahoo.at",
       "yahoo.be",
       "yahoo.ca",
+      "yahoo.cl",
       "yahoo.co.id",
       "yahoo.co.il",
       "yahoo.co.in",
@@ -4649,11 +5025,13 @@
       "ymail.com"
     ],
     "mx_hosts": [
+      "mail.yahoo.ar",
       "mta5.am0.yahoodns.net",
       "mta6.am0.yahoodns.net",
       "mta7.am0.yahoodns.net",
       "mx-aol.mail.gm0.yahoodns.net",
       "mx-apac.mail.gm0.yahoodns.net",
+      "mx-att.mail.am0.yahoodns.net",
       "mx-biz.mail.am0.yahoodns.net",
       "mx-eu.mail.am0.yahoodns.net",
       "mx-tw.mail.gm0.yahoodns.net"
@@ -4718,6 +5096,26 @@
       "payment"
     ],
     "type": "paid"
+  },
+  "ziggo.nl": {
+    "hosts": [
+      "casema.nl",
+      "quicknet.nl",
+      "upc.nl",
+      "upcmail.nl",
+      "vodafone.nl",
+      "ziggo.nl"
+    ],
+    "mx_hosts": [
+      "front.mail.ziggo.com",
+      "mxin10.ziggo.nl",
+      "mxin5.ziggo.nl"
+    ],
+    "remark": "Free email for Ziggo/UPC/Vodafone NL customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
   },
   "zohomail.com": {
     "hosts": [
