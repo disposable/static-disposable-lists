@@ -285,6 +285,20 @@
     "remark": "Saudi freemail provider (Ayna).",
     "type": "free"
   },
+  "bbox.fr": {
+    "hosts": [
+      "bbox.fr"
+    ],
+    "mx_hosts": [
+      "mx.bbox.fr",
+      "mx-b.bbox.fr"
+    ],
+    "remark": "Free email for Bouygues Telecom customers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "beeble.com": {
     "hosts": [
       "beeble.com"
@@ -3863,6 +3877,21 @@
     ],
     "type": "free"
   },
+  "sfr.fr": {
+    "hosts": [
+      "neuf.fr",
+      "numericable.fr",
+      "sfr.fr"
+    ],
+    "mx_hosts": [
+      "smtp-in.sfr.fr"
+    ],
+    "remark": "Free email for SFR customers (incl. legacy Neuf/Numericable).",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "sibnet.ru": {
     "hosts": [
       "sibnet.ru"
@@ -4239,11 +4268,16 @@
   },
   "talktalk.co.uk": {
     "hosts": [
-      "talktalk.co.uk"
+      "talktalk.co.uk",
+      "talktalk.net"
     ],
     "mx_hosts": [
       "eu-smtp-inbound-1.mimecast.com",
-      "eu-smtp-inbound-2.mimecast.com"
+      "eu-smtp-inbound-2.mimecast.com",
+      "mx001.tt.xion.oxcs.net",
+      "mx002.tt.xion.oxcs.net",
+      "mx003.tt.xion.oxcs.net",
+      "mx004.tt.xion.oxcs.net"
     ],
     "remark": "Free email for TalkTalk customers.",
     "signup_verification": [
