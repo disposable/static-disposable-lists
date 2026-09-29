@@ -437,6 +437,7 @@
                 <div class="tab-container">
                     <div class="tab active" data-tab="mail-services">Mail Services</div>
                     <div class="tab" data-tab="disposable">Disposable Hosts</div>
+                    <div class="tab" data-tab="old-hosts">Old Hosts</div>
                 </div>
 
                 <div id="mail-services" class="tab-content active">
@@ -481,6 +482,15 @@
                         <input type="text" id="disposableSearch" placeholder="Search disposable hosts...">
                     </div>
                     <div id="disposable-content">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+
+                <div id="old-hosts" class="tab-content">
+                    <div class="search-box">
+                        <input type="text" id="oldSearch" placeholder="Search old hosts...">
+                    </div>
+                    <div id="old-hosts-content">
                         <!-- Populated by JS -->
                     </div>
                 </div>
@@ -631,6 +641,7 @@
                 renderStats(mailservices, disposable);
                 renderMailServices(mailservices);
                 renderDisposable(disposable);
+                renderOldHosts(mailservices);
 
                 setupTabs();
                 setupSearch(mailservices, disposable);
@@ -860,6 +871,60 @@
             document.getElementById('disposable-content').innerHTML = html;
         }
 
+        function renderOldHosts(data) {
+            const rows = Object.entries(data)
+                .filter(([, info]) => (info.old_hosts || []).length > 0)
+                .sort((a, b) => a[0].localeCompare(b[0]));
+
+            const totalOld = rows.reduce((n, [, info]) => n + info.old_hosts.length, 0);
+
+            const html = `
+                <div class="section-header">
+                    <h2>
+                        Old / Retired Hosts
+                        <span class="count">${totalOld}</span>
+                    </h2>
+                </div>
+                <p class="empty-note">
+                    Discontinued or renamed domain hosts previously operated by providers in
+                    mailservices.json - kept for reference, not part of current classification.
+                </p>
+                <div class="table-wrap">
+                <table>
+                    <colgroup>
+                        <col style="width: 22%">
+                        <col style="width: 48%">
+                        <col style="width: 30%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="sortable" data-sort="Name">Provider<span class="sort-arrow">▲</span></th>
+                            <th class="sortable" data-sort="Hosts" data-numeric="true">Old Domains<span class="sort-arrow">▲</span></th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${rows.map(([name, info]) => `
+                            <tr class="oldhost-row"
+                                data-name="${esc(name.toLowerCase())}"
+                                data-hosts="${esc(info.old_hosts.join(' ').toLowerCase())}"
+                                data-sort-name="${esc(name.toLowerCase())}"
+                                data-sort-hosts="${info.old_hosts.length}">
+                                <td>
+                                    <strong>${esc(name)}</strong>
+                                    ${info.discontinued ? '<span class="badge badge-discontinued">discontinued</span>' : ''}
+                                </td>
+                                <td class="hosts-list">${info.old_hosts.map(h => `<span class="host">${esc(h)}</span>`).join('')}</td>
+                                <td class="remark">${esc(info.remark || '')}</td>
+                            </tr>`).join('')}
+                    </tbody>
+                </table>
+                </div>
+            `;
+
+            document.getElementById('old-hosts-content').innerHTML = html;
+        }
+
         function setupTabs() {
             document.querySelectorAll('.tab').forEach(tab => {
                 tab.addEventListener('click', () => {
@@ -883,6 +948,15 @@
             document.getElementById('disposableSearch').addEventListener('input', (e) => {
                 const query = e.target.value.toLowerCase();
                 document.querySelectorAll('.disposable-row').forEach(row => {
+                    const name = row.dataset.name;
+                    const hosts = row.dataset.hosts || '';
+                    row.style.display = (name.includes(query) || hosts.includes(query)) ? '' : 'none';
+                });
+            });
+
+            document.getElementById('oldSearch').addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase();
+                document.querySelectorAll('.oldhost-row').forEach(row => {
                     const name = row.dataset.name;
                     const hosts = row.dataset.hosts || '';
                     row.style.display = (name.includes(query) || hosts.includes(query)) ? '' : 'none';
