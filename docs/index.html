@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Static Disposable Lists - Mail Services Database</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📧</text></svg>">
     <style>
         :root {
             --bg-color: #f6f8fa;
@@ -88,7 +89,7 @@
             border: 1px solid var(--border-color);
             border-radius: 8px;
             margin-bottom: 30px;
-            overflow: hidden;
+            overflow: clip;
         }
         .section-header {
             background: var(--accent-light);
@@ -120,10 +121,15 @@
             border: 1px solid var(--border-color);
             border-radius: 6px;
             font-size: 0.95rem;
+            background: var(--card-bg);
+            color: var(--text-color);
         }
         .search-box input:focus {
             outline: none;
             border-color: var(--accent-color);
+        }
+        .table-wrap {
+            overflow-x: auto;
         }
         table {
             width: 100%;
@@ -142,8 +148,26 @@
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
+        th.sortable {
+            cursor: pointer;
+            user-select: none;
+            white-space: nowrap;
+        }
+        th.sortable:hover {
+            color: var(--accent-color);
+        }
+        th.sortable .sort-arrow {
+            font-size: 0.75rem;
+            margin-left: 4px;
+            opacity: 0.4;
+        }
+        th.sortable.sort-asc .sort-arrow,
+        th.sortable.sort-desc .sort-arrow {
+            opacity: 1;
+        }
         td {
             font-size: 0.95rem;
+            vertical-align: top;
         }
         tr:hover {
             background: var(--bg-color);
@@ -168,6 +192,10 @@
             background: var(--accent-light);
             color: var(--accent-color);
         }
+        .badge-reserved {
+            background: #f6f8fa;
+            color: var(--text-secondary);
+        }
         .badge-discontinued {
             background: #ffebe9;
             color: var(--danger-color);
@@ -176,7 +204,20 @@
             background: #f6f8fa;
             color: var(--text-secondary);
         }
-        [data-theme="dark"] .badge-unknown {
+        .badge-tier-whitelist {
+            background: #dafbe1;
+            color: var(--success-color);
+        }
+        .badge-tier-strict {
+            background: #fff8c5;
+            color: var(--warning-color);
+        }
+        .badge-tier-excluded {
+            background: #ffebe9;
+            color: var(--danger-color);
+        }
+        [data-theme="dark"] .badge-unknown,
+        [data-theme="dark"] .badge-reserved {
             background: #21262d;
         }
         .theme-toggle {
@@ -203,6 +244,7 @@
             display: flex;
             gap: 8px;
             align-items: center;
+            flex-wrap: wrap;
         }
         .filter-group label {
             font-size: 0.85rem;
@@ -323,10 +365,16 @@
             border-radius: 8px;
             margin: 20px 0;
         }
+        .empty-note {
+            padding: 15px 20px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
         footer {
             text-align: center;
             color: var(--text-secondary);
             font-size: 0.9rem;
+            padding-bottom: 20px;
         }
         a {
             color: var(--accent-color);
@@ -347,6 +395,13 @@
             }
             .hosts-list, .mx-list, .remark {
                 max-width: 150px;
+            }
+        }
+        @media (min-width: 769px) {
+            thead th {
+                position: sticky;
+                top: 0;
+                z-index: 1;
             }
         }
     </style>
@@ -392,6 +447,7 @@
                             <button class="filter-btn" data-filter="type" data-value="free">Free</button>
                             <button class="filter-btn" data-filter="type" data-value="paid">Paid</button>
                             <button class="filter-btn" data-filter="type" data-value="forwarding">Forwarding</button>
+                            <button class="filter-btn" data-filter="type" data-value="reserved">Reserved</button>
                             <button class="filter-btn" data-filter="type" data-value="discontinued">Discontinued</button>
                         </div>
                         <div class="filter-group">
@@ -402,6 +458,14 @@
                             <button class="filter-btn" data-filter="verify" data-value="email">Email</button>
                             <button class="filter-btn" data-filter="verify" data-value="payment">Payment</button>
                             <button class="filter-btn" data-filter="verify" data-value="other">Other</button>
+                            <button class="filter-btn" data-filter="verify" data-value="unset">Unset</button>
+                        </div>
+                        <div class="filter-group">
+                            <label>Tier:</label>
+                            <button class="filter-btn active" data-filter="tier" data-value="all">All</button>
+                            <button class="filter-btn" data-filter="tier" data-value="whitelist">Whitelist</button>
+                            <button class="filter-btn" data-filter="tier" data-value="strict">Strict</button>
+                            <button class="filter-btn" data-filter="tier" data-value="excluded">Excluded</button>
                         </div>
                     </div>
                     <div id="mail-services-content">
@@ -429,7 +493,6 @@
     </footer>
 
     <script>
-        // Fetch and render data
         function initTheme() {
             const saved = localStorage.getItem('theme');
             const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -452,22 +515,63 @@
 
         initTheme();
 
-        let currentFilters = { type: 'all', verify: 'all' };
+        let currentFilters = { type: 'all', verify: 'all', tier: 'all' };
+        let currentSearch = '';
+        let sortState = { column: null, asc: true };
+
+        const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+        const ANON_VERIFICATIONS = ['none', 'email'];
+
+        function verificationSet(service) {
+            const sv = service.signup_verification;
+            return Array.isArray(sv) ? sv : (sv ? [sv] : []);
+        }
+
+        // Tier derivation - mirrors disposable's mailservices preprocessing:
+        // forwarding is always strict-tier; free/paid with anonymous signup
+        // ('none'/'email') is strict-tier; discontinued feeds neither tier.
+        function tierOf(service) {
+            if (service.discontinued) return 'excluded';
+            const type = service.type;
+            const verifications = verificationSet(service);
+            if (type === 'forwarding' ||
+                ((type === 'free' || type === 'paid') && verifications.some(v => ANON_VERIFICATIONS.includes(v)))) {
+                return 'strict';
+            }
+            if (type === 'free' || type === 'paid' || type === 'reserved') return 'whitelist';
+            return 'unknown';
+        }
 
         function applyFilters() {
             const rows = document.querySelectorAll('.service-row');
+            let visible = 0;
             rows.forEach(row => {
                 const type = row.dataset.type;
-                const verifyList = row.dataset.verify || 'none';
+                const verifyList = row.dataset.verify;
                 const discontinued = row.dataset.discontinued === 'true';
+                const tier = row.dataset.tier;
 
-                let typeMatch = currentFilters.type === 'all' ||
+                const typeMatch = currentFilters.type === 'all' ||
                     (currentFilters.type === 'discontinued' ? discontinued : type === currentFilters.type);
-                let verifyMatch = currentFilters.verify === 'all' ||
-                    (currentFilters.verify === 'none' ? verifyList === 'none' : verifyList.includes(currentFilters.verify));
+                const verifyMatch = currentFilters.verify === 'all' ||
+                    (currentFilters.verify === 'unset' ? verifyList === 'unset' : verifyList.split(',').includes(currentFilters.verify));
+                const tierMatch = currentFilters.tier === 'all' || tier === currentFilters.tier;
+                const searchMatch = !currentSearch ||
+                    row.dataset.name.includes(currentSearch) || row.dataset.hosts.includes(currentSearch);
 
-                row.style.display = (typeMatch && verifyMatch) ? '' : 'none';
+                const show = typeMatch && verifyMatch && tierMatch && searchMatch;
+                row.style.display = show ? '' : 'none';
+                if (show) visible++;
             });
+            document.querySelectorAll('.section-header .visible-count').forEach(el => el.remove());
+            const shown = document.querySelector('#mail-services-content .section-header h2');
+            if (shown && (currentSearch || currentFilters.type !== 'all' || currentFilters.verify !== 'all' || currentFilters.tier !== 'all')) {
+                const span = document.createElement('span');
+                span.className = 'count visible-count';
+                span.textContent = visible + ' shown';
+                shown.appendChild(span);
+            }
         }
 
         function setupFilters() {
@@ -485,12 +589,38 @@
             });
         }
 
+        function setupSorting() {
+            document.querySelectorAll('th.sortable').forEach(th => {
+                th.addEventListener('click', () => {
+                    const key = th.dataset.sort;
+                    sortState = { column: key, asc: sortState.column === key ? !sortState.asc : true };
+                    document.querySelectorAll('th.sortable').forEach(h => h.classList.remove('sort-asc', 'sort-desc'));
+                    th.classList.add(sortState.asc ? 'sort-asc' : 'sort-desc');
+                    sortTable(th);
+                });
+            });
+        }
+
+        function sortTable(th) {
+            const tbody = th.closest('table').querySelector('tbody');
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+            const numeric = th.dataset.numeric === 'true';
+            rows.sort((a, b) => {
+                const av = a.dataset['sort' + th.dataset.sort];
+                const bv = b.dataset['sort' + th.dataset.sort];
+                const cmp = numeric ? (Number(av) - Number(bv)) : String(av).localeCompare(String(bv));
+                return sortState.asc ? cmp : -cmp;
+            });
+            rows.forEach(r => tbody.appendChild(r));
+        }
+
         async function loadData() {
             try {
-                const [mailservices, disposable] = await Promise.all([
-                    fetch('../mailservices.json').then(r => r.json()),
-                    fetch('../disposable-mail-hosts.json').then(r => r.json())
+                const [msResponse, dispResponse] = await Promise.all([
+                    fetch('../mailservices.json'),
+                    fetch('../disposable-mail-hosts.json')
                 ]);
+                const [mailservices, disposable] = await Promise.all([msResponse.json(), dispResponse.json()]);
 
                 document.getElementById('loading').style.display = 'none';
                 document.getElementById('content').style.display = 'block';
@@ -502,8 +632,13 @@
                 setupTabs();
                 setupSearch(mailservices, disposable);
                 setupFilters();
+                setupSorting();
 
-                document.getElementById('last-updated').textContent = 'Last updated: ' + new Date().toLocaleDateString();
+                const lastModified = msResponse.headers.get('Last-Modified');
+                if (lastModified) {
+                    document.getElementById('last-updated').textContent =
+                        'Data last updated: ' + new Date(lastModified).toLocaleDateString();
+                }
             } catch (err) {
                 document.getElementById('loading').style.display = 'none';
                 document.getElementById('error').style.display = 'block';
@@ -513,12 +648,12 @@
 
         function renderHostsCollapsible(hosts, limit = 10) {
             if (hosts.length <= limit) {
-                return hosts.map(h => `<span class="host">${h}</span>`).join('');
+                return hosts.map(h => `<span class="host">${esc(h)}</span>`).join('');
             }
             const id = 'hosts-' + Math.random().toString(36).substr(2, 9);
             return `
                 <div class="hosts-collapsible collapsed" id="${id}" data-limit="${limit}">
-                    ${hosts.map(h => `<span class="host">${h}</span>`).join('')}
+                    ${hosts.map(h => `<span class="host">${esc(h)}</span>`).join('')}
                 </div>
                 <button class="hosts-toggle" onclick="toggleHosts('${id}', this)">
                     Show all ${hosts.length}
@@ -534,27 +669,21 @@
         }
 
         function renderStats(mailservices, disposable) {
-            const types = {};
             let totalDomains = 0;
+            let strictTier = 0;
             let discontinued = 0;
 
-            for (const [name, data] of Object.entries(mailservices)) {
-                const type = data.type || 'unknown';
-                types[type] = (types[type] || 0) + 1;
+            for (const data of Object.values(mailservices)) {
                 totalDomains += (data.hosts || []).length;
                 if (data.discontinued) discontinued++;
-            }
-
-            let totalIPs = 0;
-            for (const data of Object.values(disposable)) {
-                totalIPs += (data.ip_addresses || []).length;
+                else if (tierOf(data) === 'strict') strictTier += (data.hosts || []).length;
             }
 
             const stats = [
                 { number: Object.keys(mailservices).length, label: 'Mail Services' },
                 { number: totalDomains, label: 'Total Domains' },
-                //{ number: Object.keys(disposable).length, label: 'Disposable Hosts' },
-                //{ number: totalIPs, label: 'IP Addresses' },
+                { number: strictTier, label: 'Strict-Tier Domains' },
+                { number: Object.keys(disposable).length, label: 'Disposable Backends' },
             ];
 
             if (discontinued > 0) {
@@ -569,8 +698,14 @@
             `).join('');
         }
 
+        const TIER_LABELS = {
+            whitelist: 'whitelisted',
+            strict: 'strict-tier',
+            excluded: 'excluded',
+            unknown: 'unknown'
+        };
+
         function renderMailServices(data) {
-            // Group by type
             const byType = {};
             for (const [name, service] of Object.entries(data)) {
                 const type = service.type || 'unknown';
@@ -578,18 +713,17 @@
                 byType[type].push({ name, ...service });
             }
 
-            // Sort each group
             for (const type in byType) {
                 byType[type].sort((a, b) => a.name.localeCompare(b.name));
             }
 
-            // Merge free + paid into "Email Services"
             const emailServices = [...(byType['free'] || []), ...(byType['paid'] || [])];
             emailServices.sort((a, b) => a.name.localeCompare(b.name));
 
             const sections = [
                 { key: 'email', label: 'Email Services', items: emailServices },
                 { key: 'forwarding', label: 'Email Forwarding Services', items: byType['forwarding'] || [] },
+                { key: 'reserved', label: 'Reserved / Special-Use', items: byType['reserved'] || [] },
                 { key: 'unknown', label: 'Other Services', items: byType['unknown'] || [] }
             ];
 
@@ -604,23 +738,37 @@
                             <span class="count">${section.items.length}</span>
                         </h2>
                     </div>
+                    <div class="table-wrap">
                     <table>
                         <thead>
                             <tr>
-                                <th>Service</th>
-                                <th>Domains</th>
-                                <th>MX Hosts</th>
+                                <th class="sortable" data-sort="Name">Service<span class="sort-arrow">▲</span></th>
+                                <th class="sortable" data-sort="Hosts" data-numeric="true">Domains<span class="sort-arrow">▲</span></th>
+                                <th class="sortable" data-sort="Mx" data-numeric="true">MX Hosts<span class="sort-arrow">▲</span></th>
                                 <th>Verification</th>
                                 <th>Notes</th>
                             </tr>
                         </thead>
                         <tbody>
-                            ${section.items.map(s => `
-                                <tr class="service-row" data-name="${s.name.toLowerCase()}" data-hosts="${(s.hosts || []).join(' ').toLowerCase()}" data-type="${s.type || 'unknown'}" data-verify="${(s.signup_verification || ['none']).join(',')}" data-discontinued="${s.discontinued || false}">
+                            ${section.items.map(s => {
+                                const verifications = verificationSet(s);
+                                const tier = tierOf(s);
+                                return `
+                                <tr class="service-row"
+                                    data-name="${esc(s.name.toLowerCase())}"
+                                    data-hosts="${esc((s.hosts || []).join(' ').toLowerCase())}"
+                                    data-type="${esc(s.type || 'unknown')}"
+                                    data-verify="${esc(verifications.join(',') || 'unset')}"
+                                    data-tier="${tier}"
+                                    data-discontinued="${s.discontinued || false}"
+                                    data-sort-name="${esc(s.name.toLowerCase())}"
+                                    data-sort-hosts="${(s.hosts || []).length}"
+                                    data-sort-mx="${(s.mx_hosts || []).length}">
                                     <td>
-                                        <strong>${s.name}</strong>
+                                        <strong>${esc(s.name)}</strong>
                                         ${s.discontinued ? '<span class="badge badge-discontinued">discontinued</span>' : ''}
-                                        <span class="badge badge-${s.type || 'unknown'}">${s.type || 'unknown'}</span>
+                                        <span class="badge badge-${esc(s.type || 'unknown')}">${esc(s.type || 'unknown')}</span>
+                                        <span class="badge badge-tier-${tier}">${TIER_LABELS[tier]}</span>
                                     </td>
                                     <td class="hosts-list">
                                         ${renderHostsCollapsible(s.hosts || [])}
@@ -629,13 +777,14 @@
                                         ${s.mx_hosts && s.mx_hosts.length > 0 ? renderHostsCollapsible(s.mx_hosts, 4) : '-'}
                                     </td>
                                     <td class="verification-list">
-                                        ${(s.signup_verification || []).map(v => `<span class="badge badge-unknown">${v}</span>`).join(' ')}
+                                        ${verifications.length > 0 ? verifications.map(v => `<span class="badge badge-unknown">${esc(v)}</span>`).join(' ') : '<span class="badge badge-unknown">unset</span>'}
                                     </td>
-                                    <td class="remark">${s.remark || ''}</td>
-                                </tr>
-                            `).join('')}
+                                    <td class="remark">${esc(s.remark || '')}</td>
+                                </tr>`;
+                            }).join('')}
                         </tbody>
                     </table>
+                    </div>
                 `;
             }
 
@@ -652,28 +801,39 @@
                         <span class="count">${sorted.length}</span>
                     </h2>
                 </div>
+                <p class="empty-note">
+                    Backend fingerprints used to attribute disposable domains to a provider:
+                    exact MX hosts, MX hostname suffixes (wildcard), and resolved IPs / CIDR ranges.
+                </p>
+                <div class="table-wrap">
                 <table>
                     <thead>
                         <tr>
-                            <th>Host</th>
-                            <th>IP Addresses</th>
-                            <th>MX Hosts</th>
+                            <th class="sortable" data-sort="Name">Host<span class="sort-arrow">▲</span></th>
+                            <th>IP Addresses / Ranges</th>
+                            <th>MX Hosts / Suffixes</th>
                         </tr>
                     </thead>
                     <tbody>
-                        ${sorted.map(([name, info]) => `
-                            <tr class="disposable-row" data-name="${name.toLowerCase()}">
-                                <td><strong>${name}</strong></td>
-                                <td class="ip-list">
-                                    ${(info.ip_addresses || []).join(', ')}
-                                </td>
-                                <td class="mx-list">
-                                    ${(info.mx_hosts || []).join(', ') || '-'}
-                                </td>
-                            </tr>
-                        `).join('')}
+                        ${sorted.map(([name, info]) => {
+                            const ips = [...(info.ip_addresses || []), ...(info.ip_ranges || [])];
+                            const mxes = [
+                                ...(info.mx_hosts || []),
+                                ...(info.mx_suffixes || []).map(s => '*.' + s)
+                            ];
+                            return `
+                            <tr class="disposable-row"
+                                data-name="${esc(name.toLowerCase())}"
+                                data-hosts="${esc(mxes.join(' ').toLowerCase())}"
+                                data-sort-name="${esc(name.toLowerCase())}">
+                                <td><strong>${esc(name)}</strong></td>
+                                <td class="ip-list">${ips.map(esc).join(', ') || '-'}</td>
+                                <td class="mx-list">${mxes.map(esc).join(', ') || '-'}</td>
+                            </tr>`;
+                        }).join('')}
                     </tbody>
                 </table>
+                </div>
             `;
 
             document.getElementById('disposable-content').innerHTML = html;
@@ -695,19 +855,16 @@
 
         function setupSearch(mailservices, disposable) {
             document.getElementById('mailSearch').addEventListener('input', (e) => {
-                const query = e.target.value.toLowerCase();
-                document.querySelectorAll('.service-row').forEach(row => {
-                    const name = row.dataset.name;
-                    const hosts = row.dataset.hosts;
-                    row.style.display = (name.includes(query) || hosts.includes(query)) ? '' : 'none';
-                });
+                currentSearch = e.target.value.toLowerCase();
+                applyFilters();
             });
 
             document.getElementById('disposableSearch').addEventListener('input', (e) => {
                 const query = e.target.value.toLowerCase();
                 document.querySelectorAll('.disposable-row').forEach(row => {
                     const name = row.dataset.name;
-                    row.style.display = name.includes(query) ? '' : 'none';
+                    const hosts = row.dataset.hosts || '';
+                    row.style.display = (name.includes(query) || hosts.includes(query)) ? '' : 'none';
                 });
             });
         }
