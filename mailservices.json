@@ -1086,7 +1086,6 @@
       "4x4man.com",
       "bikemechanics.com",
       "boltonfans.com",
-      "bradfordfans.com",
       "camidge.com",
       "cd2.com",
       "club4x4.net",
@@ -1111,6 +1110,9 @@
       "mx3.freeola.com",
       "mx4.freeola.com",
       "mx5.freeola.com"
+    ],
+    "old_hosts": [
+      "bradfordfans.com"
     ],
     "signup_verification": [
       "mobile"
@@ -1701,7 +1703,6 @@
   "lycos.com": {
     "discontinued": true,
     "hosts": [
-      "lycos.at",
       "lycos.co.uk",
       "lycos.de",
       "lycos.es",
@@ -1711,6 +1712,9 @@
     ],
     "mx_hosts": [
       "mx.lycos.com.cust.b.hostedemail.com"
+    ],
+    "old_hosts": [
+      "lycos.at"
     ],
     "remark": "Email services discontinued.",
     "signup_verification": [
@@ -2642,10 +2646,11 @@
   },
   "my.id": {
     "discontinued": true,
-    "hosts": [
+    "hosts": [],
+    "mx_hosts": [],
+    "old_hosts": [
       "my.id"
     ],
-    "mx_hosts": [],
     "remark": "Indonesian .id portal mail; service discontinued.",
     "signup_verification": [
       "mobile"
