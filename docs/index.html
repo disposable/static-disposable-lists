@@ -598,6 +598,7 @@
 
                     currentFilters[filterType] = value;
                     applyFilters();
+                    updateHash();
                 });
             });
         }
@@ -646,6 +647,7 @@
                 setupTabs();
                 setupSearch(mailservices, disposable);
                 setupFilters();
+                restoreFromHash();
                 setupSorting();
 
                 const lastModified = msResponse.headers.get('Last-Modified');
@@ -930,24 +932,86 @@
             document.getElementById('old-hosts-content').innerHTML = html;
         }
 
+        function activateTab(tabId) {
+            const tab = document.querySelector(`.tab[data-tab="${CSS.escape(tabId)}"]`);
+            const content = document.getElementById(tabId);
+            if (!tab || !content) return;
+
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
+            tab.classList.add('active');
+            content.classList.add('active');
+        }
+
         function setupTabs() {
             document.querySelectorAll('.tab').forEach(tab => {
                 tab.addEventListener('click', () => {
-                    const tabId = tab.dataset.tab;
-
-                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-                    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-
-                    tab.classList.add('active');
-                    document.getElementById(tabId).classList.add('active');
+                    activateTab(tab.dataset.tab);
+                    updateHash();
                 });
             });
+        }
+
+        function updateHash() {
+            const active = document.querySelector('.tab.active');
+            if (!active) return;
+            const tabId = active.dataset.tab;
+            const params = new URLSearchParams();
+
+            let q = '';
+            if (tabId === 'mail-services') {
+                ['type', 'verify', 'tier'].forEach(f => {
+                    if (currentFilters[f] !== 'all') params.set(f, currentFilters[f]);
+                });
+                q = currentSearch;
+            } else if (tabId === 'disposable') {
+                q = document.getElementById('disposableSearch').value;
+            } else if (tabId === 'old-hosts') {
+                q = document.getElementById('oldSearch').value;
+            }
+            if (q.trim()) params.set('q', q.trim().toLowerCase());
+
+            const qs = params.toString();
+            history.replaceState(null, '', '#' + tabId + (qs ? '?' + qs : ''));
+        }
+
+        function restoreFromHash() {
+            const raw = location.hash.slice(1);
+            if (!raw) return;
+            const [tabId, qs] = raw.split('?');
+            if (!document.querySelector(`.tab[data-tab="${CSS.escape(tabId)}"]`)) return;
+
+            const params = new URLSearchParams(qs || '');
+            const q = params.get('q') || '';
+
+            if (tabId === 'mail-services') {
+                ['type', 'verify', 'tier'].forEach(f => {
+                    const v = params.get(f);
+                    if (!v) return;
+                    const btn = document.querySelector(`.filter-btn[data-filter="${f}"][data-value="${CSS.escape(v)}"]`);
+                    if (!btn) return;
+                    currentFilters[f] = v;
+                    document.querySelectorAll(`.filter-btn[data-filter="${f}"]`).forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                });
+                document.getElementById('mailSearch').value = q;
+                currentSearch = q;
+                applyFilters();
+            } else if (tabId === 'disposable' || tabId === 'old-hosts') {
+                const input = document.getElementById(tabId === 'disposable' ? 'disposableSearch' : 'oldSearch');
+                input.value = q;
+                input.dispatchEvent(new Event('input'));
+            }
+
+            activateTab(tabId);
         }
 
         function setupSearch(mailservices, disposable) {
             document.getElementById('mailSearch').addEventListener('input', (e) => {
                 currentSearch = e.target.value.toLowerCase();
                 applyFilters();
+                updateHash();
             });
 
             document.getElementById('disposableSearch').addEventListener('input', (e) => {
@@ -957,6 +1021,7 @@
                     const hosts = row.dataset.hosts || '';
                     row.style.display = (name.includes(query) || hosts.includes(query)) ? '' : 'none';
                 });
+                updateHash();
             });
 
             document.getElementById('oldSearch').addEventListener('input', (e) => {
@@ -966,8 +1031,11 @@
                     const hosts = row.dataset.hosts || '';
                     row.style.display = (name.includes(query) || hosts.includes(query)) ? '' : 'none';
                 });
+                updateHash();
             });
         }
+
+        window.addEventListener('hashchange', restoreFromHash);
 
         loadData();
     </script>
