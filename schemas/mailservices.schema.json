@@ -26,8 +26,8 @@
         },
         "type": {
           "type": "string",
-          "description": "Service type classification: free/paid providers, forwarding/alias services, grey = legitimate but abuse-prone (strict-tier), reserved = special-use names",
-          "enum": ["free", "paid", "forwarding", "grey", "reserved"]
+          "description": "Service type classification: free/paid providers, forwarding/alias services, reserved = special-use names",
+          "enum": ["free", "paid", "forwarding", "reserved"]
         },
         "signup_verification": {
           "oneOf": [
