@@ -364,6 +364,19 @@
     ],
     "type": "paid"
   },
+  "bulc.club": {
+    "hosts": [
+      "bulc.club"
+    ],
+    "mx_hosts": [
+      "bulc.club"
+    ],
+    "remark": "Free unlimited forwarders alias@username.bulc.club with community spam-filter ratings.",
+    "signup_verification": [
+      "email"
+    ],
+    "type": "forwarding"
+  },
   "bump.email": {
     "hosts": [
       "bump.email",
@@ -375,6 +388,19 @@
       "mx2.bump.email"
     ],
     "remark": "alias.email free email-alias service.",
+    "signup_verification": [
+      "email"
+    ],
+    "type": "forwarding"
+  },
+  "burnermail.io": {
+    "hosts": [
+      "burnermail.io"
+    ],
+    "mx_hosts": [
+      "mail.burnermail.io"
+    ],
+    "remark": "Burner Mail (Kozmos); browser-extension-generated aliases forward to real inbox.",
     "signup_verification": [
       "email"
     ],
@@ -762,6 +788,23 @@
     ],
     "type": "free"
   },
+  "e4ward.com": {
+    "hosts": [
+      "e4ward.com"
+    ],
+    "mx_hosts": [
+      "mx1.e4ward.com",
+      "mx2.e4ward.com",
+      "mx3.e4ward.com",
+      "mx4.e4ward.com",
+      "mx5.e4ward.com"
+    ],
+    "remark": "Email alias forwarding service operating since 2004.",
+    "signup_verification": [
+      "email"
+    ],
+    "type": "forwarding"
+  },
   "eclipso.de": {
     "hosts": [
       "eclipso.de",
@@ -801,6 +844,19 @@
     ],
     "type": "free"
   },
+  "emailalias.io": {
+    "hosts": [
+      "emailalias.io"
+    ],
+    "mx_hosts": [
+      "smtp.google.com"
+    ],
+    "remark": "Alias forwarding with leak/exposure detection.",
+    "signup_verification": [
+      "email"
+    ],
+    "type": "forwarding"
+  },
   "emailn.de": {
     "hosts": [
       "emailn.de",
@@ -816,6 +872,19 @@
       "email"
     ],
     "type": "free"
+  },
+  "erine.email": {
+    "hosts": [
+      "erine.email"
+    ],
+    "mx_hosts": [
+      "smtp-in.erine.email"
+    ],
+    "remark": "Erine.email privacy alias forwarding service.",
+    "signup_verification": [
+      "email"
+    ],
+    "type": "forwarding"
   },
   "etisalat": {
     "hosts": [
@@ -1179,6 +1248,22 @@
     ],
     "type": "paid"
   },
+  "hidemail.app": {
+    "hosts": [
+      "hidemail.app",
+      "my.hidemail.app"
+    ],
+    "mx_hosts": [
+      "in1-smtp.messagingengine.com",
+      "in2-smtp.messagingengine.com",
+      "mx.sendgrid.net"
+    ],
+    "remark": "Hide Mail app; masked addresses at my.hidemail.app (Fastmail backend).",
+    "signup_verification": [
+      "payment"
+    ],
+    "type": "forwarding"
+  },
   "home.nl": {
     "hosts": [
       "home.nl"
@@ -1451,6 +1536,34 @@
       "none"
     ],
     "type": "free"
+  },
+  "ironvest": {
+    "hosts": [
+      "opayq.com"
+    ],
+    "mx_hosts": [
+      "mx.junkemailfilter.net",
+      "mx.junkemailfilter.org",
+      "plato.junkemailfilter.com"
+    ],
+    "remark": "IronVest (formerly Abine Blur) masked email aliases.",
+    "signup_verification": [
+      "email"
+    ],
+    "type": "forwarding"
+  },
+  "jetable.org": {
+    "hosts": [
+      "jetable.org"
+    ],
+    "mx_hosts": [
+      "smtp.yopmail.com"
+    ],
+    "remark": "French temporary forwarding; aliases auto-expire after a chosen lifetime.",
+    "signup_verification": [
+      "none"
+    ],
+    "type": "forwarding"
   },
   "jubii.dk": {
     "hosts": [
@@ -2131,6 +2244,19 @@
     ],
     "type": "paid"
   },
+  "mailexpire.com": {
+    "hosts": [
+      "mailexpire.com"
+    ],
+    "mx_hosts": [
+      "mailexpire.com"
+    ],
+    "remark": "Temporary forwarding aliases with auto-expiry.",
+    "signup_verification": [
+      "none"
+    ],
+    "type": "forwarding"
+  },
   "mailfence.com": {
     "hosts": [
       "mailfence.com"
@@ -2144,6 +2270,19 @@
       "email"
     ],
     "type": "free"
+  },
+  "mailnull.com": {
+    "hosts": [
+      "mailnull.com"
+    ],
+    "mx_hosts": [
+      "mx.mailgw.com"
+    ],
+    "remark": "Mailgw free forwarding accounts with spam filtering.",
+    "signup_verification": [
+      "email"
+    ],
+    "type": "forwarding"
   },
   "mailo.com": {
     "hosts": [
@@ -2199,6 +2338,19 @@
       "other"
     ],
     "type": "free"
+  },
+  "manyme.com": {
+    "hosts": [
+      "manyme.com"
+    ],
+    "mx_hosts": [
+      "inbound-smtp.us-east-1.amazonaws.com"
+    ],
+    "remark": "ManyMe auto-created forwarders name@username.manyme.com.",
+    "signup_verification": [
+      "email"
+    ],
+    "type": "forwarding"
   },
   "me.com": {
     "hosts": [
@@ -3191,6 +3343,20 @@
     ],
     "type": "free"
   },
+  "proxiedmail.com": {
+    "hosts": [
+      "proxiedmail.com"
+    ],
+    "mx_hosts": [
+      "mxa.mailgun.org",
+      "mxb.mailgun.org"
+    ],
+    "remark": "ProxiedMail unlimited email aliases proxied to real inbox.",
+    "signup_verification": [
+      "email"
+    ],
+    "type": "forwarding"
+  },
   "ptt.rs": {
     "hosts": [
       "ptt.rs"
@@ -3579,6 +3745,19 @@
     ],
     "type": "paid"
   },
+  "spamex.com": {
+    "hosts": [
+      "spamex.com"
+    ],
+    "mx_hosts": [
+      "smtp.spamex.com"
+    ],
+    "remark": "Long-running paid disposable email forwarding service.",
+    "signup_verification": [
+      "payment"
+    ],
+    "type": "forwarding"
+  },
   "spamgourmet.com": {
     "hosts": [
       "spamgourmet.com",
@@ -3962,6 +4141,19 @@
       "mobile"
     ],
     "type": "free"
+  },
+  "uu.me": {
+    "hosts": [
+      "uu.me"
+    ],
+    "mx_hosts": [
+      "mx3.uu.me"
+    ],
+    "remark": "Uumail private email alias forwarding.",
+    "signup_verification": [
+      "email"
+    ],
+    "type": "forwarding"
   },
   "vfemail.net": {
     "hosts": [
