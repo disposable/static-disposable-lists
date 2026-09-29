@@ -89,6 +89,7 @@
       "aspmx4.googlemail.com",
       "aspmx5.googlemail.com"
     ],
+    "remark": "Email forwarding/alias service with disposable-style addresses.",
     "signup_verification": [
       "none"
     ],
@@ -132,6 +133,7 @@
       "mx1.addy.io",
       "mx2.addy.io"
     ],
+    "remark": "Email aliasing/forwarding service (formerly AnonAddy).",
     "signup_verification": [
       "email"
     ],
@@ -263,6 +265,7 @@
     "mx_hosts": [
       "m1c2.beeble.com"
     ],
+    "remark": "Encrypted email; anonymous signup without personal data.",
     "signup_verification": [
       "none"
     ],
@@ -333,6 +336,7 @@
     "mx_hosts": [
       "smtp.bmail.ag"
     ],
+    "remark": "Free mail; anonymous signup.",
     "signup_verification": [
       "none"
     ],
@@ -383,6 +387,7 @@
     "mx_hosts": [
       "mail.c2.hu"
     ],
+    "remark": "Hungarian freemail; anonymous signup (disposable issue #208).",
     "signup_verification": [
       "none"
     ],
@@ -564,6 +569,7 @@
       "8chan.co",
       "goat.si"
     ],
+    "remark": "Anonymous email provider.",
     "signup_verification": [
       "none"
     ],
@@ -732,6 +738,7 @@
     "mx_hosts": [
       "smtp-inbound1.duck.com"
     ],
+    "remark": "DuckDuckGo Email Protection forwarding addresses.",
     "signup_verification": [
       "email"
     ],
@@ -772,6 +779,7 @@
     "mx_hosts": [
       "mail.eclipso.de"
     ],
+    "remark": "German freemail; anonymous signup.",
     "signup_verification": [
       "none"
     ],
@@ -1016,6 +1024,7 @@
       "mx1.forwardemail.net",
       "mx2.forwardemail.net"
     ],
+    "remark": "Open-source email forwarding/hosting. Whitelisted explicitly in disposable (issue #249), overriding its strict-tier classification.",
     "signup_verification": [
       "none"
     ],
@@ -1240,6 +1249,7 @@
     "mx_hosts": [
       "ice.email"
     ],
+    "remark": "Free mail; anonymous signup.",
     "signup_verification": [
       "none"
     ],
@@ -1356,6 +1366,7 @@
       "mail.inleed.xyz",
       "mail.mail24.se"
     ],
+    "remark": "Swedish hosting provider mail; email-only verification.",
     "signup_verification": [
       "email"
     ],
@@ -1967,6 +1978,7 @@
     "mx_hosts": [
       "inbound-smtp.us-west-2.amazonaws.com"
     ],
+    "remark": "Free mail; anonymous signup.",
     "signup_verification": [
       "none"
     ],
@@ -2074,6 +2086,7 @@
     "mx_hosts": [
       "mail.mailbox.hu"
     ],
+    "remark": "Hungarian mail service; email-only verification.",
     "signup_verification": [
       "email"
     ],
@@ -2565,6 +2578,7 @@
     "mx_hosts": [
       "inbound-smtp.us-west-2.amazonaws.com"
     ],
+    "remark": "Firefox Relay email aliases.",
     "signup_verification": [
       "email"
     ],
@@ -2605,6 +2619,7 @@
     "mx_hosts": [
       "mail.ecloud.global"
     ],
+    "remark": "/e/OS privacy ecosystem mail; email-only verification.",
     "signup_verification": [
       "email"
     ],
@@ -2631,6 +2646,7 @@
       "my.id"
     ],
     "mx_hosts": [],
+    "remark": "Indonesian identity mail; service discontinued.",
     "signup_verification": [
       "mobile"
     ],
@@ -2671,6 +2687,7 @@
     "mx_hosts": [
       "neonmail.io"
     ],
+    "remark": "Free mail; anonymous signup.",
     "signup_verification": [
       "none"
     ],
@@ -2716,6 +2733,7 @@
       "yeahmx00.mxmail.netease.com",
       "yeahmx01.mxmail.netease.com"
     ],
+    "remark": "Chinese portal mail (163.com/126.com/yeah.net); anonymous signup.",
     "signup_verification": [
       "none"
     ],
@@ -2827,6 +2845,7 @@
     "mx_hosts": [
       "mail.onsmail.com"
     ],
+    "remark": "Free mail; anonymous signup.",
     "signup_verification": [
       "none"
     ],
@@ -2977,6 +2996,7 @@
       "outlook-com.olc.protection.outlook.com",
       "outlook-cz.d-v1.mx.microsoft"
     ],
+    "remark": "Microsoft free mail (Outlook/Hotmail/Live); anonymous signup possible.",
     "signup_verification": [
       "none"
     ],
@@ -3007,6 +3027,7 @@
     "mx_hosts": [
       "inbound-smtp.eu-west-1.amazonaws.com"
     ],
+    "remark": "Free mail; anonymous signup.",
     "signup_verification": [
       "none"
     ],
@@ -3020,6 +3041,7 @@
       "fb.mail.gandi.net",
       "spool.mail.gandi.net"
     ],
+    "remark": "Free mail; email-only verification.",
     "signup_verification": [
       "email"
     ],
@@ -3080,6 +3102,7 @@
       "mxn1.psiade.com",
       "mxn2.psiade.com"
     ],
+    "remark": "French hosting provider mail; email-only verification.",
     "signup_verification": [
       "email"
     ],
@@ -3141,6 +3164,7 @@
       "mail.protonmail.ch",
       "mailsec.protonmail.ch"
     ],
+    "remark": "Privacy-focused mail; email-only signup enables anonymous accounts.",
     "signup_verification": [
       "email"
     ],
@@ -3200,6 +3224,7 @@
     "mx_hosts": [
       "mail.qrypty.com"
     ],
+    "remark": "Free mail; anonymous signup.",
     "signup_verification": [
       "none"
     ],
@@ -3376,6 +3401,7 @@
     "mx_hosts": [
       "mx.sibnet.ru"
     ],
+    "remark": "Russian ISP/portal mail; email-only verification.",
     "signup_verification": [
       "email",
       "other"
@@ -3403,6 +3429,7 @@
       "mx1.simplelogin.co",
       "mx2.simplelogin.co"
     ],
+    "remark": "Open-source email aliasing service (Proton).",
     "signup_verification": [
       "email"
     ],
@@ -3549,6 +3576,7 @@
     "mx_hosts": [
       "gourmet7.spamgourmet.com"
     ],
+    "remark": "Self-destructing forwarding addresses with message-count limits.",
     "signup_verification": [
       "email"
     ],
@@ -3820,6 +3848,7 @@
       "mx1.tinkmail.me",
       "mx2.tinkmail.me"
     ],
+    "remark": "Free mail; email-only verification.",
     "signup_verification": [
       "email"
     ],
@@ -3850,6 +3879,7 @@
     "mx_hosts": [
       "mail.tungmail.com"
     ],
+    "remark": "Free mail; anonymous signup.",
     "signup_verification": [
       "none"
     ],
@@ -3881,6 +3911,7 @@
     "mx_hosts": [
       "mail.tutanota.de"
     ],
+    "remark": "Encrypted mail (Tuta); anonymous signup.",
     "signup_verification": [
       "none"
     ],
@@ -3893,6 +3924,7 @@
     "mx_hosts": [
       "mail.ubikom.cc"
     ],
+    "remark": "Free mail; anonymous signup.",
     "signup_verification": [
       "none"
     ],
@@ -3933,6 +3965,7 @@
       "mx2.vfemail.net",
       "mx3.vfemail.net"
     ],
+    "remark": "US privacy-focused mail; anonymous signup.",
     "signup_verification": [
       "none"
     ],
@@ -4226,6 +4259,7 @@
     "mx_hosts": [
       "mail.nirclemail.com"
     ],
+    "remark": "Free mail; anonymous signup.",
     "signup_verification": [
       "none"
     ],
@@ -4239,6 +4273,7 @@
       "mx.xmail.com",
       "mx40.xmail.com"
     ],
+    "remark": "Free mail; anonymous signup.",
     "signup_verification": [
       "none"
     ],
@@ -4252,6 +4287,7 @@
       "mail.xmail.net",
       "smtp-in.xmail.net"
     ],
+    "remark": "Free mail; anonymous signup.",
     "signup_verification": [
       "none"
     ],
