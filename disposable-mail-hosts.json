@@ -1,4 +1,27 @@
 {
+  "boomlify.com": {
+    "ip_addresses": [
+      "202.78.170.241",
+      "45.92.70.77"
+    ],
+    "mx_hosts": [
+      "mail.kuromee.com",
+      "mail.rakibbd.com"
+    ]
+  },
+  "chtotoschemto.com": {
+    "ip_addresses": [
+      "195.201.61.101"
+    ]
+  },
+  "darkvilto.biz": {
+    "ip_addresses": [
+      "65.109.56.236"
+    ],
+    "mx_hosts": [
+      "mx1.darkvilto.biz"
+    ]
+  },
   "emailfake.com": {
     "ip_addresses": [
       "91.196.52.205"
@@ -11,7 +34,29 @@
       "email-fake.com"
     ]
   },
+  "erinn.biz": {
+    "mx_suffixes": [
+      "erinn.biz"
+    ]
+  },
+  "firstmail.ltd": {
+    "ip_ranges": [
+      "195.123.189.240/29",
+      "195.123.189.248/29"
+    ]
+  },
+  "jabmag.com": {
+    "ip_addresses": [
+      "149.248.203.240"
+    ],
+    "mx_hosts": [
+      "mail.jabmag.com"
+    ]
+  },
   "svuntik.com": {
+    "ip_addresses": [
+      "172.236.194.211"
+    ],
     "mx_hosts": [
       "mail.puretempmail.com"
     ]
@@ -29,11 +74,39 @@
   },
   "tempgbox.net": {
     "ip_addresses": [
-      "104.21.31.233",
-      "172.67.180.190"
+      "52.101.144.0",
+      "52.101.144.3",
+      "52.101.145.0",
+      "52.101.145.2"
     ],
     "mx_hosts": [
       "tempgbox-net.mail.protection.outlook.com"
+    ]
+  },
+  "tmp.al": {
+    "ip_addresses": [
+      "159.195.57.155"
+    ],
+    "mx_hosts": [
+      "mail.tmp.al"
+    ]
+  },
+  "wabblywabble.com": {
+    "ip_addresses": [
+      "142.132.166.12",
+      "188.166.111.252"
+    ],
+    "mx_hosts": [
+      "mail.wabblywabble.com"
+    ]
+  },
+  "wallywatts.com": {
+    "ip_addresses": [
+      "46.101.111.206",
+      "116.202.9.167"
+    ],
+    "mx_hosts": [
+      "mail.wallywatts.com"
     ]
   }
 }

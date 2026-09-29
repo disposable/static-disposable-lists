@@ -10,7 +10,7 @@ Static data repository for disposable email domains and mail service definitions
 | File | Description |
 |------|-------------|
 | [mailservices.json](mailservices.json) | Email service definitions with host and verification metadata |
-| [disposable-mail-hosts.json](disposable-mail-hosts.json) | Disposable email host definitions with IP addresses and MX hosts |
+| [disposable-mail-hosts.json](disposable-mail-hosts.json) | Disposable mail-backend fingerprints: MX hostnames, hostname suffixes, IPv4 addresses and CIDR ranges used to attribute disposable domains to a provider |
 | [mail-data-hosts-net.txt](mail-data-hosts-net.txt) | Hostnames from mx.mail-data.net |
 | [manual.txt](manual.txt) | Manually curated list of disposable email domains |
 | [free.txt](free.txt) / [free.csv](free.csv) | Free email provider domain lists |
@@ -33,6 +33,7 @@ All JSON data files are validated against schemas:
 | Script | Purpose |
 |--------|---------|
 | [scripts/check-mx.py](scripts/check-mx.py) | Resolve and validate MX records for mail services, update `mx_hosts` fields |
+| [scripts/refresh_mail_hosts.py](scripts/refresh_mail_hosts.py) | Refresh `ip_addresses` in `disposable-mail-hosts.json` from live MX host A records (`--check` for CI staleness gate) |
 | [scripts/mailservice-editor.py](scripts/mailservice-editor.py) | Add or update entries in `mailservices.json` |
 | [scripts/validate_hostnames.py](scripts/validate_hostnames.py) | Validate that each line in a file is a valid domain name |
 | [scripts/sort_json_keys.py](scripts/sort_json_keys.py) | Recursively sort JSON keys alphabetically |
