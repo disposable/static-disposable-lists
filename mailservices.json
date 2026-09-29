@@ -63,6 +63,20 @@
     ],
     "type": "free"
   },
+  "2925.com": {
+    "hosts": [
+      "2925.com"
+    ],
+    "mx_hosts": [
+      "mailmx01.2925.com",
+      "proxy.2925.com.yiyoucdn.com"
+    ],
+    "remark": "2925.com is a Chinese email service operated by Guangzhou Duoyi Network Co., Ltd., offering unlimited sub-addr",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "2980.com": {
     "hosts": [
       "2980.com"
@@ -74,6 +88,22 @@
     "signup_verification": [
       "mobile"
     ],
+    "type": "free"
+  },
+  "2mail.co": {
+    "hosts": [
+      "2mail.co",
+      "mail2tor.co",
+      "onionmail.com",
+      "onionmail.org"
+    ],
+    "mx_hosts": [
+      "mail.onionmail.com",
+      "mxmail.2mail.co",
+      "mxmail.mail2tor.co",
+      "mxmail.onionmail.org"
+    ],
+    "remark": "OnionMail is a free anonymous and encrypted email service operating through the Tor network, accounts blocked",
     "type": "free"
   },
   "33mail.com": {
@@ -108,9 +138,113 @@
     ],
     "type": "free"
   },
+  "aaahawk.com": {
+    "hosts": [
+      "aaahawk.com",
+      "access4less.net",
+      "balista.com",
+      "brevard.net",
+      "capecod.net",
+      "cmn.net",
+      "comnetcom.net",
+      "ctlnet.com",
+      "cvn.net",
+      "cyberia.com",
+      "cyberia.net",
+      "dave-world.net",
+      "davesworld.net",
+      "desupernet.net",
+      "doitnow.com",
+      "early.com",
+      "earthlink.net",
+      "ezonline.com",
+      "ezonline.net",
+      "fgi.net",
+      "futureone.com",
+      "gate.net",
+      "gowebway.com",
+      "hit.net",
+      "iag.net",
+      "igc.org",
+      "inconnect.com",
+      "indy.net",
+      "infionline.net",
+      "interserv.com",
+      "ionet.net",
+      "ipa.net",
+      "ix.netcom.com",
+      "jps.net",
+      "kc.rmi.net",
+      "lanminds.com",
+      "ldd.net",
+      "lightspeed.net",
+      "mcn.net",
+      "midwest.net",
+      "mindspring.com",
+      "mtneer.net",
+      "neaccess.net",
+      "nemonet.com",
+      "oneimage.com",
+      "onemain.com",
+      "palmnet.net",
+      "penn.com",
+      "peoplepc.com",
+      "pipeline.com",
+      "radiks.net",
+      "ramlink.net",
+      "rconnect.com",
+      "redrose.net",
+      "ria.net",
+      "rmi.com",
+      "rmi.net",
+      "rmii.com",
+      "rnet.com",
+      "shianet.org",
+      "southwind.net",
+      "springmail.com",
+      "sprintmail.com",
+      "sprynet.com",
+      "sunlink.net",
+      "supernet.com",
+      "surfree.com",
+      "teleport.com",
+      "thegrid.net",
+      "tiac.net",
+      "tir.com",
+      "tir.net",
+      "together.net",
+      "travelin.com",
+      "uid.onemain.com",
+      "uplink.net",
+      "zoomnet.net"
+    ],
+    "mx_hosts": [
+      "mx01.earthlink-vadesecure.net",
+      "mx02.earthlink-vadesecure.net",
+      "mx03.earthlink-vadesecure.net",
+      "mx04.earthlink-vadesecure.net"
+    ],
+    "remark": "EarthLink is an American Internet service provider offering free email for customers and legacy account holder",
+    "type": "free"
+  },
+  "absamail.co.za": {
+    "hosts": [
+      "absamail.co.za"
+    ],
+    "mx_hosts": [
+      "mx.inbound.vox.co.za"
+    ],
+    "remark": "AbsaMail (@absamail.co.za) is a South African consumer email service, registered in 2001 by Absa Group for its",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "abv.bg": {
     "hosts": [
-      "abv.bg"
+      "abv.bg",
+      "gbg.bg",
+      "gyuvetch.bg"
     ],
     "mx_hosts": [
       "pmx.abv.bg",
@@ -139,6 +273,26 @@
     ],
     "type": "forwarding"
   },
+  "afrihost.co.za": {
+    "hosts": [
+      "afrihost.co.za"
+    ],
+    "mx_hosts": [
+      "spe.ucebox.co.za"
+    ],
+    "remark": "Afrihost is a South African ISP and web hosting provider offering free bundled webmail with its internet, host",
+    "type": "free"
+  },
+  "aland.net": {
+    "hosts": [
+      "aland.net"
+    ],
+    "mx_hosts": [
+      "mail.aland.net"
+    ],
+    "remark": "Ålcom (Ålands Telekommunikation Ab) is the leading telecommunications provider in the Åland Islands, including",
+    "type": "free"
+  },
   "aliasvault.net": {
     "hosts": [
       "aliasvault.net"
@@ -151,6 +305,42 @@
       "email"
     ],
     "type": "forwarding"
+  },
+  "alice.it": {
+    "hosts": [
+      "alice.it"
+    ],
+    "mx_hosts": [
+      "mx.tim.it"
+    ],
+    "remark": "Telecom Italia Mobile S.p.A., commonly known as TIM, is an Italian telecommunications company owned by Telecom",
+    "type": "free"
+  },
+  "aliyun.com": {
+    "hosts": [
+      "aliyun.com"
+    ],
+    "mx_hosts": [
+      "mx2.mail.aliyun.com"
+    ],
+    "remark": "Alibaba Mail is the email service of Alibaba Cloud, which offered free personal @aliyun.com mailboxes with 60",
+    "type": "free"
+  },
+  "altiboxmail.dk": {
+    "hosts": [
+      "altiboxmail.dk",
+      "lyse.net",
+      "ntebb.no"
+    ],
+    "mx_hosts": [
+      "mx1.altibox.net",
+      "mx1dk.altibox.net",
+      "mx2.altibox.net",
+      "mx2dk.altibox.net",
+      "mx3.altibox.net"
+    ],
+    "remark": "Altibox (Lyse Group) provides customer email for Norwegian broadband subscribers.",
+    "type": "free"
   },
   "anonymail.hu": {
     "hosts": [
@@ -165,6 +355,25 @@
     "signup_verification": [
       "none"
     ],
+    "type": "free"
+  },
+  "anvianet.fi": {
+    "hosts": [
+      "anvianet.fi",
+      "elisanet.fi",
+      "kolumbus.fi",
+      "kotikone.fi",
+      "kotiposti.net",
+      "netikka.fi",
+      "netti.fi",
+      "saunalahti.fi",
+      "wippies.fi"
+    ],
+    "mx_hosts": [
+      "mx-stp.mail.saunalahti.fi",
+      "mx-tnl.mail.saunalahti.fi"
+    ],
+    "remark": "Elisa Mail is a free email service provided by Elisa Oyj, Finland's largest telecommunications company, to its",
     "type": "free"
   },
   "aon.at": {
@@ -253,6 +462,30 @@
     ],
     "type": "free"
   },
+  "au.com": {
+    "hosts": [
+      "au.com",
+      "auone-net.jp",
+      "ezweb.ne.jp"
+    ],
+    "mx_hosts": [
+      "fa1217.secure.jp",
+      "mx03.au.com",
+      "mx04.au.com",
+      "mx05.au.com",
+      "mx06.au.com",
+      "mx11.au.com",
+      "mx12.au.com",
+      "mx13.au.com",
+      "mx14.au.com",
+      "mx21.au.com",
+      "mx22.au.com",
+      "mx23.au.com",
+      "mx24.au.com"
+    ],
+    "remark": "au is KDDI’s Japanese telecom brand offering mobile, broadband, and digital services.",
+    "type": "free"
+  },
   "autistici.org": {
     "hosts": [
       "inventati.org"
@@ -285,6 +518,29 @@
     "remark": "Saudi freemail provider (Ayna).",
     "type": "free"
   },
+  "azet.sk": {
+    "hosts": [
+      "azet.sk"
+    ],
+    "mx_hosts": [
+      "smtp2.azet.sk"
+    ],
+    "remark": "Azet.sk is a Slovak online portal. The portal currently manages 23 online services.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
+  "balticom.lv": {
+    "hosts": [
+      "balticom.lv"
+    ],
+    "mx_hosts": [
+      "mx1.inbox.lv"
+    ],
+    "remark": "Balticom is a Latvian telecommunications provider offering internet, TV, and email services, with email hosted",
+    "type": "free"
+  },
   "bbox.fr": {
     "hosts": [
       "bbox.fr"
@@ -297,6 +553,17 @@
     "signup_verification": [
       "other"
     ],
+    "type": "free"
+  },
+  "bbsyd.dk": {
+    "hosts": [
+      "bbsyd.dk",
+      "stofanet.dk"
+    ],
+    "mx_hosts": [
+      "mx-lb-1.stofanet.dk"
+    ],
+    "remark": "Stofa is a Danish cable and fibre broadband provider owned by the energy and telecommunications group Norlys,",
     "type": "free"
   },
   "beeble.com": {
@@ -342,6 +609,42 @@
     ],
     "type": "free"
   },
+  "biglobe.jp": {
+    "hosts": [
+      "biglobe.jp",
+      "biglobe.ne.jp",
+      "memail.jp"
+    ],
+    "mx_hosts": [
+      "bgmgate1.biglobe.ne.jp",
+      "bgmgate2.biglobe.ne.jp",
+      "bgmgate9.biglobe.ne.jp"
+    ],
+    "remark": "BIGLOBE is a major Japanese internet service provider based in Tokyo, originally part of NEC and a wholly owne",
+    "type": "free"
+  },
+  "bigpond.com": {
+    "hosts": [
+      "bigpond.com",
+      "bigpond.net.au"
+    ],
+    "mx_hosts": [
+      "extmail.bigpond.com",
+      "extmail.bpbb.bigpond.com"
+    ],
+    "remark": "Telstra Group Limited is an Australian telecommunications company that builds and operates telecommunications",
+    "type": "paid"
+  },
+  "black.com": {
+    "hosts": [
+      "black.com"
+    ],
+    "mx_hosts": [
+      "mail.black.com"
+    ],
+    "remark": "black.com is an encrypted email service operated by black.com GmbH, an Austrian company. It offers zero-access",
+    "type": "paid"
+  },
   "blacksburg.net": {
     "hosts": [
       "blacksburg.net"
@@ -383,6 +686,19 @@
     ],
     "type": "free"
   },
+  "bol.com.br": {
+    "hosts": [
+      "bol.com.br"
+    ],
+    "mx_hosts": [
+      "mx3.bol.com.br"
+    ],
+    "remark": "Brasil Online (BOL) is an Internet portal that provides email hosting and free email services UOL.\n\n\n== Histor",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "bravealias.com": {
     "hosts": [
       "bravealias.com"
@@ -398,7 +714,9 @@
   },
   "btinternet.com": {
     "hosts": [
-      "btinternet.com"
+      "btinternet.com",
+      "btopenworld.com",
+      "talk21.com"
     ],
     "mx_hosts": [
       "mx.bt.prod.cloud.openwave.ai"
@@ -517,8 +835,23 @@
     ],
     "type": "free"
   },
+  "centurytel.net": {
+    "hosts": [
+      "centurytel.net"
+    ],
+    "mx_hosts": [
+      "mx.centurylink.net"
+    ],
+    "remark": "Lumen Technologies, Inc.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "charter.net": {
     "hosts": [
+      "adelphia.net",
+      "brighthouse.com",
       "carolina.rr.com",
       "charter.net",
       "cinci.rr.com",
@@ -534,6 +867,7 @@
       "nycap.rr.com",
       "roadrunner.com",
       "rochester.rr.com",
+      "rr.com",
       "san.rr.com",
       "satx.rr.com",
       "sc.rr.com",
@@ -542,11 +876,14 @@
       "stny.rr.com",
       "stx.rr.com",
       "triad.rr.com",
+      "twc.com",
       "twcny.rr.com",
       "tx.rr.com",
       "wi.rr.com"
     ],
     "mx_hosts": [
+      "cdptpa-postmx01.email.rr.com",
+      "dnvrco-postmx01.email.rr.com",
       "mx0.charter.net",
       "pkvw-mx.msg.pkvw.co.charter.net"
     ],
@@ -746,6 +1083,18 @@
     ],
     "type": "free"
   },
+  "dial-up.net": {
+    "hosts": [
+      "dial-up.net",
+      "isdsl.net"
+    ],
+    "mx_hosts": [
+      "av.dial-up.net",
+      "mxi.is.co.za"
+    ],
+    "remark": "Internet Solutions (IS) is a South African ISP, part of the Dimension Data/NTT group, that provided bundled co",
+    "type": "free"
+  },
   "digi.ro": {
     "hosts": [
       "digi.ro"
@@ -783,6 +1132,17 @@
     "signup_verification": [
       "other"
     ],
+    "type": "free"
+  },
+  "dnainternet.net": {
+    "hosts": [
+      "dnainternet.net",
+      "welho.com"
+    ],
+    "mx_hosts": [
+      "mx.dnamail.fi"
+    ],
+    "remark": "DNA Mail is a free email service provided by DNA Oyj, a major Finnish telecommunications company offering mobi",
     "type": "free"
   },
   "dslextreme.com": {
@@ -861,20 +1221,34 @@
   },
   "eclipso.de": {
     "hosts": [
-      "eclipso.de",
       "eclipso.at",
+      "eclipso.be",
       "eclipso.ch",
-      "eclipso.eu",
+      "eclipso.de",
+      "eclipso.dk",
+      "eclipso.email",
       "eclipso.es",
+      "eclipso.eu",
       "eclipso.it",
       "eclipso.me",
+      "eclipso.net",
       "eclipso.nl",
-      "eclipso.email",
+      "eclipso.uk",
+      "eclipsomail.com",
       "eclipsomail.de",
-      "eclipsomail.com"
+      "maileurope.at",
+      "maileurope.ch",
+      "maileurope.co.uk",
+      "maileurope.de",
+      "maileurope.es",
+      "maileurope.fr",
+      "maileurope.it",
+      "maileurope.nl",
+      "teamvielfalt.eu"
     ],
     "mx_hosts": [
-      "mail.eclipso.de"
+      "mail.eclipso.de",
+      "mail.teamvielfalt.eu"
     ],
     "remark": "German freemail with OpenPGP/S-MIME support; anonymous signup.",
     "signup_verification": [
@@ -1243,8 +1617,9 @@
   },
   "free.fr": {
     "hosts": [
-      "free.fr",
-      "chez.com"
+      "aliceadsl.fr",
+      "chez.com",
+      "free.fr"
     ],
     "mx_hosts": [
       "mx1.free.fr",
@@ -1267,7 +1642,12 @@
   },
   "freenet.de": {
     "hosts": [
-      "freenet.de"
+      "bossmail.de",
+      "fn.de",
+      "freenet.de",
+      "freenetmail.de",
+      "geekmail.de",
+      "justmail.de"
     ],
     "mx_hosts": [
       "mx.freenet.de"
@@ -1317,6 +1697,19 @@
     ],
     "type": "free"
   },
+  "gazeta.pl": {
+    "hosts": [
+      "gazeta.pl"
+    ],
+    "mx_hosts": [
+      "mx.poczta.gazeta.pl"
+    ],
+    "remark": "Agora S.A. provides diverse media and communication services, including print, online, and radio, to engage an",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "gmail.com": {
     "hosts": [
       "gmail.com",
@@ -1332,6 +1725,28 @@
     "signup_verification": [
       "mobile"
     ],
+    "type": "free"
+  },
+  "godmail.dk": {
+    "hosts": [
+      "godmail.dk"
+    ],
+    "mx_hosts": [
+      "mx.dka.mailcore.net"
+    ],
+    "remark": "GodMail is a free Danish email service from GodStart, designed with a simple, user-friendly interface tailored",
+    "type": "free"
+  },
+  "gvdnet.dk": {
+    "hosts": [
+      "gvdnet.dk"
+    ],
+    "mx_hosts": [
+      "fallbackmx.spamexperts.eu",
+      "lastmx.spamexperts.net",
+      "mx.spamexperts.com"
+    ],
+    "remark": "GVD Net is a Danish antenna association (Gug-Visse-Dall Antenneforening) supplying internet and TV to househol",
     "type": "free"
   },
   "hetnet.nl": {
@@ -1407,6 +1822,16 @@
       "payment"
     ],
     "type": "paid"
+  },
+  "i.softbank.jp": {
+    "hosts": [
+      "i.softbank.jp"
+    ],
+    "mx_hosts": [
+      "msv.softbank.jp"
+    ],
+    "remark": "SoftBank is a Japanese telecom operator and global technology investor that delivers mobile and broadband serv",
+    "type": "free"
   },
   "i.ua": {
     "hosts": [
@@ -1485,6 +1910,29 @@
     ],
     "type": "free"
   },
+  "ig.com.br": {
+    "hosts": [
+      "ig.com.br"
+    ],
+    "mx_hosts": [
+      "mx-ha.skymail.net.br"
+    ],
+    "remark": "Internet Group do Brasil (iG) is a Brazilian Internet service provider that owns and operates web portals and",
+    "type": "free"
+  },
+  "iinet.net.au": {
+    "hosts": [
+      "iinet.net.au",
+      "internode.on.net",
+      "tpg.com.au"
+    ],
+    "mx_hosts": [
+      "mx-10.au-east.atmailcloud.com",
+      "mx-20.au-east.atmailcloud.com"
+    ],
+    "remark": "TPG Telecom is one of Australia's largest internet service providers, whose brands include TPG, iiNet, and Int",
+    "type": "free"
+  },
   "ik.me": {
     "hosts": [
       "ik.me",
@@ -1499,6 +1947,18 @@
       "mobile"
     ],
     "type": "free"
+  },
+  "iki.fi": {
+    "hosts": [
+      "iki.fi"
+    ],
+    "mx_hosts": [
+      "mail.iki.fi",
+      "mail2.iki.fi",
+      "mail3.iki.fi"
+    ],
+    "remark": "IKI is a Finnish non-profit association (IKI ry) offering lifetime email forwarding addresses to members for a",
+    "type": "paid"
   },
   "inbox.com": {
     "hosts": [
@@ -1541,10 +2001,11 @@
   },
   "inbox.lv": {
     "hosts": [
-      "inbox.lv",
-      "inbox.lt",
       "inbox.eu",
       "inbox.la",
+      "inbox.lt",
+      "inbox.lv",
+      "inbox.vg",
       "mail.ee"
     ],
     "mx_hosts": [
@@ -1573,6 +2034,37 @@
     ],
     "type": "free"
   },
+  "india.com": {
+    "hosts": [
+      "india.com"
+    ],
+    "mx_hosts": [
+      "india-com.mail.protection.outlook.com"
+    ],
+    "remark": "Free email service operated by Zee Entertainment Enterprises Limited",
+    "type": "free"
+  },
+  "inet.fi": {
+    "hosts": [
+      "inet.fi",
+      "pp.inet.fi",
+      "pp1.inet.fi",
+      "pp2.inet.fi",
+      "pp3.inet.fi",
+      "pp4.inet.fi",
+      "pp5.inet.fi",
+      "pp6.inet.fi",
+      "pp7.inet.fi",
+      "pp8.inet.fi",
+      "pp9.inet.fi"
+    ],
+    "mx_hosts": [
+      "mail.cm.telia.net",
+      "mx.dka.mailcore.net"
+    ],
+    "remark": "Inet.fi is a Finnish email service originally launched by Sonera in 1998, now operated by Inbox.com AS.",
+    "type": "free"
+  },
   "inleed.com": {
     "hosts": [
       "inleed.xyz",
@@ -1590,17 +2082,18 @@
   },
   "interia.pl": {
     "hosts": [
-      "interia.pl",
-      "interia.eu",
-      "poczta.fm",
-      "vip.interia.pl",
-      "intmail.pl",
-      "interia.com",
-      "interiowy.pl",
       "adresik.net",
-      "pisz.to",
+      "int.pl",
+      "interia.com",
+      "interia.eu",
+      "interia.pl",
+      "interiowy.pl",
+      "intmail.pl",
+      "ogarnij.se",
       "pacz.to",
-      "ogarnij.se"
+      "pisz.to",
+      "poczta.fm",
+      "vip.interia.pl"
     ],
     "mx_hosts": [
       "mx.interia.pl"
@@ -1609,6 +2102,17 @@
     "signup_verification": [
       "mobile"
     ],
+    "type": "free"
+  },
+  "intnet.mu": {
+    "hosts": [
+      "intnet.mu"
+    ],
+    "mx_hosts": [
+      "mailsecurity.myt.mu",
+      "mxrb.myt.mu"
+    ],
+    "remark": "Mauritius Telecom is the main telecommunications operator in Mauritius, trading as my.t, providing @intnet.mu",
     "type": "free"
   },
   "inwi.ma": {
@@ -1627,9 +2131,11 @@
   },
   "iol.it": {
     "hosts": [
+      "inwind.it",
       "iol.it"
     ],
     "mx_hosts": [
+      "smtp-in.inwind.it",
       "smtp-in.iol.it"
     ],
     "signup_verification": [
@@ -1716,6 +2222,7 @@
       "elinstallatoer.dk",
       "elsker.dk",
       "elvis.dk",
+      "email.dk",
       "email.it",
       "eriksen.dk",
       "exclusivemail.co.za",
@@ -1859,6 +2366,18 @@
     ],
     "type": "free"
   },
+  "juno.com": {
+    "hosts": [
+      "juno.com",
+      "netzero.net"
+    ],
+    "mx_hosts": [
+      "mx.dca.untd.com",
+      "mx.vgs.untd.com"
+    ],
+    "remark": "Juno Online Services is an Internet service provider based in the United States offering free email and intern",
+    "type": "free"
+  },
   "kabelmail.de": {
     "hosts": [
       "kabelmail.de"
@@ -1884,6 +2403,18 @@
     "remark": "Argentinian freemail (Keko).",
     "type": "free"
   },
+  "kolabnow.com": {
+    "hosts": [
+      "kolabnow.com"
+    ],
+    "mx_hosts": [
+      "mx01.kolabnow.com",
+      "mx02.kolabnow.com",
+      "mx03.kolabnow.com"
+    ],
+    "remark": "Kolab Now is a web-based email and groupware service, based completely on free and open-source software.",
+    "type": "paid"
+  },
   "kpnmail": {
     "hosts": [
       "freeler.nl",
@@ -1899,6 +2430,16 @@
       "payment"
     ],
     "type": "paid"
+  },
+  "lantic.net": {
+    "hosts": [
+      "lantic.net"
+    ],
+    "mx_hosts": [
+      "mx.inbound.vox.co.za"
+    ],
+    "remark": "Lantic (@lantic) is a South African email service that originated as an ISP founded in 1996, was acquired by V",
+    "type": "free"
   },
   "laposte.net": {
     "hosts": [
@@ -1921,6 +2462,16 @@
     ],
     "remark": "Latino.com freemail.",
     "type": "free"
+  },
+  "lavabit.com": {
+    "hosts": [
+      "lavabit.com"
+    ],
+    "mx_hosts": [
+      "lavabit.com"
+    ],
+    "remark": "Encrypted email service operated by Lavabit LLC (not accepting new signups)",
+    "type": "paid"
   },
   "libero.it": {
     "hosts": [
@@ -2007,6 +2558,31 @@
     "remark": "Email services discontinued.",
     "signup_verification": [
       "none"
+    ],
+    "type": "free"
+  },
+  "mail-online.cz": {
+    "hosts": [
+      "mail-online.cz",
+      "mail-online.dk",
+      "mail-online.email",
+      "mail.world",
+      "post-online.dk",
+      "weekonline.com"
+    ],
+    "mx_hosts": [
+      "mail-online.cz",
+      "mail.mail-online.cz",
+      "mail.mail-online.dk",
+      "mail.mail-online.email",
+      "mail.mail-online.se",
+      "mail.mail.world",
+      "mail.post-online.dk",
+      "mail.weekonline.com"
+    ],
+    "remark": "Mail-Online.dk is a Danish ad-free webmail service offering secure email hosting with large storage, spam filt",
+    "signup_verification": [
+      "other"
     ],
     "type": "free"
   },
@@ -2253,13 +2829,22 @@
   "mail.dk": {
     "hosts": [
       "c.dk",
+      "esenet.dk",
       "mail.dk",
+      "mail.tele.dk",
+      "os.dk",
+      "pc.dk",
       "post.tele.dk",
       "privat.dk",
+      "tdcadsl.dk",
+      "tele.dk",
+      "webspeed.dk",
       "youmail.dk"
     ],
     "mx_hosts": [
-      "fpo9.mail.dk"
+      "fpo.mail.dk",
+      "fpo9.mail.dk",
+      "mailgrinder.tdc.dk"
     ],
     "remark": "Free email service for YouSee customers.",
     "signup_verification": [
@@ -2306,6 +2891,16 @@
     ],
     "type": "free"
   },
+  "mail.lv": {
+    "hosts": [
+      "mail.lv"
+    ],
+    "mx_hosts": [
+      "mx1.inbox.lv"
+    ],
+    "remark": "Mail.lv is a free Latvian email service operated by Inbox.lv.",
+    "type": "free"
+  },
   "mail.ru": {
     "hosts": [
       "aport2000.ru",
@@ -2327,6 +2922,7 @@
       "newmail.ru",
       "omen.ru",
       "supermail.ru",
+      "vk.com",
       "xmail.ru",
       "zmail.ru"
     ],
@@ -2358,14 +2954,720 @@
   },
   "mail2world.com": {
     "hosts": [
+      "correoinfinitum.com",
+      "correoprodigy.com",
+      "cycsa.servicioscorreo.com",
+      "eninfinitum.com",
+      "fetcorp.mitmx.net",
+      "infinitum.com.mx",
+      "infinitummail.com",
+      "infinitumzone.net",
+      "mail2007.com",
+      "mail2abc.com",
+      "mail2actor.com",
+      "mail2adorable.com",
+      "mail2adoration.com",
+      "mail2adore.com",
+      "mail2adventure.com",
+      "mail2aeolus.com",
+      "mail2aether.com",
+      "mail2affection.com",
+      "mail2afghanistan.com",
+      "mail2africa.com",
+      "mail2agent.com",
+      "mail2aha.com",
+      "mail2aim.com",
+      "mail2air.com",
+      "mail2airforce.com",
+      "mail2alabama.com",
+      "mail2alaska.com",
+      "mail2alexa.com",
+      "mail2alien.com",
+      "mail2allan.com",
+      "mail2allen.com",
+      "mail2allison.com",
+      "mail2alpha.com",
+      "mail2alyssa.com",
+      "mail2amanda.com",
+      "mail2amber.com",
+      "mail2american.com",
+      "mail2andrea.com",
+      "mail2andy.com",
+      "mail2anna.com",
       "mail2anything.com",
+      "mail2aphrodite.com",
+      "mail2apollo.com",
+      "mail2april.com",
+      "mail2aquarius.com",
+      "mail2architect.com",
+      "mail2ares.com",
+      "mail2aries.com",
+      "mail2arizona.com",
+      "mail2armenia.com",
+      "mail2army.com",
+      "mail2art.com",
+      "mail2artemis.com",
+      "mail2artist.com",
+      "mail2ashley.com",
+      "mail2ask.com",
+      "mail2astronomer.com",
+      "mail2athena.com",
+      "mail2athlete.com",
+      "mail2atlas.com",
+      "mail2atom.com",
+      "mail2attitude.com",
+      "mail2australia.com",
+      "mail2austria.com",
+      "mail2azerbaijan.com",
+      "mail2baby.com",
+      "mail2bahrain.com",
+      "mail2ballerina.com",
+      "mail2ballplayer.com",
+      "mail2band.com",
+      "mail2bangladesh.com",
+      "mail2bank.com",
+      "mail2banker.com",
+      "mail2baptist.com",
+      "mail2bar.com",
+      "mail2barbados.com",
+      "mail2basketball.com",
+      "mail2batman.com",
+      "mail2batter.com",
+      "mail2beach.com",
+      "mail2beast.com",
+      "mail2beatles.com",
+      "mail2beauty.com",
+      "mail2belgium.com",
+      "mail2ben.com",
+      "mail2best.com",
+      "mail2beth.com",
+      "mail2betty.com",
+      "mail2beverly.com",
+      "mail2biker.com",
+      "mail2billionaire.com",
+      "mail2billy.com",
+      "mail2bio.com",
+      "mail2biologist.com",
+      "mail2black.com",
+      "mail2blackbelt.com",
+      "mail2blonde.com",
+      "mail2blues.com",
+      "mail2bob.com",
+      "mail2bombay.com",
+      "mail2bosnia.com",
+      "mail2boss.com",
+      "mail2boston.com",
+      "mail2boy.com",
+      "mail2brazil.com",
+      "mail2breakfast.com",
+      "mail2brian.com",
+      "mail2broker.com",
+      "mail2brussels.com",
+      "mail2bug.com",
+      "mail2bulgaria.com",
+      "mail2business.com",
+      "mail2busted.com",
+      "mail2butterfly.com",
+      "mail2buy.com",
+      "mail2ca.com",
+      "mail2california.com",
+      "mail2cambodia.com",
+      "mail2cameroon.com",
+      "mail2canada.com",
+      "mail2cancer.com",
+      "mail2capricorn.com",
+      "mail2cardiologist.com",
+      "mail2care.com",
+      "mail2casey.com",
+      "mail2cat.com",
+      "mail2caterer.com",
+      "mail2catlover.com",
+      "mail2cell.com",
+      "mail2chef.com",
+      "mail2chemist.com",
+      "mail2cherry.com",
+      "mail2chicago.com",
+      "mail2china.com",
+      "mail2chinese.com",
+      "mail2chocolate.com",
+      "mail2christian.com",
+      "mail2cliff.com",
+      "mail2close.com",
+      "mail2club.com",
+      "mail2coach.com",
+      "mail2coastguard.com",
+      "mail2colin.com",
+      "mail2college.com",
       "mail2colombia.com",
+      "mail2color.com",
+      "mail2colorado.com",
+      "mail2comedian.com",
+      "mail2computer.com",
+      "mail2computers.com",
+      "mail2connect.com",
+      "mail2connecticut.com",
+      "mail2consultant.com",
+      "mail2cool.com",
+      "mail2costarica.com",
+      "mail2cowboy.com",
+      "mail2cowgirl.com",
+      "mail2craig.com",
+      "mail2crave.com",
+      "mail2crazy.com",
+      "mail2create.com",
+      "mail2croatia.com",
+      "mail2cry.com",
+      "mail2curt.com",
+      "mail2customs.com",
+      "mail2cute.com",
+      "mail2cutey.com",
+      "mail2dad.com",
+      "mail2dallas.com",
+      "mail2dana.com",
+      "mail2dance.com",
+      "mail2dancer.com",
+      "mail2darling.com",
+      "mail2darren.com",
+      "mail2dave.com",
+      "mail2dc.com",
+      "mail2dealer.com",
+      "mail2deer.com",
+      "mail2delicious.com",
+      "mail2demeter.com",
+      "mail2democrat.com",
+      "mail2dentist.com",
+      "mail2desert.com",
+      "mail2designer.com",
+      "mail2developer.com",
+      "mail2devoted.com",
+      "mail2devotion.com",
+      "mail2diamond.com",
+      "mail2diana.com",
+      "mail2dictator.com",
+      "mail2die4.com",
+      "mail2diehard.com",
+      "mail2dilemma.com",
+      "mail2dinosaur.com",
+      "mail2diplomat.com",
+      "mail2director.com",
+      "mail2disco.com",
+      "mail2diver.com",
+      "mail2divorced.com",
+      "mail2doctor.com",
+      "mail2doglover.com",
+      "mail2don.com",
+      "mail2donald.com",
+      "mail2dream.com",
+      "mail2dreamer.com",
+      "mail2dude.com",
+      "mail2earth.com",
+      "mail2eastend.com",
+      "mail2eat.com",
+      "mail2economist.com",
+      "mail2ecuador.com",
+      "mail2egypt.com",
+      "mail2electron.com",
+      "mail2elizabeth.com",
+      "mail2elliot.com",
+      "mail2elvis.com",
+      "mail2emily.com",
+      "mail2emperor.com",
+      "mail2engineer.com",
+      "mail2english.com",
+      "mail2eos.com",
+      "mail2eric.com",
+      "mail2eris.com",
+      "mail2eritrea.com",
+      "mail2eros.com",
+      "mail2ethiopia.com",
+      "mail2eu.com",
+      "mail2europe.com",
+      "mail2everything.com",
+      "mail2exciting.com",
+      "mail2expert.com",
+      "mail2fairy.com",
+      "mail2faith.com",
+      "mail2fan.com",
+      "mail2fanatic.com",
+      "mail2fancy.com",
+      "mail2fantasy.com",
+      "mail2farmer.com",
+      "mail2fashion.com",
+      "mail2fiji.com",
+      "mail2films.com",
+      "mail2finland.com",
+      "mail2firm.com",
+      "mail2flexible.com",
+      "mail2florida.com",
+      "mail2fly.com",
+      "mail2fond.com",
+      "mail2football.com",
+      "mail2found.com",
+      "mail2france.com",
+      "mail2frankfurt.com",
+      "mail2free.com",
+      "mail2freedom.com",
+      "mail2french.com",
+      "mail2friendship.com",
+      "mail2fun.com",
+      "mail2gabriel.com",
+      "mail2galaxy.com",
+      "mail2games.com",
+      "mail2gary.com",
+      "mail2gemini.com",
+      "mail2genes.com",
+      "mail2georgia.com",
+      "mail2gerald.com",
+      "mail2german.com",
+      "mail2germany.com",
+      "mail2girl.com",
+      "mail2glen.com",
+      "mail2goddess.com",
+      "mail2gold.com",
+      "mail2golfer.com",
+      "mail2good.com",
+      "mail2gordon.com",
+      "mail2government.com",
+      "mail2grab.com",
+      "mail2grace.com",
+      "mail2grandma.com",
+      "mail2grandpa.com",
+      "mail2greece.com",
+      "mail2green.com",
+      "mail2gsm.com",
+      "mail2guy.com",
+      "mail2hades.com",
+      "mail2hawaii.com",
+      "mail2headhunter.com",
+      "mail2heaven.com",
+      "mail2hecate.com",
+      "mail2hell.com",
+      "mail2help.com",
+      "mail2henry.com",
+      "mail2her.com",
+      "mail2hercules.com",
+      "mail2hermes.com",
+      "mail2hestia.com",
+      "mail2highschool.com",
+      "mail2him.com",
+      "mail2hip.com",
+      "mail2hiphop.com",
+      "mail2hollywood.com",
+      "mail2honey.com",
+      "mail2hongkong.com",
+      "mail2hope.com",
+      "mail2horse.com",
+      "mail2host.com",
+      "mail2hot.com",
+      "mail2hotel.com",
+      "mail2houston.com",
+      "mail2hungary.com",
+      "mail2hyperspace.com",
+      "mail2ice-cream.com",
+      "mail2iceland.com",
+      "mail2idontknow.com",
+      "mail2illinois.com",
+      "mail2imam.com",
+      "mail2in.com",
+      "mail2indian.com",
+      "mail2indiana.com",
+      "mail2indonesia.com",
+      "mail2infinity.com",
+      "mail2iowa.com",
+      "mail2ireland.com",
+      "mail2iris.com",
+      "mail2irresistible.com",
+      "mail2isaac.com",
+      "mail2italian.com",
+      "mail2italy.com",
+      "mail2jail.com",
+      "mail2jake.com",
+      "mail2james.com",
+      "mail2jane.com",
+      "mail2japan.com",
+      "mail2japanese.com",
+      "mail2jason.com",
+      "mail2java.com",
+      "mail2jazz.com",
+      "mail2jennifer.com",
+      "mail2jenny.com",
+      "mail2jeremy.com",
+      "mail2jerry.com",
+      "mail2jessica.com",
+      "mail2jesus.com",
+      "mail2jew.com",
+      "mail2jim.com",
+      "mail2jody.com",
+      "mail2joe.com",
+      "mail2john.com",
+      "mail2join.com",
+      "mail2jones.com",
+      "mail2jordan.com",
+      "mail2josh.com",
+      "mail2joy.com",
+      "mail2julian.com",
+      "mail2juliet.com",
+      "mail2junk.com",
+      "mail2justin.com",
+      "mail2justme.com",
+      "mail2kansas.com",
+      "mail2karate.com",
+      "mail2karen.com",
+      "mail2karma.com",
+      "mail2kathy.com",
+      "mail2katie.com",
+      "mail2kay.com",
+      "mail2keen.com",
+      "mail2keith.com",
+      "mail2kelly.com",
+      "mail2kentucky.com",
+      "mail2kevin.com",
+      "mail2kim.com",
+      "mail2king.com",
+      "mail2kiss.com",
+      "mail2kyle.com",
+      "mail2la.com",
+      "mail2laura.com",
+      "mail2lauren.com",
+      "mail2lawyer.com",
+      "mail2leo.com",
+      "mail2letter.com",
+      "mail2liberia.com",
+      "mail2libertarian.com",
+      "mail2libra.com",
+      "mail2libya.com",
+      "mail2life.com",
+      "mail2linda.com",
+      "mail2linux.com",
+      "mail2lisa.com",
+      "mail2london.com",
+      "mail2lost.com",
+      "mail2lovable.com",
+      "mail2love.com",
+      "mail2lovely.com",
+      "mail2lucky.com",
+      "mail2lunch.com",
+      "mail2lust.com",
+      "mail2luxembourg.com",
+      "mail2mail4.com",
+      "mail2malaysia.com",
+      "mail2malta.com",
+      "mail2mambo.com",
+      "mail2man.com",
+      "mail2many.com",
+      "mail2marc.com",
+      "mail2maria.com",
+      "mail2mark.com",
+      "mail2mars.com",
+      "mail2martin.com",
+      "mail2mason.com",
+      "mail2master.com",
+      "mail2matt.com",
+      "mail2matthew.com",
+      "mail2mauritania.com",
+      "mail2mauritius.com",
+      "mail2maxwell.com",
+      "mail2maybe.com",
+      "mail2mba.com",
+      "mail2me4u.com",
+      "mail2mechanic.com",
+      "mail2mel.com",
+      "mail2melanie.com",
+      "mail2melody.com",
+      "mail2memphis.com",
+      "mail2mexican.com",
+      "mail2mgz.com",
+      "mail2miami.com",
+      "mail2michael.com",
+      "mail2michelle.com",
+      "mail2michigan.com",
+      "mail2mike.com",
+      "mail2milan.com",
+      "mail2milano.com",
+      "mail2millennium.com",
+      "mail2mindreader.com",
+      "mail2mini.com",
+      "mail2miracle.com",
+      "mail2missionary.com",
+      "mail2model.com",
+      "mail2mom.com",
+      "mail2monaco.com",
+      "mail2money.com",
+      "mail2monica.com",
+      "mail2montreal.com",
+      "mail2moon.com",
+      "mail2mp3.com",
+      "mail2mrright.com",
+      "mail2msright.com",
+      "mail2music.com",
+      "mail2musician.com",
+      "mail2my.com",
+      "mail2mygsm.com",
+      "mail2mymac.com",
+      "mail2mypc.com",
+      "mail2namibia.com",
+      "mail2nathan.com",
+      "mail2nauru.com",
+      "mail2nebraska.com",
+      "mail2ned.com",
+      "mail2neil.com",
+      "mail2nemesis.com",
+      "mail2netherlands.com",
+      "mail2network.com",
+      "mail2nevada.com",
+      "mail2newyork.com",
+      "mail2newzealand.com",
+      "mail2nice.com",
+      "mail2nick.com",
+      "mail2night.com",
+      "mail2nike.com",
+      "mail2noble.com",
+      "mail2noel.com",
+      "mail2northpole.com",
+      "mail2nowhere.com",
+      "mail2ny.com",
+      "mail2oasis.com",
+      "mail2oceanographer.com",
+      "mail2ohio.com",
+      "mail2ok.com",
+      "mail2one.com",
+      "mail2onfire.com",
+      "mail2online.com",
+      "mail2oops.com",
+      "mail2open.com",
+      "mail2oregon.com",
+      "mail2oslo.com",
+      "mail2pakistan.com",
+      "mail2pal.com",
       "mail2palau.com",
+      "mail2pan.com",
+      "mail2panama.com",
+      "mail2paralegal.com",
+      "mail2paris.com",
+      "mail2parker.com",
+      "mail2party.com",
+      "mail2passion.com",
+      "mail2patricia.com",
+      "mail2paul.com",
+      "mail2peace.com",
+      "mail2pennsylvania.com",
+      "mail2peru.com",
+      "mail2peter.com",
+      "mail2pharoah.com",
+      "mail2phil.com",
+      "mail2phoenix.com",
+      "mail2pilot.com",
+      "mail2pisces.com",
+      "mail2platinum.com",
+      "mail2pluto.com",
+      "mail2poet.com",
+      "mail2poland.com",
+      "mail2pop.com",
+      "mail2portugal.com",
+      "mail2power.com",
+      "mail2priest.com",
+      "mail2prince.com",
+      "mail2princess.com",
+      "mail2producer.com",
+      "mail2professor.com",
+      "mail2psycho.com",
+      "mail2psychologist.com",
+      "mail2qatar.com",
+      "mail2queen.com",
+      "mail2racer.com",
+      "mail2rachel.com",
+      "mail2rage.com",
+      "mail2rainmaker.com",
+      "mail2randy.com",
+      "mail2rap.com",
+      "mail2rare.com",
+      "mail2rave.com",
+      "mail2ray.com",
+      "mail2realtor.com",
+      "mail2rebecca.com",
+      "mail2recruiter.com",
+      "mail2recycle.com",
+      "mail2redhead.com",
+      "mail2reed.com",
+      "mail2register.com",
+      "mail2republican.com",
+      "mail2rich.com",
+      "mail2ricky.com",
+      "mail2rita.com",
+      "mail2rob.com",
+      "mail2robert.com",
+      "mail2rock.com",
+      "mail2rocker.com",
+      "mail2romania.com",
+      "mail2rome.com",
+      "mail2romeo.com",
+      "mail2ronald.com",
+      "mail2rose.com",
+      "mail2royal.com",
+      "mail2runner.com",
+      "mail2russell.com",
+      "mail2russia.com",
+      "mail2safe.com",
+      "mail2sagittarius.com",
+      "mail2sail.com",
+      "mail2salaam.com",
+      "mail2samurai.com",
+      "mail2sanfrancisco.com",
+      "mail2santa.com",
+      "mail2sarah.com",
+      "mail2sat.com",
+      "mail2saturn.com",
+      "mail2saudi.com",
+      "mail2save.com",
+      "mail2school.com",
+      "mail2science.com",
+      "mail2scientist.com",
+      "mail2scorpio.com",
+      "mail2scott.com",
+      "mail2sean.com",
+      "mail2search.com",
+      "mail2seattle.com",
+      "mail2secretagent.com",
+      "mail2sensual.com",
+      "mail2sevenseas.com",
+      "mail2sexy.com",
+      "mail2seychelles.com",
+      "mail2ship.com",
+      "mail2shoot.com",
+      "mail2shop.com",
+      "mail2silver.com",
+      "mail2singapore.com",
+      "mail2skier.com",
+      "mail2sky.com",
+      "mail2slim.com",
+      "mail2slovakia.com",
+      "mail2smile.com",
+      "mail2smith.com",
+      "mail2smooth.com",
+      "mail2soccer.com",
+      "mail2son.com",
+      "mail2song.com",
+      "mail2sos.com",
+      "mail2sound.com",
+      "mail2southafrica.com",
+      "mail2southpole.com",
+      "mail2spain.com",
+      "mail2spanish.com",
+      "mail2sports.com",
+      "mail2sporty.com",
+      "mail2srilanka.com",
+      "mail2star.com",
+      "mail2stephanie.com",
+      "mail2steve.com",
+      "mail2stewart.com",
+      "mail2stock.com",
+      "mail2stockmarket.com",
+      "mail2strong.com",
+      "mail2student.com",
+      "mail2studio.com",
+      "mail2sun.com",
+      "mail2superman.com",
+      "mail2surfer.com",
+      "mail2suzie.com",
+      "mail2sweden.com",
+      "mail2sweetheart.com",
+      "mail2swim.com",
+      "mail2swimmer.com",
+      "mail2swiss.com",
+      "mail2sydney.com",
+      "mail2taboo.com",
+      "mail2tanzania.com",
+      "mail2taurus.com",
+      "mail2taylor.com",
+      "mail2taz.com",
+      "mail2teacher.com",
+      "mail2techie.com",
+      "mail2technician.com",
+      "mail2teen.com",
       "mail2teletubbie.com",
+      "mail2tenderness.com",
+      "mail2terry.com",
+      "mail2texas.com",
+      "mail2therapy.com",
+      "mail2time.com",
+      "mail2tonga.com",
+      "mail2tony.com",
+      "mail2touch.com",
+      "mail2tracy.com",
+      "mail2tramp.com",
+      "mail2travel.com",
+      "mail2trekkie.com",
+      "mail2trex.com",
+      "mail2triallawyer.com",
+      "mail2trick.com",
+      "mail2trillionaire.com",
+      "mail2truck.com",
+      "mail2try.com",
+      "mail2tunisia.com",
+      "mail2turbo.com",
+      "mail2turkey.com",
+      "mail2tv.com",
+      "mail2tycoon.com",
+      "mail2uae.com",
+      "mail2uk.com",
+      "mail2usa.com",
+      "mail2utah.com",
+      "mail2v.com",
+      "mail2vacation.com",
+      "mail2venous.com",
+      "mail2venus.com",
+      "mail2vickie.com",
+      "mail2victor.com",
+      "mail2victoria.com",
+      "mail2vienna.com",
+      "mail2vietnam.com",
+      "mail2virgo.com",
+      "mail2wallstreet.com",
+      "mail2wally.com",
+      "mail2walter.com",
+      "mail2washington.com",
+      "mail2wave.com",
+      "mail2way.com",
+      "mail2waycool.com",
+      "mail2webmaster.com",
+      "mail2wed.com",
+      "mail2why.com",
+      "mail2wife.com",
+      "mail2wild.com",
+      "mail2willie.com",
+      "mail2winner.com",
+      "mail2wire.com",
+      "mail2wired.com",
+      "mail2wisconsin.com",
+      "mail2wiz.com",
+      "mail2woman.com",
       "mail2world.com",
-      "prodigy.net.mx"
+      "mail2world.org",
+      "mail2worship.com",
+      "mail2wow.com",
+      "mail2xfiles.com",
+      "mail2xox.com",
+      "mail2yahalla.com",
+      "mail2yes.com",
+      "mail2yoga.com",
+      "mail2youssef.com",
+      "mail2zenith.com",
+      "mail2zephir.com",
+      "mail2zeus.com",
+      "mail2zoo.com",
+      "prodigy.net.mx",
+      "prodigymovil.com",
+      "prodigywifi.com.mx",
+      "serrano1.mitmx.net",
+      "servicios.telmex.com",
+      "teleco.servicioscorreo.com",
+      "telmexmail.com",
+      "telnormail.com"
     ],
     "mx_hosts": [
+      "fallbackmx.spamesxperts.eu",
+      "lastmx.spamexperts.net",
+      "mx.spamexperts.com",
       "publicms1.mail2world.com",
       "publicms2.mail2world.com",
       "publicms3.mail2world.com"
@@ -2994,6 +4296,18 @@
     ],
     "type": "free"
   },
+  "munkebonet.dk": {
+    "hosts": [
+      "munkebonet.dk"
+    ],
+    "mx_hosts": [
+      "fallbackmx.spamexperts.eu",
+      "lastmx.spamexperts.net",
+      "mx.spamexperts.com"
+    ],
+    "remark": "Munkebo Net is a Danish local broadband association in Munkebo on Funen, providing internet access and email a",
+    "type": "free"
+  },
   "murena.io": {
     "hosts": [
       "murena.io",
@@ -3010,12 +4324,15 @@
   },
   "mweb.co.za": {
     "hosts": [
-      "mweb.co.za"
+      "iafrica.com",
+      "mweb.co.za",
+      "worldonline.co.za"
     ],
     "mx_hosts": [
       "fallbackmx.spamexperts.eu",
       "lastmx.spamexperts.net",
-      "mx.spamexperts.com"
+      "mx.spamexperts.com",
+      "nav-gateway.mweb.co.za"
     ],
     "remark": "Free email for MWEB South Africa customers.",
     "signup_verification": [
@@ -3062,6 +4379,16 @@
     "signup_verification": [
       "mobile"
     ],
+    "type": "free"
+  },
+  "neomail.co.za": {
+    "hosts": [
+      "neomail.co.za"
+    ],
+    "mx_hosts": [
+      "neomail.co.za"
+    ],
+    "remark": "Neotel was a South African telecommunications operator (now part of Liquid Intelligent Technologies) whose Neo",
     "type": "free"
   },
   "neonmail.io": {
@@ -3150,6 +4477,17 @@
     ],
     "type": "free"
   },
+  "nifty.com": {
+    "hosts": [
+      "nifty.com",
+      "nifty.ne.jp"
+    ],
+    "mx_hosts": [
+      "mx2.nifty.com"
+    ],
+    "remark": "@nifty is a major Japanese internet service provider founded in 1986 (originally NIFTY-Serve), owned by Nojima",
+    "type": "free"
+  },
   "o2.pl": {
     "hosts": [
       "o2.pl",
@@ -3165,6 +4503,19 @@
     ],
     "signup_verification": [
       "mobile"
+    ],
+    "type": "free"
+  },
+  "ocn.ne.jp": {
+    "hosts": [
+      "ocn.ne.jp"
+    ],
+    "mx_hosts": [
+      "mw2prrw31p.bizmw.com"
+    ],
+    "remark": "OCN (Open Computer Network) is Japan's largest ISP, owned by NTT Communications, providing email to its broadb",
+    "signup_verification": [
+      "other"
     ],
     "type": "free"
   },
@@ -3203,6 +4554,20 @@
     ],
     "signup_verification": [
       "mobile"
+    ],
+    "type": "free"
+  },
+  "online.de": {
+    "hosts": [
+      "online.de"
+    ],
+    "mx_hosts": [
+      "mx00.emig.kundenserver.de",
+      "mx01.emig.kundenserver.de"
+    ],
+    "remark": "Online.de provides email addresses to 1&1/IONOS broadband subscribers in Germany.",
+    "signup_verification": [
+      "other"
     ],
     "type": "free"
   },
@@ -3262,12 +4627,35 @@
     ],
     "type": "free"
   },
+  "optonline.net": {
+    "hosts": [
+      "optonline.net"
+    ],
+    "mx_hosts": [
+      "mx.altice.prod.cloud.openwave.ai"
+    ],
+    "remark": "Optimum is an American telecommunications brand owned and operated by Altice USA. It is the fourth largest cab",
+    "type": "free"
+  },
+  "optusnet.com.au": {
+    "hosts": [
+      "optusnet.com.au"
+    ],
+    "mx_hosts": [
+      "mx-10.au-east.atmailcloud.com",
+      "mx-20.au-east.atmailcloud.com"
+    ],
+    "remark": "Singtel Optus Pty Limited (commonly referred to as Optus) is an Australian telecommunications company headquar",
+    "type": "free"
+  },
   "orange.fr": {
     "hosts": [
       "orange.fr",
+      "orange.net",
       "wanadoo.fr"
     ],
     "mx_hosts": [
+      "custmx.cscdns.net",
       "smtp-in.orange.fr",
       "smtp-in2.orange.fr"
     ],
@@ -3318,25 +4706,54 @@
   },
   "outlook.com": {
     "hosts": [
+      "hotmail.at",
+      "hotmail.ba",
       "hotmail.be",
       "hotmail.ca",
       "hotmail.ch",
+      "hotmail.cl",
       "hotmail.co.il",
+      "hotmail.co.jp",
+      "hotmail.co.nz",
       "hotmail.co.th",
       "hotmail.co.uk",
+      "hotmail.co.za",
       "hotmail.com",
+      "hotmail.com.ar",
+      "hotmail.com.au",
       "hotmail.com.br",
       "hotmail.com.hk",
+      "hotmail.com.pl",
+      "hotmail.com.ru",
+      "hotmail.com.tr",
       "hotmail.com.tw",
+      "hotmail.cz",
       "hotmail.de",
+      "hotmail.dk",
+      "hotmail.ee",
       "hotmail.es",
+      "hotmail.fi",
       "hotmail.fr",
+      "hotmail.gr",
+      "hotmail.hu",
+      "hotmail.ie",
       "hotmail.it",
+      "hotmail.lt",
+      "hotmail.lu",
+      "hotmail.lv",
+      "hotmail.ly",
       "hotmail.nl",
       "hotmail.no",
+      "hotmail.pt",
+      "hotmail.rs",
+      "hotmail.se",
+      "hotmail.sh",
+      "hotmail.sk",
+      "hotmail.ua",
       "live.at",
       "live.be",
       "live.ca",
+      "live.ch",
       "live.cl",
       "live.cn",
       "live.co.uk",
@@ -3350,7 +4767,9 @@
       "live.com.sg",
       "live.de",
       "live.dk",
+      "live.fi",
       "live.fr",
+      "live.hk",
       "live.ie",
       "live.in",
       "live.it",
@@ -3359,22 +4778,29 @@
       "live.no",
       "live.ru",
       "live.se",
+      "livemail.tw",
       "msn.com",
       "msn.com.au",
       "msn.nl",
       "outlook.at",
       "outlook.be",
+      "outlook.bg",
       "outlook.cl",
+      "outlook.cm",
+      "outlook.co",
       "outlook.co.id",
       "outlook.co.il",
       "outlook.co.nz",
       "outlook.co.th",
       "outlook.com",
+      "outlook.com.ar",
       "outlook.com.au",
       "outlook.com.br",
+      "outlook.com.es",
       "outlook.com.gr",
       "outlook.com.pe",
       "outlook.com.tr",
+      "outlook.com.ua",
       "outlook.com.vn",
       "outlook.cz",
       "outlook.de",
@@ -3391,9 +4817,12 @@
       "outlook.my",
       "outlook.ph",
       "outlook.pt",
+      "outlook.ro",
       "outlook.sa",
       "outlook.sg",
+      "outlook.si",
       "outlook.sk",
+      "passport.com",
       "windowslive.com"
     ],
     "mx_hosts": [
@@ -3401,6 +4830,7 @@
       "eur.olc.protection.outlook.com",
       "extmail.msn.bigpond.com",
       "hotmail-com.olc.protection.outlook.com",
+      "hotmail-cz.f-v1.mx.microsoft",
       "hotmail-nl.b-v1.mx.microsoft",
       "live-com.olc.protection.outlook.com",
       "msn-com.olc.protection.outlook.com",
@@ -3547,13 +4977,64 @@
   },
   "posteo.de": {
     "hosts": [
-      "posteo.de"
+      "posteo.at",
+      "posteo.au",
+      "posteo.be",
+      "posteo.ca",
+      "posteo.ch",
+      "posteo.cl",
+      "posteo.co",
+      "posteo.co.uk",
+      "posteo.com",
+      "posteo.com.br",
+      "posteo.cr",
+      "posteo.cz",
+      "posteo.de",
+      "posteo.dk",
+      "posteo.ee",
+      "posteo.es",
+      "posteo.eu",
+      "posteo.fi",
+      "posteo.gl",
+      "posteo.gr",
+      "posteo.hn",
+      "posteo.hr",
+      "posteo.hu",
+      "posteo.ie",
+      "posteo.in",
+      "posteo.is",
+      "posteo.it",
+      "posteo.jp",
+      "posteo.la",
+      "posteo.li",
+      "posteo.lt",
+      "posteo.lu",
+      "posteo.me",
+      "posteo.mx",
+      "posteo.my",
+      "posteo.net",
+      "posteo.nl",
+      "posteo.no",
+      "posteo.nz",
+      "posteo.org",
+      "posteo.pe",
+      "posteo.pl",
+      "posteo.pm",
+      "posteo.pt",
+      "posteo.ro",
+      "posteo.se",
+      "posteo.sg",
+      "posteo.si",
+      "posteo.tn",
+      "posteo.uk",
+      "posteo.us"
     ],
     "mx_hosts": [
       "mx01.posteo.de",
       "mx02.posteo.de",
       "mx03.posteo.de",
-      "mx04.posteo.de"
+      "mx04.posteo.de",
+      "mxv6.posteo.de"
     ],
     "signup_verification": [
       "payment"
@@ -3605,6 +5086,16 @@
       "email"
     ],
     "type": "forwarding"
+  },
+  "pt.lu": {
+    "hosts": [
+      "pt.lu"
+    ],
+    "mx_hosts": [
+      "mx.pt.lu"
+    ],
+    "remark": "POST Luxembourg is the state-owned postal and telecommunications operator of the Grand Duchy of Luxembourg, pr",
+    "type": "free"
   },
   "ptt.rs": {
     "hosts": [
@@ -3748,6 +5239,16 @@
     ],
     "type": "free"
   },
+  "rogers.com": {
+    "hosts": [
+      "rogers.com"
+    ],
+    "mx_hosts": [
+      "mx-rogers.mail.am0.yahoodns.net"
+    ],
+    "remark": "Rogers Communications is a major Canadian telecommunications company providing internet, mobile, and TV servic",
+    "type": "free"
+  },
   "runbox.com": {
     "hosts": [
       "mailhost.work",
@@ -3811,6 +5312,16 @@
     ],
     "type": "free"
   },
+  "salzburg.co.at": {
+    "hosts": [
+      "salzburg.co.at"
+    ],
+    "mx_hosts": [
+      "mx-in.cablelink.at"
+    ],
+    "remark": "Salzburg AG is the utility and telecommunications company of the Austrian state of Salzburg, providing interne",
+    "type": "free"
+  },
   "sanipass.com": {
     "discontinued": true,
     "hosts": [
@@ -3836,6 +5347,18 @@
     "signup_verification": [
       "mobile"
     ],
+    "type": "free"
+  },
+  "sasktel.net": {
+    "hosts": [
+      "sasktel.net"
+    ],
+    "mx_hosts": [
+      "mx1c11.megamailservers.com",
+      "mx2c11.megamailservers.com",
+      "mx3c11.megamailservers.com"
+    ],
+    "remark": "SaskTel is a leading telecommunications provider in Saskatchewan, offering internet, phone, and entertainment",
     "type": "free"
   },
   "scarlet.nl": {
@@ -3892,6 +5415,19 @@
     ],
     "type": "free"
   },
+  "shaw.ca": {
+    "hosts": [
+      "shaw.ca"
+    ],
+    "mx_hosts": [
+      "shw-central.mx.a.cloudfilter.net"
+    ],
+    "remark": "Shaw Communications Inc.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "sibnet.ru": {
     "hosts": [
       "sibnet.ru"
@@ -3908,20 +5444,22 @@
   },
   "simplelogin": {
     "hosts": [
-      "simplelogin.com",
-      "silomails.com",
-      "slmails.com",
-      "simplelogin.fr",
-      "aleeas.com",
-      "slmail.me",
+      "8alias.com",
       "8shield.net",
+      "aleeas.com",
       "dralias.com",
-      "passinbox.com",
+      "pass2mail.com",
       "passfwd.com",
+      "passinbox.com",
       "passmail.com",
       "passmail.net",
+      "silomails.com",
       "simplelogin.co",
-      "simplelogin.io"
+      "simplelogin.com",
+      "simplelogin.fr",
+      "simplelogin.io",
+      "slmail.me",
+      "slmails.com"
     ],
     "mx_hosts": [
       "mx1.simplelogin.co",
@@ -3954,6 +5492,21 @@
     ],
     "type": "free"
   },
+  "sitepro.email": {
+    "hosts": [
+      "sitepro.email",
+      "siteprofree.email"
+    ],
+    "mx_hosts": [
+      "siteprofree.email",
+      "webmail.site.pro"
+    ],
+    "remark": "Site.pro provides public email mailboxes, including free addresses at @siteprofree.email and paid/professional",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "skiff.com": {
     "hosts": [
       "skiff.com"
@@ -3979,6 +5532,31 @@
       "other"
     ],
     "type": "free"
+  },
+  "sky.it": {
+    "hosts": [
+      "sky.it"
+    ],
+    "mx_hosts": [
+      "mxa-009f8f01.gslb.pphosted.com",
+      "mxb-009f8f01.gslb.pphosted.com"
+    ],
+    "remark": "Sky Italia is an Italian telecommunications company offering broadband, TV, and email services to consumers.",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
+  "sky.sannet.ne.jp": {
+    "hosts": [
+      "sky.sannet.ne.jp"
+    ],
+    "mx_hosts": [
+      "mx.mail.gol.com",
+      "mx2.mail.gol.com"
+    ],
+    "remark": "SANNET was a Japanese internet service provider launched in 1995 by a Sanyo Electric subsidiary and later acqu",
+    "type": "paid"
   },
   "skymail.de": {
     "hosts": [
@@ -4015,6 +5593,20 @@
     ],
     "type": "free"
   },
+  "sltnet.lk": {
+    "hosts": [
+      "sltnet.lk"
+    ],
+    "mx_hosts": [
+      "mailin-03.gw.sltidc.lk",
+      "mailin-04.gw.sltidc.lk",
+      "mailin-05.gw.sltidc.lk",
+      "mailin-06.gw.sltidc.lk",
+      "mailin-07.gw.sltidc.lk"
+    ],
+    "remark": "Sri Lanka Telecom is Sri Lanka's national telecommunications operator, providing @sltnet.lk email addresses to",
+    "type": "free"
+  },
   "sneakemail.com": {
     "hosts": [
       "sneakemail.com",
@@ -4027,6 +5619,16 @@
     ],
     "remark": "Account creation is currently disabled",
     "type": "forwarding"
+  },
+  "so-net.ne.jp": {
+    "hosts": [
+      "so-net.ne.jp"
+    ],
+    "mx_hosts": [
+      "ms-ext91.so-net.ne.jp"
+    ],
+    "remark": "So-net is a Japanese internet service provider operated by Sony Network Communications, part of the Sony group",
+    "type": "free"
   },
   "sohu.com": {
     "hosts": [
@@ -4122,6 +5724,17 @@
     ],
     "type": "free"
   },
+  "spike.team": {
+    "hosts": [
+      "spike.team"
+    ],
+    "mx_hosts": [
+      "mxc.bolt.im",
+      "mxd.bolt.im"
+    ],
+    "remark": "Spike turns email into a chat-like workspace, combining inbox, messaging, collaborative notes, tasks, and vide",
+    "type": "free"
+  },
   "startmail.com": {
     "hosts": [
       "startmail.com",
@@ -4180,10 +5793,13 @@
   },
   "sunrise.ch": {
     "hosts": [
+      "hispeed.ch",
       "sunrise.ch"
     ],
     "mx_hosts": [
+      "mxin1-hispeed-ch.edge.unified.services",
       "mxin1-sunrise-ch.edge.unified.services",
+      "mxin2-hispeed-ch.edge.unified.services",
       "mxin2-sunrise-ch.edge.unified.services"
     ],
     "remark": "Free email for Sunrise Switzerland customers.",
@@ -4203,6 +5819,16 @@
     "signup_verification": [
       "other"
     ],
+    "type": "free"
+  },
+  "sympatico.ca": {
+    "hosts": [
+      "sympatico.ca"
+    ],
+    "mx_hosts": [
+      "mx.sympatico.ca"
+    ],
+    "remark": "Bell Internet, originally and frequently still called Sympatico, is the residential Internet service provider",
     "type": "free"
   },
   "systemli.org": {
@@ -4385,6 +6011,54 @@
     ],
     "type": "free"
   },
+  "telia.com": {
+    "hosts": [
+      "telia.com"
+    ],
+    "mx_hosts": [
+      "mail.telia.com"
+    ],
+    "remark": "Telia Company AB is a Swedish multinational telecommunications company and mobile network operator present in",
+    "type": "paid"
+  },
+  "telkomsa.net": {
+    "hosts": [
+      "telkomsa.net"
+    ],
+    "mx_hosts": [
+      "telkomsa-mx1.e-purifier.com",
+      "telkomsa-mx2.e-purifier.com"
+    ],
+    "remark": "Telkom SA is a South African state-owned telecommunications company providing fixed-line, mobile, and internet",
+    "type": "free"
+  },
+  "telus.net": {
+    "hosts": [
+      "telus.net"
+    ],
+    "mx_hosts": [
+      "alt1.aspmx.l.google.com",
+      "alt2.aspmx.l.google.com",
+      "alt3.aspmx.l.google.com",
+      "alt4.aspmx.l.google.com",
+      "aspmx.l.google.com"
+    ],
+    "remark": "TELUS is a Canadian telecommunications company providing wireless, internet, TV, and digital health services.",
+    "type": "free"
+  },
+  "terra.com.br": {
+    "hosts": [
+      "terra.com.br"
+    ],
+    "mx_hosts": [
+      "mx.terra.com.br"
+    ],
+    "remark": "Terra is a Spanish Internet multinational company owned by Telefónica, with headquarters in Spain and offices",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "thexyz.com": {
     "hosts": [
       "thexyz.com"
@@ -4412,6 +6086,18 @@
     ],
     "type": "free"
   },
+  "tin.it": {
+    "hosts": [
+      "tin.it"
+    ],
+    "mx_hosts": [
+      "mx.tin.it"
+    ],
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
   "tinkmail.me": {
     "hosts": [
       "tinkmail.me"
@@ -4424,6 +6110,19 @@
     "signup_verification": [
       "email"
     ],
+    "type": "free"
+  },
+  "tiscali.cz": {
+    "hosts": [
+      "tiscali.cz"
+    ],
+    "mx_hosts": [
+      "tax.virusfree.cz",
+      "tbx.virusfree.cz",
+      "tcx.spamfree.cz",
+      "tdx.spamfree.cz"
+    ],
+    "remark": "Tiscali.cz is a Czech web portal launched in 1998 that offers a free email service. It has been operated by Ti",
     "type": "free"
   },
   "tiscali.it": {
@@ -4489,6 +6188,16 @@
     ],
     "type": "free"
   },
+  "tvnet.lv": {
+    "hosts": [
+      "tvnet.lv"
+    ],
+    "mx_hosts": [
+      "mx1.inbox.lv"
+    ],
+    "remark": "TVNet is a Latvian news and media portal offering email services hosted by Inbox.lv.",
+    "type": "free"
+  },
   "ubbi.com.br": {
     "hosts": [
       "ubbi.com.br"
@@ -4523,6 +6232,29 @@
       "mobile"
     ],
     "type": "free"
+  },
+  "uol.com.br": {
+    "hosts": [
+      "uol.com.br"
+    ],
+    "mx_hosts": [
+      "mx.uol.com.br"
+    ],
+    "remark": "Universo Online (Portuguese for \"Online Universe\") (known by the acronym UOL) is a Brazilian web content, prod",
+    "signup_verification": [
+      "other"
+    ],
+    "type": "free"
+  },
+  "usa.net": {
+    "hosts": [
+      "usa.net"
+    ],
+    "mx_hosts": [
+      "mxpool01.netaddress.usa.net"
+    ],
+    "remark": "USA.NET is an American email provider operating the Net@ddress webmail service under the SilverSky brand, offe",
+    "type": "paid"
   },
   "utanet.at": {
     "hosts": [
@@ -4594,6 +6326,16 @@
     ],
     "type": "free"
   },
+  "videotron.ca": {
+    "hosts": [
+      "videotron.ca"
+    ],
+    "mx_hosts": [
+      "mx.videotron.ca"
+    ],
+    "remark": "Videotron is a Canadian telecommunications provider offering mobile, internet, television, and home phone serv",
+    "type": "free"
+  },
   "viettel.vn": {
     "hosts": [
       "viettel.vn"
@@ -4623,6 +6365,7 @@
     "hosts": [
       "blueyonder.co.uk",
       "ntlworld.com",
+      "virgin.net",
       "virginmedia.com"
     ],
     "mx_hosts": [
@@ -4788,6 +6531,18 @@
     ],
     "type": "free"
   },
+  "webafrica.org.za": {
+    "hosts": [
+      "webafrica.org.za"
+    ],
+    "mx_hosts": [
+      "fallbackmx.spamexperts.eu",
+      "lastmx.spamexperts.net",
+      "mx.spamexperts.com"
+    ],
+    "remark": "Webafrica is a South African ISP providing fibre, fixed LTE, and VoIP services with bundled email for its broa",
+    "type": "free"
+  },
   "webgmx": {
     "hosts": [
       "abwesend.de",
@@ -4797,58 +6552,101 @@
       "baldpapa.de",
       "betriebsdirektor.de",
       "bin-wieder-da.de",
+      "bist-eine-haelfte-von-mir.de",
       "bleib-bei-mir.de",
       "buerotiger.de",
       "caramail.com",
+      "caramail.fr",
       "coole-files.de",
+      "das-spiel-hat-90-minuten.de",
+      "der-ball-ist-rund.net",
       "die-besten-bilder.de",
       "die-genossen.de",
       "die-optimisten.net",
+      "digi-dia-freakshow.de",
       "digital-filestore.de",
+      "digitalfoto-model-award.de",
       "download-privat.de",
+      "email-ausdrucker.de",
+      "email.de",
+      "es-ist-liebe.de",
       "fahr-zur-hoelle.org",
+      "fantasymail.de",
       "feinripptraeger.de",
       "fettabernett.de",
       "freemail.de",
       "freudenkinder.de",
       "gentlemansclub.de",
+      "gmx-ist-cool.de",
+      "gmx-topmail.de",
       "gmx.at",
+      "gmx.biz",
       "gmx.ca",
       "gmx.ch",
+      "gmx.cn",
+      "gmx.co",
+      "gmx.co.in",
       "gmx.co.uk",
       "gmx.com",
+      "gmx.com.br",
+      "gmx.com.my",
+      "gmx.com.tr",
       "gmx.de",
       "gmx.es",
+      "gmx.eu",
       "gmx.fr",
+      "gmx.hk",
+      "gmx.ie",
+      "gmx.info",
+      "gmx.it",
       "gmx.li",
+      "gmx.lu",
+      "gmx.name",
       "gmx.net",
+      "gmx.org",
+      "gmx.ph",
+      "gmx.pt",
+      "gmx.ru",
+      "gmx.se",
+      "gmx.sg",
+      "gmx.tm",
+      "gmx.tw",
       "gmx.us",
       "hab-verschlafen.de",
       "habmalnefrage.de",
       "herr-der-mails.de",
       "ich-bin-verrueckt-nach-dir.de",
+      "ich-habe-fertig.com",
       "ich-will-net.de",
       "ist-allein.info",
       "ist-einmalig.de",
+      "ist-es-liebe.de",
       "ist-ganz-allein.de",
       "ist-willig.de",
       "kaffeeschluerfer.com",
       "kommespaeter.de",
       "lass-es-geschehen.de",
+      "liebt-den-mann-ihrer-chefin.de",
       "liebt-dich.info",
+      "liebt-die-frau-seines-chefs.de",
       "loveyouforever.de",
       "maennerversteherin.com",
       "mailueberfall.de",
+      "mein.gmx",
       "meine-dateien.info",
       "meine-diashow.de",
       "meine-fotos.info",
       "meine-urlaubsfotos.de",
+      "meine-wahrheit-deine-wahrheit.de",
+      "moechte-mit-dir-aufwachen.de",
       "muskelshirt.de",
       "netterchef.de",
       "neue-dateien.de",
+      "nurfuerspam.de",
       "office-dateien.de",
       "partybombe.de",
       "partyheld.de",
+      "peinliche-fotos.de",
       "polizisten-duzer.de",
       "public-files.de",
       "quantentunnel.de",
@@ -4860,21 +6658,25 @@
       "shared-files.de",
       "sonnenkinder.org",
       "streber24.de",
+      "teilt-mit-dir-alle-geheimnisse.de",
       "terminverpennt.de",
       "topmail-files.de",
       "tortenboxer.de",
       "turboprinz.de",
       "turboprinzessin.de",
+      "turnbeutel-vergesser.com",
       "unterderbruecke.de",
       "verlass-mich-nicht.de",
       "vollbio.de",
       "volloeko.de",
+      "vorabend-einchecker.de",
       "vorsicht-bissig.de",
       "vorsicht-scharf.de",
       "war-im-urlaub.de",
       "web.de",
       "weibsvolk.org",
       "weinenvorglueck.de",
+      "wenns-um-email-geht.de",
       "will-hier-weg.de",
       "wir-haben-nachwuchs.de",
       "wir-sind-cool.org",
@@ -4885,15 +6687,30 @@
       "mx-ha01.web.de",
       "mx-ha02.web.de",
       "mx-ha03.web.de",
+      "mx0.gmx.net",
       "mx00.caramail.com",
       "mx00.emig.gmx.net",
       "mx00.gmx.net",
       "mx01.caramail.com",
       "mx01.emig.gmx.net",
-      "mx01.gmx.net"
+      "mx01.gmx.net",
+      "mx1.gmx.net"
     ],
     "signup_verification": [
       "mobile"
+    ],
+    "type": "free"
+  },
+  "windstream.net": {
+    "hosts": [
+      "windstream.net"
+    ],
+    "mx_hosts": [
+      "mx01.windstream.net"
+    ],
+    "remark": "Windstream provides advanced network communications and technology solutions for consumers, businesses, enterp",
+    "signup_verification": [
+      "other"
     ],
     "type": "free"
   },
@@ -4951,6 +6768,16 @@
     ],
     "type": "free"
   },
+  "xtra.co.nz": {
+    "hosts": [
+      "xtra.co.nz"
+    ],
+    "mx_hosts": [
+      "mx.xm.smxcloud.com"
+    ],
+    "remark": "Spark New Zealand is a leading telecommunications and digital services provider offering mobile, internet, and",
+    "type": "paid"
+  },
   "yaanimail.com": {
     "hosts": [
       "superonline.com",
@@ -4987,11 +6814,15 @@
   "yahoo/aol": {
     "hosts": [
       "aim.com",
+      "ameritech.net",
       "aol.co.uk",
       "aol.com",
+      "aol.de",
       "aol.fr",
       "aol.it",
+      "att.net",
       "bellatlantic.net",
+      "bellsouth.net",
       "citlink.net",
       "compuserve.com",
       "cox.net",
@@ -4999,17 +6830,27 @@
       "csi.com",
       "currently.com",
       "epix.net",
+      "flash.net",
       "frontier.com",
       "frontiernet.net",
       "geocities.com",
+      "gvni.com",
       "kimo.com",
       "myyahoo.com",
       "netscape.com",
       "netscape.net",
+      "newnorth.net",
+      "nvbell.net",
       "oddpost.com",
+      "pacbell.net",
+      "prodigy.net",
       "rocketmail.com",
+      "sbcglobal.net",
+      "snet.net",
+      "swbell.net",
       "the-cowboy.com",
       "verizon.net",
+      "wans.net",
       "wow.com",
       "y7mail.com",
       "yahoo.ar",
@@ -5037,6 +6878,7 @@
       "yahoo.com.sg",
       "yahoo.com.tr",
       "yahoo.com.tw",
+      "yahoo.com.ve",
       "yahoo.com.vn",
       "yahoo.cz",
       "yahoo.de",
@@ -5089,8 +6931,10 @@
       "student.su",
       "xaker.ru",
       "ya.ru",
+      "yandex.by",
       "yandex.com",
       "yandex.com.tr",
+      "yandex.kz",
       "yandex.pl",
       "yandex.ru"
     ],
@@ -5153,12 +6997,21 @@
   },
   "zohomail.com": {
     "hosts": [
-      "zohomail.com"
+      "zoho.com",
+      "zohomail.com",
+      "zohomail.eu",
+      "zohomail.in"
     ],
     "mx_hosts": [
+      "mx.zoho.eu",
+      "mx2.zoho.eu",
+      "mx3.zoho.eu",
       "smtpin.zoho.com",
+      "smtpin.zoho.in",
       "smtpin2.zoho.com",
-      "smtpin3.zoho.com"
+      "smtpin2.zoho.in",
+      "smtpin3.zoho.com",
+      "smtpin3.zoho.in"
     ],
     "remark": "Zoho personal mail domain.",
     "signup_verification": [
