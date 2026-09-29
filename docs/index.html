@@ -982,6 +982,8 @@
             const [tabId, qs] = raw.split('?');
             if (!document.querySelector(`.tab[data-tab="${CSS.escape(tabId)}"]`)) return;
 
+            activateTab(tabId);
+
             const params = new URLSearchParams(qs || '');
             const q = params.get('q') || '';
 
@@ -1003,8 +1005,6 @@
                 input.value = q;
                 input.dispatchEvent(new Event('input'));
             }
-
-            activateTab(tabId);
         }
 
         function setupSearch(mailservices, disposable) {
