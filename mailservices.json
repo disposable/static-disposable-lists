@@ -6,11 +6,11 @@
     "mx_hosts": [
       "mx20.013net.net"
     ],
-    "remark": "Free email for 013 Netvision customers.",
+    "remark": "Mailbox for 013 Netvision customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "139.com": {
     "hosts": [
@@ -132,11 +132,11 @@
     "mx_hosts": [
       "smx01.a1.net"
     ],
-    "remark": "Free email for A1 Austria customers.",
+    "remark": "Mailbox for A1 Austria customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "aaahawk.com": {
     "hosts": [
@@ -436,11 +436,11 @@
       "alt4.aspmx.l.google.com",
       "aspmx.l.google.com"
     ],
-    "remark": "Free email for Asahi Net customers.",
+    "remark": "Mailbox for Asahi Net customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "astermail.org": {
     "hosts": [
@@ -464,11 +464,11 @@
     "mx_hosts": [
       "mx.breezelineohio.net"
     ],
-    "remark": "Free email for Breezeline/Atlantic Broadband customers.",
+    "remark": "Mailbox for Breezeline/Atlantic Broadband customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "atomicmail.io": {
     "hosts": [
@@ -620,11 +620,11 @@
       "smx-1.bestweb.net",
       "smx-2.bestweb.net"
     ],
-    "remark": "Free email for BestWeb/FirstLight customers.",
+    "remark": "Mailbox for BestWeb/FirstLight customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "bezeqint.net": {
     "hosts": [
@@ -634,11 +634,11 @@
       "mailmx.bezeqint.net",
       "mailmx2.bezeqint.net"
     ],
-    "remark": "Free email for Bezeq International customers.",
+    "remark": "Mailbox for Bezeq International customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "biglobe.jp": {
     "hosts": [
@@ -668,7 +668,7 @@
     ],
     "remark": "Telstra BigPond ISP mail; requires subscription. Geo-blocked.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
     "type": "paid"
   },
@@ -694,11 +694,11 @@
       "mx2.blacksburg.net",
       "mx3.blacksburg.net"
     ],
-    "remark": "Free email for Blacksburg.Net customers.",
+    "remark": "Mailbox for Blacksburg.Net customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "bluewin.ch": {
     "hosts": [
@@ -942,11 +942,11 @@
       "mxin10.ziggo.nl",
       "mxin5.ziggo.nl"
     ],
-    "remark": "Free email for Ziggo/Chello customers.",
+    "remark": "Mailbox for Ziggo/Chello customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "clix.pt": {
     "hosts": [
@@ -970,11 +970,11 @@
     "mx_hosts": [
       "smtp-in.sfr.fr"
     ],
-    "remark": "Free email for SFR/Club Internet customers.",
+    "remark": "Mailbox for SFR/Club Internet customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "cock.li": {
     "hosts": [
@@ -1028,11 +1028,11 @@
       "mx.cogeco.ca",
       "mx.cogeco.net"
     ],
-    "remark": "Free email for Cogeco customers.",
+    "remark": "Mailbox for Cogeco customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "comcast.net": {
     "hosts": [
@@ -1063,11 +1063,11 @@
       "mx3c28.concentric.com",
       "mx4c28.concentric.com"
     ],
-    "remark": "Free email for Concentric/Lumen customers.",
+    "remark": "Mailbox for Concentric/Lumen customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "countermail.com": {
     "hosts": [
@@ -1133,11 +1133,11 @@
     "mx_hosts": [
       "mx.digi.ro"
     ],
-    "remark": "Free email for DIGI Romania customers.",
+    "remark": "Mailbox for DIGI Romania customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "dismail.de": {
     "hosts": [
@@ -1186,11 +1186,11 @@
     "mx_hosts": [
       "dslextreme-com.mx.av-mx.com"
     ],
-    "remark": "Free email for DSL Extreme customers.",
+    "remark": "Mailbox for DSL Extreme customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "du.ae": {
     "hosts": [
@@ -1199,11 +1199,11 @@
     "mx_hosts": [
       "du-ae.mail.protection.outlook.com"
     ],
-    "remark": "Free email for du UAE customers.",
+    "remark": "Mailbox for du UAE customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "duck.com": {
     "hosts": [
@@ -1378,11 +1378,11 @@
       "mail2.etisalat.ae",
       "mx3.eand.com.eg"
     ],
-    "remark": "Free email for e& (Etisalat) customers.",
+    "remark": "Mailbox for e& (Etisalat) customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "everyone.net": {
     "hosts": [
@@ -1592,11 +1592,11 @@
     "mx_hosts": [
       "mx1.fibertel.com.ar"
     ],
-    "remark": "Free email for Fibertel/Personal customers.",
+    "remark": "Mailbox for Fibertel/Personal customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "firemail.de": {
     "hosts": [
@@ -1622,11 +1622,11 @@
       "mailrelay.nova.gr",
       "mailrelay2.nova.gr"
     ],
-    "remark": "Free email for Nova/Forthnet customers.",
+    "remark": "Mailbox for Nova/Forthnet customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "forwardemail.net": {
     "hosts": [
@@ -1649,11 +1649,11 @@
     "mx_hosts": [
       "mta.fpt.vn"
     ],
-    "remark": "Free email for FPT Telecom Vietnam customers.",
+    "remark": "Mailbox for FPT Telecom Vietnam customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "free.fr": {
     "hosts": [
@@ -1799,11 +1799,11 @@
     "mx_hosts": [
       "mx.kpnmail.nl"
     ],
-    "remark": "Free email for KPN/HetNet customers.",
+    "remark": "Mailbox for KPN/HetNet customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "hey.com": {
     "hosts": [
@@ -1843,11 +1843,11 @@
       "mxin10.ziggo.nl",
       "mxin5.ziggo.nl"
     ],
-    "remark": "Free email for Ziggo/Home customers.",
+    "remark": "Mailbox for Ziggo/Home customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "hushmail.com": {
     "hosts": [
@@ -1905,11 +1905,11 @@
       "mx2.menara.ma",
       "mx3.menara.ma"
     ],
-    "remark": "Free email for Maroc Telecom customers.",
+    "remark": "Mailbox for Maroc Telecom customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "iana": {
     "hosts": [
@@ -2186,11 +2186,11 @@
       "mail1.inwi.ma",
       "mail2.inwi.ma"
     ],
-    "remark": "Free email for Inwi Morocco customers.",
+    "remark": "Mailbox for Inwi Morocco customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "iol.it": {
     "hosts": [
@@ -2453,11 +2453,11 @@
       "mx3.vodafonemail.de",
       "mx5.vodafonemail.de"
     ],
-    "remark": "Free email for Vodafone/Kabel Deutschland customers.",
+    "remark": "Mailbox for Vodafone/Kabel Deutschland customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "keko.com.ar": {
     "hosts": [
@@ -2587,11 +2587,11 @@
     "mx_hosts": [
       "mx.linkdatacenter.net"
     ],
-    "remark": "Free email for LINKdotNET Egypt customers.",
+    "remark": "Mailbox for LINKdotNET Egypt customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "liveinternet.ru": {
     "hosts": [
@@ -2921,11 +2921,11 @@
       "fpo9.mail.dk",
       "mailgrinder.tdc.dk"
     ],
-    "remark": "Free email service for YouSee customers.",
+    "remark": "Mailbox for YouSee customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "mail.io": {
     "hosts": [
@@ -4321,11 +4321,11 @@
       "opal.mobily.com.sa",
       "pearl.mobily.com.sa"
     ],
-    "remark": "Free email for Mobily Saudi Arabia customers.",
+    "remark": "Mailbox for Mobily Saudi Arabia customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "mozmail.com": {
     "hosts": [
@@ -4349,11 +4349,11 @@
       "mailstore1.secureserver.net",
       "smtp.secureserver.net"
     ],
-    "remark": "Free email for MTN Nigeria customers.",
+    "remark": "Mailbox for MTN Nigeria customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "mts.rs": {
     "hosts": [
@@ -4362,11 +4362,11 @@
     "mx_hosts": [
       "mailgw.mts.rs"
     ],
-    "remark": "Free email for mts Serbia customers.",
+    "remark": "Mailbox for mts Serbia customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "munkebonet.dk": {
     "hosts": [
@@ -4409,11 +4409,11 @@
       "mx.spamexperts.com",
       "nav-gateway.mweb.co.za"
     ],
-    "remark": "Free email for MWEB South Africa customers.",
+    "remark": "Mailbox for MWEB South Africa customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "my.id": {
     "discontinued": true,
@@ -4487,11 +4487,11 @@
     "mx_hosts": [
       "2019102901.pamx1.hotmail.com"
     ],
-    "remark": "Free email for NOS (Netcabo) Portugal customers.",
+    "remark": "Mailbox for NOS (Netcabo) Portugal customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "netease": {
     "hosts": [
@@ -4533,11 +4533,11 @@
     "mx_hosts": [
       "mx.netins.net.cust.b.hostedemail.com"
     ],
-    "remark": "Free email for Aureon/NetIns customers.",
+    "remark": "Mailbox for Aureon/NetIns customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "netvigator.com": {
     "hosts": [
@@ -4547,11 +4547,11 @@
       "imsmx1.netvigator.com",
       "imsmx2.netvigator.com"
     ],
-    "remark": "Free email for Netvigator/HKT customers.",
+    "remark": "Mailbox for Netvigator/HKT customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "nifty.com": {
     "hosts": [
@@ -4607,11 +4607,11 @@
       "mx7.oi.com.br",
       "smtp.oi.net.br"
     ],
-    "remark": "Free email for Oi customers.",
+    "remark": "Mailbox for Oi customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "onet.pl": {
     "hosts": [
@@ -4700,11 +4700,11 @@
     "mx_hosts": [
       "mx.altice.prod.cloud.openwave.ai"
     ],
-    "remark": "Free email for Optimum/Altice customers.",
+    "remark": "Mailbox for Optimum/Altice customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "optonline.net": {
     "hosts": [
@@ -4754,11 +4754,11 @@
       "mx2.orange.ma",
       "mx3.orange.ma"
     ],
-    "remark": "Free email for Orange Morocco customers.",
+    "remark": "Mailbox for Orange Morocco customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "orange.ro": {
     "hosts": [
@@ -4783,11 +4783,11 @@
       "mx3.otenet.gr",
       "mx4.otenet.gr"
     ],
-    "remark": "Free email for OTE Greece customers.",
+    "remark": "Mailbox for OTE Greece customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "outlook.com": {
     "hosts": [
@@ -5015,11 +5015,11 @@
     "mx_hosts": [
       "mx.kpnmail.nl"
     ],
-    "remark": "Free email for KPN customers.",
+    "remark": "Mailbox for KPN customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "ploud.fr": {
     "hosts": [
@@ -5031,9 +5031,9 @@
     ],
     "remark": "French non-profit hosting cooperative; member mailboxes, email verification.",
     "signup_verification": [
-      "email"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "pobox.hu": {
     "hosts": [
@@ -5192,11 +5192,11 @@
     "mx_hosts": [
       "it.ptt.rs"
     ],
-    "remark": "Free email for Serbian PTT customers.",
+    "remark": "Mailbox for Serbian PTT customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "purelymail.com": {
     "hosts": [
@@ -5231,11 +5231,11 @@
     "mx_hosts": [
       "mail.qis.net"
     ],
-    "remark": "Free email for Quantum Internet & Telephone customers.",
+    "remark": "Mailbox for Quantum Internet & Telephone customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "qq.com": {
     "hosts": [
@@ -5296,11 +5296,11 @@
     "mx_hosts": [
       "mx.rcn.com"
     ],
-    "remark": "Free email for RCN/StarPower/Erols customers.",
+    "remark": "Mailbox for RCN/StarPower/Erols customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "rediff.com": {
     "hosts": [
@@ -5400,11 +5400,11 @@
       "mx1.hc502-0.eu.iphmx.com",
       "mx2.hc502-0.eu.iphmx.com"
     ],
-    "remark": "Free email for Safaricom Kenya customers.",
+    "remark": "Mailbox for Safaricom Kenya customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "salzburg.co.at": {
     "hosts": [
@@ -5631,11 +5631,11 @@
     "mx_hosts": [
       "mx-eu.mail.am0.yahoodns.net"
     ],
-    "remark": "Free email for Sky UK customers.",
+    "remark": "Mailbox for Sky UK customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "sky.it": {
     "hosts": [
@@ -5661,7 +5661,7 @@
     ],
     "remark": "SANNET (JP) ISP mail via gol.com; requires subscription. Geo-blocked.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
     "type": "paid"
   },
@@ -5694,11 +5694,11 @@
     "mx_hosts": [
       "mx.gtm-tc2.proximus.be"
     ],
-    "remark": "Free email for Proximus/Skynet customers.",
+    "remark": "Mailbox for Proximus/Skynet customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "sltnet.lk": {
     "hosts": [
@@ -5831,11 +5831,11 @@
     "mx_hosts": [
       "ar.vmx.terra.com"
     ],
-    "remark": "Free email for Speedy/Movistar Argentina customers.",
+    "remark": "Mailbox for Speedy/Movistar Argentina customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "spike.team": {
     "discontinued": true,
@@ -5873,11 +5873,11 @@
       "imssvip1.stc.com.sa",
       "imssvipdr1.stc.com.sa"
     ],
-    "remark": "Free email for stc Saudi Arabia customers.",
+    "remark": "Mailbox for stc Saudi Arabia customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "stipte.nl": {
     "hosts": [
@@ -5916,11 +5916,11 @@
       "mxin2-hispeed-ch.edge.unified.services",
       "mxin2-sunrise-ch.edge.unified.services"
     ],
-    "remark": "Free email for Sunrise Switzerland customers.",
+    "remark": "Mailbox for Sunrise Switzerland customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "swva.net": {
     "hosts": [
@@ -5929,11 +5929,11 @@
     "mx_hosts": [
       "gatewaymx.swva.net"
     ],
-    "remark": "Free email for Citizens/SWVA customers.",
+    "remark": "Mailbox for Citizens/SWVA customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "sympatico.ca": {
     "hosts": [
@@ -5970,11 +5970,11 @@
       "mx02.t-com.hr",
       "mx03.t-com.hr"
     ],
-    "remark": "Free email for Hrvatski Telekom customers.",
+    "remark": "Mailbox for Hrvatski Telekom customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "t-online.de": {
     "hosts": [
@@ -6003,11 +6003,11 @@
     "mx_hosts": [
       "mx.t-online.hu"
     ],
-    "remark": "Free email for Magyar Telekom customers.",
+    "remark": "Mailbox for Magyar Telekom customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "talktalk.co.uk": {
     "hosts": [
@@ -6050,11 +6050,11 @@
       "mxa-00360101.gslb.pphosted.com",
       "mxb-00360101.gslb.pphosted.com"
     ],
-    "remark": "Free email for TDC Denmark customers.",
+    "remark": "Mailbox for TDC Denmark customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "tedata.net": {
     "hosts": [
@@ -6063,11 +6063,11 @@
     "mx_hosts": [
       "tedata-net.mail.protection.outlook.com"
     ],
-    "remark": "Free email for TEData Egypt customers.",
+    "remark": "Mailbox for TEData Egypt customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "tele2.nl": {
     "hosts": [
@@ -6091,11 +6091,11 @@
     "mx_hosts": [
       "buepac-mx-08.teco.com.ar"
     ],
-    "remark": "Free email for Telecom Argentina / Personal customers.",
+    "remark": "Mailbox for Telecom Argentina / Personal customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "telenet.be": {
     "hosts": [
@@ -6105,11 +6105,11 @@
       "mx1.telenet-ops.be",
       "mx2.telenet-ops.be"
     ],
-    "remark": "Free email for Telenet customers.",
+    "remark": "Mailbox for Telenet customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "telenor": {
     "hosts": [
@@ -6122,11 +6122,11 @@
       "telenor-no.mail.protection.outlook.com",
       "tsemx.telenor.se"
     ],
-    "remark": "Free email for Telenor customers.",
+    "remark": "Mailbox for Telenor customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "telia.com": {
     "hosts": [
@@ -6137,7 +6137,7 @@
     ],
     "remark": "Telia (SE) ISP mail; requires subscription (redirects to telia.se).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
     "type": "paid"
   },
@@ -6294,11 +6294,11 @@
       "smtpbackup.netonehosting.com",
       "smtpgw.netonehosting.com"
     ],
-    "remark": "Free email for TurkNet customers.",
+    "remark": "Mailbox for TurkNet customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "tutanota.com": {
     "hosts": [
@@ -6484,11 +6484,11 @@
       "mtasvr01.viettel.vn",
       "mtasvr02.viettel.vn"
     ],
-    "remark": "Free email for Viettel Vietnam customers.",
+    "remark": "Mailbox for Viettel Vietnam customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "vip.163.com": {
     "hosts": [
@@ -6542,11 +6542,11 @@
     "mx_hosts": [
       "gw12-new.vnpt.vn"
     ],
-    "remark": "Free email for VNPT Vietnam customers.",
+    "remark": "Mailbox for VNPT Vietnam customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "vodafone": {
     "hosts": [
@@ -6558,11 +6558,11 @@
       "mxy.eu.mpssec.net",
       "vodafone-com-eg.mail.protection.outlook.com"
     ],
-    "remark": "Free email for Vodafone customers.",
+    "remark": "Mailbox for Vodafone customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "vodafonemail.de": {
     "hosts": [
@@ -6589,11 +6589,11 @@
       "mx3c51.megamailservers.com",
       "mx4c51.megamailservers.eu"
     ],
-    "remark": "Free email for Vodacom South Africa customers.",
+    "remark": "Mailbox for Vodacom South Africa customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "voo.be": {
     "hosts": [
@@ -6602,11 +6602,11 @@
     "mx_hosts": [
       "mrouterin.brutele.be"
     ],
-    "remark": "Free email for VOO customers.",
+    "remark": "Mailbox for VOO customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "walla.co.il": {
     "hosts": [
@@ -6641,11 +6641,11 @@
       "mta1.zos.wananchi.com",
       "proxy.zos.wananchi.com"
     ],
-    "remark": "Free email for Wananchi Kenya customers.",
+    "remark": "Mailbox for Wananchi Kenya customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "waoo.dk": {
     "hosts": [
@@ -6654,11 +6654,11 @@
     "mx_hosts": [
       "spamfilter.fibia.dk"
     ],
-    "remark": "Free email for Waoo Denmark customers.",
+    "remark": "Mailbox for Waoo Denmark customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "web-mail.de": {
     "hosts": [
@@ -6923,7 +6923,7 @@
     ],
     "remark": "Spark NZ ISP mail; requires subscription. Geo-blocked.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
     "type": "paid"
   },
@@ -6938,9 +6938,9 @@
     ],
     "remark": "YaaniMail free email for Turkcell/Superonline customers.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "yahoo.co.jp": {
     "hosts": [
@@ -7106,11 +7106,11 @@
       "mxa-00360101.gslb.pphosted.com",
       "mxb-00360101.gslb.pphosted.com"
     ],
-    "remark": "Free email for YouSee Denmark customers.",
+    "remark": "Mailbox for YouSee Denmark customers (requires ISP subscription).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "zaclys.com": {
     "hosts": [
