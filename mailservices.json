@@ -864,25 +864,13 @@
   },
   "centurylink.net": {
     "hosts": [
-      "centurylink.net"
-    ],
-    "mx_hosts": [
-      "mx.centurylink.net"
-    ],
-    "remark": "Free email for CenturyLink/Lumen customers.",
-    "signup_verification": [
-      "other"
-    ],
-    "type": "free"
-  },
-  "centurytel.net": {
-    "hosts": [
+      "centurylink.net",
       "centurytel.net"
     ],
     "mx_hosts": [
       "mx.centurylink.net"
     ],
-    "remark": "Lumen/CenturyLink ISP mail; requires subscription. Geo-blocked.",
+    "remark": "CenturyLink/Lumen ISP mail (incl. legacy centurytel.net); requires subscription. Geo-blocked.",
     "signup_verification": [
       "other"
     ],
