@@ -226,9 +226,9 @@
     ],
     "remark": "EarthLink ISP customer-mail fleet (MX: earthlink-vadesecure.net); requires ISP subscription.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "absamail.co.za": {
     "hosts": [
@@ -239,9 +239,9 @@
     ],
     "remark": "ABSA/Vox Telecom (ZA) mail; subscription. Geo-blocked.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "abv.bg": {
     "hosts": [
@@ -285,9 +285,9 @@
     ],
     "remark": "Afrihost (ZA) ISP mail; requires subscription.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "aland.net": {
     "hosts": [
@@ -298,9 +298,9 @@
     ],
     "remark": "Ålcom (AX) ISP mail; requires subscription (redirects to alcom.ax).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "aliasvault.net": {
     "hosts": [
@@ -324,9 +324,9 @@
     ],
     "remark": "TIM (IT) ISP mail (alice.it on tim.it MX); requires subscription. Geo-blocked.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "aliyun.com": {
     "hosts": [
@@ -356,9 +356,9 @@
     ],
     "remark": "Altibox ISP mail fleet (NO/DK: altiboxmail.dk, lyse.net, ntebb.no); requires subscription. Geo-blocked.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "anonymail.hu": {
     "hosts": [
@@ -393,9 +393,9 @@
     ],
     "remark": "Elisa (FI) ISP mail (saunalahti MX); requires subscription. Geo-blocked.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "aon.at": {
     "hosts": [
@@ -506,9 +506,9 @@
     ],
     "remark": "au/KDDI (JP) mobile ISP mail; requires subscription.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "autistici.org": {
     "hosts": [
@@ -565,9 +565,9 @@
     ],
     "remark": "Balticom (LV) ISP mail; requires subscription.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "bbox.fr": {
     "hosts": [
@@ -579,9 +579,9 @@
     ],
     "remark": "Bouygues Telecom (FR) ISP mail; requires subscription. Geo-blocked.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "bbsyd.dk": {
     "hosts": [
@@ -593,9 +593,9 @@
     ],
     "remark": "Stofa (DK) ISP mail (stofanet MX); requires subscription. Geo-blocked.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "beeble.com": {
     "hosts": [
@@ -653,9 +653,9 @@
     ],
     "remark": "BIGLOBE (JP) ISP mail; requires subscription.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "bigpond.com": {
     "hosts": [
@@ -872,9 +872,9 @@
     ],
     "remark": "CenturyLink/Lumen ISP mail (incl. legacy centurytel.net); requires subscription. Geo-blocked.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "charter.net": {
     "hosts": [
@@ -917,9 +917,9 @@
     ],
     "remark": "Free email for Charter/Spectrum customers.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "chello.at": {
     "hosts": [
@@ -930,9 +930,9 @@
     ],
     "remark": "Magenta/UPC (AT) ISP mail; requires subscription. Geo-blocked.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "chello.nl": {
     "hosts": [
@@ -1049,9 +1049,9 @@
       "mx2h1.comcast.net"
     ],
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "concentric.net": {
     "hosts": [
@@ -1122,9 +1122,9 @@
     ],
     "remark": "Internet Solutions (ZA) ISP mail fleet (dial-up.net, isdsl.net); requires subscription. Geo-blocked.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "digi.ro": {
     "hosts": [
@@ -1175,9 +1175,9 @@
     ],
     "remark": "DNA (FI) ISP mail; requires subscription. Geo-blocked.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "dslextreme.com": {
     "hosts": [
@@ -1429,9 +1429,9 @@
     ],
     "remark": "everyone.net is a B2B hosted-mail platform; vanity domains (as-if.com etc.) are parked/legacy — MX live but no public signup.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "fastmail.com": {
     "hosts": [
@@ -1788,9 +1788,9 @@
     ],
     "remark": "Tiger Media hosting-bundled mail (DK); requires hosting subscription.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "hetnet.nl": {
     "hosts": [
@@ -1875,9 +1875,9 @@
     ],
     "remark": "SoftBank (JP) mobile ISP mail; requires subscription. Geo-blocked.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "i.ua": {
     "hosts": [
@@ -1981,9 +1981,9 @@
     ],
     "remark": "iiNet (AU/TPG) ISP mail; requires subscription.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "ik.me": {
     "hosts": [
@@ -2121,9 +2121,9 @@
     ],
     "remark": "Inet mail operated by Inbox.com AS; login-only, no public signup observed (only closed-account reactivation).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "inleed.com": {
     "hosts": [
@@ -2174,9 +2174,9 @@
     ],
     "remark": "Mauritius Telecom ISP mail; requires subscription. Geo-blocked.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "inwi.ma": {
     "hosts": [
@@ -2511,9 +2511,9 @@
     ],
     "remark": "Vox/Lantic (ZA) ISP mail; requires subscription. Geo-blocked.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "laposte.net": {
     "hosts": [
@@ -4379,9 +4379,9 @@
     ],
     "remark": "Munkebo Net (DK) local ISP mail; requires membership.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "murena.io": {
     "hosts": [
@@ -4563,9 +4563,9 @@
     ],
     "remark": "@nifty (JP) ISP mail; requires subscription.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "o2.pl": {
     "hosts": [
@@ -4594,9 +4594,9 @@
     ],
     "remark": "NTT OCN (JP) ISP mail; requires subscription. Geo-blocked (403).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "oi.com.br": {
     "hosts": [
@@ -4660,9 +4660,9 @@
     ],
     "remark": "Online.nl (NL) ISP mail; requires subscription.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "online.no": {
     "hosts": [
@@ -4715,9 +4715,9 @@
     ],
     "remark": "Optimum/Altice (US) ISP mail; requires subscription. Geo-blocked.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "optusnet.com.au": {
     "hosts": [
@@ -4729,9 +4729,9 @@
     ],
     "remark": "Optus (AU) ISP mail on atmailcloud; requires subscription. Geo-blocked.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "orange.fr": {
     "hosts": [
@@ -5181,9 +5181,9 @@
     ],
     "remark": "POST Luxembourg ISP mail; requires subscription. Geo-blocked.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "ptt.rs": {
     "hosts": [
@@ -5339,9 +5339,9 @@
     ],
     "remark": "Rogers (CA) ISP mail on Yahoo infra; requires ISP subscription. Geo-blocked from vantage.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "runbox.com": {
     "hosts": [
@@ -5415,9 +5415,9 @@
     ],
     "remark": "Salzburg AG/Cablelink ISP mail; requires subscription. Geo-blocked.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "sanipass.com": {
     "discontinued": true,
@@ -5457,9 +5457,9 @@
     ],
     "remark": "SaskTel (CA) ISP mail; requires subscription (webmail.sasktel.net login-only).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "scarlet.nl": {
     "hosts": [
@@ -5470,9 +5470,9 @@
     ],
     "remark": "Scarlet (NL/BE) ISP mail; requires subscription. Geo-blocked.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "seckinmail.com": {
     "hosts": [
@@ -5514,9 +5514,9 @@
     ],
     "remark": "SFR (FR) ISP mail (incl. neuf.fr, numericable.fr); requires subscription. Geo-blocked.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "shaw.ca": {
     "hosts": [
@@ -5527,9 +5527,9 @@
     ],
     "remark": "Shaw (CA) ISP mail, now Rogers; requires subscription (redirects to rogers.com).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "sibnet.ru": {
     "hosts": [
@@ -5647,9 +5647,9 @@
     ],
     "remark": "Sky Italia; @sky.it mail is legacy subscriber-only — no public signup (mail.sky.it does not resolve).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "sky.sannet.ne.jp": {
     "hosts": [
@@ -5713,9 +5713,9 @@
     ],
     "remark": "Sri Lanka Telecom ISP mail; requires subscription. Geo-blocked.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "sneakemail.com": {
     "hosts": [
@@ -5739,9 +5739,9 @@
     ],
     "remark": "So-net/Sony (JP) ISP mail; requires subscription.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "sohu.com": {
     "hosts": [
@@ -5769,9 +5769,9 @@
     ],
     "remark": "Solcon (NL) ISP mail; requires subscription.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "soverin.net": {
     "hosts": [
@@ -5888,9 +5888,9 @@
     ],
     "remark": "Stipte (NL) ISP mail; requires subscription.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "sudomail.com": {
     "hosts": [
@@ -5944,9 +5944,9 @@
     ],
     "remark": "Bell Sympatico (CA) ISP mail; requires subscription (redirects to noovomoi.ca).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "systemli.org": {
     "hosts": [
@@ -6024,9 +6024,9 @@
     ],
     "remark": "Free email for TalkTalk customers.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "tb9.de": {
     "discontinued": true,
@@ -6079,9 +6079,9 @@
     ],
     "remark": "Tele2 NL mail, now Odido; requires subscription (redirects to odido.nl).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "telecom.com.ar": {
     "hosts": [
@@ -6151,9 +6151,9 @@
     ],
     "remark": "Telkom SA ISP mail; requires subscription (customer webmail portal).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "telus.net": {
     "hosts": [
@@ -6168,9 +6168,9 @@
     ],
     "remark": "TELUS (CA) ISP mail (Google MX); requires ISP subscription. Geo-blocked.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "terra.com.br": {
     "hosts": [
@@ -6221,9 +6221,9 @@
     ],
     "remark": "TIM (IT) ISP mail; requires subscription. Geo-blocked.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "tinkmail.me": {
     "hosts": [
@@ -6402,9 +6402,9 @@
     ],
     "remark": "Hutchison Drei (AT) ISP mail (drei.at MX); requires subscription. Geo-blocked.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "uu.me": {
     "hosts": [
@@ -6430,9 +6430,9 @@
     ],
     "remark": "Versatel (NL) ISP mail; requires subscription. Geo-blocked.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "vfemail.net": {
     "hosts": [
@@ -6472,9 +6472,9 @@
     ],
     "remark": "Videotron (CA) ISP mail; requires subscription (redirects to videotron.com).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "viettel.vn": {
     "hosts": [
@@ -6517,9 +6517,9 @@
     ],
     "remark": "Free email for Virgin Media customers.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "vivaldi.net": {
     "hosts": [
@@ -6685,9 +6685,9 @@
     ],
     "remark": "Webafrica (ZA) ISP mail; requires subscription. WAF-blocked.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "webgmx": {
     "hosts": [
@@ -6856,9 +6856,9 @@
     ],
     "remark": "Windstream (US) ISP mail; requires subscription (GDPR-blocked from EU).",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "wiwimail.com": {
     "hosts": [
@@ -6910,9 +6910,9 @@
     ],
     "remark": "KPN/XMS (NL) ISP mail; requires subscription. Unreachable from vantage.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "xtra.co.nz": {
     "hosts": [
@@ -7140,9 +7140,9 @@
     ],
     "remark": "Ziggo/VodafoneZiggo (NL) ISP mail; requires subscription.",
     "signup_verification": [
-      "other"
+      "payment"
     ],
-    "type": "free"
+    "type": "paid"
   },
   "zohomail.com": {
     "hosts": [
