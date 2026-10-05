@@ -702,6 +702,8 @@
   },
   "bluewin.ch": {
     "hosts": [
+      "bluemail.ch",
+      "bluemail.dk",
       "bluewin.ch"
     ],
     "mx_hosts": [
