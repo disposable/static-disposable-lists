@@ -40,6 +40,10 @@
       "validated": {
         "type": "boolean",
         "description": "Manual flag: a reviewer verified the domain/hint"
+      },
+      "remark": {
+        "type": "string",
+        "description": "Manual review note, e.g. why a domain was rejected"
       }
     }
   }

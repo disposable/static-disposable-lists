@@ -52,6 +52,20 @@ OPERATOR_MAP = {
     "public free suffix": "pfsdns.org",
 }
 
+# NS suffixes of public/shared DNS operators: a domain delegated here only
+# proves it uses that DNS host — it does NOT identify the issuer. NS
+# fingerprint hints matching these are dropped.
+SHARED_NS = {
+    "beget.com", "beget.pro", "cloudflare.com", "cloudns.com", "cloudns.net",
+    "desec.io", "desec.org", "dns-auth.net", "dns.oraclecloud.net",
+    "dnsauthority.com", "dnsmadeeasy.com", "dnsv5.com", "dyna-ns.net",
+    "dynamicnetworkservices.net", "easydns.com", "easydns.net",
+    "first-ns.de", "he.net", "opendns.com", "plako.net", "second-ns.com",
+    "securepoint.de", "aseinet.ne.jp", "dns.ne.jp",
+    "second-ns.de", "spaceweb.pro", "spaceweb.ru", "uadns.com",
+    "xundns.com", "zoneedit.com", "byet.org", "epizy.com",
+}
+
 # OpenWrt service-file suffixes that are variant/transport markers
 OWRT_VARIANT = re.compile(r"-(v\d+|token|basicauth|keyauth|basic)$")
 
@@ -92,7 +106,16 @@ def parse_publicfreesuffix(text):
 # PSL comment tokens that are not operator headers
 PSL_STOPWORDS = {"http", "https", "reference", "submitted", "see", "note"}
 PSL_OP_RE = re.compile(r"//\s*(.+?)\s*:\s*(?:https?://)?(\S+)")
+PSL_SUBMIT_RE = re.compile(r"@([a-z0-9.-]+\.[a-z]{2,})", re.I)
 DOMAIN_RE = re.compile(r"^[a-z0-9.-]+\.[a-z]{2,}$")
+
+
+def idna(domain):
+    """Normalize unicode domains to punycode so they match catalog entries."""
+    try:
+        return domain.encode("idna").decode("ascii")
+    except (UnicodeError, UnicodeDecodeError):
+        return domain
 
 
 def parse_psl(text, keys):
@@ -104,31 +127,50 @@ def parse_psl(text, keys):
     except IndexError:
         return {}
     by_op = {}
-    op = None
+    op = submitted = None
     block_open = True
     for line in priv.splitlines():
         s = line.strip()
         if not s:
-            op, block_open = None, True
+            op = submitted = None
+            block_open = True
             continue
         if s.startswith("//"):
             m = PSL_OP_RE.match(s)
             if block_open and m and m.group(1).lower() not in PSL_STOPWORDS \
                     and DOMAIN_RE.match(m.group(2).rstrip("/").split("/")[0].lower()):
                 op = (m.group(1), m.group(2).rstrip("/").split("/")[0].lower())
+            elif block_open and op is None:
+                # headerless block: keep the comment text as operator name
+                label = s[2:].strip().split(":", 1)[0].strip()
+                if label and label.lower() not in PSL_STOPWORDS:
+                    op = (label, None)
+            m2 = PSL_SUBMIT_RE.search(s)
+            if m2:
+                submitted = m2.group(1).lower()
             block_open = False
             continue
         if s.startswith("!"):
             continue
         block_open = False
-        by_op.setdefault(op, set()).add(s.lstrip("*.").lower())
+        key_op = op
+        if key_op and not key_op[1] and submitted:
+            key_op = (key_op[0], submitted)
+        elif key_op is None and submitted:
+            key_op = (submitted, submitted)
+        by_op.setdefault(key_op, set()).add(s.lstrip("*.").lower())
     out = {}
     for opk, doms in by_op.items():
         if opk is None:
             hint = None
         else:
             name, host = opk
-            hint = host if host in keys else (f"psl:{name}" if len(doms) >= 3 else None)
+            if host and host in keys:
+                hint = host
+            elif len(doms) >= 3:
+                hint = f"psl:{name}"
+            else:
+                hint = None
         for d in doms:
             out[d] = hint
     return out
@@ -151,7 +193,9 @@ def ns_fingerprints(catalog):
     suffix_map, host_map = {}, {}
     for key, svc in catalog.items():
         for suf in svc.get("ns_suffixes") or []:
-            suffix_map[suf.lower()] = key
+            suf = suf.lower()
+            if suf not in SHARED_NS:
+                suffix_map[suf] = key
         for host in svc.get("ns_hosts") or []:
             host_map[host.lower()] = key
     return suffix_map, host_map
@@ -188,10 +232,13 @@ def main():
     today = date.today().isoformat()
     catalog = json.load(open(CATALOG_FILE, encoding="utf-8"))
     keys = set(catalog)
-    known = set()
+    known = set(catalog)
     for svc in catalog.values():
         known.update(svc.get("hosts") or [])
         known.update(svc.get("old_hosts") or [])
+        own = svc.get("own_domains")
+        if isinstance(own, list):
+            known.update(own)
 
     try:
         prev = json.load(open(OUT_FILE, encoding="utf-8"))
@@ -211,6 +258,7 @@ def main():
         elif name == "korlabsio":
             items = {}
             for d, cat in parse_korlabsio(text).items():
+                d = idna(d)
                 if d not in known:
                     seen.setdefault(d, {"sources": set(), "hint": None})
                     seen[d]["sources"].add(f"korlabsio:{cat}")
@@ -221,6 +269,7 @@ def main():
         else:
             items = parse_openwrt(text, keys)
         for d, hint in items.items():
+            d = idna(d)
             if d in known:
                 continue
             seen.setdefault(d, {"sources": set(), "hint": None})
