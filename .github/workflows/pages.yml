@@ -37,6 +37,7 @@ jobs:
           cp mailservices.json _site/
           cp disposable-mail-hosts.json _site/
           cp dnsservices.json _site/
+          cp dnsservices.full.json _site/
 
       - name: Fix paths in html files
         run: |

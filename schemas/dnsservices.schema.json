@@ -124,6 +124,11 @@
             }
           ]
         },
+        "hosts_total": {
+          "type": "integer",
+          "description": "Present only in the capped dnsservices.json: real host count in dnsservices.full.json when hosts was truncated",
+          "minimum": 1
+        },
         "remark": {
           "type": "string",
           "description": "Additional notes about the provider"

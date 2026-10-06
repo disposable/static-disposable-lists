@@ -693,15 +693,13 @@
             let freeProviders = 0;
             let publicProviders = 0;
             let apiProviders = 0;
-            let revalProviders = 0;
             let discontinued = 0;
 
             for (const data of Object.values(services)) {
-                totalDomains += (data.hosts || []).length;
+                totalDomains += data.hosts_total || (data.hosts || []).length;
                 if (data.type === 'free') freeProviders++;
                 if (data.public !== false) publicProviders++;
                 if (data.api) apiProviders++;
-                if (data.revalidation_days) revalProviders++;
                 if (statusOf(data) === 'discontinued') discontinued++;
             }
 
@@ -710,7 +708,6 @@
                 { number: totalDomains, label: 'Total Domains' },
                 { number: publicProviders, label: 'Public Signup' },
                 { number: apiProviders, label: 'With API' },
-                { number: revalProviders, label: 'Needs Revalidation' },
             ];
 
             if (discontinued > 0) {
@@ -800,7 +797,7 @@
                                 data-sort-api="${apiYes ? '1' : '0'}"
                                 data-sort-access="${isPublic ? 'public' : 'private'}"
                                 data-sort-reval="${reval || 0}"
-                                data-sort-hosts="${(s.hosts || []).length}">
+                                data-sort-hosts="${s.hosts_total || (s.hosts || []).length}">
                                 <td>
                                     ${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener"><strong>${esc(s.name)}</strong></a>` : `<strong>${esc(s.name)}</strong>`}
                                     ${verifications.length ? `<br><span class="tag-list">${verifications.map(v => `<span class="badge badge-unknown">${esc(v)}</span>`).join(' ')}</span>` : ''}
@@ -812,7 +809,7 @@
                                 <td><span class="badge badge-${isPublic ? 'yes' : 'private'}">${isPublic ? 'public' : 'private'}</span></td>
                                 <td>${reval ? `<span class="badge badge-status-restricted">every ${esc(reval)}d</span>` : '<span class="badge badge-no">none</span>'}</td>
                                 <td class="hosts-list">
-                                    ${(s.hosts || []).length ? renderHostsCollapsible(s.hosts) : (s.own_domains ? '<span class="remark">own domains only</span>' : '-')}
+                                    ${(s.hosts || []).length ? renderHostsCollapsible(s.hosts) + (s.hosts_total && s.hosts_total > s.hosts.length ? `<div class="remark">first ${s.hosts.length.toLocaleString()} of ${s.hosts_total.toLocaleString()}</div>` : '') : (s.own_domains ? '<span class="remark">own domains only</span>' : '-')}
                                 </td>
                                 <td class="remark">${esc(note)}</td>
                             </tr>`;

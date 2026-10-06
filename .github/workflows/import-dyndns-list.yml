@@ -1,0 +1,43 @@
+name: Import dyn-dns-list domains
+
+# Daily import of https://github.com/alexandrosmagos/dyn-dns-list (links.json)
+# into dnsservices.json (capped at 500 hosts/provider) and regenerates the
+# uncapped dnsservices.full.json.
+
+on:
+  schedule:
+    - cron: "30 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Import upstream domains and regenerate capped file
+        run: python scripts/import_dyndns_list.py
+
+      - name: Validate against schema
+        run: |
+          pip install check-jsonschema
+          check-jsonschema --schemafile schemas/dnsservices.schema.json dnsservices.full.json
+          check-jsonschema --schemafile schemas/dnsservices.schema.json dnsservices.json
+
+      - name: Commit changes
+        run: |
+          if git diff --quiet -- dnsservices.json dnsservices.full.json; then
+            echo "No changes"; exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dnsservices.json dnsservices.full.json
+          git commit -m "Import upstream dyn-dns-list domains ($(date -u +%Y-%m-%d))"
+          git push

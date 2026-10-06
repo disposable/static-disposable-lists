@@ -24,6 +24,8 @@ jobs:
           check-jsonschema --schemafile schemas/mailservices.schema.json mailservices.json
           check-jsonschema --schemafile schemas/disposable-mail-hosts.schema.json disposable-mail-hosts.json
           check-jsonschema --schemafile schemas/dnsservices.schema.json dnsservices.json
+          check-jsonschema --schemafile schemas/dnsservices.schema.json dnsservices.full.json
+          check-jsonschema --schemafile schemas/dnsservices-candidates.schema.json dnsservices-candidates.json
 
       - name: Validate hostname files
         run: python scripts/validate_hostnames.py manual.txt mail-data-hosts-net.txt

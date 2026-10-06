@@ -1,0 +1,40 @@
+name: DNS domain candidates
+
+# Weekly fetch of upstream DNS domain lists (HaGeZi dyndns, korlabsio
+# subdomain_providers, PublicFreeSuffix, Public Suffix List private section,
+# OpenWrt ddns-scripts) -> dnsservices-candidates.json.
+# Staging file only: nothing is added to dnsservices.json automatically.
+
+on:
+  schedule:
+    - cron: "45 4 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  candidates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Fetch candidates
+        run: |
+          pip install dnspython
+          python scripts/fetch_dns_candidates.py
+
+      - name: Commit changes
+        run: |
+          if git diff --quiet -- dnsservices-candidates.json; then
+            echo "No changes"; exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dnsservices-candidates.json
+          git commit -m "Update DNS domain candidates ($(date -u +%Y-%m-%d))"
+          git push
