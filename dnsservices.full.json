@@ -2027,7 +2027,7 @@
       "boutir.com"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator Boutir.",
+    "remark": "PSL-listed public suffix(es); operator Boutir. verified live HK e-commerce platform (boutir.com sites)",
     "status": "active",
     "updates": "static",
     "url": "https://boutir.com/"
@@ -2152,7 +2152,7 @@
       "radio.fm"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator BRS Media.",
+    "remark": "PSL-listed public suffix(es); operator BRS Media. verified live; operates radio.am/radio.fm registries",
     "status": "active",
     "updates": "static",
     "url": "https://brsmedia.com/"
@@ -3318,7 +3318,7 @@
       "mydatto.net"
     ],
     "public": false,
-    "remark": "PSL-listed public suffix(es); operator Datto, Inc.. Hostnames bound to vendor hardware/subscription.",
+    "remark": "PSL-listed public suffix(es); operator Datto, Inc.. Hostnames bound to vendor hardware/subscription. verified live; device-bound hostnames only",
     "status": "active",
     "updates": "static",
     "url": "https://datto.com/"
@@ -4876,8 +4876,8 @@
       "vps-host.net"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator Strategic System Consulting (eApps Hosting).",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator Strategic System Consulting (eApps Hosting). eApps site now redirects to Forte Technologies (acquired); vps-host.net/Jelastic suffixes still delegated. verified: apex redirects to Forte Technologies (acquired)",
+    "status": "no_new_registrations",
     "updates": "static",
     "url": "https://eapps.com/"
   },
@@ -4940,7 +4940,7 @@
       "rt.ht"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator Elefunc, Inc..",
+    "remark": "PSL-listed public suffix(es); operator Elefunc, Inc. corp site blocks bots but rt.ht service verified live",
     "status": "active",
     "updates": "static",
     "url": "https://elefunc.com/"
@@ -44776,8 +44776,8 @@
       "onid.ca"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator ONID.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator ONID. registration portal returns Cloudflare 'CNAME Cross-User Banned'",
+    "status": "no_new_registrations",
     "updates": "static",
     "url": "https://get.onid.ca/"
   },
@@ -44799,8 +44799,8 @@
       "mochausercontent.com"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator Mocha.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator Mocha. getmocha.com origin returns Cloudflare 525 (origin down); issued suffixes may still serve. origin 525 via Cloudflare; mocha.app/mochausercontent still delegated",
+    "status": "no_new_registrations",
     "updates": "static",
     "url": "https://getmocha.com/"
   },
@@ -45601,7 +45601,7 @@
       "hubside.fr"
     ],
     "public": true,
-    "remark": "Hubside French free site-builder subdomains.",
+    "remark": "Hubside French free site-builder subdomains. behind Cloudflare bot protection; service live",
     "status": "active",
     "type": "freemium",
     "updates": "static",
@@ -46229,7 +46229,7 @@
       "west1-us.cloudjiffy.net"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator Jelastic, Inc..",
+    "remark": "PSL-listed public suffix(es); operator Jelastic, Inc. verified live; multi-operator PaaS suffixes",
     "status": "active",
     "updates": "static",
     "url": "https://jelastic.com/"
@@ -46674,8 +46674,8 @@
       "co.technology"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator Lifetime Hosting.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator Lifetime Hosting. registration site does not resolve",
+    "status": "no_new_registrations",
     "updates": "static",
     "url": "https://lifetime.hosting/"
   },
@@ -47098,7 +47098,7 @@
       "hra.health"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator Medicom Health.",
+    "remark": "PSL-listed public suffix(es); operator Medicom Health. Medicom Health rebranded to Unlock Health; hra.health suffix lives on",
     "status": "active",
     "updates": "static",
     "url": "https://medicomhealth.com/"
@@ -47788,7 +47788,7 @@
       "na4u.ru"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator Internet-Pro, LLP.",
+    "remark": "PSL-listed public suffix(es); operator Internet-Pro, LLP. live behind DDoS-Guard; na4u.ru free domain service",
     "status": "active",
     "updates": "static",
     "url": "https://netangels.ru/"
@@ -48522,7 +48522,7 @@
       "yarrow-point.wa.us"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator Northwest Nexus dba NuOz. Infrastructure/security-boundary suffix, not publicly registrable.",
+    "remark": "PSL-listed public suffix(es); operator Northwest Nexus dba NuOz. Infrastructure/security-boundary suffix, not publicly registrable. verified live; operates delegated .wa.us city zones",
     "status": "active",
     "type": "reserved",
     "updates": "static",
@@ -48745,7 +48745,7 @@
       "opencraft.hosting"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator OpenCraft GmbH.",
+    "remark": "PSL-listed public suffix(es); operator OpenCraft GmbH. verified live Open edX hosting",
     "status": "active",
     "updates": "static",
     "url": "https://opencraft.com/"
