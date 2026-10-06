@@ -2,6 +2,7 @@
   "10web.io": {
     "hosts": [
       "10web.cloud",
+      "10web.me",
       "10web.site"
     ],
     "public": true,
@@ -1405,6 +1406,17 @@
     "updates": "static",
     "url": "https://apisnetworks.com/"
   },
+  "appdomain.cloud": {
+    "hosts": [
+      "appdomain.cloud"
+    ],
+    "public": true,
+    "remark": "IBM Cloud app hostnames (appdomain.cloud).",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://appdomain.cloud/"
+  },
   "apphud.com": {
     "hosts": [
       "siiites.com"
@@ -1607,11 +1619,12 @@
     "url": "https://authgear.com/"
   },
   "autoipset.com": {
+    "expire_days": 180,
     "hosts": [
       "autoipset.com"
     ],
     "public": true,
-    "remark": "Free dynamic DNS service.",
+    "remark": "Free DDNS; account auto-expires if no devices registered within 6 months of signup.",
     "status": "active",
     "type": "free",
     "updates": "dynamic",
@@ -2112,6 +2125,17 @@
     "status": "active",
     "updates": "static",
     "url": "https://brendly.rs/"
+  },
+  "brizy.site": {
+    "hosts": [
+      "brizy.site"
+    ],
+    "public": true,
+    "remark": "Brizy site-builder subdomains.",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://brizy.site/"
   },
   "browsersafetymark.io": {
     "hosts": [
@@ -2616,6 +2640,17 @@
     "updates": "static",
     "url": "https://clickrising.com/"
   },
+  "clodui.com": {
+    "hosts": [
+      "clodui.com"
+    ],
+    "public": true,
+    "remark": "Clodui static hosting subdomains.",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://www.clodui.com/"
+  },
   "cloud.google.com": {
     "api": true,
     "hosts": [],
@@ -2697,6 +2732,17 @@
     "status": "active",
     "updates": "static",
     "url": "https://cloudbees.com/"
+  },
+  "cloudclusters.net": {
+    "hosts": [
+      "cloudclusters.net"
+    ],
+    "public": true,
+    "remark": "CloudClusters hosting service hostnames.",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://www.cloudclusters.net/"
   },
   "cloudera.com": {
     "hosts": [
@@ -2810,6 +2856,17 @@
     "status": "active",
     "updates": "static",
     "url": "https://cloudscale.ch/"
+  },
+  "cloudwaysapps.com": {
+    "hosts": [
+      "cloudwaysapps.com"
+    ],
+    "public": true,
+    "remark": "Cloudways app subdomains (x.cloudwaysapps.com).",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://cloudwaysapps.com/"
   },
   "clovyr.io": {
     "hosts": [
@@ -3010,6 +3067,17 @@
     ],
     "updates": "dynamic",
     "url": "https://con-ip.com/"
+  },
+  "contaboserver.net": {
+    "hosts": [
+      "contaboserver.net"
+    ],
+    "public": true,
+    "remark": "Contabo VPS PTR/service hostnames.",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://contaboserver.net/"
   },
   "contentful.com": {
     "hosts": [
@@ -3825,10 +3893,16 @@
   },
   "dnsmax.com": {
     "hosts": [
-      "dnsmax.com"
+      "dnsmax.com",
+      "dnsname.org",
+      "dynamicdns.co",
+      "dynamicdns.co.uk",
+      "dynamicdns.me.uk",
+      "dynamicdns.org.uk",
+      "thatip.com"
     ],
     "public": true,
-    "remark": "DNS Max dynamic DNS services (thatip.com hostname domain).",
+    "remark": "DNS Max dynamic DNS services; UK fleet dynamicdns.co*/thatip.com shares its Cloudflare NS pair.",
     "status": "active",
     "type": "free",
     "updates": "dynamic",
@@ -5485,6 +5559,17 @@
     "updates": "static",
     "url": "https://flazio.com/"
   },
+  "fleek.co": {
+    "hosts": [
+      "fleek.co"
+    ],
+    "public": true,
+    "remark": "Fleek Web3/IPFS hosting subdomains.",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://fleek.co/"
+  },
   "fleek.xyz": {
     "hosts": [
       "on-fleek.app"
@@ -5494,6 +5579,34 @@
     "status": "active",
     "updates": "static",
     "url": "https://fleek.xyz/"
+  },
+  "flick2.me": {
+    "hosts": [
+      "dive2.net",
+      "dn3.co",
+      "flick2.me",
+      "flick2.net",
+      "flyme2.me",
+      "flyme2.net",
+      "g2url.com",
+      "go2host.co",
+      "host2.me",
+      "hostdns.me",
+      "jump2me.com",
+      "letsgo2.me",
+      "net2me.me",
+      "netea.me",
+      "skipurl.me",
+      "slide2.net",
+      "snap2.info",
+      "swoop2.me"
+    ],
+    "public": true,
+    "remark": "DDNS domain fleet sharing one Cloudflare account (flyme2, slide2, snap2, swoop2, jump2me, letsgo2, net2me, host2me, go2host, dive2, dn3.co, g2url...); flagged by hagezi dyndns list.",
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "https://flick2.me/"
   },
   "flow.page": {
     "hosts": [
@@ -6332,11 +6445,12 @@
     "url": "https://www.freenom.com"
   },
   "freewebhostingarea.com": {
+    "expire_days": 30,
     "hosts": [
       "freewebhostingarea.com"
     ],
     "public": true,
-    "remark": "Free Web Hosting Area (FreeWHA) - apex of the free-hosting network.",
+    "remark": "Free Web Hosting Area (FreeWHA) - apex of the free-hosting network. Sites deleted after a month without a single visit.",
     "status": "active",
     "type": "free",
     "updates": "static",
@@ -7282,6 +7396,17 @@
     "updates": "static",
     "url": "https://hostinger.com/"
   },
+  "hostingersite.com": {
+    "hosts": [
+      "hostingersite.com"
+    ],
+    "public": true,
+    "remark": "Hostinger site-builder free subdomains.",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://hostingersite.com/"
+  },
   "hostyhosting.com": {
     "hosts": [
       "hostyhosting.io"
@@ -7319,6 +7444,17 @@
     ],
     "updates": "dynamic",
     "url": "https://huaweicloud.com"
+  },
+  "hubside.fr": {
+    "hosts": [
+      "hubside.fr"
+    ],
+    "public": true,
+    "remark": "Hubside French free site-builder subdomains.",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://www.hubside.fr/"
   },
   "huggingface.co": {
     "hosts": [
@@ -7500,12 +7636,23 @@
     "updates": "dynamic",
     "url": "https://infomaniak.com"
   },
+  "infura.io": {
+    "hosts": [
+      "infura-ipfs.io"
+    ],
+    "public": true,
+    "remark": "Infura IPFS dedicated gateway subdomains.",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://infura.io/"
+  },
   "ing.ng": {
     "hosts": [
       "ing.ng"
     ],
     "public": true,
-    "remark": "ing.ng internet-identity subdomains.",
+    "remark": "Free internet-identity subdomains; 'yours for life, no renewal fees'.",
     "status": "active",
     "type": "freemium",
     "updates": "static",
@@ -7936,6 +8083,17 @@
     "updates": "static",
     "url": "https://jelastic.com/"
   },
+  "jimdofree.com": {
+    "hosts": [
+      "jimdofree.com"
+    ],
+    "public": true,
+    "remark": "Jimdo free-site subdomains.",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://jimdofree.com/"
+  },
   "jimdosite.com": {
     "api": true,
     "hosts": [
@@ -8076,6 +8234,17 @@
     "type": "free",
     "updates": "static",
     "url": "https://kapsi.fi/"
+  },
+  "kartra.com": {
+    "hosts": [
+      "kartra.com"
+    ],
+    "public": true,
+    "remark": "Kartra landing-page subdomains.",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://kartra.com/"
   },
   "katabump.com": {
     "hosts": [
@@ -9934,7 +10103,7 @@
       "no-ip.pl"
     ],
     "public": true,
-    "remark": "Polish free dynamic DNS (unrelated to no-ip.com).",
+    "remark": "Polish free dynamic DNS (unrelated to no-ip.com); free accounts do not expire while in use.",
     "status": "active",
     "type": "free",
     "updates": "dynamic",
@@ -10207,6 +10376,17 @@
     "type": "reserved",
     "updates": "static",
     "url": "https://nuoz.net/"
+  },
+  "nxcli.io": {
+    "hosts": [
+      "nxcli.io"
+    ],
+    "public": true,
+    "remark": "Nexcess temporary site hostnames.",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://nxcli.io/"
   },
   "nya.je": {
     "api": true,
@@ -10500,6 +10680,7 @@
     "url": "https://www.oray.com/"
   },
   "orgfree.com": {
+    "expire_days": 30,
     "hosts": [
       "6te.net",
       "coolpage.biz",
@@ -10509,7 +10690,7 @@
       "xp3.biz"
     ],
     "public": true,
-    "remark": "'Free Web Hosting Area' free hosting network; sites on free subdomains.",
+    "remark": "'Free Web Hosting Area' free hosting network; sites on free subdomains. Sites deleted after a month without a single visit.",
     "status": "active",
     "type": "free",
     "updates": "static",
@@ -12162,7 +12343,7 @@
       "serv00.net"
     ],
     "public": true,
-    "remark": "serv00.com revolutionary free hosting; free subdomains.",
+    "remark": "serv00.com free hosting; user sites served as name.serv00.net.",
     "status": "active",
     "type": "free",
     "updates": "static",
@@ -12824,6 +13005,17 @@
     "updates": "static",
     "url": "https://streak.com/"
   },
+  "studio.site": {
+    "hosts": [
+      "studio.site"
+    ],
+    "public": true,
+    "remark": "STUDIO site-builder subdomains.",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://studio.site/"
+  },
   "sub6.com": {
     "hosts": [
       "temp-dns.com"
@@ -13482,6 +13674,7 @@
     "url": "https://udr.org.yt/"
   },
   "ueuo.com": {
+    "expire_days": 30,
     "hosts": [
       "eu5.org",
       "freetzi.com",
@@ -13489,7 +13682,7 @@
       "ueuo.com"
     ],
     "public": true,
-    "remark": "'Free Web Hosting Area' free hosting network (separate cluster from orgfree).",
+    "remark": "'Free Web Hosting Area' free hosting network (separate cluster from orgfree). Sites deleted after a month without a single visit.",
     "status": "active",
     "type": "free",
     "updates": "static",
@@ -13516,6 +13709,17 @@
     "type": "freemium",
     "updates": "static",
     "url": "https://ukit.com/"
+  },
+  "umbler.net": {
+    "hosts": [
+      "umbler.net"
+    ],
+    "public": true,
+    "remark": "Umbler Brazilian PaaS site subdomains.",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://umbler.net/"
   },
   "umso.com": {
     "hosts": [
@@ -14356,6 +14560,17 @@
     "status": "active",
     "updates": "static",
     "url": "https://xenoncloud.net/"
+  },
+  "xn--hkkinen-5wa.fi": {
+    "hosts": [
+      "xn--hkkinen-5wa.fi"
+    ],
+    "public": true,
+    "remark": "häkkinen.fi Finnish surname-domain community offering free subdomains.",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://xn--hkkinen-5wa.fi/"
   },
   "xname.org": {
     "api": true,

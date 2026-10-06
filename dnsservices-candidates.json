@@ -24,22 +24,13 @@
   "10dv.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "myhostadmin customer/parked",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
-  },
-  "10web.me": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "korlabsio:fsp"
-    ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "10x.es": {
     "added_on": "2026-10-06",
@@ -66,12 +57,13 @@
   "2p.fm": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "no NS delegation",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "360digit.com": {
     "added_on": "2026-10-06",
@@ -131,22 +123,24 @@
   "77uam.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "dead Cloudflare-parked domain",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "88zkt.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "dead Cloudflare-parked domain",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "abmetalmecanica.com": {
     "added_on": "2026-10-06",
@@ -207,12 +201,13 @@
   "allowed.org": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "customer domain",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "anastasion.com": {
     "added_on": "2026-10-06",
@@ -228,12 +223,13 @@
   "aneisa.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "HostGator-parked",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "antongorbunov.com": {
     "added_on": "2026-10-06",
@@ -249,22 +245,13 @@
   "anyitsolution.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "Cloudflare-parked customer",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
-  },
-  "appdomain.cloud": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "korlabsio:psp"
-    ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "arenaceballos.com": {
     "added_on": "2026-10-06",
@@ -313,12 +300,13 @@
   "ask2ask.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "Njalla-parked domain",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "astrabus.ru": {
     "added_on": "2026-10-06",
@@ -356,12 +344,13 @@
   "australia.ai": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "does not resolve",
     "resolves": false,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "avandns.com": {
     "added_on": "2026-10-06",
@@ -421,12 +410,13 @@
   "bero-webspace.de": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "hosting customer domain",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "bind-nsupdate": {
     "added_on": "2026-10-06",
@@ -443,32 +433,35 @@
   "bitbucket.org": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "Atlassian service apex",
     "resolves": true,
     "sources": [
       "korlabsio:fss"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "bloom.us": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "AWS-parked (no site)",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "bookonline.app": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "AWS-parked (no site)",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "brawlcustommusic.com": {
     "added_on": "2026-10-06",
@@ -481,24 +474,15 @@
     "status": "rejected",
     "validated": true
   },
-  "brizy.site": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "korlabsio:fsp"
-    ],
-    "status": "new",
-    "validated": false
-  },
   "brweb.org": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "DDNS-named domain, site unverifiable",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
+    "status": "deferred",
     "validated": false
   },
   "builderallwppro.com": {
@@ -526,12 +510,13 @@
   "buz-host.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "no NS delegation",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "cashit.info": {
     "added_on": "2026-10-06",
@@ -547,12 +532,13 @@
   "cdn77.org": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "CDN77 infrastructure domain",
     "resolves": true,
     "sources": [
       "korlabsio:fsp"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "celltrak.mobi": {
     "added_on": "2026-10-06",
@@ -568,32 +554,35 @@
   "centserver.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "for-sale landing (Squadhelp)",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "changeip.name": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "no NS delegation",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "charter.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "ISP domain",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "chavo.biz": {
     "added_on": "2026-10-06",
@@ -617,26 +606,6 @@
     "status": "rejected",
     "validated": true
   },
-  "clodui.com": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "korlabsio:fsp"
-    ],
-    "status": "new",
-    "validated": false
-  },
-  "cloudclusters.net": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "korlabsio:psp"
-    ],
-    "status": "new",
-    "validated": false
-  },
   "cloudwatch.net": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
@@ -648,35 +617,27 @@
     "status": "rejected",
     "validated": true
   },
-  "cloudwaysapps.com": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "korlabsio:csp"
-    ],
-    "status": "new",
-    "validated": false
-  },
   "cloudwebncw.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "does not resolve",
     "resolves": false,
     "sources": [
       "korlabsio:psp"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "cloudxns.net": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "CloudXNS defunct (Chinese DNS service shut down 2019)",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "coalnet.ru": {
     "added_on": "2026-10-06",
@@ -722,16 +683,6 @@
     "status": "rejected",
     "validated": true
   },
-  "contaboserver.net": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "korlabsio:psp"
-    ],
-    "status": "new",
-    "validated": false
-  },
   "coplien.org": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
@@ -746,12 +697,13 @@
   "corbina.ru": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "ISP domain",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "cpct.com": {
     "added_on": "2026-10-06",
@@ -767,12 +719,13 @@
   "cpsnet.cz": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "hosting customer domain",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "crackedsidewalks.com": {
     "added_on": "2026-10-06",
@@ -788,12 +741,13 @@
   "crazydomains.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "registrar apex - not issuable",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "cuesinc.com": {
     "added_on": "2026-10-06",
@@ -809,12 +763,13 @@
   "daftpage.coma": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "malformed entry (.coma TLD)",
     "resolves": false,
     "sources": [
       "korlabsio:fpp"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "darksair.org": {
     "added_on": "2026-10-06",
@@ -830,42 +785,46 @@
   "ddns.me.uk": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "no NS delegation",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "ddns.name": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "no NS delegation",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "ddns5.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "unverifiable DDNS domain",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "ddnsapp.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "unverifiable DDNS domain",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "ddnslive.com": {
     "added_on": "2026-10-06",
@@ -923,25 +882,16 @@
     "status": "rejected",
     "validated": true
   },
-  "dive2.net": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "new",
-    "validated": false
-  },
   "divx.se": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "does not resolve",
     "resolves": false,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "dlinkddns.com": {
     "added_on": "2026-10-06",
@@ -954,16 +904,6 @@
     "status": "rejected",
     "validated": true
   },
-  "dn3.co": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "new",
-    "validated": false
-  },
   "dnmcoffman.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
@@ -975,26 +915,16 @@
     "status": "rejected",
     "validated": true
   },
-  "dnsname.org": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "remark": "live/hosting brand - subdomain issuance unverified",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "deferred",
-    "validated": false
-  },
   "dnyp.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "Sedo parked",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "donkeyhot.net": {
     "added_on": "2026-10-06",
@@ -1054,22 +984,24 @@
   "dropboxusercontent.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "Dropbox content-delivery suffix",
     "resolves": true,
     "sources": [
       "korlabsio:csp"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "dropfiles.net": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "GoDaddy-parked/customer domain",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "drunkensailor.org": {
     "added_on": "2026-10-06",
@@ -1085,17 +1017,18 @@
   "drv.tw": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "HiNet-hosted domain, unverifiable",
     "resolves": true,
     "sources": [
       "korlabsio:fsp"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "dtdns.net": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
-    "remark": "live/hosting brand - subdomain issuance unverified",
+    "remark": "dtdns family remnant, unverifiable",
     "resolves": true,
     "sources": [
       "hagezi"
@@ -1117,12 +1050,13 @@
   "dyn.columbia.edu": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "Columbia-internal DDNS",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "dynadot.com": {
     "added_on": "2026-10-06",
@@ -1160,12 +1094,13 @@
   "dynamic-m.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "unverifiable",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "dynamic.domains": {
     "added_on": "2026-10-06",
@@ -1178,75 +1113,38 @@
     "status": "rejected",
     "validated": true
   },
-  "dynamicdns.co": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "new",
-    "validated": false
-  },
-  "dynamicdns.co.uk": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "new",
-    "validated": false
-  },
-  "dynamicdns.me.uk": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "new",
-    "validated": false
-  },
-  "dynamicdns.org.uk": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "new",
-    "validated": false
-  },
   "dyndns-ip.org": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "DDNS-named domain, site unverifiable",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
+    "status": "deferred",
     "validated": false
   },
   "dyndns.pro": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "does not resolve",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "dyndns.za.org": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "does not resolve",
     "resolves": false,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "dyndnss.net": {
     "added_on": "2026-10-06",
@@ -1262,42 +1160,46 @@
   "dyndnsservices.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "GoDaddy-parked/customer domain",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "dynme.ovh": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "private domain (ebenbeck.org NS)",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "dyns.be": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "private domain (mijn.host NS)",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "dyns.cx": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "does not resolve",
     "resolves": false,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "dyns.net": {
     "added_on": "2026-10-06",
@@ -1324,32 +1226,35 @@
   "easydns.info": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "easyDNS service domain",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "easydns.net": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "easyDNS service domain",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "easydns.org": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "easyDNS service domain",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "ehost.pl": {
     "added_on": "2026-10-06",
@@ -1399,12 +1304,13 @@
   "emlnk.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "email link-tracking domain",
     "resolves": true,
     "sources": [
       "korlabsio:fsp"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "endlessmovie.com": {
     "added_on": "2026-10-06",
@@ -1420,11 +1326,12 @@
   "epac.to": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "SOA-only, site unverifiable",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
+    "status": "deferred",
     "validated": false
   },
   "epicmilk.com": {
@@ -1463,12 +1370,13 @@
   "eternum.io": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "unverifiable site",
     "resolves": true,
     "sources": [
       "korlabsio:ipfs"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "etitrans.com": {
     "added_on": "2026-10-06",
@@ -1495,12 +1403,13 @@
   "eva.hk": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "he.net customer domain",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "everton.com": {
     "added_on": "2026-10-06",
@@ -1549,12 +1458,13 @@
   "filetransfer.io": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "file-transfer service, no subdomain issuance",
     "resolves": true,
     "sources": [
       "korlabsio:fss"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "flat4free.com": {
     "added_on": "2026-10-06",
@@ -1567,36 +1477,6 @@
     "status": "rejected",
     "validated": true
   },
-  "fleek.co": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "korlabsio:ipfs"
-    ],
-    "status": "new",
-    "validated": false
-  },
-  "flick2.me": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "new",
-    "validated": false
-  },
-  "flick2.net": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "new",
-    "validated": false
-  },
   "flowergardendaycare.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
@@ -1607,26 +1487,6 @@
     ],
     "status": "rejected",
     "validated": true
-  },
-  "flyme2.me": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "new",
-    "validated": false
-  },
-  "flyme2.net": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "new",
-    "validated": false
   },
   "foroemprende.com": {
     "added_on": "2026-10-06",
@@ -1653,11 +1513,12 @@
   "freedns.tech": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "DDNS-named domain, site unverifiable",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
+    "status": "deferred",
     "validated": false
   },
   "freesa.org": {
@@ -1685,12 +1546,13 @@
   "freewebhostmost.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "dead free hosting domain",
     "resolves": true,
     "sources": [
       "korlabsio:fsp"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "freifunk.net": {
     "added_on": "2026-10-06",
@@ -1703,35 +1565,27 @@
     "status": "deferred",
     "validated": false
   },
-  "g2url.com": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "new",
-    "validated": false
-  },
   "gamingcontrol.de": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "hosting customer domain",
     "resolves": true,
     "sources": [
       "korlabsio:fsp"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "garypatel.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "does not resolve",
     "resolves": false,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "gccwebhosting.com": {
     "added_on": "2026-10-06",
@@ -1766,35 +1620,27 @@
     "status": "rejected",
     "validated": true
   },
-  "go2host.co": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "new",
-    "validated": false
-  },
   "goldcrestcc.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "private site",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "grandmasgossip.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "private site",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "greyh.at": {
     "added_on": "2026-10-06",
@@ -1832,12 +1678,13 @@
   "guardz.ru": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "does not resolve",
     "resolves": false,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "gurcanozturk.com": {
     "added_on": "2026-10-06",
@@ -1853,12 +1700,13 @@
   "h4g3z1-dyndns.web.app": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "not a registered domain - leaked hostname entry",
     "resolves": false,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "hackx.com": {
     "added_on": "2026-10-06",
@@ -1874,33 +1722,36 @@
   "hardbin.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "unverifiable",
     "resolves": true,
     "sources": [
       "korlabsio:tss"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "her.name": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "does not resolve",
     "resolves": false,
     "sources": [
       "hagezi",
       "korlabsio:ddns"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "herodias.net": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "private site",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "hiddencorner.org": {
     "added_on": "2026-10-06",
@@ -1927,13 +1778,14 @@
   "his.name": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "does not resolve",
     "resolves": false,
     "sources": [
       "hagezi",
       "korlabsio:ddns"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "hmao.pro": {
     "added_on": "2026-10-06",
@@ -1960,82 +1812,46 @@
   "homeplex.org": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "private site",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "hop.ru": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "does not resolve",
     "resolves": false,
     "sources": [
       "korlabsio:fsp"
     ],
-    "status": "new",
-    "validated": false
-  },
-  "host2.me": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "new",
-    "validated": false
-  },
-  "hostdns.me": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "hoster-test.ru": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "hoster.ru customer",
     "resolves": true,
     "sources": [
       "korlabsio:fsp"
     ],
-    "status": "new",
-    "validated": false
-  },
-  "hostingersite.com": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "korlabsio:psp"
-    ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "hsforms.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "HubSpot forms service domain",
     "resolves": true,
     "sources": [
       "korlabsio:fpp"
     ],
-    "status": "new",
-    "validated": false
-  },
-  "hubside.fr": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "korlabsio:fsp"
-    ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "hulichicken.com": {
     "added_on": "2026-10-06",
@@ -2051,82 +1867,79 @@
   "humorme.info": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "does not resolve",
     "resolves": false,
     "sources": [
       "korlabsio:fsp"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "ics.tw": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "Taiwanese hoster domain, unverifiable",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "ideasciviles.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "private site",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "imprendum.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "private site",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "independentonline.ro": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "private site",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "inflict.us": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "game tool site",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
-  },
-  "infura-ipfs.io": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "korlabsio:ipfs"
-    ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "inmotionhosting.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "hosting apex - not issuable",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "innograph.com": {
     "added_on": "2026-10-06",
@@ -2142,12 +1955,13 @@
   "invitee.net": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "private site",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "ip-dynamic.com": {
     "added_on": "2026-10-06",
@@ -2163,22 +1977,24 @@
   "ipower.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "hosting apex - not issuable",
     "resolves": true,
     "sources": [
       "korlabsio:fsp"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "ipupdater.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "does not resolve",
     "resolves": false,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "isamotherfucking.ninja": {
     "added_on": "2026-10-06",
@@ -2246,16 +2062,6 @@
     "status": "rejected",
     "validated": true
   },
-  "jimdofree.com": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "korlabsio:psp"
-    ],
-    "status": "new",
-    "validated": false
-  },
   "jomblo.asia": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
@@ -2270,32 +2076,24 @@
   "jorropo.net": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "Scaleway-registered customer domain",
     "resolves": true,
     "sources": [
       "korlabsio:ipfs"
     ],
-    "status": "new",
-    "validated": false
-  },
-  "jump2me.com": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "justns.ru": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "JustHost customer",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "jvogt.org": {
     "added_on": "2026-10-06",
@@ -2307,16 +2105,6 @@
     ],
     "status": "rejected",
     "validated": true
-  },
-  "kartra.com": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "korlabsio:fsp"
-    ],
-    "status": "new",
-    "validated": false
   },
   "kck-saratov.ru": {
     "added_on": "2026-10-06",
@@ -2383,16 +2171,6 @@
     ],
     "status": "rejected",
     "validated": true
-  },
-  "letsgo2.me": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "new",
-    "validated": false
   },
   "level3.net": {
     "added_on": "2026-10-06",
@@ -2463,12 +2241,13 @@
   "lundellnet.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "private site",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "maillist-manage.com": {
     "added_on": "2026-10-06",
@@ -2517,12 +2296,13 @@
   "mett.ru": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "Cloudflare customer site",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "mh-it.com": {
     "added_on": "2026-10-06",
@@ -2538,22 +2318,24 @@
   "mikecartwright.net": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "private site",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "mirolnet.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "private site",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "mj.am": {
     "added_on": "2026-10-06",
@@ -2635,23 +2417,24 @@
   "mwop.net": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "private site",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "my-board.org": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
-    "remark": "live/hosting brand - subdomain issuance unverified",
+    "remark": "no NS delegation",
     "resolves": true,
     "sources": [
       "korlabsio:fsp"
     ],
-    "status": "deferred",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "mycompany.tv": {
     "added_on": "2026-10-06",
@@ -2700,22 +2483,24 @@
   "myq-see.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "does not resolve (Q-See camera DDNS, discontinued)",
     "resolves": false,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "myqcloud.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "no NS delegation (QQ/Tencent CDN)",
     "resolves": true,
     "sources": [
       "korlabsio:csp"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "mywebsites360.com": {
     "added_on": "2026-10-06",
@@ -2731,42 +2516,24 @@
   "n4t.co": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "does not resolve",
     "resolves": false,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
-  },
-  "net2me.me": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "netcabo.pt": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "NOS/ISP domain",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
-  },
-  "netea.me": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "netlify.com": {
     "added_on": "2026-10-06",
@@ -2804,7 +2571,7 @@
   "no-ip.fr": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
-    "remark": "live/hosting brand - subdomain issuance unverified",
+    "remark": "French no-ip variant, site unverifiable",
     "resolves": true,
     "sources": [
       "hagezi"
@@ -2823,25 +2590,16 @@
     "status": "rejected",
     "validated": true
   },
-  "nxcli.io": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "korlabsio:psp"
-    ],
-    "status": "new",
-    "validated": false
-  },
   "onlinehome-server.info": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "IONOS customer DDNS record",
     "resolves": true,
     "sources": [
       "korlabsio:fsp"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "opendns.com": {
     "added_on": "2026-10-06",
@@ -2902,12 +2660,13 @@
   "paste.ee": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "text-sharing, no subdomain issuance",
     "resolves": true,
     "sources": [
       "korlabsio:tss"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "pastebin.com": {
     "added_on": "2026-10-06",
@@ -2968,12 +2727,13 @@
   "phenixs.org": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "ZoneEdit customer domain",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "php-dev.net": {
     "added_on": "2026-10-06",
@@ -3022,12 +2782,13 @@
   "play.ai": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "Meta-owned service domain",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "plwgroup.com": {
     "added_on": "2026-10-06",
@@ -3054,32 +2815,35 @@
   "portrelay.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "no NS delegation",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "privatedns.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "LeaseWeb customer domain",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "progr.am": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "for-sale landing (Atom)",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "project.li": {
     "added_on": "2026-10-06",
@@ -3106,13 +2870,13 @@
   "prostore.ru": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
-    "remark": "live/hosting brand - subdomain issuance unverified",
+    "remark": "reg.ru customer site",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "deferred",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "prout.be": {
     "added_on": "2026-10-06",
@@ -3128,12 +2892,13 @@
   "pudim.info": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "private site",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "quackerscomic.com": {
     "added_on": "2026-10-06",
@@ -3149,12 +2914,13 @@
   "radiogirl.fm": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "private site",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "regruhosting.ru": {
     "added_on": "2026-10-06",
@@ -3181,12 +2947,13 @@
   "reserve-online.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "booking platform domain",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "ro.lt": {
     "added_on": "2026-10-06",
@@ -3225,12 +2992,13 @@
   "routemehome.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "does not resolve",
     "resolves": false,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "royalwebhosting.net": {
     "added_on": "2026-10-06",
@@ -3312,12 +3080,13 @@
   "secureserver.net": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "GoDaddy infrastructure domain",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "sendgrid.net": {
     "added_on": "2026-10-06",
@@ -3377,22 +3146,24 @@
   "sharkltd.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "hosting customer domain",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "sheatfish.org": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "Joker customer domain",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "shen.cl": {
     "added_on": "2026-10-06",
@@ -3438,17 +3209,6 @@
     "status": "rejected",
     "validated": true
   },
-  "skipurl.me": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "remark": "private/customer domain - not a service suffix",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "rejected",
-    "validated": true
-  },
   "skipurl.org": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
@@ -3470,16 +3230,6 @@
     ],
     "status": "rejected",
     "validated": true
-  },
-  "slide2.net": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "new",
-    "validated": false
   },
   "sline.net": {
     "added_on": "2026-10-06",
@@ -3503,25 +3253,16 @@
     "status": "rejected",
     "validated": true
   },
-  "snap2.info": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "new",
-    "validated": false
-  },
   "solidmation.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "private site",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "soundestlink.com": {
     "added_on": "2026-10-06",
@@ -3537,12 +3278,13 @@
   "spectrumnet.bg": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "ISP domain",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "spr.io": {
     "added_on": "2026-10-06",
@@ -3622,16 +3364,6 @@
     "status": "rejected",
     "validated": true
   },
-  "studio.site": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "korlabsio:fpp"
-    ],
-    "status": "new",
-    "validated": false
-  },
   "subwayhost.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
@@ -3653,16 +3385,6 @@
     ],
     "status": "rejected",
     "validated": true
-  },
-  "swoop2.me": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "new",
-    "validated": false
   },
   "system-ns.com": {
     "added_on": "2026-10-06",
@@ -3744,22 +3466,13 @@
   "thaieasydns.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "does not resolve",
     "resolves": false,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
-  },
-  "thatip.com": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "the-button.com": {
     "added_on": "2026-10-06",
@@ -3775,12 +3488,13 @@
   "theblacklist.org": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "does not resolve on NS level",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "themcmillans.org": {
     "added_on": "2026-10-06",
@@ -3796,12 +3510,13 @@
   "thenest.org": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "private site",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "thingsnewandused.com": {
     "added_on": "2026-10-06",
@@ -3872,12 +3587,13 @@
   "trello.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "Atlassian service apex",
     "resolves": true,
     "sources": [
       "korlabsio:fss"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "trieditmyself.com": {
     "added_on": "2026-10-06",
@@ -3904,12 +3620,13 @@
   "truthvid.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "private site",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "tth.cl": {
     "added_on": "2026-10-06",
@@ -3936,25 +3653,15 @@
   "ultasrv.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "hosting apex - not issuable",
     "resolves": true,
     "sources": [
       "korlabsio:fsp"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "umbler.com": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "remark": "live/hosting brand - subdomain issuance unverified",
-    "resolves": true,
-    "sources": [
-      "korlabsio:fsp"
-    ],
-    "status": "deferred",
-    "validated": false
-  },
-  "umbler.net": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
     "remark": "live/hosting brand - subdomain issuance unverified",
@@ -3968,12 +3675,13 @@
   "upir.ir": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "hosting customer domain",
     "resolves": true,
     "sources": [
       "korlabsio:fss"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "uplooder.net": {
     "added_on": "2026-10-06",
@@ -3989,7 +3697,7 @@
   "usa.cc": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
-    "remark": "live/hosting brand - subdomain issuance unverified",
+    "remark": "does not resolve",
     "resolves": false,
     "sources": [
       "hagezi"
@@ -4000,12 +3708,13 @@
   "v13clan.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "private clan site",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "vctel.com": {
     "added_on": "2026-10-06",
@@ -4021,12 +3730,13 @@
   "verizonwireless.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "ISP domain",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "via0.com": {
     "added_on": "2026-10-06",
@@ -4064,32 +3774,35 @@
   "vxe6.net": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "dead DDNS-named domain",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "warp9computers.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "does not resolve",
     "resolves": false,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "wbsprt.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "Websupport customer",
     "resolves": true,
     "sources": [
       "korlabsio:fsp"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "wcomhost.com": {
     "added_on": "2026-10-06",
@@ -4105,13 +3818,13 @@
   "webcindario.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
-    "remark": "live/hosting brand - subdomain issuance unverified",
+    "remark": "does not resolve (miarroba free hosting, defunct)",
     "resolves": false,
     "sources": [
       "korlabsio:fsp"
     ],
-    "status": "deferred",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "webhostinghub.com": {
     "added_on": "2026-10-06",
@@ -4127,21 +3840,23 @@
   "websitetestlink.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "LiquidWeb customer domain",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "webspace.re": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "Austrian webspace service, unverifiable",
     "resolves": true,
     "sources": [
       "korlabsio:fsp"
     ],
-    "status": "new",
+    "status": "deferred",
     "validated": false
   },
   "westblade.com": {
@@ -4158,12 +3873,13 @@
   "whogohost.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "hosting apex - not issuable",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "williambest.com": {
     "added_on": "2026-10-06",
@@ -4209,16 +3925,6 @@
     "status": "rejected",
     "validated": true
   },
-  "xn--hkkinen-5wa.fi": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
-    "resolves": true,
-    "sources": [
-      "psl"
-    ],
-    "status": "new",
-    "validated": false
-  },
   "xpresit.net": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
@@ -4233,12 +3939,13 @@
   "xsph.ru": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "Sprinthost customer",
     "resolves": true,
     "sources": [
       "korlabsio:fsp"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "yiannamarie.com": {
     "added_on": "2026-10-06",
@@ -4265,12 +3972,13 @@
   "z0d.eu": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "private site",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "z86.ru": {
     "added_on": "2026-10-06",
@@ -4286,12 +3994,13 @@
   "zoom.us": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-06",
+    "remark": "Zoom service apex",
     "resolves": true,
     "sources": [
       "korlabsio:fsp"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "zverovich.net": {
     "added_on": "2026-10-06",
