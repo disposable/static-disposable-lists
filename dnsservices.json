@@ -1,4 +1,16 @@
 {
+  "10web.io": {
+    "hosts": [
+      "10web.cloud",
+      "10web.site"
+    ],
+    "public": true,
+    "remark": "10Web AI site-builder subdomains.",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://10web.io/"
+  },
   "1984.is": {
     "hosts": [],
     "ns_suffixes": [
@@ -65,6 +77,17 @@
     "updates": "dynamic",
     "url": "http://www.pubyun.com/"
   },
+  "4everland.io": {
+    "hosts": [
+      "4everland.app",
+      "4everland.io"
+    ],
+    "public": true,
+    "remark": "Web3 hosting/IPFS gateway; sites served on free subdomains.",
+    "status": "active",
+    "type": "freemium",
+    "url": "https://www.4everland.org/"
+  },
   "4u.com": {
     "hosts": [
       "4u.com"
@@ -104,6 +127,17 @@
     "type": "paid",
     "url": "https://www.a2hosting.com/"
   },
+  "aa.am": {
+    "hosts": [
+      "aa.am"
+    ],
+    "public": true,
+    "remark": "AA.AM free domain registration + free DNS service (Armenia).",
+    "status": "active",
+    "type": "free",
+    "updates": "both",
+    "url": "https://aa.am/"
+  },
   "activetrail.biz": {
     "hosts": [
       "activetrail.biz"
@@ -113,6 +147,17 @@
     "status": "active",
     "updates": "static",
     "url": "https://activetrail.biz/"
+  },
+  "adalo.com": {
+    "hosts": [
+      "adalo.com"
+    ],
+    "public": true,
+    "remark": "Adalo no-code app subdomains.",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://www.adalo.com/"
   },
   "addictedto.beer": {
     "api": false,
@@ -517,6 +562,7 @@
       "awsapprunner.com",
       "awsapps.com",
       "awsglobalaccelerator.com",
+      "awstrack.me",
       "ca-central-1.airflow.amazonaws.com",
       "ca-central-1.elasticbeanstalk.com",
       "ca-central-1.rds.amazonaws.com",
@@ -1449,6 +1495,16 @@
     "updates": "static",
     "url": "https://aptible.com/"
   },
+  "aragon.network": {
+    "hosts": [
+      "aragon.network"
+    ],
+    "public": true,
+    "remark": "Aragon network service subdomains.",
+    "status": "active",
+    "updates": "static",
+    "url": "https://aragon.org/"
+  },
   "arvancloud.ir": {
     "hosts": [
       "arvanedge.ir"
@@ -1458,6 +1514,17 @@
     "status": "active",
     "type": "paid",
     "url": "https://www.arvancloud.ir/"
+  },
+  "arweave.net": {
+    "hosts": [
+      "arweave.net"
+    ],
+    "public": true,
+    "remark": "Arweave permaweb gateway subdomains.",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://www.arweave.org/"
   },
   "aseinet.com": {
     "hosts": [
@@ -1517,6 +1584,17 @@
     "updates": "static",
     "url": "https://atlassian.com/"
   },
+  "atspace.com": {
+    "hosts": [
+      "atspace.com"
+    ],
+    "public": true,
+    "remark": "Free web hosting for life; free subdomains (Zetta Hosting).",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://www.atspace.com/"
+  },
   "authgear.com": {
     "hosts": [
       "authgear-staging.com",
@@ -1527,6 +1605,17 @@
     "status": "active",
     "updates": "static",
     "url": "https://authgear.com/"
+  },
+  "autoipset.com": {
+    "hosts": [
+      "autoipset.com"
+    ],
+    "public": true,
+    "remark": "Free dynamic DNS service.",
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "https://autoipset.com/"
   },
   "avm.de": {
     "hosts": [
@@ -1606,6 +1695,17 @@
     "status": "active",
     "updates": "static",
     "url": "https://b-data.io/"
+  },
+  "backblaze.com": {
+    "hosts": [
+      "backblazeb2.com"
+    ],
+    "public": true,
+    "remark": "Backblaze B2 bucket hostnames (bucket.backblazeb2.com).",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://www.backblaze.com/"
   },
   "balena.io": {
     "hosts": [
@@ -1789,7 +1889,78 @@
   "blogspot.com": {
     "api": true,
     "hosts": [
-      "blogspot.com"
+      "blogspot.ae",
+      "blogspot.al",
+      "blogspot.am",
+      "blogspot.ba",
+      "blogspot.be",
+      "blogspot.bg",
+      "blogspot.bj",
+      "blogspot.ca",
+      "blogspot.cf",
+      "blogspot.ch",
+      "blogspot.cl",
+      "blogspot.co.at",
+      "blogspot.co.id",
+      "blogspot.co.il",
+      "blogspot.co.ke",
+      "blogspot.co.nz",
+      "blogspot.co.uk",
+      "blogspot.co.za",
+      "blogspot.com",
+      "blogspot.com.ar",
+      "blogspot.com.au",
+      "blogspot.com.br",
+      "blogspot.com.by",
+      "blogspot.com.co",
+      "blogspot.com.cy",
+      "blogspot.com.ee",
+      "blogspot.com.eg",
+      "blogspot.com.es",
+      "blogspot.com.mt",
+      "blogspot.com.ng",
+      "blogspot.com.tr",
+      "blogspot.com.uy",
+      "blogspot.cv",
+      "blogspot.cz",
+      "blogspot.de",
+      "blogspot.dk",
+      "blogspot.fi",
+      "blogspot.fr",
+      "blogspot.gr",
+      "blogspot.hk",
+      "blogspot.hr",
+      "blogspot.hu",
+      "blogspot.ie",
+      "blogspot.in",
+      "blogspot.is",
+      "blogspot.it",
+      "blogspot.jp",
+      "blogspot.kr",
+      "blogspot.li",
+      "blogspot.lt",
+      "blogspot.lu",
+      "blogspot.md",
+      "blogspot.mk",
+      "blogspot.mx",
+      "blogspot.my",
+      "blogspot.nl",
+      "blogspot.no",
+      "blogspot.pe",
+      "blogspot.pt",
+      "blogspot.qa",
+      "blogspot.re",
+      "blogspot.ro",
+      "blogspot.rs",
+      "blogspot.ru",
+      "blogspot.se",
+      "blogspot.sg",
+      "blogspot.si",
+      "blogspot.sk",
+      "blogspot.sn",
+      "blogspot.tw",
+      "blogspot.ug",
+      "blogspot.vn"
     ],
     "public": true,
     "remark": "Blogger — Google account required; *.<blog>.blogspot.com plus ~60 ccTLD mirrors",
@@ -1858,6 +2029,17 @@
     "updates": "static",
     "url": "https://boxfuse.com/"
   },
+  "boxmode.io": {
+    "hosts": [
+      "boxmode.io"
+    ],
+    "public": true,
+    "remark": "Boxmode free site-builder subdomains.",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://boxmode.io/"
+  },
   "bplaced.net": {
     "hosts": [
       "bplaced.com",
@@ -1881,6 +2063,17 @@
     "updates": "static",
     "url": "https://www.bplaced.net"
   },
+  "branch.io": {
+    "hosts": [
+      "app.link"
+    ],
+    "public": true,
+    "remark": "Branch deep-link subdomains (x.app.link).",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://branch.io/"
+  },
   "brave.com": {
     "hosts": [
       "brave.app",
@@ -1896,6 +2089,17 @@
     "type": "reserved",
     "updates": "static",
     "url": "https://brave.com/"
+  },
+  "bravenet.com": {
+    "hosts": [
+      "bravenet.com"
+    ],
+    "public": true,
+    "remark": "Bravenet classic free hosting/subdomains.",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://bravenet.com/"
   },
   "brendly.rs": {
     "hosts": [
@@ -1939,6 +2143,17 @@
     "status": "active",
     "updates": "static",
     "url": "https://bubble.io/"
+  },
+  "bunny.net": {
+    "hosts": [
+      "b-cdn.net"
+    ],
+    "public": true,
+    "remark": "BunnyCDN pull-zone hostnames (zone.b-cdn.net).",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://bunny.net/"
   },
   "bwcloud-os.de": {
     "hosts": [
@@ -2018,6 +2233,17 @@
     "type": "free",
     "updates": "dynamic",
     "url": "https://www.bytecamp.net/"
+  },
+  "cabanova.com": {
+    "hosts": [
+      "cabanova.com"
+    ],
+    "public": true,
+    "remark": "Cabanova site-builder subdomains.",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://cabanova.com/"
   },
   "cafjs.com": {
     "hosts": [
@@ -2357,6 +2583,28 @@
     "status": "active",
     "updates": "static",
     "url": "https://clever-cloud.com/"
+  },
+  "clickfunnels.com": {
+    "hosts": [
+      "myclickfunnels.com"
+    ],
+    "public": true,
+    "remark": "ClickFunnels funnel subdomains.",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://clickfunnels.com/"
+  },
+  "clickip.de": {
+    "hosts": [
+      "clickip.de"
+    ],
+    "public": true,
+    "remark": "ClickIP German dynamic DNS service.",
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "https://clickip.de/"
   },
   "clickrising.com": {
     "hosts": [
@@ -3176,6 +3424,7 @@
     "hosts": [
       "caffeine.site",
       "caffeine.xyz",
+      "ic0.app",
       "icp.net",
       "icp0.io",
       "icp1.io",
@@ -3186,6 +3435,7 @@
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Dfinity Foundation.",
     "status": "active",
+    "type": "free",
     "updates": "static",
     "url": "https://dfinity.org/"
   },
@@ -3572,6 +3822,17 @@
     ],
     "updates": "dynamic",
     "url": "https://dnsmadeeasy.com"
+  },
+  "dnsmax.com": {
+    "hosts": [
+      "dnsmax.com"
+    ],
+    "public": true,
+    "remark": "DNS Max dynamic DNS services (thatip.com hostname domain).",
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "https://www.dnsmax.org/"
   },
   "dnsomatic.com": {
     "api": true,
@@ -4589,6 +4850,17 @@
     "updates": "static",
     "url": "https://easywp.com/"
   },
+  "edgeone.app": {
+    "hosts": [
+      "edgeone.app"
+    ],
+    "public": true,
+    "remark": "Tencent EdgeOne Pages subdomains.",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://edgeone.app/"
+  },
   "elefunc.com": {
     "hosts": [
       "rt.ht"
@@ -5169,6 +5441,17 @@
     "updates": "static",
     "url": "https://files.com/"
   },
+  "finance.blog": {
+    "hosts": [
+      "finance.blog"
+    ],
+    "public": true,
+    "remark": "finance.blog public subdomain sharing.",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://finance.blog/"
+  },
   "firebaseapp.com": {
     "api": true,
     "hosts": [
@@ -5191,6 +5474,17 @@
     "updates": "static",
     "url": "https://flashdrive.io/"
   },
+  "flazio.com": {
+    "hosts": [
+      "flazio.com"
+    ],
+    "public": true,
+    "remark": "Flazio site-builder subdomains.",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://flazio.com/"
+  },
   "fleek.xyz": {
     "hosts": [
       "on-fleek.app"
@@ -5200,6 +5494,17 @@
     "status": "active",
     "updates": "static",
     "url": "https://fleek.xyz/"
+  },
+  "flow.page": {
+    "hosts": [
+      "flow.page"
+    ],
+    "public": true,
+    "remark": "Flowcode mobile landing-page subdomains.",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://flow.page/"
   },
   "flutterflow.io": {
     "hosts": [
@@ -5221,6 +5526,28 @@
     "status": "active",
     "updates": "static",
     "url": "https://fly.io/"
+  },
+  "fo.team": {
+    "hosts": [
+      "fo.team"
+    ],
+    "public": true,
+    "remark": "Fo.Team site-builder subdomains.",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://fo.team/"
+  },
+  "formstack.com": {
+    "hosts": [
+      "formstack.com"
+    ],
+    "public": true,
+    "remark": "Formstack form/page subdomains.",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://formstack.com/"
   },
   "fortiddns.com": {
     "hosts": [
@@ -6004,6 +6331,17 @@
     "updates": "static",
     "url": "https://www.freenom.com"
   },
+  "freewebhostingarea.com": {
+    "hosts": [
+      "freewebhostingarea.com"
+    ],
+    "public": true,
+    "remark": "Free Web Hosting Area (FreeWHA) - apex of the free-hosting network.",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://freewebhostingarea.com/"
+  },
   "frii.site": {
     "hosts": [
       "frii.site"
@@ -6298,7 +6636,10 @@
   "glitch.me": {
     "api": true,
     "hosts": [
-      "glitch.me"
+      "glitch.com",
+      "glitch.me",
+      "gomix.com",
+      "gomix.me"
     ],
     "public": true,
     "remark": "Glitch — *.<project>.glitch.me",
@@ -6382,6 +6723,7 @@
     "hosts": [
       "0emm.com",
       "ai.studio",
+      "business.site",
       "cloud.goog",
       "cloud.run",
       "cloudfunctions.net",
@@ -6391,6 +6733,7 @@
       "googlecode.com",
       "hosted.app",
       "mtls.run.app",
+      "page.link",
       "pagespeedmobilizer.com",
       "r.appspot.com",
       "run.app",
@@ -6674,7 +7017,9 @@
   },
   "he.net": {
     "api": true,
-    "hosts": [],
+    "hosts": [
+      "tunnelbroker.net"
+    ],
     "ns_suffixes": [
       "he.net"
     ],
@@ -7018,6 +7363,17 @@
     "updates": "static",
     "url": "https://icilalune.com/"
   },
+  "ieserver.net": {
+    "hosts": [
+      "ieserver.net"
+    ],
+    "public": true,
+    "remark": "Long-running Japanese free dynamic DNS service.",
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "http://ieserver.net/"
+  },
   "iki.fi": {
     "hosts": [
       "iki.fi"
@@ -7143,6 +7499,17 @@
     ],
     "updates": "dynamic",
     "url": "https://infomaniak.com"
+  },
+  "ing.ng": {
+    "hosts": [
+      "ing.ng"
+    ],
+    "public": true,
+    "remark": "ing.ng internet-identity subdomains.",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://ing.ng/"
   },
   "interlegis.leg.br": {
     "hosts": [
@@ -7281,11 +7648,13 @@
     "hosts": [
       "dweb.link",
       "inbrowser.dev",
-      "inbrowser.link"
+      "inbrowser.link",
+      "ipfs.io"
     ],
     "public": true,
     "remark": "PSL-listed public suffix(es); operator IPFS Project.",
     "status": "active",
+    "type": "free",
     "updates": "static",
     "url": "https://ipfs.tech/"
   },
@@ -7783,6 +8152,17 @@
     "updates": "static",
     "url": "https://king.host/"
   },
+  "kinsta.com": {
+    "hosts": [
+      "kinsta.cloud"
+    ],
+    "public": true,
+    "remark": "Kinsta (MyKinsta) hosting subdomains.",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://kinsta.com/"
+  },
   "knightpoint.com": {
     "hosts": [
       "knightpoint.systems"
@@ -8009,6 +8389,7 @@
     "hosts": [
       "ip.linodeusercontent.com",
       "linodeobjects.com",
+      "linodeusercontent.com",
       "members.linode.com",
       "nodebalancer.linode.com"
     ],
@@ -8131,6 +8512,17 @@
     "status": "active",
     "updates": "static",
     "url": "https://lohmus.me/"
+  },
+  "loophole.site": {
+    "hosts": [
+      "loophole.site"
+    ],
+    "public": true,
+    "remark": "Loophole tunnel hostnames (*.loophole.site).",
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "https://loophole.site/"
   },
   "loopia.se": {
     "api": true,
@@ -8475,6 +8867,7 @@
   "microsoft.com": {
     "hosts": [
       "1.azurestaticapps.net",
+      "1drv.com",
       "2.azurestaticapps.net",
       "3.azurestaticapps.net",
       "4.azurestaticapps.net",
@@ -8489,6 +8882,7 @@
       "azure-api.net",
       "azure-api.us",
       "azure-mobile.net",
+      "azure.com",
       "azurecontainer.io",
       "azureedge.net",
       "azurefd.net",
@@ -8533,6 +8927,7 @@
       "jioindiawest-01.azurewebsites.net",
       "koreacentral-01.azurewebsites.net",
       "koreasouth-01.azurewebsites.net",
+      "live.com",
       "malaysiawest-01.azurewebsites.net",
       "mexicocentral-01.azurewebsites.net",
       "newzealandnorth-01.azurewebsites.net",
@@ -8544,9 +8939,11 @@
       "norwaywest-01.azurewebsites.net",
       "p.azurewebsites.net",
       "polandcentral-01.azurewebsites.net",
+      "powerappsportals.com",
       "qatarcentral-01.azurewebsites.net",
       "servicebus.usgovcloudapi.net",
       "servicebus.windows.net",
+      "sharepoint.com",
       "southafricanorth-01.azurewebsites.net",
       "southafricawest-01.azurewebsites.net",
       "southcentralus-01.azurewebsites.net",
@@ -8577,7 +8974,8 @@
       "westus-01.azurewebsites.net",
       "westus2-01.azurewebsites.net",
       "westus2.azurestaticapps.net",
-      "westus3-01.azurewebsites.net"
+      "westus3-01.azurewebsites.net",
+      "windows.net"
     ],
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Microsoft Corporation.",
@@ -8691,6 +9089,17 @@
     ],
     "updates": "dynamic",
     "url": "https://moniker.com"
+  },
+  "motocms.com": {
+    "hosts": [
+      "motocms.com"
+    ],
+    "public": true,
+    "remark": "MotoCMS site-builder subdomains.",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://motocms.com/"
   },
   "mozilla.org": {
     "hosts": [
@@ -8812,6 +9221,17 @@
     "updates": "static",
     "url": "https://myown.eu/"
   },
+  "myportfolio.com": {
+    "hosts": [
+      "myportfolio.com"
+    ],
+    "public": true,
+    "remark": "Adobe Portfolio site subdomains.",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://myportfolio.com/"
+  },
   "myserver.org": {
     "hosts": [
       "myserver.org"
@@ -8868,6 +9288,17 @@
     ],
     "updates": "dynamic",
     "url": "https://mythic-beasts.com"
+  },
+  "myxop.com": {
+    "hosts": [
+      "myxop.com"
+    ],
+    "public": true,
+    "remark": "MiXop Spanish free hosting subdomains.",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "http://www.myxop.com/"
   },
   "nabucasa.com": {
     "hosts": [
@@ -9053,6 +9484,18 @@
     "updates": "static",
     "url": "https://netatwork.de/"
   },
+  "netcraze.pro": {
+    "hosts": [
+      "crazedns.ru",
+      "netcraze.pro"
+    ],
+    "public": true,
+    "remark": "CrazeDNS dynamic DNS service.",
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "https://netcraze.pro/"
+  },
   "netcup.com": {
     "api": true,
     "hosts": [],
@@ -9107,11 +9550,13 @@
   },
   "nft.storage": {
     "hosts": [
-      "ipfs.nftstorage.link"
+      "ipfs.nftstorage.link",
+      "nftstorage.link"
     ],
     "public": true,
     "remark": "PSL-listed public suffix(es); operator NFT.Storage.",
     "status": "active",
+    "type": "free",
     "updates": "static",
     "url": "https://nft.storage/"
   },
@@ -9258,6 +9703,17 @@
     "type": "free",
     "updates": "static",
     "url": "https://nip.io"
+  },
+  "nitrado.hosting": {
+    "hosts": [
+      "nitrado.hosting"
+    ],
+    "public": true,
+    "remark": "Nitrado game-server hostnames.",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://server.nitrado.net/"
   },
   "njal.la": {
     "api": true,
@@ -9901,6 +10357,16 @@
     "type": "freemium",
     "updates": "static"
   },
+  "oortech.com": {
+    "hosts": [
+      "oortech.com"
+    ],
+    "public": true,
+    "remark": "Oort (AION) cloud service subdomains.",
+    "status": "active",
+    "updates": "static",
+    "url": "https://www.oortech.com/"
+  },
   "open-domains.net": {
     "api": true,
     "free_hostname_limit": 1,
@@ -10032,6 +10498,22 @@
     ],
     "updates": "dynamic",
     "url": "https://www.oray.com/"
+  },
+  "orgfree.com": {
+    "hosts": [
+      "6te.net",
+      "coolpage.biz",
+      "freeoda.com",
+      "noads.biz",
+      "orgfree.com",
+      "xp3.biz"
+    ],
+    "public": true,
+    "remark": "'Free Web Hosting Area' free hosting network; sites on free subdomains.",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://orgfree.com/"
   },
   "ossav.com": {
     "hosts": [
@@ -10383,6 +10865,28 @@
     "updates": "both",
     "url": "https://pfsdns.org"
   },
+  "phplist.com": {
+    "hosts": [
+      "phplist.com"
+    ],
+    "public": true,
+    "remark": "phpList hosted service subdomains.",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://www.phplist.com/"
+  },
+  "pinata.cloud": {
+    "hosts": [
+      "pinata.cloud"
+    ],
+    "public": true,
+    "remark": "Pinata IPFS gateway subdomains.",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://pinata.cloud/"
+  },
   "pingidentity.com": {
     "hosts": [
       "forgeblocks.com",
@@ -10659,6 +11163,17 @@
     "status": "active",
     "updates": "static",
     "url": "https://prgmr.com/"
+  },
+  "prohoster.biz": {
+    "hosts": [
+      "prohoster.biz"
+    ],
+    "public": true,
+    "remark": "ProHoster hosting; free technical subdomains.",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://prohoster.info/"
   },
   "project-study.com": {
     "hosts": [
@@ -11238,6 +11753,17 @@
     "updates": "static",
     "url": "https://ruhr-uni-bochum.de/"
   },
+  "runcloud.io": {
+    "hosts": [
+      "temp-site.link"
+    ],
+    "public": true,
+    "remark": "RunCloud temporary site subdomains (x.temp-site.link).",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://runcloud.io/"
+  },
   "rusnames.ru": {
     "hosts": [
       "xn--41a.xn--p1acf",
@@ -11453,6 +11979,7 @@
       "scbl.fr-par.scw.cloud",
       "scbl.nl-ams.scw.cloud",
       "scbl.pl-waw.scw.cloud",
+      "scw.cloud",
       "scw.site",
       "smartlabeling.scw.cloud",
       "waw.scw.site",
@@ -11568,6 +12095,17 @@
     "updates": "static",
     "url": "https://seidat.com/"
   },
+  "selectel.ru": {
+    "hosts": [
+      "selcdn.ru"
+    ],
+    "public": true,
+    "remark": "Selectel cloud-storage CDN subdomains (x.selcdn.ru).",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://selectel.ru/"
+  },
   "selfhost.de": {
     "api": true,
     "hosts": [
@@ -11619,6 +12157,17 @@
     "updates": "static",
     "url": "https://senseering.de/"
   },
+  "serv00.net": {
+    "hosts": [
+      "serv00.net"
+    ],
+    "public": true,
+    "remark": "serv00.com revolutionary free hosting; free subdomains.",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://serv00.com/"
+  },
   "servebolt.com": {
     "hosts": [
       "servebolt.cloud"
@@ -11663,6 +12212,17 @@
     ],
     "updates": "dynamic",
     "url": "https://servercow.de"
+  },
+  "sevalla.com": {
+    "hosts": [
+      "kinsta.page"
+    ],
+    "public": true,
+    "remark": "Sevalla (ex-Kinsta) app hostnames.",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://sevalla.com/"
   },
   "sheezy.art": {
     "hosts": [
@@ -11815,6 +12375,28 @@
     "status": "active",
     "updates": "static",
     "url": "https://sixone.one/"
+  },
+  "sixshop.com": {
+    "hosts": [
+      "sixshop.com"
+    ],
+    "public": true,
+    "remark": "Sixshop Korean shop-builder subdomains.",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://www.sixshop.com/"
+  },
+  "slyip.net": {
+    "hosts": [
+      "slyip.net"
+    ],
+    "public": true,
+    "remark": "SlyIP dynamic DNS hostname domain.",
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "https://slyip.net/"
   },
   "small-tech.org": {
     "hosts": [
@@ -12039,6 +12621,18 @@
     "type": "freemium",
     "updates": "static"
   },
+  "squarespace.com": {
+    "hosts": [
+      "bio.site",
+      "squarespace.com"
+    ],
+    "public": true,
+    "remark": "Squarespace sites + bio.site link-in-bio subdomains.",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://www.squarespace.com/"
+  },
   "srcf.net": {
     "hosts": [
       "soc.srcf.net",
@@ -12146,6 +12740,17 @@
     "updates": "static",
     "url": "https://staclar.com/"
   },
+  "start.page": {
+    "hosts": [
+      "start.page"
+    ],
+    "public": true,
+    "remark": "Buffer Start Page link-in-bio subdomains.",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://buffer.com/start-page"
+  },
   "statichost.eu": {
     "hosts": [
       "statichost.page"
@@ -12159,11 +12764,13 @@
   "storacha.network": {
     "hosts": [
       "ipfs.storacha.link",
-      "ipfs.w3s.link"
+      "ipfs.w3s.link",
+      "w3s.link"
     ],
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Storacha Network.",
     "status": "active",
+    "type": "freemium",
     "updates": "static",
     "url": "https://storacha.network/"
   },
@@ -12330,6 +12937,17 @@
     "updates": "dynamic",
     "url": "https://www.synology.com/"
   },
+  "systeme.io": {
+    "hosts": [
+      "systeme.io"
+    ],
+    "public": true,
+    "remark": "Systeme.io funnel/site subdomains.",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://systeme.io/"
+  },
   "tabit.cloud": {
     "hosts": [
       "mytabit.co.il",
@@ -12418,6 +13036,17 @@
     "status": "active",
     "updates": "static",
     "url": "https://tche.br/"
+  },
+  "teachable.com": {
+    "hosts": [
+      "teachable.com"
+    ],
+    "public": true,
+    "remark": "Teachable school subdomains.",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://teachable.com/"
   },
   "team.blue": {
     "hosts": [
@@ -12541,6 +13170,19 @@
     "status": "active",
     "updates": "static",
     "url": "https://tigrisdata.com/"
+  },
+  "timeweb.ru": {
+    "hosts": [
+      "tmweb.ru",
+      "tw1.ru",
+      "tweb.ru"
+    ],
+    "public": true,
+    "remark": "Timeweb hosting technical/test domains (site.tmweb.ru, *.tw1.ru).",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://timeweb.com/"
   },
   "tlon.io": {
     "hosts": [
@@ -12839,6 +13481,42 @@
     "updates": "static",
     "url": "https://udr.org.yt/"
   },
+  "ueuo.com": {
+    "hosts": [
+      "eu5.org",
+      "freetzi.com",
+      "freevar.com",
+      "ueuo.com"
+    ],
+    "public": true,
+    "remark": "'Free Web Hosting Area' free hosting network (separate cluster from orgfree).",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://ueuo.com/"
+  },
+  "ugu.pl": {
+    "hosts": [
+      "ugu.pl"
+    ],
+    "public": true,
+    "remark": "UGU.PL Polish free hosting (WWW, PHP, MySQL) with free subdomains.",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://ugu.pl/"
+  },
+  "ukit.me": {
+    "hosts": [
+      "ukit.me"
+    ],
+    "public": true,
+    "remark": "uKit site-builder subdomains.",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://ukit.com/"
+  },
   "umso.com": {
     "hosts": [
       "umso.co"
@@ -12848,6 +13526,17 @@
     "status": "active",
     "updates": "static",
     "url": "https://umso.com/"
+  },
+  "unbounce.com": {
+    "hosts": [
+      "ubpages.com"
+    ],
+    "public": true,
+    "remark": "Unbounce landing-page subdomains (x.ubpages.com).",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://unbounce.com/"
   },
   "uni.me": {
     "hosts": [
@@ -13054,6 +13743,18 @@
     "updates": "dynamic",
     "url": "https://variomedia.de"
   },
+  "venez.fr": {
+    "hosts": [
+      "venez.fr",
+      "venez.net"
+    ],
+    "public": true,
+    "remark": "Venez.fr classic French free URL redirection/subdomain service.",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://www.venez.fr/"
+  },
   "vercel.app": {
     "api": true,
     "hosts": [
@@ -13177,6 +13878,17 @@
     "updates": "static",
     "url": "https://vultr.com/"
   },
+  "w3spaces.com": {
+    "hosts": [
+      "w3spaces.com"
+    ],
+    "public": true,
+    "remark": "W3Schools Spaces free site subdomains.",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://www.w3schools.com/spaces/"
+  },
   "walrus.xyz": {
     "hosts": [
       "wal.app"
@@ -13264,6 +13976,18 @@
     "updates": "static",
     "url": "https://webhotelier.net/"
   },
+  "webnode.com": {
+    "hosts": [
+      "webnode.com",
+      "webnode.es"
+    ],
+    "public": true,
+    "remark": "Webnode site-builder subdomains.",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://www.webnode.com/"
+  },
   "webnode.page": {
     "api": true,
     "hosts": [
@@ -13292,6 +14016,17 @@
     "updates": "static",
     "url": "https://webpros.com/"
   },
+  "webstarts.com": {
+    "hosts": [
+      "webstarts.com"
+    ],
+    "public": true,
+    "remark": "WebStarts free site subdomains.",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://www.webstarts.com/"
+  },
   "webwaddle.com": {
     "hosts": [
       "wadl.top"
@@ -13301,6 +14036,28 @@
     "status": "active",
     "updates": "static",
     "url": "https://webwaddle.com/"
+  },
+  "webwave.dev": {
+    "hosts": [
+      "webwave.dev"
+    ],
+    "public": true,
+    "remark": "WebWave site-builder subdomains.",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://webwave.me/"
+  },
+  "webydo.com": {
+    "hosts": [
+      "webydo.com"
+    ],
+    "public": true,
+    "remark": "Webydo site-builder subdomains.",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://www.webydo.com/"
   },
   "weebly.com": {
     "api": true,
@@ -13313,6 +14070,17 @@
     "status": "active",
     "type": "freemium",
     "updates": "static"
+  },
+  "weeblysite.com": {
+    "hosts": [
+      "weeblysite.com"
+    ],
+    "public": true,
+    "remark": "Weebly/Square free site subdomains.",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://www.weebly.com/"
   },
   "wharrison.com.au": {
     "hosts": [
@@ -13345,6 +14113,17 @@
     "status": "active",
     "updates": "static",
     "url": "https://whats-th.is/"
+  },
+  "whi.ir": {
+    "hosts": [
+      "whi.ir"
+    ],
+    "public": true,
+    "remark": "Iranian free web-hosting service (Web Hosting Iran).",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://whi.ir/"
   },
   "wiardweb.com": {
     "hosts": [
@@ -13421,6 +14200,9 @@
       "base44-sandbox.com",
       "base44.app",
       "editorx.io",
+      "filesusr.com",
+      "htmlcomponentservice.com",
+      "usrfiles.com",
       "wix.run",
       "wixstudio.com",
       "wixstudio.io"
@@ -13682,6 +14464,17 @@
     "updates": "both",
     "url": "http://www.yi.org"
   },
+  "yo.fr": {
+    "hosts": [
+      "yo.fr"
+    ],
+    "public": true,
+    "remark": "PlanetHoster 'World' free-hosting subdomains (x.yo.fr).",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://yo.fr/"
+  },
   "yolasite.com": {
     "api": true,
     "hosts": [
@@ -13846,6 +14639,17 @@
     ],
     "updates": "both",
     "url": "https://zoneedit.com/"
+  },
+  "zyrosite.com": {
+    "hosts": [
+      "zyrosite.com"
+    ],
+    "public": true,
+    "remark": "Zyro (Hostinger) free site subdomains.",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://zyro.com/"
   },
   "zzz.com.ua": {
     "hosts": [
