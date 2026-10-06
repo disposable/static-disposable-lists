@@ -30,17 +30,20 @@ jobs:
       - name: Prepare site
         run: |
           mkdir -p _site
-          # Copy the main site file to root
+          # Copy the main site files to root
           cp docs/index.html _site/
-          # Copy JSON files to root (adjust paths in index.html to remove ../)
+          cp docs/dns.html _site/
+          # Copy JSON files to root (adjust paths in html files to remove ../)
           cp mailservices.json _site/
           cp disposable-mail-hosts.json _site/
+          cp dnsservices.json _site/
 
-      - name: Fix paths in index.html
+      - name: Fix paths in html files
         run: |
-          # Change ../mailservices.json to mailservices.json
+          # Change ../<file>.json to <file>.json
           sed -i 's|\.\./mailservices\.json|mailservices.json|g' _site/index.html
           sed -i 's|\.\./disposable-mail-hosts\.json|disposable-mail-hosts.json|g' _site/index.html
+          sed -i 's|\.\./dnsservices\.json|dnsservices.json|g' _site/dns.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5

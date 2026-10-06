@@ -1,0 +1,137 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://disposable.github.io/static-disposable-lists/schemas/dnsservices.schema.json",
+  "type": "object",
+  "description": "Dynamic DNS / hostname provider definitions with domain and verification metadata",
+  "patternProperties": {
+    "^[^:]+$": {
+      "type": "object",
+      "description": "Dynamic DNS service provider",
+      "properties": {
+        "hosts": {
+          "type": "array",
+          "description": "Domains under which the provider hands out hostnames/subdomains. Empty for providers that only host customer-owned domains (own_domains).",
+          "items": {
+            "type": "string",
+            "format": "hostname"
+          }
+        },
+        "old_hosts": {
+          "type": "array",
+          "description": "Retired/discontinued domains formerly offered by this provider",
+          "items": {
+            "type": "string",
+            "format": "hostname"
+          }
+        },
+        "ns_hosts": {
+          "type": "array",
+          "description": "Nameserver hostnames operated by the provider (attribution fingerprint)",
+          "items": {
+            "type": "string",
+            "format": "hostname"
+          }
+        },
+        "ns_suffixes": {
+          "type": "array",
+          "description": "Domain suffixes matching provider nameserver hostnames (e.g. 'afraid.org' matches 'ns1.afraid.org')",
+          "items": {
+            "type": "string",
+            "format": "hostname"
+          }
+        },
+        "url": {
+          "type": "string",
+          "description": "Provider homepage or service URL",
+          "format": "uri"
+        },
+        "status": {
+          "type": "string",
+          "description": "Service lifecycle status: active = open registrations; restricted = signup gated (device ownership, invite-only, manual approval); no_new_registrations = existing hostnames resolve but new ones cannot be created; discontinued = service shut down",
+          "enum": ["active", "restricted", "no_new_registrations", "discontinued"]
+        },
+        "type": {
+          "type": "string",
+          "description": "Pricing classification: free/paid/freemium providers, reserved = special-use domains",
+          "enum": ["free", "paid", "freemium", "reserved"]
+        },
+        "updates": {
+          "type": "string",
+          "description": "dynamic = supports DDNS update clients; static = records editable but no update protocol; both = dynamic updates plus full static record editing",
+          "enum": ["dynamic", "static", "both"]
+        },
+        "api": {
+          "type": "boolean",
+          "description": "Whether a programmatic HTTP/DNS API exists for record management or updates"
+        },
+        "update_protocols": {
+          "type": "array",
+          "description": "Supported update protocols: dyndns2 = Dyn-compatible nic/update endpoint; http = custom HTTP(S) API; rfc2136 = DNS UPDATE (nsupdate/TSIG); acme-dns01 = ACME DNS-01 challenge support",
+          "items": {
+            "type": "string",
+            "enum": ["dyndns2", "http", "rfc2136", "acme-dns01"]
+          }
+        },
+        "record_types": {
+          "type": "array",
+          "description": "DNS record types users may set on their hostnames",
+          "items": {
+            "type": "string",
+            "enum": ["A", "AAAA", "CNAME", "MX", "TXT", "NS", "SRV", "CAA", "PTR"]
+          }
+        },
+        "own_domains": {
+          "type": "boolean",
+          "description": "Whether users may bring/delegate their own domains (hosts is then non-exhaustive)"
+        },
+        "shared_registry": {
+          "type": "boolean",
+          "description": "Whether the provider runs a community-shared domain registry (hosts is a fluid snapshot)"
+        },
+        "public": {
+          "type": "boolean",
+          "description": "Whether hostnames can be registered publicly on the provider website. false = registration only via vendor hardware/interface, customer-only, or invite-only."
+        },
+        "free_hostname_limit": {
+          "type": "integer",
+          "description": "Maximum hostnames per free account",
+          "minimum": 1
+        },
+        "revalidation_days": {
+          "type": "integer",
+          "description": "Interval in days at which free hostnames/accounts must be manually re-confirmed (e.g. 30 for No-IP); absent = none required",
+          "minimum": 1
+        },
+        "expire_days": {
+          "type": "integer",
+          "description": "Days without an update after which a hostname is automatically purged (distinct from revalidation_days which requires manual confirmation)",
+          "minimum": 1
+        },
+        "signup_verification": {
+          "oneOf": [
+            {
+              "type": "string",
+              "description": "Verification method required during account creation",
+              "enum": ["none", "email", "mobile", "payment", "other", "phone", "sms"]
+            },
+            {
+              "type": "array",
+              "description": "Verification methods required during account creation",
+              "items": {
+                "type": "string",
+                "enum": ["none", "email", "mobile", "payment", "other", "phone", "sms"]
+              }
+            }
+          ]
+        },
+        "remark": {
+          "type": "string",
+          "description": "Additional notes about the provider"
+        }
+      },
+      "required": ["hosts"],
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

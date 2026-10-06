@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Disposable Lists - Mail Services Database</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📧</text></svg>">
+    <title>Static Disposable Lists - DNS Services Database</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>">
     <style>
         :root {
             --bg-color: #f6f8fa;
@@ -189,7 +189,7 @@
             background: #fff8c5;
             color: var(--warning-color);
         }
-        .badge-forwarding {
+        .badge-freemium {
             background: var(--accent-light);
             color: var(--accent-color);
         }
@@ -197,7 +197,32 @@
             background: #f6f8fa;
             color: var(--text-secondary);
         }
+        .badge-status-active {
+            background: #dafbe1;
+            color: var(--success-color);
+        }
+        .badge-status-restricted {
+            background: #fff8c5;
+            color: var(--warning-color);
+        }
+        .badge-status-no_new_registrations {
+            background: var(--accent-light);
+            color: var(--accent-color);
+        }
+        .badge-status-discontinued,
         .badge-discontinued {
+            background: #ffebe9;
+            color: var(--danger-color);
+        }
+        .badge-yes {
+            background: #dafbe1;
+            color: var(--success-color);
+        }
+        .badge-no {
+            background: #f6f8fa;
+            color: var(--text-secondary);
+        }
+        .badge-private {
             background: #ffebe9;
             color: var(--danger-color);
         }
@@ -205,20 +230,9 @@
             background: #f6f8fa;
             color: var(--text-secondary);
         }
-        .badge-tier-whitelist {
-            background: #dafbe1;
-            color: var(--success-color);
-        }
-        .badge-tier-strict {
-            background: #fff8c5;
-            color: var(--warning-color);
-        }
-        .badge-tier-excluded {
-            background: #ffebe9;
-            color: var(--danger-color);
-        }
         [data-theme="dark"] .badge-unknown,
-        [data-theme="dark"] .badge-reserved {
+        [data-theme="dark"] .badge-reserved,
+        [data-theme="dark"] .badge-no {
             background: #21262d;
         }
         .theme-toggle {
@@ -272,11 +286,11 @@
             color: white;
             border-color: var(--accent-color);
         }
-        .hosts-list, .mx-list {
+        .hosts-list {
             max-width: 220px;
             font-size: 0.85rem;
         }
-        .hosts-list .host, .mx-list .host {
+        .hosts-list .host {
             display: inline-block;
             background: var(--bg-color);
             padding: 2px 6px;
@@ -291,9 +305,6 @@
             gap: 4px;
         }
         .hosts-collapsible.collapsed .host:nth-child(n+11) {
-            display: none;
-        }
-        .hosts-collapsible[data-limit="4"].collapsed .host:nth-child(n+5) {
             display: none;
         }
         .hosts-toggle {
@@ -316,19 +327,8 @@
             font-size: 0.85rem;
             overflow-wrap: anywhere;
         }
-        .verification-list {
+        .tag-list {
             font-size: 0.85rem;
-        }
-        .ip-list, .mx-list {
-            font-family: monospace;
-            font-size: 0.8rem;
-            color: var(--text-secondary);
-            overflow-wrap: anywhere;
-        }
-        .service-row .mx-list {
-            font-family: inherit;
-            font-size: 0.85rem;
-            color: inherit;
         }
         .tab-container {
             display: flex;
@@ -400,7 +400,7 @@
             th, td {
                 padding: 8px 12px;
             }
-            .hosts-list, .mx-list, .remark {
+            .hosts-list, .remark {
                 max-width: 150px;
             }
         }
@@ -418,9 +418,9 @@
         <div class="container">
             <div style="display: flex; justify-content: space-between; align-items: flex-start;">
                 <div>
-                    <h1>📧 Static Disposable Lists</h1>
-                    <p>A comprehensive database of email services and disposable mail hosts</p>
-                    <p><a class="nav-link" href="dns.html">DNS Services →</a></p>
+                    <h1>🌐 Static Disposable Lists — DNS Services</h1>
+                    <p>A catalog of dynamic DNS and free hostname providers</p>
+                    <p><a class="nav-link" href="index.html">← Mail Services</a></p>
                 </div>
                 <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
                     🌙
@@ -440,60 +440,65 @@
 
             <div class="section">
                 <div class="tab-container">
-                    <div class="tab active" data-tab="mail-services">Mail Services</div>
-                    <div class="tab" data-tab="disposable">Disposable Hosts</div>
-                    <div class="tab" data-tab="old-hosts">Old Hosts</div>
+                    <div class="tab active" data-tab="dns-services">DNS Services</div>
+                    <div class="tab" data-tab="old-hosts">Old Domains</div>
                 </div>
 
-                <div id="mail-services" class="tab-content active">
+                <div id="dns-services" class="tab-content active">
                     <div class="search-box">
-                        <input type="text" id="mailSearch" placeholder="Search mail services...">
+                        <input type="text" id="dnsSearch" placeholder="Search providers or domains...">
                     </div>
                     <div class="filter-bar">
+                        <div class="filter-group">
+                            <label>Status:</label>
+                            <button class="filter-btn active" data-filter="status" data-value="all">All</button>
+                            <button class="filter-btn" data-filter="status" data-value="active">Active</button>
+                            <button class="filter-btn" data-filter="status" data-value="restricted">Restricted</button>
+                            <button class="filter-btn" data-filter="status" data-value="no_new_registrations">No New Reg.</button>
+                            <button class="filter-btn" data-filter="status" data-value="discontinued">Discontinued</button>
+                        </div>
                         <div class="filter-group">
                             <label>Type:</label>
                             <button class="filter-btn active" data-filter="type" data-value="all">All</button>
                             <button class="filter-btn" data-filter="type" data-value="free">Free</button>
+                            <button class="filter-btn" data-filter="type" data-value="freemium">Freemium</button>
                             <button class="filter-btn" data-filter="type" data-value="paid">Paid</button>
-                            <button class="filter-btn" data-filter="type" data-value="forwarding">Forwarding</button>
                             <button class="filter-btn" data-filter="type" data-value="reserved">Reserved</button>
-                            <button class="filter-btn" data-filter="type" data-value="discontinued">Discontinued</button>
                         </div>
                         <div class="filter-group">
-                            <label>Verification:</label>
-                            <button class="filter-btn active" data-filter="verify" data-value="all">All</button>
-                            <button class="filter-btn" data-filter="verify" data-value="none">None</button>
-                            <button class="filter-btn" data-filter="verify" data-value="mobile">Mobile</button>
-                            <button class="filter-btn" data-filter="verify" data-value="email">Email</button>
-                            <button class="filter-btn" data-filter="verify" data-value="payment">Payment</button>
-                            <button class="filter-btn" data-filter="verify" data-value="other">Other</button>
-                            <button class="filter-btn" data-filter="verify" data-value="unset">Unset</button>
+                            <label>Updates:</label>
+                            <button class="filter-btn active" data-filter="updates" data-value="all">All</button>
+                            <button class="filter-btn" data-filter="updates" data-value="dynamic">Dynamic</button>
+                            <button class="filter-btn" data-filter="updates" data-value="static">Static</button>
+                            <button class="filter-btn" data-filter="updates" data-value="both">Both</button>
                         </div>
                         <div class="filter-group">
-                            <label>Tier:</label>
-                            <button class="filter-btn active" data-filter="tier" data-value="all">All</button>
-                            <button class="filter-btn" data-filter="tier" data-value="whitelist">Whitelist</button>
-                            <button class="filter-btn" data-filter="tier" data-value="strict">Strict</button>
-                            <button class="filter-btn" data-filter="tier" data-value="excluded">Excluded</button>
+                            <label>API:</label>
+                            <button class="filter-btn active" data-filter="api" data-value="all">All</button>
+                            <button class="filter-btn" data-filter="api" data-value="yes">Yes</button>
+                            <button class="filter-btn" data-filter="api" data-value="no">No</button>
+                        </div>
+                        <div class="filter-group">
+                            <label>Access:</label>
+                            <button class="filter-btn active" data-filter="access" data-value="all">All</button>
+                            <button class="filter-btn" data-filter="access" data-value="public">Public</button>
+                            <button class="filter-btn" data-filter="access" data-value="private">Private</button>
+                        </div>
+                        <div class="filter-group">
+                            <label>Revalidation:</label>
+                            <button class="filter-btn active" data-filter="reval" data-value="all">All</button>
+                            <button class="filter-btn" data-filter="reval" data-value="required">Required</button>
+                            <button class="filter-btn" data-filter="reval" data-value="none">None</button>
                         </div>
                     </div>
-                    <div id="mail-services-content">
-                        <!-- Populated by JS -->
-                    </div>
-                </div>
-
-                <div id="disposable" class="tab-content">
-                    <div class="search-box">
-                        <input type="text" id="disposableSearch" placeholder="Search disposable hosts...">
-                    </div>
-                    <div id="disposable-content">
+                    <div id="dns-services-content">
                         <!-- Populated by JS -->
                     </div>
                 </div>
 
                 <div id="old-hosts" class="tab-content">
                     <div class="search-box">
-                        <input type="text" id="oldSearch" placeholder="Search old hosts...">
+                        <input type="text" id="oldSearch" placeholder="Search old domains...">
                     </div>
                     <div id="old-hosts-content">
                         <!-- Populated by JS -->
@@ -505,7 +510,7 @@
 
     <footer>
         <div class="container">
-            <p>Data sourced from <a href="https://github.com/disposable/static-disposable-lists">static-disposable-lists</a></p>
+            <p>Data sourced from <a href="https://github.com/disposable/static-disposable-lists">static-disposable-lists</a> — dnsservices.json</p>
             <p id="last-updated"></p>
         </div>
     </footer>
@@ -533,58 +538,56 @@
 
         initTheme();
 
-        let currentFilters = { type: 'all', verify: 'all', tier: 'all' };
+        let currentFilters = { status: 'all', type: 'all', updates: 'all', api: 'all', access: 'all', reval: 'all' };
         let currentSearch = '';
         let sortState = { column: null, asc: true };
 
         const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
-        const ANON_VERIFICATIONS = ['none', 'email'];
+        const STATUS_LABELS = {
+            active: 'active',
+            restricted: 'restricted',
+            no_new_registrations: 'no new reg.',
+            discontinued: 'discontinued'
+        };
 
         function verificationSet(service) {
             const sv = service.signup_verification;
             return Array.isArray(sv) ? sv : (sv ? [sv] : []);
         }
 
-        // Tier derivation - mirrors disposable's mailservices preprocessing:
-        // forwarding is always strict-tier; free/paid with anonymous signup
-        // ('none'/'email') is strict-tier; discontinued feeds neither tier.
-        function tierOf(service) {
-            if (service.discontinued) return 'excluded';
-            const type = service.type;
-            const verifications = verificationSet(service);
-            if (type === 'forwarding' ||
-                ((type === 'free' || type === 'paid') && verifications.some(v => ANON_VERIFICATIONS.includes(v)))) {
-                return 'strict';
-            }
-            if (type === 'free' || type === 'paid' || type === 'reserved') return 'whitelist';
-            return 'unknown';
+        function statusOf(service) {
+            return service.status || (service.discontinued ? 'discontinued' : 'active');
         }
 
         function applyFilters() {
             const rows = document.querySelectorAll('.service-row');
             let visible = 0;
             rows.forEach(row => {
+                const status = row.dataset.status;
                 const type = row.dataset.type;
-                const verifyList = row.dataset.verify;
-                const discontinued = row.dataset.discontinued === 'true';
-                const tier = row.dataset.tier;
+                const updates = row.dataset.updates;
+                const api = row.dataset.api;
+                const access = row.dataset.access;
+                const reval = row.dataset.reval;
 
-                const typeMatch = currentFilters.type === 'all' ||
-                    (currentFilters.type === 'discontinued' ? discontinued : type === currentFilters.type);
-                const verifyMatch = currentFilters.verify === 'all' ||
-                    (currentFilters.verify === 'unset' ? verifyList === 'unset' : verifyList.split(',').includes(currentFilters.verify));
-                const tierMatch = currentFilters.tier === 'all' || tier === currentFilters.tier;
-                const searchMatch = !currentSearch ||
-                    row.dataset.name.includes(currentSearch) || row.dataset.hosts.includes(currentSearch);
+                const show =
+                    (currentFilters.status === 'all' || status === currentFilters.status) &&
+                    (currentFilters.type === 'all' || type === currentFilters.type) &&
+                    (currentFilters.updates === 'all' || updates === currentFilters.updates) &&
+                    (currentFilters.api === 'all' || api === currentFilters.api) &&
+                    (currentFilters.access === 'all' || access === currentFilters.access) &&
+                    (currentFilters.reval === 'all' ||
+                        (currentFilters.reval === 'required' ? reval === 'required' : reval === 'none')) &&
+                    (!currentSearch ||
+                        row.dataset.name.includes(currentSearch) || row.dataset.hosts.includes(currentSearch));
 
-                const show = typeMatch && verifyMatch && tierMatch && searchMatch;
                 row.style.display = show ? '' : 'none';
                 if (show) visible++;
             });
             document.querySelectorAll('.section-header .visible-count').forEach(el => el.remove());
-            const shown = document.querySelector('#mail-services-content .section-header h2');
-            if (shown && (currentSearch || currentFilters.type !== 'all' || currentFilters.verify !== 'all' || currentFilters.tier !== 'all')) {
+            const shown = document.querySelector('#dns-services-content .section-header h2');
+            if (shown && (currentSearch || Object.values(currentFilters).some(f => f !== 'all'))) {
                 const span = document.createElement('span');
                 span.className = 'count visible-count';
                 span.textContent = visible + ' shown';
@@ -635,27 +638,23 @@
 
         async function loadData() {
             try {
-                const [msResponse, dispResponse] = await Promise.all([
-                    fetch('../mailservices.json'),
-                    fetch('../disposable-mail-hosts.json')
-                ]);
-                const [mailservices, disposable] = await Promise.all([msResponse.json(), dispResponse.json()]);
+                const response = await fetch('../dnsservices.json');
+                const services = await response.json();
 
                 document.getElementById('loading').style.display = 'none';
                 document.getElementById('content').style.display = 'block';
 
-                renderStats(mailservices, disposable);
-                renderMailServices(mailservices);
-                renderDisposable(disposable);
-                renderOldHosts(mailservices);
+                renderStats(services);
+                renderServices(services);
+                renderOldHosts(services);
 
                 setupTabs();
-                setupSearch(mailservices, disposable);
+                setupSearch();
                 setupFilters();
                 restoreFromHash();
                 setupSorting();
 
-                const lastModified = msResponse.headers.get('Last-Modified');
+                const lastModified = response.headers.get('Last-Modified');
                 if (lastModified) {
                     document.getElementById('last-updated').textContent =
                         'Data last updated: ' + new Date(lastModified).toLocaleDateString();
@@ -673,7 +672,7 @@
             }
             const id = 'hosts-' + Math.random().toString(36).substr(2, 9);
             return `
-                <div class="hosts-collapsible collapsed" id="${id}" data-limit="${limit}">
+                <div class="hosts-collapsible collapsed" id="${id}">
                     ${hosts.map(h => `<span class="host">${esc(h)}</span>`).join('')}
                 </div>
                 <button class="hosts-toggle" onclick="toggleHosts('${id}', this)">
@@ -689,22 +688,29 @@
             btn.textContent = isCollapsed ? 'Show less' : `Show all ${container.querySelectorAll('.host').length}`;
         }
 
-        function renderStats(mailservices, disposable) {
+        function renderStats(services) {
             let totalDomains = 0;
-            let strictTier = 0;
+            let freeProviders = 0;
+            let publicProviders = 0;
+            let apiProviders = 0;
+            let revalProviders = 0;
             let discontinued = 0;
 
-            for (const data of Object.values(mailservices)) {
+            for (const data of Object.values(services)) {
                 totalDomains += (data.hosts || []).length;
-                if (data.discontinued) discontinued++;
-                else if (tierOf(data) === 'strict') strictTier += (data.hosts || []).length;
+                if (data.type === 'free') freeProviders++;
+                if (data.public !== false) publicProviders++;
+                if (data.api) apiProviders++;
+                if (data.revalidation_days) revalProviders++;
+                if (statusOf(data) === 'discontinued') discontinued++;
             }
 
             const stats = [
-                { number: Object.keys(mailservices).length, label: 'Mail Services' },
+                { number: Object.keys(services).length, label: 'DNS Providers' },
                 { number: totalDomains, label: 'Total Domains' },
-                { number: strictTier, label: 'Strict-Tier Domains' },
-                { number: Object.keys(disposable).length, label: 'Disposable Backends' },
+                { number: publicProviders, label: 'Public Signup' },
+                { number: apiProviders, label: 'With API' },
+                { number: revalProviders, label: 'Needs Revalidation' },
             ];
 
             if (discontinued > 0) {
@@ -719,155 +725,96 @@
             `).join('');
         }
 
-        const TIER_LABELS = {
-            whitelist: 'whitelisted',
-            strict: 'strict',
-            excluded: 'excluded',
-            unknown: 'unknown'
-        };
-
-        function renderMailServices(data) {
-            const byType = {};
-            for (const [name, service] of Object.entries(data)) {
-                const type = service.type || 'unknown';
-                if (!byType[type]) byType[type] = [];
-                byType[type].push({ name, ...service });
-            }
-
-            for (const type in byType) {
-                byType[type].sort((a, b) => a.name.localeCompare(b.name));
-            }
-
-            const emailServices = [...(byType['free'] || []), ...(byType['paid'] || [])];
-            emailServices.sort((a, b) => a.name.localeCompare(b.name));
-
-            const sections = [
-                { key: 'email', label: 'Email Services', items: emailServices },
-                { key: 'forwarding', label: 'Email Forwarding Services', items: byType['forwarding'] || [] },
-                { key: 'reserved', label: 'Reserved / Special-Use', items: byType['reserved'] || [] },
-                { key: 'unknown', label: 'Other Services', items: byType['unknown'] || [] }
-            ];
-
-            let html = '';
-            for (const section of sections) {
-                if (!section.items || section.items.length === 0) continue;
-
-                html += `
-                    <div class="section-header">
-                        <h2>
-                            ${section.label}
-                            <span class="count">${section.items.length}</span>
-                        </h2>
-                    </div>
-                    <div class="table-wrap">
-                    <table>
-                        <colgroup>
-                            <col style="width: 13%">
-                            <col style="width: 8%">
-                            <col style="width: 10%">
-                            <col style="width: 24%">
-                            <col style="width: 20%">
-                            <col style="width: 10%">
-                            <col style="width: 15%">
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th class="sortable" data-sort="Name">Service<span class="sort-arrow">▲</span></th>
-                                <th class="sortable" data-sort="Type">Type<span class="sort-arrow">▲</span></th>
-                                <th class="sortable" data-sort="Tier">Tier<span class="sort-arrow">▲</span></th>
-                                <th class="sortable" data-sort="Hosts" data-numeric="true">Domains<span class="sort-arrow">▲</span></th>
-                                <th class="sortable" data-sort="Mx" data-numeric="true">MX Hosts<span class="sort-arrow">▲</span></th>
-                                <th>Verification</th>
-                                <th>Notes</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            ${section.items.map(s => {
-                                const verifications = verificationSet(s);
-                                const tier = tierOf(s);
-                                return `
-                                <tr class="service-row"
-                                    data-name="${esc(s.name.toLowerCase())}"
-                                    data-hosts="${esc((s.hosts || []).join(' ').toLowerCase())}"
-                                    data-type="${esc(s.type || 'unknown')}"
-                                    data-verify="${esc(verifications.join(',') || 'unset')}"
-                                    data-tier="${tier}"
-                                    data-discontinued="${s.discontinued || false}"
-                                    data-sort-name="${esc(s.name.toLowerCase())}"
-                                    data-sort-type="${esc(s.type || 'unknown')}"
-                                    data-sort-tier="${tier}"
-                                    data-sort-hosts="${(s.hosts || []).length}"
-                                    data-sort-mx="${(s.mx_hosts || []).length}">
-                                    <td>
-                                        <strong>${esc(s.name)}</strong>
-                                        ${s.discontinued ? '<span class="badge badge-discontinued">discontinued</span>' : ''}
-                                    </td>
-                                    <td><span class="badge badge-${esc(s.type || 'unknown')}">${esc(s.type || 'unknown')}</span></td>
-                                    <td><span class="badge badge-tier-${tier}">${TIER_LABELS[tier]}</span></td>
-                                    <td class="hosts-list">
-                                        ${renderHostsCollapsible(s.hosts || [])}
-                                    </td>
-                                    <td class="mx-list">
-                                        ${s.mx_hosts && s.mx_hosts.length > 0 ? renderHostsCollapsible(s.mx_hosts, 4) : '-'}
-                                    </td>
-                                    <td class="verification-list">
-                                        ${verifications.length > 0 ? verifications.map(v => `<span class="badge badge-unknown">${esc(v)}</span>`).join(' ') : '<span class="badge badge-unknown">unset</span>'}
-                                    </td>
-                                    <td class="remark">${esc(s.remark || '')}</td>
-                                </tr>`;
-                            }).join('')}
-                        </tbody>
-                    </table>
-                    </div>
-                `;
-            }
-
-            document.getElementById('mail-services-content').innerHTML = html;
-        }
-
-        function renderDisposable(data) {
-            const sorted = Object.entries(data).sort((a, b) => a[0].localeCompare(b[0]));
+        function renderServices(data) {
+            const items = Object.entries(data)
+                .map(([name, service]) => ({ name, ...service }))
+                .sort((a, b) => a.name.localeCompare(b.name));
 
             const html = `
                 <div class="section-header">
                     <h2>
-                        Disposable Email Hosts
-                        <span class="count">${sorted.length}</span>
+                        DNS Service Providers
+                        <span class="count">${items.length}</span>
                     </h2>
                 </div>
                 <p class="empty-note">
-                    Backend fingerprints used to attribute disposable domains to a provider:
-                    exact MX hosts, MX hostname suffixes (wildcard), and resolved IPs / CIDR ranges.
+                    Dynamic DNS and free hostname providers.
+                    <strong>public</strong> = hostnames registerable on the website;
+                    <strong>private</strong> = registration only via vendor hardware/interface or gated access.
+                    Domains list shows the parent domains under which hostnames are issued.
                 </p>
                 <div class="table-wrap">
                 <table>
                     <colgroup>
+                        <col style="width: 14%">
+                        <col style="width: 9%">
+                        <col style="width: 8%">
+                        <col style="width: 8%">
+                        <col style="width: 6%">
+                        <col style="width: 8%">
+                        <col style="width: 9%">
                         <col style="width: 22%">
-                        <col style="width: 40%">
-                        <col style="width: 38%">
+                        <col style="width: 16%">
                     </colgroup>
                     <thead>
                         <tr>
-                            <th class="sortable" data-sort="Name">Host<span class="sort-arrow">▲</span></th>
-                            <th>IP Addresses / Ranges</th>
-                            <th>MX Hosts / Suffixes</th>
+                            <th class="sortable" data-sort="Name">Provider<span class="sort-arrow">▲</span></th>
+                            <th class="sortable" data-sort="Status">Status<span class="sort-arrow">▲</span></th>
+                            <th class="sortable" data-sort="Type">Type<span class="sort-arrow">▲</span></th>
+                            <th class="sortable" data-sort="Updates">Updates<span class="sort-arrow">▲</span></th>
+                            <th class="sortable" data-sort="Api">API<span class="sort-arrow">▲</span></th>
+                            <th class="sortable" data-sort="Access">Access<span class="sort-arrow">▲</span></th>
+                            <th class="sortable" data-sort="Reval">Revalid.<span class="sort-arrow">▲</span></th>
+                            <th class="sortable" data-sort="Hosts" data-numeric="true">Domains<span class="sort-arrow">▲</span></th>
+                            <th>Notes</th>
                         </tr>
                     </thead>
                     <tbody>
-                        ${sorted.map(([name, info]) => {
-                            const ips = [...(info.ip_addresses || []), ...(info.ip_ranges || [])];
-                            const mxes = [
-                                ...(info.mx_hosts || []),
-                                ...(info.mx_suffixes || []).map(s => '*.' + s)
-                            ];
+                        ${items.map(s => {
+                            const status = statusOf(s);
+                            const verifications = verificationSet(s);
+                            const reval = s.revalidation_days;
+                            const isPublic = s.public !== false;
+                            const apiYes = s.api === true;
+                            const extra = [];
+                            if (s.own_domains) extra.push('own domains');
+                            if (s.shared_registry) extra.push('shared registry');
+                            if (s.free_hostname_limit) extra.push('max ' + s.free_hostname_limit + ' hosts');
+                            if (s.expire_days) extra.push('expires after ' + s.expire_days + 'd idle');
+                            if (s.update_protocols && s.update_protocols.length) extra.push(s.update_protocols.join('/'));
+                            const note = [s.remark, extra.join(', ')].filter(Boolean).join(' — ');
                             return `
-                            <tr class="disposable-row"
-                                data-name="${esc(name.toLowerCase())}"
-                                data-hosts="${esc(mxes.join(' ').toLowerCase())}"
-                                data-sort-name="${esc(name.toLowerCase())}">
-                                <td><strong>${esc(name)}</strong></td>
-                                <td class="ip-list">${ips.map(esc).join(', ') || '-'}</td>
-                                <td class="mx-list">${mxes.map(esc).join(', ') || '-'}</td>
+                            <tr class="service-row"
+                                data-name="${esc(s.name.toLowerCase())}"
+                                data-hosts="${esc((s.hosts || []).join(' ').toLowerCase())}"
+                                data-status="${esc(status)}"
+                                data-type="${esc(s.type || 'unknown')}"
+                                data-updates="${esc(s.updates || 'unknown')}"
+                                data-api="${apiYes ? 'yes' : 'no'}"
+                                data-access="${isPublic ? 'public' : 'private'}"
+                                data-reval="${reval ? 'required' : 'none'}"
+                                data-sort-name="${esc(s.name.toLowerCase())}"
+                                data-sort-status="${esc(status)}"
+                                data-sort-type="${esc(s.type || 'unknown')}"
+                                data-sort-updates="${esc(s.updates || 'unknown')}"
+                                data-sort-api="${apiYes ? '1' : '0'}"
+                                data-sort-access="${isPublic ? 'public' : 'private'}"
+                                data-sort-reval="${reval || 0}"
+                                data-sort-hosts="${(s.hosts || []).length}">
+                                <td>
+                                    ${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener"><strong>${esc(s.name)}</strong></a>` : `<strong>${esc(s.name)}</strong>`}
+                                    ${verifications.length ? `<br><span class="tag-list">${verifications.map(v => `<span class="badge badge-unknown">${esc(v)}</span>`).join(' ')}</span>` : ''}
+                                </td>
+                                <td><span class="badge badge-status-${esc(status)}">${esc(STATUS_LABELS[status] || status)}</span></td>
+                                <td><span class="badge badge-${esc(s.type || 'unknown')}">${esc(s.type || 'unknown')}</span></td>
+                                <td><span class="badge badge-unknown">${esc(s.updates || '?')}</span></td>
+                                <td><span class="badge badge-${apiYes ? 'yes' : 'no'}">${apiYes ? 'yes' : 'no'}</span></td>
+                                <td><span class="badge badge-${isPublic ? 'yes' : 'private'}">${isPublic ? 'public' : 'private'}</span></td>
+                                <td>${reval ? `<span class="badge badge-status-restricted">every ${esc(reval)}d</span>` : '<span class="badge badge-no">none</span>'}</td>
+                                <td class="hosts-list">
+                                    ${(s.hosts || []).length ? renderHostsCollapsible(s.hosts) : (s.own_domains ? '<span class="remark">own domains only</span>' : '-')}
+                                </td>
+                                <td class="remark">${esc(note)}</td>
                             </tr>`;
                         }).join('')}
                     </tbody>
@@ -875,7 +822,7 @@
                 </div>
             `;
 
-            document.getElementById('disposable-content').innerHTML = html;
+            document.getElementById('dns-services-content').innerHTML = html;
         }
 
         function renderOldHosts(data) {
@@ -883,7 +830,7 @@
                 .map(([name, info]) => [
                     name,
                     info,
-                    [...new Set([...(info.old_hosts || []), ...(info.discontinued ? (info.hosts || []) : [])])],
+                    [...new Set([...(info.old_hosts || []), ...(statusOf(info) === 'discontinued' ? (info.hosts || []) : [])])],
                 ])
                 .filter(([, , retired]) => retired.length > 0)
                 .sort((a, b) => a[0].localeCompare(b[0]));
@@ -893,13 +840,13 @@
             const html = `
                 <div class="section-header">
                     <h2>
-                        Old / Retired Hosts
+                        Old / Retired Domains
                         <span class="count">${totalOld}</span>
                     </h2>
                 </div>
                 <p class="empty-note">
-                    Renamed domains (old_hosts) plus all hosts of discontinued providers -
-                    kept for reference, not part of current classification.
+                    Retired domains (old_hosts) plus all domains of discontinued providers -
+                    kept for reference, not currently offered.
                 </p>
                 <div class="table-wrap">
                 <table>
@@ -924,7 +871,7 @@
                                 data-sort-hosts="${retired.length}">
                                 <td>
                                     <strong>${esc(name)}</strong>
-                                    ${info.discontinued ? '<span class="badge badge-discontinued">discontinued</span>' : ''}
+                                    ${statusOf(info) === 'discontinued' ? '<span class="badge badge-discontinued">discontinued</span>' : ''}
                                 </td>
                                 <td class="hosts-list">${retired.map(h => `<span class="host">${esc(h)}</span>`).join('')}</td>
                                 <td class="remark">${esc(info.remark || '')}</td>
@@ -965,13 +912,11 @@
             const params = new URLSearchParams();
 
             let q = '';
-            if (tabId === 'mail-services') {
-                ['type', 'verify', 'tier'].forEach(f => {
+            if (tabId === 'dns-services') {
+                ['status', 'type', 'updates', 'api', 'access', 'reval'].forEach(f => {
                     if (currentFilters[f] !== 'all') params.set(f, currentFilters[f]);
                 });
                 q = currentSearch;
-            } else if (tabId === 'disposable') {
-                q = document.getElementById('disposableSearch').value;
             } else if (tabId === 'old-hosts') {
                 q = document.getElementById('oldSearch').value;
             }
@@ -992,8 +937,8 @@
             const params = new URLSearchParams(qs || '');
             const q = params.get('q') || '';
 
-            if (tabId === 'mail-services') {
-                ['type', 'verify', 'tier'].forEach(f => {
+            if (tabId === 'dns-services') {
+                ['status', 'type', 'updates', 'api', 'access', 'reval'].forEach(f => {
                     const v = params.get(f);
                     if (!v) return;
                     const btn = document.querySelector(`.filter-btn[data-filter="${f}"][data-value="${CSS.escape(v)}"]`);
@@ -1002,30 +947,20 @@
                     document.querySelectorAll(`.filter-btn[data-filter="${f}"]`).forEach(b => b.classList.remove('active'));
                     btn.classList.add('active');
                 });
-                document.getElementById('mailSearch').value = q;
+                document.getElementById('dnsSearch').value = q;
                 currentSearch = q;
                 applyFilters();
-            } else if (tabId === 'disposable' || tabId === 'old-hosts') {
-                const input = document.getElementById(tabId === 'disposable' ? 'disposableSearch' : 'oldSearch');
+            } else if (tabId === 'old-hosts') {
+                const input = document.getElementById('oldSearch');
                 input.value = q;
                 input.dispatchEvent(new Event('input'));
             }
         }
 
-        function setupSearch(mailservices, disposable) {
-            document.getElementById('mailSearch').addEventListener('input', (e) => {
+        function setupSearch() {
+            document.getElementById('dnsSearch').addEventListener('input', (e) => {
                 currentSearch = e.target.value.toLowerCase();
                 applyFilters();
-                updateHash();
-            });
-
-            document.getElementById('disposableSearch').addEventListener('input', (e) => {
-                const query = e.target.value.toLowerCase();
-                document.querySelectorAll('.disposable-row').forEach(row => {
-                    const name = row.dataset.name;
-                    const hosts = row.dataset.hosts || '';
-                    row.style.display = (name.includes(query) || hosts.includes(query)) ? '' : 'none';
-                });
                 updateHash();
             });
 

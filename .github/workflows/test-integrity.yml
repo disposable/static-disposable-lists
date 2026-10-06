@@ -23,6 +23,7 @@ jobs:
         run: |
           check-jsonschema --schemafile schemas/mailservices.schema.json mailservices.json
           check-jsonschema --schemafile schemas/disposable-mail-hosts.schema.json disposable-mail-hosts.json
+          check-jsonschema --schemafile schemas/dnsservices.schema.json dnsservices.json
 
       - name: Validate hostname files
         run: python scripts/validate_hostnames.py manual.txt mail-data-hosts-net.txt

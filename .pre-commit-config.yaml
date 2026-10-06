@@ -5,7 +5,7 @@ repos:
         name: Sort JSON keys alphabetically
         entry: python scripts/sort_json_keys.py
         language: python
-        files: ^(mailservices|disposable-mail-hosts)\.json$
+        files: ^(mailservices|disposable-mail-hosts|dnsservices)\.json$
   - repo: https://github.com/python-jsonschema/check-jsonschema
     rev: 0.38.0
     hooks:
@@ -18,4 +18,9 @@ repos:
         name: Validate mailservices.json
         files: ^mailservices\.json$
         args: ["--schemafile", "schemas/mailservices.schema.json"]
+        additional_dependencies: []
+      - id: check-jsonschema
+        name: Validate dnsservices.json
+        files: ^dnsservices\.json$
+        args: ["--schemafile", "schemas/dnsservices.schema.json"]
         additional_dependencies: []

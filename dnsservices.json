@@ -1,0 +1,5105 @@
+{
+  "1984.is": {
+    "hosts": [],
+    "ns_suffixes": [
+      "1984.is",
+      "1984hosting.com"
+    ],
+    "own_domains": true,
+    "public": true,
+    "remark": "Icelandic hosting cooperative; free DNS hosting service for customer-owned domains.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://1984.is"
+  },
+  "3322.org": {
+    "api": true,
+    "expire_days": 30,
+    "hosts": [
+      "2288.org",
+      "3322.net",
+      "3322.org",
+      "6600.org",
+      "7766.org",
+      "8800.org",
+      "8866.org",
+      "9966.org",
+      "eatuo.com",
+      "f3322.net",
+      "f3322.org",
+      "webok.net",
+      "x3322.net"
+    ],
+    "ns_suffixes": [
+      "3322.net",
+      "pubyun.com"
+    ],
+    "public": true,
+    "record_types": [
+      "A",
+      "CNAME"
+    ],
+    "remark": "PubYun/公云 free DDNS (China); site unreachable at check. Dynamic hostnames require an update within ~30 days; static hostnames do not expire",
+    "signup_verification": [
+      "other"
+    ],
+    "status": "active",
+    "type": "freemium",
+    "update_protocols": [
+      "dyndns2",
+      "http"
+    ],
+    "updates": "dynamic",
+    "url": "http://www.pubyun.com/"
+  },
+  "50webs.com": {
+    "hosts": [
+      "50webs.com"
+    ],
+    "ns_suffixes": [
+      "50webs.com"
+    ],
+    "public": true,
+    "record_types": [
+      "A"
+    ],
+    "remark": "Free 500MB static hosting; free accounts get a *.50webs.com subdomain.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://www.50webs.com"
+  },
+  "addictedto.beer": {
+    "api": false,
+    "hosts": [
+      "addictedto.beer",
+      "skillissue.gg"
+    ],
+    "public": true,
+    "remark": "TinyBrickBoy/register GitHub-PR free subdomain service",
+    "signup_verification": "other",
+    "status": "active",
+    "type": "free",
+    "updates": "both",
+    "url": "https://github.com/TinyBrickBoy/register"
+  },
+  "addr.tools": {
+    "api": true,
+    "expire_days": 90,
+    "hosts": [
+      "dyn.addr.tools",
+      "myaddr.dev",
+      "myaddr.io",
+      "myaddr.tools"
+    ],
+    "ns_suffixes": [
+      "myaddr.dev",
+      "myaddr.io",
+      "myaddr.tools",
+      "addr.tools"
+    ],
+    "public": true,
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "TXT"
+    ],
+    "remark": "addr.tools free tools: dyn.addr.tools (DDNS for own domains) + myaddr.tools free custom subdomains; no account required.",
+    "signup_verification": "none",
+    "status": "active",
+    "type": "free",
+    "update_protocols": [
+      "http"
+    ],
+    "updates": "dynamic",
+    "url": "https://dyn.addr.tools/"
+  },
+  "airvpn.org": {
+    "api": true,
+    "hosts": [
+      "airdns.org"
+    ],
+    "ns_suffixes": [
+      "airvpn.org"
+    ],
+    "public": false,
+    "record_types": [
+      "A",
+      "AAAA"
+    ],
+    "remark": "Dynamic DNS hostnames under airdns.org for AirVPN subscribers (port forwarding/remote access).",
+    "signup_verification": "payment",
+    "status": "restricted",
+    "type": "paid",
+    "updates": "dynamic",
+    "url": "https://airvpn.org"
+  },
+  "alwaysdata.net": {
+    "api": true,
+    "hosts": [
+      "alwaysdata.net"
+    ],
+    "ns_suffixes": [
+      "alwaysdata.com"
+    ],
+    "own_domains": true,
+    "public": true,
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT",
+      "NS",
+      "SRV",
+      "CAA"
+    ],
+    "remark": "French full-featured host; free tier accounts get *.alwaysdata.net subdomain plus free DNS hosting for own domains.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://www.alwaysdata.com"
+  },
+  "angelcamddns.com": {
+    "hosts": [
+      "angelcamddns.com"
+    ],
+    "public": false,
+    "remark": "Angelcam camera DDNS, hosted on No-IP infrastructure; hostnames created via vendor interface only.",
+    "signup_verification": [
+      "other"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "https://www.angelcam.com/"
+  },
+  "anondns.net": {
+    "api": false,
+    "hosts": [
+      "anondns.net"
+    ],
+    "ns_suffixes": [
+      "vital.sh"
+    ],
+    "public": true,
+    "remark": "AnonDNS - anonymous free DNS, no account needed.",
+    "signup_verification": [
+      "none"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "both",
+    "url": "https://anondns.net/"
+  },
+  "anydns.com": {
+    "api": true,
+    "hosts": [
+      "effers.com"
+    ],
+    "ns_suffixes": [
+      "anydns.com"
+    ],
+    "public": true,
+    "remark": "AnyDNS free DDNS.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "update_protocols": [
+      "dyndns2"
+    ],
+    "updates": "dynamic"
+  },
+  "appspot.com": {
+    "api": true,
+    "hosts": [
+      "appspot.com"
+    ],
+    "public": true,
+    "remark": "Google App Engine — Google Cloud account required; *.<project>.appspot.com",
+    "signup_verification": "other",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "asuscomm.com": {
+    "hosts": [
+      "asuscomm.com"
+    ],
+    "public": false,
+    "remark": "ASUS router DDNS; hostnames created via vendor interface only.",
+    "signup_verification": [
+      "other"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "https://www.asus.com/"
+  },
+  "awardspace.com": {
+    "hosts": [
+      "atwebpages.com"
+    ],
+    "ns_suffixes": [
+      "runhosting.com"
+    ],
+    "public": true,
+    "record_types": [
+      "A"
+    ],
+    "remark": "AwardSpace free PHP hosting; free accounts get subdomains under atwebpages.com. Free hosting accounts expire yearly and must be renewed via Account Renewal section",
+    "revalidation_days": 365,
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://www.awardspace.com"
+  },
+  "azote.org": {
+    "hosts": [
+      "biz.st"
+    ],
+    "ns_suffixes": [
+      "azote.org"
+    ],
+    "public": true,
+    "remark": "azote.org free .st subdomain service.",
+    "shared_registry": true,
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "static"
+  },
+  "azurewebsites.net": {
+    "api": true,
+    "hosts": [
+      "azurewebsites.net"
+    ],
+    "public": true,
+    "remark": "Azure App Service — Azure subscription required",
+    "signup_verification": "other",
+    "status": "active",
+    "type": "paid",
+    "updates": "static"
+  },
+  "bee.pl": {
+    "hosts": [
+      "bee.pl"
+    ],
+    "public": true,
+    "record_types": [
+      "A",
+      "CNAME"
+    ],
+    "remark": "Polish free second-level domain service. Registration portal no longer on bee.pl apex (now a store), but issued subdomains still resolve.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://bee.pl"
+  },
+  "beget.com": {
+    "hosts": [
+      "beget.tech"
+    ],
+    "ns_suffixes": [
+      "beget.com",
+      "beget.pro"
+    ],
+    "public": true,
+    "record_types": [
+      "A"
+    ],
+    "remark": "Russian web host; free hosting accounts get a subdomain under beget.tech.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://beget.com"
+  },
+  "bitbucket.io": {
+    "api": true,
+    "hosts": [
+      "bitbucket.io"
+    ],
+    "public": true,
+    "remark": "Bitbucket Cloud — Atlassian account required; *.<workspace>.bitbucket.io",
+    "signup_verification": "other",
+    "status": "active",
+    "type": "free",
+    "updates": "static"
+  },
+  "biz.ua": {
+    "hosts": [
+      "biz.ua"
+    ],
+    "ns_suffixes": [
+      "uadns.com"
+    ],
+    "public": true,
+    "record_types": [
+      "NS",
+      "A",
+      "CNAME",
+      "MX",
+      "TXT"
+    ],
+    "remark": "Free third-level domains via Ukrainian registrar NIC.UA (PSL-listed public suffix zone).",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://biz.ua"
+  },
+  "blogspot.com": {
+    "api": true,
+    "hosts": [
+      "blogspot.com"
+    ],
+    "public": true,
+    "remark": "Blogger — Google account required; *.<blog>.blogspot.com plus ~60 ccTLD mirrors",
+    "signup_verification": "other",
+    "status": "active",
+    "type": "free",
+    "updates": "static"
+  },
+  "bluu.pl": {
+    "hosts": [
+      "bluu.pl"
+    ],
+    "ns_suffixes": [
+      "slaskdatacenter.pl"
+    ],
+    "public": true,
+    "record_types": [
+      "A",
+      "CNAME"
+    ],
+    "remark": "Bluu.pl Polish free second-level domain service.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://bluu.pl"
+  },
+  "bplaced.net": {
+    "hosts": [
+      "bplaced.com",
+      "bplaced.de",
+      "bplaced.net",
+      "square7.ch"
+    ],
+    "ns_suffixes": [
+      "bplaced.net"
+    ],
+    "public": true,
+    "record_types": [
+      "A"
+    ],
+    "remark": "German free web host; subdomains under bplaced.net/.com/.de and square7.ch.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://www.bplaced.net"
+  },
+  "bytecamp.net": {
+    "api": true,
+    "hosts": [
+      "nerdcamp.net"
+    ],
+    "ns_suffixes": [
+      "bytecamp.net"
+    ],
+    "public": true,
+    "remark": "bytecamp free DDNS.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "https://www.bytecamp.net/"
+  },
+  "carrd.co": {
+    "api": true,
+    "hosts": [
+      "carrd.co"
+    ],
+    "public": true,
+    "remark": "Carrd — *.<site>.carrd.co",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "cc.ua": {
+    "hosts": [
+      "cc.ua"
+    ],
+    "ns_suffixes": [
+      "1gb.ua",
+      "1gbua.com",
+      "1gbua.net"
+    ],
+    "public": true,
+    "remark": "CC.UA free second-level domains operated by Ukrainian host 1gb.ua.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://cc.ua"
+  },
+  "cew.hu": {
+    "hosts": [
+      "cew.hu"
+    ],
+    "public": true,
+    "record_types": [
+      "A"
+    ],
+    "remark": "Hungarian free web host issuing subdomains under cew.hu.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://cew.hu"
+  },
+  "changeip.com": {
+    "api": true,
+    "hosts": [
+      "as19557.net",
+      "b0tnet.com",
+      "bigbluezoo.com",
+      "changeip.biz",
+      "changeip.co",
+      "changeip.co.uk",
+      "changeip.com",
+      "changeip.me",
+      "changeip.net",
+      "changeip.org",
+      "changeip.us",
+      "ddns.com.co",
+      "ddns.info",
+      "dns-report.com",
+      "dnset.com",
+      "dnsfailover.net",
+      "dubya.info",
+      "dubya.net",
+      "dynamicdns.com.co",
+      "freeddns.me",
+      "freeddns.tokyo",
+      "h1x.com",
+      "homingbeacon.net",
+      "itemdb.com",
+      "migibts.net",
+      "misecure.com",
+      "mynetav.com",
+      "ssmailer.com",
+      "toshibanetcam.com"
+    ],
+    "ns_suffixes": [
+      "changeip.com",
+      "changeip.org"
+    ],
+    "old_hosts": [
+      "25u.com",
+      "2waky.com",
+      "3-a.net",
+      "4dq.com",
+      "4pu.com",
+      "acmetoy.com",
+      "almostmy.com",
+      "americanunfinished.com",
+      "authorizeddns.net",
+      "authorizeddns.org",
+      "authorizeddns.us",
+      "bigmoney.biz",
+      "cleansite.biz",
+      "cleansite.info",
+      "cleansite.us",
+      "ddns.mobi",
+      "ddns.ms",
+      "ddns.us",
+      "dhcp.biz",
+      "dns-dns.com",
+      "dns-stuff.com",
+      "dns04.com",
+      "dns05.com",
+      "dns1.us",
+      "dns2.us",
+      "dnsrd.com",
+      "dsmtp.biz",
+      "dsmtp.com",
+      "dubya.biz",
+      "dubya.us",
+      "dumb1.com",
+      "dynamic-dns.net",
+      "dynamicdns.biz",
+      "dynssl.com",
+      "edns.biz",
+      "esmtp.biz",
+      "ezua.com",
+      "faqserv.com",
+      "fartit.com",
+      "freeddns.com",
+      "freetcp.com",
+      "freewww.biz",
+      "freewww.info",
+      "ftp1.biz",
+      "ftpserver.biz",
+      "gettrials.com",
+      "got-game.org",
+      "gr8domain.biz",
+      "gr8name.biz",
+      "https443.net",
+      "https443.org",
+      "ikwb.com",
+      "instanthq.com",
+      "iownyour.biz",
+      "iownyour.org",
+      "isasecret.com",
+      "itsaol.com",
+      "jetos.com",
+      "jkub.com",
+      "jungleheart.com",
+      "justdied.com",
+      "lflink.com",
+      "lflinkup.com",
+      "lflinkup.net",
+      "lflinkup.org",
+      "longmusic.com",
+      "mefound.com",
+      "moneyhome.biz",
+      "mrbasic.com",
+      "mrbonus.com",
+      "mrface.com",
+      "mrslove.com",
+      "my03.com",
+      "mydad.info",
+      "myddns.com",
+      "myftp.info",
+      "mylftv.com",
+      "mymom.info",
+      "mynetav.net",
+      "mynetav.org",
+      "mynumber.org",
+      "mypicture.info",
+      "mypop3.net",
+      "mypop3.org",
+      "mysecondarydns.com",
+      "mywww.biz",
+      "myz.info",
+      "ninth.biz",
+      "ns01.biz",
+      "ns01.info",
+      "ns01.us",
+      "ns02.biz",
+      "ns02.info",
+      "ns02.us",
+      "ns1.name",
+      "ns2.name",
+      "ns3.name",
+      "ocry.com",
+      "onedumb.com",
+      "onmypc.biz",
+      "onmypc.info",
+      "onmypc.net",
+      "onmypc.org",
+      "onmypc.us",
+      "organiccrap.com",
+      "otzo.com",
+      "ourhobby.com",
+      "port25.biz",
+      "proxydns.com",
+      "qhigh.com",
+      "qpoe.com",
+      "rebatesrule.net",
+      "sendsmtp.com",
+      "serveuser.com",
+      "serveusers.com",
+      "sexidude.com",
+      "sexxxy.biz",
+      "sixth.biz",
+      "squirly.info",
+      "toh.info",
+      "toythieves.com",
+      "trickip.net",
+      "trickip.org",
+      "vizvaz.com",
+      "wikaba.com",
+      "www1.biz",
+      "wwwhost.biz",
+      "wwwhost.us",
+      "x24hr.com",
+      "xxuz.com",
+      "xxxy.biz",
+      "xxxy.info",
+      "ygto.com",
+      "youdontcare.com",
+      "yourtrap.com",
+      "zyns.com",
+      "zzux.com"
+    ],
+    "own_domains": true,
+    "public": true,
+    "remark": "Website unreachable at check (Oct 2026); domains still delegated to ChangeIP nameservers. Many historic domains lapsed (see old_hosts).",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "no_new_registrations",
+    "type": "freemium",
+    "update_protocols": [
+      "dyndns2",
+      "http"
+    ],
+    "updates": "both",
+    "url": "https://www.changeip.com/"
+  },
+  "cloudns.net": {
+    "api": true,
+    "hosts": [
+      "abrdns.com",
+      "cloud-ip.biz",
+      "cloudns.asia",
+      "cloudns.be",
+      "cloudns.biz",
+      "cloudns.cc",
+      "cloudns.ch",
+      "cloudns.cl",
+      "cloudns.cx",
+      "cloudns.in",
+      "cloudns.info",
+      "cloudns.nz",
+      "cloudns.org",
+      "cloudns.ph",
+      "cloudns.pro",
+      "cloudns.pw",
+      "ddns-ip.net",
+      "dns-cloud.net",
+      "dns-dynamic.net",
+      "dnsabr.com",
+      "ip-ddns.com",
+      "ip-dynamic.org",
+      "it-share.ro",
+      "leivo.org"
+    ],
+    "ns_suffixes": [
+      "cloudns.net",
+      "cloudns.com"
+    ],
+    "own_domains": true,
+    "public": true,
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT",
+      "NS",
+      "SRV",
+      "CAA",
+      "PTR"
+    ],
+    "remark": "ClouDNS free DNS hosting incl. dynamic URL update feature.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "freemium",
+    "update_protocols": [
+      "http"
+    ],
+    "updates": "both",
+    "url": "https://www.cloudns.net/"
+  },
+  "co.cc": {
+    "hosts": [
+      "co.cc"
+    ],
+    "public": true,
+    "remark": "Korean free subdomain service; shut down ~2012 after mass abuse (Google de-indexed the zone). NS records remain delegated.",
+    "status": "discontinued",
+    "type": "free",
+    "updates": "static",
+    "url": "http://co.cc"
+  },
+  "codns.com": {
+    "api": true,
+    "hosts": [
+      "codns.com"
+    ],
+    "own_domains": true,
+    "public": true,
+    "remark": "CoDNS dynamic DNS (Korea).",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "freemium",
+    "update_protocols": [
+      "http"
+    ],
+    "updates": "both",
+    "url": "http://codns.com/"
+  },
+  "con-ip.com": {
+    "api": true,
+    "hosts": [
+      "con-ip.com"
+    ],
+    "public": true,
+    "remark": "Free DNS redirection for 15 years; public registration permanently closed after abuse-driven DDoS attacks (per site notice).",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "no_new_registrations",
+    "type": "free",
+    "update_protocols": [
+      "http"
+    ],
+    "updates": "dynamic",
+    "url": "https://con-ip.com/"
+  },
+  "crafting.xyz": {
+    "api": false,
+    "hosts": [
+      "crafting.xyz"
+    ],
+    "public": true,
+    "remark": "Game/community dynamic DNS service",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "both",
+    "url": "https://crafting.xyz"
+  },
+  "csb.app": {
+    "api": true,
+    "hosts": [
+      "csb.app"
+    ],
+    "public": true,
+    "remark": "CodeSandbox — Sandbox preview subdomains",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "cupddns.net": {
+    "hosts": [
+      "cupddns.net"
+    ],
+    "public": false,
+    "remark": "Internal government/institutional DDNS (not public); hostnames created via vendor interface only.",
+    "signup_verification": [
+      "other"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic"
+  },
+  "ddnss.de": {
+    "api": true,
+    "expire_days": 365,
+    "hosts": [
+      "ddnss.ch",
+      "ddnss.de",
+      "ddnss.eu",
+      "ddnss.org",
+      "dyn-ip24.de",
+      "dyndns1.de",
+      "home-webserver.de",
+      "myhome-server.de"
+    ],
+    "ns_suffixes": [
+      "ddnss.de"
+    ],
+    "own_domains": true,
+    "public": true,
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT"
+    ],
+    "remark": "DDNSS.de dynamic DNS service (Germany). Accounts inactive for more than a year are automatically deleted (site rules)",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "freemium",
+    "update_protocols": [
+      "dyndns2",
+      "http"
+    ],
+    "updates": "both",
+    "url": "https://ddnss.de/"
+  },
+  "ddo.jp": {
+    "api": true,
+    "hosts": [
+      "ddo.jp"
+    ],
+    "ns_suffixes": [
+      "ddo.jp"
+    ],
+    "public": true,
+    "remark": "Japanese free DDNS domain service; free renewals require displaying ads per terms. Free registration valid max 9 months, extendable via renewal request (FAQ)",
+    "revalidation_days": 270,
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "update_protocols": [
+      "http"
+    ],
+    "updates": "dynamic",
+    "url": "https://ddo.jp"
+  },
+  "desec.io": {
+    "api": true,
+    "expire_days": 180,
+    "hosts": [
+      "dedyn.io"
+    ],
+    "ns_suffixes": [
+      "desec.io",
+      "desec.org"
+    ],
+    "own_domains": false,
+    "public": true,
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT",
+      "NS",
+      "SRV",
+      "CAA",
+      "PTR"
+    ],
+    "remark": "Nonprofit API-first DNS hosting; free subdomains under dedyn.io. dedyn.io registration suspended until further notice. Terms: dynamic domains not updated for 6+ months are deleted after a 4-week warning.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "no_new_registrations",
+    "type": "free",
+    "update_protocols": [
+      "http"
+    ],
+    "updates": "both",
+    "url": "https://desec.io/"
+  },
+  "dhis.org": {
+    "api": true,
+    "hosts": [
+      "dhis.org"
+    ],
+    "ns_suffixes": [
+      "dhis.org"
+    ],
+    "public": true,
+    "remark": "DHIS.org free DDNS since 1998.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "update_protocols": [
+      "http"
+    ],
+    "updates": "dynamic",
+    "url": "https://www.dhis.org/"
+  },
+  "dhs.org": {
+    "hosts": [
+      "dhs.org"
+    ],
+    "ns_suffixes": [
+      "dhsnames.com"
+    ],
+    "public": true,
+    "remark": "DHS.org free DDNS; website unreachable at check.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic"
+  },
+  "dip.jp": {
+    "api": false,
+    "hosts": [],
+    "ns_suffixes": [
+      "dip.jp"
+    ],
+    "old_hosts": [
+      "dip.jp"
+    ],
+    "public": true,
+    "remark": "Japanese free DDNS; service ended. Zone currently SERVFAILs across resolvers (broken delegation).",
+    "status": "discontinued",
+    "type": "free",
+    "updates": "dynamic"
+  },
+  "dns-auth.net": {
+    "api": true,
+    "hosts": [
+      "dns-auth.net"
+    ],
+    "ns_suffixes": [
+      "dns-auth.net"
+    ],
+    "public": true,
+    "remark": "dns-auth; site unreachable at check.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "both"
+  },
+  "dns.la": {
+    "api": true,
+    "hosts": [],
+    "ns_suffixes": [
+      "xundns.com"
+    ],
+    "own_domains": true,
+    "public": true,
+    "remark": "DNS.LA Chinese free smart DNS hosting (split-horizon/GeoDNS) for own domains.",
+    "signup_verification": "mobile",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://dns.la"
+  },
+  "dns2go.com": {
+    "api": true,
+    "hosts": [
+      "d2g.biz",
+      "dns2go.com",
+      "dynamic-site.net",
+      "idleplay.net",
+      "linux-site.net",
+      "myip.org"
+    ],
+    "ns_suffixes": [
+      "dns2go.com"
+    ],
+    "public": true,
+    "record_types": [
+      "A",
+      "CNAME"
+    ],
+    "remark": "Deerfield/T2 DNS2Go.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "freemium",
+    "update_protocols": [
+      "dyndns2"
+    ],
+    "updates": "dynamic",
+    "url": "https://www.dns2go.com/"
+  },
+  "dnsdynamic.org": {
+    "api": true,
+    "hosts": [
+      "dnsdynamic.org"
+    ],
+    "old_hosts": [
+      "dnsd.info",
+      "dnsdynamic.com"
+    ],
+    "public": true,
+    "remark": "DNSdynamic free DDNS. Defunct: homepage replaced by spam/parked content, user hostnames return NXDOMAIN; dnsd.info and dnsdynamic.com still wildcard-resolve to parking IPs",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "discontinued",
+    "type": "free",
+    "update_protocols": [
+      "dyndns2"
+    ],
+    "updates": "dynamic",
+    "url": "https://www.dnsdynamic.org/"
+  },
+  "dnsever.com": {
+    "api": true,
+    "hosts": [],
+    "ns_suffixes": [
+      "dnsever.com",
+      "dnsever.net",
+      "dnsever.org",
+      "dnsever.co.kr",
+      "dnsever.co.uk"
+    ],
+    "own_domains": true,
+    "public": true,
+    "remark": "DNSEver Korean managed DNS service with dynamic DNS support for customer domains.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "update_protocols": [
+      "dyndns2",
+      "http"
+    ],
+    "updates": "both",
+    "url": "https://dnsever.com"
+  },
+  "dnsexit.com": {
+    "api": true,
+    "free_hostname_limit": 3,
+    "hosts": [
+      "2bd.net",
+      "dnsexit.com",
+      "linkpc.net",
+      "netdorm.com",
+      "publicvm.com",
+      "run.place",
+      "work.gd"
+    ],
+    "ns_suffixes": [
+      "dnsexit.com"
+    ],
+    "old_hosts": [
+      "jo3.org",
+      "line.pm"
+    ],
+    "own_domains": true,
+    "public": true,
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT"
+    ],
+    "remark": "Free second-level domains; DNS API available. Free domains valid 1 year; free renewal only inside a window near expiry (verified FAQ)",
+    "revalidation_days": 365,
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "freemium",
+    "update_protocols": [
+      "dyndns2",
+      "http"
+    ],
+    "updates": "both",
+    "url": "https://dnsexit.com/"
+  },
+  "dnshe.com": {
+    "api": true,
+    "hosts": [
+      "cc.cd",
+      "de5.net",
+      "us.ci"
+    ],
+    "ns_suffixes": [
+      "dnshe.org"
+    ],
+    "public": true,
+    "record_types": [
+      "NS",
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT"
+    ],
+    "remark": "DNSHE free domain registration & DNS service; free domains under de5.net, us.ci, cc.cd (some Cloudflare-compatible). \"Forever free\" promise; ToS allows suspension for long inactivity (no fixed period)",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://dnshe.com"
+  },
+  "dnshome.de": {
+    "api": true,
+    "hosts": [
+      "ddnssec.de",
+      "dnshome.de",
+      "dnshome.icu",
+      "dyndns.icu",
+      "dyndnssec.de",
+      "resolve.bar",
+      "srvdns.de"
+    ],
+    "ns_suffixes": [
+      "dnshome.de"
+    ],
+    "public": true,
+    "record_types": [
+      "A",
+      "AAAA"
+    ],
+    "remark": "dnshome.de free DDNS (Germany); also serves ddnssec.de.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "update_protocols": [
+      "dyndns2",
+      "http"
+    ],
+    "updates": "dynamic",
+    "url": "https://www.dnshome.de/"
+  },
+  "dnsking.ch": {
+    "api": true,
+    "hosts": [
+      "dnsking.ch"
+    ],
+    "ns_suffixes": [
+      "dnsking.ch"
+    ],
+    "public": true,
+    "remark": "Swiss free DDNS; website unreachable, zone still delegated.",
+    "status": "no_new_registrations",
+    "type": "free",
+    "update_protocols": [
+      "http"
+    ],
+    "updates": "dynamic",
+    "url": "https://dnsking.ch"
+  },
+  "dnsomatic.com": {
+    "api": true,
+    "hosts": [],
+    "ns_suffixes": [
+      "opendns.com"
+    ],
+    "own_domains": false,
+    "public": true,
+    "remark": "OpenDNS DNS-O-Matic update service; homepage returns 410 \"no longer in service\".",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "discontinued",
+    "type": "free",
+    "update_protocols": [
+      "dyndns2"
+    ],
+    "updates": "dynamic",
+    "url": "https://dnsomatic.com/"
+  },
+  "dnspod.cn": {
+    "api": true,
+    "hosts": [],
+    "ns_suffixes": [
+      "dnsv5.com"
+    ],
+    "own_domains": true,
+    "public": true,
+    "remark": "Tencent DNSPod - own-domain DNS hosting with dynamic update API.",
+    "signup_verification": [
+      "mobile"
+    ],
+    "status": "active",
+    "type": "freemium",
+    "update_protocols": [
+      "http"
+    ],
+    "updates": "both",
+    "url": "https://www.dnspod.cn/"
+  },
+  "drayddns.com": {
+    "hosts": [
+      "drayddns.com"
+    ],
+    "public": false,
+    "remark": "DrayTek router DDNS; hostnames created via vendor interface only.",
+    "signup_verification": [
+      "other"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "https://www.draytek.com/"
+  },
+  "dtdns.com": {
+    "api": true,
+    "hosts": [],
+    "old_hosts": [
+      "dtdns.com"
+    ],
+    "own_domains": true,
+    "public": true,
+    "remark": "DtDNS — domain parked/hijacked (redirects to wallpapers.com); zone wildcard-resolves to Cloudflare parking IPs. Service defunct.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "discontinued",
+    "type": "freemium",
+    "update_protocols": [
+      "dyndns2",
+      "http"
+    ],
+    "updates": "both",
+    "url": "https://www.dtdns.com/"
+  },
+  "duckdns.org": {
+    "api": true,
+    "free_hostname_limit": 5,
+    "hosts": [
+      "duckdns.org"
+    ],
+    "ns_hosts": [
+      "ns1.duckdns.org",
+      "ns2.duckdns.org",
+      "ns3.duckdns.org",
+      "ns4.duckdns.org"
+    ],
+    "ns_suffixes": [
+      "duckdns.org"
+    ],
+    "own_domains": false,
+    "public": true,
+    "record_types": [
+      "A",
+      "AAAA",
+      "TXT"
+    ],
+    "remark": "Free DDNS; account via Google/GitHub/Twitter/Reddit OAuth only. No expiration or renewal requirement",
+    "signup_verification": [
+      "other"
+    ],
+    "status": "active",
+    "type": "free",
+    "update_protocols": [
+      "dyndns2",
+      "http"
+    ],
+    "updates": "dynamic",
+    "url": "https://www.duckdns.org/"
+  },
+  "dudns.com": {
+    "hosts": [],
+    "own_domains": true,
+    "public": true,
+    "remark": "Baidu cloud DNS (百度云解析) free smart DNS service; shut down.",
+    "status": "discontinued",
+    "type": "free",
+    "updates": "static",
+    "url": "https://dudns.baidu.com"
+  },
+  "duiadns.net": {
+    "api": true,
+    "hosts": [
+      "duia.eu",
+      "duia.ro",
+      "duia.us",
+      "duiadns.net"
+    ],
+    "ns_suffixes": [
+      "duiadns.net"
+    ],
+    "own_domains": true,
+    "public": true,
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "TXT"
+    ],
+    "remark": "Duiadns free/paid dynamic DNS (Romania), IPv6-friendly. Free account never expires per FAQ — no monthly login/update needed",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "freemium",
+    "update_protocols": [
+      "http"
+    ],
+    "updates": "both",
+    "url": "https://www.duiadns.com/"
+  },
+  "dvr-ddns.com": {
+    "hosts": [
+      "dvr-ddns.com"
+    ],
+    "public": false,
+    "remark": "DVR/CCTV vendor DDNS; hostnames created via vendor interface only.",
+    "signup_verification": [
+      "other"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic"
+  },
+  "dvrlists.com": {
+    "hosts": [
+      "dvrlists.com"
+    ],
+    "public": true,
+    "remark": "Free DDNS historically used for CCTV/DVR remote access.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "https://www.dvrlists.com"
+  },
+  "dyn-access.de": {
+    "api": true,
+    "hosts": [
+      "dyn-access.biz",
+      "dyn-access.com",
+      "dyn-access.de",
+      "dyn-access.info",
+      "dyn-access.net",
+      "dyn-access.org",
+      "dynv4.net"
+    ],
+    "ns_suffixes": [
+      "da-ns.de",
+      "da-ns.eu"
+    ],
+    "public": true,
+    "remark": "dyn-access commercial dynamic DNS (Germany).",
+    "signup_verification": [
+      "payment"
+    ],
+    "status": "active",
+    "type": "paid",
+    "update_protocols": [
+      "dyndns2"
+    ],
+    "updates": "dynamic",
+    "url": "https://www.dyn-access.de/"
+  },
+  "dyn.com": {
+    "hosts": [
+      "at-band-camp.net",
+      "ath.cx",
+      "barrel-of-knowledge.info",
+      "barrell-of-knowledge.info",
+      "better-than.tv",
+      "blogdns.com",
+      "blogdns.net",
+      "blogdns.org",
+      "blogsite.org",
+      "boldlygoingnowhere.org",
+      "broke-it.net",
+      "buyshouses.net",
+      "cechire.com",
+      "dnsalias.com",
+      "dnsalias.net",
+      "dnsalias.org",
+      "dnsdojo.com",
+      "dnsdojo.net",
+      "dnsdojo.org",
+      "does-it.net",
+      "doesntexist.com",
+      "doesntexist.org",
+      "dontexist.com",
+      "dontexist.net",
+      "dontexist.org",
+      "doomdns.com",
+      "doomdns.org",
+      "dvrdns.org",
+      "dyn-o-saur.com",
+      "dyn.com",
+      "dynalias.com",
+      "dynalias.net",
+      "dynalias.org",
+      "dynathome.net",
+      "dyndns-at-home.com",
+      "dyndns-at-work.com",
+      "dyndns-blog.com",
+      "dyndns-free.com",
+      "dyndns-home.com",
+      "dyndns-ip.com",
+      "dyndns-mail.com",
+      "dyndns-office.com",
+      "dyndns-pics.com",
+      "dyndns-remote.com",
+      "dyndns-server.com",
+      "dyndns-web.com",
+      "dyndns-wiki.com",
+      "dyndns-work.com",
+      "dyndns.biz",
+      "dyndns.com",
+      "dyndns.info",
+      "dyndns.org",
+      "dyndns.tv",
+      "dyndns.ws",
+      "dynect.net",
+      "endofinternet.net",
+      "endofinternet.org",
+      "endoftheinternet.org",
+      "est-a-la-maison.com",
+      "est-a-la-masion.com",
+      "est-le-patron.com",
+      "est-mon-blogueur.com",
+      "for-better.biz",
+      "for-more.biz",
+      "for-our.info",
+      "for-some.biz",
+      "for-the.biz",
+      "from-ak.com",
+      "from-al.com",
+      "from-ar.com",
+      "from-az.net",
+      "from-ca.com",
+      "from-co.net",
+      "from-ct.com",
+      "from-dc.com",
+      "from-de.com",
+      "from-fl.com",
+      "from-ga.com",
+      "from-hi.com",
+      "from-ia.com",
+      "from-id.com",
+      "from-il.com",
+      "from-in.com",
+      "from-ks.com",
+      "from-ky.com",
+      "from-la.net",
+      "from-ma.com",
+      "from-md.com",
+      "from-me.org",
+      "from-mi.com",
+      "from-mn.com",
+      "from-mo.com",
+      "from-ms.com",
+      "from-mt.com",
+      "from-nc.com",
+      "from-nd.com",
+      "from-ne.com",
+      "from-nh.com",
+      "from-nj.com",
+      "from-nm.com",
+      "from-nv.com",
+      "from-ny.net",
+      "from-oh.com",
+      "from-ok.com",
+      "from-or.com",
+      "from-pa.com",
+      "from-pr.com",
+      "from-ri.com",
+      "from-sc.com",
+      "from-sd.com",
+      "from-tn.com",
+      "from-tx.com",
+      "from-ut.com",
+      "from-va.com",
+      "from-vt.com",
+      "from-wa.com",
+      "from-wi.com",
+      "from-wv.com",
+      "from-wy.com",
+      "ftpaccess.cc",
+      "fuettertdasnetz.de",
+      "game-host.org",
+      "game-server.cc",
+      "getmyip.com",
+      "gets-it.net",
+      "gotdns.com",
+      "gotdns.org",
+      "groks-the.info",
+      "groks-this.info",
+      "ham-radio-op.net",
+      "here-for-more.info",
+      "hobby-site.com",
+      "hobby-site.org",
+      "homedns.org",
+      "homeftp.net",
+      "homeftp.org",
+      "homeip.net",
+      "homelinux.com",
+      "homelinux.net",
+      "homelinux.org",
+      "homeunix.com",
+      "homeunix.net",
+      "homeunix.org",
+      "iamallama.com",
+      "in-the-band.net",
+      "is-a-anarchist.com",
+      "is-a-blogger.com",
+      "is-a-bookkeeper.com",
+      "is-a-bruinsfan.org",
+      "is-a-bulls-fan.com",
+      "is-a-candidate.org",
+      "is-a-caterer.com",
+      "is-a-celticsfan.org",
+      "is-a-chef.com",
+      "is-a-chef.net",
+      "is-a-chef.org",
+      "is-a-conservative.com",
+      "is-a-cpa.com",
+      "is-a-cubicle-slave.com",
+      "is-a-democrat.com",
+      "is-a-designer.com",
+      "is-a-doctor.com",
+      "is-a-financialadvisor.com",
+      "is-a-geek.com",
+      "is-a-geek.net",
+      "is-a-geek.org",
+      "is-a-green.com",
+      "is-a-guru.com",
+      "is-a-hard-worker.com",
+      "is-a-hunter.com",
+      "is-a-knight.org",
+      "is-a-landscaper.com",
+      "is-a-lawyer.com",
+      "is-a-liberal.com",
+      "is-a-libertarian.com",
+      "is-a-linux-user.org",
+      "is-a-llama.com",
+      "is-a-musician.com",
+      "is-a-nascarfan.com",
+      "is-a-nurse.com",
+      "is-a-painter.com",
+      "is-a-patsfan.org",
+      "is-a-personaltrainer.com",
+      "is-a-photographer.com",
+      "is-a-player.com",
+      "is-a-republican.com",
+      "is-a-rockstar.com",
+      "is-a-socialist.com",
+      "is-a-soxfan.org",
+      "is-a-student.com",
+      "is-a-teacher.com",
+      "is-a-techie.com",
+      "is-a-therapist.com",
+      "is-an-accountant.com",
+      "is-an-actor.com",
+      "is-an-actress.com",
+      "is-an-anarchist.com",
+      "is-an-artist.com",
+      "is-an-engineer.com",
+      "is-an-entertainer.com",
+      "is-by.us",
+      "is-certified.com",
+      "is-found.org",
+      "is-gone.com",
+      "is-into-anime.com",
+      "is-into-cars.com",
+      "is-into-cartoons.com",
+      "is-into-games.com",
+      "is-leet.com",
+      "is-lost.org",
+      "is-not-certified.com",
+      "is-saved.org",
+      "is-slick.com",
+      "is-uberleet.com",
+      "is-very-bad.org",
+      "is-very-evil.org",
+      "is-very-good.org",
+      "is-very-nice.org",
+      "is-very-sweet.org",
+      "is-with-theband.com",
+      "isa-geek.com",
+      "isa-geek.net",
+      "isa-geek.org",
+      "isa-hockeynut.com",
+      "issmarterthanyou.com",
+      "isteingeek.de",
+      "istmein.de",
+      "kicks-ass.net",
+      "kicks-ass.org",
+      "knowsitall.info",
+      "land-4-sale.us",
+      "lebtimnetz.de",
+      "leitungsen.de",
+      "likes-pie.com",
+      "likescandy.com",
+      "merseine.com",
+      "merseine.org",
+      "mine.nu",
+      "misconfused.org",
+      "mypets.ws",
+      "myphotos.cc",
+      "neat-url.com",
+      "office-on-the.net",
+      "on-the-web.tv",
+      "podzone.net",
+      "podzone.org",
+      "readmyblog.org",
+      "remotecam.nu",
+      "saves-the-whales.com",
+      "scrapper-site.net",
+      "scrapping.cc",
+      "selfip.biz",
+      "selfip.com",
+      "selfip.info",
+      "selfip.net",
+      "selfip.org",
+      "sells-for-less.com",
+      "sells-for-u.com",
+      "sells-it.net",
+      "sellsyourhome.org",
+      "servebbs.com",
+      "servebbs.net",
+      "servebbs.org",
+      "serveftp.net",
+      "serveftp.org",
+      "servegame.org",
+      "shacknet.biz",
+      "shacknet.us",
+      "simple-url.com",
+      "space-to-rent.com",
+      "stuff-4-sale.org",
+      "stuff-4-sale.us",
+      "teaches-yoga.com",
+      "thruhere.net",
+      "traeumtgerade.de",
+      "tzo.com",
+      "webhop.biz",
+      "webhop.info",
+      "webhop.net",
+      "webhop.org",
+      "worse-than.tv",
+      "writesthisblog.com"
+    ],
+    "ns_suffixes": [
+      "dns.oraclecloud.net",
+      "dynamicnetworkservices.net"
+    ],
+    "old_hosts": [
+      "shaqnet.nu"
+    ],
+    "public": false,
+    "remark": "Legacy Dyn/Oracle Dyn dynamic DNS. Service discontinued; domains remain delegated to Oracle Cloud DNS but no longer accept updates or registrations.",
+    "status": "discontinued",
+    "type": "paid",
+    "url": "https://dyn.com/"
+  },
+  "dyna-ns.net": {
+    "api": true,
+    "hosts": [
+      "msof.us",
+      "netlord.de"
+    ],
+    "ns_suffixes": [
+      "dyna-ns.net"
+    ],
+    "public": true,
+    "remark": "dyna-ns free DDNS.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic"
+  },
+  "dynamix.run": {
+    "api": true,
+    "hosts": [
+      "dynamix.run",
+      "dynx.me"
+    ],
+    "ns_suffixes": [
+      "dynamix.run",
+      "dynx.me"
+    ],
+    "public": true,
+    "remark": "dynamix.run DDNS.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "https://dynamix.run/"
+  },
+  "dyndns.berlin": {
+    "api": true,
+    "hosts": [
+      "dyndns.berlin"
+    ],
+    "public": true,
+    "remark": "Free DDNS (Berlin).",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "update_protocols": [
+      "http"
+    ],
+    "updates": "dynamic",
+    "url": "https://dyndns.berlin/"
+  },
+  "dyndns.dk": {
+    "api": true,
+    "expire_days": 180,
+    "hosts": [
+      "dyndns.dk"
+    ],
+    "ns_suffixes": [
+      "kyber.dk"
+    ],
+    "public": true,
+    "remark": "Danish free DDNS. Hostname disabled after 180 days without IP updates; reactivates automatically on next update (FAQ)",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "update_protocols": [
+      "dyndns2"
+    ],
+    "updates": "dynamic",
+    "url": "https://www.dyndns.dk/"
+  },
+  "dynip.com": {
+    "api": true,
+    "hosts": [
+      "dynip.com"
+    ],
+    "ns_suffixes": [
+      "canweb.ca"
+    ],
+    "public": true,
+    "remark": "DynIP (Canada) — end-of-life announced; no new/renewal subscriptions since Dec 2023, DNS servers ran until remaining subscriptions expired (~end 2024).",
+    "signup_verification": [
+      "payment"
+    ],
+    "status": "discontinued",
+    "type": "paid",
+    "update_protocols": [
+      "dyndns2"
+    ],
+    "updates": "dynamic",
+    "url": "http://dynip.com/"
+  },
+  "dynnamn.ru": {
+    "api": false,
+    "hosts": [
+      "dynnamn.ru"
+    ],
+    "ns_suffixes": [
+      "alviy.com"
+    ],
+    "public": true,
+    "remark": "Russian dynamic-DNS service; now redirects to Alviy DNS services (alviy.com).",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "both",
+    "url": "https://www.alviy.com/en/"
+  },
+  "dynu.com": {
+    "api": true,
+    "free_hostname_limit": 4,
+    "hosts": [
+      "1cooldns.com",
+      "accesscam.org",
+      "bumbleshrimp.com",
+      "camdvr.org",
+      "casacam.net",
+      "ddnsfree.com",
+      "ddnsgeek.com",
+      "ddnsguru.com",
+      "dynu.com",
+      "dynu.net",
+      "dynu.org",
+      "dynu.systems",
+      "dynuddns.com",
+      "dynuddns.net",
+      "ezgateway.net",
+      "flashhub.net",
+      "freeddns.org",
+      "giize.com",
+      "gleeze.com",
+      "kozow.com",
+      "loseyourip.com",
+      "myddns.rocks",
+      "mysynology.net",
+      "mytunnel.org",
+      "mywire.org",
+      "ndcg.com",
+      "ooguy.com",
+      "opik.net",
+      "remotewire.net",
+      "roxa.org",
+      "theworkpc.com",
+      "webredirect.org",
+      "xn--tt-8ja.net",
+      "xubi.org",
+      "yyuyy.com"
+    ],
+    "ns_suffixes": [
+      "dynu.com",
+      "dynu.systems",
+      "dynu.net"
+    ],
+    "old_hosts": [
+      "4cloud.click"
+    ],
+    "own_domains": true,
+    "public": true,
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT"
+    ],
+    "remark": "Free tier with API; IPv4/IPv6. Accounts/hostnames never expire per official FAQ",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "freemium",
+    "update_protocols": [
+      "dyndns2",
+      "http"
+    ],
+    "updates": "both",
+    "url": "https://www.dynu.com/"
+  },
+  "dynv6.com": {
+    "api": true,
+    "hosts": [
+      "dynv6.com"
+    ],
+    "ns_suffixes": [
+      "digineo.de",
+      "dynv6.com",
+      "dynv6.net"
+    ],
+    "old_hosts": [
+      "dns.army",
+      "dns.navy",
+      "dynv6.net",
+      "v6.army",
+      "v6.navy",
+      "v6.rocks"
+    ],
+    "own_domains": true,
+    "public": true,
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT"
+    ],
+    "remark": "Free DDNS by Digineo, IPv6-friendly. Sister domains dns.army/dns.navy/v6.* not delegated at check (Oct 2026).",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "update_protocols": [
+      "dyndns2",
+      "http",
+      "rfc2136"
+    ],
+    "updates": "both",
+    "url": "https://dynv6.com/"
+  },
+  "dyyndns.net": {
+    "hosts": [
+      "dyyndns.net"
+    ],
+    "public": true,
+    "remark": "Free DDNS.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "http://dyyndns.net/"
+  },
+  "easydns.com": {
+    "api": true,
+    "hosts": [],
+    "ns_suffixes": [
+      "easydns.com",
+      "easydns.net"
+    ],
+    "own_domains": true,
+    "public": true,
+    "remark": "easyDNS - paid DNS hosting, dynamic updates supported.",
+    "signup_verification": [
+      "payment"
+    ],
+    "status": "active",
+    "type": "paid",
+    "update_protocols": [
+      "dyndns2",
+      "http"
+    ],
+    "updates": "both",
+    "url": "https://easydns.com/"
+  },
+  "entrydns.net": {
+    "api": true,
+    "hosts": [
+      "entrydns.net",
+      "entrydns.org",
+      "sinsincity.com"
+    ],
+    "ns_suffixes": [
+      "entrydns.net"
+    ],
+    "own_domains": true,
+    "public": true,
+    "remark": "entryDNS.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "freemium",
+    "update_protocols": [
+      "http"
+    ],
+    "updates": "both",
+    "url": "https://entrydns.net/"
+  },
+  "eu.org": {
+    "api": false,
+    "hosts": [
+      "eu.org"
+    ],
+    "ns_suffixes": [
+      "eu.org"
+    ],
+    "public": true,
+    "remark": "Free eu.org subdomains since 1996; manual approval can take days-weeks. No periodic revalidation in general policy.",
+    "shared_registry": true,
+    "signup_verification": [
+      "other"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://nic.eu.org/"
+  },
+  "ez-dns.com": {
+    "hosts": [
+      "ez-dns.com"
+    ],
+    "public": false,
+    "remark": "iDVR CCTV DDNS; hostnames created via vendor interface only.",
+    "signup_verification": [
+      "other"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "https://www.i-dvr.net/"
+  },
+  "ez-ip.net": {
+    "api": true,
+    "hosts": [
+      "ez-ip.net"
+    ],
+    "ns_suffixes": [
+      "dnsauthority.com"
+    ],
+    "public": true,
+    "remark": "ez-ip.net free DDNS (DNSAuthority).",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic"
+  },
+  "f-parts.net": {
+    "hosts": [
+      "f-parts.net"
+    ],
+    "ns_suffixes": [
+      "dns.ne.jp"
+    ],
+    "public": true,
+    "remark": "f-parts.net (Japan).",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "both"
+  },
+  "f5.si": {
+    "api": true,
+    "free_hostname_limit": 1,
+    "hosts": [
+      "f5.si"
+    ],
+    "ns_suffixes": [
+      "cloudns.net"
+    ],
+    "public": true,
+    "remark": "\"DDNS Now\" Japanese free DDNS (since 2013); subdomains under f5.si. Accounts have no expiration and registrations are not deleted without updates; 1 domain per user.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "update_protocols": [
+      "http"
+    ],
+    "updates": "dynamic",
+    "url": "https://ddns.kuku.lu/"
+  },
+  "feste-ip.net": {
+    "api": false,
+    "hosts": [
+      "dynamisches-dns.de",
+      "feste-ip.net"
+    ],
+    "ns_suffixes": [
+      "c-srv.de"
+    ],
+    "public": true,
+    "remark": "Fixed IPv4 via tunnel/VPN service (Germany).",
+    "signup_verification": [
+      "payment"
+    ],
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://www.feste-ip.net/"
+  },
+  "firebaseapp.com": {
+    "api": true,
+    "hosts": [
+      "firebaseapp.com"
+    ],
+    "public": true,
+    "remark": "Firebase Hosting — Google account required; sibling of web.app",
+    "signup_verification": "other",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "fortiddns.com": {
+    "hosts": [
+      "fortiddns.com"
+    ],
+    "public": false,
+    "remark": "Fortinet FortiGate DDNS; hostnames created via vendor interface only.",
+    "signup_verification": [
+      "other"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "https://www.fortinet.com/"
+  },
+  "framer.website": {
+    "api": true,
+    "hosts": [
+      "framer.website"
+    ],
+    "public": true,
+    "remark": "Framer — *.<site>.framer.website",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "freedns.42.pl": {
+    "hosts": [],
+    "own_domains": true,
+    "public": true,
+    "remark": "Polish free DNS hosting service; zone no longer resolves.",
+    "status": "discontinued",
+    "type": "free",
+    "updates": "static",
+    "url": "http://freedns.42.pl"
+  },
+  "freedns.afraid.org": {
+    "api": true,
+    "free_hostname_limit": 5,
+    "hosts": [
+      "0000000000000000000000.com",
+      "0x.no",
+      "100mountain.com",
+      "120v.ac",
+      "1337.cx",
+      "24-7.ro",
+      "2fine.de",
+      "404.mn",
+      "4040.idv.tw",
+      "4twenty.us",
+      "abatek.com",
+      "adagio.tw",
+      "afraid.org",
+      "aintno.info",
+      "airlinemeals.net",
+      "albertn.ru",
+      "allez.la",
+      "allisons.org",
+      "anal-slavery.com",
+      "auraria.org",
+      "awiki.org",
+      "b33r.us",
+      "bad.mn",
+      "baden.ru",
+      "baikabibai.com",
+      "bakli.ru",
+      "baselinux.net",
+      "beerprojects.com",
+      "bine.me",
+      "birdriver.org",
+      "blacknapkins.org",
+      "blizzie.net",
+      "bmvl.ru",
+      "bot.nu",
+      "boxathome.net",
+      "byte4byte.com",
+      "cf.gs",
+      "chickenkiller.com",
+      "chrismac.org",
+      "clienturl.net",
+      "cnstefancelmare.ro",
+      "colegiotorrevilano.es",
+      "compuinter.com",
+      "computersforpeace.net",
+      "compy.ca",
+      "coreytech.com",
+      "crabdance.com",
+      "csproject.org",
+      "custom-gaming.net",
+      "cw03.ru",
+      "d-n-s.name",
+      "d-n-s.org.uk",
+      "dagz.ru",
+      "dark-byte.net",
+      "de-a.org",
+      "dearabba.org",
+      "demoteam.ch",
+      "dmtr.ru",
+      "dnet.hu",
+      "donhoo.com",
+      "dougtreadwell.com",
+      "dyn.ch",
+      "dyn.mk",
+      "dynet.com",
+      "e-m-a-i-l.org",
+      "echoparklake.com",
+      "elitter.net",
+      "embeddedonline.org",
+      "empresastaylor.com",
+      "enemyterritory.org",
+      "eolicatalinay.cl",
+      "essexregional.org",
+      "fairuse.org",
+      "farted.net",
+      "fatdiary.org",
+      "fearpenguins.com",
+      "fin-tech.com",
+      "fintech-llc.com",
+      "fivepals.com",
+      "flazzard.com",
+      "forss.to",
+      "fragmentary.info",
+      "freshdns.com",
+      "ftp.sh",
+      "fxnxs.com",
+      "gally.jp",
+      "garmanage.com",
+      "gerastar.ru",
+      "ghostnation.org",
+      "gigaportal.pl",
+      "govt.hu",
+      "green-heroes.com",
+      "grupompr.com",
+      "gtk.cl",
+      "guild-site.com",
+      "h-o-s-t.name",
+      "h4ck.me",
+      "hackquest.com",
+      "ham.gd",
+      "hbmc.net",
+      "heroinewarrior.com",
+      "hijaxdesigns.com",
+      "hin.tw",
+      "hitremixes.com",
+      "hmail.us",
+      "home.kg",
+      "homelinuxserver.org",
+      "host2go.net",
+      "hs.vc",
+      "humorvisite.eu",
+      "hunnur.com",
+      "ignorelist.com",
+      "iiiii.info",
+      "imagetemplate.com",
+      "imagetemplate.net",
+      "imexsac.com",
+      "info.gf",
+      "inkcat.net",
+      "ionexusa.com",
+      "isageek.net",
+      "it.cx",
+      "iz.rs",
+      "jade-hamburg.de",
+      "jcor.ca",
+      "jedimasters.net",
+      "jesus.si",
+      "joe.dj",
+      "jonward.com",
+      "jumpingcrab.com",
+      "jundy.org",
+      "k.vu",
+      "k22.su",
+      "keine-panik.net",
+      "kompaniet.nu",
+      "kyrgyzstan.kg",
+      "ldtp.com",
+      "leitud.ee",
+      "litecsys.com",
+      "livewave.ru",
+      "logular.com",
+      "lospenitentes.com",
+      "lostgumball.com",
+      "lovethosetrains.com",
+      "lozan.com",
+      "macrofox.org",
+      "madhacker.biz",
+      "marieblazek.com",
+      "mcwrite.net",
+      "medbury.com",
+      "meicosoft.com",
+      "midjava.com",
+      "mikata.ru",
+      "mil.nf",
+      "mine.bz",
+      "minecraftpotato.com",
+      "minecraftr.us",
+      "mnode.net",
+      "monopolepower.com",
+      "moonangel.com",
+      "mooo.com",
+      "mooo.info",
+      "morganisageek.org",
+      "mudchute.com",
+      "my.to",
+      "mylogisoft.com",
+      "mysaol.com",
+      "n-e-t.name",
+      "n0p.at",
+      "networkguru.com",
+      "networkoutpost.com",
+      "notici.as",
+      "nufszone.com",
+      "ohbah.com",
+      "okzk.com",
+      "parikh.net",
+      "patelmortgage.com",
+      "paulkelly.org",
+      "pedie.info",
+      "photo-frame.com",
+      "pii.at",
+      "pixelfucker.com",
+      "port0.org",
+      "priamaakcia.sk",
+      "privatedns.org",
+      "ptchat.net",
+      "qc.to",
+      "qthome.org",
+      "r-o-o-t.net",
+      "raspberryip.com",
+      "recruitment7.com",
+      "recyclesolutionsllc.com",
+      "robot-armies.com",
+      "ron.si",
+      "root.sx",
+      "roth.ca",
+      "rum.si",
+      "rwbcode.com",
+      "scay.net",
+      "scrapitsoftware.com",
+      "seburn.net",
+      "sequoiapartners.com",
+      "servernux.com",
+      "serverpit.com",
+      "sexmistrz.pl",
+      "shekinahphotography.com",
+      "shogun.ca",
+      "showmyhomes.com",
+      "silksky.com",
+      "simplecharity.com",
+      "sino.tw",
+      "skies.tw",
+      "smelly.cc",
+      "sne.jp",
+      "soon.it",
+      "spacetechnology.net",
+      "spottt.com",
+      "ssitech.bg",
+      "stocktester.ru",
+      "stoupin.ru",
+      "strangled.net",
+      "sumibi.org",
+      "sundby.com",
+      "surfnet.ca",
+      "synoserver.com",
+      "tallison.com",
+      "tantrum.org",
+      "tdkare.ru",
+      "technopagans.com",
+      "tedfullwood.com",
+      "thehomeserver.net",
+      "thenme.net",
+      "tscng.org",
+      "tvlinux.com",
+      "twilightparadox.com",
+      "ugo.si",
+      "uk.to",
+      "undo.it",
+      "unibutton.com",
+      "us.to",
+      "uzhi.ru",
+      "ve3.info",
+      "verymad.net",
+      "viiic.net",
+      "voyez.ca",
+      "vr.lt",
+      "wanip.ch",
+      "webs.vc",
+      "whyboner.com",
+      "wiki.gd",
+      "wild1.net",
+      "wildsurf.net",
+      "xxxxx.tw",
+      "yao.cl",
+      "zanity.net",
+      "zeitr.ch",
+      "zelslonik.info",
+      "zneth.com",
+      "zsh.jp",
+      "zyix.com"
+    ],
+    "ns_suffixes": [
+      "afraid.org"
+    ],
+    "old_hosts": [
+      "0rg.us",
+      "3n.cc",
+      "3trust.com",
+      "688.org",
+      "abuser.eu",
+      "annaffiare.org",
+      "bagus.org",
+      "barbaforte.org",
+      "bgdsupport.com",
+      "bhms.com",
+      "blinklab.com",
+      "bloodforthebloodgod.com",
+      "boblove.org",
+      "bouncers4rent.com",
+      "cbu.net",
+      "celebsplay.com",
+      "cybertv.tv",
+      "diyplans.org",
+      "dob.jp",
+      "eiresol.com",
+      "epicgamer.org",
+      "evils.in",
+      "geobattery.com",
+      "gurdit.com",
+      "gw.lt",
+      "h0stname.net",
+      "happyforever.com",
+      "hatenboer.org",
+      "homenode.ca",
+      "hpc.tw",
+      "idigo.org",
+      "ismoke.hk",
+      "itekgroup.com",
+      "iugaming.com",
+      "ix.tc",
+      "jwork.ru",
+      "kanda.ru",
+      "kaohsiung.tv",
+      "l5.ca",
+      "lanas.cl",
+      "lee.mx",
+      "linkin.tw",
+      "linuxd1.com",
+      "mcsoft.org",
+      "melakaboy.com",
+      "mindhackers.org",
+      "minecraftnoob.com",
+      "nard.ca",
+      "novgaz-rzn.ru",
+      "nx.tc",
+      "opior.com",
+      "packeting.eu",
+      "photo-cult.com",
+      "possessed.us",
+      "prettyweak.com",
+      "privateimport.jp",
+      "psybnc.org",
+      "punked.us",
+      "qlbv.vn",
+      "robinhud.com",
+      "rundis.com",
+      "sandmeiers.ch",
+      "sdp-mos.ru",
+      "seahorsenet.com",
+      "shadir.com",
+      "sheepindonesia.org",
+      "solfa.org",
+      "spelar.se",
+      "star.is",
+      "stuns.org",
+      "surak.kz",
+      "syntereo.com",
+      "tobuy.us",
+      "ucvradio.cl",
+      "ufodns.com",
+      "vankin.de",
+      "vicinanza.org",
+      "vpnx.nl",
+      "wakingmoon.com",
+      "windmillstravel.com",
+      "womenclothingtoday.com",
+      "yiff.fi",
+      "youpc.ro",
+      "yourspecialtee.com",
+      "zaibar.ro"
+    ],
+    "own_domains": true,
+    "public": true,
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT",
+      "NS",
+      "SRV",
+      "CAA",
+      "PTR"
+    ],
+    "remark": "FreeDNS. Shared registry: users share own domains for public subdomains; hosts is the HaGeZi-flagged subset (full registry ~39k domains). CAPTCHA on some actions. Shared domains disabled if delegation stays broken for 365 days; user hostnames have no renewal requirement",
+    "shared_registry": true,
+    "signup_verification": [
+      "email",
+      "other"
+    ],
+    "status": "active",
+    "type": "freemium",
+    "update_protocols": [
+      "http"
+    ],
+    "updates": "both",
+    "url": "https://freedns.afraid.org/"
+  },
+  "freehostia.com": {
+    "hosts": [
+      "freehostia.com"
+    ],
+    "ns_suffixes": [
+      "freehostia.com"
+    ],
+    "public": true,
+    "record_types": [
+      "A"
+    ],
+    "remark": "Long-running free PHP/cloud host; free accounts get a *.freehostia.com subdomain. Free accounts expire after 1 year by default, renewable free for another year (ToS)",
+    "revalidation_days": 365,
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://www.freehostia.com"
+  },
+  "freemyip.com": {
+    "api": true,
+    "hosts": [
+      "freemyip.com"
+    ],
+    "ns_suffixes": [
+      "freemyip.com"
+    ],
+    "public": true,
+    "record_types": [
+      "A",
+      "AAAA",
+      "TXT"
+    ],
+    "remark": "Free DDNS; token per hostname via email. No expiration dates per site (\"no ads, newsletters, links to click, expiration dates\")",
+    "signup_verification": "none",
+    "status": "active",
+    "type": "free",
+    "update_protocols": [
+      "http"
+    ],
+    "updates": "dynamic",
+    "url": "https://freemyip.com/"
+  },
+  "freenom": {
+    "hosts": [
+      "cf",
+      "ga",
+      "gq",
+      "ml",
+      "tk"
+    ],
+    "public": true,
+    "record_types": [
+      "NS"
+    ],
+    "remark": "dot.tk/Freenom gave away free registrations under the .tk .ml .cf .ga .gq ccTLDs; registry agreements ended, service defunct.",
+    "signup_verification": "email",
+    "status": "discontinued",
+    "type": "free",
+    "updates": "static",
+    "url": "https://www.freenom.com"
+  },
+  "frii.site": {
+    "hosts": [
+      "frii.site"
+    ],
+    "public": true,
+    "record_types": [
+      "NS",
+      "A",
+      "CNAME"
+    ],
+    "remark": "Free subdomain registration supporting NS records.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://frii.site"
+  },
+  "geoscaling.com": {
+    "api": true,
+    "hosts": [],
+    "ns_suffixes": [
+      "dodns.net"
+    ],
+    "own_domains": true,
+    "public": true,
+    "remark": "GeoScaling free managed DNS / GeoDNS smart resolution for customer-owned domains.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://www.geoscaling.com"
+  },
+  "github.io": {
+    "api": true,
+    "hosts": [
+      "github.io"
+    ],
+    "public": true,
+    "remark": "GitHub Pages — GitHub account required; *.<user>.github.io via repository",
+    "signup_verification": "other",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "gitlab.io": {
+    "api": true,
+    "hosts": [
+      "gitlab.io"
+    ],
+    "public": true,
+    "remark": "GitLab Pages — GitLab account required; *.<user>.gitlab.io",
+    "signup_verification": "other",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "glddns.com": {
+    "hosts": [
+      "glddns.com"
+    ],
+    "public": false,
+    "remark": "GL.iNet router DDNS; hostnames created via vendor interface only.",
+    "signup_verification": [
+      "other"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "https://www.gl-inet.com/"
+  },
+  "glitch.me": {
+    "api": true,
+    "hosts": [
+      "glitch.me"
+    ],
+    "public": true,
+    "remark": "Glitch — *.<project>.glitch.me",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "godaddysites.com": {
+    "api": true,
+    "hosts": [
+      "godaddysites.com"
+    ],
+    "public": true,
+    "remark": "GoDaddy Website Builder — *.<site>.godaddysites.com",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "gslb.me": {
+    "api": true,
+    "hosts": [
+      "gslb.biz",
+      "gslb.eu",
+      "gslb.info",
+      "gslb.us",
+      "gslb.ws"
+    ],
+    "ns_suffixes": [
+      "gslb.me",
+      "he.net"
+    ],
+    "own_domains": true,
+    "public": true,
+    "remark": "GSLB.me - DNS load-balancing service with dynamic DNS; hosted on Hurricane Electric.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "freemium",
+    "update_protocols": [
+      "http"
+    ],
+    "updates": "both",
+    "url": "https://gslb.me/"
+  },
+  "gtw.me": {
+    "hosts": [
+      "gw1.org"
+    ],
+    "ns_suffixes": [
+      "gtw.me"
+    ],
+    "public": true,
+    "remark": "gtw.me DDNS.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic"
+  },
+  "gv.vc": {
+    "hosts": [
+      "gv.vc"
+    ],
+    "ns_suffixes": [
+      "aseinet.ne.jp"
+    ],
+    "public": true,
+    "record_types": [
+      "A"
+    ],
+    "remark": "Japanese free DDNS (d.gv.vc); A records only.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "https://d.gv.vc"
+  },
+  "gw.to": {
+    "hosts": [
+      "gw.to",
+      "int.yt",
+      "nc.to",
+      "rh.to",
+      "xo.kg",
+      "yn.to"
+    ],
+    "ns_suffixes": [
+      "int.yt"
+    ],
+    "public": true,
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT",
+      "NS"
+    ],
+    "remark": "Intent FreeDomain (nonprofit); 20Dragons domains gw.to/nc.to/rh.to/yn.to transferred to Intent. Free subdomains on int.yt, xo.kg, nc.to, rh.to, yn.to, gw.to; IFP credits for premium features.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://int.yt/"
+  },
+  "hazteunsitio.net": {
+    "hosts": [
+      "hazteunsitio.net"
+    ],
+    "public": true,
+    "record_types": [
+      "A"
+    ],
+    "remark": "Spanish free PHP host (600MB); free accounts get a *.hazteunsitio.net subdomain.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://hazteunsitio.net"
+  },
+  "he.net": {
+    "api": true,
+    "hosts": [],
+    "ns_suffixes": [
+      "he.net"
+    ],
+    "own_domains": true,
+    "public": true,
+    "remark": "Hurricane Electric free DNS (dns.he.net) for own domains; dynamic A/AAAA updates supported.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "update_protocols": [
+      "dyndns2"
+    ],
+    "updates": "both",
+    "url": "https://dns.he.net/"
+  },
+  "herokuapp.com": {
+    "api": true,
+    "hosts": [
+      "herokuapp.com"
+    ],
+    "public": true,
+    "remark": "Heroku — *.<app>.herokuapp.com",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "hldns.ru": {
+    "hosts": [
+      "hldns.ru"
+    ],
+    "ns_suffixes": [
+      "hldns.ru"
+    ],
+    "public": true,
+    "remark": "hldns.ru free DynDNS (Russia). To avoid account deletion, update the address at least once every six months via the link in the instruction email.",
+    "revalidation_days": 180,
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "http://hldns.ru/"
+  },
+  "homepc.it": {
+    "hosts": [
+      "homepc.it"
+    ],
+    "ns_suffixes": [
+      "chkz.net"
+    ],
+    "public": true,
+    "remark": "homepc.it free DDNS (Italy).",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "http://homepc.it/"
+  },
+  "infinityfree.com": {
+    "expire_days": 60,
+    "hosts": [
+      "epizy.com",
+      "infinityfreeapp.com",
+      "rf.gd",
+      "unaux.com"
+    ],
+    "ns_suffixes": [
+      "byet.org",
+      "epizy.com"
+    ],
+    "public": true,
+    "record_types": [
+      "A"
+    ],
+    "remark": "Free web hosting (iFastNet/byet); accounts get free subdomains under multiple domains. Accounts suspended after ~30 days without visits, deleted 20-60 days later if not reactivated",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://www.infinityfree.com"
+  },
+  "ipq.co": {
+    "api": true,
+    "hosts": [
+      "fdns.uk",
+      "ipq.co"
+    ],
+    "ns_suffixes": [
+      "ipq.co"
+    ],
+    "public": true,
+    "remark": "Instant DNS records under ipq.co / fdns.uk; no account needed (email optional).",
+    "signup_verification": "none",
+    "status": "active",
+    "type": "free",
+    "update_protocols": [
+      "http"
+    ],
+    "updates": "dynamic",
+    "url": "http://ipq.co/"
+  },
+  "ipv64.net": {
+    "api": true,
+    "hosts": [
+      "any64.de",
+      "api64.de",
+      "dns64.de",
+      "dyndns64.de",
+      "dynipv6.de",
+      "eth64.de",
+      "home64.de",
+      "iot64.de",
+      "ipv64.de",
+      "ipv64.net",
+      "lan64.de",
+      "nas64.de",
+      "root64.de",
+      "route64.de",
+      "srv64.de",
+      "tcp64.de",
+      "udp64.de",
+      "vpn64.de",
+      "wan64.de"
+    ],
+    "ns_suffixes": [
+      "ipv64.net"
+    ],
+    "own_domains": true,
+    "public": true,
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT"
+    ],
+    "remark": "German free DDNS/DNS hosting. Free tier has no expiry; paid packages lapse back to free after 1 year",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "update_protocols": [
+      "dyndns2",
+      "http"
+    ],
+    "updates": "both",
+    "url": "https://ipv64.net/"
+  },
+  "is-a-good.dev": {
+    "api": true,
+    "hosts": [
+      "is-a-good.dev"
+    ],
+    "public": true,
+    "remark": "Free *.is-a-good.dev developer subdomains via GitHub PR",
+    "signup_verification": "other",
+    "status": "active",
+    "type": "free",
+    "updates": "both",
+    "url": "https://is-a-good.dev"
+  },
+  "is-a.dev": {
+    "api": true,
+    "hosts": [
+      "is-a.dev"
+    ],
+    "public": true,
+    "remark": "Free *.is-a.dev subdomains for developers via GitHub PR. No periodic revalidation; terms reserve termination at maintainer discretion.",
+    "signup_verification": "other",
+    "status": "active",
+    "type": "free",
+    "updates": "both",
+    "url": "https://www.is-a.dev"
+  },
+  "is-an.ai": {
+    "free_hostname_limit": 5,
+    "hosts": [
+      "is-an.ai"
+    ],
+    "ns_suffixes": [
+      "he.net"
+    ],
+    "public": true,
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "TXT"
+    ],
+    "remark": "IS-AN.AI free domains with SSL; max 5 per user.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://is-an.ai"
+  },
+  "it.com": {
+    "hosts": [
+      "it.com"
+    ],
+    "public": true,
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT",
+      "NS"
+    ],
+    "remark": "Sells third-level domains under it.com with full DNS management/NS delegation.",
+    "signup_verification": "payment",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://it.com"
+  },
+  "jimdosite.com": {
+    "api": true,
+    "hosts": [
+      "jimdosite.com"
+    ],
+    "public": true,
+    "remark": "Jimdo — *.<site>.jimdosite.com",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "js.org": {
+    "api": false,
+    "hosts": [
+      "js.org"
+    ],
+    "public": true,
+    "remark": "Free *.js.org subdomains for JavaScript community projects on GitHub Pages; approved via PR review",
+    "signup_verification": "other",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://js.org"
+  },
+  "julydns.com": {
+    "api": true,
+    "hosts": [
+      "cjtooling.com",
+      "dnsbed.com"
+    ],
+    "ns_suffixes": [
+      "julydns.com"
+    ],
+    "public": true,
+    "remark": "JulyDNS free DDNS.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "https://www.julydns.com/"
+  },
+  "katabump.com": {
+    "hosts": [
+      "katabump.com",
+      "kdns.fr"
+    ],
+    "public": true,
+    "record_types": [
+      "NS"
+    ],
+    "remark": "Free *.kdns.fr second-level domains (NS support); free hosting itself renews every 4 days",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://katabump.com"
+  },
+  "keenetic.com": {
+    "hosts": [
+      "keenetic.link",
+      "keenetic.name",
+      "keenetic.pro"
+    ],
+    "public": false,
+    "remark": "Keenetic router DDNS (KeenDNS); hostnames created via vendor interface only.",
+    "signup_verification": [
+      "other"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "https://keenetic.com/"
+  },
+  "koaladns.com": {
+    "api": true,
+    "hosts": [],
+    "ns_suffixes": [
+      "koaladns.com"
+    ],
+    "old_hosts": [
+      "flnet.org"
+    ],
+    "public": true,
+    "remark": "KoalaDNS; site unreachable at check.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic"
+  },
+  "l53.net": {
+    "expire_days": 365,
+    "hosts": [
+      "l53.net"
+    ],
+    "public": true,
+    "record_types": [
+      "A",
+      "CNAME"
+    ],
+    "remark": "L53 free subdomain (one-year term), Cloudflare compatible.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://l53.net"
+  },
+  "lima-city.de": {
+    "hosts": [
+      "lima-city.de"
+    ],
+    "public": true,
+    "record_types": [
+      "A"
+    ],
+    "remark": "Long-running German free host; accounts get a *.lima-city.de subdomain.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://www.lima-city.de"
+  },
+  "lnwdomain.com": {
+    "hosts": [
+      "no-domain.name"
+    ],
+    "ns_suffixes": [
+      "lnwdomain.com"
+    ],
+    "public": true,
+    "remark": "LNW free DDNS.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "http://lnwdomain.com/"
+  },
+  "loca.lt": {
+    "hosts": [
+      "loca.lt"
+    ],
+    "public": true,
+    "remark": "Localtunnel: free anonymous tunneling subdomains via npm client; IPs/subdomains assigned on connect.",
+    "signup_verification": "none",
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "https://localtunnel.github.io/www/"
+  },
+  "localhost.run": {
+    "hosts": [
+      "lhr.life",
+      "lhr.rocks"
+    ],
+    "public": true,
+    "remark": "SSH reverse tunnels (ssh -R); free short-lived *.lhr.life names, account key or paid plan for persistent names/custom domains under lhr.rocks.",
+    "signup_verification": "none",
+    "status": "active",
+    "type": "freemium",
+    "updates": "dynamic",
+    "url": "https://localhost.run"
+  },
+  "lockip.net": {
+    "api": false,
+    "hosts": [
+      "lockip.net"
+    ],
+    "ns_suffixes": [
+      "certadns.com"
+    ],
+    "public": true,
+    "remark": "LockIP DDNS — rebranded to CertaDNS (certadns.com). Free tier: 'Free for life — no monthly re-confirmation, no expiry.'",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "both",
+    "url": "https://certadns.com/"
+  },
+  "mybluehost.me": {
+    "hosts": [
+      "mybluehost.me"
+    ],
+    "ns_suffixes": [
+      "mybluehost.me"
+    ],
+    "public": true,
+    "remark": "Free hostname service; registration site dead (Cloudflare 409 origin error).",
+    "status": "no_new_registrations",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "https://mybluehost.me"
+  },
+  "mydns.jp": {
+    "api": true,
+    "expire_days": 30,
+    "hosts": [
+      "mydns.bz",
+      "mydns.jp",
+      "mydns.vc",
+      "server-on.net"
+    ],
+    "ns_suffixes": [
+      "mydns.jp"
+    ],
+    "public": true,
+    "record_types": [
+      "A",
+      "AAAA"
+    ],
+    "remark": "Japanese free DDNS; no account required, per-host credentials.",
+    "signup_verification": [
+      "none"
+    ],
+    "status": "active",
+    "type": "free",
+    "update_protocols": [
+      "dyndns2",
+      "http"
+    ],
+    "updates": "dynamic",
+    "url": "https://www.mydns.jp/"
+  },
+  "myonlineportal.de": {
+    "api": true,
+    "hosts": [
+      "myonlineportal.net"
+    ],
+    "ns_suffixes": [
+      "m3gabyte.de"
+    ],
+    "public": true,
+    "remark": "myonlineportal free DDNS (Germany).",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "update_protocols": [
+      "dyndns2",
+      "http"
+    ],
+    "updates": "dynamic",
+    "url": "https://myonlineportal.de/"
+  },
+  "myserver.org": {
+    "hosts": [
+      "myserver.org"
+    ],
+    "public": true,
+    "remark": "Free domain service; website refuses connections, zone still serves subdomains.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "no_new_registrations",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "http://myserver.org/"
+  },
+  "mystrikingly.com": {
+    "api": true,
+    "hosts": [
+      "mystrikingly.com"
+    ],
+    "public": true,
+    "remark": "Strikingly — *.<site>.mystrikingly.com",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "ndjp.net": {
+    "api": true,
+    "hosts": [
+      "ndjp.net"
+    ],
+    "ns_suffixes": [
+      "ndjp.net"
+    ],
+    "public": true,
+    "remark": "NDJP NET Japanese free DDNS service.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "update_protocols": [
+      "http"
+    ],
+    "updates": "dynamic",
+    "url": "https://ndjp.net"
+  },
+  "ndsplitter.com": {
+    "hosts": [
+      "hamshack.info"
+    ],
+    "ns_suffixes": [
+      "ndsplitter.com"
+    ],
+    "public": true,
+    "remark": "Namesplitter free DDNS.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "http://ndsplitter.com/"
+  },
+  "nekoweb.org": {
+    "expire_days": 365,
+    "hosts": [
+      "nekoweb.org"
+    ],
+    "public": true,
+    "record_types": [
+      "A"
+    ],
+    "remark": "Nekoweb free static web hosting; accounts get a *.nekoweb.org subdomain. Accounts with empty sites not updated for 1 year may be removed",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://nekoweb.org"
+  },
+  "neocities.org": {
+    "api": true,
+    "hosts": [
+      "neocities.org"
+    ],
+    "public": true,
+    "remark": "Neocities — Free static hosting; *.<user>.neocities.org",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "static"
+  },
+  "netlib.re": {
+    "hosts": [
+      "netlib.re"
+    ],
+    "ns_suffixes": [
+      "karchnu.fr"
+    ],
+    "public": true,
+    "record_types": [
+      "NS",
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT"
+    ],
+    "remark": "\"net libre\" French free domain service running since 2013; full DNS control via zone delegation.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://netlib.re"
+  },
+  "netlify.app": {
+    "api": true,
+    "hosts": [
+      "netlify.app"
+    ],
+    "public": true,
+    "remark": "Netlify — *.<site>.netlify.app deploy subdomains",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "ngo.us": {
+    "api": false,
+    "hosts": [
+      "ngo.us"
+    ],
+    "public": true,
+    "remark": "Free *.ngo.us subdomains restricted to verified non-profit organizations No renewal fees but annual manual renewal process required",
+    "revalidation_days": 365,
+    "signup_verification": "other",
+    "status": "restricted",
+    "type": "free",
+    "updates": "static",
+    "url": "https://nic.ngo.us"
+  },
+  "ngrok.com": {
+    "api": true,
+    "hosts": [
+      "ngrok-free.app",
+      "ngrok.app",
+      "ngrok.dev",
+      "ngrok.io"
+    ],
+    "public": true,
+    "remark": "Tunneling endpoints; free tier gets random *.ngrok-free.app names, paid tiers get static subdomains and own domains.",
+    "signup_verification": [
+      "email",
+      "other"
+    ],
+    "status": "active",
+    "type": "freemium",
+    "update_protocols": [
+      "http"
+    ],
+    "updates": "dynamic",
+    "url": "https://ngrok.com"
+  },
+  "nip.io": {
+    "hosts": [
+      "nip.io"
+    ],
+    "ns_suffixes": [
+      "nip.io",
+      "sslip.io"
+    ],
+    "public": true,
+    "record_types": [
+      "A"
+    ],
+    "remark": "Wildcard IP DNS (successor of xip.io, related to sslip.io); any IPv4 address resolves as <ip>.nip.io, no account needed.",
+    "signup_verification": "none",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://nip.io"
+  },
+  "no-ip.com": {
+    "api": true,
+    "free_hostname_limit": 1,
+    "hosts": [
+      "3utilities.com",
+      "access.ly",
+      "apptechservices.com",
+      "arquivirtual.com",
+      "as14627.net",
+      "as29997.net",
+      "blogsyte.com",
+      "bounceme.net",
+      "brajkovic.com",
+      "brasilia.me",
+      "briansagar.com",
+      "cable-modem.org",
+      "cbopelousas.com",
+      "charihoproducts.com",
+      "checkor.com",
+      "ciscofreak.com",
+      "collegefan.org",
+      "contepsa.com",
+      "couchpotatofries.org",
+      "counterlight.com",
+      "damnserver.com",
+      "davidsagar.com",
+      "ddns.me",
+      "ddns.net",
+      "ddnsking.com",
+      "demosoftonline.com",
+      "ditchyourip.com",
+      "dns-auth.com",
+      "dnsfor.me",
+      "dnsiskinky.com",
+      "dnsnew.org",
+      "dvrcam.info",
+      "dynns.com",
+      "e-romagnoli.com",
+      "eating-organic.net",
+      "enemykitchen.org",
+      "enterprisemx.com",
+      "expired-dns.com",
+      "fantasyleague.cc",
+      "freedynamicdns.net",
+      "freedynamicdns.org",
+      "gastright.com",
+      "geekgalaxy.com",
+      "global-instr.us",
+      "golaud.com",
+      "golffan.us",
+      "gotdns.ch",
+      "guthriecontainers.com",
+      "health-carereform.com",
+      "hokum-smack.com",
+      "homesecuritymac.com",
+      "homesecuritypc.com",
+      "hopto.me",
+      "hopto.org",
+      "hosthampster.com",
+      "ilovecollege.info",
+      "iprowave.com",
+      "kellserve.com",
+      "knabrub.com",
+      "labradapr.com",
+      "laketahoesue.com",
+      "landomain.net",
+      "larzzons.com",
+      "linuxdigital.org",
+      "locumm.com",
+      "loginto.me",
+      "maurinfor.com",
+      "mexsipel.net",
+      "mgipr.com",
+      "mistermousepotato.com",
+      "mithrandir.us",
+      "mlbfan.org",
+      "mmafan.biz",
+      "myactivedirectory.com",
+      "myddns.me",
+      "mydissent.net",
+      "myeffect.net",
+      "myftp.biz",
+      "myftp.org",
+      "mymediapc.net",
+      "mynetgear.com",
+      "mypcanywhere.org",
+      "mypsx.net",
+      "mysecuritycamera.com",
+      "mysecuritycamera.net",
+      "mysecuritycamera.org",
+      "myvnc.com",
+      "mywebworld.info",
+      "net-freaks.com",
+      "nflfan.org",
+      "nhlfan.net",
+      "no-ip.biz",
+      "no-ip.ca",
+      "no-ip.co.uk",
+      "no-ip.com",
+      "no-ip.info",
+      "no-ip.me",
+      "no-ip.net",
+      "no-ip.org",
+      "noip.com",
+      "noip.me",
+      "noip.net",
+      "noip.us",
+      "noipdns.com",
+      "noipdns.net",
+      "noipfreedns.com",
+      "noiptos.com",
+      "oemdns.com",
+      "olavsen.net",
+      "omicronceti3.net",
+      "onionsallyear.mobi",
+      "onthewifi.com",
+      "peregrineair.com",
+      "pgafan.net",
+      "point2this.com",
+      "pointto.us",
+      "portfwd.com",
+      "privatizehealthinsurance.net",
+      "quicksytes.com",
+      "rayplee.com",
+      "read-books.org",
+      "redirectme.net",
+      "rtam.net",
+      "ryointernational.com",
+      "securityexploits.com",
+      "securitytactics.com",
+      "semelcgmf.com",
+      "servebeer.com",
+      "serveblog.net",
+      "servecounterstrike.com",
+      "serveexchange.com",
+      "serveftp.com",
+      "servegame.com",
+      "servehalflife.com",
+      "servehttp.com",
+      "servehumour.com",
+      "serveirc.com",
+      "serveminecraft.net",
+      "servemp3.com",
+      "servep2p.com",
+      "servepics.com",
+      "servequake.com",
+      "servesarcasm.com",
+      "slasdot.com",
+      "socialadhesion.com",
+      "sonnish.com",
+      "stufftoread.com",
+      "stughead.com",
+      "sysadminetworks.com",
+      "sytes.net",
+      "tekkennetwork.com",
+      "thesemmels.com",
+      "ufcfan.org",
+      "unitedhardwood.com",
+      "unusualperson.com",
+      "viewdns.net",
+      "vincomlimited.com",
+      "vitalwerks.com",
+      "vpntraki.com",
+      "webhop.me",
+      "workisboring.com",
+      "zapto.org"
+    ],
+    "ns_suffixes": [
+      "no-ip.com"
+    ],
+    "old_hosts": [
+      "no_ip.biz",
+      "zapto.xyz"
+    ],
+    "own_domains": true,
+    "public": true,
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT"
+    ],
+    "remark": "Free hostnames must be confirmed every 30 days or they expire.",
+    "revalidation_days": 30,
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "freemium",
+    "update_protocols": [
+      "dyndns2",
+      "http"
+    ],
+    "updates": "both",
+    "url": "https://www.noip.com/"
+  },
+  "nodns.ca": {
+    "hosts": [
+      "nodns.ca"
+    ],
+    "public": true,
+    "remark": "nodns.ca (Canada); TLS certificate expired and site degraded at check, zone still delegated.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic"
+  },
+  "noip.pl": {
+    "api": true,
+    "hosts": [
+      "noip.pl"
+    ],
+    "ns_suffixes": [
+      "no-ip.pl"
+    ],
+    "public": true,
+    "remark": "Polish free DDNS (unrelated to no-ip.com).",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "update_protocols": [
+      "dyndns2"
+    ],
+    "updates": "dynamic",
+    "url": "https://noip.pl/"
+  },
+  "nom.za": {
+    "hosts": [
+      "nom.za"
+    ],
+    "public": true,
+    "remark": "NOM.ZA NameSpace: free personal third-level domains for South African individuals.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://nom.za"
+  },
+  "now-dns.com": {
+    "api": true,
+    "hosts": [
+      "2mydns.net",
+      "dnsdyn.net",
+      "dnsget.org",
+      "dnslive.net",
+      "dnsup.net",
+      "dtdns.org",
+      "dynip.org",
+      "dynserv.org",
+      "forumz.info",
+      "freeddns.uk",
+      "freeddns.us",
+      "hicam.net",
+      "myddns.biz",
+      "myiphost.com",
+      "mypi.co",
+      "now-dns.net",
+      "now-dns.org",
+      "nowddns.com",
+      "ownip.net",
+      "soundcast.me",
+      "tcp4.me",
+      "tftpd.net",
+      "vpndns.net",
+      "wifizone.org",
+      "x443.pw"
+    ],
+    "ns_suffixes": [
+      "now-dns.com"
+    ],
+    "old_hosts": [
+      "001www.com",
+      "ddns.cam",
+      "dnsking.ch",
+      "ntdll.top"
+    ],
+    "own_domains": true,
+    "public": true,
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT"
+    ],
+    "remark": "Free dynamic DNS. No periodic check-in required — \"the only way they'll disappear is if you delete them yourself\"",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "update_protocols": [
+      "dyndns2",
+      "http"
+    ],
+    "updates": "dynamic",
+    "url": "https://now-dns.com/"
+  },
+  "now.cc": {
+    "hosts": [
+      "now.cc"
+    ],
+    "public": true,
+    "record_types": [
+      "A",
+      "CNAME"
+    ],
+    "remark": "NOW.CC free shared-domain service (Traditional Chinese). To prevent abuse, new account registration opens irregularly; next opening TBD per homepage notice.",
+    "signup_verification": "email",
+    "status": "restricted",
+    "type": "free",
+    "updates": "static",
+    "url": "https://now.cc"
+  },
+  "nsupdate.info": {
+    "api": true,
+    "hosts": [
+      "nerdpol.ovh",
+      "nsupdate.info"
+    ],
+    "ns_suffixes": [
+      "thinkmo.de"
+    ],
+    "own_domains": false,
+    "public": true,
+    "record_types": [
+      "A",
+      "AAAA"
+    ],
+    "remark": "Free DDNS with per-host secrets; RFC 2136 support.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "update_protocols": [
+      "dyndns2",
+      "http"
+    ],
+    "updates": "dynamic",
+    "url": "https://www.nsupdate.info/"
+  },
+  "nya.je": {
+    "api": true,
+    "free_hostname_limit": 1,
+    "hosts": [
+      "nya.je"
+    ],
+    "ns_suffixes": [
+      "nya.je"
+    ],
+    "public": true,
+    "record_types": [
+      "A"
+    ],
+    "remark": "Small free DDNS service; subdomains under nya.je.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "update_protocols": [
+      "http"
+    ],
+    "updates": "dynamic",
+    "url": "https://nya.je"
+  },
+  "ods.org": {
+    "hosts": [
+      "ods.org"
+    ],
+    "ns_suffixes": [
+      "ods.org"
+    ],
+    "own_domains": true,
+    "public": true,
+    "remark": "ODS.org free DNS (since 1999); website unreachable at check.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "both"
+  },
+  "omg.lol": {
+    "api": true,
+    "hosts": [
+      "omg.lol"
+    ],
+    "public": true,
+    "remark": "omg.lol — $20/yr membership includes *.<name>.omg.lol web page",
+    "signup_verification": "payment",
+    "status": "active",
+    "type": "paid",
+    "updates": "static"
+  },
+  "one.pl": {
+    "api": false,
+    "hosts": [
+      "one.pl"
+    ],
+    "ns_suffixes": [
+      "eisp.pl"
+    ],
+    "public": true,
+    "remark": "Polish free subdomain service on eisp.pl infrastructure",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "both",
+    "url": "https://one.pl"
+  },
+  "onrender.com": {
+    "api": true,
+    "hosts": [
+      "onrender.com"
+    ],
+    "public": true,
+    "remark": "Render — *.<service>.onrender.com",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "open-domains.net": {
+    "api": true,
+    "free_hostname_limit": 1,
+    "hosts": [
+      "is-cool.dev",
+      "is-local.org",
+      "is-not-a.dev",
+      "localplayer.dev"
+    ],
+    "ns_suffixes": [
+      "cloudflare.com"
+    ],
+    "public": true,
+    "remark": "Free subdomains via GitHub PR (Open Domains project); NS records no longer supported",
+    "signup_verification": "other",
+    "status": "active",
+    "type": "free",
+    "updates": "both",
+    "url": "https://open-domains.net"
+  },
+  "oray.com": {
+    "api": true,
+    "hosts": [
+      "nat-ddns.com",
+      "oray.net",
+      "vicp.cc",
+      "vicp.net",
+      "xicp.cn",
+      "xicp.net"
+    ],
+    "ns_suffixes": [
+      "exhera.com",
+      "oray.net",
+      "oray.com"
+    ],
+    "old_hosts": [
+      "gicp.net"
+    ],
+    "own_domains": true,
+    "public": true,
+    "record_types": [
+      "A",
+      "CNAME",
+      "MX",
+      "TXT"
+    ],
+    "remark": "Oray 花生壳 (China); real-name verification required.",
+    "signup_verification": [
+      "mobile"
+    ],
+    "status": "active",
+    "type": "freemium",
+    "update_protocols": [
+      "http"
+    ],
+    "updates": "dynamic",
+    "url": "https://www.oray.com/"
+  },
+  "p-e.kr": {
+    "hosts": [
+      "kro.kr",
+      "n-e.kr",
+      "o-r.kr",
+      "p-e.kr",
+      "r-e.kr",
+      "xn--2i0b10rqve.xn--3e0b707e",
+      "xn--9i1b01onwqqzd.xn--3e0b707e",
+      "xn--h32bi4v.xn--3e0b707e",
+      "xn--hk3b17f.xn--3e0b707e",
+      "xn--hu5b25b77nvwc.xn--3e0b707e",
+      "xn--oi2b61z32a.xn--3e0b707e",
+      "xn--yq5b.xn--3e0b707e",
+      "zz.am"
+    ],
+    "ns_suffixes": [
+      "dnsze.com"
+    ],
+    "public": true,
+    "record_types": [
+      "A",
+      "CNAME"
+    ],
+    "remark": "Korean free domain service (내도메인.한국); free subdomains incl. Hangul IDN, web forwarding and IP linking. Popular for Minecraft servers.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://p-e.kr"
+  },
+  "pages.dev": {
+    "api": true,
+    "hosts": [
+      "pages.dev"
+    ],
+    "public": true,
+    "remark": "Cloudflare Pages — Cloudflare account required",
+    "signup_verification": "other",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "pfsdns.org": {
+    "api": true,
+    "hosts": [
+      "htu.edu.kg",
+      "nastu.net",
+      "no.kg",
+      "pfsdns.org",
+      "so.kg",
+      "tun.re"
+    ],
+    "ns_suffixes": [
+      "pfsdns.org"
+    ],
+    "old_hosts": [
+      "6ti.net"
+    ],
+    "public": true,
+    "remark": "Public Free Suffix project; NS-delegated free domains via GitHub PR, no annual renewal; so.kg moved here from standalone entry Explicitly no annual renewal required per project README",
+    "signup_verification": "other",
+    "status": "active",
+    "type": "free",
+    "updates": "both",
+    "url": "https://pfsdns.org"
+  },
+  "plako.net": {
+    "api": false,
+    "hosts": [
+      "natrofa.com"
+    ],
+    "ns_suffixes": [
+      "plako.net"
+    ],
+    "public": true,
+    "remark": "plako.net free DDNS/DNS hosting.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "both",
+    "url": "https://plako.net/"
+  },
+  "planetdns.net": {
+    "api": true,
+    "hosts": [
+      "planetdns.ca",
+      "planetdns.net"
+    ],
+    "ns_suffixes": [
+      "planetdns.net"
+    ],
+    "own_domains": true,
+    "public": true,
+    "remark": "PlanetDNS.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "freemium",
+    "update_protocols": [
+      "dyndns2"
+    ],
+    "updates": "dynamic",
+    "url": "http://planetdns.net/"
+  },
+  "playit.gg": {
+    "api": true,
+    "hosts": [
+      "at.ply.gg",
+      "ply.gg"
+    ],
+    "ns_suffixes": [
+      "playit-dns.com"
+    ],
+    "public": true,
+    "remark": "Free game-server tunneling; assigns addresses under regional subzones like at.ply.gg.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "dynamic",
+    "url": "https://playit.gg"
+  },
+  "pointhq.com": {
+    "api": true,
+    "hosts": [],
+    "ns_suffixes": [
+      "pointhq.com"
+    ],
+    "own_domains": true,
+    "public": true,
+    "remark": "PointDNS managed DNS hosting for customer-owned domains; free tier plus paid plans.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "update_protocols": [
+      "http"
+    ],
+    "updates": "static",
+    "url": "https://pointhq.com"
+  },
+  "portmap.io": {
+    "api": true,
+    "hosts": [
+      "portmap.host",
+      "portmap.io"
+    ],
+    "public": true,
+    "remark": "Port forwarding service issuing free subdomains under portmap.io/portmap.host.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "dynamic",
+    "url": "https://portmap.io"
+  },
+  "pp.ua": {
+    "hosts": [
+      "pp.ua"
+    ],
+    "ns_suffixes": [
+      "uadns.com"
+    ],
+    "public": true,
+    "record_types": [
+      "NS",
+      "A",
+      "CNAME",
+      "MX",
+      "TXT"
+    ],
+    "remark": "Free third-level domains via NIC.UA; credit/debit card registration required for identity (no charge), approval via SMS or Telegram bot, yearly renewal.",
+    "revalidation_days": 365,
+    "signup_verification": [
+      "payment",
+      "other"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://pp.ua"
+  },
+  "prvcy.page": {
+    "api": true,
+    "hosts": [
+      "16-b.it",
+      "32-b.it",
+      "64-b.it",
+      "pride.moe",
+      "prvcy.page"
+    ],
+    "ns_suffixes": [
+      "first-ns.de",
+      "second-ns.com",
+      "second-ns.de"
+    ],
+    "old_hosts": [
+      "pride.ngo"
+    ],
+    "public": true,
+    "remark": "Open Host community free subdomains (registration via GitHub PR); pride.ngo no longer delegated",
+    "signup_verification": "other",
+    "status": "active",
+    "type": "free",
+    "updates": "both"
+  },
+  "publiczone.org": {
+    "api": true,
+    "hosts": [
+      "cn.st",
+      "com.cn.st",
+      "dev.cn.st",
+      "int.al",
+      "me.cn.st",
+      "net.cn.st",
+      "ngo.cn.st",
+      "nyc.mn",
+      "org.cn.st"
+    ],
+    "ns_suffixes": [
+      "publiczone.org"
+    ],
+    "public": true,
+    "remark": "PublicZone subdomains funded by donation credits (~$5/yr, renew yearly; GitHub 100+ stars = $50 credit). nyc.mn acquired Dec 2025 — new registrations closed, existing domains kept alive",
+    "revalidation_days": 365,
+    "signup_verification": "other",
+    "status": "active",
+    "type": "freemium",
+    "updates": "both",
+    "url": "https://publiczone.org"
+  },
+  "pythonanywhere.com": {
+    "api": true,
+    "hosts": [
+      "pythonanywhere.com"
+    ],
+    "public": true,
+    "remark": "PythonAnywhere — *.<user>.pythonanywhere.com",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "railway.app": {
+    "api": true,
+    "hosts": [
+      "railway.app"
+    ],
+    "public": true,
+    "remark": "Railway — *.<service>.up.railway.app / railway.app",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "readthedocs.io": {
+    "api": true,
+    "hosts": [
+      "readthedocs.io"
+    ],
+    "public": true,
+    "remark": "Read the Docs — *.<project>.readthedocs.io doc hosting",
+    "signup_verification": "other",
+    "status": "active",
+    "type": "free",
+    "updates": "static"
+  },
+  "repl.co": {
+    "api": true,
+    "hosts": [
+      "repl.co"
+    ],
+    "public": true,
+    "remark": "Replit — Legacy Replit deploy domain; superseded by replit.app",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "replit.app": {
+    "api": true,
+    "hosts": [
+      "replit.app"
+    ],
+    "public": true,
+    "remark": "Replit — *.<repl>.replit.app",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "rootlayer.net": {
+    "hosts": [
+      "rootlayer.net"
+    ],
+    "public": true,
+    "remark": "Hosting provider issuing customer subdomains under rootlayer.net.",
+    "signup_verification": "payment",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://rootlayer.net"
+  },
+  "scienceontheweb.net": {
+    "hosts": [
+      "scienceontheweb.net"
+    ],
+    "ns_suffixes": [
+      "runhosting.com"
+    ],
+    "public": true,
+    "record_types": [
+      "A"
+    ],
+    "remark": "Free subdomain service domain operated via runhosting free-hosting infrastructure.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://scienceontheweb.net"
+  },
+  "securepoint.de": {
+    "api": true,
+    "hosts": [
+      "firewall-gateway.com",
+      "firewall-gateway.de",
+      "firewall-gateway.net"
+    ],
+    "ns_suffixes": [
+      "securepoint.de"
+    ],
+    "public": true,
+    "record_types": [
+      "A"
+    ],
+    "remark": "Free DynDNS by German firewall vendor Securepoint; hostnames under firewall-gateway.*.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "update_protocols": [
+      "dyndns2"
+    ],
+    "updates": "dynamic",
+    "url": "https://www.securepoint.de"
+  },
+  "selfhost.de": {
+    "api": true,
+    "hosts": [
+      "selfhost.tk"
+    ],
+    "ns_suffixes": [
+      "asok.de",
+      "selfhost.de"
+    ],
+    "public": true,
+    "remark": "German commercial DynDNS/hosting provider; selfhost.tk issues free test hostnames.",
+    "signup_verification": "payment",
+    "status": "active",
+    "type": "paid",
+    "update_protocols": [
+      "dyndns2",
+      "http"
+    ],
+    "updates": "dynamic",
+    "url": "https://www.selfhost.de"
+  },
+  "serveo.net": {
+    "api": true,
+    "hosts": [
+      "serveo.net"
+    ],
+    "public": true,
+    "remark": "Serveo - SSH port-forwarding with free subdomains.",
+    "signup_verification": [
+      "none"
+    ],
+    "status": "active",
+    "type": "free",
+    "update_protocols": [
+      "http"
+    ],
+    "updates": "dynamic",
+    "url": "https://serveo.net/"
+  },
+  "site.ac": {
+    "hosts": [
+      "site.ac"
+    ],
+    "public": true,
+    "record_types": [
+      "A",
+      "CNAME"
+    ],
+    "remark": "Free subdomains under site.ac plus URL forwarding; \"register now, use forever\". Domain valid 1 year, renewable each year; renewal opens 7 days before term ends",
+    "revalidation_days": 365,
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://site.ac"
+  },
+  "sitelutions.com": {
+    "api": false,
+    "hosts": [
+      "sitelutions.com"
+    ],
+    "ns_suffixes": [
+      "sitelutions.com"
+    ],
+    "own_domains": true,
+    "public": true,
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT"
+    ],
+    "remark": "Sitelutions free DNS hosting and URL forwarding.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "both",
+    "url": "https://www.sitelutions.com/"
+  },
+  "softether.net": {
+    "hosts": [
+      "softether.net"
+    ],
+    "public": false,
+    "remark": "SoftEther VPN / VPN Azure DDNS; hostnames created via vendor interface only.",
+    "signup_verification": [
+      "other"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "https://www.softether.org/"
+  },
+  "spdyn.de": {
+    "api": true,
+    "hosts": [
+      "spdns.de",
+      "spdns.eu",
+      "spdns.org",
+      "spdyn.de"
+    ],
+    "ns_suffixes": [
+      "securepoint.de",
+      "m-online.net"
+    ],
+    "public": true,
+    "record_types": [
+      "A",
+      "AAAA"
+    ],
+    "remark": "SecurePoint free dynamic DNS (Germany).",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "update_protocols": [
+      "dyndns2",
+      "http"
+    ],
+    "updates": "dynamic",
+    "url": "https://www.spdyn.de/"
+  },
+  "square.site": {
+    "api": true,
+    "hosts": [
+      "square.site"
+    ],
+    "public": true,
+    "remark": "Square — *.<site>.square.site",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "sslip.io": {
+    "api": false,
+    "hosts": [
+      "sslip.io"
+    ],
+    "ns_suffixes": [
+      "sslip.io"
+    ],
+    "public": true,
+    "remark": "Wildcard IP-encoding DNS (xip.io/nip.io style); hostnames encode IPs - no registration or updates.",
+    "signup_verification": [
+      "none"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://sslip.io/"
+  },
+  "stackblitz.io": {
+    "api": true,
+    "hosts": [
+      "stackblitz.io"
+    ],
+    "public": true,
+    "remark": "StackBlitz — *.<project>.stackblitz.io previews",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "stackryze.com": {
+    "hosts": [
+      "indevs.in",
+      "sryze.cc",
+      "stackryze.com"
+    ],
+    "public": true,
+    "record_types": [
+      "NS"
+    ],
+    "remark": "Indian free second-level domain; delegated zones that can be added to Cloudflare. 1-year domain validity, renewable 60 days before expiry",
+    "revalidation_days": 365,
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://stackryze.com"
+  },
+  "subdomain.net": {
+    "hosts": [
+      "biz.tm",
+      "info.tm",
+      "shop.tm"
+    ],
+    "ns_suffixes": [
+      "subdomain.net"
+    ],
+    "public": true,
+    "remark": "Free .tm subdomain service.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "both",
+    "url": "https://subdomain.net/"
+  },
+  "surge.sh": {
+    "api": true,
+    "hosts": [
+      "surge.sh"
+    ],
+    "public": true,
+    "remark": "Surge — CLI static publishing; custom <name>.surge.sh",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "swtest.ru": {
+    "hosts": [
+      "swtest.ru"
+    ],
+    "ns_suffixes": [
+      "spaceweb.ru",
+      "spaceweb.pro"
+    ],
+    "public": true,
+    "record_types": [
+      "A"
+    ],
+    "remark": "Spaceweb hosting customer/temporary site subdomains under swtest.ru.",
+    "signup_verification": "payment",
+    "status": "active",
+    "type": "paid",
+    "updates": "static",
+    "url": "https://swtest.ru"
+  },
+  "synology.com": {
+    "hosts": [
+      "diskstation.me",
+      "dscloud.biz",
+      "dscloud.me",
+      "dscloud.mobi",
+      "dsmynas.com",
+      "dsmynas.net",
+      "dsmynas.org",
+      "familyds.com",
+      "familyds.net",
+      "familyds.org",
+      "i234.me",
+      "myds.me",
+      "synology.me"
+    ],
+    "public": false,
+    "remark": "Synology NAS/QuickConnect DDNS; hostnames created via vendor interface only.",
+    "signup_verification": [
+      "other"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "https://www.synology.com/"
+  },
+  "thddns.net": {
+    "hosts": [
+      "thddns.net"
+    ],
+    "ns_suffixes": [
+      "thddns.net"
+    ],
+    "public": true,
+    "remark": "THDDNS (Thailand).",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "http://thddns.net/"
+  },
+  "topdns.com": {
+    "api": true,
+    "hosts": [
+      "topdns.com"
+    ],
+    "ns_suffixes": [
+      "topdns.com"
+    ],
+    "own_domains": true,
+    "public": true,
+    "remark": "Taiwanese free DNS; website times out.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "no_new_registrations",
+    "type": "freemium",
+    "update_protocols": [
+      "http"
+    ],
+    "updates": "both",
+    "url": "http://topdns.com/"
+  },
+  "topsddns.net": {
+    "hosts": [
+      "topsddns.net"
+    ],
+    "public": true,
+    "remark": "Free DDNS service (TOPS); zone no longer resolves — nameservers delegated but not answering.",
+    "status": "discontinued",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "https://www.topsddns.net"
+  },
+  "tpddns.cn": {
+    "hosts": [
+      "tpddns.cn"
+    ],
+    "public": false,
+    "remark": "TP-Link router DDNS (China); hostnames created via vendor interface only.",
+    "signup_verification": [
+      "other"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "https://www.tp-link.com.cn/"
+  },
+  "trycloudflare.com": {
+    "api": true,
+    "hosts": [
+      "trycloudflare.com"
+    ],
+    "public": true,
+    "remark": "Cloudflare quick tunnels — Ephemeral random *.trycloudflare.com hostnames, no account",
+    "signup_verification": "none",
+    "status": "active",
+    "type": "free",
+    "updates": "static"
+  },
+  "tumblr.com": {
+    "api": true,
+    "hosts": [
+      "tumblr.com"
+    ],
+    "public": true,
+    "remark": "Tumblr — *.<blog>.tumblr.com",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "static"
+  },
+  "two-dns.de": {
+    "api": false,
+    "hosts": [],
+    "old_hosts": [
+      "dd-dns.de",
+      "diskstation.eu",
+      "diskstation.org",
+      "dray-dns.de",
+      "draydns.de",
+      "dyn-vpn.de",
+      "dynvpn.de",
+      "mein-vigor.de",
+      "my-vigor.de",
+      "my-wan.de",
+      "syno-ds.de",
+      "synology-diskstation.de",
+      "synology-ds.de",
+      "two-dns.de",
+      "twodns.de"
+    ],
+    "public": true,
+    "remark": "German free DDNS (up to 5 hosts); shut down 2024-12-20, dynamic updates stopped and existing records deleted",
+    "status": "discontinued",
+    "type": "free",
+    "updates": "both",
+    "url": "https://www.two-dns.de"
+  },
+  "typedream.app": {
+    "api": true,
+    "hosts": [
+      "typedream.app"
+    ],
+    "public": true,
+    "remark": "Typedream — *.<site>.typedream.app",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "uni.me": {
+    "hosts": [
+      "uni.me"
+    ],
+    "public": true,
+    "record_types": [
+      "A"
+    ],
+    "remark": "Free subdomain service; website empty/broken TLS but zone still serves existing subdomains.",
+    "status": "no_new_registrations",
+    "type": "free",
+    "updates": "static",
+    "url": "https://uni.me"
+  },
+  "unonic.com": {
+    "hosts": [
+      "at.tf",
+      "ca.tf",
+      "ch.tf",
+      "de.tf",
+      "eu.tf",
+      "fr.tf",
+      "int.tf",
+      "net.tf",
+      "uk.tf",
+      "us.tf"
+    ],
+    "public": true,
+    "remark": "UNONIC free second-level domains under the *.tf family (net.tf, at.tf, ...); service is dead, zones no longer resolve.",
+    "status": "discontinued",
+    "type": "free",
+    "updates": "static",
+    "url": "http://www.unonic.com"
+  },
+  "urown.cloud": {
+    "api": true,
+    "hosts": [
+      "urown.cloud"
+    ],
+    "ns_suffixes": [
+      "urown.net"
+    ],
+    "public": true,
+    "remark": "URown free DDNS; apex/site do not resolve at check though zone remains delegated.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "no_new_registrations",
+    "type": "free",
+    "update_protocols": [
+      "http"
+    ],
+    "updates": "dynamic"
+  },
+  "us.kg": {
+    "free_hostname_limit": 3,
+    "hosts": [
+      "dpdns.org",
+      "qzz.io",
+      "us.kg",
+      "xx.kg"
+    ],
+    "ns_suffixes": [
+      "digitalplat.org"
+    ],
+    "public": true,
+    "record_types": [
+      "NS"
+    ],
+    "remark": "DigitalPlat Foundation free domains (GitHub-PR/NS-based registration); also operates qzz.io and dpdns.org Domains valid 1 year; free renewal possible up to 180 days before expiry (DigitalPlat)",
+    "revalidation_days": 365,
+    "signup_verification": [
+      "email",
+      "other"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://us.kg"
+  },
+  "value-domain.com": {
+    "hosts": [],
+    "own_domains": true,
+    "public": true,
+    "remark": "Japanese registrar offering free DNS hosting for customer domains.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://www.value-domain.com"
+  },
+  "vantechdns.net": {
+    "hosts": [
+      "vantechddns.com",
+      "vantechdns.com"
+    ],
+    "public": false,
+    "remark": "Vantech DVR DDNS; hostnames created via vendor interface only.",
+    "signup_verification": [
+      "other"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic"
+  },
+  "vercel.app": {
+    "api": true,
+    "hosts": [
+      "vercel.app"
+    ],
+    "public": true,
+    "remark": "Vercel — *.<project>.vercel.app deploy subdomains",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "vietnamddns.com": {
+    "hosts": [
+      "vietnamddns.com"
+    ],
+    "ns_suffixes": [
+      "vietnamddns.com"
+    ],
+    "public": true,
+    "remark": "VietnamDDNS (Vietnam).",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "http://vietnamddns.com/"
+  },
+  "vinaddns.com": {
+    "free_hostname_limit": 3,
+    "hosts": [
+      "vinaddns.com"
+    ],
+    "ns_suffixes": [
+      "vinaddns.com"
+    ],
+    "public": true,
+    "remark": "VinaDDNS (Vietnam). Free personal tier: 3 hostnames on shared domains; paid business plan (1 year validity). No free-tier expiry documented.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "freemium",
+    "updates": "dynamic",
+    "url": "http://vinaddns.com/"
+  },
+  "web.app": {
+    "api": true,
+    "hosts": [
+      "web.app"
+    ],
+    "public": true,
+    "remark": "Firebase Hosting — Google account required; *.web.app + *.firebaseapp.com",
+    "signup_verification": "other",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "webflow.io": {
+    "api": true,
+    "hosts": [
+      "webflow.io"
+    ],
+    "public": true,
+    "remark": "Webflow — *.<site>.webflow.io staging domain",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "webnode.page": {
+    "api": true,
+    "hosts": [
+      "webnode.page"
+    ],
+    "public": true,
+    "remark": "Webnode — *.<site>.webnode.page",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "weebly.com": {
+    "api": true,
+    "hosts": [
+      "weebly.com"
+    ],
+    "public": true,
+    "remark": "Weebly/Square — *.<site>.weebly.com",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "winco.com.br": {
+    "hosts": [
+      "ddns.com.br",
+      "winconnection.net"
+    ],
+    "public": false,
+    "remark": "Winco ISP customer DDNS (Brazil); hostnames created via vendor interface only.",
+    "signup_verification": [
+      "other"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic"
+  },
+  "wixsite.com": {
+    "api": true,
+    "hosts": [
+      "wixsite.com"
+    ],
+    "public": true,
+    "remark": "Wix — *.<user>.wixsite.com/<site>",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "wordpress.com": {
+    "api": true,
+    "hosts": [
+      "wordpress.com"
+    ],
+    "public": true,
+    "remark": "WordPress.com — *.<site>.wordpress.com",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "workers.dev": {
+    "api": true,
+    "hosts": [
+      "workers.dev"
+    ],
+    "public": true,
+    "remark": "Cloudflare Workers — Cloudflare account required; *.workers.dev per account",
+    "signup_verification": "other",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "x10hosting.com": {
+    "hosts": [
+      "x10.bz"
+    ],
+    "ns_suffixes": [
+      "x10hosting.com"
+    ],
+    "public": true,
+    "record_types": [
+      "A"
+    ],
+    "remark": "Free/premium web hosting; free accounts get a subdomain under x10.bz. Forum/account-portal login required at least every 30 days; inactive accounts suspended then terminated",
+    "revalidation_days": 30,
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://x10hosting.com"
+  },
+  "xddns.de": {
+    "free_hostname_limit": 3,
+    "hosts": [
+      "acedns.org",
+      "xddns.de"
+    ],
+    "ns_suffixes": [
+      "acecom.de"
+    ],
+    "public": true,
+    "remark": "xDDNS (Germany) — rebranded to acedns.de; issuable domain acedns.org. FAQ: accounts never expire regardless of last update; up to 3 free hosts per account.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "updates": "dynamic",
+    "url": "https://www.acedns.de/"
+  },
+  "xname.org": {
+    "api": true,
+    "hosts": [],
+    "own_domains": true,
+    "public": true,
+    "remark": "XName free primary/secondary DNS hosting; service defunct, domain delegated to registrar parking nameservers.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "discontinued",
+    "type": "free",
+    "update_protocols": [
+      "rfc2136"
+    ],
+    "updates": "both",
+    "url": "https://xname.org/"
+  },
+  "ydns.io": {
+    "api": true,
+    "hosts": [
+      "ydns.eu",
+      "ydns.io"
+    ],
+    "ns_suffixes": [
+      "ydns.io"
+    ],
+    "public": true,
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "TXT"
+    ],
+    "remark": "Free dynamic DNS with IPv6 support.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "free",
+    "update_protocols": [
+      "http"
+    ],
+    "updates": "dynamic",
+    "url": "https://ydns.io/"
+  },
+  "ye.gs": {
+    "hosts": [
+      "ye.gs"
+    ],
+    "public": true,
+    "record_types": [
+      "NS",
+      "A",
+      "CNAME"
+    ],
+    "remark": "YE.GS short free subdomain service; supports Cloudflare proxying.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://ye.gs"
+  },
+  "yi.org": {
+    "api": false,
+    "hosts": [
+      "yi.org"
+    ],
+    "public": true,
+    "remark": "Long-running free hostname service (since 1999); dynamic DNS capable. Zone resolves but www.yi.org site times out at check.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "both",
+    "url": "http://www.yi.org"
+  },
+  "yolasite.com": {
+    "api": true,
+    "hosts": [
+      "yolasite.com"
+    ],
+    "public": true,
+    "remark": "Yola — *.<site>.yolasite.com",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static"
+  },
+  "zabc.net": {
+    "hosts": [
+      "zabc.net"
+    ],
+    "public": true,
+    "record_types": [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "TXT",
+      "NS"
+    ],
+    "remark": "Zabc.net permanent free subdomains with full DNS including NS records.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://zabc.net"
+  },
+  "zndns.com": {
+    "hosts": [],
+    "ns_suffixes": [
+      "zndns.com"
+    ],
+    "own_domains": true,
+    "public": true,
+    "remark": "ZnDNS Chinese free smart DNS hosting for own domains.",
+    "signup_verification": "mobile",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://www.zndns.com"
+  },
+  "zone.id": {
+    "hosts": [
+      "nett.to",
+      "zone.id"
+    ],
+    "public": true,
+    "record_types": [
+      "NS",
+      "A",
+      "CNAME",
+      "MX",
+      "TXT"
+    ],
+    "remark": "Zone.ID free domain service; subdomains under zone.id and nett.to.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "free",
+    "updates": "static",
+    "url": "https://zone.id"
+  },
+  "zoneedit.com": {
+    "api": true,
+    "hosts": [],
+    "ns_suffixes": [
+      "zoneedit.com",
+      "easydns.com"
+    ],
+    "own_domains": true,
+    "public": true,
+    "remark": "ZoneEdit (easyDNS) - DNS hosting for own domains with dynamic updates.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "freemium",
+    "update_protocols": [
+      "dyndns2",
+      "http"
+    ],
+    "updates": "both",
+    "url": "https://zoneedit.com/"
+  },
+  "zzz.com.ua": {
+    "hosts": [
+      "zzz.com.ua"
+    ],
+    "public": true,
+    "record_types": [
+      "A"
+    ],
+    "remark": "Ukrainian free web host; free accounts get a <name>.zzz.com.ua subdomain.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "updates": "static",
+    "url": "https://zzz.com.ua"
+  }
+}
