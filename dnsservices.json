@@ -64,7 +64,7 @@
       "A",
       "CNAME"
     ],
-    "remark": "PubYun/公云 free DDNS (China); site unreachable at check. Dynamic hostnames require an update within ~30 days; static hostnames do not expire",
+    "remark": "PubYun/公云 free DDNS (China); back online. Dynamic hostnames expire if not updated within ~30 days; static hostnames do not expire.",
     "signup_verification": [
       "other"
     ],
