@@ -211,8 +211,8 @@
       "adimo.co.uk"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator Rico Developments Limited.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator Rico Developments Limited. Registration site unreachable",
+    "status": "no_new_registrations",
     "updates": "static",
     "url": "https://adimo.co/"
   },
@@ -1854,9 +1854,9 @@
       "MX",
       "TXT"
     ],
-    "remark": "Free third-level domains via Ukrainian registrar NIC.UA (PSL-listed public suffix zone).",
+    "remark": "Free third-level domains via Ukrainian registrar NIC.UA (PSL-listed public suffix zone). Registration site unreachable",
     "signup_verification": "email",
-    "status": "active",
+    "status": "no_new_registrations",
     "type": "free",
     "updates": "static",
     "url": "https://biz.ua"
@@ -2274,8 +2274,8 @@
       "cafjs.com"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator Caf.js Labs LLC.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator Caf.js Labs LLC. Registration site unreachable",
+    "status": "no_new_registrations",
     "updates": "static",
     "url": "https://cafjs.com/"
   },
@@ -2645,8 +2645,8 @@
       "clodui.com"
     ],
     "public": true,
-    "remark": "Clodui static hosting subdomains.",
-    "status": "active",
+    "remark": "Clodui static hosting subdomains. Registration site unreachable",
+    "status": "no_new_registrations",
     "type": "freemium",
     "updates": "static",
     "url": "https://www.clodui.com/"
@@ -2920,8 +2920,8 @@
       "co.bn"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator Positive Codes Technology Company.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator Positive Codes Technology Company. Registration site unreachable",
+    "status": "no_new_registrations",
     "type": "paid",
     "updates": "static",
     "url": "https://co.bn/"
@@ -3292,8 +3292,8 @@
       "instance.datadetect.com"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator DataDetect, LLC..",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator DataDetect, LLC. Registration site unreachable",
+    "status": "no_new_registrations",
     "updates": "static",
     "url": "https://datadetect.com/"
   },
@@ -3425,8 +3425,8 @@
       "piebox.site"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator DeployAgent.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator DeployAgent. Registration site unreachable",
+    "status": "no_new_registrations",
     "updates": "static",
     "url": "https://deployagent.com/"
   },
@@ -4167,7 +4167,7 @@
       "CNAME",
       "TXT"
     ],
-    "remark": "Duiadns free/paid dynamic DNS (Romania), IPv6-friendly. Free account never expires per FAQ — no monthly login/update needed",
+    "remark": "Duiadns free/paid dynamic DNS (Romania), IPv6-friendly. Free account never expires per FAQ — no monthly login/update needed. Verified: 'free account will never expire'",
     "signup_verification": [
       "email"
     ],
@@ -5602,8 +5602,8 @@
       "swoop2.me"
     ],
     "public": true,
-    "remark": "DDNS domain fleet sharing one Cloudflare account (flyme2, slide2, snap2, swoop2, jump2me, letsgo2, net2me, host2me, go2host, dive2, dn3.co, g2url...); flagged by hagezi dyndns list.",
-    "status": "active",
+    "remark": "DDNS domain fleet sharing one Cloudflare account (flyme2, slide2, snap2, swoop2, jump2me, letsgo2, net2me, host2me, go2host, dive2, dn3.co, g2url...); flagged by hagezi dyndns list. Registration site unreachable",
+    "status": "no_new_registrations",
     "type": "free",
     "updates": "dynamic",
     "url": "https://flick2.me/"
@@ -44628,8 +44628,8 @@
       "frusky.de"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator Frusky MEDIA&PR.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator Frusky MEDIA&PR. Registration site unreachable",
+    "status": "no_new_registrations",
     "updates": "static",
     "url": "https://frusky.de/"
   },
@@ -45081,7 +45081,7 @@
       "grafana-dev.net"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator Grafana Labs.",
+    "remark": "PSL-listed public suffix(es); operator Grafana Labs. May rename/remove inactive accounts at discretion",
     "status": "active",
     "updates": "static",
     "url": "https://grafana.com/"
@@ -45335,11 +45335,12 @@
     "url": "https://hercules.app/"
   },
   "here.now": {
+    "expire_days": 1,
     "hosts": [
       "here.now"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator here.now.",
+    "remark": "PSL-listed public suffix(es); operator here.now. Anonymous sites expire after 24h; registered accounts keep sites",
     "status": "active",
     "updates": "static",
     "url": "https://here.now/"
@@ -45632,8 +45633,8 @@
       "co.cz"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator i-registry s.r.o..",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator i-registry s.r.o. Registration site unreachable",
+    "status": "no_new_registrations",
     "type": "paid",
     "updates": "static",
     "url": "https://i-registry.cz/"
@@ -45764,8 +45765,8 @@
       "info.cx"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator info.cx.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator info.cx. Registration site unreachable",
+    "status": "no_new_registrations",
     "updates": "static",
     "url": "https://info.cx/"
   },
@@ -45901,7 +45902,7 @@
       "iobb.net"
     ],
     "public": false,
-    "remark": "PSL-listed public suffix(es); operator I-O DATA DEVICE, INC.. Hostnames bound to vendor hardware/subscription.",
+    "remark": "PSL-listed public suffix(es); operator I-O DATA DEVICE, INC.. Hostnames bound to vendor hardware/subscription. Operator site unreachable",
     "status": "active",
     "updates": "static",
     "url": "https://iodata.com/"
@@ -46487,8 +46488,8 @@
       "knightpoint.systems"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator KnightPoint Systems, LLC.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator KnightPoint Systems, LLC. Registration site unreachable",
+    "status": "no_new_registrations",
     "updates": "static",
     "url": "https://knightpoint.com/"
   },
@@ -46547,7 +46548,7 @@
       "oya.to"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator KUROKU LTD.",
+    "remark": "PSL-listed public suffix(es); operator KUROKU LTD. oya.to free-domain service live; operator corporate domain lapsed/for-sale.",
     "status": "active",
     "updates": "static",
     "url": "https://kuroku.ltd/"
@@ -47331,8 +47332,8 @@
       "csx.cc"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator minion.systems.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator minion.systems. Registration site unreachable",
+    "status": "no_new_registrations",
     "updates": "static",
     "url": "https://minion.systems/"
   },
@@ -47342,7 +47343,7 @@
       "miren.systems"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator Miren, Inc..",
+    "remark": "PSL-listed public suffix(es); operator Miren, Inc. Verified: 'no metered builds, and it never expires'",
     "status": "active",
     "updates": "static",
     "url": "https://miren.dev/"
@@ -48581,11 +48582,11 @@
     ],
     "own_domains": true,
     "public": true,
-    "remark": "ODS.org free DNS (since 1999); website unreachable at check.",
+    "remark": "ODS.org free DNS (since 1999); website unreachable at check. Registration site unreachable",
     "signup_verification": [
       "email"
     ],
-    "status": "active",
+    "status": "no_new_registrations",
     "type": "free",
     "updates": "both"
   },
@@ -48910,8 +48911,8 @@
       "ox.rs"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator OX.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator OX. Registration site unreachable",
+    "status": "no_new_registrations",
     "updates": "static",
     "url": "https://ox.rs/"
   },
@@ -48961,8 +48962,8 @@
       "pgfog.com"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator Pagefog.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator Pagefog. Registration site unreachable",
+    "status": "no_new_registrations",
     "updates": "static",
     "url": "https://pagefog.com/"
   },
@@ -49234,8 +49235,8 @@
       "pixolino.com"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator intermetrics GmbH.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator intermetrics GmbH. Registration site unreachable",
+    "status": "no_new_registrations",
     "updates": "static",
     "url": "https://pixolino.com/"
   },
@@ -49480,8 +49481,8 @@
       "prequalifyme.today"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator prequalifyme.today.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator prequalifyme.today. Registration site unreachable",
+    "status": "no_new_registrations",
     "updates": "static",
     "url": "https://prequalifyme.today/"
   },
@@ -49511,8 +49512,8 @@
       "dev.project-study.com"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator project-study.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator project-study. Registration site unreachable",
+    "status": "no_new_registrations",
     "updates": "static",
     "url": "https://project-study.com/"
   },
@@ -49701,8 +49702,8 @@
       "vaporcloud.io"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator Qutheory LLC.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator Qutheory LLC. Registration site unreachable",
+    "status": "no_new_registrations",
     "updates": "static",
     "url": "https://qutheory.io/"
   },
@@ -49712,8 +49713,8 @@
       "rackmaze.net"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator Rackmaze LLC.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator Rackmaze LLC. Registration site unreachable",
+    "status": "no_new_registrations",
     "updates": "static",
     "url": "https://rackmaze.com/"
   },
@@ -49873,8 +49874,8 @@
       "africa.com"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator Africa.com Web Solutions Ltd.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator Africa.com Web Solutions Ltd. Registration site unreachable",
+    "status": "no_new_registrations",
     "updates": "static",
     "url": "https://registry.africa.com/"
   },
@@ -50134,8 +50135,8 @@
       "vipsinaapp.com"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator SinaAppEngine.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator SinaAppEngine. Registration site unreachable",
+    "status": "no_new_registrations",
     "updates": "static",
     "url": "https://sae.sina.com.cn/"
   },
@@ -50234,7 +50235,7 @@
       "sandcats.io"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator Sandstorm Development Group, Inc..",
+    "remark": "PSL-listed public suffix(es); operator Sandstorm Development Group, Inc. Verified: stale domains stop updating but are not deleted",
     "status": "active",
     "updates": "static",
     "url": "https://sandcats.io/"
@@ -50560,7 +50561,7 @@
       "sheezy.games"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator Sheezy.Art.",
+    "remark": "PSL-listed public suffix(es); operator Sheezy.Art. Inactive accounts without content may be removed",
     "status": "active",
     "updates": "static",
     "url": "https://sheezy.art/"
