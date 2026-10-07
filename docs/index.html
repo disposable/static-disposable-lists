@@ -452,29 +452,29 @@
                     <div class="filter-bar">
                         <div class="filter-group">
                             <label>Type:</label>
-                            <button class="filter-btn active" data-filter="type" data-value="all">All</button>
-                            <button class="filter-btn" data-filter="type" data-value="free">Free</button>
-                            <button class="filter-btn" data-filter="type" data-value="paid">Paid</button>
-                            <button class="filter-btn" data-filter="type" data-value="forwarding">Forwarding</button>
-                            <button class="filter-btn" data-filter="type" data-value="reserved">Reserved</button>
-                            <button class="filter-btn" data-filter="type" data-value="discontinued">Discontinued</button>
+                            <button class="filter-btn active" data-filter="type" data-value="all" title="Show services of all types">All</button>
+                            <button class="filter-btn" data-filter="type" data-value="free" title="Free email providers">Free</button>
+                            <button class="filter-btn" data-filter="type" data-value="paid" title="Paid email providers">Paid</button>
+                            <button class="filter-btn" data-filter="type" data-value="forwarding" title="Email forwarding/alias services - always strict-tier">Forwarding</button>
+                            <button class="filter-btn" data-filter="type" data-value="reserved" title="Special-use reserved names">Reserved</button>
+                            <button class="filter-btn" data-filter="type" data-value="discontinued" title="Services that have been discontinued">Discontinued</button>
                         </div>
                         <div class="filter-group">
                             <label>Verification:</label>
-                            <button class="filter-btn active" data-filter="verify" data-value="all">All</button>
-                            <button class="filter-btn" data-filter="verify" data-value="none">None</button>
-                            <button class="filter-btn" data-filter="verify" data-value="mobile">Mobile</button>
-                            <button class="filter-btn" data-filter="verify" data-value="email">Email</button>
-                            <button class="filter-btn" data-filter="verify" data-value="payment">Payment</button>
-                            <button class="filter-btn" data-filter="verify" data-value="other">Other</button>
-                            <button class="filter-btn" data-filter="verify" data-value="unset">Unset</button>
+                            <button class="filter-btn active" data-filter="verify" data-value="all" title="Show services with any signup verification">All</button>
+                            <button class="filter-btn" data-filter="verify" data-value="none" title="No verification required at signup - anonymous use possible (strict-tier)">None</button>
+                            <button class="filter-btn" data-filter="verify" data-value="mobile" title="Mobile number verification required at signup (whitelist-tier)">Mobile</button>
+                            <button class="filter-btn" data-filter="verify" data-value="email" title="Email verification at signup - anonymous use still possible (strict-tier)">Email</button>
+                            <button class="filter-btn" data-filter="verify" data-value="payment" title="Payment verification required at signup (whitelist-tier)">Payment</button>
+                            <button class="filter-btn" data-filter="verify" data-value="other" title="Other identity verification required at signup (whitelist-tier)">Other</button>
+                            <button class="filter-btn" data-filter="verify" data-value="unset" title="Verification method not recorded - treated as verified (whitelist-tier)">Unset</button>
                         </div>
                         <div class="filter-group">
                             <label>Tier:</label>
-                            <button class="filter-btn active" data-filter="tier" data-value="all">All</button>
-                            <button class="filter-btn" data-filter="tier" data-value="whitelist">Whitelist</button>
-                            <button class="filter-btn" data-filter="tier" data-value="strict">Strict</button>
-                            <button class="filter-btn" data-filter="tier" data-value="excluded">Excluded</button>
+                            <button class="filter-btn active" data-filter="tier" data-value="all" title="Show services of all tiers">All</button>
+                            <button class="filter-btn" data-filter="tier" data-value="whitelist" title="Whitelist-tier: free/paid/reserved with verified signup or unset verification">Whitelist</button>
+                            <button class="filter-btn" data-filter="tier" data-value="strict" title="Strict-tier (greylist): forwarding services, plus free/paid allowing anonymous signup (none/email verification)">Strict</button>
+                            <button class="filter-btn" data-filter="tier" data-value="excluded" title="Discontinued services - excluded from both tiers">Excluded</button>
                         </div>
                     </div>
                     <div id="mail-services-content">

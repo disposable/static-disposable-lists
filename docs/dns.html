@@ -451,44 +451,44 @@
                     <div class="filter-bar">
                         <div class="filter-group">
                             <label>Status:</label>
-                            <button class="filter-btn active" data-filter="status" data-value="all">All</button>
-                            <button class="filter-btn" data-filter="status" data-value="active">Active</button>
-                            <button class="filter-btn" data-filter="status" data-value="restricted">Restricted</button>
-                            <button class="filter-btn" data-filter="status" data-value="no_new_registrations">No New Reg.</button>
-                            <button class="filter-btn" data-filter="status" data-value="discontinued">Discontinued</button>
+                            <button class="filter-btn active" data-filter="status" data-value="all" title="Show services of all statuses">All</button>
+                            <button class="filter-btn" data-filter="status" data-value="active" title="Open registrations">Active</button>
+                            <button class="filter-btn" data-filter="status" data-value="restricted" title="Signup gated - device ownership, invite-only, or manual approval">Restricted</button>
+                            <button class="filter-btn" data-filter="status" data-value="no_new_registrations" title="Existing hostnames still resolve but new ones cannot be created">No New Reg.</button>
+                            <button class="filter-btn" data-filter="status" data-value="discontinued" title="Service shut down">Discontinued</button>
                         </div>
                         <div class="filter-group">
                             <label>Type:</label>
-                            <button class="filter-btn active" data-filter="type" data-value="all">All</button>
-                            <button class="filter-btn" data-filter="type" data-value="free">Free</button>
-                            <button class="filter-btn" data-filter="type" data-value="freemium">Freemium</button>
-                            <button class="filter-btn" data-filter="type" data-value="paid">Paid</button>
-                            <button class="filter-btn" data-filter="type" data-value="reserved">Reserved</button>
+                            <button class="filter-btn active" data-filter="type" data-value="all" title="Show services of all types">All</button>
+                            <button class="filter-btn" data-filter="type" data-value="free" title="Free providers">Free</button>
+                            <button class="filter-btn" data-filter="type" data-value="freemium" title="Free tier with paid upgrades">Freemium</button>
+                            <button class="filter-btn" data-filter="type" data-value="paid" title="Paid providers">Paid</button>
+                            <button class="filter-btn" data-filter="type" data-value="reserved" title="Special-use domains">Reserved</button>
                         </div>
                         <div class="filter-group">
                             <label>Updates:</label>
-                            <button class="filter-btn active" data-filter="updates" data-value="all">All</button>
-                            <button class="filter-btn" data-filter="updates" data-value="dynamic">Dynamic</button>
-                            <button class="filter-btn" data-filter="updates" data-value="static">Static</button>
-                            <button class="filter-btn" data-filter="updates" data-value="both">Both</button>
+                            <button class="filter-btn active" data-filter="updates" data-value="all" title="Show all update modes">All</button>
+                            <button class="filter-btn" data-filter="updates" data-value="dynamic" title="Supports DDNS update clients">Dynamic</button>
+                            <button class="filter-btn" data-filter="updates" data-value="static" title="Records editable but no update protocol">Static</button>
+                            <button class="filter-btn" data-filter="updates" data-value="both" title="Dynamic updates plus full static record editing">Both</button>
                         </div>
                         <div class="filter-group">
                             <label>API:</label>
-                            <button class="filter-btn active" data-filter="api" data-value="all">All</button>
-                            <button class="filter-btn" data-filter="api" data-value="yes">Yes</button>
-                            <button class="filter-btn" data-filter="api" data-value="no">No</button>
+                            <button class="filter-btn active" data-filter="api" data-value="all" title="Show services with or without an API">All</button>
+                            <button class="filter-btn" data-filter="api" data-value="yes" title="Programmatic HTTP/DNS API for record management or updates">Yes</button>
+                            <button class="filter-btn" data-filter="api" data-value="no" title="No programmatic API for record management">No</button>
                         </div>
                         <div class="filter-group">
                             <label>Access:</label>
-                            <button class="filter-btn active" data-filter="access" data-value="all">All</button>
-                            <button class="filter-btn" data-filter="access" data-value="public">Public</button>
-                            <button class="filter-btn" data-filter="access" data-value="private">Private</button>
+                            <button class="filter-btn active" data-filter="access" data-value="all" title="Show public and private services">All</button>
+                            <button class="filter-btn" data-filter="access" data-value="public" title="Hostnames can be registered publicly on the provider website">Public</button>
+                            <button class="filter-btn" data-filter="access" data-value="private" title="Registration only via vendor hardware/interface, customer-only, or invite-only">Private</button>
                         </div>
                         <div class="filter-group">
                             <label>Revalidation:</label>
-                            <button class="filter-btn active" data-filter="reval" data-value="all">All</button>
-                            <button class="filter-btn" data-filter="reval" data-value="required">Required</button>
-                            <button class="filter-btn" data-filter="reval" data-value="none">None</button>
+                            <button class="filter-btn active" data-filter="reval" data-value="all" title="Show services with or without revalidation">All</button>
+                            <button class="filter-btn" data-filter="reval" data-value="required" title="Free hostnames/accounts must be manually re-confirmed periodically">Required</button>
+                            <button class="filter-btn" data-filter="reval" data-value="none" title="No periodic re-confirmation required">None</button>
                         </div>
                     </div>
                     <div id="dns-services-content">
