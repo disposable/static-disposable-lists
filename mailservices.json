@@ -224,7 +224,7 @@
       "mx03.earthlink-vadesecure.net",
       "mx04.earthlink-vadesecure.net"
     ],
-    "remark": "EarthLink ISP customer-mail fleet (MX: earthlink-vadesecure.net); requires ISP subscription.",
+    "remark": "EarthLink ISP customer-mail fleet; requires ISP subscription.",
     "signup_verification": [
       "payment"
     ],
@@ -322,7 +322,7 @@
     "mx_hosts": [
       "mx.tim.it"
     ],
-    "remark": "TIM (IT) ISP mail (alice.it on tim.it MX); requires subscription. Geo-blocked.",
+    "remark": "TIM (IT) ISP mail; requires subscription. Geo-blocked.",
     "signup_verification": [
       "payment"
     ],
@@ -391,7 +391,7 @@
       "mx-stp.mail.saunalahti.fi",
       "mx-tnl.mail.saunalahti.fi"
     ],
-    "remark": "Elisa (FI) ISP mail (saunalahti MX); requires subscription. Geo-blocked.",
+    "remark": "Elisa (FI) ISP mail; requires subscription. Geo-blocked.",
     "signup_verification": [
       "payment"
     ],
@@ -540,7 +540,7 @@
       "alt4.aspmx.l.google.com",
       "aspmx.l.google.com"
     ],
-    "remark": "Former Saudi freemail; domain repurposed (drone software company, Google Workspace MX). Service discontinued.",
+    "remark": "Former Saudi freemail; domain repurposed (drone software company). Service discontinued.",
     "type": "free"
   },
   "azet.sk": {
@@ -591,7 +591,7 @@
     "mx_hosts": [
       "mx-lb-1.stofanet.dk"
     ],
-    "remark": "Stofa (DK) ISP mail (stofanet MX); requires subscription. Geo-blocked.",
+    "remark": "Stofa (DK) ISP mail; requires subscription. Geo-blocked.",
     "signup_verification": [
       "payment"
     ],
@@ -1429,7 +1429,7 @@
       "sitemail3.everyone.net",
       "sitemail4.everyone.net"
     ],
-    "remark": "everyone.net is a B2B hosted-mail platform; vanity domains (as-if.com etc.) are parked/legacy — MX live but no public signup.",
+    "remark": "everyone.net is a B2B hosted-mail platform; vanity domains (as-if.com etc.) are parked/legacy - no public signup.",
     "signup_verification": [
       "payment"
     ],
@@ -2100,7 +2100,7 @@
     "mx_hosts": [
       "india-com.mail.protection.outlook.com"
     ],
-    "remark": "Former freemail portal; domain is now Zee Media corporate (Microsoft 365 MX). No public signup.",
+    "remark": "Former freemail portal; domain is now Zee Media corporate. No public signup.",
     "type": "free"
   },
   "inet.fi": {
@@ -5412,7 +5412,7 @@
     "hosts": [
       "safe-mail.net"
     ],
-    "remark": "Secure webmail provider (SSL Capital, IL); free 3MB tier requires existing email + manual approval (days); premium tiers paid; domain has no MX record.",
+    "remark": "Secure webmail provider (SSL Capital, IL); free 3MB tier requires existing email + manual approval (days); premium tiers paid.",
     "signup_verification": [
       "email"
     ],
@@ -5440,7 +5440,7 @@
       "mx0.123-reg.co.uk",
       "mx1.123-reg.co.uk"
     ],
-    "remark": "Formerly advertised free email at sanipass.com/host/index.html; the service is now defunct and the MX only points to a parking/default 123-reg server.",
+    "remark": "Formerly advertised free email at sanipass.com/host/index.html; the service is now defunct.",
     "signup_verification": [
       "none"
     ],
@@ -5858,7 +5858,7 @@
       "mxc.bolt.im",
       "mxd.bolt.im"
     ],
-    "remark": "Spike mail domain; site returns 404, MX on bolt.im. No public signup.",
+    "remark": "Spike mail domain; site returns 404. No public signup.",
     "type": "free"
   },
   "startmail.com": {
@@ -6178,7 +6178,7 @@
       "alt4.aspmx.l.google.com",
       "aspmx.l.google.com"
     ],
-    "remark": "TELUS (CA) ISP mail (Google MX); requires ISP subscription. Geo-blocked.",
+    "remark": "TELUS (CA) ISP mail; requires ISP subscription. Geo-blocked.",
     "signup_verification": [
       "payment"
     ],
@@ -6399,7 +6399,7 @@
     "mx_hosts": [
       "mxpool01.netaddress.usa.net"
     ],
-    "remark": "USA.NET (Net@ddress) legacy paid mail; site unreachable from vantage — MX live, known paid service.",
+    "remark": "USA.NET (Net@ddress) legacy paid mail; site unreachable from vantage; known paid service.",
     "signup_verification": [
       "payment"
     ],
@@ -6412,7 +6412,7 @@
     "mx_hosts": [
       "mail.drei.at"
     ],
-    "remark": "Hutchison Drei (AT) ISP mail (drei.at MX); requires subscription. Geo-blocked.",
+    "remark": "Hutchison Drei (AT) ISP mail; requires subscription. Geo-blocked.",
     "signup_verification": [
       "payment"
     ],
