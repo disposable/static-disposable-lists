@@ -5408,6 +5408,16 @@
     ],
     "type": "paid"
   },
+  "safe-mail.net": {
+    "hosts": [
+      "safe-mail.net"
+    ],
+    "remark": "Secure webmail provider (SSL Capital, IL); free 3MB tier requires existing email + manual approval (days); premium tiers paid; domain has no MX record.",
+    "signup_verification": [
+      "email"
+    ],
+    "type": "free"
+  },
   "salzburg.co.at": {
     "hosts": [
       "salzburg.co.at"
