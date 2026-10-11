@@ -157,7 +157,7 @@
     "url": "https://aa.am/"
   },
   "activetrail.biz": {
-    "hosted": "IL",
+    "hosted": "DE",
     "hosts": [
       "activetrail.biz"
     ],
@@ -1440,7 +1440,7 @@
     "hosts": [
       "apertodns.com"
     ],
-    "jurisdiction": "US",
+    "jurisdiction": "IT",
     "public": true,
     "remark": "ApertoDNS - free Dynamic DNS for professionals (Italy).",
     "signup_verification": [
@@ -1545,7 +1545,7 @@
   "appspot.com": {
     "api": true,
     "cloud": "Google Cloud",
-    "hosted": "US",
+    "hosted": "FR",
     "hosts": [
       "appspot.com"
     ],
@@ -1621,7 +1621,7 @@
     "url": "https://www.arvancloud.ir/"
   },
   "arweave.net": {
-    "hosted": "FI",
+    "hosted": "CH",
     "hosts": [
       "arweave.net"
     ],
@@ -2990,7 +2990,7 @@
   },
   "cloudera.com": {
     "cloud": "Fastly",
-    "hosted": "DE",
+    "hosted": "FR",
     "hosts": [
       "cloudera.site"
     ],
@@ -5233,7 +5233,7 @@
   },
   "dynv6.com": {
     "api": true,
-    "cloud": "Hetzner",
+    "cloud": "netcup",
     "hosted": "DE",
     "hosts": [
       "dynv6.com"
@@ -45612,7 +45612,7 @@
   "godaddysites.com": {
     "api": true,
     "cloud": "AWS",
-    "hosted": "US",
+    "hosted": "CA",
     "hosts": [
       "godaddysites.com"
     ],
@@ -45709,7 +45709,7 @@
   },
   "gov.scot": {
     "cloud": "AWS",
-    "hosted": "CA",
+    "hosted": "US",
     "hosts": [
       "gov.scot",
       "mygov.scot",
@@ -45872,8 +45872,8 @@
     "url": "https://d.gv.vc"
   },
   "gw.to": {
-    "cloud": "Fastly",
-    "hosted": "US",
+    "cloud": "Leaseweb",
+    "hosted": "HK",
     "hosts": [
       "gw.to",
       "int.yt",
@@ -47828,7 +47828,7 @@
     "cloud": "AWS",
     "hosted": "US",
     "hosts": [],
-    "jurisdiction": "DE",
+    "jurisdiction": "US",
     "own_domains": true,
     "public": true,
     "remark": "LuaDNS - own-domain DNS with dynamic-update API (OpenWrt ddns-scripts).",
@@ -48020,7 +48020,7 @@
   },
   "mathworks.com": {
     "cloud": "AWS",
-    "hosted": "CA",
+    "hosted": "US",
     "hosts": [
       "matlab.cloud",
       "modelscape.com",
@@ -48879,6 +48879,7 @@
     "url": "https://netatwork.de/"
   },
   "netcraze.pro": {
+    "cloud": "Selectel",
     "hosted": "RU",
     "hosts": [
       "crazedns.ru",
@@ -49469,7 +49470,7 @@
   },
   "northflank.com": {
     "cloud": "Fastly",
-    "hosted": "FR",
+    "hosted": "DE",
     "hosts": [
       "build.run",
       "code.run",
@@ -49642,6 +49643,7 @@
     "url": "https://www.nsupdate.info/"
   },
   "nuoz.net": {
+    "hosted": "US",
     "hosts": [
       "aberdeen.wa.us",
       "bainbridge-isl.wa.us",
@@ -50233,7 +50235,7 @@
   },
   "pcarrier.ca": {
     "cloud": "Hetzner",
-    "hosted": "FI",
+    "hosted": "DE",
     "hosts": [
       "gh.srv.us",
       "gl.srv.us",
@@ -51582,7 +51584,7 @@
   },
   "salesforce.com": {
     "cloud": "Akamai",
-    "hosted": "AU",
+    "hosted": "US",
     "hosts": [
       "001.test.code-builder-stg.platform.salesforce.com",
       "aa.crm.dev",
@@ -51795,6 +51797,7 @@
   },
   "securepoint.de": {
     "api": true,
+    "cloud": "Hetzner",
     "hosted": "DE",
     "hosts": [
       "firewall-gateway.com",
@@ -53962,7 +53965,7 @@
   },
   "wdc.com": {
     "cloud": "Akamai",
-    "hosted": "DE",
+    "hosted": "PL",
     "hosts": [
       "remotewd.com"
     ],
@@ -54387,7 +54390,7 @@
     "hosts": [
       "wordpress.com"
     ],
-    "jurisdiction": "CH",
+    "jurisdiction": "US",
     "public": true,
     "remark": "WordPress.com — *.<site>.wordpress.com",
     "signup_verification": "email",
@@ -54510,7 +54513,7 @@
   "xname.org": {
     "api": true,
     "hosts": [],
-    "jurisdiction": "DE",
+    "jurisdiction": "FR",
     "own_domains": true,
     "public": true,
     "remark": "XName free primary/secondary DNS hosting; service defunct, domain delegated to registrar parking nameservers.",
@@ -54809,7 +54812,7 @@
     "api": true,
     "hosted": "CA",
     "hosts": [],
-    "jurisdiction": "CA",
+    "jurisdiction": "US",
     "ns_suffixes": [
       "zoneedit.com",
       "easydns.com"

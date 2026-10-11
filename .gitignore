@@ -1,5 +1,6 @@
 tmp/
 .venv
+.geoip/
 *.pyc
 /.vscode
 __pycache__

@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://disposable.github.io/static-disposable-lists/schemas/jurisdiction-overrides.schema.json",
+  "type": "object",
+  "description": "Curated legal-seat map: provider key or host domain -> ISO 3166-1 alpha-2 country",
+  "patternProperties": {
+    "^[^:]+$": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$"
+    }
+  },
+  "additionalProperties": false
+}

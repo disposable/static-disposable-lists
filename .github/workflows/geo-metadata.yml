@@ -1,0 +1,39 @@
+name: Geo metadata
+
+# Monthly refresh of hosted/cloud/jurisdiction fields on dnsservices.json and
+# mailservices.json via free DB-IP Lite databases (country + ASN).
+# Jurisdiction is curated in data/jurisdiction_overrides.json.
+
+on:
+  schedule:
+    - cron: "30 3 5 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  geo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Update geo metadata
+        run: |
+          pip install dnspython maxminddb
+          python scripts/update_geo_metadata.py
+
+      - name: Commit changes
+        run: |
+          if git diff --quiet -- dnsservices.json mailservices.json; then
+            echo "No changes"; exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dnsservices.json mailservices.json
+          git commit -m "Refresh geo metadata ($(date -u +%Y-%m-%d))"
+          git push

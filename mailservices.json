@@ -2424,6 +2424,7 @@
     "hosts": [
       "intnet.mu"
     ],
+    "jurisdiction": "MU",
     "mx_hosts": [
       "mailsecurity.myt.mu",
       "mxrb.myt.mu"
@@ -2771,6 +2772,7 @@
       "telfortglasvezel.nl",
       "xs4all.nl"
     ],
+    "jurisdiction": "NL",
     "mx_hosts": [
       "mx.kpnmail.nl"
     ],
@@ -5689,7 +5691,8 @@
     "type": "paid"
   },
   "qq.com": {
-    "hosted": "CN",
+    "cloud": "Tencent Cloud",
+    "hosted": "HK",
     "hosts": [
       "foxmail.com",
       "mailpanda.com",

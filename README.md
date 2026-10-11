@@ -53,6 +53,12 @@ Key fields per provider:
 | `signup_verification` | Account signup verification method(s) |
 | `ns_hosts` / `ns_suffixes` | Provider nameserver fingerprints for domain attribution |
 | `hosts_total` | Real host count — only present in `dnsservices.json` when `hosts` was truncated to 500 |
+| `jurisdiction` | ISO country of the provider's legal seat (imprint/terms); absent = unknown |
+| `hosted` / `cloud` | GeoIP country where the site resolves / cloud-CDN operator from ASN |
+
+`jurisdiction`, `hosted` and `cloud` also exist on `mailservices.json` entries. Geographic
+fields are refreshed monthly by `scripts/update_geo_metadata.py`; legal-seat data is curated in
+[data/jurisdiction_overrides.json](data/jurisdiction_overrides.json).
 
 #### Automated domain import
 
@@ -85,6 +91,7 @@ All JSON data files are validated against schemas:
 | [schemas/disposable-mail-hosts.schema.json](schemas/disposable-mail-hosts.schema.json) | `disposable-mail-hosts.json` |
 | [schemas/dnsservices.schema.json](schemas/dnsservices.schema.json) | `dnsservices.json`, `dnsservices.full.json` |
 | [schemas/dnsservices-candidates.schema.json](schemas/dnsservices-candidates.schema.json) | `dnsservices-candidates.json` |
+| [schemas/jurisdiction-overrides.schema.json](schemas/jurisdiction-overrides.schema.json) | `data/jurisdiction_overrides.json` |
 
 
 ## Scripts
@@ -98,6 +105,7 @@ All JSON data files are validated against schemas:
 | [scripts/sort_json_keys.py](scripts/sort_json_keys.py) | Recursively sort JSON keys alphabetically |
 | [scripts/import_dyndns_list.py](scripts/import_dyndns_list.py) | Daily import of alexandrosmagos/dyn-dns-list into `dnsservices.json` (capped) + regenerate `dnsservices.full.json` |
 | [scripts/fetch_dns_candidates.py](scripts/fetch_dns_candidates.py) | Weekly fetch of upstream DNS lists → `dnsservices-candidates.json` staging file (NS/SOA-verified) |
+| [scripts/update_geo_metadata.py](scripts/update_geo_metadata.py) | Monthly refresh of `hosted`/`cloud`/`jurisdiction` on both catalogs via free DB-IP Lite MMDBs + `data/jurisdiction_overrides.json` |
 
 
 ## Validation & CI
@@ -122,6 +130,7 @@ Pre-commit hooks and GitHub Actions ensure data integrity:
 - [WebSnifferHQ/subdomain-providers](https://github.com/WebSnifferHQ/subdomain-providers) — subdomain provider list
 - [Public Suffix List](https://publicsuffix.org/) — private-section operator groups polled weekly into `dnsservices-candidates.json`
 - [OpenWrt ddns-scripts](https://github.com/openwrt/packages/tree/master/net/ddns-scripts) — DDNS provider registry polled weekly into `dnsservices-candidates.json`
+- [DB-IP Lite](https://db-ip.com) — free IP geolocation and ASN databases (CC BY 4.0) used for `hosted`/`cloud` fields, refreshed monthly by `update_geo_metadata.py`
 
 
 ## License
