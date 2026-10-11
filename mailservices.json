@@ -338,6 +338,7 @@
     "hosts": [
       "aliasvault.net"
     ],
+    "jurisdiction": "NL",
     "mx_hosts": [
       "mail.aliasvault.net"
     ],
@@ -672,6 +673,7 @@
     "hosts": [
       "beeble.com"
     ],
+    "jurisdiction": "LV",
     "mx_hosts": [
       "m1c2.beeble.com"
     ],
@@ -2506,6 +2508,7 @@
       "japan.com",
       "london.com"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "webmail.pear.com"
     ],
@@ -4550,6 +4553,7 @@
       "vip.vip",
       "it.de"
     ],
+    "jurisdiction": "DE",
     "mx_hosts": [
       "abimail.com",
       "actimail.com",
@@ -4692,6 +4696,7 @@
     "hosts": [
       "mtnonline.com"
     ],
+    "jurisdiction": "NG",
     "mx_hosts": [
       "mailstore1.secureserver.net",
       "smtp.secureserver.net"
@@ -4900,6 +4905,7 @@
     "hosts": [
       "netins.net"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mx.netins.net.cust.b.hostedemail.com"
     ],
@@ -5201,7 +5207,7 @@
   },
   "outlook.com": {
     "cloud": "Azure",
-    "hosted": "US",
+    "hosted": "CA",
     "hosts": [
       "hotmail.at",
       "hotmail.ba",
@@ -5692,7 +5698,7 @@
   },
   "qq.com": {
     "cloud": "Tencent Cloud",
-    "hosted": "HK",
+    "hosted": "CN",
     "hosts": [
       "foxmail.com",
       "mailpanda.com",
@@ -5719,6 +5725,7 @@
     "hosts": [
       "qrypty.com"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mail.qrypty.com"
     ],
@@ -7530,6 +7537,7 @@
     "hosts": [
       "wiwimail.com"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mail.nirclemail.com"
     ],
@@ -7802,6 +7810,7 @@
     "hosts": [
       "zaclys.com"
     ],
+    "jurisdiction": "FR",
     "mx_hosts": [
       "smtp.zaclys.com"
     ],

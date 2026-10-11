@@ -157,10 +157,11 @@
     "url": "https://aa.am/"
   },
   "activetrail.biz": {
-    "hosted": "DE",
+    "hosted": "IL",
     "hosts": [
       "activetrail.biz"
     ],
+    "jurisdiction": "IL",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator ActiveTrail.",
     "status": "active",
@@ -356,6 +357,7 @@
       "alces.network",
       "compute.estate"
     ],
+    "jurisdiction": "GB",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Alces Software Ltd.",
     "status": "active",
@@ -425,6 +427,7 @@
     "hosts": [
       "altervista.org"
     ],
+    "jurisdiction": "IT",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Altervista.",
     "status": "active",
@@ -493,7 +496,7 @@
   "amazonaws.com": {
     "api": true,
     "cloud": "AWS",
-    "hosted": "CA",
+    "hosted": "US",
     "hosts": [
       "af-south-1.airflow.amazonaws.com",
       "af-south-1.elasticbeanstalk.com",
@@ -1495,6 +1498,7 @@
     "hosts": [
       "siiites.com"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Apphud.",
     "status": "active",
@@ -1536,6 +1540,7 @@
       "appspacehosted.com",
       "appspaceusercontent.com"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Appspace.",
     "status": "active",
@@ -1590,6 +1595,7 @@
     "hosts": [
       "on-aptible.com"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Aptible.",
     "status": "active",
@@ -1621,7 +1627,7 @@
     "url": "https://www.arvancloud.ir/"
   },
   "arweave.net": {
-    "hosted": "CH",
+    "hosted": "FI",
     "hosts": [
       "arweave.net"
     ],
@@ -1650,6 +1656,7 @@
     "hosts": [
       "auiusercontent.com"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator AgentbaseAI Inc..",
     "status": "active",
@@ -1695,6 +1702,7 @@
       "atlassian-isolated-3p.com",
       "cdn.prod.atlassian-dev.net"
     ],
+    "jurisdiction": "AU",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Atlassian.",
     "status": "active",
@@ -1706,6 +1714,7 @@
     "hosts": [
       "atspace.com"
     ],
+    "jurisdiction": "DE",
     "public": true,
     "remark": "Free web hosting for life; free subdomains (Zetta Hosting).",
     "status": "active",
@@ -1760,6 +1769,7 @@
     "hosts": [
       "atwebpages.com"
     ],
+    "jurisdiction": "DE",
     "ns_suffixes": [
       "runhosting.com"
     ],
@@ -1941,6 +1951,7 @@
     "hosts": [
       "bnr.la"
     ],
+    "jurisdiction": "AU",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator BinaryLane.",
     "status": "active",
@@ -2012,6 +2023,7 @@
     "hosts": [
       "blackbaudcdn.net"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Blackbaud, Inc.. Infrastructure/security-boundary suffix, not publicly registrable.",
     "status": "active",
@@ -2053,7 +2065,7 @@
   "blogspot.com": {
     "api": true,
     "cloud": "Google Cloud",
-    "hosted": "FR",
+    "hosted": "US",
     "hosts": [
       "blogspot.ae",
       "blogspot.al",
@@ -2142,6 +2154,7 @@
     "hosts": [
       "bluebite.io"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Blue Bite, LLC. Infrastructure/security-boundary suffix, not publicly registrable.",
     "status": "active",
@@ -2824,6 +2837,7 @@
       "cleverapps.tech",
       "services.clever-cloud.com"
     ],
+    "jurisdiction": "FR",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Clever Cloud.",
     "status": "active",
@@ -2990,7 +3004,7 @@
   },
   "cloudera.com": {
     "cloud": "Fastly",
-    "hosted": "FR",
+    "hosted": "DE",
     "hosts": [
       "cloudera.site"
     ],
@@ -3129,6 +3143,7 @@
     "hosts": [
       "wnext.app"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Clovyr.",
     "status": "active",
@@ -3733,6 +3748,7 @@
       "definima.io",
       "definima.net"
     ],
+    "jurisdiction": "FR",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Definima.",
     "status": "active",
@@ -3972,6 +3988,7 @@
       "discourse.group",
       "discourse.team"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Civilized Discourse Construction Kit, Inc..",
     "status": "active",
@@ -4013,6 +4030,7 @@
     "hosts": [
       "jozi.biz"
     ],
+    "jurisdiction": "ZA",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator DNS Africa Ltd.",
     "status": "active",
@@ -4397,6 +4415,7 @@
       "me.scot",
       "org.scot"
     ],
+    "jurisdiction": "GB",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator dotScot Domains.",
     "status": "active",
@@ -4494,6 +4513,7 @@
     "cloud": "Cloudflare",
     "hosted": "CA",
     "hosts": [],
+    "jurisdiction": "HK",
     "old_hosts": [
       "dtdns.com"
     ],
@@ -4692,7 +4712,7 @@
   },
   "dyn.com": {
     "cloud": "Akamai",
-    "hosted": "DE",
+    "hosted": "SA",
     "hosts": [
       "at-band-camp.net",
       "ath.cx",
@@ -5310,6 +5330,7 @@
     "hosts": [
       "e2b.app"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator FoundryLabs, Inc.",
     "status": "active",
@@ -5469,6 +5490,7 @@
     "hosts": [
       "at.emf.camp"
     ],
+    "jurisdiction": "GB",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Electromagnetic Field.",
     "status": "active",
@@ -5482,6 +5504,7 @@
       "mytuleap.com",
       "tuleap-partners.com"
     ],
+    "jurisdiction": "FR",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Enalean SAS.",
     "status": "active",
@@ -5728,6 +5751,7 @@
       "on.staging.expo.app",
       "staging.expo.app"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Expo.",
     "status": "active",
@@ -5960,7 +5984,7 @@
   },
   "fedoraproject.org": {
     "cloud": "AWS",
-    "hosted": "DE",
+    "hosted": "US",
     "hosts": [
       "app.os.fedoraproject.org",
       "app.os.stg.fedoraproject.org",
@@ -6028,6 +6052,7 @@
       "payload.dev",
       "preview.site"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Figma.",
     "status": "active",
@@ -6092,6 +6117,7 @@
     "hosts": [
       "fldrv.com"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator FlashDrive.",
     "status": "active",
@@ -45244,6 +45270,7 @@
     "hosts": [
       "fspages.org"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "FSPages free static hosting subdomains (fachschaften.org).",
     "signup_verification": [
@@ -45375,6 +45402,7 @@
       "gentapps.com",
       "gentlentapis.com"
     ],
+    "jurisdiction": "DE",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Gentlent, Inc..",
     "status": "active",
@@ -45418,6 +45446,7 @@
       "channelsdvr.net",
       "u.channelsdvr.net"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Fancy Bits, LLC.",
     "status": "active",
@@ -45457,6 +45486,7 @@
     "hosts": [
       "gitbook.io"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator GitBook Inc..",
     "status": "active",
@@ -45612,7 +45642,7 @@
   "godaddysites.com": {
     "api": true,
     "cloud": "AWS",
-    "hosted": "CA",
+    "hosted": "US",
     "hosts": [
       "godaddysites.com"
     ],
@@ -45715,6 +45745,7 @@
       "mygov.scot",
       "service.gov.scot"
     ],
+    "jurisdiction": "GB",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Scottish Government.",
     "status": "active",
@@ -45872,8 +45903,8 @@
     "url": "https://d.gv.vc"
   },
   "gw.to": {
-    "cloud": "Leaseweb",
-    "hosted": "HK",
+    "cloud": "Fastly",
+    "hosted": "US",
     "hosts": [
       "gw.to",
       "int.yt",
@@ -45908,6 +45939,7 @@
     "hosts": [
       "hackclub.app"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Hackclub Nest.",
     "status": "active",
@@ -46059,6 +46091,7 @@
     "hosts": [
       "here.now"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator here.now. Anonymous sites expire after 24h; registered accounts keep sites",
     "status": "active",
@@ -46225,6 +46258,7 @@
     "hosts": [
       "hoplix.shop"
     ],
+    "jurisdiction": "IT",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Hoplix.",
     "status": "active",
@@ -46395,6 +46429,7 @@
     "hosts": [
       "hypernode.io"
     ],
+    "jurisdiction": "NL",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Hypernode B.V..",
     "status": "active",
@@ -46509,6 +46544,7 @@
       "wpmucdn.com",
       "wpmudev.host"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Incsub, LLC.",
     "status": "active",
@@ -46949,7 +46985,7 @@
     "url": "https://is-an.ai"
   },
   "iserv.de": {
-    "cloud": "netcup",
+    "cloud": "Hetzner",
     "hosted": "DE",
     "hosts": [
       "iserv.dev",
@@ -47340,6 +47376,7 @@
       "kiloapps.ai",
       "kiloapps.io"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Kilo Code, Inc..",
     "status": "active",
@@ -47523,6 +47560,7 @@
       "lpages.co",
       "lpusercontent.com"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Leadpages.",
     "status": "active",
@@ -47758,6 +47796,7 @@
       "loginline.services",
       "loginline.site"
     ],
+    "jurisdiction": "FR",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Log'in Line.",
     "status": "active",
@@ -47782,6 +47821,7 @@
     "hosts": [
       "loophole.site"
     ],
+    "jurisdiction": "AT",
     "public": true,
     "remark": "Loophole tunnel hostnames (*.loophole.site).",
     "status": "active",
@@ -47922,6 +47962,7 @@
     "hosts": [
       "lutrausercontent.com"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Lutra.",
     "status": "active",
@@ -48038,6 +48079,7 @@
     "hosts": [
       "mayfirst.info"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator May First - People Link.",
     "status": "active",
@@ -48568,6 +48610,7 @@
     "hosts": [
       "my.be"
     ],
+    "jurisdiction": "BE",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator MyOwn srl.",
     "status": "active",
@@ -49410,6 +49453,7 @@
     "hosts": [
       "nog.community"
     ],
+    "jurisdiction": "NL",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Global NOG Alliance.",
     "status": "active",
@@ -49863,6 +49907,7 @@
     "hosts": [
       "oortech.com"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "Oort (AION) cloud service subdomains.",
     "status": "active",
@@ -50097,7 +50142,7 @@
     "url": "https://ovhcloud.com/"
   },
   "ownprovider.com": {
-    "cloud": "netcup",
+    "cloud": "Contabo",
     "hosted": "DE",
     "hosts": [
       "own.pm",
@@ -50134,8 +50179,8 @@
     "url": "https://oy.lc/"
   },
   "p-e.kr": {
-    "cloud": "Akamai",
-    "hosted": "JP",
+    "cloud": "OVH",
+    "hosted": "CA",
     "hosts": [
       "kro.kr",
       "n-e.kr",
@@ -50227,6 +50272,7 @@
     "hosts": [
       "paywhirl.com"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Paywhirl, Inc.",
     "status": "active",
@@ -50235,7 +50281,7 @@
   },
   "pcarrier.ca": {
     "cloud": "Hetzner",
-    "hosted": "DE",
+    "hosted": "FI",
     "hosts": [
       "gh.srv.us",
       "gl.srv.us",
@@ -50441,6 +50487,7 @@
     "hosts": [
       "phplist.com"
     ],
+    "jurisdiction": "GB",
     "public": true,
     "remark": "phpList hosted service subdomains.",
     "status": "active",
@@ -50454,6 +50501,7 @@
     "hosts": [
       "pinata.cloud"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "Pinata IPFS gateway subdomains.",
     "status": "active",
@@ -50492,6 +50540,7 @@
     "hosts": [
       "support.site"
     ],
+    "jurisdiction": "GB",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Plain.",
     "status": "active",
@@ -50690,6 +50739,7 @@
       "postman-echo.com",
       "pstmn.io"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Postman, Inc.",
     "status": "active",
@@ -50951,6 +51001,7 @@
     "hosts": [
       "qualifioapp.com"
     ],
+    "jurisdiction": "BE",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Qualifio.",
     "status": "active",
@@ -50963,6 +51014,7 @@
     "hosts": [
       "ladesk.com"
     ],
+    "jurisdiction": "SK",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Quality Unit.",
     "status": "active",
@@ -51039,6 +51091,7 @@
       "myradweb.net",
       "servername.us"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Rad Web Hosting.",
     "status": "active",
@@ -51094,6 +51147,7 @@
       "on-rancher.cloud",
       "on-rio.io"
     ],
+    "jurisdiction": "DE",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Rancher Labs, Inc.",
     "status": "active",
@@ -51186,6 +51240,7 @@
       "clusters.rdpa.co",
       "srvrless.rdpa.co"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Redpanda Data.",
     "status": "active",
@@ -51429,6 +51484,7 @@
       "builtwithrocket.new",
       "rocketpreview.app"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Rocket.",
     "status": "active",
@@ -51880,6 +51936,7 @@
     "hosts": [
       "sellfy.store"
     ],
+    "jurisdiction": "LT",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Sellfy.",
     "status": "active",
@@ -52008,6 +52065,7 @@
     "hosts": [
       "myshopblocks.com"
     ],
+    "jurisdiction": "GB",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Shopblocks.",
     "status": "active",
@@ -52182,7 +52240,7 @@
     "url": "https://www.sixshop.com/"
   },
   "slyip.net": {
-    "hosted": "US",
+    "hosted": "NL",
     "hosts": [
       "slyip.net"
     ],
@@ -52250,6 +52308,7 @@
       "streamlit.app",
       "streamlitapp.com"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Snowflake Inc.",
     "status": "active",
@@ -52262,6 +52321,7 @@
     "hosts": [
       "try-snowplow.com"
     ],
+    "jurisdiction": "GB",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Snowplow Analytics.",
     "status": "active",
@@ -52299,6 +52359,7 @@
     "hosts": [
       "softether.net"
     ],
+    "jurisdiction": "JP",
     "public": false,
     "remark": "SoftEther VPN / VPN Azure DDNS; hostnames created via vendor interface only.",
     "signup_verification": [
@@ -52442,6 +52503,7 @@
     "hosts": [
       "square.site"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "Square — *.<site>.square.site",
     "signup_verification": "email",
@@ -52633,6 +52695,7 @@
     "hosts": [
       "storebase.store"
     ],
+    "jurisdiction": "AU",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Storebase.",
     "status": "active",
@@ -52876,6 +52939,7 @@
       "erp.dev",
       "web.erp.dev"
     ],
+    "jurisdiction": "JP",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Tailor Inc..",
     "status": "active",
@@ -52889,6 +52953,7 @@
       "c.ts.net",
       "ts.net"
     ],
+    "jurisdiction": "CA",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Tailscale Inc..",
     "status": "active",
@@ -53014,6 +53079,7 @@
       "edugit.io",
       "s3.teckids.org"
     ],
+    "jurisdiction": "DE",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Teckids e.V..",
     "status": "active",
@@ -53082,6 +53148,7 @@
     "hosts": [
       "tickets.io"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator ticket i/O GmbH.",
     "status": "active",
@@ -53168,7 +53235,7 @@
   },
   "torproject.org": {
     "cloud": "Hetzner",
-    "hosted": "DE",
+    "hosted": "FI",
     "hosts": [
       "pages.torproject.net",
       "torproject.net"
@@ -53570,6 +53637,7 @@
     "hosts": [
       "unison-services.cloud"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Unison Computing, PBC.",
     "status": "active",
@@ -54040,6 +54108,7 @@
       "hotelwithflight.com",
       "reserve-online.net"
     ],
+    "jurisdiction": "GR",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator WebHotelier Technologies Ltd.",
     "status": "active",
@@ -54068,6 +54137,7 @@
     "hosts": [
       "webnode.page"
     ],
+    "jurisdiction": "CZ",
     "public": true,
     "remark": "Webnode — *.<site>.webnode.page",
     "signup_verification": "email",
@@ -54096,7 +54166,7 @@
   },
   "webstarts.com": {
     "cloud": "AWS",
-    "hosted": "CA",
+    "hosted": "US",
     "hosts": [
       "webstarts.com"
     ],
@@ -54287,6 +54357,7 @@
       "drive-platform.com",
       "drive-platform.io"
     ],
+    "jurisdiction": "SE",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator WirelessCar.",
     "status": "active",
@@ -54446,6 +54517,7 @@
       "x10.bz",
       "x10.mx"
     ],
+    "jurisdiction": "US",
     "ns_suffixes": [
       "x10hosting.com"
     ],
@@ -54490,6 +54562,7 @@
       "half.host",
       "xenonconnect.de"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator XenonCloud GbR.",
     "status": "active",
@@ -54724,6 +54797,7 @@
     "hosts": [
       "zeabur.app"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Zeabur.",
     "status": "active",

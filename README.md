@@ -106,6 +106,7 @@ All JSON data files are validated against schemas:
 | [scripts/import_dyndns_list.py](scripts/import_dyndns_list.py) | Daily import of alexandrosmagos/dyn-dns-list into `dnsservices.json` (capped) + regenerate `dnsservices.full.json` |
 | [scripts/fetch_dns_candidates.py](scripts/fetch_dns_candidates.py) | Weekly fetch of upstream DNS lists → `dnsservices-candidates.json` staging file (NS/SOA-verified) |
 | [scripts/update_geo_metadata.py](scripts/update_geo_metadata.py) | Monthly refresh of `hosted`/`cloud`/`jurisdiction` on both catalogs via free DB-IP Lite MMDBs + `data/jurisdiction_overrides.json` |
+| [scripts/scan_jurisdiction_pages.py](scripts/scan_jurisdiction_pages.py) | Scan provider contact/terms/imprint/AGB pages for legal-seat signals (VAT IDs, legal forms, governing law, addresses) → candidate `jurisdiction` overrides for manual review |
 
 
 ## Validation & CI
