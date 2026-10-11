@@ -286,6 +286,16 @@
             color: white;
             border-color: var(--accent-color);
         }
+        .geo-cell {
+            white-space: nowrap;
+            font-size: 0.9rem;
+        }
+        .geo-cell .geo-sub {
+            display: block;
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
         .hosts-list {
             max-width: 220px;
             font-size: 0.85rem;
@@ -485,6 +495,12 @@
                             <button class="filter-btn" data-filter="access" data-value="private" title="Registration only via vendor hardware/interface, customer-only, or invite-only">Private</button>
                         </div>
                         <div class="filter-group">
+                            <label>Region:</label>
+                            <button class="filter-btn active" data-filter="region" data-value="all" title="Show providers in all jurisdictions">All</button>
+                            <button class="filter-btn" data-filter="region" data-value="eu" title="Provider legal seat in the European Union">EU</button>
+                            <button class="filter-btn" data-filter="region" data-value="non-eu" title="Provider legal seat outside the European Union">non-EU</button>
+                        </div>
+                        <div class="filter-group">
                             <label>Revalidation:</label>
                             <button class="filter-btn active" data-filter="reval" data-value="all" title="Show services with or without revalidation">All</button>
                             <button class="filter-btn" data-filter="reval" data-value="required" title="Free hostnames/accounts must be manually re-confirmed periodically">Required</button>
@@ -538,8 +554,12 @@
 
         initTheme();
 
-        let currentFilters = { status: 'all', type: 'all', updates: 'all', api: 'all', access: 'all', reval: 'all' };
+        let currentFilters = { status: 'all', type: 'all', updates: 'all', api: 'all', access: 'all', reval: 'all', region: 'all' };
         let currentSearch = '';
+        const EU = new Set(['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE']);
+        function flag(cc) {
+            return cc && cc.length === 2 ? String.fromCodePoint(...[...cc].map(c => 0x1F1E6 + c.charCodeAt(0) - 65)) : '';
+        }
         let sortState = { column: null, asc: true };
 
         const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -570,6 +590,7 @@
                 const api = row.dataset.api;
                 const access = row.dataset.access;
                 const reval = row.dataset.reval;
+                const juris = row.dataset.juris;
 
                 const show =
                     (currentFilters.status === 'all' || status === currentFilters.status) &&
@@ -577,6 +598,8 @@
                     (currentFilters.updates === 'all' || updates === currentFilters.updates) &&
                     (currentFilters.api === 'all' || api === currentFilters.api) &&
                     (currentFilters.access === 'all' || access === currentFilters.access) &&
+                    (currentFilters.region === 'all' ||
+                        (currentFilters.region === 'eu' ? EU.has(juris) : juris && !EU.has(juris))) &&
                     (currentFilters.reval === 'all' ||
                         (currentFilters.reval === 'required' ? reval === 'required' : reval === 'none')) &&
                     (!currentSearch ||
@@ -739,23 +762,26 @@
                     <strong>public</strong> = hostnames registerable on the website;
                     <strong>private</strong> = registration only via vendor hardware/interface or gated access.
                     Domains list shows the parent domains under which hostnames are issued.
+                    Geo column: first flag = jurisdiction (legal seat), second flag = where the service is hosted; name = cloud operator.
                 </p>
                 <div class="table-wrap">
                 <table>
                     <colgroup>
-                        <col style="width: 14%">
-                        <col style="width: 9%">
+                        <col style="width: 12%">
                         <col style="width: 8%">
                         <col style="width: 8%">
-                        <col style="width: 6%">
+                        <col style="width: 7%">
                         <col style="width: 8%">
-                        <col style="width: 9%">
+                        <col style="width: 5%">
+                        <col style="width: 8%">
+                        <col style="width: 8%">
                         <col style="width: 22%">
-                        <col style="width: 16%">
+                        <col style="width: 14%">
                     </colgroup>
                     <thead>
                         <tr>
                             <th class="sortable" data-sort="Name">Provider<span class="sort-arrow">▲</span></th>
+                            <th class="sortable" data-sort="Juris">Geo<span class="sort-arrow">▲</span></th>
                             <th class="sortable" data-sort="Status">Status<span class="sort-arrow">▲</span></th>
                             <th class="sortable" data-sort="Type">Type<span class="sort-arrow">▲</span></th>
                             <th class="sortable" data-sort="Updates">Updates<span class="sort-arrow">▲</span></th>
@@ -790,6 +816,8 @@
                                 data-api="${apiYes ? 'yes' : 'no'}"
                                 data-access="${isPublic ? 'public' : 'private'}"
                                 data-reval="${reval ? 'required' : 'none'}"
+                                data-juris="${esc(s.jurisdiction || '')}"
+                                data-sort-juris="${esc(s.jurisdiction || '')}"
                                 data-sort-name="${esc(s.name.toLowerCase())}"
                                 data-sort-status="${esc(status)}"
                                 data-sort-type="${esc(s.type || 'unknown')}"
@@ -802,6 +830,7 @@
                                     ${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener"><strong>${esc(s.name)}</strong></a>` : `<strong>${esc(s.name)}</strong>`}
                                     ${verifications.length ? `<br><span class="tag-list">${verifications.map(v => `<span class="badge badge-unknown">${esc(v)}</span>`).join(' ')}</span>` : ''}
                                 </td>
+                                <td class="geo-cell">${s.jurisdiction ? `<span title="jurisdiction (legal seat): ${esc(s.jurisdiction)}">${flag(s.jurisdiction)}</span>` : '<span class="remark">?</span>'}${s.hosted || s.cloud ? `<span class="geo-sub" title="hosted: ${esc(s.hosted || 'unknown')}${s.cloud ? ', via ' + esc(s.cloud) : ''}">${s.hosted ? flag(s.hosted) : ''}${s.cloud ? ' ' + esc(s.cloud) : ''}</span>` : ''}</td>
                                 <td><span class="badge badge-status-${esc(status)}">${esc(STATUS_LABELS[status] || status)}</span></td>
                                 <td><span class="badge badge-${esc(s.type || 'unknown')}">${esc(s.type || 'unknown')}</span></td>
                                 <td><span class="badge badge-unknown">${esc(s.updates || '?')}</span></td>
@@ -910,7 +939,7 @@
 
             let q = '';
             if (tabId === 'dns-services') {
-                ['status', 'type', 'updates', 'api', 'access', 'reval'].forEach(f => {
+                ['status', 'type', 'updates', 'api', 'access', 'reval', 'region'].forEach(f => {
                     if (currentFilters[f] !== 'all') params.set(f, currentFilters[f]);
                 });
                 q = currentSearch;
@@ -935,7 +964,7 @@
             const q = params.get('q') || '';
 
             if (tabId === 'dns-services') {
-                ['status', 'type', 'updates', 'api', 'access', 'reval'].forEach(f => {
+                ['status', 'type', 'updates', 'api', 'access', 'reval', 'region'].forEach(f => {
                     const v = params.get(f);
                     if (!v) return;
                     const btn = document.querySelector(`.filter-btn[data-filter="${f}"][data-value="${CSS.escape(v)}"]`);

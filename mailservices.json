@@ -1,8 +1,10 @@
 {
   "013net.net": {
+    "hosted": "IL",
     "hosts": [
       "013net.net"
     ],
+    "jurisdiction": "IL",
     "mx_hosts": [
       "mx20.013net.net"
     ],
@@ -13,9 +15,11 @@
     "type": "paid"
   },
   "139.com": {
+    "hosted": "CN",
     "hosts": [
       "139.com"
     ],
+    "jurisdiction": "CN",
     "mx_hosts": [
       "mx1.mail.139.com",
       "mx2.mail.139.com",
@@ -27,6 +31,7 @@
     "type": "free"
   },
   "21cn.com": {
+    "hosted": "CN",
     "hosts": [
       "189.cn",
       "21cn.com",
@@ -35,6 +40,7 @@
       "vip.citiz.net",
       "vnet.citiz.net"
     ],
+    "jurisdiction": "CN",
     "mx_hosts": [
       "bent-hw.21cn.net",
       "mta-189.21cn.com",
@@ -50,6 +56,7 @@
     "type": "free"
   },
   "24-mail.com": {
+    "hosted": "US",
     "hosts": [
       "24-mail.com"
     ],
@@ -64,9 +71,12 @@
     "type": "free"
   },
   "2925.com": {
+    "cloud": "Alibaba Cloud",
+    "hosted": "JP",
     "hosts": [
       "2925.com"
     ],
+    "jurisdiction": "CN",
     "mx_hosts": [
       "mailmx01.2925.com",
       "proxy.2925.com.yiyoucdn.com"
@@ -78,9 +88,11 @@
     "type": "free"
   },
   "2980.com": {
+    "hosted": "CN",
     "hosts": [
       "2980.com"
     ],
+    "jurisdiction": "CN",
     "mx_hosts": [
       "mailmx01.2980.com",
       "proxy.2980.com.dycdn.com"
@@ -91,6 +103,8 @@
     "type": "free"
   },
   "2mail.co": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "2mail.co",
       "mail2tor.co",
@@ -107,6 +121,8 @@
     "type": "free"
   },
   "33mail.com": {
+    "cloud": "AWS",
+    "hosted": "US",
     "hosts": [
       "33mail.com"
     ],
@@ -126,9 +142,11 @@
     "type": "forwarding"
   },
   "a1.net": {
+    "hosted": "AT",
     "hosts": [
       "a1.net"
     ],
+    "jurisdiction": "AT",
     "mx_hosts": [
       "smx01.a1.net"
     ],
@@ -139,6 +157,7 @@
     "type": "paid"
   },
   "aaahawk.com": {
+    "hosted": "US",
     "hosts": [
       "aaahawk.com",
       "access4less.net",
@@ -218,6 +237,7 @@
       "uplink.net",
       "zoomnet.net"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mx01.earthlink-vadesecure.net",
       "mx02.earthlink-vadesecure.net",
@@ -231,9 +251,11 @@
     "type": "paid"
   },
   "absamail.co.za": {
+    "hosted": "ZA",
     "hosts": [
       "absamail.co.za"
     ],
+    "jurisdiction": "ZA",
     "mx_hosts": [
       "mx.inbound.vox.co.za"
     ],
@@ -244,11 +266,13 @@
     "type": "paid"
   },
   "abv.bg": {
+    "hosted": "BG",
     "hosts": [
       "abv.bg",
       "gbg.bg",
       "gyuvetch.bg"
     ],
+    "jurisdiction": "BG",
     "mx_hosts": [
       "pmx.abv.bg",
       "smx.abv.bg"
@@ -259,11 +283,14 @@
     "type": "free"
   },
   "addy.io": {
+    "cloud": "UpCloud",
+    "hosted": "PL",
     "hosts": [
       "addy.io",
       "anonaddy.com",
       "anonaddy.me"
     ],
+    "jurisdiction": "GB",
     "mx_hosts": [
       "mail.anonaddy.me",
       "mail2.anonaddy.me",
@@ -277,9 +304,11 @@
     "type": "forwarding"
   },
   "afrihost.co.za": {
+    "hosted": "ZA",
     "hosts": [
       "afrihost.co.za"
     ],
+    "jurisdiction": "ZA",
     "mx_hosts": [
       "spe.ucebox.co.za"
     ],
@@ -290,6 +319,7 @@
     "type": "paid"
   },
   "aland.net": {
+    "hosted": "FI",
     "hosts": [
       "aland.net"
     ],
@@ -303,6 +333,8 @@
     "type": "paid"
   },
   "aliasvault.net": {
+    "cloud": "Leaseweb",
+    "hosted": "NL",
     "hosts": [
       "aliasvault.net"
     ],
@@ -316,9 +348,12 @@
     "type": "forwarding"
   },
   "alice.it": {
+    "cloud": "Google Cloud",
+    "hosted": "IT",
     "hosts": [
       "alice.it"
     ],
+    "jurisdiction": "IT",
     "mx_hosts": [
       "mx.tim.it"
     ],
@@ -329,9 +364,12 @@
     "type": "paid"
   },
   "aliyun.com": {
+    "cloud": "Alibaba Cloud",
+    "hosted": "CN",
     "hosts": [
       "aliyun.com"
     ],
+    "jurisdiction": "CN",
     "mx_hosts": [
       "mx2.mail.aliyun.com"
     ],
@@ -342,11 +380,13 @@
     "type": "free"
   },
   "altiboxmail.dk": {
+    "hosted": "DK",
     "hosts": [
       "altiboxmail.dk",
       "lyse.net",
       "ntebb.no"
     ],
+    "jurisdiction": "DK",
     "mx_hosts": [
       "mx1.altibox.net",
       "mx1dk.altibox.net",
@@ -361,10 +401,12 @@
     "type": "paid"
   },
   "anonymail.hu": {
+    "hosted": "HU",
     "hosts": [
       "anonymail.hu",
       "posta.net"
     ],
+    "jurisdiction": "HU",
     "mx_hosts": [
       "mx1.anonymail.hu",
       "mx2.anonymail.hu"
@@ -376,6 +418,7 @@
     "type": "free"
   },
   "anvianet.fi": {
+    "hosted": "FI",
     "hosts": [
       "anvianet.fi",
       "elisanet.fi",
@@ -387,6 +430,7 @@
       "saunalahti.fi",
       "wippies.fi"
     ],
+    "jurisdiction": "FI",
     "mx_hosts": [
       "mx-stp.mail.saunalahti.fi",
       "mx-tnl.mail.saunalahti.fi"
@@ -398,9 +442,11 @@
     "type": "paid"
   },
   "aon.at": {
+    "hosted": "AT",
     "hosts": [
       "aon.at"
     ],
+    "jurisdiction": "AT",
     "mx_hosts": [
       "smx01.a1.net"
     ],
@@ -413,6 +459,7 @@
     "hosts": [
       "privaterelay.appleid.com"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "smtp1.privaterelay.appleid.com",
       "smtp2.privaterelay.appleid.com",
@@ -426,9 +473,12 @@
     "type": "forwarding"
   },
   "asahi-net.jp": {
+    "cloud": "AWS",
+    "hosted": "DE",
     "hosts": [
       "asahi-net.jp"
     ],
+    "jurisdiction": "JP",
     "mx_hosts": [
       "alt1.aspmx.l.google.com",
       "alt2.aspmx.l.google.com",
@@ -443,10 +493,13 @@
     "type": "paid"
   },
   "astermail.org": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "aster.cx",
       "astermail.org"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mx.aster.cx",
       "mx.astermail.org"
@@ -458,9 +511,11 @@
     "type": "free"
   },
   "atlanticbb.net": {
+    "hosted": "US",
     "hosts": [
       "atlanticbb.net"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mx.breezelineohio.net"
     ],
@@ -471,9 +526,12 @@
     "type": "paid"
   },
   "atomicmail.io": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "atomicmail.io"
     ],
+    "jurisdiction": "EE",
     "mx_hosts": [
       "mail1.atomicmail.io"
     ],
@@ -484,6 +542,7 @@
     "type": "free"
   },
   "au.com": {
+    "hosted": "JP",
     "hosts": [
       "au.com",
       "auone-net.jp",
@@ -514,6 +573,7 @@
     "hosts": [
       "inventati.org"
     ],
+    "jurisdiction": "IT",
     "mx_hosts": [
       "mx1.investici.org",
       "mx2.investici.org",
@@ -529,10 +589,13 @@
     "type": "free"
   },
   "ayna.com": {
+    "cloud": "Cloudflare",
     "discontinued": true,
+    "hosted": "CA",
     "hosts": [
       "ayna.com"
     ],
+    "jurisdiction": "JO",
     "mx_hosts": [
       "alt1.aspmx.l.google.com",
       "alt2.aspmx.l.google.com",
@@ -544,9 +607,11 @@
     "type": "free"
   },
   "azet.sk": {
+    "hosted": "SK",
     "hosts": [
       "azet.sk"
     ],
+    "jurisdiction": "SK",
     "mx_hosts": [
       "smtp2.azet.sk"
     ],
@@ -557,9 +622,11 @@
     "type": "free"
   },
   "balticom.lv": {
+    "hosted": "LV",
     "hosts": [
       "balticom.lv"
     ],
+    "jurisdiction": "LV",
     "mx_hosts": [
       "mx1.inbox.lv"
     ],
@@ -573,6 +640,7 @@
     "hosts": [
       "bbox.fr"
     ],
+    "jurisdiction": "FR",
     "mx_hosts": [
       "mx.bbox.fr",
       "mx-b.bbox.fr"
@@ -588,6 +656,7 @@
       "bbsyd.dk",
       "stofanet.dk"
     ],
+    "jurisdiction": "DK",
     "mx_hosts": [
       "mx-lb-1.stofanet.dk"
     ],
@@ -598,6 +667,8 @@
     "type": "paid"
   },
   "beeble.com": {
+    "cloud": "Hetzner",
+    "hosted": "FI",
     "hosts": [
       "beeble.com"
     ],
@@ -611,9 +682,11 @@
     "type": "free"
   },
   "bestweb.net": {
+    "hosted": "US",
     "hosts": [
       "bestweb.net"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "gw1.bestweb.net",
       "gw2.bestweb.net",
@@ -627,9 +700,12 @@
     "type": "paid"
   },
   "bezeqint.net": {
+    "cloud": "AWS",
+    "hosted": "CA",
     "hosts": [
       "bezeqint.net"
     ],
+    "jurisdiction": "IL",
     "mx_hosts": [
       "mailmx.bezeqint.net",
       "mailmx2.bezeqint.net"
@@ -641,11 +717,14 @@
     "type": "paid"
   },
   "biglobe.jp": {
+    "cloud": "AWS",
+    "hosted": "JP",
     "hosts": [
       "biglobe.jp",
       "biglobe.ne.jp",
       "memail.jp"
     ],
+    "jurisdiction": "JP",
     "mx_hosts": [
       "bgmgate1.biglobe.ne.jp",
       "bgmgate2.biglobe.ne.jp",
@@ -658,10 +737,12 @@
     "type": "paid"
   },
   "bigpond.com": {
+    "hosted": "AU",
     "hosts": [
       "bigpond.com",
       "bigpond.net.au"
     ],
+    "jurisdiction": "AU",
     "mx_hosts": [
       "extmail.bigpond.com",
       "extmail.bpbb.bigpond.com"
@@ -673,6 +754,8 @@
     "type": "paid"
   },
   "black.com": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "black.com"
     ],
@@ -686,9 +769,11 @@
     "type": "paid"
   },
   "blacksburg.net": {
+    "hosted": "US",
     "hosts": [
       "blacksburg.net"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mx1.blacksburg.net",
       "mx2.blacksburg.net",
@@ -701,11 +786,13 @@
     "type": "paid"
   },
   "bluewin.ch": {
+    "hosted": "CH",
     "hosts": [
       "bluemail.ch",
       "bluemail.dk",
       "bluewin.ch"
     ],
+    "jurisdiction": "CH",
     "mx_hosts": [
       "mx01.p.bluenet.ch",
       "mx02.p.bluenet.ch"
@@ -716,6 +803,8 @@
     "type": "free"
   },
   "bmail.ag": {
+    "cloud": "OVH",
+    "hosted": "US",
     "hosts": [
       "bmail.ag"
     ],
@@ -729,9 +818,11 @@
     "type": "free"
   },
   "bol.com.br": {
+    "hosted": "BR",
     "hosts": [
       "bol.com.br"
     ],
+    "jurisdiction": "BR",
     "mx_hosts": [
       "mx3.bol.com.br"
     ],
@@ -742,9 +833,12 @@
     "type": "free"
   },
   "bravealias.com": {
+    "cloud": "AWS",
+    "hosted": "DE",
     "hosts": [
       "bravealias.com"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "inbound-smtp.us-west-2.amazonaws.com"
     ],
@@ -755,17 +849,20 @@
     "type": "forwarding"
   },
   "btinternet.com": {
+    "hosted": "GB",
     "hosts": [
       "btinternet.com",
       "btopenworld.com",
       "talk21.com"
     ],
+    "jurisdiction": "GB",
     "mx_hosts": [
       "mx.bt.prod.cloud.openwave.ai"
     ],
     "type": "paid"
   },
   "bulc.club": {
+    "hosted": "US",
     "hosts": [
       "bulc.club"
     ],
@@ -779,10 +876,13 @@
     "type": "forwarding"
   },
   "bump.email": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "bump.email",
       "bumpmail.io"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mailserver.purelymail.com",
       "mx.bump.email",
@@ -795,6 +895,8 @@
     "type": "forwarding"
   },
   "burnermail.io": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "burnermail.io"
     ],
@@ -808,9 +910,11 @@
     "type": "forwarding"
   },
   "c2.hu": {
+    "hosted": "HU",
     "hosts": [
       "c2.hu"
     ],
+    "jurisdiction": "HU",
     "mx_hosts": [
       "mail.c2.hu"
     ],
@@ -821,11 +925,13 @@
     "type": "free"
   },
   "centrum.cz": {
+    "hosted": "CZ",
     "hosts": [
       "centrum.cz",
       "atlas.cz",
       "volny.cz"
     ],
+    "jurisdiction": "CZ",
     "mx_hosts": [
       "atlas-cz-10mx1.eco-mx.cz",
       "atlas-cz-10mx2.eco-mx.cz",
@@ -847,11 +953,14 @@
     "type": "free"
   },
   "centrum.sk": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "centrum.sk",
       "atlas.sk",
       "pobox.sk"
     ],
+    "jurisdiction": "SK",
     "mx_hosts": [
       "nm-sk-10mx1.eco-mx.cz",
       "nm-sk-10mx2.eco-mx.cz",
@@ -865,10 +974,13 @@
     "type": "free"
   },
   "centurylink.net": {
+    "cloud": "Oracle Cloud",
+    "hosted": "US",
     "hosts": [
       "centurylink.net",
       "centurytel.net"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mx.centurylink.net"
     ],
@@ -879,6 +991,8 @@
     "type": "paid"
   },
   "charter.net": {
+    "cloud": "AWS",
+    "hosted": "US",
     "hosts": [
       "adelphia.net",
       "brighthouse.com",
@@ -911,6 +1025,7 @@
       "tx.rr.com",
       "wi.rr.com"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "cdptpa-postmx01.email.rr.com",
       "dnvrco-postmx01.email.rr.com",
@@ -924,9 +1039,11 @@
     "type": "paid"
   },
   "chello.at": {
+    "hosted": "NL",
     "hosts": [
       "chello.at"
     ],
+    "jurisdiction": "AT",
     "mx_hosts": [
       "mx.mymagenta.at"
     ],
@@ -937,9 +1054,12 @@
     "type": "paid"
   },
   "chello.nl": {
+    "cloud": "AWS",
+    "hosted": "DE",
     "hosts": [
       "chello.nl"
     ],
+    "jurisdiction": "NL",
     "mx_hosts": [
       "mxin10.ziggo.nl",
       "mxin5.ziggo.nl"
@@ -951,10 +1071,12 @@
     "type": "paid"
   },
   "clix.pt": {
+    "hosted": "PT",
     "hosts": [
       "clix.pt",
       "mail.pt"
     ],
+    "jurisdiction": "PT",
     "mx_hosts": [
       "a.mx.gtt.smail.eu",
       "b.mx.gtt.smail.eu"
@@ -966,9 +1088,11 @@
     "type": "free"
   },
   "club-internet.fr": {
+    "hosted": "FR",
     "hosts": [
       "club-internet.fr"
     ],
+    "jurisdiction": "FR",
     "mx_hosts": [
       "smtp-in.sfr.fr"
     ],
@@ -979,6 +1103,7 @@
     "type": "paid"
   },
   "cock.li": {
+    "hosted": "RO",
     "hosts": [
       "420blaze.it",
       "aaathats3as.com",
@@ -1008,6 +1133,7 @@
       "wants.dicksinhisan.us",
       "wants.dicksinmyan.us"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mx1.cock.li",
       "mx2.cock.li"
@@ -1023,9 +1149,11 @@
     "type": "free"
   },
   "cogeco.ca": {
+    "hosted": "CA",
     "hosts": [
       "cogeco.ca"
     ],
+    "jurisdiction": "CA",
     "mx_hosts": [
       "mx.cogeco.ca",
       "mx.cogeco.net"
@@ -1037,9 +1165,11 @@
     "type": "paid"
   },
   "comcast.net": {
+    "hosted": "US",
     "hosts": [
       "comcast.net"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mx1.mxge.comcast.net",
       "mx1a1.comcast.net",
@@ -1056,9 +1186,12 @@
     "type": "paid"
   },
   "concentric.net": {
+    "cloud": "UltraDNS",
+    "hosted": "US",
     "hosts": [
       "concentric.net"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mx1c28.concentric.com",
       "mx2c28.concentric.com",
@@ -1072,10 +1205,13 @@
     "type": "paid"
   },
   "countermail.com": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "countermail.com",
       "cmail.nu"
     ],
+    "jurisdiction": "SE",
     "mx_hosts": [
       "db1.countermail.com"
     ],
@@ -1085,12 +1221,14 @@
     "type": "paid"
   },
   "daum.net": {
+    "hosted": "KR",
     "hosts": [
       "hanmail.net",
       "daum.net",
       "kakao.com",
       "naver.com"
     ],
+    "jurisdiction": "KR",
     "mx_hosts": [
       "mx1.hanmail.net",
       "mx1.kakao.com",
@@ -1129,9 +1267,11 @@
     "type": "paid"
   },
   "digi.ro": {
+    "hosted": "RO",
     "hosts": [
       "digi.ro"
     ],
+    "jurisdiction": "RO",
     "mx_hosts": [
       "mx.digi.ro"
     ],
@@ -1142,9 +1282,12 @@
     "type": "paid"
   },
   "dismail.de": {
+    "cloud": "Hetzner",
+    "hosted": "DE",
     "hosts": [
       "dismail.de"
     ],
+    "jurisdiction": "DE",
     "mx_hosts": [
       "mx1.dismail.de",
       "mx2.dismail.de"
@@ -1156,9 +1299,11 @@
     "type": "free"
   },
   "disroot.org": {
+    "hosted": "NL",
     "hosts": [
       "disroot.org"
     ],
+    "jurisdiction": "NL",
     "mx_hosts": [
       "disroot.org"
     ],
@@ -1172,6 +1317,7 @@
       "dnainternet.net",
       "welho.com"
     ],
+    "jurisdiction": "FI",
     "mx_hosts": [
       "mx.dnamail.fi"
     ],
@@ -1182,9 +1328,12 @@
     "type": "paid"
   },
   "dslextreme.com": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "dslextreme.com"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "dslextreme-com.mx.av-mx.com"
     ],
@@ -1195,9 +1344,11 @@
     "type": "paid"
   },
   "du.ae": {
+    "hosted": "AE",
     "hosts": [
       "du.ae"
     ],
+    "jurisdiction": "AE",
     "mx_hosts": [
       "du-ae.mail.protection.outlook.com"
     ],
@@ -1208,9 +1359,12 @@
     "type": "paid"
   },
   "duck.com": {
+    "cloud": "Azure",
+    "hosted": "IE",
     "hosts": [
       "duck.com"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "smtp-inbound1.duck.com"
     ],
@@ -1221,9 +1375,11 @@
     "type": "forwarding"
   },
   "e-mail.jp": {
+    "hosted": "JP",
     "hosts": [
       "e-mail.jp"
     ],
+    "jurisdiction": "JP",
     "mx_hosts": [
       "kddi141.e-mail.jp",
       "kddi142.e-mail.jp",
@@ -1239,6 +1395,8 @@
     "type": "free"
   },
   "e4ward.com": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "e4ward.com"
     ],
@@ -1256,6 +1414,7 @@
     "type": "forwarding"
   },
   "eclipso.de": {
+    "hosted": "DE",
     "hosts": [
       "eclipso.at",
       "eclipso.be",
@@ -1282,6 +1441,7 @@
       "maileurope.nl",
       "teamvielfalt.eu"
     ],
+    "jurisdiction": "DE",
     "mx_hosts": [
       "mail.eclipso.de",
       "mail.teamvielfalt.eu"
@@ -1293,6 +1453,7 @@
     "type": "free"
   },
   "elektrine.com": {
+    "hosted": "US",
     "hosts": [
       "elektrine.com"
     ],
@@ -1309,9 +1470,12 @@
     "type": "free"
   },
   "emailalias.io": {
+    "cloud": "DigitalOcean",
+    "hosted": "US",
     "hosts": [
       "emailalias.io"
     ],
+    "jurisdiction": "IN",
     "mx_hosts": [
       "smtp.google.com"
     ],
@@ -1322,12 +1486,14 @@
     "type": "forwarding"
   },
   "emailn.de": {
+    "hosted": "DE",
     "hosts": [
       "emailn.de",
       "emailn.eu",
       "emailn.ch",
       "emailn.at"
     ],
+    "jurisdiction": "DE",
     "mx_hosts": [
       "mx1.emailn.de"
     ],
@@ -1338,6 +1504,8 @@
     "type": "free"
   },
   "erine.email": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "erine.email"
     ],
@@ -1351,12 +1519,14 @@
     "type": "forwarding"
   },
   "ese.kr": {
+    "hosted": "KR",
     "hosts": [
       "lko.co.kr",
       "mall.tko.co.kr",
       "nuo.co.kr",
       "tko.co.kr"
     ],
+    "jurisdiction": "KR",
     "mx_hosts": [
       "mail.ese.kr"
     ],
@@ -1387,6 +1557,7 @@
     "type": "paid"
   },
   "everyone.net": {
+    "hosted": "CA",
     "hosts": [
       "1nsyncfan.com",
       "alecsmail.com",
@@ -1422,6 +1593,7 @@
       "urgentmail.biz",
       "xzapmail.com"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mx.generic-isp.com",
       "sitemail.everyone.net",
@@ -1436,6 +1608,7 @@
     "type": "paid"
   },
   "fastmail.com": {
+    "hosted": "US",
     "hosts": [
       "123mail.org",
       "150mail.com",
@@ -1572,6 +1745,7 @@
       "yepmail.net",
       "your-mail.com"
     ],
+    "jurisdiction": "AU",
     "mx_hosts": [
       "eu1-smtp.messagingengine.com",
       "eu2-smtp.messagingengine.com",
@@ -1588,9 +1762,11 @@
     "type": "paid"
   },
   "fibertel.com.ar": {
+    "hosted": "AR",
     "hosts": [
       "fibertel.com.ar"
     ],
+    "jurisdiction": "AR",
     "mx_hosts": [
       "mx1.fibertel.com.ar"
     ],
@@ -1601,11 +1777,14 @@
     "type": "paid"
   },
   "firemail.de": {
+    "cloud": "Hetzner",
+    "hosted": "DE",
     "hosts": [
       "firemail.de",
       "firemail.at",
       "firemail.eu"
     ],
+    "jurisdiction": "DE",
     "mx_hosts": [
       "mx1.firemail.de"
     ],
@@ -1617,9 +1796,11 @@
     "type": "free"
   },
   "forthnet.gr": {
+    "hosted": "GR",
     "hosts": [
       "forthnet.gr"
     ],
+    "jurisdiction": "GR",
     "mx_hosts": [
       "mailrelay.nova.gr",
       "mailrelay2.nova.gr"
@@ -1631,9 +1812,11 @@
     "type": "paid"
   },
   "forwardemail.net": {
+    "hosted": "US",
     "hosts": [
       "forwardemail.net"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mx1.forwardemail.net",
       "mx2.forwardemail.net"
@@ -1645,9 +1828,11 @@
     "type": "forwarding"
   },
   "fpt.vn": {
+    "hosted": "VN",
     "hosts": [
       "fpt.vn"
     ],
+    "jurisdiction": "VN",
     "mx_hosts": [
       "mta.fpt.vn"
     ],
@@ -1658,11 +1843,13 @@
     "type": "paid"
   },
   "free.fr": {
+    "hosted": "FR",
     "hosts": [
       "aliceadsl.fr",
       "chez.com",
       "free.fr"
     ],
+    "jurisdiction": "FR",
     "mx_hosts": [
       "mx1.free.fr",
       "mx2.free.fr"
@@ -1670,10 +1857,12 @@
     "type": "paid"
   },
   "freemail.hu": {
+    "hosted": "HU",
     "hosts": [
       "freemail.hu",
       "freemail.c3.hu"
     ],
+    "jurisdiction": "HU",
     "mx_hosts": [
       "fmx.freemail.hu"
     ],
@@ -1683,6 +1872,7 @@
     "type": "free"
   },
   "freenet.de": {
+    "hosted": "DE",
     "hosts": [
       "bossmail.de",
       "fn.de",
@@ -1691,6 +1881,7 @@
       "geekmail.de",
       "justmail.de"
     ],
+    "jurisdiction": "DE",
     "mx_hosts": [
       "mx.freenet.de"
     ],
@@ -1700,6 +1891,8 @@
     "type": "free"
   },
   "freeola.com": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "1me.net",
       "1mum.com",
@@ -1724,6 +1917,7 @@
       "ukcool.com",
       "x5g.com"
     ],
+    "jurisdiction": "GB",
     "mx_hosts": [
       "bradfordfans.com",
       "mx2.freeola.com",
@@ -1743,6 +1937,7 @@
     "hosts": [
       "gazeta.pl"
     ],
+    "jurisdiction": "PL",
     "mx_hosts": [
       "mx.poczta.gazeta.pl"
     ],
@@ -1753,10 +1948,13 @@
     "type": "free"
   },
   "gmail.com": {
+    "cloud": "Google Cloud",
+    "hosted": "US",
     "hosts": [
       "gmail.com",
       "googlemail.com"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "alt1.gmail-smtp-in.l.google.com",
       "alt2.gmail-smtp-in.l.google.com",
@@ -1770,9 +1968,11 @@
     "type": "free"
   },
   "godmail.dk": {
+    "hosted": "NL",
     "hosts": [
       "godmail.dk"
     ],
+    "jurisdiction": "DK",
     "mx_hosts": [
       "mx.dka.mailcore.net"
     ],
@@ -1780,9 +1980,11 @@
     "type": "free"
   },
   "gvdnet.dk": {
+    "hosted": "DK",
     "hosts": [
       "gvdnet.dk"
     ],
+    "jurisdiction": "DK",
     "mx_hosts": [
       "fallbackmx.spamexperts.eu",
       "lastmx.spamexperts.net",
@@ -1795,9 +1997,12 @@
     "type": "paid"
   },
   "hetnet.nl": {
+    "cloud": "AWS",
+    "hosted": "IE",
     "hosts": [
       "hetnet.nl"
     ],
+    "jurisdiction": "NL",
     "mx_hosts": [
       "mx.kpnmail.nl"
     ],
@@ -1808,10 +2013,13 @@
     "type": "paid"
   },
   "hey.com": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "hey.com",
       "emailit.com"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "home-mx.app.hey.com",
       "work-mx.app.hey.com"
@@ -1822,10 +2030,13 @@
     "type": "paid"
   },
   "hidemail.app": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "hidemail.app",
       "my.hidemail.app"
     ],
+    "jurisdiction": "GB",
     "mx_hosts": [
       "in1-smtp.messagingengine.com",
       "in2-smtp.messagingengine.com",
@@ -1838,9 +2049,12 @@
     "type": "forwarding"
   },
   "home.nl": {
+    "cloud": "AWS",
+    "hosted": "IE",
     "hosts": [
       "home.nl"
     ],
+    "jurisdiction": "NL",
     "mx_hosts": [
       "mxin10.ziggo.nl",
       "mxin5.ziggo.nl"
@@ -1852,6 +2066,8 @@
     "type": "paid"
   },
   "hushmail.com": {
+    "cloud": "Cloudflare",
+    "hosted": "US",
     "hosts": [
       "hush.ai",
       "hush.com",
@@ -1859,6 +2075,7 @@
       "hushmail.me",
       "mac.hush.com"
     ],
+    "jurisdiction": "CA",
     "mx_hosts": [
       "plsmtp1.hushmail.com",
       "plsmtp2.hushmail.com"
@@ -1872,6 +2089,7 @@
     "hosts": [
       "i.softbank.jp"
     ],
+    "jurisdiction": "JP",
     "mx_hosts": [
       "msv.softbank.jp"
     ],
@@ -1882,9 +2100,12 @@
     "type": "paid"
   },
   "i.ua": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "i.ua"
     ],
+    "jurisdiction": "UA",
     "mx_hosts": [
       "mx11.i.ua",
       "mx2.i.ua",
@@ -1900,6 +2121,7 @@
       "iam.net.ma",
       "menara.ma"
     ],
+    "jurisdiction": "MA",
     "mx_hosts": [
       "fai1.menara.ma",
       "fsi1.menara.ma",
@@ -1932,6 +2154,8 @@
     "type": "reserved"
   },
   "ice.email": {
+    "cloud": "Hetzner",
+    "hosted": "FI",
     "hosts": [
       "ice.email"
     ],
@@ -1945,6 +2169,8 @@
     "type": "free"
   },
   "ichimail.com": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "ichimail.com"
     ],
@@ -1959,9 +2185,12 @@
     "type": "free"
   },
   "ig.com.br": {
+    "cloud": "AWS",
+    "hosted": "US",
     "hosts": [
       "ig.com.br"
     ],
+    "jurisdiction": "BR",
     "mx_hosts": [
       "mx-ha.skymail.net.br"
     ],
@@ -1972,11 +2201,14 @@
     "type": "paid"
   },
   "iinet.net.au": {
+    "cloud": "AWS",
+    "hosted": "AU",
     "hosts": [
       "iinet.net.au",
       "internode.on.net",
       "tpg.com.au"
     ],
+    "jurisdiction": "AU",
     "mx_hosts": [
       "mx-10.au-east.atmailcloud.com",
       "mx-20.au-east.atmailcloud.com"
@@ -1988,11 +2220,13 @@
     "type": "paid"
   },
   "ik.me": {
+    "hosted": "CH",
     "hosts": [
       "ik.me",
       "ikmail.com",
       "etik.com"
     ],
+    "jurisdiction": "ME",
     "mx_hosts": [
       "mta-gw.infomaniak.ch"
     ],
@@ -2003,9 +2237,11 @@
     "type": "free"
   },
   "iki.fi": {
+    "hosted": "FI",
     "hosts": [
       "iki.fi"
     ],
+    "jurisdiction": "FI",
     "mx_hosts": [
       "mail.iki.fi",
       "mail2.iki.fi",
@@ -2018,6 +2254,8 @@
     "type": "forwarding"
   },
   "inbox.com": {
+    "cloud": "DigitalOcean",
+    "hosted": "DE",
     "hosts": [
       "ak47.hu",
       "avh.hu",
@@ -2046,6 +2284,7 @@
       "theend.hu",
       "warrior.hu"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "inmail1.index.hu",
       "mail.index.hu",
@@ -2057,6 +2296,7 @@
     "type": "paid"
   },
   "inbox.lv": {
+    "hosted": "LV",
     "hosts": [
       "inbox.eu",
       "inbox.la",
@@ -2066,6 +2306,7 @@
       "mail.ee",
       "mail.lv"
     ],
+    "jurisdiction": "LV",
     "mx_hosts": [
       "mx-in.inbox.eu",
       "mx1.inbox.lv",
@@ -2078,11 +2319,13 @@
   },
   "indapass.hu": {
     "discontinued": true,
+    "hosted": "HU",
     "hosts": [
       "indamail.hu",
       "vipmail.hu",
       "webmail.hu"
     ],
+    "jurisdiction": "HU",
     "mx_hosts": [
       "mx.dka.mailcore.net"
     ],
@@ -2093,7 +2336,9 @@
     "type": "free"
   },
   "india.com": {
+    "cloud": "Akamai",
     "discontinued": true,
+    "hosted": "DE",
     "hosts": [
       "india.com"
     ],
@@ -2104,6 +2349,8 @@
     "type": "free"
   },
   "inet.fi": {
+    "cloud": "DigitalOcean",
+    "hosted": "DE",
     "hosts": [
       "inet.fi",
       "pp.inet.fi",
@@ -2117,6 +2364,7 @@
       "pp8.inet.fi",
       "pp9.inet.fi"
     ],
+    "jurisdiction": "FI",
     "mx_hosts": [
       "mail.cm.telia.net",
       "mx.dka.mailcore.net"
@@ -2128,10 +2376,13 @@
     "type": "paid"
   },
   "inleed.com": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "inleed.xyz",
       "mail24.se"
     ],
+    "jurisdiction": "SE",
     "mx_hosts": [
       "mail.inleed.xyz",
       "mail.mail24.se"
@@ -2143,6 +2394,7 @@
     "type": "free"
   },
   "interia.pl": {
+    "hosted": "PL",
     "hosts": [
       "adresik.net",
       "int.pl",
@@ -2157,6 +2409,7 @@
       "poczta.fm",
       "vip.interia.pl"
     ],
+    "jurisdiction": "PL",
     "mx_hosts": [
       "mx.interia.pl"
     ],
@@ -2167,6 +2420,7 @@
     "type": "free"
   },
   "intnet.mu": {
+    "hosted": "MU",
     "hosts": [
       "intnet.mu"
     ],
@@ -2181,9 +2435,11 @@
     "type": "paid"
   },
   "inwi.ma": {
+    "hosted": "MA",
     "hosts": [
       "inwi.ma"
     ],
+    "jurisdiction": "MA",
     "mx_hosts": [
       "mail1.inwi.ma",
       "mail2.inwi.ma"
@@ -2195,10 +2451,12 @@
     "type": "paid"
   },
   "iol.it": {
+    "hosted": "IT",
     "hosts": [
       "inwind.it",
       "iol.it"
     ],
+    "jurisdiction": "IT",
     "mx_hosts": [
       "smtp-in.inwind.it",
       "smtp-in.iol.it"
@@ -2209,9 +2467,12 @@
     "type": "paid"
   },
   "iol.pt": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "iol.pt"
     ],
+    "jurisdiction": "PT",
     "mx_hosts": [
       "smtp-box-01.iol.pt"
     ],
@@ -2237,7 +2498,9 @@
     "type": "forwarding"
   },
   "japan.com": {
+    "cloud": "Cloudflare",
     "discontinued": true,
+    "hosted": "CA",
     "hosts": [
       "japan.com",
       "london.com"
@@ -2262,6 +2525,8 @@
     "type": "forwarding"
   },
   "jubii.dk": {
+    "cloud": "DigitalOcean",
+    "hosted": "DE",
     "hosts": [
       "123mail.dk",
       "12fuel.dk",
@@ -2423,6 +2688,7 @@
       "zoomail.dk",
       "zybermail.dk"
     ],
+    "jurisdiction": "DK",
     "mx_hosts": [
       "mx.dka.mailcore.net"
     ],
@@ -2433,10 +2699,12 @@
     "type": "free"
   },
   "juno.com": {
+    "hosted": "US",
     "hosts": [
       "juno.com",
       "netzero.net"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mx.dca.untd.com",
       "mx.vgs.untd.com"
@@ -2448,9 +2716,11 @@
     "type": "free"
   },
   "kabelmail.de": {
+    "hosted": "DE",
     "hosts": [
       "kabelmail.de"
     ],
+    "jurisdiction": "DE",
     "mx_hosts": [
       "mx3.vodafonemail.de",
       "mx5.vodafonemail.de"
@@ -2462,9 +2732,12 @@
     "type": "paid"
   },
   "keko.com.ar": {
+    "cloud": "Hetzner",
+    "hosted": "FI",
     "hosts": [
       "keko.com.ar"
     ],
+    "jurisdiction": "AR",
     "mx_hosts": [
       "correo.keko.com.ar",
       "mail.keko.com.ar"
@@ -2473,9 +2746,11 @@
     "type": "free"
   },
   "kolabnow.com": {
+    "hosted": "CH",
     "hosts": [
       "kolabnow.com"
     ],
+    "jurisdiction": "CH",
     "mx_hosts": [
       "mx01.kolabnow.com",
       "mx02.kolabnow.com",
@@ -2505,6 +2780,7 @@
     "type": "paid"
   },
   "lantic.net": {
+    "hosted": "ZA",
     "hosts": [
       "lantic.net"
     ],
@@ -2518,9 +2794,12 @@
     "type": "paid"
   },
   "laposte.net": {
+    "cloud": "Google Cloud",
+    "hosted": "US",
     "hosts": [
       "laposte.net"
     ],
+    "jurisdiction": "FR",
     "mx_hosts": [
       "smtpz4.laposte.net"
     ],
@@ -2531,6 +2810,7 @@
   },
   "latino.com": {
     "discontinued": true,
+    "hosted": "US",
     "hosts": [
       "latino.com"
     ],
@@ -2541,9 +2821,11 @@
     "type": "free"
   },
   "lavabit.com": {
+    "hosted": "NL",
     "hosts": [
       "lavabit.com"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "lavabit.com"
     ],
@@ -2554,11 +2836,13 @@
     "type": "paid"
   },
   "libero.it": {
+    "hosted": "IT",
     "hosts": [
       "libero.it",
       "blu.it",
       "virgilio.it"
     ],
+    "jurisdiction": "IT",
     "mx_hosts": [
       "smtp-in.blu.it",
       "smtp-in.libero.it",
@@ -2570,6 +2854,8 @@
     "type": "free"
   },
   "librem.one": {
+    "cloud": "DigitalOcean",
+    "hosted": "US",
     "hosts": [
       "librem.one"
     ],
@@ -2583,6 +2869,7 @@
     "type": "paid"
   },
   "link.net": {
+    "hosted": "EG",
     "hosts": [
       "link.net"
     ],
@@ -2596,9 +2883,11 @@
     "type": "paid"
   },
   "liveinternet.ru": {
+    "hosted": "RU",
     "hosts": [
       "liveinternet.ru"
     ],
+    "jurisdiction": "RU",
     "mx_hosts": [
       "mx.li.ru"
     ],
@@ -2609,9 +2898,12 @@
     "type": "free"
   },
   "love.cz": {
+    "cloud": "Hetzner",
+    "hosted": "DE",
     "hosts": [
       "love.cz"
     ],
+    "jurisdiction": "CZ",
     "mx_hosts": [
       "mailin1.love.cz",
       "mailin2.love.cz"
@@ -2620,7 +2912,9 @@
     "type": "free"
   },
   "lycos.com": {
+    "cloud": "Cloudflare",
     "discontinued": true,
+    "hosted": "CA",
     "hosts": [
       "lycos.co.uk",
       "lycos.de",
@@ -2629,6 +2923,7 @@
       "lycos.nl",
       "lycos.com"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mx.lycos.com.cust.b.hostedemail.com"
     ],
@@ -2642,6 +2937,8 @@
     "type": "free"
   },
   "mail-online.cz": {
+    "cloud": "AWS",
+    "hosted": "CA",
     "hosts": [
       "mail-online.cz",
       "mail-online.dk",
@@ -2650,6 +2947,7 @@
       "post-online.dk",
       "weekonline.com"
     ],
+    "jurisdiction": "CZ",
     "mx_hosts": [
       "mail-online.cz",
       "mail.mail-online.cz",
@@ -2664,9 +2962,11 @@
     "type": "free"
   },
   "mail.bg": {
+    "hosted": "BG",
     "hosts": [
       "mail.bg"
     ],
+    "jurisdiction": "BG",
     "mx_hosts": [
       "mx2.mail.bg",
       "mx3.mail.bg"
@@ -2678,6 +2978,8 @@
     "type": "free"
   },
   "mail.com": {
+    "cloud": "IONOS",
+    "hosted": "DE",
     "hosts": [
       "2trom.com",
       "accountant.com",
@@ -2874,6 +3176,7 @@
       "workmail.com",
       "writeme.com"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "instruction.com",
       "mail.thirdechelon.net",
@@ -2886,6 +3189,7 @@
     "type": "free"
   },
   "mail.de": {
+    "hosted": "DE",
     "hosts": [
       "mail.de",
       "mail.ch",
@@ -2893,6 +3197,7 @@
       "mail.uk",
       "mail.co.uk"
     ],
+    "jurisdiction": "DE",
     "mx_hosts": [
       "mx01.mail.de",
       "mx02.mail.de"
@@ -2904,6 +3209,8 @@
     "type": "free"
   },
   "mail.dk": {
+    "cloud": "AWS",
+    "hosted": "DE",
     "hosts": [
       "c.dk",
       "esenet.dk",
@@ -2918,6 +3225,7 @@
       "webspeed.dk",
       "youmail.dk"
     ],
+    "jurisdiction": "DK",
     "mx_hosts": [
       "fpo.mail.dk",
       "fpo9.mail.dk",
@@ -2930,6 +3238,8 @@
     "type": "paid"
   },
   "mail.io": {
+    "cloud": "DigitalOcean",
+    "hosted": "NL",
     "hosts": [
       "mail.io"
     ],
@@ -2943,6 +3253,7 @@
     "type": "free"
   },
   "mail.kz": {
+    "hosted": "KZ",
     "hosts": [
       "mail.kz",
       "el.kz",
@@ -2953,6 +3264,7 @@
       "med.mail.kz",
       "gov.mail.kz"
     ],
+    "jurisdiction": "KZ",
     "mx_hosts": [
       "mail.el.kz",
       "mgw.gov.kz",
@@ -2969,6 +3281,7 @@
     "type": "free"
   },
   "mail.ru": {
+    "hosted": "RU",
     "hosts": [
       "aport2000.ru",
       "bk.ru",
@@ -2993,6 +3306,7 @@
       "xmail.ru",
       "zmail.ru"
     ],
+    "jurisdiction": "RU",
     "mx_hosts": [
       "e-mail.ru",
       "e.m.onl",
@@ -3020,6 +3334,7 @@
     "type": "free"
   },
   "mail2world.com": {
+    "hosted": "US",
     "hosts": [
       "correoinfinitum.com",
       "correoprodigy.com",
@@ -3731,6 +4046,7 @@
       "telmexmail.com",
       "telnormail.com"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "fallbackmx.spamesxperts.eu",
       "lastmx.spamexperts.net",
@@ -3747,9 +4063,11 @@
     "type": "free"
   },
   "mailbox.hu": {
+    "hosted": "HU",
     "hosts": [
       "mailbox.hu"
     ],
+    "jurisdiction": "HU",
     "mx_hosts": [
       "mail.mailbox.hu"
     ],
@@ -3760,10 +4078,12 @@
     "type": "paid"
   },
   "mailbox.org": {
+    "hosted": "DE",
     "hosts": [
       "mailbox.org",
       "secure.mailbox.org"
     ],
+    "jurisdiction": "DE",
     "mx_hosts": [
       "mx-n.mailbox.org",
       "mx1.mailbox.org",
@@ -3798,6 +4118,7 @@
     "type": "free"
   },
   "mailexpire.com": {
+    "hosted": "US",
     "hosts": [
       "mailexpire.com"
     ],
@@ -3811,9 +4132,12 @@
     "type": "forwarding"
   },
   "mailfence.com": {
+    "cloud": "OVH",
+    "hosted": "IT",
     "hosts": [
       "mailfence.com"
     ],
+    "jurisdiction": "BE",
     "mx_hosts": [
       "smtp1.mailfence.com",
       "smtp2.mailfence.com"
@@ -3854,6 +4178,8 @@
     "type": "free"
   },
   "mailnull.com": {
+    "cloud": "AWS",
+    "hosted": "US",
     "hosts": [
       "mailnull.com"
     ],
@@ -3867,6 +4193,7 @@
     "type": "forwarding"
   },
   "mailo.com": {
+    "hosted": "FR",
     "hosts": [
       "africamel.net",
       "brusseler.com",
@@ -3914,6 +4241,7 @@
       "perso.be",
       "teaser.fr"
     ],
+    "jurisdiction": "FR",
     "mx_hosts": [
       "mongeniemx.mailobj.net",
       "mx-domain.netcourrier.com",
@@ -3927,6 +4255,8 @@
     "type": "free"
   },
   "manyme.com": {
+    "cloud": "AWS",
+    "hosted": "DE",
     "hosts": [
       "manyme.com"
     ],
@@ -3940,11 +4270,14 @@
     "type": "forwarding"
   },
   "me.com": {
+    "cloud": "Apple",
+    "hosted": "US",
     "hosts": [
       "icloud.com",
       "mac.com",
       "me.com"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mx01.mail.icloud.com",
       "mx02.mail.icloud.com",
@@ -3956,6 +4289,8 @@
     "type": "free"
   },
   "memail.com": {
+    "cloud": "Azure",
+    "hosted": "DE",
     "hosts": [
       "memail.com",
       "abimail.com",
@@ -4295,9 +4630,12 @@
     "type": "paid"
   },
   "meta.ua": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "meta.ua"
     ],
+    "jurisdiction": "UA",
     "mx_hosts": [
       "mxs2.meta.ua",
       "mxs3.meta.ua"
@@ -4309,9 +4647,11 @@
     "type": "free"
   },
   "mobily.com.sa": {
+    "hosted": "SA",
     "hosts": [
       "mobily.com.sa"
     ],
+    "jurisdiction": "SA",
     "mx_hosts": [
       "amber.mobily.com.sa",
       "bmx1.mobily.com.sa",
@@ -4330,6 +4670,8 @@
     "type": "paid"
   },
   "mozmail.com": {
+    "cloud": "Google Cloud",
+    "hosted": "US",
     "hosts": [
       "mozmail.com",
       "relay.firefox.com"
@@ -4344,6 +4686,7 @@
     "type": "forwarding"
   },
   "mtnonline.com": {
+    "hosted": "NG",
     "hosts": [
       "mtnonline.com"
     ],
@@ -4358,9 +4701,11 @@
     "type": "paid"
   },
   "mts.rs": {
+    "hosted": "RS",
     "hosts": [
       "mts.rs"
     ],
+    "jurisdiction": "RS",
     "mx_hosts": [
       "mailgw.mts.rs"
     ],
@@ -4371,9 +4716,11 @@
     "type": "paid"
   },
   "munkebonet.dk": {
+    "hosted": "DK",
     "hosts": [
       "munkebonet.dk"
     ],
+    "jurisdiction": "DK",
     "mx_hosts": [
       "fallbackmx.spamexperts.eu",
       "lastmx.spamexperts.net",
@@ -4386,6 +4733,8 @@
     "type": "paid"
   },
   "murena.io": {
+    "cloud": "Hetzner",
+    "hosted": "FI",
     "hosts": [
       "murena.io",
       "e.email"
@@ -4400,11 +4749,13 @@
     "type": "free"
   },
   "mweb.co.za": {
+    "hosted": "ZA",
     "hosts": [
       "iafrica.com",
       "mweb.co.za",
       "worldonline.co.za"
     ],
+    "jurisdiction": "ZA",
     "mx_hosts": [
       "fallbackmx.spamexperts.eu",
       "lastmx.spamexperts.net",
@@ -4420,6 +4771,7 @@
   "my.id": {
     "discontinued": true,
     "hosts": [],
+    "jurisdiction": "ID",
     "mx_hosts": [],
     "old_hosts": [
       "my.id"
@@ -4431,9 +4783,11 @@
     "type": "free"
   },
   "mynet.com": {
+    "hosted": "TR",
     "hosts": [
       "mynet.com"
     ],
+    "jurisdiction": "TR",
     "mx_hosts": [
       "mbmail.mynet.com"
     ],
@@ -4444,10 +4798,12 @@
     "type": "free"
   },
   "nate.com": {
+    "hosted": "KR",
     "hosts": [
       "nate.com",
       "empas.com"
     ],
+    "jurisdiction": "KR",
     "mx_hosts": [
       "mx1.empal.com",
       "mx1.nate.com"
@@ -4460,9 +4816,11 @@
   },
   "neomail.co.za": {
     "discontinued": true,
+    "hosted": "ZA",
     "hosts": [
       "neomail.co.za"
     ],
+    "jurisdiction": "ZA",
     "mx_hosts": [
       "neomail.co.za"
     ],
@@ -4470,6 +4828,8 @@
     "type": "free"
   },
   "neonmail.io": {
+    "cloud": "Contabo",
+    "hosted": "DE",
     "hosts": [
       "neonmail.io"
     ],
@@ -4483,9 +4843,12 @@
     "type": "free"
   },
   "netcabo.pt": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "netcabo.pt"
     ],
+    "jurisdiction": "PT",
     "mx_hosts": [
       "2019102901.pamx1.hotmail.com"
     ],
@@ -4505,6 +4868,7 @@
       "renren.com",
       "pmail.net"
     ],
+    "jurisdiction": "CN",
     "mx_hosts": [
       "126mx00.mxmail.netease.com",
       "126mx01.mxmail.netease.com",
@@ -4529,6 +4893,8 @@
     "type": "free"
   },
   "netins.net": {
+    "cloud": "AWS",
+    "hosted": "US",
     "hosts": [
       "netins.net"
     ],
@@ -4542,9 +4908,11 @@
     "type": "paid"
   },
   "netvigator.com": {
+    "hosted": "HK",
     "hosts": [
       "netvigator.com"
     ],
+    "jurisdiction": "HK",
     "mx_hosts": [
       "imsmx1.netvigator.com",
       "imsmx2.netvigator.com"
@@ -4556,10 +4924,13 @@
     "type": "paid"
   },
   "nifty.com": {
+    "cloud": "AWS",
+    "hosted": "US",
     "hosts": [
       "nifty.com",
       "nifty.ne.jp"
     ],
+    "jurisdiction": "JP",
     "mx_hosts": [
       "mx2.nifty.com"
     ],
@@ -4570,6 +4941,7 @@
     "type": "paid"
   },
   "o2.pl": {
+    "hosted": "PL",
     "hosts": [
       "o2.pl",
       "wp.pl",
@@ -4577,6 +4949,7 @@
       "go2.pl",
       "prokonto.pl"
     ],
+    "jurisdiction": "PL",
     "mx_hosts": [
       "mx.tlen.pl",
       "mx.wp.pl",
@@ -4588,9 +4961,12 @@
     "type": "free"
   },
   "ocn.ne.jp": {
+    "cloud": "AWS",
+    "hosted": "US",
     "hosts": [
       "ocn.ne.jp"
     ],
+    "jurisdiction": "JP",
     "mx_hosts": [
       "mw2prrw31p.bizmw.com"
     ],
@@ -4601,10 +4977,12 @@
     "type": "paid"
   },
   "oi.com.br": {
+    "hosted": "BR",
     "hosts": [
       "oi.com.br",
       "oi.net.br"
     ],
+    "jurisdiction": "BR",
     "mx_hosts": [
       "mx7.oi.com.br",
       "smtp.oi.net.br"
@@ -4616,6 +4994,8 @@
     "type": "paid"
   },
   "onet.pl": {
+    "cloud": "AWS",
+    "hosted": "DE",
     "hosts": [
       "op.pl",
       "onet.pl",
@@ -4630,6 +5010,7 @@
       "amorki.pl",
       "opoczta.pl"
     ],
+    "jurisdiction": "PL",
     "mx_hosts": [
       "mx.poczta.onet.pl"
     ],
@@ -4639,9 +5020,12 @@
     "type": "free"
   },
   "online.de": {
+    "cloud": "IONOS",
+    "hosted": "DE",
     "hosts": [
       "online.de"
     ],
+    "jurisdiction": "DE",
     "mx_hosts": [
       "mx00.emig.kundenserver.de",
       "mx01.emig.kundenserver.de"
@@ -4653,9 +5037,12 @@
     "type": "free"
   },
   "online.nl": {
+    "cloud": "Cloudflare",
+    "hosted": "NL",
     "hosts": [
       "online.nl"
     ],
+    "jurisdiction": "NL",
     "mx_hosts": [
       "mx.capitar.com",
       "smtp-in.online.nl"
@@ -4667,9 +5054,12 @@
     "type": "paid"
   },
   "online.no": {
+    "cloud": "Azure",
+    "hosted": "NO",
     "hosts": [
       "online.no"
     ],
+    "jurisdiction": "NO",
     "mx_hosts": [
       "mx1c60.megamailservers.eu",
       "mx2c60.megamailservers.eu",
@@ -4683,6 +5073,8 @@
     "type": "free"
   },
   "onsmail.com": {
+    "cloud": "Contabo",
+    "hosted": "DE",
     "hosts": [
       "onsmail.com"
     ],
@@ -4696,9 +5088,11 @@
     "type": "free"
   },
   "optimum.net": {
+    "hosted": "US",
     "hosts": [
       "optimum.net"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mx.altice.prod.cloud.openwave.ai"
     ],
@@ -4709,9 +5103,11 @@
     "type": "paid"
   },
   "optonline.net": {
+    "hosted": "US",
     "hosts": [
       "optonline.net"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mx.altice.prod.cloud.openwave.ai"
     ],
@@ -4722,9 +5118,11 @@
     "type": "paid"
   },
   "optusnet.com.au": {
+    "hosted": "AU",
     "hosts": [
       "optusnet.com.au"
     ],
+    "jurisdiction": "AU",
     "mx_hosts": [
       "mx-10.au-east.atmailcloud.com",
       "mx-20.au-east.atmailcloud.com"
@@ -4736,11 +5134,13 @@
     "type": "paid"
   },
   "orange.fr": {
+    "hosted": "FR",
     "hosts": [
       "orange.fr",
       "orange.net",
       "wanadoo.fr"
     ],
+    "jurisdiction": "FR",
     "mx_hosts": [
       "custmx.cscdns.net",
       "smtp-in.orange.fr",
@@ -4749,9 +5149,11 @@
     "type": "paid"
   },
   "orange.ma": {
+    "hosted": "MA",
     "hosts": [
       "orange.ma"
     ],
+    "jurisdiction": "MA",
     "mx_hosts": [
       "mx2.orange.ma",
       "mx3.orange.ma"
@@ -4763,9 +5165,11 @@
     "type": "paid"
   },
   "orange.ro": {
+    "hosted": "RO",
     "hosts": [
       "orange.ro"
     ],
+    "jurisdiction": "RO",
     "mx_hosts": [
       "smtp-ina.orange.com",
       "smtp-inb.orange.com"
@@ -4776,9 +5180,11 @@
     "type": "free"
   },
   "otenet.gr": {
+    "hosted": "GR",
     "hosts": [
       "otenet.gr"
     ],
+    "jurisdiction": "GR",
     "mx_hosts": [
       "mx.otenet.gr",
       "mx2.otenet.gr",
@@ -4792,6 +5198,8 @@
     "type": "paid"
   },
   "outlook.com": {
+    "cloud": "Azure",
+    "hosted": "US",
     "hosts": [
       "hotmail.at",
       "hotmail.ba",
@@ -4912,6 +5320,7 @@
       "passport.com",
       "windowslive.com"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "apc.olc.protection.outlook.com",
       "eur.olc.protection.outlook.com",
@@ -4932,12 +5341,14 @@
     "type": "free"
   },
   "overmail.de": {
+    "hosted": "DE",
     "hosts": [
       "overmail.de",
       "overmail.com",
       "overmail.eu",
       "overmail.ch"
     ],
+    "jurisdiction": "DE",
     "mx_hosts": [
       "mail.aikq.de",
       "mail.overmail.de",
@@ -4950,6 +5361,8 @@
     "type": "free"
   },
   "ownmail.ai": {
+    "cloud": "Hetzner",
+    "hosted": "FI",
     "hosts": [
       "ownmail.ai"
     ],
@@ -4963,9 +5376,12 @@
     "type": "free"
   },
   "paced.email": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "paced.email"
     ],
+    "jurisdiction": "GB",
     "mx_hosts": [
       "fb.mail.gandi.net",
       "spool.mail.gandi.net"
@@ -4977,9 +5393,12 @@
     "type": "forwarding"
   },
   "passagen.se": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "passagen.se"
     ],
+    "jurisdiction": "SE",
     "mx_hosts": [
       "mx1.spray.mail2world.com",
       "mx2.spray.mail2world.com",
@@ -4991,7 +5410,9 @@
     "type": "free"
   },
   "pissmail.com": {
+    "cloud": "Contabo",
     "discontinued": true,
+    "hosted": "DE",
     "hosts": [
       "child.pizza",
       "dmc.chat",
@@ -5011,9 +5432,12 @@
     "type": "free"
   },
   "planet.nl": {
+    "cloud": "AWS",
+    "hosted": "IE",
     "hosts": [
       "planet.nl"
     ],
+    "jurisdiction": "NL",
     "mx_hosts": [
       "mx.kpnmail.nl"
     ],
@@ -5024,9 +5448,11 @@
     "type": "paid"
   },
   "ploud.fr": {
+    "hosted": "FR",
     "hosts": [
       "ploud.fr"
     ],
+    "jurisdiction": "FR",
     "mx_hosts": [
       "mxn1.psiade.com",
       "mxn2.psiade.com"
@@ -5038,9 +5464,12 @@
     "type": "paid"
   },
   "pobox.hu": {
+    "cloud": "Contabo",
+    "hosted": "DE",
     "hosts": [
       "pobox.hu"
     ],
+    "jurisdiction": "HU",
     "mx_hosts": [
       "pobox.hu"
     ],
@@ -5048,9 +5477,11 @@
     "type": "free"
   },
   "portugalmail.pt": {
+    "hosted": "PT",
     "hosts": [
       "portugalmail.pt"
     ],
+    "jurisdiction": "PT",
     "mx_hosts": [
       "a.mx.portugalmail.pt",
       "b.mx.portugalmail.pt",
@@ -5063,6 +5494,7 @@
     "type": "free"
   },
   "posteo.de": {
+    "hosted": "DE",
     "hosts": [
       "posteo.at",
       "posteo.au",
@@ -5116,6 +5548,7 @@
       "posteo.uk",
       "posteo.us"
     ],
+    "jurisdiction": "DE",
     "mx_hosts": [
       "mx01.posteo.de",
       "mx02.posteo.de",
@@ -5129,6 +5562,8 @@
     "type": "paid"
   },
   "privatemail.com": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "private-mail.com",
       "privatemail.com"
@@ -5144,12 +5579,14 @@
     "type": "free"
   },
   "proton.me": {
+    "hosted": "DE",
     "hosts": [
       "proton.me",
       "protonmail.ch",
       "protonmail.com",
       "pm.me"
     ],
+    "jurisdiction": "CH",
     "mx_hosts": [
       "mail.protonmail.ch",
       "mailsec.protonmail.ch"
@@ -5161,6 +5598,8 @@
     "type": "free"
   },
   "proxiedmail.com": {
+    "cloud": "DigitalOcean",
+    "hosted": "NL",
     "hosts": [
       "proxiedmail.com"
     ],
@@ -5175,9 +5614,11 @@
     "type": "forwarding"
   },
   "pt.lu": {
+    "hosted": "LU",
     "hosts": [
       "pt.lu"
     ],
+    "jurisdiction": "LU",
     "mx_hosts": [
       "mx.pt.lu"
     ],
@@ -5188,9 +5629,11 @@
     "type": "paid"
   },
   "ptt.rs": {
+    "hosted": "RS",
     "hosts": [
       "ptt.rs"
     ],
+    "jurisdiction": "RS",
     "mx_hosts": [
       "it.ptt.rs"
     ],
@@ -5201,9 +5644,12 @@
     "type": "paid"
   },
   "purelymail.com": {
+    "cloud": "AWS",
+    "hosted": "US",
     "hosts": [
       "purelymail.com"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mailserver.purelymail.com"
     ],
@@ -5214,9 +5660,11 @@
     "type": "paid"
   },
   "qip.ru": {
+    "hosted": "RU",
     "hosts": [
       "qip.ru"
     ],
+    "jurisdiction": "RU",
     "mx_hosts": [
       "e.m.onl"
     ],
@@ -5227,6 +5675,7 @@
     "type": "free"
   },
   "qis.net": {
+    "hosted": "US",
     "hosts": [
       "qis.net"
     ],
@@ -5240,6 +5689,7 @@
     "type": "paid"
   },
   "qq.com": {
+    "hosted": "CN",
     "hosts": [
       "foxmail.com",
       "mailpanda.com",
@@ -5248,6 +5698,7 @@
       "qq.com",
       "vip.qq.com"
     ],
+    "jurisdiction": "CN",
     "mx_hosts": [
       "mx1.qq.com",
       "mx2.qq.com",
@@ -5261,6 +5712,7 @@
     "type": "free"
   },
   "qrypty.com": {
+    "hosted": "IS",
     "hosts": [
       "qrypty.com"
     ],
@@ -5274,6 +5726,7 @@
     "type": "free"
   },
   "rambler.ru": {
+    "hosted": "RU",
     "hosts": [
       "autorambler.ru",
       "lenta.ru",
@@ -5281,6 +5734,7 @@
       "rambler.ru",
       "ro.ru"
     ],
+    "jurisdiction": "RU",
     "mx_hosts": [
       "inmx.rambler.ru"
     ],
@@ -5290,11 +5744,13 @@
     "type": "free"
   },
   "rcn.com": {
+    "hosted": "US",
     "hosts": [
       "erols.com",
       "rcn.com",
       "starpower.net"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mx.rcn.com"
     ],
@@ -5305,11 +5761,14 @@
     "type": "paid"
   },
   "rediff.com": {
+    "cloud": "Akamai",
+    "hosted": "DE",
     "hosts": [
       "rediff.com",
       "rediffmail.com",
       "rediffmailpro.com"
     ],
+    "jurisdiction": "IN",
     "mx_hosts": [
       "mx.pro.rediff.akadns.net",
       "mx.rediffmail.rediff.akadns.net"
@@ -5320,9 +5779,11 @@
     "type": "free"
   },
   "riseup.net": {
+    "hosted": "US",
     "hosts": [
       "riseup.net"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mx1.riseup.net"
     ],
@@ -5333,9 +5794,12 @@
     "type": "free"
   },
   "rogers.com": {
+    "cloud": "Azure",
+    "hosted": "CA",
     "hosts": [
       "rogers.com"
     ],
+    "jurisdiction": "CA",
     "mx_hosts": [
       "mx-rogers.mail.am0.yahoodns.net"
     ],
@@ -5346,6 +5810,7 @@
     "type": "paid"
   },
   "runbox.com": {
+    "hosted": "NO",
     "hosts": [
       "mailhost.work",
       "mailhouse.biz",
@@ -5385,6 +5850,7 @@
       "runbox7.com",
       "xobnur.uk"
     ],
+    "jurisdiction": "NO",
     "mx_hosts": [
       "mail.eye-mail.net",
       "mx.runbox.com"
@@ -5395,9 +5861,11 @@
     "type": "paid"
   },
   "safaricom.co.ke": {
+    "hosted": "US",
     "hosts": [
       "safaricom.co.ke"
     ],
+    "jurisdiction": "KE",
     "mx_hosts": [
       "mx1.hc502-0.eu.iphmx.com",
       "mx2.hc502-0.eu.iphmx.com"
@@ -5409,6 +5877,7 @@
     "type": "paid"
   },
   "safe-mail.net": {
+    "hosted": "IL",
     "hosts": [
       "safe-mail.net"
     ],
@@ -5419,9 +5888,11 @@
     "type": "free"
   },
   "salzburg.co.at": {
+    "hosted": "AT",
     "hosts": [
       "salzburg.co.at"
     ],
+    "jurisdiction": "AT",
     "mx_hosts": [
       "mx-in.cablelink.at"
     ],
@@ -5433,6 +5904,7 @@
   },
   "sanipass.com": {
     "discontinued": true,
+    "hosted": "FR",
     "hosts": [
       "sanipass.com"
     ],
@@ -5447,9 +5919,11 @@
     "type": "free"
   },
   "sapo.pt": {
+    "hosted": "PT",
     "hosts": [
       "sapo.pt"
     ],
+    "jurisdiction": "PT",
     "mx_hosts": [
       "mx.sapo.pt"
     ],
@@ -5459,9 +5933,11 @@
     "type": "free"
   },
   "sasktel.net": {
+    "hosted": "CA",
     "hosts": [
       "sasktel.net"
     ],
+    "jurisdiction": "CA",
     "mx_hosts": [
       "mx1c11.megamailservers.com",
       "mx2c11.megamailservers.com",
@@ -5474,9 +5950,12 @@
     "type": "paid"
   },
   "scarlet.nl": {
+    "cloud": "Hetzner",
+    "hosted": "FI",
     "hosts": [
       "scarlet.nl"
     ],
+    "jurisdiction": "NL",
     "mx_hosts": [
       "mx.capitar.com"
     ],
@@ -5487,6 +5966,7 @@
     "type": "paid"
   },
   "seckinmail.com": {
+    "hosted": "US",
     "hosts": [
       "seckinmail.com"
     ],
@@ -5501,11 +5981,13 @@
     "type": "free"
   },
   "seznam.cz": {
+    "hosted": "CZ",
     "hosts": [
       "seznam.cz",
       "email.cz",
       "post.cz"
     ],
+    "jurisdiction": "CZ",
     "mx_hosts": [
       "mx1.seznam.cz",
       "mx2.seznam.cz"
@@ -5516,11 +5998,13 @@
     "type": "free"
   },
   "sfr.fr": {
+    "hosted": "FR",
     "hosts": [
       "neuf.fr",
       "numericable.fr",
       "sfr.fr"
     ],
+    "jurisdiction": "FR",
     "mx_hosts": [
       "smtp-in.sfr.fr"
     ],
@@ -5531,9 +6015,12 @@
     "type": "paid"
   },
   "shaw.ca": {
+    "cloud": "Akamai",
+    "hosted": "CA",
     "hosts": [
       "shaw.ca"
     ],
+    "jurisdiction": "CA",
     "mx_hosts": [
       "shw-central.mx.a.cloudfilter.net"
     ],
@@ -5544,9 +6031,11 @@
     "type": "paid"
   },
   "sibnet.ru": {
+    "hosted": "RU",
     "hosts": [
       "sibnet.ru"
     ],
+    "jurisdiction": "RU",
     "mx_hosts": [
       "mx.sibnet.ru"
     ],
@@ -5587,12 +6076,14 @@
     "type": "forwarding"
   },
   "sina.com": {
+    "hosted": "US",
     "hosts": [
       "sina.com",
       "sina.com.cn",
       "sina.cn",
       "vip.sina.com"
     ],
+    "jurisdiction": "CN",
     "mx_hosts": [
       "freemx1.sinamail.sina.com.cn",
       "freemx2.sinamail.sina.com.cn",
@@ -5609,6 +6100,7 @@
   },
   "sitepro.email": {
     "discontinued": true,
+    "hosted": "DE",
     "hosts": [
       "sitepro.email",
       "siteprofree.email"
@@ -5624,6 +6116,8 @@
     "type": "free"
   },
   "skiff.com": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "skiff.com"
     ],
@@ -5637,9 +6131,11 @@
     "type": "paid"
   },
   "sky.com": {
+    "hosted": "GB",
     "hosts": [
       "sky.com"
     ],
+    "jurisdiction": "GB",
     "mx_hosts": [
       "mx-eu.mail.am0.yahoodns.net"
     ],
@@ -5650,9 +6146,11 @@
     "type": "paid"
   },
   "sky.it": {
+    "hosted": "IT",
     "hosts": [
       "sky.it"
     ],
+    "jurisdiction": "IT",
     "mx_hosts": [
       "mxa-009f8f01.gslb.pphosted.com",
       "mxb-009f8f01.gslb.pphosted.com"
@@ -5667,6 +6165,7 @@
     "hosts": [
       "sky.sannet.ne.jp"
     ],
+    "jurisdiction": "JP",
     "mx_hosts": [
       "mx.mail.gol.com",
       "mx2.mail.gol.com"
@@ -5678,6 +6177,8 @@
     "type": "paid"
   },
   "skymail.de": {
+    "cloud": "Hetzner",
+    "hosted": "DE",
     "hosts": [
       "skymail.de",
       "skymail.at",
@@ -5686,6 +6187,7 @@
       "maills.de",
       "hemail.de"
     ],
+    "jurisdiction": "DE",
     "mx_hosts": [
       "mx1.skymail.de"
     ],
@@ -5700,9 +6202,11 @@
     "type": "free"
   },
   "skynet.be": {
+    "hosted": "BE",
     "hosts": [
       "skynet.be"
     ],
+    "jurisdiction": "BE",
     "mx_hosts": [
       "mx.gtm-tc2.proximus.be"
     ],
@@ -5716,6 +6220,7 @@
     "hosts": [
       "sltnet.lk"
     ],
+    "jurisdiction": "LK",
     "mx_hosts": [
       "mailin-03.gw.sltidc.lk",
       "mailin-04.gw.sltidc.lk",
@@ -5730,6 +6235,8 @@
     "type": "paid"
   },
   "sneakemail.com": {
+    "cloud": "AWS",
+    "hosted": "US",
     "hosts": [
       "sneakemail.com",
       "snkmail.com",
@@ -5743,9 +6250,12 @@
     "type": "forwarding"
   },
   "so-net.ne.jp": {
+    "cloud": "AWS",
+    "hosted": "US",
     "hosts": [
       "so-net.ne.jp"
     ],
+    "jurisdiction": "JP",
     "mx_hosts": [
       "ms-ext91.so-net.ne.jp"
     ],
@@ -5756,9 +6266,12 @@
     "type": "paid"
   },
   "sohu.com": {
+    "cloud": "Tencent Cloud",
+    "hosted": "CN",
     "hosts": [
       "sohu.com"
     ],
+    "jurisdiction": "CN",
     "mx_hosts": [
       "sohumx.h.a.sohu.com",
       "sohumx1.sohu.com",
@@ -5770,9 +6283,12 @@
     "type": "free"
   },
   "solcon.nl": {
+    "cloud": "Leaseweb",
+    "hosted": "NL",
     "hosts": [
       "solcon.nl"
     ],
+    "jurisdiction": "NL",
     "mx_hosts": [
       "mx101.solcon.nl",
       "mx102.solcon.nl",
@@ -5786,6 +6302,7 @@
     "type": "paid"
   },
   "soverin.net": {
+    "hosted": "NL",
     "hosts": [
       "soverin.net"
     ],
@@ -5800,6 +6317,8 @@
     "type": "paid"
   },
   "spamex.com": {
+    "cloud": "AWS",
+    "hosted": "US",
     "hosts": [
       "spamex.com"
     ],
@@ -5813,6 +6332,7 @@
     "type": "forwarding"
   },
   "spamgourmet.com": {
+    "hosted": "US",
     "hosts": [
       "spamgourmet.com",
       "spamgourmet.net",
@@ -5837,9 +6357,11 @@
     "type": "forwarding"
   },
   "speedy.com.ar": {
+    "hosted": "AR",
     "hosts": [
       "speedy.com.ar"
     ],
+    "jurisdiction": "AR",
     "mx_hosts": [
       "ar.vmx.terra.com"
     ],
@@ -5850,7 +6372,9 @@
     "type": "paid"
   },
   "spike.team": {
+    "cloud": "AWS",
     "discontinued": true,
+    "hosted": "US",
     "hosts": [
       "spike.team"
     ],
@@ -5862,10 +6386,12 @@
     "type": "free"
   },
   "startmail.com": {
+    "hosted": "NL",
     "hosts": [
       "startmail.com",
       "use.startmail.com"
     ],
+    "jurisdiction": "NL",
     "mx_hosts": [
       "mx1.startmail.com",
       "mx2.startmail.com",
@@ -5878,9 +6404,12 @@
     "type": "paid"
   },
   "stc.com.sa": {
+    "cloud": "Akamai",
+    "hosted": "DE",
     "hosts": [
       "stc.com.sa"
     ],
+    "jurisdiction": "SA",
     "mx_hosts": [
       "imssvip1.stc.com.sa",
       "imssvipdr1.stc.com.sa"
@@ -5892,9 +6421,12 @@
     "type": "paid"
   },
   "stipte.nl": {
+    "cloud": "Hetzner",
+    "hosted": "FI",
     "hosts": [
       "stipte.nl"
     ],
+    "jurisdiction": "NL",
     "mx_hosts": [
       "mx.capitar.com"
     ],
@@ -5905,6 +6437,8 @@
     "type": "paid"
   },
   "sudomail.com": {
+    "cloud": "Cloudflare",
+    "hosted": "US",
     "hosts": [
       "sudomail.com"
     ],
@@ -5918,10 +6452,12 @@
     "type": "paid"
   },
   "sunrise.ch": {
+    "hosted": "CH",
     "hosts": [
       "hispeed.ch",
       "sunrise.ch"
     ],
+    "jurisdiction": "CH",
     "mx_hosts": [
       "mxin1-hispeed-ch.edge.unified.services",
       "mxin1-sunrise-ch.edge.unified.services",
@@ -5935,6 +6471,7 @@
     "type": "paid"
   },
   "swva.net": {
+    "hosted": "US",
     "hosts": [
       "swva.net"
     ],
@@ -5948,9 +6485,12 @@
     "type": "paid"
   },
   "sympatico.ca": {
+    "cloud": "AWS",
+    "hosted": "CA",
     "hosts": [
       "sympatico.ca"
     ],
+    "jurisdiction": "CA",
     "mx_hosts": [
       "mx.sympatico.ca"
     ],
@@ -5961,9 +6501,11 @@
     "type": "paid"
   },
   "systemli.org": {
+    "hosted": "SE",
     "hosts": [
       "systemli.org"
     ],
+    "jurisdiction": "DE",
     "mx_hosts": [
       "mail.systemli.org"
     ],
@@ -5974,9 +6516,11 @@
     "type": "free"
   },
   "t-com.hr": {
+    "hosted": "HR",
     "hosts": [
       "t-com.hr"
     ],
+    "jurisdiction": "HR",
     "mx_hosts": [
       "mx01.t-com.hr",
       "mx02.t-com.hr",
@@ -5989,10 +6533,13 @@
     "type": "paid"
   },
   "t-online.de": {
+    "cloud": "AWS",
+    "hosted": "IE",
     "hosts": [
       "t-online.de",
       "magenta.de"
     ],
+    "jurisdiction": "DE",
     "mx_hosts": [
       "mx00.magenta.de",
       "mx00.t-online.de",
@@ -6009,9 +6556,11 @@
     "type": "free"
   },
   "t-online.hu": {
+    "hosted": "HU",
     "hosts": [
       "t-online.hu"
     ],
+    "jurisdiction": "HU",
     "mx_hosts": [
       "mx.t-online.hu"
     ],
@@ -6022,10 +6571,12 @@
     "type": "paid"
   },
   "talktalk.co.uk": {
+    "hosted": "FR",
     "hosts": [
       "talktalk.co.uk",
       "talktalk.net"
     ],
+    "jurisdiction": "GB",
     "mx_hosts": [
       "eu-smtp-inbound-1.mimecast.com",
       "eu-smtp-inbound-2.mimecast.com",
@@ -6042,9 +6593,11 @@
   },
   "tb9.de": {
     "discontinued": true,
+    "hosted": "DE",
     "hosts": [
       "tb9.de"
     ],
+    "jurisdiction": "DE",
     "mx_hosts": [
       "w01f166d.kasserver.com"
     ],
@@ -6055,9 +6608,12 @@
     "type": "free"
   },
   "tdc.dk": {
+    "cloud": "AWS",
+    "hosted": "US",
     "hosts": [
       "tdc.dk"
     ],
+    "jurisdiction": "DK",
     "mx_hosts": [
       "mxa-00360101.gslb.pphosted.com",
       "mxb-00360101.gslb.pphosted.com"
@@ -6082,9 +6638,12 @@
     "type": "paid"
   },
   "tele2.nl": {
+    "cloud": "Azure",
+    "hosted": "NL",
     "hosts": [
       "tele2.nl"
     ],
+    "jurisdiction": "NL",
     "mx_hosts": [
       "mx10.se.isp-net.nl",
       "mx20.se.isp-net.nl"
@@ -6096,10 +6655,12 @@
     "type": "paid"
   },
   "telecom.com.ar": {
+    "hosted": "AR",
     "hosts": [
       "personal.com.ar",
       "telecom.com.ar"
     ],
+    "jurisdiction": "AR",
     "mx_hosts": [
       "buepac-mx-08.teco.com.ar"
     ],
@@ -6110,9 +6671,11 @@
     "type": "paid"
   },
   "telenet.be": {
+    "hosted": "BE",
     "hosts": [
       "telenet.be"
     ],
+    "jurisdiction": "BE",
     "mx_hosts": [
       "mx1.telenet-ops.be",
       "mx2.telenet-ops.be"
@@ -6129,6 +6692,7 @@
       "telenor.no",
       "telenor.se"
     ],
+    "jurisdiction": "NO",
     "mx_hosts": [
       "telenor-dk.mail.protection.outlook.com",
       "telenor-no.mail.protection.outlook.com",
@@ -6141,9 +6705,11 @@
     "type": "paid"
   },
   "telia.com": {
+    "hosted": "SE",
     "hosts": [
       "telia.com"
     ],
+    "jurisdiction": "SE",
     "mx_hosts": [
       "mail.telia.com"
     ],
@@ -6154,6 +6720,7 @@
     "type": "paid"
   },
   "telkomsa.net": {
+    "hosted": "ZA",
     "hosts": [
       "telkomsa.net"
     ],
@@ -6168,9 +6735,12 @@
     "type": "paid"
   },
   "telus.net": {
+    "cloud": "AWS",
+    "hosted": "US",
     "hosts": [
       "telus.net"
     ],
+    "jurisdiction": "CA",
     "mx_hosts": [
       "alt1.aspmx.l.google.com",
       "alt2.aspmx.l.google.com",
@@ -6185,9 +6755,12 @@
     "type": "paid"
   },
   "terra.com.br": {
+    "cloud": "Azure",
+    "hosted": "US",
     "hosts": [
       "terra.com.br"
     ],
+    "jurisdiction": "BR",
     "mx_hosts": [
       "mx.terra.com.br"
     ],
@@ -6198,6 +6771,7 @@
     "type": "paid"
   },
   "thexyz.com": {
+    "hosted": "US",
     "hosts": [
       "thexyz.com"
     ],
@@ -6225,9 +6799,11 @@
     "type": "free"
   },
   "tin.it": {
+    "hosted": "IT",
     "hosts": [
       "tin.it"
     ],
+    "jurisdiction": "IT",
     "mx_hosts": [
       "mx.tin.it"
     ],
@@ -6238,9 +6814,12 @@
     "type": "paid"
   },
   "tinkmail.me": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "tinkmail.me"
     ],
+    "jurisdiction": "ME",
     "mx_hosts": [
       "mx1.tinkmail.me",
       "mx2.tinkmail.me"
@@ -6252,9 +6831,11 @@
     "type": "free"
   },
   "tiscali.cz": {
+    "hosted": "CZ",
     "hosts": [
       "tiscali.cz"
     ],
+    "jurisdiction": "CZ",
     "mx_hosts": [
       "tax.virusfree.cz",
       "tbx.virusfree.cz",
@@ -6269,9 +6850,11 @@
   },
   "tiscali.it": {
     "discontinued": true,
+    "hosted": "IT",
     "hosts": [
       "tiscali.it"
     ],
+    "jurisdiction": "IT",
     "mx_hosts": [
       "etb-1.mail.tiscali.it",
       "etb-2.mail.tiscali.it",
@@ -6286,6 +6869,7 @@
     "type": "free"
   },
   "tungmail.com": {
+    "hosted": "US",
     "hosts": [
       "tungmail.com"
     ],
@@ -6299,9 +6883,11 @@
     "type": "free"
   },
   "turknet.com.tr": {
+    "hosted": "TR",
     "hosts": [
       "turknet.com.tr"
     ],
+    "jurisdiction": "TR",
     "mx_hosts": [
       "smtpbackup.netonehosting.com",
       "smtpgw.netonehosting.com"
@@ -6313,6 +6899,7 @@
     "type": "paid"
   },
   "tutanota.com": {
+    "hosted": "DE",
     "hosts": [
       "keemail.me",
       "tuta.com",
@@ -6321,6 +6908,7 @@
       "tutanota.com",
       "tutanota.de"
     ],
+    "jurisdiction": "DE",
     "mx_hosts": [
       "mail.tutanota.de"
     ],
@@ -6331,9 +6919,11 @@
     "type": "free"
   },
   "tvnet.lv": {
+    "hosted": "EE",
     "hosts": [
       "tvnet.lv"
     ],
+    "jurisdiction": "LV",
     "mx_hosts": [
       "mx1.inbox.lv"
     ],
@@ -6344,10 +6934,13 @@
     "type": "free"
   },
   "ubbi.com.br": {
+    "cloud": "Oracle Cloud",
     "discontinued": true,
+    "hosted": "GB",
     "hosts": [
       "ubbi.com.br"
     ],
+    "jurisdiction": "BR",
     "mx_hosts": [
       "mail.ubbi.com.br"
     ],
@@ -6355,6 +6948,8 @@
     "type": "free"
   },
   "ubikom.cc": {
+    "cloud": "AWS",
+    "hosted": "DE",
     "hosts": [
       "ubikom.cc"
     ],
@@ -6368,9 +6963,12 @@
     "type": "free"
   },
   "ukr.net": {
+    "cloud": "Google Cloud",
+    "hosted": "US",
     "hosts": [
       "ukr.net"
     ],
+    "jurisdiction": "UA",
     "mx_hosts": [
       "mxs.ukr.net"
     ],
@@ -6380,9 +6978,11 @@
     "type": "free"
   },
   "uol.com.br": {
+    "hosted": "BR",
     "hosts": [
       "uol.com.br"
     ],
+    "jurisdiction": "BR",
     "mx_hosts": [
       "mx.uol.com.br"
     ],
@@ -6393,9 +6993,11 @@
     "type": "paid"
   },
   "usa.net": {
+    "hosted": "US",
     "hosts": [
       "usa.net"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mxpool01.netaddress.usa.net"
     ],
@@ -6409,6 +7011,7 @@
     "hosts": [
       "utanet.at"
     ],
+    "jurisdiction": "AT",
     "mx_hosts": [
       "mail.drei.at"
     ],
@@ -6419,9 +7022,12 @@
     "type": "paid"
   },
   "uu.me": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "uu.me"
     ],
+    "jurisdiction": "ME",
     "mx_hosts": [
       "mx3.uu.me"
     ],
@@ -6432,9 +7038,11 @@
     "type": "forwarding"
   },
   "versatel.nl": {
+    "hosted": "NL",
     "hosts": [
       "versatel.nl"
     ],
+    "jurisdiction": "NL",
     "mx_hosts": [
       "fallbackmx.spamexperts.eu",
       "lastmx.spamexperts.net",
@@ -6447,6 +7055,8 @@
     "type": "paid"
   },
   "vfemail.net": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "vfemail.net",
       "tushmail.com",
@@ -6476,9 +7086,12 @@
     "type": "free"
   },
   "videotron.ca": {
+    "cloud": "AWS",
+    "hosted": "CA",
     "hosts": [
       "videotron.ca"
     ],
+    "jurisdiction": "CA",
     "mx_hosts": [
       "mx.videotron.ca"
     ],
@@ -6489,9 +7102,11 @@
     "type": "paid"
   },
   "viettel.vn": {
+    "hosted": "VN",
     "hosts": [
       "viettel.vn"
     ],
+    "jurisdiction": "VN",
     "mx_hosts": [
       "mtasvr01.viettel.vn",
       "mtasvr02.viettel.vn"
@@ -6503,9 +7118,11 @@
     "type": "paid"
   },
   "vip.163.com": {
+    "hosted": "CN",
     "hosts": [
       "vip.163.com"
     ],
+    "jurisdiction": "CN",
     "mx_hosts": [
       "vip163mx00.mxmail.netease.com",
       "vip163mx01.mxmail.netease.com"
@@ -6517,12 +7134,15 @@
     "type": "paid"
   },
   "virginmedia.com": {
+    "cloud": "Google Cloud",
+    "hosted": "US",
     "hosts": [
       "blueyonder.co.uk",
       "ntlworld.com",
       "virgin.net",
       "virginmedia.com"
     ],
+    "jurisdiction": "GB",
     "mx_hosts": [
       "mx-10.eu-west.atmailcloud.com",
       "mx-20.eu-west.atmailcloud.com"
@@ -6534,6 +7154,8 @@
     "type": "paid"
   },
   "vivaldi.net": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "vivaldi.net"
     ],
@@ -6548,9 +7170,11 @@
     "type": "free"
   },
   "vnpt.vn": {
+    "hosted": "VN",
     "hosts": [
       "vnpt.vn"
     ],
+    "jurisdiction": "VN",
     "mx_hosts": [
       "gw12-new.vnpt.vn"
     ],
@@ -6577,10 +7201,12 @@
     "type": "paid"
   },
   "vodafonemail.de": {
+    "hosted": "DE",
     "hosts": [
       "vodafonemail.de",
       "arcor.de"
     ],
+    "jurisdiction": "DE",
     "mx_hosts": [
       "mx3.vodafonemail.de",
       "mx5.vodafonemail.de"
@@ -6592,9 +7218,11 @@
     "type": "free"
   },
   "vodamail.co.za": {
+    "hosted": "ZA",
     "hosts": [
       "vodamail.co.za"
     ],
+    "jurisdiction": "ZA",
     "mx_hosts": [
       "mx1c51.megamailservers.com",
       "mx2c51.megamailservers.eu",
@@ -6608,9 +7236,12 @@
     "type": "paid"
   },
   "voo.be": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "voo.be"
     ],
+    "jurisdiction": "BE",
     "mx_hosts": [
       "mrouterin.brutele.be"
     ],
@@ -6621,9 +7252,12 @@
     "type": "paid"
   },
   "walla.co.il": {
+    "cloud": "Google Cloud",
+    "hosted": "US",
     "hosts": [
       "walla.co.il"
     ],
+    "jurisdiction": "IL",
     "mx_hosts": [
       "mx1.hc494-80.c3s2.iphmx.com",
       "mx2.hc494-80.c3s2.iphmx.com"
@@ -6635,6 +7269,8 @@
     "type": "free"
   },
   "walla.com": {
+    "cloud": "Google Cloud",
+    "hosted": "US",
     "hosts": [
       "walla.com"
     ],
@@ -6646,6 +7282,7 @@
     "type": "free"
   },
   "wananchi.com": {
+    "hosted": "KE",
     "hosts": [
       "wananchi.com"
     ],
@@ -6660,9 +7297,11 @@
     "type": "paid"
   },
   "waoo.dk": {
+    "hosted": "DK",
     "hosts": [
       "waoo.dk"
     ],
+    "jurisdiction": "DK",
     "mx_hosts": [
       "spamfilter.fibia.dk"
     ],
@@ -6673,9 +7312,12 @@
     "type": "paid"
   },
   "web-mail.de": {
+    "cloud": "IONOS",
+    "hosted": "DE",
     "hosts": [
       "web-mail.de"
     ],
+    "jurisdiction": "DE",
     "mx_hosts": [
       "mx00.ionos.de",
       "mx01.ionos.de"
@@ -6687,9 +7329,12 @@
     "type": "free"
   },
   "webafrica.org.za": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "webafrica.org.za"
     ],
+    "jurisdiction": "ZA",
     "mx_hosts": [
       "fallbackmx.spamexperts.eu",
       "lastmx.spamexperts.net",
@@ -6841,6 +7486,7 @@
       "wolke7.net",
       "women-at-work.org"
     ],
+    "jurisdiction": "DE",
     "mx_hosts": [
       "mx-ha01.web.de",
       "mx-ha02.web.de",
@@ -6860,9 +7506,12 @@
     "type": "free"
   },
   "windstream.net": {
+    "cloud": "Oracle Cloud",
+    "hosted": "US",
     "hosts": [
       "windstream.net"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mx01.windstream.net"
     ],
@@ -6873,6 +7522,8 @@
     "type": "paid"
   },
   "wiwimail.com": {
+    "cloud": "DigitalOcean",
+    "hosted": "US",
     "hosts": [
       "wiwimail.com"
     ],
@@ -6886,9 +7537,12 @@
     "type": "free"
   },
   "xmail.com": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
     "hosts": [
       "xmail.com"
     ],
+    "jurisdiction": "AE",
     "mx_hosts": [
       "mx.xmail.com",
       "mx40.xmail.com"
@@ -6900,6 +7554,7 @@
     "type": "free"
   },
   "xmail.net": {
+    "hosted": "CA",
     "hosts": [
       "xmail.net"
     ],
@@ -6914,9 +7569,11 @@
     "type": "free"
   },
   "xms.nl": {
+    "hosted": "DE",
     "hosts": [
       "xms.nl"
     ],
+    "jurisdiction": "NL",
     "mx_hosts": [
       "xms.nl"
     ],
@@ -6927,9 +7584,11 @@
     "type": "paid"
   },
   "xtra.co.nz": {
+    "hosted": "NZ",
     "hosts": [
       "xtra.co.nz"
     ],
+    "jurisdiction": "NZ",
     "mx_hosts": [
       "mx.xm.smxcloud.com"
     ],
@@ -6940,11 +7599,13 @@
     "type": "paid"
   },
   "yaanimail.com": {
+    "hosted": "TR",
     "hosts": [
       "superonline.com",
       "superonline.net",
       "yaanimail.com"
     ],
+    "jurisdiction": "TR",
     "mx_hosts": [
       "mx.yaanimail.com"
     ],
@@ -6955,10 +7616,12 @@
     "type": "paid"
   },
   "yahoo.co.jp": {
+    "hosted": "JP",
     "hosts": [
       "yahoo.co.jp",
       "ymail.ne.jp"
     ],
+    "jurisdiction": "JP",
     "mx_hosts": [
       "mx1.mail.yahoo.co.jp",
       "mx2.mail.yahoo.co.jp",
@@ -7061,6 +7724,7 @@
       "ygm.com",
       "ymail.com"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mail.yahoo.ar",
       "mta5.am0.yahoodns.net",
@@ -7079,6 +7743,8 @@
     "type": "free"
   },
   "yandex.ru": {
+    "cloud": "Yandex Cloud",
+    "hosted": "RU",
     "hosts": [
       "dezigner.ru",
       "email.su",
@@ -7099,6 +7765,7 @@
       "yandex.pl",
       "yandex.ru"
     ],
+    "jurisdiction": "RU",
     "mx_hosts": [
       "mx.yandex.ru"
     ],
@@ -7111,9 +7778,11 @@
     "type": "free"
   },
   "yousee.dk": {
+    "hosted": "DK",
     "hosts": [
       "yousee.dk"
     ],
+    "jurisdiction": "DK",
     "mx_hosts": [
       "mxa-00360101.gslb.pphosted.com",
       "mxb-00360101.gslb.pphosted.com"
@@ -7125,6 +7794,8 @@
     "type": "paid"
   },
   "zaclys.com": {
+    "cloud": "OVH",
+    "hosted": "FR",
     "hosts": [
       "zaclys.com"
     ],
@@ -7137,6 +7808,7 @@
     "type": "paid"
   },
   "ziggo.nl": {
+    "hosted": "NL",
     "hosts": [
       "casema.nl",
       "quicknet.nl",
@@ -7145,6 +7817,7 @@
       "vodafone.nl",
       "ziggo.nl"
     ],
+    "jurisdiction": "NL",
     "mx_hosts": [
       "front.mail.ziggo.com",
       "mxin10.ziggo.nl",
@@ -7157,12 +7830,14 @@
     "type": "paid"
   },
   "zohomail.com": {
+    "hosted": "US",
     "hosts": [
       "zoho.com",
       "zohomail.com",
       "zohomail.eu",
       "zohomail.in"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mx.zoho.eu",
       "mx2.zoho.eu",

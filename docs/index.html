@@ -325,6 +325,16 @@
             color: var(--text-secondary);
             overflow-wrap: anywhere;
         }
+        .geo-cell {
+            white-space: nowrap;
+            font-size: 0.9rem;
+        }
+        .geo-cell .geo-sub {
+            display: block;
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
         .service-row .mx-list {
             font-family: inherit;
             font-size: 0.85rem;
@@ -470,6 +480,12 @@
                             <button class="filter-btn" data-filter="verify" data-value="unset" title="Verification method not recorded - treated as verified (whitelist-tier)">Unset</button>
                         </div>
                         <div class="filter-group">
+                            <label>Region:</label>
+                            <button class="filter-btn active" data-filter="region" data-value="all" title="Show providers in all jurisdictions">All</button>
+                            <button class="filter-btn" data-filter="region" data-value="eu" title="Provider legal seat in the European Union">EU</button>
+                            <button class="filter-btn" data-filter="region" data-value="non-eu" title="Provider legal seat outside the European Union">non-EU</button>
+                        </div>
+                        <div class="filter-group">
                             <label>Tier:</label>
                             <button class="filter-btn active" data-filter="tier" data-value="all" title="Show services of all tiers">All</button>
                             <button class="filter-btn" data-filter="tier" data-value="whitelist" title="Whitelist-tier: free/paid/reserved with verified signup or unset verification">Whitelist</button>
@@ -533,8 +549,12 @@
 
         initTheme();
 
-        let currentFilters = { type: 'all', verify: 'all', tier: 'all' };
+        let currentFilters = { type: 'all', verify: 'all', tier: 'all', region: 'all' };
         let currentSearch = '';
+        const EU = new Set(['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE']);
+        function flag(cc) {
+            return cc && cc.length === 2 ? String.fromCodePoint(...[...cc].map(c => 0x1F1E6 + c.charCodeAt(0) - 65)) : '';
+        }
         let sortState = { column: null, asc: true };
 
         const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -575,16 +595,19 @@
                 const verifyMatch = currentFilters.verify === 'all' ||
                     (currentFilters.verify === 'unset' ? verifyList === 'unset' : verifyList.split(',').includes(currentFilters.verify));
                 const tierMatch = currentFilters.tier === 'all' || tier === currentFilters.tier;
+                const juris = row.dataset.juris;
+                const regionMatch = currentFilters.region === 'all' ||
+                    (currentFilters.region === 'eu' ? EU.has(juris) : juris && !EU.has(juris));
                 const searchMatch = !currentSearch ||
                     row.dataset.name.includes(currentSearch) || row.dataset.hosts.includes(currentSearch);
 
-                const show = typeMatch && verifyMatch && tierMatch && searchMatch;
+                const show = typeMatch && verifyMatch && tierMatch && regionMatch && searchMatch;
                 row.style.display = show ? '' : 'none';
                 if (show) visible++;
             });
             document.querySelectorAll('.section-header .visible-count').forEach(el => el.remove());
             const shown = document.querySelector('#mail-services-content .section-header h2');
-            if (shown && (currentSearch || currentFilters.type !== 'all' || currentFilters.verify !== 'all' || currentFilters.tier !== 'all')) {
+            if (shown && (currentSearch || Object.values(currentFilters).some(f => f !== 'all'))) {
                 const span = document.createElement('span');
                 span.className = 'count visible-count';
                 span.textContent = visible + ' shown';
@@ -748,7 +771,10 @@
                 { key: 'unknown', label: 'Other Services', items: byType['unknown'] || [] }
             ];
 
-            let html = '';
+            let html = `
+                <p class="empty-note">
+                    Geo column: first flag = jurisdiction (legal seat), second flag = where the service is hosted; name = cloud operator.
+                </p>`;
             for (const section of sections) {
                 if (!section.items || section.items.length === 0) continue;
 
@@ -762,17 +788,19 @@
                     <div class="table-wrap">
                     <table>
                         <colgroup>
-                            <col style="width: 13%">
+                            <col style="width: 12%">
                             <col style="width: 8%">
+                            <col style="width: 7%">
+                            <col style="width: 9%">
+                            <col style="width: 22%">
+                            <col style="width: 18%">
                             <col style="width: 10%">
-                            <col style="width: 24%">
-                            <col style="width: 20%">
-                            <col style="width: 10%">
-                            <col style="width: 15%">
+                            <col style="width: 14%">
                         </colgroup>
                         <thead>
                             <tr>
                                 <th class="sortable" data-sort="Name">Service<span class="sort-arrow">▲</span></th>
+                                <th class="sortable" data-sort="Juris">Geo<span class="sort-arrow">▲</span></th>
                                 <th class="sortable" data-sort="Type">Type<span class="sort-arrow">▲</span></th>
                                 <th class="sortable" data-sort="Tier">Tier<span class="sort-arrow">▲</span></th>
                                 <th class="sortable" data-sort="Hosts" data-numeric="true">Domains<span class="sort-arrow">▲</span></th>
@@ -792,7 +820,9 @@
                                     data-type="${esc(s.type || 'unknown')}"
                                     data-verify="${esc(verifications.join(',') || 'unset')}"
                                     data-tier="${tier}"
+                                    data-juris="${esc(s.jurisdiction || '')}"
                                     data-discontinued="${s.discontinued || false}"
+                                    data-sort-juris="${esc(s.jurisdiction || '')}"
                                     data-sort-name="${esc(s.name.toLowerCase())}"
                                     data-sort-type="${esc(s.type || 'unknown')}"
                                     data-sort-tier="${tier}"
@@ -802,6 +832,7 @@
                                         <strong>${esc(s.name)}</strong>
                                         ${s.discontinued ? '<span class="badge badge-discontinued">discontinued</span>' : ''}
                                     </td>
+                                    <td class="geo-cell">${s.jurisdiction ? `<span title="jurisdiction (legal seat): ${esc(s.jurisdiction)}">${flag(s.jurisdiction)}</span>` : '<span class="remark">?</span>'}${s.hosted || s.cloud ? `<span class="geo-sub" title="hosted: ${esc(s.hosted || 'unknown')}${s.cloud ? ', via ' + esc(s.cloud) : ''}">${s.hosted ? flag(s.hosted) : ''}${s.cloud ? ' ' + esc(s.cloud) : ''}</span>` : ''}</td>
                                     <td><span class="badge badge-${esc(s.type || 'unknown')}">${esc(s.type || 'unknown')}</span></td>
                                     <td><span class="badge badge-tier-${tier}">${TIER_LABELS[tier]}</span></td>
                                     <td class="hosts-list">
@@ -966,7 +997,7 @@
 
             let q = '';
             if (tabId === 'mail-services') {
-                ['type', 'verify', 'tier'].forEach(f => {
+                ['type', 'verify', 'tier', 'region'].forEach(f => {
                     if (currentFilters[f] !== 'all') params.set(f, currentFilters[f]);
                 });
                 q = currentSearch;
@@ -993,7 +1024,7 @@
             const q = params.get('q') || '';
 
             if (tabId === 'mail-services') {
-                ['type', 'verify', 'tier'].forEach(f => {
+                ['type', 'verify', 'tier', 'region'].forEach(f => {
                     const v = params.get(f);
                     if (!v) return;
                     const btn = document.querySelector(`.filter-btn[data-filter="${f}"][data-value="${CSS.escape(v)}"]`);

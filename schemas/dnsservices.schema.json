@@ -132,6 +132,20 @@
         "remark": {
           "type": "string",
           "description": "Additional notes about the provider"
+        },
+        "jurisdiction": {
+          "type": "string",
+          "description": "ISO 3166-1 alpha-2 country of the provider's legal seat (from imprint/terms/operator info); absent = unknown",
+          "pattern": "^[A-Z]{2}$"
+        },
+        "hosted": {
+          "type": "string",
+          "description": "ISO 3166-1 alpha-2 country where the provider's service site resolves (GeoIP of its web host); absent = unknown",
+          "pattern": "^[A-Z]{2}$"
+        },
+        "cloud": {
+          "type": "string",
+          "description": "Cloud/CDN operator hosting the provider's service site (from ASN), e.g. Cloudflare, AWS, Azure, Google Cloud; absent = self-hosted/ISP/unknown"
         }
       },
       "required": ["hosts"],
