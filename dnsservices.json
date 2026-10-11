@@ -3919,11 +3919,11 @@
       "dhsnames.com"
     ],
     "public": true,
-    "remark": "DHS.org free DDNS; website unreachable at check.",
+    "remark": "DHS.org free DDNS; website unreachable at check. registration site unreachable; dhsnames.com NS still serves existing zones",
     "signup_verification": [
       "email"
     ],
-    "status": "active",
+    "status": "no_new_registrations",
     "type": "free",
     "updates": "dynamic"
   },
@@ -4376,8 +4376,8 @@
       "wafflecell.com"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator Waffle Computer Inc., Ltd..",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator Waffle Computer Inc., Ltd.. wafflecell.com has no nameservers - Japanese free host lapsed",
+    "status": "discontinued",
     "updates": "static",
     "url": "https://docs.waffleinfo.com/"
   },
@@ -5025,11 +5025,11 @@
       "dyna-ns.net"
     ],
     "public": true,
-    "remark": "dyna-ns free DDNS.",
+    "remark": "dyna-ns free DDNS. registration site unreachable; issued domains still resolve",
     "signup_verification": [
       "email"
     ],
-    "status": "active",
+    "status": "no_new_registrations",
     "type": "free",
     "updates": "dynamic"
   },
@@ -9273,11 +9273,11 @@
       "flnet.org"
     ],
     "public": true,
-    "remark": "KoalaDNS; site unreachable at check.",
+    "remark": "KoalaDNS; site unreachable at check. domain parked (topdns) - lapsed",
     "signup_verification": [
       "email"
     ],
-    "status": "active",
+    "status": "discontinued",
     "type": "free",
     "updates": "dynamic"
   },
@@ -12795,8 +12795,8 @@
       "qa2.com"
     ],
     "public": true,
-    "remark": "QA2 public suffix.",
-    "status": "active",
+    "remark": "QA2 public suffix. domain parked (NameSilo dnsowl) - lapsed",
+    "status": "discontinued",
     "url": "https://qa2.com/"
   },
   "qcx.io": {
@@ -12805,8 +12805,8 @@
       "sys.qcx.io"
     ],
     "public": true,
-    "remark": "QCX (beelen.one) suffixes.",
-    "status": "active"
+    "remark": "QCX (beelen.one) suffixes. zone empty - apex and sys NXDOMAIN",
+    "status": "discontinued"
   },
   "qnap.com": {
     "cloud": "AWS",
@@ -13688,8 +13688,8 @@
       "scrysec.com"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator Scry Security.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator Scry Security. domain has no nameservers - lapsed",
+    "status": "discontinued",
     "updates": "static",
     "url": "https://scrysec.com/"
   },
@@ -14062,8 +14062,8 @@
       "611.to"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator 611 blockchain domain name system.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator 611 blockchain domain name system. domain NXDOMAIN - expired",
+    "status": "discontinued",
     "updates": "static",
     "url": "https://sixone.one/"
   },
@@ -16593,8 +16593,8 @@
       "za.org"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator ZaNiC.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator ZaNiC. registration site unreachable; is.co.za NS still serves existing zones",
+    "status": "no_new_registrations",
     "updates": "static",
     "url": "https://za.net/"
   },
