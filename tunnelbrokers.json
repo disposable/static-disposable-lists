@@ -311,6 +311,30 @@
     "type": "free",
     "url": "https://www.freetransit.ch/"
   },
+  "getip.online": {
+    "asn": 38047,
+    "endpoint_update": "automatic",
+    "jurisdiction": "TW",
+    "locations": [
+      "Changhua, TW",
+      "Taipei, TW"
+    ],
+    "nat": true,
+    "pops": 2,
+    "prefixes": [
+      128
+    ],
+    "protocols": [
+      "wireguard"
+    ],
+    "public": true,
+    "remark": "Free WireGuard IPv6 connectivity by Taiwan Telecom, Inc. (AS38047); /128 single address per peer (no routed prefix); 100 GB free traffic per peer/month, paid add-ons (custom firewall $1/peer/mo, auto-renewal $1/peer/yr, extra traffic $3/TB); QR-code setup; free tier restricts ports 80/443 to Cloudflare traffic and blocks SMTP; LA PoP removed after a provider change; multilingual site (EN/zh-TW/zh-CN/VI/TH).",
+    "signup_verification": "email",
+    "since": 2024,
+    "status": "active",
+    "type": "freemium",
+    "url": "https://getip.online/"
+  },
   "gogo6.com": {
     "hosts": [
       "freenet6.net",
@@ -888,6 +912,21 @@
     "status": "restricted",
     "type": "free",
     "url": "https://www.tunnelbroker.ch/"
+  },
+  "tunnelbroker.devstorage.eu": {
+    "endpoint_update": "none",
+    "jurisdiction": "DE",
+    "nat": false,
+    "protocols": [
+      "6in4"
+    ],
+    "public": true,
+    "remark": "DevStorage IT-Services UG (haftungsbeschrankt) & Co. KG free proto-41 tunnels; no account system - per-tunnel signup by submitting public IPv4 + email with activation link; footer copyright 2018-2022; provisioning unverified.",
+    "signup_verification": "email",
+    "since": 2018,
+    "status": "active",
+    "type": "free",
+    "url": "https://tunnelbroker.devstorage.eu/"
   },
   "tunnelbroker.id": {
     "api": true,
