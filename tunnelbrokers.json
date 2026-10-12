@@ -110,6 +110,42 @@
     "type": "free",
     "url": "http://ameri.ca/"
   },
+  "as214205.net": {
+    "allocation": [
+      "2a0b:4e07:4c::/46",
+      "2a13:c8c4:f100::/46"
+    ],
+    "asn": 214205,
+    "bgp": true,
+    "byoip": true,
+    "jurisdiction": "RO",
+    "locations": [
+      "Frankfurt, DE",
+      "Amsterdam, NL",
+      "Sweden, SE",
+      "Sao Paulo, BR",
+      "London, GB",
+      "Hong Kong, HK",
+      "Warsaw, PL"
+    ],
+    "pops": 7,
+    "prefixes": [
+      62
+    ],
+    "protocols": [
+      "wireguard"
+    ],
+    "public": true,
+    "remark": "Non-commercial community network by Cristian Tudor Marcus (Timisoara, RO); free IPv6 transit and tunnelbroker for NGOs, personal ASNs and students (own ASN + prefixes for BGP-over-tunnel sessions); /62 allocations; self-service portal with email signup, looking glass and status page; sponsored PoPs incl. transit from AS214757 and Cilix; US PoP planned 2026; portal shows additional non-WireGuard tunnel types post-signup.",
+    "services": [
+      "ix_peering",
+      "transit"
+    ],
+    "signup_verification": "email",
+    "status": "restricted",
+    "type": "free",
+    "url": "https://as214205.net/"
+  },
   "as214757.net": {
     "asn": 214757,
     "bgp": true,
