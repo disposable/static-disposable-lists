@@ -136,13 +136,13 @@
       "wireguard"
     ],
     "public": true,
-    "remark": "Non-commercial community network by Cristian Tudor Marcus (Timisoara, RO); free IPv6 transit and tunnelbroker for NGOs, personal ASNs and students (own ASN + prefixes for BGP-over-tunnel sessions); /62 allocations; self-service portal with email signup, looking glass and status page; sponsored PoPs incl. transit from AS214757 and Cilix; US PoP planned 2026; portal shows additional non-WireGuard tunnel types post-signup.",
+    "remark": "Non-commercial community network by Cristian Tudor Marcus (Timisoara, RO); free IPv6 transit and tunnelbroker for NGOs, personal ASNs and students; unrestricted email signup - own ASN only needed for BGP-over-tunnel sessions; /62 allocations; self-service portal, looking glass and status page; sponsored PoPs incl. transit from AS214757 and Cilix; US PoP planned 2026; portal shows additional non-WireGuard tunnel types post-signup.",
     "services": [
       "ix_peering",
       "transit"
     ],
     "signup_verification": "email",
-    "status": "restricted",
+    "status": "active",
     "type": "free",
     "url": "https://as214205.net/"
   },
