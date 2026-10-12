@@ -154,6 +154,37 @@
     "type": "free",
     "url": "https://www.internode.com.au/"
   },
+  "ipv6.ip4market.ru": {
+    "allocation": [
+      "2a03:e2c0::/32"
+    ],
+    "asn": 205125,
+    "endpoint_update": "none",
+    "hosts": [
+      "tb.ip4market.ru",
+      "tunnelbroker.ru",
+      "ip4market.ru"
+    ],
+    "jurisdiction": "AE",
+    "locations": [
+      "Moscow, RU"
+    ],
+    "nat": false,
+    "pops": 1,
+    "prefixes": [
+      48
+    ],
+    "protocols": [
+      "6in4"
+    ],
+    "public": true,
+    "remark": "Free Russian-language mass-market broker by IP MARKET FZCO (IPv4 broker/LIR shop, Moscow rep office); static public IPv4 required; /48 per registration split into tunnel + LAN /64s; endpoint 193.0.203.203 hosted at SuperServersDatacenter Moscow (AS50113); non-commercial use only; IPv4-reachable mirror at tb.ip4market.ru.",
+    "signup_verification": "email",
+    "since": 2018,
+    "status": "active",
+    "type": "free",
+    "url": "https://ipv6.ip4market.ru/"
+  },
   "ipv6.sa": {
     "jurisdiction": "SA",
     "locations": [
