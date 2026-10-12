@@ -1,7 +1,7 @@
 {
   "000nethost.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "dead Hostinger-era free hosting domain",
     "resolves": true,
     "sources": [
@@ -12,7 +12,7 @@
   },
   "000webhost.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "Hostinger's 000webhost discontinued July 2024",
     "resolves": true,
     "sources": [
@@ -23,7 +23,7 @@
   },
   "10dv.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "myhostadmin customer/parked",
     "resolves": true,
     "sources": [
@@ -34,7 +34,7 @@
   },
   "10x.es": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -45,7 +45,7 @@
   },
   "1dumb.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -56,7 +56,7 @@
   },
   "2p.fm": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "no NS delegation",
     "resolves": true,
     "sources": [
@@ -67,7 +67,7 @@
   },
   "360digit.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -78,7 +78,7 @@
   },
   "3dxtras.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -89,7 +89,7 @@
   },
   "4khdcamera.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -100,7 +100,7 @@
   },
   "4mydomain.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -111,7 +111,7 @@
   },
   "5gbfree.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -122,7 +122,7 @@
   },
   "77uam.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "dead Cloudflare-parked domain",
     "resolves": true,
     "sources": [
@@ -133,7 +133,7 @@
   },
   "88zkt.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "dead Cloudflare-parked domain",
     "resolves": true,
     "sources": [
@@ -144,7 +144,7 @@
   },
   "abmetalmecanica.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -155,7 +155,7 @@
   },
   "activehosted.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "ESP/marketing link domain - not publicly issuable",
     "resolves": true,
     "sources": [
@@ -166,7 +166,7 @@
   },
   "adestra.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "ESP/marketing link domain - not publicly issuable",
     "resolves": true,
     "sources": [
@@ -178,7 +178,7 @@
   "afraid.org-v2": {
     "added_on": "2026-10-06",
     "hint": "new-provider",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "OpenWrt protocol variant file, not a provider domain",
     "resolves": false,
     "sources": [
@@ -189,9 +189,9 @@
   },
   "agropeople.ru": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain hijacked/for-sale - not an active hostname service",
-    "resolves": false,
+    "resolves": true,
     "sources": [
       "hagezi"
     ],
@@ -200,7 +200,7 @@
   },
   "allowed.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "customer domain",
     "resolves": true,
     "sources": [
@@ -209,9 +209,20 @@
     "status": "rejected",
     "validated": true
   },
+  "amazonlightsail.com": {
+    "added_on": "2026-10-12",
+    "hint": "psl:Amazon Lightsail",
+    "last_checked": "2026-10-12",
+    "resolves": true,
+    "sources": [
+      "psl"
+    ],
+    "status": "new",
+    "validated": false
+  },
   "anastasion.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -222,7 +233,7 @@
   },
   "aneisa.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "HostGator-parked",
     "resolves": true,
     "sources": [
@@ -233,7 +244,7 @@
   },
   "antongorbunov.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -244,7 +255,7 @@
   },
   "anyitsolution.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "Cloudflare-parked customer",
     "resolves": true,
     "sources": [
@@ -253,9 +264,130 @@
     "status": "rejected",
     "validated": true
   },
+  "ap-east-1.cs.amazonlightsail.com": {
+    "added_on": "2026-10-12",
+    "hint": "psl:Amazon Lightsail",
+    "last_checked": "2026-10-12",
+    "resolves": true,
+    "sources": [
+      "psl"
+    ],
+    "status": "new",
+    "validated": false
+  },
+  "ap-northeast-1.cs.amazonlightsail.com": {
+    "added_on": "2026-10-12",
+    "hint": "psl:Amazon Lightsail",
+    "last_checked": "2026-10-12",
+    "resolves": true,
+    "sources": [
+      "psl"
+    ],
+    "status": "new",
+    "validated": false
+  },
+  "ap-northeast-2.cs.amazonlightsail.com": {
+    "added_on": "2026-10-12",
+    "hint": "psl:Amazon Lightsail",
+    "last_checked": "2026-10-12",
+    "resolves": true,
+    "sources": [
+      "psl"
+    ],
+    "status": "new",
+    "validated": false
+  },
+  "ap-south-1.cs.amazonlightsail.com": {
+    "added_on": "2026-10-12",
+    "hint": "psl:Amazon Lightsail",
+    "last_checked": "2026-10-12",
+    "resolves": true,
+    "sources": [
+      "psl"
+    ],
+    "status": "new",
+    "validated": false
+  },
+  "ap-south-2.elasticbeanstalk.com": {
+    "added_on": "2026-10-12",
+    "hint": "psl:AWS Elastic Beanstalk",
+    "last_checked": "2026-10-12",
+    "resolves": true,
+    "sources": [
+      "psl"
+    ],
+    "status": "new",
+    "validated": false
+  },
+  "ap-southeast-1.cs.amazonlightsail.com": {
+    "added_on": "2026-10-12",
+    "hint": "psl:Amazon Lightsail",
+    "last_checked": "2026-10-12",
+    "resolves": true,
+    "sources": [
+      "psl"
+    ],
+    "status": "new",
+    "validated": false
+  },
+  "ap-southeast-2.cs.amazonlightsail.com": {
+    "added_on": "2026-10-12",
+    "hint": "psl:Amazon Lightsail",
+    "last_checked": "2026-10-12",
+    "resolves": true,
+    "sources": [
+      "psl"
+    ],
+    "status": "new",
+    "validated": false
+  },
+  "ap-southeast-3.cs.amazonlightsail.com": {
+    "added_on": "2026-10-12",
+    "hint": "psl:Amazon Lightsail",
+    "last_checked": "2026-10-12",
+    "resolves": true,
+    "sources": [
+      "psl"
+    ],
+    "status": "new",
+    "validated": false
+  },
+  "ap-southeast-4.elasticbeanstalk.com": {
+    "added_on": "2026-10-12",
+    "hint": "psl:AWS Elastic Beanstalk",
+    "last_checked": "2026-10-12",
+    "resolves": true,
+    "sources": [
+      "psl"
+    ],
+    "status": "new",
+    "validated": false
+  },
+  "ap-southeast-5.cs.amazonlightsail.com": {
+    "added_on": "2026-10-12",
+    "hint": "psl:Amazon Lightsail",
+    "last_checked": "2026-10-12",
+    "resolves": true,
+    "sources": [
+      "psl"
+    ],
+    "status": "new",
+    "validated": false
+  },
+  "ap-southeast-6.elasticbeanstalk.com": {
+    "added_on": "2026-10-12",
+    "hint": "psl:AWS Elastic Beanstalk",
+    "last_checked": "2026-10-12",
+    "resolves": true,
+    "sources": [
+      "psl"
+    ],
+    "status": "new",
+    "validated": false
+  },
   "arenaceballos.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -266,7 +398,7 @@
   },
   "asenov.ru": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -277,7 +409,7 @@
   },
   "asiamariage.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -288,7 +420,7 @@
   },
   "asianfreshproduce.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -299,7 +431,7 @@
   },
   "ask2ask.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "Njalla-parked domain",
     "resolves": true,
     "sources": [
@@ -310,7 +442,7 @@
   },
   "astrabus.ru": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain hijacked/for-sale - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -321,7 +453,7 @@
   },
   "atholdinginc.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -332,7 +464,7 @@
   },
   "atlantatruckdrivingschool.us": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -343,18 +475,41 @@
   },
   "australia.ai": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "hint": "freedns.afraid.org",
+    "last_checked": "2026-10-12",
     "remark": "does not resolve",
-    "resolves": false,
+    "resolves": true,
     "sources": [
       "hagezi"
     ],
     "status": "rejected",
     "validated": true
   },
+  "auth.ap-east-2.amazoncognito.com": {
+    "added_on": "2026-10-12",
+    "hint": "psl:Amazon Cognito",
+    "last_checked": "2026-10-12",
+    "resolves": true,
+    "sources": [
+      "psl"
+    ],
+    "status": "new",
+    "validated": false
+  },
+  "auth.ap-southeast-6.amazoncognito.com": {
+    "added_on": "2026-10-12",
+    "hint": "psl:Amazon Cognito",
+    "last_checked": "2026-10-12",
+    "resolves": true,
+    "sources": [
+      "psl"
+    ],
+    "status": "new",
+    "validated": false
+  },
   "avandns.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -365,7 +520,7 @@
   },
   "ax.lt": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -376,7 +531,7 @@
   },
   "bayipazar.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -387,7 +542,7 @@
   },
   "benjamin.it": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -398,7 +553,7 @@
   },
   "benzahosting.cl": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "live/hosting brand - subdomain issuance unverified",
     "resolves": true,
     "sources": [
@@ -409,7 +564,7 @@
   },
   "bero-webspace.de": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "hosting customer domain",
     "resolves": true,
     "sources": [
@@ -421,7 +576,7 @@
   "bind-nsupdate": {
     "added_on": "2026-10-06",
     "hint": "new-provider",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "OpenWrt nsupdate helper, not a provider",
     "resolves": false,
     "sources": [
@@ -432,7 +587,7 @@
   },
   "bitbucket.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "Atlassian service apex",
     "resolves": true,
     "sources": [
@@ -443,7 +598,7 @@
   },
   "bloom.us": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "AWS-parked (no site)",
     "resolves": true,
     "sources": [
@@ -454,7 +609,7 @@
   },
   "bookonline.app": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "AWS-parked (no site)",
     "resolves": true,
     "sources": [
@@ -465,7 +620,7 @@
   },
   "brawlcustommusic.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -476,7 +631,7 @@
   },
   "brweb.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "DDNS-named domain, site unverifiable",
     "resolves": true,
     "sources": [
@@ -487,7 +642,7 @@
   },
   "builderallwppro.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "live/hosting brand - subdomain issuance unverified",
     "resolves": true,
     "sources": [
@@ -498,7 +653,7 @@
   },
   "burlingtondrywall.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -509,7 +664,7 @@
   },
   "buz-host.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "no NS delegation",
     "resolves": true,
     "sources": [
@@ -518,9 +673,31 @@
     "status": "rejected",
     "validated": true
   },
+  "ca-central-1.cs.amazonlightsail.com": {
+    "added_on": "2026-10-12",
+    "hint": "psl:Amazon Lightsail",
+    "last_checked": "2026-10-12",
+    "resolves": true,
+    "sources": [
+      "psl"
+    ],
+    "status": "new",
+    "validated": false
+  },
+  "ca-west-1.elasticbeanstalk.com": {
+    "added_on": "2026-10-12",
+    "hint": "psl:AWS Elastic Beanstalk",
+    "last_checked": "2026-10-12",
+    "resolves": true,
+    "sources": [
+      "psl"
+    ],
+    "status": "new",
+    "validated": false
+  },
   "cashit.info": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -531,7 +708,7 @@
   },
   "cdn77.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "CDN77 infrastructure domain",
     "resolves": true,
     "sources": [
@@ -542,7 +719,7 @@
   },
   "celltrak.mobi": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -553,7 +730,7 @@
   },
   "centserver.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "for-sale landing (Squadhelp)",
     "resolves": true,
     "sources": [
@@ -564,7 +741,8 @@
   },
   "changeip.name": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "hint": "changeip.com",
+    "last_checked": "2026-10-12",
     "remark": "no NS delegation",
     "resolves": true,
     "sources": [
@@ -575,7 +753,7 @@
   },
   "charter.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "ISP domain",
     "resolves": true,
     "sources": [
@@ -586,7 +764,7 @@
   },
   "chavo.biz": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -597,7 +775,7 @@
   },
   "clawmap.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -608,7 +786,7 @@
   },
   "cloudwatch.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -619,7 +797,7 @@
   },
   "cloudwebncw.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "does not resolve",
     "resolves": false,
     "sources": [
@@ -630,7 +808,7 @@
   },
   "cloudxns.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "CloudXNS defunct (Chinese DNS service shut down 2019)",
     "resolves": true,
     "sources": [
@@ -641,7 +819,7 @@
   },
   "coalnet.ru": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -652,7 +830,7 @@
   },
   "codeanyapp.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "live/hosting brand - subdomain issuance unverified",
     "resolves": true,
     "sources": [
@@ -663,7 +841,7 @@
   },
   "compress.to": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -674,7 +852,7 @@
   },
   "conditsis.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -685,7 +863,7 @@
   },
   "coplien.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -696,7 +874,7 @@
   },
   "corbina.ru": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "ISP domain",
     "resolves": true,
     "sources": [
@@ -707,7 +885,7 @@
   },
   "cpct.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -718,7 +896,7 @@
   },
   "cpsnet.cz": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "hosting customer domain",
     "resolves": true,
     "sources": [
@@ -729,7 +907,7 @@
   },
   "crackedsidewalks.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -740,7 +918,7 @@
   },
   "crazydomains.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "registrar apex - not issuable",
     "resolves": true,
     "sources": [
@@ -751,7 +929,7 @@
   },
   "cuesinc.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -762,7 +940,7 @@
   },
   "daftpage.coma": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "malformed entry (.coma TLD)",
     "resolves": false,
     "sources": [
@@ -773,7 +951,7 @@
   },
   "darksair.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "live/hosting brand - subdomain issuance unverified",
     "resolves": true,
     "sources": [
@@ -784,7 +962,8 @@
   },
   "ddns.me.uk": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "hint": "changeip.com",
+    "last_checked": "2026-10-12",
     "remark": "no NS delegation",
     "resolves": true,
     "sources": [
@@ -795,7 +974,8 @@
   },
   "ddns.name": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "hint": "changeip.com",
+    "last_checked": "2026-10-12",
     "remark": "no NS delegation",
     "resolves": true,
     "sources": [
@@ -806,7 +986,7 @@
   },
   "ddns5.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "unverifiable DDNS domain",
     "resolves": true,
     "sources": [
@@ -817,7 +997,7 @@
   },
   "ddnsapp.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "unverifiable DDNS domain",
     "resolves": true,
     "sources": [
@@ -828,7 +1008,7 @@
   },
   "ddnslive.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -840,7 +1020,7 @@
   },
   "dh3.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -851,7 +1031,7 @@
   },
   "digikabel.hu": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -862,7 +1042,7 @@
   },
   "digitalgroupe.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -873,7 +1053,7 @@
   },
   "discordapp.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "service apex/infrastructure domain - subdomains not publicly issuable",
     "resolves": true,
     "sources": [
@@ -884,7 +1064,7 @@
   },
   "divx.se": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "does not resolve",
     "resolves": false,
     "sources": [
@@ -895,7 +1075,7 @@
   },
   "dlinkddns.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -906,7 +1086,7 @@
   },
   "dnmcoffman.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -917,7 +1097,7 @@
   },
   "dnyp.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "Sedo parked",
     "resolves": true,
     "sources": [
@@ -928,7 +1108,7 @@
   },
   "donkeyhot.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -939,7 +1119,7 @@
   },
   "doyleandprendergast.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -950,7 +1130,7 @@
   },
   "dp76.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -961,7 +1141,7 @@
   },
   "dpcube.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -972,7 +1152,7 @@
   },
   "dropbox.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "service apex/infrastructure domain - subdomains not publicly issuable",
     "resolves": true,
     "sources": [
@@ -983,7 +1163,7 @@
   },
   "dropboxusercontent.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "Dropbox content-delivery suffix",
     "resolves": true,
     "sources": [
@@ -994,7 +1174,7 @@
   },
   "dropfiles.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "GoDaddy-parked/customer domain",
     "resolves": true,
     "sources": [
@@ -1005,7 +1185,7 @@
   },
   "drunkensailor.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -1016,7 +1196,7 @@
   },
   "drv.tw": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "HiNet-hosted domain, unverifiable",
     "resolves": true,
     "sources": [
@@ -1027,7 +1207,7 @@
   },
   "dtdns.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "dtdns family remnant, unverifiable",
     "resolves": true,
     "sources": [
@@ -1038,7 +1218,7 @@
   },
   "dw3host.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "live/hosting brand - subdomain issuance unverified",
     "resolves": true,
     "sources": [
@@ -1049,7 +1229,7 @@
   },
   "dyn.columbia.edu": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "Columbia-internal DDNS",
     "resolves": true,
     "sources": [
@@ -1060,7 +1240,7 @@
   },
   "dynadot.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "service apex/infrastructure domain - subdomains not publicly issuable",
     "resolves": true,
     "sources": [
@@ -1071,7 +1251,7 @@
   },
   "dynamai.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -1082,7 +1262,7 @@
   },
   "dynamic-dns.us": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -1093,7 +1273,7 @@
   },
   "dynamic-m.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "unverifiable",
     "resolves": true,
     "sources": [
@@ -1104,7 +1284,7 @@
   },
   "dynamic.domains": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -1115,7 +1295,7 @@
   },
   "dyndns-ip.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "DDNS-named domain, site unverifiable",
     "resolves": true,
     "sources": [
@@ -1126,7 +1306,8 @@
   },
   "dyndns.pro": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "hint": "changeip.com",
+    "last_checked": "2026-10-12",
     "remark": "does not resolve",
     "resolves": true,
     "sources": [
@@ -1137,7 +1318,7 @@
   },
   "dyndns.za.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "does not resolve",
     "resolves": false,
     "sources": [
@@ -1148,7 +1329,7 @@
   },
   "dyndnss.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -1159,7 +1340,7 @@
   },
   "dyndnsservices.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "GoDaddy-parked/customer domain",
     "resolves": true,
     "sources": [
@@ -1170,7 +1351,7 @@
   },
   "dynme.ovh": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private domain (ebenbeck.org NS)",
     "resolves": true,
     "sources": [
@@ -1181,7 +1362,7 @@
   },
   "dyns.be": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private domain (mijn.host NS)",
     "resolves": true,
     "sources": [
@@ -1192,7 +1373,7 @@
   },
   "dyns.cx": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "does not resolve",
     "resolves": false,
     "sources": [
@@ -1203,7 +1384,7 @@
   },
   "dyns.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -1214,7 +1395,7 @@
   },
   "dynup.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "live/hosting brand - subdomain issuance unverified",
     "resolves": true,
     "sources": [
@@ -1225,7 +1406,7 @@
   },
   "easydns.info": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "easyDNS service domain",
     "resolves": true,
     "sources": [
@@ -1236,7 +1417,7 @@
   },
   "easydns.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "easyDNS service domain",
     "resolves": true,
     "sources": [
@@ -1247,7 +1428,7 @@
   },
   "easydns.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "easyDNS service domain",
     "resolves": true,
     "sources": [
@@ -1258,7 +1439,7 @@
   },
   "ehost.pl": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "live/hosting brand - subdomain issuance unverified",
     "resolves": true,
     "sources": [
@@ -1269,7 +1450,7 @@
   },
   "elchemi.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -1281,7 +1462,7 @@
   "elementfx.com": {
     "added_on": "2026-10-06",
     "hint": "x10hosting.com",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "customer domain hosted on x10hosting, not an issuable suffix",
     "resolves": true,
     "sources": [
@@ -1292,7 +1473,7 @@
   },
   "elfsig.ht": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "live/hosting brand - subdomain issuance unverified",
     "resolves": true,
     "sources": [
@@ -1303,7 +1484,7 @@
   },
   "emlnk.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "email link-tracking domain",
     "resolves": true,
     "sources": [
@@ -1314,7 +1495,7 @@
   },
   "endlessmovie.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -1325,7 +1506,8 @@
   },
   "epac.to": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "hint": "changeip.com",
+    "last_checked": "2026-10-12",
     "remark": "SOA-only, site unverifiable",
     "resolves": true,
     "sources": [
@@ -1336,7 +1518,7 @@
   },
   "epicmilk.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -1347,7 +1529,7 @@
   },
   "eptechguys.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -1358,7 +1540,7 @@
   },
   "essentialventure.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -1369,7 +1551,7 @@
   },
   "eternum.io": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "unverifiable site",
     "resolves": true,
     "sources": [
@@ -1380,7 +1562,7 @@
   },
   "etitrans.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -1389,9 +1571,86 @@
     "status": "rejected",
     "validated": true
   },
+  "eu-central-1.cs.amazonlightsail.com": {
+    "added_on": "2026-10-12",
+    "hint": "psl:Amazon Lightsail",
+    "last_checked": "2026-10-12",
+    "resolves": true,
+    "sources": [
+      "psl"
+    ],
+    "status": "new",
+    "validated": false
+  },
+  "eu-central-2.elasticbeanstalk.com": {
+    "added_on": "2026-10-12",
+    "hint": "psl:AWS Elastic Beanstalk",
+    "last_checked": "2026-10-12",
+    "resolves": true,
+    "sources": [
+      "psl"
+    ],
+    "status": "new",
+    "validated": false
+  },
+  "eu-north-1.cs.amazonlightsail.com": {
+    "added_on": "2026-10-12",
+    "hint": "psl:Amazon Lightsail",
+    "last_checked": "2026-10-12",
+    "resolves": true,
+    "sources": [
+      "psl"
+    ],
+    "status": "new",
+    "validated": false
+  },
+  "eu-south-2.cs.amazonlightsail.com": {
+    "added_on": "2026-10-12",
+    "hint": "psl:Amazon Lightsail",
+    "last_checked": "2026-10-12",
+    "resolves": true,
+    "sources": [
+      "psl"
+    ],
+    "status": "new",
+    "validated": false
+  },
+  "eu-west-1.cs.amazonlightsail.com": {
+    "added_on": "2026-10-12",
+    "hint": "psl:Amazon Lightsail",
+    "last_checked": "2026-10-12",
+    "resolves": true,
+    "sources": [
+      "psl"
+    ],
+    "status": "new",
+    "validated": false
+  },
+  "eu-west-2.cs.amazonlightsail.com": {
+    "added_on": "2026-10-12",
+    "hint": "psl:Amazon Lightsail",
+    "last_checked": "2026-10-12",
+    "resolves": true,
+    "sources": [
+      "psl"
+    ],
+    "status": "new",
+    "validated": false
+  },
+  "eu-west-3.cs.amazonlightsail.com": {
+    "added_on": "2026-10-12",
+    "hint": "psl:Amazon Lightsail",
+    "last_checked": "2026-10-12",
+    "resolves": true,
+    "sources": [
+      "psl"
+    ],
+    "status": "new",
+    "validated": false
+  },
   "eurotank.ro": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -1402,7 +1661,7 @@
   },
   "eva.hk": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "he.net customer domain",
     "resolves": true,
     "sources": [
@@ -1413,7 +1672,7 @@
   },
   "everton.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -1424,7 +1683,7 @@
   },
   "ezxdev.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -1435,7 +1694,7 @@
   },
   "falcongreen.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -1446,7 +1705,7 @@
   },
   "fastly.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "service apex/infrastructure domain - subdomains not publicly issuable",
     "resolves": true,
     "sources": [
@@ -1457,7 +1716,7 @@
   },
   "filetransfer.io": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "file-transfer service, no subdomain issuance",
     "resolves": true,
     "sources": [
@@ -1468,9 +1727,9 @@
   },
   "flat4free.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
-    "resolves": false,
+    "resolves": true,
     "sources": [
       "hagezi"
     ],
@@ -1479,7 +1738,7 @@
   },
   "flowergardendaycare.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -1490,7 +1749,7 @@
   },
   "foroemprende.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -1501,7 +1760,7 @@
   },
   "free-ddns.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -1512,7 +1771,7 @@
   },
   "freedns.tech": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "DDNS-named domain, site unverifiable",
     "resolves": true,
     "sources": [
@@ -1523,7 +1782,7 @@
   },
   "freesa.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -1534,7 +1793,7 @@
   },
   "freeserverhostingweb.club": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -1545,7 +1804,7 @@
   },
   "freewebhostmost.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "dead free hosting domain",
     "resolves": true,
     "sources": [
@@ -1556,7 +1815,7 @@
   },
   "freifunk.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "live/hosting brand - subdomain issuance unverified",
     "resolves": true,
     "sources": [
@@ -1567,7 +1826,7 @@
   },
   "gamingcontrol.de": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "hosting customer domain",
     "resolves": true,
     "sources": [
@@ -1578,9 +1837,9 @@
   },
   "garypatel.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "does not resolve",
-    "resolves": false,
+    "resolves": true,
     "sources": [
       "hagezi"
     ],
@@ -1589,7 +1848,7 @@
   },
   "gccwebhosting.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "live/hosting brand - subdomain issuance unverified",
     "resolves": true,
     "sources": [
@@ -1600,7 +1859,7 @@
   },
   "gettrails.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -1611,7 +1870,7 @@
   },
   "gluebank.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -1622,7 +1881,7 @@
   },
   "goldcrestcc.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -1633,7 +1892,7 @@
   },
   "grandmasgossip.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -1644,7 +1903,7 @@
   },
   "greyh.at": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "live/hosting brand - subdomain issuance unverified",
     "resolves": true,
     "sources": [
@@ -1655,7 +1914,7 @@
   },
   "grupoimpulsora.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -1666,7 +1925,7 @@
   },
   "gteksecurity.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -1677,9 +1936,9 @@
   },
   "guardz.ru": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "does not resolve",
-    "resolves": false,
+    "resolves": true,
     "sources": [
       "hagezi"
     ],
@@ -1688,7 +1947,7 @@
   },
   "gurcanozturk.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -1699,7 +1958,7 @@
   },
   "h4g3z1-dyndns.web.app": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "not a registered domain - leaked hostname entry",
     "resolves": false,
     "sources": [
@@ -1710,7 +1969,7 @@
   },
   "hackx.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -1721,7 +1980,7 @@
   },
   "hardbin.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "unverifiable",
     "resolves": true,
     "sources": [
@@ -1732,7 +1991,7 @@
   },
   "her.name": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "does not resolve",
     "resolves": false,
     "sources": [
@@ -1744,7 +2003,7 @@
   },
   "herodias.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -1755,7 +2014,7 @@
   },
   "hiddencorner.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -1766,7 +2025,7 @@
   },
   "hiprinter.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -1777,7 +2036,7 @@
   },
   "his.name": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "does not resolve",
     "resolves": false,
     "sources": [
@@ -1789,7 +2048,7 @@
   },
   "hmao.pro": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -1800,7 +2059,7 @@
   },
   "holhost.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "live/hosting brand - subdomain issuance unverified",
     "resolves": true,
     "sources": [
@@ -1811,7 +2070,7 @@
   },
   "homeplex.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -1822,9 +2081,9 @@
   },
   "hop.ru": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "does not resolve",
-    "resolves": false,
+    "resolves": true,
     "sources": [
       "korlabsio:fsp"
     ],
@@ -1833,7 +2092,7 @@
   },
   "hoster-test.ru": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "hoster.ru customer",
     "resolves": true,
     "sources": [
@@ -1844,7 +2103,7 @@
   },
   "hsforms.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "HubSpot forms service domain",
     "resolves": true,
     "sources": [
@@ -1855,7 +2114,7 @@
   },
   "hulichicken.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -1866,7 +2125,7 @@
   },
   "humorme.info": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "does not resolve",
     "resolves": false,
     "sources": [
@@ -1877,7 +2136,7 @@
   },
   "ics.tw": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "Taiwanese hoster domain, unverifiable",
     "resolves": true,
     "sources": [
@@ -1888,7 +2147,7 @@
   },
   "ideasciviles.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -1899,7 +2158,7 @@
   },
   "imprendum.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -1910,7 +2169,7 @@
   },
   "independentonline.ro": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -1921,7 +2180,7 @@
   },
   "inflict.us": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "game tool site",
     "resolves": true,
     "sources": [
@@ -1932,7 +2191,7 @@
   },
   "inmotionhosting.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "hosting apex - not issuable",
     "resolves": true,
     "sources": [
@@ -1943,7 +2202,7 @@
   },
   "innograph.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -1954,7 +2213,7 @@
   },
   "invitee.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -1965,7 +2224,7 @@
   },
   "ip-dynamic.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -1976,7 +2235,7 @@
   },
   "ipower.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "hosting apex - not issuable",
     "resolves": true,
     "sources": [
@@ -1987,9 +2246,9 @@
   },
   "ipupdater.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "does not resolve",
-    "resolves": false,
+    "resolves": true,
     "sources": [
       "hagezi"
     ],
@@ -1998,7 +2257,7 @@
   },
   "isamotherfucking.ninja": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -2009,7 +2268,7 @@
   },
   "iu4ever.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -2020,7 +2279,7 @@
   },
   "ivc.cc": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -2031,7 +2290,7 @@
   },
   "ixirhost.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "live/hosting brand - subdomain issuance unverified",
     "resolves": true,
     "sources": [
@@ -2042,7 +2301,7 @@
   },
   "javafaq.nu": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -2053,7 +2312,7 @@
   },
   "jdfinancialserver.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -2064,7 +2323,7 @@
   },
   "jomblo.asia": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2075,7 +2334,7 @@
   },
   "jorropo.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "Scaleway-registered customer domain",
     "resolves": true,
     "sources": [
@@ -2086,7 +2345,7 @@
   },
   "justns.ru": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "JustHost customer",
     "resolves": true,
     "sources": [
@@ -2097,7 +2356,7 @@
   },
   "jvogt.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -2108,7 +2367,7 @@
   },
   "kck-saratov.ru": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2119,7 +2378,7 @@
   },
   "klapa.eu": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -2130,7 +2389,7 @@
   },
   "konubinix.eu": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2141,7 +2400,7 @@
   },
   "ksk-saratov.ru": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2152,7 +2411,7 @@
   },
   "legitdns.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2163,7 +2422,7 @@
   },
   "lessmiths.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -2174,7 +2433,7 @@
   },
   "level3.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "service apex/infrastructure domain - subdomains not publicly issuable",
     "resolves": true,
     "sources": [
@@ -2185,7 +2444,7 @@
   },
   "limit.org.uk": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2196,7 +2455,7 @@
   },
   "linkedin.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "service apex/infrastructure domain - subdomains not publicly issuable",
     "resolves": true,
     "sources": [
@@ -2207,7 +2466,7 @@
   },
   "liveonhosting.com.br": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "live/hosting brand - subdomain issuance unverified",
     "resolves": true,
     "sources": [
@@ -2218,7 +2477,7 @@
   },
   "ljack.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -2229,7 +2488,7 @@
   },
   "logisoft-cy.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -2240,7 +2499,7 @@
   },
   "lundellnet.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -2251,7 +2510,7 @@
   },
   "maillist-manage.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "service apex/infrastructure domain - subdomains not publicly issuable",
     "resolves": true,
     "sources": [
@@ -2262,7 +2521,7 @@
   },
   "mao.fi": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2273,7 +2532,7 @@
   },
   "medittech.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2284,7 +2543,7 @@
   },
   "metadns.cx": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -2295,7 +2554,7 @@
   },
   "mett.ru": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "Cloudflare customer site",
     "resolves": true,
     "sources": [
@@ -2306,7 +2565,7 @@
   },
   "mh-it.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -2317,7 +2576,7 @@
   },
   "mikecartwright.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -2328,7 +2587,7 @@
   },
   "mirolnet.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -2339,7 +2598,7 @@
   },
   "mj.am": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "service apex/infrastructure domain - subdomains not publicly issuable",
     "resolves": true,
     "sources": [
@@ -2350,7 +2609,7 @@
   },
   "monitorip.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -2361,7 +2620,7 @@
   },
   "monovm.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "live/hosting brand - subdomain issuance unverified",
     "resolves": true,
     "sources": [
@@ -2372,7 +2631,7 @@
   },
   "moonfruit.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -2383,7 +2642,7 @@
   },
   "mrnorris.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2394,7 +2653,7 @@
   },
   "mtrstore.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -2405,7 +2664,7 @@
   },
   "musterihizmetleri.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2416,7 +2675,7 @@
   },
   "mwop.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -2427,7 +2686,7 @@
   },
   "my-board.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "no NS delegation",
     "resolves": true,
     "sources": [
@@ -2438,7 +2697,7 @@
   },
   "mycompany.tv": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -2449,7 +2708,7 @@
   },
   "myhouse.tv": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -2460,7 +2719,7 @@
   },
   "myhuaweicloud.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2471,7 +2730,7 @@
   },
   "myonlineportal.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -2482,9 +2741,9 @@
   },
   "myq-see.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "does not resolve (Q-See camera DDNS, discontinued)",
-    "resolves": false,
+    "resolves": true,
     "sources": [
       "hagezi"
     ],
@@ -2493,7 +2752,7 @@
   },
   "myqcloud.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "no NS delegation (QQ/Tencent CDN)",
     "resolves": true,
     "sources": [
@@ -2504,7 +2763,7 @@
   },
   "mywebsites360.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2515,7 +2774,7 @@
   },
   "n4t.co": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "does not resolve",
     "resolves": false,
     "sources": [
@@ -2526,7 +2785,7 @@
   },
   "netcabo.pt": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "NOS/ISP domain",
     "resolves": true,
     "sources": [
@@ -2537,7 +2796,7 @@
   },
   "netlify.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "service apex/infrastructure domain - subdomains not publicly issuable",
     "resolves": true,
     "sources": [
@@ -2548,7 +2807,7 @@
   },
   "netmask.ca": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2559,7 +2818,7 @@
   },
   "ninetailed.ninja": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2570,7 +2829,7 @@
   },
   "no-ip.fr": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "French no-ip variant, site unverifiable",
     "resolves": true,
     "sources": [
@@ -2581,7 +2840,7 @@
   },
   "now.im": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -2592,7 +2851,7 @@
   },
   "onlinehome-server.info": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "IONOS customer DDNS record",
     "resolves": true,
     "sources": [
@@ -2604,7 +2863,7 @@
   "opendns.com": {
     "added_on": "2026-10-06",
     "hint": "new-provider",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "OpenWrt OpenDNS updater entry; OpenDNS issues no user hostnames",
     "resolves": true,
     "sources": [
@@ -2615,7 +2874,7 @@
   },
   "orskkino.ru": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2626,7 +2885,7 @@
   },
   "ovh.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "OVH infrastructure domain - not issuable",
     "resolves": true,
     "sources": [
@@ -2637,7 +2896,7 @@
   },
   "pagedemo.co": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2648,7 +2907,7 @@
   },
   "partycenteronline.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2659,7 +2918,7 @@
   },
   "paste.ee": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "text-sharing, no subdomain issuance",
     "resolves": true,
     "sources": [
@@ -2670,7 +2929,7 @@
   },
   "pastebin.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2682,7 +2941,7 @@
   "pdns": {
     "added_on": "2026-10-06",
     "hint": "new-provider",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "OpenWrt PowerDNS protocol entry, not a provider",
     "resolves": false,
     "sources": [
@@ -2693,7 +2952,7 @@
   },
   "pdns.cz": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -2704,7 +2963,7 @@
   },
   "peachyweb.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -2715,7 +2974,7 @@
   },
   "pendulumaudio.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2726,7 +2985,7 @@
   },
   "phenixs.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "ZoneEdit customer domain",
     "resolves": true,
     "sources": [
@@ -2737,7 +2996,7 @@
   },
   "php-dev.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -2748,7 +3007,7 @@
   },
   "pics.mu": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2759,7 +3018,7 @@
   },
   "piroge.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -2770,7 +3029,7 @@
   },
   "pixeldrain.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2781,7 +3040,7 @@
   },
   "play.ai": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "Meta-owned service domain",
     "resolves": true,
     "sources": [
@@ -2792,7 +3051,7 @@
   },
   "plwgroup.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2803,7 +3062,7 @@
   },
   "pntl.tl": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2814,7 +3073,8 @@
   },
   "portrelay.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "hint": "changeip.com",
+    "last_checked": "2026-10-12",
     "remark": "no NS delegation",
     "resolves": true,
     "sources": [
@@ -2825,7 +3085,7 @@
   },
   "privatedns.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "LeaseWeb customer domain",
     "resolves": true,
     "sources": [
@@ -2836,7 +3096,7 @@
   },
   "progr.am": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "for-sale landing (Atom)",
     "resolves": true,
     "sources": [
@@ -2847,7 +3107,7 @@
   },
   "project.li": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2858,7 +3118,7 @@
   },
   "project.zone": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -2869,7 +3129,7 @@
   },
   "prostore.ru": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "reg.ru customer site",
     "resolves": true,
     "sources": [
@@ -2880,7 +3140,7 @@
   },
   "prout.be": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2891,7 +3151,7 @@
   },
   "pudim.info": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -2902,7 +3162,7 @@
   },
   "quackerscomic.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2913,7 +3173,7 @@
   },
   "radiogirl.fm": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -2924,7 +3184,7 @@
   },
   "regruhosting.ru": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2935,7 +3195,7 @@
   },
   "reijn.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2946,7 +3206,7 @@
   },
   "reserve-online.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "booking platform domain",
     "resolves": true,
     "sources": [
@@ -2955,9 +3215,19 @@
     "status": "rejected",
     "validated": true
   },
+  "retool.app": {
+    "added_on": "2026-10-12",
+    "last_checked": "2026-10-12",
+    "resolves": true,
+    "sources": [
+      "psl"
+    ],
+    "status": "new",
+    "validated": false
+  },
   "ro.lt": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -2968,7 +3238,7 @@
   },
   "rockingwranchinc.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -2980,7 +3250,7 @@
   "route53": {
     "added_on": "2026-10-06",
     "hint": "new-provider",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "OpenWrt AWS Route53 protocol entry (see amazonaws.com)",
     "resolves": false,
     "sources": [
@@ -2991,9 +3261,10 @@
   },
   "routemehome.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "hint": "freedns.afraid.org",
+    "last_checked": "2026-10-12",
     "remark": "does not resolve",
-    "resolves": false,
+    "resolves": true,
     "sources": [
       "hagezi"
     ],
@@ -3002,7 +3273,7 @@
   },
   "royalwebhosting.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "live/hosting brand - subdomain issuance unverified",
     "resolves": true,
     "sources": [
@@ -3013,7 +3284,7 @@
   },
   "rpz.su": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3024,7 +3295,7 @@
   },
   "rs6.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "ESP/marketing link domain - not publicly issuable",
     "resolves": true,
     "sources": [
@@ -3035,7 +3306,7 @@
   },
   "ruok.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3044,9 +3315,20 @@
     "status": "rejected",
     "validated": true
   },
+  "sa-east-1.cs.amazonlightsail.com": {
+    "added_on": "2026-10-12",
+    "hint": "psl:Amazon Lightsail",
+    "last_checked": "2026-10-12",
+    "resolves": true,
+    "sources": [
+      "psl"
+    ],
+    "status": "new",
+    "validated": false
+  },
   "sannon-stamm.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "live/hosting brand - subdomain issuance unverified",
     "resolves": true,
     "sources": [
@@ -3057,7 +3339,7 @@
   },
   "scottlewisonline.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3068,7 +3350,7 @@
   },
   "scottstreit.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3079,7 +3361,7 @@
   },
   "secureserver.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "GoDaddy infrastructure domain",
     "resolves": true,
     "sources": [
@@ -3090,7 +3372,7 @@
   },
   "sendgrid.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "ESP/marketing link domain - not publicly issuable",
     "resolves": true,
     "sources": [
@@ -3101,7 +3383,7 @@
   },
   "sendibt3.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "ESP/marketing link domain - not publicly issuable",
     "resolves": true,
     "sources": [
@@ -3112,7 +3394,7 @@
   },
   "serendipityshores.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3123,7 +3405,7 @@
   },
   "serverthuis.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3134,7 +3416,7 @@
   },
   "servicepics.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3145,7 +3427,7 @@
   },
   "sharkltd.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "hosting customer domain",
     "resolves": true,
     "sources": [
@@ -3156,7 +3438,7 @@
   },
   "sheatfish.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "Joker customer domain",
     "resolves": true,
     "sources": [
@@ -3167,7 +3449,7 @@
   },
   "shen.cl": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3178,7 +3460,7 @@
   },
   "short.gy": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3189,7 +3471,7 @@
   },
   "sieraddns.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3200,7 +3482,7 @@
   },
   "skc.su": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3211,7 +3493,7 @@
   },
   "skipurl.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3222,7 +3504,7 @@
   },
   "sleepless.hk": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3233,7 +3515,7 @@
   },
   "sline.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -3244,7 +3526,7 @@
   },
   "sly.io": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -3255,7 +3537,7 @@
   },
   "solidmation.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -3266,7 +3548,7 @@
   },
   "soundestlink.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "ESP/marketing link domain - not publicly issuable",
     "resolves": true,
     "sources": [
@@ -3277,7 +3559,7 @@
   },
   "spectrumnet.bg": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "ISP domain",
     "resolves": true,
     "sources": [
@@ -3288,7 +3570,7 @@
   },
   "spr.io": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -3299,7 +3581,7 @@
   },
   "sql01.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -3310,7 +3592,7 @@
   },
   "sqlconcepts.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -3321,7 +3603,7 @@
   },
   "ssl443.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -3333,7 +3615,7 @@
   },
   "stemmetje.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3344,7 +3626,7 @@
   },
   "stes.fi": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3355,7 +3637,7 @@
   },
   "stfu-kthx.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3366,7 +3648,7 @@
   },
   "subwayhost.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "live/hosting brand - subdomain issuance unverified",
     "resolves": true,
     "sources": [
@@ -3377,7 +3659,7 @@
   },
   "suroot.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -3388,7 +3670,7 @@
   },
   "system-ns.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain hijacked/for-sale - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -3399,7 +3681,7 @@
   },
   "systes.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -3410,7 +3692,7 @@
   },
   "tamaragibson.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -3421,7 +3703,7 @@
   },
   "teads.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "ESP/marketing link domain - not publicly issuable",
     "resolves": true,
     "sources": [
@@ -3432,7 +3714,7 @@
   },
   "teads.tv": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "ESP/marketing link domain - not publicly issuable",
     "resolves": true,
     "sources": [
@@ -3443,7 +3725,7 @@
   },
   "techproddns.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -3454,7 +3736,7 @@
   },
   "texasdollies.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3465,9 +3747,9 @@
   },
   "thaieasydns.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "does not resolve",
-    "resolves": false,
+    "resolves": true,
     "sources": [
       "hagezi"
     ],
@@ -3476,7 +3758,7 @@
   },
   "the-button.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3487,7 +3769,7 @@
   },
   "theblacklist.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "does not resolve on NS level",
     "resolves": true,
     "sources": [
@@ -3498,7 +3780,7 @@
   },
   "themcmillans.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3509,7 +3791,7 @@
   },
   "thenest.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -3520,7 +3802,7 @@
   },
   "thingsnewandused.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3531,7 +3813,7 @@
   },
   "tinyrealm.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3542,7 +3824,7 @@
   },
   "tonohost.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -3553,7 +3835,7 @@
   },
   "trackingde.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "ESP/marketing link domain - not publicly issuable",
     "resolves": true,
     "sources": [
@@ -3564,7 +3846,7 @@
   },
   "trailsendlodge.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -3575,7 +3857,7 @@
   },
   "transfer.sh": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3586,7 +3868,7 @@
   },
   "trello.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "Atlassian service apex",
     "resolves": true,
     "sources": [
@@ -3597,7 +3879,7 @@
   },
   "trieditmyself.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3608,7 +3890,7 @@
   },
   "tru.io": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3619,7 +3901,7 @@
   },
   "truthvid.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -3630,7 +3912,7 @@
   },
   "tth.cl": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "live/hosting brand - subdomain issuance unverified",
     "resolves": true,
     "sources": [
@@ -3641,7 +3923,7 @@
   },
   "uk.ms": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain hijacked/for-sale - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -3652,7 +3934,7 @@
   },
   "ultasrv.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "hosting apex - not issuable",
     "resolves": true,
     "sources": [
@@ -3663,7 +3945,7 @@
   },
   "umbler.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "live/hosting brand - subdomain issuance unverified",
     "resolves": true,
     "sources": [
@@ -3674,7 +3956,7 @@
   },
   "upir.ir": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "hosting customer domain",
     "resolves": true,
     "sources": [
@@ -3685,7 +3967,7 @@
   },
   "uplooder.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain hijacked/for-sale - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -3694,11 +3976,44 @@
     "status": "rejected",
     "validated": true
   },
+  "us-east-1.cs.amazonlightsail.com": {
+    "added_on": "2026-10-12",
+    "hint": "psl:Amazon Lightsail",
+    "last_checked": "2026-10-12",
+    "resolves": true,
+    "sources": [
+      "psl"
+    ],
+    "status": "new",
+    "validated": false
+  },
+  "us-east-2.cs.amazonlightsail.com": {
+    "added_on": "2026-10-12",
+    "hint": "psl:Amazon Lightsail",
+    "last_checked": "2026-10-12",
+    "resolves": true,
+    "sources": [
+      "psl"
+    ],
+    "status": "new",
+    "validated": false
+  },
+  "us-west-2.cs.amazonlightsail.com": {
+    "added_on": "2026-10-12",
+    "hint": "psl:Amazon Lightsail",
+    "last_checked": "2026-10-12",
+    "resolves": true,
+    "sources": [
+      "psl"
+    ],
+    "status": "new",
+    "validated": false
+  },
   "usa.cc": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "does not resolve",
-    "resolves": false,
+    "resolves": true,
     "sources": [
       "hagezi"
     ],
@@ -3707,7 +4022,7 @@
   },
   "v13clan.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private clan site",
     "resolves": true,
     "sources": [
@@ -3718,7 +4033,7 @@
   },
   "vctel.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -3729,7 +4044,7 @@
   },
   "verizonwireless.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "ISP domain",
     "resolves": true,
     "sources": [
@@ -3740,7 +4055,7 @@
   },
   "via0.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3751,7 +4066,7 @@
   },
   "viamisoftware.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3762,7 +4077,7 @@
   },
   "voles35.ru": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3773,7 +4088,7 @@
   },
   "vxe6.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "dead DDNS-named domain",
     "resolves": true,
     "sources": [
@@ -3784,9 +4099,10 @@
   },
   "warp9computers.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "hint": "no-ip.com",
+    "last_checked": "2026-10-12",
     "remark": "does not resolve",
-    "resolves": false,
+    "resolves": true,
     "sources": [
       "hagezi"
     ],
@@ -3795,7 +4111,7 @@
   },
   "wbsprt.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "Websupport customer",
     "resolves": true,
     "sources": [
@@ -3806,7 +4122,7 @@
   },
   "wcomhost.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3817,7 +4133,7 @@
   },
   "webcindario.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "does not resolve (miarroba free hosting, defunct)",
     "resolves": false,
     "sources": [
@@ -3828,7 +4144,7 @@
   },
   "webhostinghub.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "live/hosting brand - subdomain issuance unverified",
     "resolves": true,
     "sources": [
@@ -3839,7 +4155,7 @@
   },
   "websitetestlink.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "LiquidWeb customer domain",
     "resolves": true,
     "sources": [
@@ -3850,7 +4166,7 @@
   },
   "webspace.re": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "Austrian webspace service, unverifiable",
     "resolves": true,
     "sources": [
@@ -3861,7 +4177,7 @@
   },
   "westblade.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -3872,7 +4188,7 @@
   },
   "whogohost.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "hosting apex - not issuable",
     "resolves": true,
     "sources": [
@@ -3883,7 +4199,7 @@
   },
   "williambest.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3894,7 +4210,7 @@
   },
   "winnity.ro": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3905,7 +4221,7 @@
   },
   "wmhelp.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -3916,7 +4232,7 @@
   },
   "wolmerica.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain parked (parking NS) - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -3927,7 +4243,7 @@
   },
   "xpresit.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain hijacked/for-sale - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -3938,7 +4254,7 @@
   },
   "xsph.ru": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "Sprinthost customer",
     "resolves": true,
     "sources": [
@@ -3949,7 +4265,7 @@
   },
   "yiannamarie.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
@@ -3960,7 +4276,7 @@
   },
   "yngling.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -3971,7 +4287,7 @@
   },
   "z0d.eu": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -3982,7 +4298,7 @@
   },
   "z86.ru": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "domain hijacked/for-sale - not an active hostname service",
     "resolves": true,
     "sources": [
@@ -3993,7 +4309,7 @@
   },
   "zoom.us": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "Zoom service apex",
     "resolves": true,
     "sources": [
@@ -4004,7 +4320,7 @@
   },
   "zverovich.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-06",
+    "last_checked": "2026-10-12",
     "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
