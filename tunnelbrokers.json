@@ -344,7 +344,7 @@
     "protocols": [
       "6in4"
     ],
-    "remark": "goIPv6 Consortium (Hong Kong IPv6 industry initiative) public tunnel service with custom client; domain still serves stale service pages mixed with unrelated commercial links and registration is broken - service effectively dead.",
+    "remark": "Originally run by HKIRC (Hong Kong Internet Registration Corporation) for the goIPv6 Consortium; the domain now serves a scraped archive.org copy of the old site (embedded /web/2014.../ paths) mixed with unrelated commercial links - service dead; the real portal had already suspended new registrations ~2014.",
     "status": "discontinued",
     "type": "free",
     "url": "https://goipv6.hk/"
