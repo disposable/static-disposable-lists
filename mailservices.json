@@ -117,7 +117,7 @@
       "mxmail.mail2tor.co",
       "mxmail.onionmail.org"
     ],
-    "remark": "OnionMail anonymous Tor mail; signup page Cloudflare-blocked from verification vantage; verification unconfirmed.",
+    "remark": "OnionMail anonymous Tor mail; 2mail.co redirects to onionmail.org (service of Onion Search Engine LLC); signup page Cloudflare-blocked, verification unconfirmed.",
     "type": "free"
   },
   "33mail.com": {
@@ -1544,6 +1544,7 @@
       "etisalat.ae",
       "etisalat.com.eg"
     ],
+    "jurisdiction": "AE",
     "mx_hosts": [
       "fmhimail01.emirates.net.ae",
       "fmkimail01.emirates.net.ae",
@@ -2152,6 +2153,7 @@
       "test",
       "test.de"
     ],
+    "jurisdiction": "US",
     "remark": "IANA/ICANN special-use and documentation domains (RFC 2606/6761/6762/8375, ICANN reserved .internal) - never real mail providers.",
     "type": "reserved"
   },
@@ -2344,6 +2346,7 @@
     "hosts": [
       "india.com"
     ],
+    "jurisdiction": "IN",
     "mx_hosts": [
       "india-com.mail.protection.outlook.com"
     ],
@@ -2489,6 +2492,7 @@
     "hosts": [
       "opayq.com"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mx.junkemailfilter.net",
       "mx.junkemailfilter.org",
@@ -2819,6 +2823,7 @@
     "hosts": [
       "latino.com"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mail.latino.com"
     ],
@@ -2864,6 +2869,7 @@
     "hosts": [
       "librem.one"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mx.librem.one"
     ],
@@ -4188,6 +4194,7 @@
     "hosts": [
       "mailnull.com"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mx.mailgw.com"
     ],
@@ -4265,6 +4272,7 @@
     "hosts": [
       "manyme.com"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "inbound-smtp.us-east-1.amazonaws.com"
     ],
@@ -4682,6 +4690,7 @@
       "mozmail.com",
       "relay.firefox.com"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "inbound-smtp.us-west-2.amazonaws.com"
     ],
@@ -4746,6 +4755,7 @@
       "murena.io",
       "e.email"
     ],
+    "jurisdiction": "FR",
     "mx_hosts": [
       "mail.ecloud.global"
     ],
@@ -5687,6 +5697,7 @@
     "hosts": [
       "qis.net"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mail.qis.net"
     ],
@@ -5891,6 +5902,7 @@
     "hosts": [
       "safe-mail.net"
     ],
+    "jurisdiction": "IL",
     "remark": "Secure webmail provider (SSL Capital, IL); free 3MB tier requires existing email + manual approval (days); premium tiers paid.",
     "signup_verification": [
       "email"
@@ -6131,6 +6143,7 @@
     "hosts": [
       "skiff.com"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "skiff.com"
     ],
@@ -6253,6 +6266,7 @@
       "snkml.com",
       "liamekaens.com"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mail.sneakemail.com"
     ],
@@ -6316,6 +6330,7 @@
     "hosts": [
       "soverin.net"
     ],
+    "jurisdiction": "NL",
     "mx_hosts": [
       "mx.soverin.net",
       "mx02.soverin.net",
@@ -6357,6 +6372,7 @@
       "spameater.org",
       "xoxy.net"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "gourmet7.spamgourmet.com"
     ],
@@ -6452,10 +6468,11 @@
     "hosts": [
       "sudomail.com"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "t7vv3w4chgwc.wmjb.mail-manager-smtp.amazonaws.com"
     ],
-    "remark": "MySudo (Anonyome Labs) in-app email addresses for privacy compartments.",
+    "remark": "MySudo (Anonyome Labs) in-app email addresses for privacy compartments; sudomail.com redirects to mysudo.com.",
     "signup_verification": [
       "payment"
     ],
@@ -6638,6 +6655,7 @@
     "hosts": [
       "tedata.net"
     ],
+    "jurisdiction": "JO",
     "mx_hosts": [
       "tedata-net.mail.protection.outlook.com"
     ],
@@ -6734,6 +6752,7 @@
     "hosts": [
       "telkomsa.net"
     ],
+    "jurisdiction": "ZA",
     "mx_hosts": [
       "telkomsa-mx1.e-purifier.com",
       "telkomsa-mx2.e-purifier.com"
@@ -6785,6 +6804,7 @@
     "hosts": [
       "thexyz.com"
     ],
+    "jurisdiction": "CA",
     "mx_hosts": [
       "mx.thexyz.com",
       "mx2.thexyz.com"
@@ -7084,6 +7104,7 @@
       "clovermail.net",
       "chewiemail.com"
     ],
+    "jurisdiction": "US",
     "mx_hosts": [
       "mx1.vfemail.net",
       "mx2.vfemail.net",
@@ -7169,6 +7190,7 @@
     "hosts": [
       "vivaldi.net"
     ],
+    "jurisdiction": "NO",
     "mx_hosts": [
       "mxi-1.vivaldi.net",
       "mxi-2.vivaldi.net"
@@ -7284,6 +7306,7 @@
     "hosts": [
       "walla.com"
     ],
+    "jurisdiction": "IL",
     "mx_hosts": [
       "mx1.hc49497.c3s2.iphmx.com",
       "mx2.hc49497.c3s2.iphmx.com"
@@ -7296,6 +7319,7 @@
     "hosts": [
       "wananchi.com"
     ],
+    "jurisdiction": "KE",
     "mx_hosts": [
       "mta1.zos.wananchi.com",
       "proxy.zos.wananchi.com"

@@ -268,6 +268,7 @@
       "advisor.ws",
       "awdev.ca"
     ],
+    "jurisdiction": "CA",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator AW AdvisorWebsites.com Software Inc.",
     "status": "active",
@@ -281,6 +282,7 @@
     "hosts": [
       "airdns.org"
     ],
+    "jurisdiction": "IT",
     "ns_suffixes": [
       "airvpn.org"
     ],
@@ -1359,6 +1361,7 @@
     "hosts": [
       "angelcamddns.com"
     ],
+    "jurisdiction": "CZ",
     "public": false,
     "remark": "Angelcam camera DDNS, hosted on No-IP infrastructure; hostnames created via vendor interface only.",
     "signup_verification": [
@@ -1463,6 +1466,7 @@
     "hosts": [
       "apigee.io"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Apigee.",
     "status": "active",
@@ -1474,6 +1478,7 @@
     "hosts": [
       "panel.dev"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Apis Networks.",
     "status": "active",
@@ -1861,6 +1866,7 @@
     "hosts": [
       "balena-devices.com"
     ],
+    "jurisdiction": "GB",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Balena.",
     "status": "active",
@@ -1873,6 +1879,7 @@
     "hosts": [
       "beagleboard.io"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator BeagleBoard.org Foundation.",
     "status": "active",
@@ -1885,6 +1892,7 @@
     "hosts": [
       "bearblog.dev"
     ],
+    "jurisdiction": "ZA",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Bear Blog.",
     "status": "active",
@@ -2351,6 +2359,7 @@
       "radio.am",
       "radio.fm"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator BRS Media. verified live; operates radio.am/radio.fm registries",
     "status": "active",
@@ -2364,6 +2373,7 @@
       "bubbleapps.io",
       "cdn.bubble.io"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Bubble.",
     "status": "active",
@@ -2375,6 +2385,7 @@
     "hosts": [
       "b-cdn.net"
     ],
+    "jurisdiction": "SI",
     "public": true,
     "remark": "BunnyCDN pull-zone hostnames (zone.b-cdn.net).",
     "status": "active",
@@ -2900,6 +2911,7 @@
     "cloud": "Google Cloud",
     "hosted": "US",
     "hosts": [],
+    "jurisdiction": "US",
     "own_domains": true,
     "public": true,
     "remark": "Google Cloud DNS - own-domain DNS with dynamic-update API (OpenWrt ddns-scripts).",
@@ -2943,6 +2955,7 @@
       "website.yandexcloud.net",
       "yandexcloud.net"
     ],
+    "jurisdiction": "RU",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Yandex.Cloud LLC.",
     "status": "active",
@@ -2972,6 +2985,7 @@
       "jdevcloud.com",
       "wpdevcloud.com"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator CloudAccess.net.",
     "status": "active",
@@ -2984,6 +2998,7 @@
     "hosts": [
       "cloudbeesusercontent.io"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Cloudbees, Inc..",
     "status": "active",
@@ -3008,6 +3023,7 @@
     "hosts": [
       "cloudera.site"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Cloudera, Inc.. Infrastructure/security-boundary suffix, not publicly registrable.",
     "status": "active",
@@ -3211,6 +3227,7 @@
     "hosts": [
       "co.cc"
     ],
+    "jurisdiction": "KR",
     "public": true,
     "remark": "Korean free subdomain service; shut down ~2012 after mass abuse (Google de-indexed the zone). NS records remain delegated.",
     "status": "discontinued",
@@ -3269,6 +3286,7 @@
       "codepen.app",
       "codepen.dev"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator CodePen.",
     "status": "active",
@@ -3389,6 +3407,7 @@
     "hosts": [
       "ctfcloud.net"
     ],
+    "jurisdiction": "DE",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Contentful GmbH.",
     "status": "active",
@@ -3497,6 +3516,7 @@
     "hosts": [
       "realm.cz"
     ],
+    "jurisdiction": "CZ",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Craynic, s.r.o..",
     "status": "active",
@@ -3510,6 +3530,7 @@
     "hosts": [
       "csb.app"
     ],
+    "jurisdiction": "NL",
     "public": true,
     "remark": "CodeSandbox — Sandbox preview subdomains",
     "signup_verification": "email",
@@ -3536,6 +3557,7 @@
     "hosts": [
       "cursorusercontent.com"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Anysphere Inc.",
     "status": "active",
@@ -3587,6 +3609,7 @@
     "hosts": [
       "dyndns.dappnode.io"
     ],
+    "jurisdiction": "ES",
     "public": false,
     "remark": "PSL-listed public suffix(es); operator dappnode.io. Hostnames bound to vendor hardware/subscription.",
     "status": "active",
@@ -3600,6 +3623,7 @@
       "builtwithdark.com",
       "darklang.io"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Dark, Inc..",
     "status": "active",
@@ -3615,6 +3639,7 @@
       "azure.databricksapps.com",
       "gcp.databricksapps.com"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Databricks, Inc..",
     "status": "active",
@@ -3639,9 +3664,10 @@
     "hosts": [
       "edgestack.me"
     ],
+    "jurisdiction": "US",
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator Datawire, Inc. Infrastructure/security-boundary suffix, not publicly registrable.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator Datawire, Inc. Ambassador Labs ceased operations; datawire.io TLS certificate invalid; edgestack.me suffix still delegated.",
+    "status": "no_new_registrations",
     "type": "reserved",
     "updates": "static",
     "url": "https://datawire.io/"
@@ -3735,6 +3761,7 @@
     "hosts": [
       "debian.net"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Debian.",
     "status": "active",
@@ -3842,6 +3869,7 @@
       "adobeio-static.net",
       "adobeioruntime.net"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Adobe Developer Platform. Infrastructure/security-boundary suffix, not publicly registrable.",
     "status": "active",
@@ -3877,6 +3905,7 @@
     "hosts": [
       "dhis.org"
     ],
+    "jurisdiction": "NO",
     "ns_suffixes": [
       "dhis.org"
     ],
@@ -4066,6 +4095,7 @@
       "linux-site.net",
       "myip.org"
     ],
+    "jurisdiction": "US",
     "ns_suffixes": [
       "dns2go.com"
     ],
@@ -4115,6 +4145,7 @@
     "cloud": "OVH",
     "hosted": "SG",
     "hosts": [],
+    "jurisdiction": "KR",
     "ns_suffixes": [
       "dnsever.com",
       "dnsever.net",
@@ -4312,6 +4343,7 @@
     "api": true,
     "hosted": "US",
     "hosts": [],
+    "jurisdiction": "US",
     "ns_suffixes": [
       "opendns.com"
     ],
@@ -4459,6 +4491,7 @@
       "online.th",
       "shop.th"
     ],
+    "jurisdiction": "TH",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator DotArai.",
     "status": "active",
@@ -4471,6 +4504,7 @@
     "hosts": [
       "drayddns.com"
     ],
+    "jurisdiction": "TW",
     "public": false,
     "remark": "DrayTek router DDNS; hostnames created via vendor interface only.",
     "signup_verification": [
@@ -5082,6 +5116,7 @@
       "merseine.nu",
       "shacknet.nu"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator DynDNS.com.",
     "status": "active",
@@ -5359,6 +5394,7 @@
       "ric.jelastic.vps-host.net",
       "vps-host.net"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Strategic System Consulting (eApps Hosting). eApps site now redirects to Forte Technologies (acquired); vps-host.net/Jelastic suffixes still delegated. verified: apex redirects to Forte Technologies (acquired)",
     "status": "no_new_registrations",
@@ -5407,6 +5443,7 @@
     "hosts": [
       "ewp.live"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator EasyWP.",
     "status": "active",
@@ -5432,6 +5469,7 @@
     "hosts": [
       "rt.ht"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Elefunc, Inc. corp site blocks bots but rt.ht service verified live",
     "status": "active",
@@ -46118,6 +46156,7 @@
     "hosts": [
       "herokuapp.com"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "Heroku — *.<app>.herokuapp.com",
     "signup_verification": "email",
@@ -46152,6 +46191,7 @@
       "heyflow.page",
       "heyflow.site"
     ],
+    "jurisdiction": "DE",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Heyflow.",
     "status": "active",
@@ -47857,6 +47897,7 @@
       "lovable.sh",
       "lovableproject.com"
     ],
+    "jurisdiction": "SE",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Lovable.",
     "status": "active",
@@ -47999,6 +48040,7 @@
     "hosts": [
       "magentosite.cloud"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "Adobe Commerce (Magento Cloud) site hostnames.",
     "status": "active",
@@ -48068,6 +48110,7 @@
       "mwcloudnonprod.com",
       "polyspace.com"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator MathWorks.",
     "status": "active",
@@ -48171,6 +48214,7 @@
       "atmeta.com",
       "metaaiusercontent.com"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Meta Platforms, Inc..",
     "status": "active",
@@ -48439,6 +48483,7 @@
     "hosts": [
       "modx.dev"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator MODX Systems LLC.",
     "status": "active",
@@ -49767,6 +49812,7 @@
       "observablehq.cloud",
       "static.observableusercontent.com"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Observable, Inc..",
     "status": "active",
@@ -49969,6 +50015,7 @@
     "hosts": [
       "opencraft.hosting"
     ],
+    "jurisdiction": "FR",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator OpenCraft GmbH. verified live Open edX hosting",
     "status": "active",
@@ -50435,6 +50482,7 @@
     "hosts": [
       "pplx.app"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Perplexity AI.",
     "status": "active",
@@ -50832,8 +50880,8 @@
       "prohoster.biz"
     ],
     "public": true,
-    "remark": "ProHoster hosting; free technical subdomains.",
-    "status": "active",
+    "remark": "ProHoster hosting; free technical subdomains. Site redirects to prohoster.info which returns Cloudflare 520 origin error/timeout; ns1.prohoster.biz still answers.",
+    "status": "no_new_registrations",
     "type": "freemium",
     "updates": "static",
     "url": "https://prohoster.info/"
@@ -51887,6 +51935,7 @@
     "hosts": [
       "seidat.net"
     ],
+    "jurisdiction": "FI",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Seidat.",
     "status": "active",
@@ -53987,6 +54036,7 @@
     "hosts": [
       "vultrobjects.com"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator Vultr Objects.",
     "status": "active",
@@ -54184,8 +54234,8 @@
       "wadl.top"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator WebWaddle Ltd.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator WebWaddle Ltd. Apex unreachable in browser (ERR_ADDRESS_UNREACHABLE); wadl.top suffix still delegated.",
+    "status": "no_new_registrations",
     "updates": "static",
     "url": "https://webwaddle.com/"
   },
@@ -54504,6 +54554,7 @@
     "hosts": [
       "grok.me"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "PSL-listed public suffix(es); operator xAI.",
     "status": "active",
@@ -54725,6 +54776,7 @@
     "hosts": [
       "yolasite.com"
     ],
+    "jurisdiction": "US",
     "public": true,
     "remark": "Yola — *.<site>.yolasite.com",
     "signup_verification": "email",
