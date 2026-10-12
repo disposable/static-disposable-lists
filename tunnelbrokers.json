@@ -291,10 +291,10 @@
       "6in4"
     ],
     "public": true,
-    "remark": "Free Russian-language mass-market broker by IP MARKET FZCO (IPv4 broker/LIR shop, Moscow rep office); static public IPv4 required; /48 per registration split into tunnel + LAN /64s; endpoint 193.0.203.203 hosted at SuperServersDatacenter Moscow (AS50113); non-commercial use only; IPv4-reachable mirror at tb.ip4market.ru.",
+    "remark": "Free Russian-language mass-market broker by IP MARKET FZCO (IPv4 broker/LIR shop, Moscow rep office); static public IPv4 required; /48 per registration split into tunnel + LAN /64s; endpoint 193.0.203.203 hosted at SuperServersDatacenter Moscow (AS50113); non-commercial use only; IPv4-reachable mirror at tb.ip4market.ru; signup broken - email verification never arrives (reported 2026-10).",
     "signup_verification": "email",
     "since": 2018,
-    "status": "active",
+    "status": "no_new_registrations",
     "type": "free",
     "url": "https://ipv6.ip4market.ru/"
   },
