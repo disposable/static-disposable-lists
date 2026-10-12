@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Disposable Lists - Tunnel Brokers Database</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚇</text></svg>">
+    <style>
+        :root {
+            --bg-color: #f6f8fa;
+            --card-bg: #ffffff;
+            --text-color: #24292f;
+            --text-secondary: #57606a;
+            --border-color: #d0d7de;
+            --accent-color: #0969da;
+            --accent-light: #ddf4ff;
+            --success-color: #1a7f37;
+            --warning-color: #9a6700;
+            --danger-color: #cf222e;
+        }
+        [data-theme="dark"] {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-color: #c9d1d9;
+            --text-secondary: #8b949e;
+            --border-color: #30363d;
+            --accent-color: #58a6ff;
+            --accent-light: #388bfd26;
+            --success-color: #3fb950;
+            --warning-color: #d29922;
+            --danger-color: #f85149;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            padding: 20px 0;
+            background: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 30px;
+        }
+        header h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .stat-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+        .stat-card .number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+        .stat-card .label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+        .section {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 30px;
+            overflow: clip;
+        }
+        .section-header {
+            background: var(--accent-light);
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .section-header h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-header h2 .count {
+            background: var(--accent-color);
+            color: white;
+            font-size: 0.8rem;
+            padding: 2px 8px;
+            border-radius: 12px;
+        }
+        .search-box {
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .search-box input {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 0.95rem;
+            background: var(--card-bg);
+            color: var(--text-color);
+        }
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
+        .table-wrap {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        th, td {
+            padding: 10px 14px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        th {
+            background: var(--bg-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        th.sortable {
+            cursor: pointer;
+            user-select: none;
+            white-space: nowrap;
+        }
+        th.sortable:hover {
+            color: var(--accent-color);
+        }
+        th.sortable .sort-arrow {
+            font-size: 0.75rem;
+            margin-left: 4px;
+            opacity: 0.4;
+        }
+        th.sortable.sort-asc .sort-arrow,
+        th.sortable.sort-desc .sort-arrow {
+            opacity: 1;
+        }
+        td {
+            font-size: 0.95rem;
+            vertical-align: top;
+        }
+        tr:hover {
+            background: var(--bg-color);
+        }
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin: 1px 0;
+        }
+        .badge-free {
+            background: #dafbe1;
+            color: var(--success-color);
+        }
+        .badge-paid {
+            background: #fff8c5;
+            color: var(--warning-color);
+        }
+        .badge-freemium {
+            background: var(--accent-light);
+            color: var(--accent-color);
+        }
+        .badge-reserved {
+            background: #f6f8fa;
+            color: var(--text-secondary);
+        }
+        .badge-status-active {
+            background: #dafbe1;
+            color: var(--success-color);
+        }
+        .badge-status-restricted {
+            background: #fff8c5;
+            color: var(--warning-color);
+        }
+        .badge-status-no_new_registrations {
+            background: var(--accent-light);
+            color: var(--accent-color);
+        }
+        .badge-status-discontinued,
+        .badge-discontinued {
+            background: #ffebe9;
+            color: var(--danger-color);
+        }
+        .badge-yes {
+            background: #dafbe1;
+            color: var(--success-color);
+        }
+        .badge-no {
+            background: #f6f8fa;
+            color: var(--text-secondary);
+        }
+        .badge-private {
+            background: #ffebe9;
+            color: var(--danger-color);
+        }
+        .badge-proto {
+            background: var(--accent-light);
+            color: var(--accent-color);
+        }
+        .badge-prefix {
+            background: var(--bg-color);
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+            font-family: monospace;
+        }
+        .badge-unknown {
+            background: #f6f8fa;
+            color: var(--text-secondary);
+        }
+        [data-theme="dark"] .badge-unknown,
+        [data-theme="dark"] .badge-reserved,
+        [data-theme="dark"] .badge-no,
+        [data-theme="dark"] .badge-prefix {
+            background: #21262d;
+        }
+        .theme-toggle {
+            background: var(--accent-light);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 8px 12px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: all 0.2s;
+        }
+        .theme-toggle:hover {
+            background: var(--border-color);
+        }
+        .filter-bar {
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            align-items: center;
+        }
+        .filter-group {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .filter-group label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+        }
+        .filter-btn {
+            padding: 6px 12px;
+            border: 1px solid var(--border-color);
+            background: var(--card-bg);
+            color: var(--text-color);
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+        .filter-btn:hover {
+            background: var(--bg-color);
+            border-color: var(--accent-color);
+        }
+        .filter-btn.active {
+            background: var(--accent-color);
+            color: white;
+            border-color: var(--accent-color);
+        }
+        .hosts-list {
+            max-width: 220px;
+            font-size: 0.85rem;
+        }
+        .hosts-list .host {
+            display: inline-block;
+            background: var(--bg-color);
+            padding: 2px 6px;
+            margin: 2px;
+            border-radius: 3px;
+            font-family: monospace;
+            overflow-wrap: anywhere;
+        }
+        .remark {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            overflow-wrap: anywhere;
+        }
+        .provider-sub {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-top: 2px;
+        }
+        .geo-cell {
+            white-space: nowrap;
+            font-size: 0.9rem;
+        }
+        .geo-cell .geo-sub {
+            display: block;
+            font-size: 0.72rem;
+            color: var(--text-secondary);
+            margin-top: 2px;
+        }
+        .pops-cell .loc-sub {
+            display: block;
+            font-size: 0.72rem;
+            color: var(--text-secondary);
+            margin-top: 2px;
+        }
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-secondary);
+        }
+        .error {
+            background: #ffebe9;
+            border: 1px solid #ffcecb;
+            color: var(--danger-color);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .empty-note {
+            padding: 15px 20px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        .nav-link {
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+        footer {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            padding-bottom: 20px;
+        }
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            table {
+                font-size: 0.85rem;
+            }
+            th, td {
+                padding: 8px 12px;
+            }
+            .hosts-list, .remark {
+                max-width: 150px;
+            }
+        }
+        @media (min-width: 769px) {
+            thead th {
+                position: sticky;
+                top: 0;
+                z-index: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                <div>
+                    <h1>🚇 Static Disposable Lists — Tunnel Brokers</h1>
+                    <p>A catalog of IPv6 tunnel broker providers</p>
+                    <p><a class="nav-link" href="index.html">← Mail Services</a> &nbsp; <a class="nav-link" href="dns.html">DNS Services</a></p>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    🌙
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="loading" class="loading">Loading data...</div>
+        <div id="error" class="error" style="display: none;"></div>
+
+        <div id="content" style="display: none;">
+            <div class="stats-grid" id="stats">
+                <!-- Stats populated by JS -->
+            </div>
+
+            <div class="section">
+                <div class="search-box">
+                    <input type="text" id="brokerSearch" placeholder="Search providers or domains...">
+                </div>
+                <div class="filter-bar">
+                    <div class="filter-group">
+                        <label>Status:</label>
+                        <button class="filter-btn active" data-filter="status" data-value="all" title="Show services of all statuses">All</button>
+                        <button class="filter-btn" data-filter="status" data-value="active" title="Open registrations">Active</button>
+                        <button class="filter-btn" data-filter="status" data-value="restricted" title="Signup gated - own ASN required, verified operators, or manual approval">Restricted</button>
+                        <button class="filter-btn" data-filter="status" data-value="no_new_registrations" title="New tunnels cannot be created">No New Reg.</button>
+                        <button class="filter-btn" data-filter="status" data-value="discontinued" title="Service shut down">Discontinued</button>
+                    </div>
+                    <div class="filter-group">
+                        <label>Type:</label>
+                        <button class="filter-btn active" data-filter="type" data-value="all" title="Show services of all types">All</button>
+                        <button class="filter-btn" data-filter="type" data-value="free" title="Free providers">Free</button>
+                        <button class="filter-btn" data-filter="type" data-value="freemium" title="Free tier with paid upgrades">Freemium</button>
+                        <button class="filter-btn" data-filter="type" data-value="paid" title="Paid providers">Paid</button>
+                    </div>
+                    <div class="filter-group">
+                        <label>Protocol:</label>
+                        <button class="filter-btn active" data-filter="proto" data-value="all" title="Show all tunnel protocols">All</button>
+                        <button class="filter-btn" data-filter="proto" data-value="6in4" title="IPv6-in-IPv4 proto-41 (incl. SIT)">6in4</button>
+                        <button class="filter-btn" data-filter="proto" data-value="wireguard" title="WireGuard tunnels">WireGuard</button>
+                        <button class="filter-btn" data-filter="proto" data-value="gre" title="GRE/GRETAP tunnels">GRE</button>
+                        <button class="filter-btn" data-filter="proto" data-value="openvpn" title="OpenVPN tunnels">OpenVPN</button>
+                        <button class="filter-btn" data-filter="proto" data-value="other" title="Other protocols (AYIYA, TSP, TIC, VXLAN, IPIP, IPsec, ...)">Other</button>
+                    </div>
+                    <div class="filter-group">
+                        <label>BGP:</label>
+                        <button class="filter-btn active" data-filter="bgp" data-value="all" title="Show with or without BGP peering">All</button>
+                        <button class="filter-btn" data-filter="bgp" data-value="yes" title="BGP peering over the tunnel offered">Yes</button>
+                        <button class="filter-btn" data-filter="bgp" data-value="no" title="No BGP peering">No</button>
+                    </div>
+                    <div class="filter-group">
+                        <label>NAT:</label>
+                        <button class="filter-btn active" data-filter="nat" data-value="all" title="Show all NAT compatibility">All</button>
+                        <button class="filter-btn" data-filter="nat" data-value="yes" title="Works behind NAT/CGNAT">Works</button>
+                        <button class="filter-btn" data-filter="nat" data-value="no" title="Requires public IPv4 endpoint">No</button>
+                    </div>
+                    <div class="filter-group">
+                        <label>API:</label>
+                        <button class="filter-btn active" data-filter="api" data-value="all" title="Show services with or without an API">All</button>
+                        <button class="filter-btn" data-filter="api" data-value="yes" title="Programmatic provisioning API exists">Yes</button>
+                        <button class="filter-btn" data-filter="api" data-value="no" title="No programmatic API">No</button>
+                    </div>
+                    <div class="filter-group">
+                        <label>Access:</label>
+                        <button class="filter-btn active" data-filter="access" data-value="all" title="Show public and private services">All</button>
+                        <button class="filter-btn" data-filter="access" data-value="public" title="Tunnels can be requested publicly on the provider website">Public</button>
+                        <button class="filter-btn" data-filter="access" data-value="private" title="Customer-only, member-only, or invite-only">Private</button>
+                    </div>
+                    <div class="filter-group">
+                        <label>Region:</label>
+                        <button class="filter-btn active" data-filter="region" data-value="all" title="Show providers in all jurisdictions">All</button>
+                        <button class="filter-btn" data-filter="region" data-value="eu" title="Provider legal seat in the European Union">EU</button>
+                        <button class="filter-btn" data-filter="region" data-value="non-eu" title="Provider legal seat outside the European Union">non-EU</button>
+                    </div>
+                </div>
+                <div id="brokers-content">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Data sourced from <a href="https://github.com/disposable/static-disposable-lists">static-disposable-lists</a> — tunnelbrokers.json</p>
+            <p id="last-updated"></p>
+        </div>
+    </footer>
+
+    <script>
+        function initTheme() {
+            const saved = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = saved || (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+            updateThemeIcon(theme);
+        }
+
+        function updateThemeIcon(theme) {
+            document.getElementById('theme-toggle').textContent = theme === 'dark' ? '☀️' : '🌙';
+        }
+
+        document.getElementById('theme-toggle').addEventListener('click', () => {
+            const current = document.documentElement.getAttribute('data-theme');
+            const next = current === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+            updateThemeIcon(next);
+        });
+
+        initTheme();
+
+        let currentFilters = { status: 'all', type: 'all', proto: 'all', bgp: 'all', nat: 'all', api: 'all', access: 'all', region: 'all' };
+        let currentSearch = '';
+        const EU = new Set(['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE']);
+        const MAIN_PROTOS = new Set(['6in4', 'wireguard', 'gre', 'gretap', 'openvpn']);
+        function flag(cc) {
+            return cc && cc.length === 2 ? String.fromCodePoint(...[...cc].map(c => 0x1F1E6 + c.charCodeAt(0) - 65)) : '';
+        }
+        let sortState = { column: null, asc: true };
+
+        const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+        const STATUS_LABELS = {
+            active: 'active',
+            restricted: 'restricted',
+            no_new_registrations: 'no new reg.',
+            discontinued: 'discontinued'
+        };
+
+        function verificationSet(service) {
+            const sv = service.signup_verification;
+            return Array.isArray(sv) ? sv : (sv ? [sv] : []);
+        }
+
+        function statusOf(service) {
+            return service.status || 'active';
+        }
+
+        function protoMatches(protoList, sel) {
+            if (sel === 'all') return true;
+            if (sel === 'other') return protoList.some(p => !MAIN_PROTOS.has(p));
+            if (sel === 'gre') return protoList.some(p => p === 'gre' || p === 'gretap');
+            if (sel === '6in4') return protoList.some(p => p === '6in4' || p === 'heartbeat');
+            return protoList.includes(sel);
+        }
+
+        function boolCell(v) {
+            return v === true ? '<span class="badge badge-yes">yes</span>'
+                 : v === false ? '<span class="badge badge-no">no</span>'
+                 : '<span class="remark">-</span>';
+        }
+
+        function applyFilters() {
+            const rows = document.querySelectorAll('.service-row');
+            let visible = 0;
+            rows.forEach(row => {
+                const protos = (row.dataset.proto || '').split(' ').filter(Boolean);
+                const show =
+                    (currentFilters.status === 'all' || row.dataset.status === currentFilters.status) &&
+                    (currentFilters.type === 'all' || row.dataset.type === currentFilters.type) &&
+                    protoMatches(protos, currentFilters.proto) &&
+                    (currentFilters.bgp === 'all' || row.dataset.bgp === currentFilters.bgp) &&
+                    (currentFilters.nat === 'all' || row.dataset.nat === currentFilters.nat) &&
+                    (currentFilters.api === 'all' || row.dataset.api === currentFilters.api) &&
+                    (currentFilters.access === 'all' || row.dataset.access === currentFilters.access) &&
+                    (currentFilters.region === 'all' ||
+                        (currentFilters.region === 'eu' ? EU.has(row.dataset.juris) : row.dataset.juris && !EU.has(row.dataset.juris))) &&
+                    (!currentSearch ||
+                        row.dataset.name.includes(currentSearch) || row.dataset.hosts.includes(currentSearch));
+
+                row.style.display = show ? '' : 'none';
+                if (show) visible++;
+            });
+            document.querySelectorAll('.section-header .visible-count').forEach(el => el.remove());
+            const shown = document.querySelector('#brokers-content .section-header h2');
+            if (shown && (currentSearch || Object.values(currentFilters).some(f => f !== 'all'))) {
+                const span = document.createElement('span');
+                span.className = 'count visible-count';
+                span.textContent = visible + ' shown';
+                shown.appendChild(span);
+            }
+        }
+
+        function setupFilters() {
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const filterType = btn.dataset.filter;
+                    const value = btn.dataset.value;
+
+                    document.querySelectorAll(`.filter-btn[data-filter="${filterType}"]`).forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    currentFilters[filterType] = value;
+                    applyFilters();
+                    updateHash();
+                });
+            });
+        }
+
+        function setupSorting() {
+            document.querySelectorAll('th.sortable').forEach(th => {
+                th.addEventListener('click', () => {
+                    const key = th.dataset.sort;
+                    sortState = { column: key, asc: sortState.column === key ? !sortState.asc : true };
+                    document.querySelectorAll('th.sortable').forEach(h => h.classList.remove('sort-asc', 'sort-desc'));
+                    th.classList.add(sortState.asc ? 'sort-asc' : 'sort-desc');
+                    sortTable(th);
+                });
+            });
+        }
+
+        function sortTable(th) {
+            const tbody = th.closest('table').querySelector('tbody');
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+            const numeric = th.dataset.numeric === 'true';
+            rows.sort((a, b) => {
+                const av = a.dataset['sort' + th.dataset.sort];
+                const bv = b.dataset['sort' + th.dataset.sort];
+                const cmp = numeric ? (Number(av) - Number(bv)) : String(av).localeCompare(String(bv));
+                return sortState.asc ? cmp : -cmp;
+            });
+            rows.forEach(r => tbody.appendChild(r));
+        }
+
+        async function loadData() {
+            try {
+                const response = await fetch('../tunnelbrokers.json');
+                const services = await response.json();
+
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+
+                renderStats(services);
+                renderServices(services);
+
+                setupSearch();
+                setupFilters();
+                restoreFromHash();
+                setupSorting();
+
+                const lastModified = response.headers.get('Last-Modified');
+                if (lastModified) {
+                    document.getElementById('last-updated').textContent =
+                        'Data last updated: ' + new Date(lastModified).toLocaleDateString();
+                }
+            } catch (err) {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('error').style.display = 'block';
+                document.getElementById('error').textContent = 'Error loading data: ' + err.message;
+            }
+        }
+
+        function renderStats(services) {
+            let active = 0;
+            let restricted = 0;
+            let bgpProviders = 0;
+            let apiProviders = 0;
+            let discontinued = 0;
+
+            for (const data of Object.values(services)) {
+                const status = statusOf(data);
+                if (status === 'active') active++;
+                if (status === 'restricted') restricted++;
+                if (data.bgp) bgpProviders++;
+                if (data.api) apiProviders++;
+                if (status === 'discontinued') discontinued++;
+            }
+
+            const stats = [
+                { number: Object.keys(services).length, label: 'Tunnel Brokers' },
+                { number: active, label: 'Active' },
+                { number: restricted, label: 'Restricted' },
+                { number: bgpProviders, label: 'BGP-capable' },
+                { number: apiProviders, label: 'With API' },
+            ];
+
+            if (discontinued > 0) {
+                stats.push({ number: discontinued, label: 'Discontinued' });
+            }
+
+            document.getElementById('stats').innerHTML = stats.map(s => `
+                <div class="stat-card">
+                    <div class="number">${s.number.toLocaleString()}</div>
+                    <div class="label">${s.label}</div>
+                </div>
+            `).join('');
+        }
+
+        function renderServices(data) {
+            const items = Object.entries(data)
+                .map(([name, service]) => ({ name, ...service }))
+                .sort((a, b) => a.name.localeCompare(b.name));
+
+            const html = `
+                <div class="section-header">
+                    <h2>
+                        IPv6 Tunnel Brokers
+                        <span class="count">${items.length}</span>
+                    </h2>
+                </div>
+                <p class="empty-note">
+                    IPv6 tunnel broker providers (RFC 3053-style services).
+                    <strong>public</strong> = tunnels requestable on the website;
+                    <strong>private</strong> = customer-only, member-only, or invite-only.
+                    Geo column: flag = jurisdiction (legal seat).
+                    NAT = works behind NAT/CGNAT.
+                </p>
+                <div class="table-wrap">
+                <table>
+                    <colgroup>
+                        <col style="width: 11%">
+                        <col style="width: 6%">
+                        <col style="width: 9%">
+                        <col style="width: 8%">
+                        <col style="width: 13%">
+                        <col style="width: 7%">
+                        <col style="width: 5%">
+                        <col style="width: 5%">
+                        <col style="width: 7%">
+                        <col style="width: 5%">
+                        <col style="width: 8%">
+                        <col style="width: 16%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="sortable" data-sort="Name">Provider<span class="sort-arrow">▲</span></th>
+                            <th class="sortable" data-sort="Juris">Geo<span class="sort-arrow">▲</span></th>
+                            <th class="sortable" data-sort="Status">Status<span class="sort-arrow">▲</span></th>
+                            <th class="sortable" data-sort="Type">Type<span class="sort-arrow">▲</span></th>
+                            <th>Protocols</th>
+                            <th>Prefixes</th>
+                            <th class="sortable" data-sort="Bgp" data-numeric="true">BGP<span class="sort-arrow">▲</span></th>
+                            <th class="sortable" data-sort="Nat" data-numeric="true">NAT<span class="sort-arrow">▲</span></th>
+                            <th class="sortable" data-sort="Pops" data-numeric="true">PoPs<span class="sort-arrow">▲</span></th>
+                            <th class="sortable" data-sort="Api" data-numeric="true">API<span class="sort-arrow">▲</span></th>
+                            <th class="sortable" data-sort="Endpoint">Endpoint<span class="sort-arrow">▲</span></th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${items.map(s => {
+                            const status = statusOf(s);
+                            const verifications = verificationSet(s);
+                            const isPublic = s.public !== false;
+                            const protos = s.protocols || [];
+                            const prefixes = s.prefixes || [];
+                            const popsCount = s.pops || (s.locations || []).length || 0;
+                            const years = s.since ? (s.since + (s.until ? '–' + s.until : '–')) : '';
+                            const extra = [];
+                            if (s.tunnel_limit) extra.push('max ' + s.tunnel_limit + ' tunnels');
+                            if (s.bandwidth_mbps) extra.push(s.bandwidth_mbps + ' Mbit/s');
+                            if (s.rdns) extra.push('rDNS');
+                            if (s.byoip) extra.push('BYOIP');
+                            if (s.services && s.services.length) extra.push(s.services.join('/'));
+                            const note = [s.remark, extra.join(', ')].filter(Boolean).join(' — ');
+                            const subline = [s.asn ? 'AS' + s.asn : '', years].filter(Boolean).join(' · ');
+                            return `
+                            <tr class="service-row"
+                                data-name="${esc(s.name.toLowerCase())}"
+                                data-hosts="${esc((s.hosts || []).join(' ').toLowerCase())}"
+                                data-status="${esc(status)}"
+                                data-type="${esc(s.type || 'unknown')}"
+                                data-proto="${esc(protos.join(' '))}"
+                                data-bgp="${s.bgp === true ? 'yes' : 'no'}"
+                                data-nat="${s.nat === true ? 'yes' : 'no'}"
+                                data-api="${s.api === true ? 'yes' : 'no'}"
+                                data-access="${isPublic ? 'public' : 'private'}"
+                                data-juris="${esc(s.jurisdiction || '')}"
+                                data-sort-juris="${esc(s.jurisdiction || '')}"
+                                data-sort-name="${esc(s.name.toLowerCase())}"
+                                data-sort-status="${esc(status)}"
+                                data-sort-type="${esc(s.type || 'unknown')}"
+                                data-sort-bgp="${s.bgp === true ? '1' : '0'}"
+                                data-sort-nat="${s.nat === true ? '1' : '0'}"
+                                data-sort-pops="${popsCount}"
+                                data-sort-api="${s.api === true ? '1' : '0'}"
+                                data-sort-endpoint="${esc(s.endpoint_update || '')}">
+                                <td>
+                                    ${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener"><strong>${esc(s.name)}</strong></a>` : `<strong>${esc(s.name)}</strong>`}
+                                    ${subline ? `<span class="provider-sub">${esc(subline)}</span>` : ''}
+                                    ${verifications.length ? `<br><span class="tag-list">${verifications.map(v => `<span class="badge badge-unknown">${esc(v)}</span>`).join(' ')}</span>` : ''}
+                                </td>
+                                <td class="geo-cell">${s.jurisdiction ? `<span title="jurisdiction (legal seat): ${esc(s.jurisdiction)}">${flag(s.jurisdiction)}</span>` : '<span class="remark">?</span>'}</td>
+                                <td><span class="badge badge-status-${esc(status)}">${esc(STATUS_LABELS[status] || status)}</span></td>
+                                <td><span class="badge badge-${esc(s.type || 'unknown')}">${esc(s.type || 'unknown')}</span></td>
+                                <td>${protos.length ? protos.map(p => `<span class="badge badge-proto">${esc(p)}</span>`).join(' ') : '<span class="remark">-</span>'}</td>
+                                <td>${prefixes.length ? prefixes.map(p => `<span class="badge badge-prefix">/${esc(p)}</span>`).join(' ') : '<span class="remark">-</span>'}</td>
+                                <td>${boolCell(s.bgp)}</td>
+                                <td>${boolCell(s.nat)}</td>
+                                <td class="pops-cell">${popsCount ? `<strong>${popsCount}</strong>` : '<span class="remark">-</span>'}${(s.locations || []).length ? `<span class="loc-sub">${esc(s.locations.join(', '))}</span>` : ''}</td>
+                                <td>${boolCell(s.api)}</td>
+                                <td>${s.endpoint_update ? `<span class="badge badge-unknown">${esc(s.endpoint_update)}</span>` : '<span class="remark">-</span>'}</td>
+                                <td class="remark">${esc(note)}</td>
+                            </tr>`;
+                        }).join('')}
+                    </tbody>
+                </table>
+                </div>
+            `;
+
+            document.getElementById('brokers-content').innerHTML = html;
+        }
+
+        function updateHash() {
+            const params = new URLSearchParams();
+            ['status', 'type', 'proto', 'bgp', 'nat', 'api', 'access', 'region'].forEach(f => {
+                if (currentFilters[f] !== 'all') params.set(f, currentFilters[f]);
+            });
+            if (currentSearch.trim()) params.set('q', currentSearch.trim().toLowerCase());
+            const qs = params.toString();
+            history.replaceState(null, '', qs ? '#?' + qs : location.pathname);
+        }
+
+        function restoreFromHash() {
+            const raw = location.hash.slice(1);
+            if (!raw) return;
+            const qs = raw.startsWith('?') ? raw.slice(1) : raw;
+            const params = new URLSearchParams(qs);
+
+            ['status', 'type', 'proto', 'bgp', 'nat', 'api', 'access', 'region'].forEach(f => {
+                const v = params.get(f);
+                if (!v) return;
+                const btn = document.querySelector(`.filter-btn[data-filter="${f}"][data-value="${CSS.escape(v)}"]`);
+                if (!btn) return;
+                currentFilters[f] = v;
+                document.querySelectorAll(`.filter-btn[data-filter="${f}"]`).forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+            const q = params.get('q') || '';
+            document.getElementById('brokerSearch').value = q;
+            currentSearch = q;
+            applyFilters();
+        }
+
+        function setupSearch() {
+            document.getElementById('brokerSearch').addEventListener('input', (e) => {
+                currentSearch = e.target.value.toLowerCase();
+                applyFilters();
+                updateHash();
+            });
+        }
+
+        window.addEventListener('hashchange', restoreFromHash);
+
+        loadData();
+    </script>
+</body>
+</html>

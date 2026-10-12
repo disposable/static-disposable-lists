@@ -723,9 +723,9 @@
       "wireguard"
     ],
     "public": true,
-    "remark": "TunnelBroker.IO - open-source Laravel tunnel-broker panel (MercyCloudTeam, dev branch); free and paid plans, multiple global nodes; self-hostable; provisioning and DDNS APIs built in.",
+    "remark": "TunnelBroker.IO - showcase/demo of the open-source MercyCloudTeam Laravel panel; registrations accepted but no tunnel nodes provisioned - no usable endpoints; upstream repo unmaintained since 2025-01 and the referenced tunnelbroker.io domain does not resolve.",
     "since": 2020,
-    "status": "active",
+    "status": "no_new_registrations",
     "type": "freemium",
     "url": "https://tunnelbroker.id/"
   },
