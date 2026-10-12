@@ -723,7 +723,7 @@
       "wireguard"
     ],
     "public": true,
-    "remark": "TunnelBroker.IO - showcase/demo of the open-source MercyCloudTeam Laravel panel; registrations accepted but no tunnel nodes provisioned - no usable endpoints; upstream repo unmaintained since 2025-01 and the referenced tunnelbroker.io domain does not resolve.",
+    "remark": "TunnelBroker.IO - showcase/demo of the open-source MercyCloudTeam Laravel panel; registrations accepted but the node list is empty (verified 2026-10 after account creation) - no usable endpoints; upstream repo unmaintained since 2025-01 and the referenced tunnelbroker.io domain does not resolve.",
     "since": 2020,
     "status": "no_new_registrations",
     "type": "freemium",
