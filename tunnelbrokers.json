@@ -652,6 +652,23 @@
     "type": "free",
     "url": "http://ipv6.so-net.net.tw/"
   },
+  "ipv6.t-online.de": {
+    "allocation": [
+      "2003:100:6000::/38"
+    ],
+    "jurisdiction": "DE",
+    "prefixes": [
+      48
+    ],
+    "protocols": [
+      "6in4",
+      "tsp"
+    ],
+    "remark": "Deutsche Telekom / T-Online customer tunnel broker powered by Hexago gogoSERVER (TSP); RIPE pool 2003:100:6000::/38 (netname TUNNELBROKER, 'Hexago Tunnelbroker Kundenpool', /48 per customer); superseded by native dual-stack on DSL lines from Sep 2012.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "http://www.ipv6.t-online.de/"
+  },
   "ipv6now.com.au": {
     "jurisdiction": "AU",
     "locations": [
