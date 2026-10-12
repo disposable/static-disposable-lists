@@ -1,4 +1,37 @@
 {
+  "6fei.com.cn": {
+    "allocation": [
+      "2001:e88::/32"
+    ],
+    "jurisdiction": "CN",
+    "protocols": [
+      "4in6",
+      "6in4"
+    ],
+    "remark": "Chinese broker (6fei) offering both 6in4 and 4in6 tunnels; domain still resolves but the host no longer responds - service gone.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "http://www.6fei.com.cn/"
+  },
+  "6in4.ru": {
+    "endpoint_update": "http",
+    "jurisdiction": "RU",
+    "nat": false,
+    "pops": 1,
+    "prefixes": [
+      64
+    ],
+    "protocols": [
+      "6in4",
+      "wireguard"
+    ],
+    "public": true,
+    "remark": "Russian-language community broker; 6in4 paid since 2025-04 (RUB 150/mo, previously free) and WireGuard tunnels temporarily free; /64 PD over a /127 P2P link; public IPv4 required, endpoint changes via update script; config guides for Linux/MikroTik/Keenetic/OpenWRT; hosted on Selectel (AS50340); Telegram community.",
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "url": "https://6in4.ru/"
+  },
   "6project.org": {
     "allocation": [
       "2a05:dfc7:45::/48",
@@ -300,6 +333,22 @@
     "until": 2016,
     "url": "http://gogo6.com/"
   },
+  "goipv6.hk": {
+    "allocation": [
+      "2001:2e0:6002::/48"
+    ],
+    "jurisdiction": "HK",
+    "prefixes": [
+      64
+    ],
+    "protocols": [
+      "6in4"
+    ],
+    "remark": "goIPv6 Consortium (Hong Kong IPv6 industry initiative) public tunnel service with custom client; domain still serves stale service pages mixed with unrelated commercial links and registration is broken - service effectively dead.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "https://goipv6.hk/"
+  },
   "got-root.it": {
     "allocation": [
       "2a07:59c0::/32"
@@ -343,6 +392,25 @@
     "status": "discontinued",
     "type": "free",
     "url": "https://www.internode.com.au/"
+  },
+  "ipv6-id.net": {
+    "allocation": [
+      "2001:d68::/32"
+    ],
+    "bgp": true,
+    "jurisdiction": "ID",
+    "prefixes": [
+      48,
+      64
+    ],
+    "protocols": [
+      "6in4"
+    ],
+    "rdns": true,
+    "remark": "Indonesian IPv6 (ID-IPv6 task force); /64 or /48 on request with rDNS delegation and BGP; domain no longer resolves.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "http://www.ipv6-id.net/"
   },
   "ipv6.ip4market.ru": {
     "allocation": [
@@ -410,6 +478,20 @@
     "status": "discontinued",
     "type": "free",
     "url": "http://ipv6.sa/"
+  },
+  "ipv6.so-net.net.tw": {
+    "allocation": [
+      "2404:80::/32"
+    ],
+    "jurisdiction": "TW",
+    "protocols": [
+      "6in4",
+      "tsp"
+    ],
+    "remark": "So-Net Taiwan (Sony network) IPv6 trial service on gogoSERVER; DNS no longer resolves.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "http://ipv6.so-net.net.tw/"
   },
   "ipv6now.com.au": {
     "jurisdiction": "AU",
