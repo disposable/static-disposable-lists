@@ -585,7 +585,7 @@
     ],
     "public": true,
     "rdns": true,
-    "remark": "GhostTunnel (AS209552) hobby network run by Jan Siroky, Belgium; publicly reachable IPv4 required (no CGNAT); Amsterdam PoP offline at check; tunnels idle 7+ days are auto-disabled but can be re-enabled/recreated from the dashboard keeping prefix and settings.",
+    "remark": "GhostTunnel (AS209552) hobby network run by Jan Siroky, Belgium; publicly reachable IPv4 required (no CGNAT); PoPs: London (Cilix Ltd / Hurricane Electric LLC), Amsterdam (PeersIX / Tritan Dev) - both online 2026-10; tunnels idle 7+ days are auto-disabled but can be re-enabled/recreated from the dashboard keeping prefix and settings.",
     "status": "active",
     "tunnel_limit": 3,
     "type": "free",
