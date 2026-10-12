@@ -24,7 +24,7 @@
     "protocols": [
       "6in4",
       "gre",
-      "ip6ip",
+      "ipip",
       "openvpn",
       "wireguard"
     ],
@@ -49,6 +49,29 @@
     "type": "free",
     "until": 2019,
     "url": "https://www.aarnet.edu.au/"
+  },
+  "ameri.ca": {
+    "jurisdiction": "US",
+    "protocols": [
+      "6in4"
+    ],
+    "remark": "Early US tunnel broker (website-only provisioning); domain dead.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "http://ameri.ca/"
+  },
+  "ascc.net": {
+    "hosts": [
+      "tb2.ipv6.ascc.net"
+    ],
+    "jurisdiction": "TW",
+    "protocols": [
+      "tsp"
+    ],
+    "remark": "Academia Sinica Computing Centre (Taiwan) TSP broker; endpoint dead.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "http://tb2.ipv6.ascc.net/"
   },
   "august.tw": {
     "bgp": true,
@@ -93,6 +116,73 @@
     "type": "free",
     "url": "https://bgptunnel.com/"
   },
+  "btexact.com": {
+    "jurisdiction": "GB",
+    "protocols": [
+      "6in4"
+    ],
+    "public": false,
+    "remark": "BT Exact (BT research arm) tunnel service; discontinued.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "http://www.btexact.com/"
+  },
+  "cernet.edu.cn": {
+    "jurisdiction": "CN",
+    "protocols": [
+      "6in4"
+    ],
+    "public": false,
+    "remark": "CERNET (China education and research network) broker for member institutions; tbclient CGI provisioning; service discontinued.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "https://www.cernet.edu.cn/"
+  },
+  "cht.com.tw": {
+    "jurisdiction": "TW",
+    "protocols": [
+      "6in4"
+    ],
+    "remark": "CHTTL (Chunghwa Telecom Laboratories, Taiwan) broker; discontinued.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "https://www.cht.com.tw/"
+  },
+  "consulintel.es": {
+    "hosts": [
+      "consulintel.com",
+      "euro6ix.org"
+    ],
+    "jurisdiction": "ES",
+    "protocols": [
+      "6in4"
+    ],
+    "remark": "Consulintel / Euro6IX project broker (Spain); discontinued.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "http://www.consulintel.es/"
+  },
+  "earthlink.net": {
+    "jurisdiction": "US",
+    "protocols": [
+      "ipsec"
+    ],
+    "remark": "Earthlink R&D trial service; special Linksys WRT54G firmware - IPv4 IPsec tunnel with DHCPv6 prefix delegation; discontinued.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "https://www.earthlink.net/"
+  },
+  "fccn.pt": {
+    "jurisdiction": "PT",
+    "protocols": [
+      "6in4"
+    ],
+    "public": false,
+    "remark": "FCCN (Portuguese research network) broker for the R&E community; discontinued.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "https://www.fccn.pt/"
+  },
   "freetransit.ch": {
     "bgp": true,
     "byoip": true,
@@ -132,6 +222,29 @@
     "type": "free",
     "until": 2016,
     "url": "http://gogo6.com/"
+  },
+  "got-root.it": {
+    "allocation": [
+      "2a07:59c0::/32"
+    ],
+    "jurisdiction": "FR",
+    "locations": [
+      "Strasbourg, FR"
+    ],
+    "pops": 1,
+    "prefixes": [
+      64,
+      80
+    ],
+    "protocols": [
+      "6in4"
+    ],
+    "remark": "Got-root community broker (Strasbourg PoP); /80 standard, /64 on donation.",
+    "since": 2018,
+    "status": "discontinued",
+    "type": "free",
+    "until": 2019,
+    "url": "https://got-root.it/"
   },
   "iij.ad.jp": {
     "jurisdiction": "JP",
@@ -252,6 +365,26 @@
     "type": "paid",
     "url": "https://ipv6vpn.ch/"
   },
+  "manis.net.my": {
+    "jurisdiction": "MY",
+    "protocols": [
+      "6in4"
+    ],
+    "remark": "MANIS (Malaysian research network) broker; discontinued.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "http://manis.net.my/"
+  },
+  "mytbs.com.my": {
+    "jurisdiction": "MY",
+    "protocols": [
+      "6in4"
+    ],
+    "remark": "MyTBS (Malaysia tunnel broker service) with Ruby-based updater tool; discontinued.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "http://mytbs.com.my/"
+  },
   "nectec.or.th": {
     "jurisdiction": "TH",
     "protocols": [
@@ -261,6 +394,27 @@
     "status": "discontinued",
     "type": "free",
     "url": "https://www.nectec.or.th/"
+  },
+  "nerim.net": {
+    "jurisdiction": "FR",
+    "protocols": [
+      "6in4"
+    ],
+    "public": false,
+    "remark": "Nerim (French ISP) customer tunnel service; discontinued.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "https://www.nerim.net/"
+  },
+  "ngnet.it": {
+    "jurisdiction": "IT",
+    "protocols": [
+      "6in4"
+    ],
+    "remark": "NGNet.It (Telecom Italia TILAB) broker with CGI client provisioning; discontinued.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "http://www.ngnet.it/"
   },
   "renater.fr": {
     "jurisdiction": "FR",
@@ -387,6 +541,20 @@
     "until": 2017,
     "url": "https://www.sixxs.net/"
   },
+  "soton.ac.uk": {
+    "hosts": [
+      "broker.ecs.soton.ac.uk"
+    ],
+    "jurisdiction": "GB",
+    "protocols": [
+      "tsp"
+    ],
+    "public": false,
+    "remark": "ECS Southampton (University of Southampton) TSP broker; discontinued.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "http://broker.ecs.soton.ac.uk/"
+  },
   "tb.cushell.com": {
     "allocation": [
       "2602:f9ba:b3::/48",
@@ -477,6 +645,20 @@
     "type": "free",
     "url": "https://tb.tahio.eu/"
   },
+  "tpsa.pl": {
+    "hosts": [
+      "broker.ipv6.cbr.tpsa.pl"
+    ],
+    "jurisdiction": "PL",
+    "protocols": [
+      "tic"
+    ],
+    "public": false,
+    "remark": "Telekomunikacja Polska (now Orange Polska) TIC broker for customers; discontinued.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "https://broker.ipv6.cbr.tpsa.pl/"
+  },
   "tunnel64.net": {
     "asn": 35100,
     "bandwidth_mbps": 100,
@@ -528,6 +710,42 @@
     "status": "restricted",
     "type": "free",
     "url": "https://www.tunnelbroker.ch/"
+  },
+  "tunnelbroker.id": {
+    "api": true,
+    "endpoint_update": "dyndns2",
+    "nat": true,
+    "protocols": [
+      "6in4",
+      "gre",
+      "ipip",
+      "vxlan",
+      "wireguard"
+    ],
+    "public": true,
+    "remark": "TunnelBroker.IO - open-source Laravel tunnel-broker panel (MercyCloudTeam, dev branch); free and paid plans, multiple global nodes; self-hostable; provisioning and DDNS APIs built in.",
+    "since": 2020,
+    "status": "active",
+    "type": "freemium",
+    "url": "https://tunnelbroker.id/"
+  },
+  "tunnelbroker.li": {
+    "bgp": true,
+    "jurisdiction": "CH",
+    "pops": 7,
+    "prefixes": [
+      64
+    ],
+    "protocols": [
+      "6in4",
+      "wireguard"
+    ],
+    "rdns": true,
+    "remark": "iFog classic tunnel broker (7 PoPs across DE/GB/US/NO/ES/SG); domain dead - service folded into bgptunnel.com.",
+    "since": 2019,
+    "status": "discontinued",
+    "type": "free",
+    "url": "https://tunnelbroker.li/"
   },
   "tunnelbroker.net": {
     "allocation": [
@@ -608,13 +826,46 @@
     "protocols": [
       "6in4"
     ],
-    "remark": "NetNam (Vietnam); service site only resolves via IPv6 (2401:e800::2) and was unreachable at check - status unverified.",
+    "remark": "NetNam (Vietnam); service site resolves (210.86.228.4 / 2401:e800::2) but does not respond on either stack - status unverified.",
     "since": 2011,
     "status": "active",
     "type": "free",
     "url": "http://tunnelbroker.netnam.vn/"
   },
+  "tunnelbroker.se": {
+    "asn": 51519,
+    "bandwidth_mbps": 10,
+    "bgp": true,
+    "byoip": true,
+    "hosts": [
+      "karabro.se",
+      "my.karabro.se",
+      "support.karabro.se"
+    ],
+    "jurisdiction": "SE",
+    "nat": true,
+    "pops": 2,
+    "prefixes": [
+      48,
+      60
+    ],
+    "protocols": [
+      "6in4",
+      "gre",
+      "wireguard"
+    ],
+    "public": true,
+    "remark": "Karabro AB (Swedish ISP, AS51519); free private tier 10 Mbit/s fair-use /60 (/48 on need, no BGP, non-commercial); paid tiers to 1/10 Gbit/s with full BGP and own-prefix announcement; only Swedish-registered non-VPN IPv4 endpoints; name+address+personnummer required (Swedish law); manual provisioning via ticket; SMTP ports blocked; WireGuard recommended for CGNAT.",
+    "signup_verification": "other",
+    "since": 2021,
+    "status": "active",
+    "type": "freemium",
+    "url": "https://tunnelbroker.se/"
+  },
   "ukerna.ac.uk": {
+    "hosts": [
+      "broker.ipv6.ac.uk"
+    ],
     "jurisdiction": "GB",
     "prefixes": [
       56,
@@ -629,5 +880,49 @@
     "status": "discontinued",
     "type": "free",
     "url": "http://www.ukerna.ac.uk/"
+  },
+  "unix-servers.de": {
+    "jurisdiction": "DE",
+    "protocols": [
+      "6in4"
+    ],
+    "remark": "Unix-Servers.de (German hosting provider) tunnel service; discontinued.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "http://www.unix-servers.de/"
+  },
+  "wanadoo.fr": {
+    "hosts": [
+      "ts.ipv6.wanadoo.fr"
+    ],
+    "jurisdiction": "FR",
+    "protocols": [
+      "tsp"
+    ],
+    "remark": "Wanadoo France (now Orange) TSP broker; discontinued.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "http://ts.ipv6.wanadoo.fr/"
+  },
+  "xs26.net": {
+    "jurisdiction": "BE",
+    "protocols": [
+      "6in4"
+    ],
+    "remark": "XS26 (Belgian ISP) broker with sites across BE/CZ/IT/NL/PL/SK/ZA; discontinued.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "http://www.xs26.net/"
+  },
+  "xs4all.nl": {
+    "jurisdiction": "NL",
+    "protocols": [
+      "6in4"
+    ],
+    "public": false,
+    "remark": "XS4ALL (Dutch ISP) customer tunnel service; discontinued.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "https://www.xs4all.nl/"
   }
 }
