@@ -60,6 +60,38 @@
     "type": "free",
     "url": "http://ameri.ca/"
   },
+  "as214757.net": {
+    "asn": 214757,
+    "bgp": true,
+    "jurisdiction": "CZ",
+    "locations": [
+      "Amsterdam, NL",
+      "Frankfurt, DE",
+      "London, GB",
+      "Sao Paulo, BR",
+      "Warsaw, PL"
+    ],
+    "nat": true,
+    "pops": 5,
+    "prefixes": [
+      64
+    ],
+    "protocols": [
+      "gre",
+      "gretap",
+      "vxlan",
+      "wireguard"
+    ],
+    "public": true,
+    "remark": "Educational/research network of Jakub Krsa (Czech Republic), non-commercial; free IPv6 tunnelbroker (/64 default, larger on justified request) plus free IPv6 transit (own ASN required) and free BGP VPS; contact-based provisioning; IX presence incl. AMS-IX, NL-IX, Frys-IX, NetIX, InterIX.",
+    "services": [
+      "transit",
+      "ix_peering"
+    ],
+    "status": "active",
+    "type": "free",
+    "url": "https://as214757.net/"
+  },
   "ascc.net": {
     "hosts": [
       "tb2.ipv6.ascc.net"
@@ -96,6 +128,26 @@
     "status": "discontinued",
     "type": "free",
     "url": "https://www.august.tw/"
+  },
+  "bgp43.net": {
+    "asn": 215828,
+    "bgp": true,
+    "byoip": true,
+    "jurisdiction": "DE",
+    "protocols": [
+      "6in4",
+      "gre",
+      "vxlan",
+      "wireguard"
+    ],
+    "public": false,
+    "remark": "Free IPv4/IPv6 transit over tunnels for approved networks (own public ASN required, manual review) operated by TMW Global Networks (Tizian Maxime Weigt, DE); control plane on maintenance as of 2026-10 - existing tunnels keep running.",
+    "services": [
+      "transit"
+    ],
+    "status": "restricted",
+    "type": "free",
+    "url": "https://bgp43.net/"
   },
   "bgptunnel.com": {
     "asn": 209533,
@@ -297,6 +349,24 @@
     "status": "no_new_registrations",
     "type": "free",
     "url": "https://ipv6.ip4market.ru/"
+  },
+  "ipv6.rs": {
+    "bandwidth_mbps": 1000,
+    "endpoint_update": "automatic",
+    "hosts": [
+      "tb.ipv6.rs"
+    ],
+    "jurisdiction": "US",
+    "nat": true,
+    "protocols": [
+      "wireguard"
+    ],
+    "public": true,
+    "remark": "IPv6rs (IPv6rs Limited Company, Wyoming US) paid self-hoster tunnel service; 5 static 'Visible IP' tunnels, 1 Gbit/s, works behind NAT (no public IPv4 needed); free IPv4 SNI reverse proxy and port forwarding; $6.95/mo, $3.33/mo yearly or $2.91/mo two-year billing; Cloud Seeder appliance platform.",
+    "status": "active",
+    "tunnel_limit": 5,
+    "type": "paid",
+    "url": "https://www.ipv6.rs/"
   },
   "ipv6.sa": {
     "jurisdiction": "SA",
@@ -891,6 +961,37 @@
     "status": "discontinued",
     "type": "free",
     "url": "http://www.unix-servers.de/"
+  },
+  "v6direct.org": {
+    "asn": 199746,
+    "bgp": true,
+    "byoip": true,
+    "jurisdiction": "DE",
+    "locations": [
+      "Amsterdam, NL",
+      "Düsseldorf, DE",
+      "Frankfurt, DE",
+      "London, GB",
+      "Velbert, DE",
+      "Warsaw, PL"
+    ],
+    "nat": true,
+    "pops": 6,
+    "protocols": [
+      "gre",
+      "l2tpv3",
+      "wireguard"
+    ],
+    "public": true,
+    "remark": "V6Direct community network (AS199746), brand of NextServ UG (haftungsbeschränkt), Hamburg; free and low-cost IPv6 tunnels plus transit, BGP peering, VMs and BYOIP for hobbynets/community/small business; Hurricane Electric upstream; InterIX and BGP.tools IX presence.",
+    "services": [
+      "transit",
+      "ix_peering",
+      "static_ips"
+    ],
+    "status": "active",
+    "type": "freemium",
+    "url": "https://v6direct.org/"
   },
   "wanadoo.fr": {
     "hosts": [
