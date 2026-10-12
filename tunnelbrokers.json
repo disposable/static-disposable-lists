@@ -69,6 +69,23 @@
     "type": "freemium",
     "url": "https://6project.org/"
   },
+  "aa.net.uk": {
+    "asn": 20712,
+    "endpoint_update": "automatic",
+    "jurisdiction": "GB",
+    "nat": true,
+    "prefixes": [
+      48
+    ],
+    "protocols": [
+      "l2tp"
+    ],
+    "public": true,
+    "remark": "Andrews & Arnold (AAISP) paid L2TP relay for CGNAT/no-public-IPv4 paths; static public IPv4 + IPv6 block (/48 via DHCPv6-PD); domestic GBP 10/mo (500 Mbps, 8 TB), business GBP 15/mo+VAT (1 Gbps, 20 TB), business-light GBP 2/mo (3 Mbps, 1 TB); UK.",
+    "status": "active",
+    "type": "paid",
+    "url": "https://www.aa.net.uk/broadband/l2tp-service/"
+  },
   "aarnet.edu.au": {
     "jurisdiction": "AU",
     "protocols": [
@@ -395,6 +412,41 @@
     "type": "free",
     "until": 2019,
     "url": "https://got-root.it/"
+  },
+  "hyehost.org": {
+    "asn": 47272,
+    "bandwidth_mbps": 100,
+    "jurisdiction": "GB",
+    "locations": [
+      "Ashburn, US",
+      "Wolverhampton, GB"
+    ],
+    "nat": true,
+    "pops": 2,
+    "prefixes": [
+      32,
+      34,
+      36,
+      40,
+      44,
+      48
+    ],
+    "protocols": [
+      "6in4",
+      "gre",
+      "gretap",
+      "vxlan",
+      "wireguard"
+    ],
+    "public": true,
+    "remark": "HYEHOST (AS47272, Wolverhampton UK) paid routed-IPv6 tunnel delivery with leased RIPE prefixes (/48 $3/yr up to /32 $40/mo) plus $5/mo 100 Mbps shared tunnel on a 2 Gbps port (95th pct commit, capped on overage); NZ PoP planned; also sells WireGuard-based routed IPv4 tunnels.",
+    "services": [
+      "transit"
+    ],
+    "signup_verification": "email",
+    "status": "active",
+    "type": "paid",
+    "url": "https://hyehost.org/ipv6-tunnels"
   },
   "iij.ad.jp": {
     "jurisdiction": "JP",
@@ -1139,6 +1191,43 @@
     "status": "active",
     "type": "freemium",
     "url": "https://v6direct.org/"
+  },
+  "verio.com": {
+    "jurisdiction": "US",
+    "protocols": [
+      "gre"
+    ],
+    "remark": "Verio (NTT) commercial off-net IPv6 Tunneling Service launched ~2004 ($150/mo, GRE, 0.5 Mbit/s); service no longer offered.",
+    "since": 2004,
+    "status": "discontinued",
+    "type": "paid",
+    "url": "http://www.verio.com/"
+  },
+  "vpsfree.cz": {
+    "allocation": [
+      "2a03:3b40::/32"
+    ],
+    "endpoint_update": "automatic",
+    "jurisdiction": "CZ",
+    "locations": [
+      "Prague, CZ"
+    ],
+    "nat": true,
+    "prefixes": [
+      48
+    ],
+    "protocols": [
+      "openvpn",
+      "wireguard"
+    ],
+    "public": true,
+    "rdns": true,
+    "remark": "vpsFree.cz z.s. (Czech VPS community association) free IPv6 tunnel service aimed at users without public IPv4; WireGuard preferred, legacy OpenVPN; static /48 per client; request by email to ipv6tun@vpsfree.cz; rDNS delegation supported; optional Slovakia endpoint; started after SixXS shutdown.",
+    "signup_verification": "other",
+    "since": 2017,
+    "status": "active",
+    "type": "free",
+    "url": "https://kb.vpsfree.cz/informace/projekty/ipv6tunel"
   },
   "wanadoo.fr": {
     "hosts": [
