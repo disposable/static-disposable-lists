@@ -718,6 +718,7 @@
     "bandwidth_mbps": 50,
     "bgp": true,
     "endpoint_update": "dyndns2",
+    "jurisdiction": "DE",
     "locations": [
       "Oslo, NO"
     ],
@@ -733,7 +734,7 @@
       "wireguard"
     ],
     "public": true,
-    "remark": "Free dual-stack broker (Next.js/Supabase frontend, Go backend); three /64s per tunnel plus BGP-routed /48s; per-tunnel dyndns2 token for dynamic endpoints; tunnel space announced via sponsor AS198889 (JERDA-NET); hosted on gigahost.no.",
+    "remark": "Free dual-stack broker operated by KIantrieb / Jerzy Dabrowski, Dobeln DE (impressum: kiantrieb.de); Next.js/Supabase frontend, Go backend; three /64s per tunnel plus BGP-routed /48s; per-tunnel dyndns2 token for dynamic endpoints; tunnel space announced via sponsor AS198889 (JERDA-NET); hosted on gigahost.no.",
     "since": 2025,
     "status": "active",
     "tunnel_limit": 2,
