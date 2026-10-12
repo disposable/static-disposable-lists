@@ -239,6 +239,9 @@
     "asn": 209533,
     "bgp": true,
     "byoip": true,
+    "hosts": [
+      "tunnelbrokerasaservice.com"
+    ],
     "jurisdiction": "CH",
     "protocols": [
       "gre",
