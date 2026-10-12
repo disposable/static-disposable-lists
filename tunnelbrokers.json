@@ -449,6 +449,48 @@
     "until": 2019,
     "url": "https://got-root.it/"
   },
+  "hop179.net": {
+    "allocation": [
+      "2a0b:4e07::/32",
+      "2602:f72e::/40"
+    ],
+    "asn": 11967,
+    "bgp": true,
+    "byoip": true,
+    "jurisdiction": "EE",
+    "locations": [
+      "Frankfurt, DE",
+      "Dusseldorf, DE",
+      "Amsterdam, NL",
+      "Zurich, CH",
+      "Barcelona, ES",
+      "Singapore, SG",
+      "Toronto, CA"
+    ],
+    "pops": 7,
+    "prefixes": [
+      46,
+      47,
+      48
+    ],
+    "protocols": [
+      "gre",
+      "vxlan",
+      "wireguard",
+      "zerotier"
+    ],
+    "public": true,
+    "remark": "Hop179 OU (Tallinn EE, also Hop179 LLC Arizona US) AS11967; free IPv6 prefixes (/46-/48 RIPE + ARIN, larger sizes paid) announced under AS11967 and routed to your tunnel endpoint - no own ASN needed; also free BGP sessions, BYOIP, free IXP transit, BGP/IPv6-only VMs and LIR services; tunnel types per order portal: GRE/VxLAN/WireGuard/ZeroTier; plain free tunnel transit defers to bgp43.net; backbone iBGP mesh FRA/TOR/DUS/BAR/ZRH/SGP/AMS.",
+    "services": [
+      "ix_peering",
+      "static_ips",
+      "transit"
+    ],
+    "signup_verification": "email",
+    "status": "active",
+    "type": "freemium",
+    "url": "https://hop179.net/"
+  },
   "hyehost.org": {
     "asn": 47272,
     "bandwidth_mbps": 100,
@@ -799,6 +841,25 @@
     "status": "active",
     "type": "free",
     "url": "https://route64.org/"
+  },
+  "rudaki.net": {
+    "asn": 211509,
+    "bgp": true,
+    "byoip": true,
+    "jurisdiction": "UA",
+    "protocols": [
+      "6in4"
+    ],
+    "public": false,
+    "remark": "RUDAKi.NET (Rudakov Ihor, Ukraine) IP transit and consulting; free 6in4 tunnel peering and free IPv6 transit via RUDAKi-IX and BEE-IX for non-commercial/personal networks with own ASN + prefix; form signup or Telegram @rudaki_peering; paid IX transit, IXP access and L2 services also offered.",
+    "services": [
+      "ix_peering",
+      "transit"
+    ],
+    "signup_verification": "other",
+    "status": "restricted",
+    "type": "free",
+    "url": "https://rudaki.net/"
   },
   "singnet.com.sg": {
     "jurisdiction": "SG",
