@@ -28,7 +28,7 @@
           "description": "Tunnel protocols offered: 6in4 = IPv6-in-IPv4 proto-41 (incl. SIT); 4in6 = IPv4-in-IPv6; ipip = IP-in-IP proto-4; ayiya = Anything In Anything (SixXS); tsp = Tunnel Setup Protocol; tic = Tunnel Information and Control (SixXS); heartbeat = draft-massar-v6ops-heartbeat",
           "items": {
             "type": "string",
-            "enum": ["6in4", "4in6", "gre", "gretap", "ayiya", "tsp", "tic", "heartbeat", "openvpn", "wireguard", "l2tpv3", "vxlan", "ipip", "ip6ip", "zerotier", "ipsec"]
+            "enum": ["6in4", "4in6", "gre", "gretap", "ayiya", "tsp", "tic", "heartbeat", "openvpn", "wireguard", "l2tp", "l2tpv3", "vxlan", "ipip", "ip6ip", "zerotier", "ipsec"]
           },
           "minItems": 1
         },

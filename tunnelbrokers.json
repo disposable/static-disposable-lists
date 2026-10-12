@@ -235,6 +235,31 @@
     "type": "free",
     "url": "https://www.fccn.pt/"
   },
+  "fourplex.net": {
+    "asn": 27284,
+    "bandwidth_mbps": 1000,
+    "hosts": [
+      "billing.fourplex.net",
+      "www.fourplex.net"
+    ],
+    "jurisdiction": "US",
+    "locations": [
+      "New York, US"
+    ],
+    "nat": true,
+    "pops": 1,
+    "prefixes": [
+      56
+    ],
+    "protocols": [
+      "l2tp"
+    ],
+    "public": true,
+    "remark": "Fourplex Telecom LLC (AS27284) L2TP static-IP tunnel service (non-IPsec, MTU 1280); IPv6-only $2.50/mo with /56, IPv4+IPv6 $5/mo; single NYC PoP hosted at BuyVM; unmetered fair-use; SMTP port 25 blocked by default.",
+    "status": "active",
+    "type": "paid",
+    "url": "https://www.fourplex.net/"
+  },
   "freetransit.ch": {
     "bgp": true,
     "byoip": true,
