@@ -1,0 +1,165 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://disposable.github.io/static-disposable-lists/schemas/tunnelbrokers.schema.json",
+  "type": "object",
+  "description": "IPv6 tunnel broker provider definitions (RFC 3053-style services) with protocol, routing and reachability metadata",
+  "patternProperties": {
+    "^[^:]+$": {
+      "type": "object",
+      "description": "IPv6 tunnel broker provider",
+      "properties": {
+        "url": {
+          "type": "string",
+          "description": "Provider homepage or service URL",
+          "format": "uri"
+        },
+        "status": {
+          "type": "string",
+          "description": "Service lifecycle status: active = open registrations; restricted = signup gated (own ASN required, verified operators, manual approval); no_new_registrations = existing tunnels work but new ones cannot be created; discontinued = service shut down",
+          "enum": ["active", "restricted", "no_new_registrations", "discontinued"]
+        },
+        "type": {
+          "type": "string",
+          "description": "Pricing classification of the tunnel service itself",
+          "enum": ["free", "paid", "freemium", "reserved"]
+        },
+        "protocols": {
+          "type": "array",
+          "description": "Tunnel protocols offered: 6in4 = IPv6-in-IPv4 proto-41 (incl. SIT); 4in6 = IPv4-in-IPv6; ayiya = Anything In Anything (SixXS); tsp = Tunnel Setup Protocol; heartbeat = draft-massar-v6ops-heartbeat",
+          "items": {
+            "type": "string",
+            "enum": ["6in4", "4in6", "gre", "gretap", "ayiya", "tsp", "heartbeat", "openvpn", "wireguard", "l2tpv3", "vxlan", "ip6ip", "zerotier", "ipsec"]
+          },
+          "minItems": 1
+        },
+        "hosts": {
+          "type": "array",
+          "description": "Additional provider domains beyond the record key (portal/manager hostnames, alternate service domains) for attribution",
+          "items": {
+            "type": "string",
+            "format": "hostname"
+          }
+        },
+        "prefixes": {
+          "type": "array",
+          "description": "Routed IPv6 prefix lengths handed to users per tunnel/subnet (e.g. 64, 56, 48); absent when the provider assigns no address space (BYOIP-only)",
+          "items": {
+            "type": "integer",
+            "minimum": 32,
+            "maximum": 128
+          }
+        },
+        "bgp": {
+          "type": "boolean",
+          "description": "Whether BGP peering over the tunnel is offered"
+        },
+        "rdns": {
+          "type": "boolean",
+          "description": "Whether reverse DNS (PTR) delegation for routed prefixes is offered"
+        },
+        "byoip": {
+          "type": "boolean",
+          "description": "Whether users may announce their own PI/PA space or their own ASN over the tunnel"
+        },
+        "endpoint_update": {
+          "type": "string",
+          "description": "How a dynamic client IPv4 endpoint is kept in sync: none = static endpoint required; dyndns2 = Dyn-compatible nic/update endpoint; http = provider-specific HTTP update URL; automatic = protocol handles roaming (e.g. WireGuard)",
+          "enum": ["none", "dyndns2", "http", "automatic"]
+        },
+        "nat": {
+          "type": "boolean",
+          "description": "Whether the service works behind NAT/CGNAT without a public IPv4 address"
+        },
+        "pops": {
+          "type": "integer",
+          "description": "Number of tunnel points of presence",
+          "minimum": 1
+        },
+        "locations": {
+          "type": "array",
+          "description": "PoP locations as 'City, CC' strings (ISO 3166-1 alpha-2 country)",
+          "items": {
+            "type": "string"
+          }
+        },
+        "tunnel_limit": {
+          "type": "integer",
+          "description": "Maximum tunnels per account",
+          "minimum": 1
+        },
+        "bandwidth_mbps": {
+          "type": "integer",
+          "description": "Documented per-tunnel bandwidth cap in Mbit/s",
+          "minimum": 1
+        },
+        "asn": {
+          "type": "integer",
+          "description": "Provider's own autonomous system number; absent when tunnels run under a sponsor AS",
+          "minimum": 1
+        },
+        "allocation": {
+          "type": "array",
+          "description": "Provider's own IPv6 allocation(s) the tunnel space is drawn from, as CIDR strings",
+          "items": {
+            "type": "string"
+          }
+        },
+        "api": {
+          "type": "boolean",
+          "description": "Whether programmatic provisioning/management (REST API or equivalent) exists"
+        },
+        "services": {
+          "type": "array",
+          "description": "Additional network services beyond plain tunnels",
+          "items": {
+            "type": "string",
+            "enum": ["transit", "anycast", "static_ips", "ix_peering"]
+          }
+        },
+        "since": {
+          "type": "integer",
+          "description": "Year the service started",
+          "minimum": 1990
+        },
+        "until": {
+          "type": "integer",
+          "description": "Year the service ended (for discontinued providers)",
+          "minimum": 1990
+        },
+        "public": {
+          "type": "boolean",
+          "description": "Whether anyone can request a tunnel publicly. false = gated to verified operators, customers of other products, or invite-only."
+        },
+        "signup_verification": {
+          "oneOf": [
+            {
+              "type": "string",
+              "description": "Verification method required during account creation",
+              "enum": ["none", "email", "mobile", "payment", "other", "phone", "sms"]
+            },
+            {
+              "type": "array",
+              "description": "Verification methods required during account creation",
+              "items": {
+                "type": "string",
+                "enum": ["none", "email", "mobile", "payment", "other", "phone", "sms"]
+              }
+            }
+          ]
+        },
+        "jurisdiction": {
+          "type": "string",
+          "description": "ISO 3166-1 alpha-2 country of the provider's legal seat (from imprint/terms/operator info); absent = unknown",
+          "pattern": "^[A-Z]{2}$"
+        },
+        "remark": {
+          "type": "string",
+          "description": "Additional notes about the provider"
+        }
+      },
+      "required": ["url", "status", "type", "protocols"],
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

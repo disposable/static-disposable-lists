@@ -1,0 +1,602 @@
+{
+  "6project.org": {
+    "allocation": [
+      "2a05:dfc7:45::/48",
+      "2a05:dfc7:46::/48",
+      "2a07:1c44:212::/48"
+    ],
+    "asn": 208753,
+    "bgp": true,
+    "jurisdiction": "US",
+    "locations": [
+      "Milan, IT",
+      "Frankfurt, DE",
+      "Vienna, AT",
+      "Bradford, GB",
+      "Las Vegas, US",
+      "Wuhan, CN"
+    ],
+    "pops": 6,
+    "prefixes": [
+      80,
+      128
+    ],
+    "protocols": [
+      "6in4",
+      "gre",
+      "ip6ip",
+      "openvpn",
+      "wireguard"
+    ],
+    "public": true,
+    "rdns": true,
+    "remark": "Community nonprofit (AS208753) operated from Chicago; request form with manual review; ::/128 point-to-point and routed /80 assignments, other sizes on request; tunnel methods vary per PoP.",
+    "since": 2016,
+    "status": "active",
+    "type": "freemium",
+    "url": "https://6project.org/"
+  },
+  "aarnet.edu.au": {
+    "jurisdiction": "AU",
+    "protocols": [
+      "6in4",
+      "tsp"
+    ],
+    "public": false,
+    "remark": "AARNet (Australian academic research network) broker for the R&E community; service ended 2019-04-05.",
+    "since": 2003,
+    "status": "discontinued",
+    "type": "free",
+    "until": 2019,
+    "url": "https://www.aarnet.edu.au/"
+  },
+  "august.tw": {
+    "bgp": true,
+    "jurisdiction": "TW",
+    "locations": [
+      "Vancouver, CA",
+      "Fremont, US",
+      "Frankfurt, DE",
+      "Düsseldorf, DE",
+      "Taipei, TW"
+    ],
+    "pops": 5,
+    "prefixes": [
+      48
+    ],
+    "protocols": [
+      "6in4",
+      "wireguard"
+    ],
+    "rdns": true,
+    "remark": "August Internet (Taiwan) broker with rDNS and BGP; domain no longer resolves.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "https://www.august.tw/"
+  },
+  "bgptunnel.com": {
+    "asn": 209533,
+    "bgp": true,
+    "byoip": true,
+    "jurisdiction": "CH",
+    "protocols": [
+      "gre",
+      "wireguard"
+    ],
+    "public": true,
+    "remark": "Free IPv4/IPv6 BGP transit via tunnels for non-commercial and personal networks; own public ASN and prefix required (no address assignment); run by iFog GmbH (AS34927); absorbed the route48.org user base.",
+    "services": [
+      "transit"
+    ],
+    "since": 2024,
+    "status": "restricted",
+    "type": "free",
+    "url": "https://bgptunnel.com/"
+  },
+  "freetransit.ch": {
+    "bgp": true,
+    "byoip": true,
+    "jurisdiction": "FI",
+    "protocols": [
+      "4in6",
+      "6in4"
+    ],
+    "public": true,
+    "remark": "Free non-commercial IP transit via tunnel or IXP for users with own public ASN and routable space; manual review, downstream transit forbidden. Separate paid RIPE LIR sponsorship (ASN/PI/PA) by openfactory nordic oy.",
+    "services": [
+      "ix_peering",
+      "transit"
+    ],
+    "status": "restricted",
+    "type": "free",
+    "url": "https://www.freetransit.ch/"
+  },
+  "gogo6.com": {
+    "hosts": [
+      "freenet6.net",
+      "gogonet.gogo6.com"
+    ],
+    "jurisdiction": "CA",
+    "prefixes": [
+      56
+    ],
+    "protocols": [
+      "4in6",
+      "6in4",
+      "tsp"
+    ],
+    "rdns": true,
+    "remark": "Freenet6/gogoSERVER (Viagenie -> Hexago -> gogo6), the second IPv6 tunnel broker in production (1999); all services halted 2016-03-23.",
+    "since": 1999,
+    "status": "discontinued",
+    "type": "free",
+    "until": 2016,
+    "url": "http://gogo6.com/"
+  },
+  "iij.ad.jp": {
+    "jurisdiction": "JP",
+    "protocols": [
+      "6in4"
+    ],
+    "remark": "Internet Initiative Japan trial tunnel broker (registration required); no longer offered.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "https://www.iij.ad.jp/"
+  },
+  "internode.com.au": {
+    "jurisdiction": "AU",
+    "protocols": [
+      "6in4",
+      "tsp"
+    ],
+    "remark": "Internode (Australian ISP) IPv6 trial tunnel on gogoSERVER; discontinued.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "https://www.internode.com.au/"
+  },
+  "ipv6.sa": {
+    "jurisdiction": "SA",
+    "locations": [
+      "Riyadh, SA"
+    ],
+    "pops": 1,
+    "prefixes": [
+      64
+    ],
+    "protocols": [
+      "tsp"
+    ],
+    "remark": "CITC tunnel broker by the Saudi Arabia IPv6 Task Force (ddtb TSP implementation); domain no longer resolves.",
+    "since": 2010,
+    "status": "discontinued",
+    "type": "free",
+    "url": "http://ipv6.sa/"
+  },
+  "ipv6now.com.au": {
+    "jurisdiction": "AU",
+    "locations": [
+      "Sydney, AU"
+    ],
+    "pops": 1,
+    "prefixes": [
+      48,
+      64
+    ],
+    "protocols": [
+      "6in4",
+      "tsp"
+    ],
+    "rdns": true,
+    "remark": "IPv6 Now Pty Ltd; tunnel service no longer offered - company continues as IPv6 consultancy/training.",
+    "since": 2007,
+    "status": "discontinued",
+    "type": "free",
+    "url": "http://www.ipv6now.com.au/"
+  },
+  "ipv6vpn.ch": {
+    "allocation": [
+      "2a0a:e5c1::/32"
+    ],
+    "endpoint_update": "automatic",
+    "hosts": [
+      "ipv6onlyhosting.com",
+      "ungleich.ch"
+    ],
+    "jurisdiction": "CH",
+    "locations": [
+      "Linthal, CH"
+    ],
+    "nat": true,
+    "pops": 1,
+    "prefixes": [
+      48
+    ],
+    "protocols": [
+      "wireguard"
+    ],
+    "public": true,
+    "remark": "ungleich IPv6 VPN: paid WireGuard tunnel with routed /48 (CHF 120/yr + CHF 30 setup); free for ungleich VM customers; privacy-focused, no traffic logging.",
+    "signup_verification": "payment",
+    "status": "active",
+    "type": "paid",
+    "url": "https://ipv6vpn.ch/"
+  },
+  "nectec.or.th": {
+    "jurisdiction": "TH",
+    "protocols": [
+      "6in4"
+    ],
+    "remark": "NECTEC (Thailand research agency) tunnel broker; discontinued.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "https://www.nectec.or.th/"
+  },
+  "renater.fr": {
+    "jurisdiction": "FR",
+    "prefixes": [
+      56,
+      64
+    ],
+    "protocols": [
+      "tsp"
+    ],
+    "public": false,
+    "remark": "Renater (French research network) TSP broker for the R&E community; discontinued.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "https://www.renater.fr/"
+  },
+  "route48.org": {
+    "allocation": [
+      "2a06:a004::/29"
+    ],
+    "bgp": true,
+    "pops": 35,
+    "prefixes": [
+      44,
+      48
+    ],
+    "protocols": [
+      "6in4",
+      "gre",
+      "wireguard",
+      "zerotier"
+    ],
+    "rdns": true,
+    "remark": "Community broker (custom GRE/BIRD/WireGuard/ZeroTier stack) with 35+ sponsored PoPs; project closed - site redirects to bgptunnel.com (iFog GmbH).",
+    "since": 2022,
+    "status": "discontinued",
+    "type": "free",
+    "until": 2025,
+    "url": "https://route48.org/"
+  },
+  "route64.org": {
+    "allocation": [
+      "2a0f:5707:b000::/40"
+    ],
+    "api": true,
+    "asn": 212895,
+    "bandwidth_mbps": 200,
+    "bgp": true,
+    "byoip": true,
+    "endpoint_update": "automatic",
+    "hosts": [
+      "manager.route64.org"
+    ],
+    "jurisdiction": "DE",
+    "locations": [
+      "Frankfurt, DE",
+      "Amsterdam, NL",
+      "Paris, FR",
+      "London, GB",
+      "Dublin, IE",
+      "Stockholm, SE",
+      "Sandefjord, NO",
+      "Singapore, SG",
+      "Kansas City, US",
+      "Dallas, US",
+      "Fremont, US",
+      "Ashburn, US",
+      "Toronto, CA"
+    ],
+    "nat": true,
+    "pops": 13,
+    "prefixes": [
+      56
+    ],
+    "protocols": [
+      "6in4",
+      "gre",
+      "gretap",
+      "l2tpv3",
+      "vxlan",
+      "wireguard"
+    ],
+    "public": true,
+    "remark": "Non-profit fully automated tunnelbroker/peering/transit platform (VyOS+BIRD+VPP); routed /56 per tunnel, more on request; free IPv4/IPv6 transit up to 200M for own ASNs; automated BGP sessions and IRR/RPKI prefix filters.",
+    "services": [
+      "anycast",
+      "ix_peering",
+      "static_ips",
+      "transit"
+    ],
+    "signup_verification": "email",
+    "since": 2022,
+    "status": "active",
+    "type": "free",
+    "url": "https://route64.org/"
+  },
+  "singnet.com.sg": {
+    "jurisdiction": "SG",
+    "protocols": [
+      "6in4"
+    ],
+    "public": false,
+    "remark": "SingNet (Singtel) trial tunnel broker; discontinued.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "https://www.singnet.com.sg/"
+  },
+  "sixxs.net": {
+    "jurisdiction": "NL",
+    "prefixes": [
+      48,
+      64
+    ],
+    "protocols": [
+      "6in4",
+      "ayiya",
+      "heartbeat"
+    ],
+    "rdns": true,
+    "remark": "SixXS (sixxsd, ISP-hosted PoPs, AICCU/TIC provisioning, credit system); sunset 2017-06-06 after 17 years.",
+    "since": 2000,
+    "status": "discontinued",
+    "type": "free",
+    "until": 2017,
+    "url": "https://www.sixxs.net/"
+  },
+  "tb.cushell.com": {
+    "allocation": [
+      "2602:f9ba:b3::/48",
+      "2a06:de01:c1::/48",
+      "2a06:de01:c2::/48",
+      "2a0b:4e07:2d::/48",
+      "2a0f:85c1:51::/48",
+      "2a13:9500:48::/48"
+    ],
+    "api": true,
+    "asn": 209552,
+    "bgp": true,
+    "endpoint_update": "none",
+    "jurisdiction": "BE",
+    "locations": [
+      "London, GB",
+      "Amsterdam, NL"
+    ],
+    "nat": false,
+    "pops": 2,
+    "prefixes": [
+      64
+    ],
+    "protocols": [
+      "6in4",
+      "gre",
+      "wireguard"
+    ],
+    "public": true,
+    "rdns": true,
+    "remark": "GhostTunnel (AS209552) hobby network run by Jan Siroky, Belgium; publicly reachable IPv4 required (no CGNAT); Amsterdam PoP offline at check.",
+    "status": "active",
+    "tunnel_limit": 3,
+    "type": "free",
+    "url": "https://tb.cushell.com/"
+  },
+  "tb.netassist.ua": {
+    "asn": 8772,
+    "bgp": true,
+    "endpoint_update": "http",
+    "jurisdiction": "UA",
+    "locations": [
+      "Kyiv, UA"
+    ],
+    "nat": false,
+    "pops": 1,
+    "prefixes": [
+      64
+    ],
+    "protocols": [
+      "6in4"
+    ],
+    "public": true,
+    "rdns": true,
+    "remark": "NetAssist (AS8772); dynamic endpoints via custom auto-update URL (<60s); BGP-enabled tunnel on email request for own AS+space; paid transit/colocation sideline; hotmail/live.com signups not accepted.",
+    "since": 2011,
+    "status": "active",
+    "type": "free",
+    "url": "https://tb.netassist.ua/"
+  },
+  "tb.tahio.eu": {
+    "allocation": [
+      "2a05:1083:bef0::/44"
+    ],
+    "api": true,
+    "bandwidth_mbps": 50,
+    "bgp": true,
+    "endpoint_update": "dyndns2",
+    "locations": [
+      "Oslo, NO"
+    ],
+    "nat": true,
+    "pops": 1,
+    "prefixes": [
+      48,
+      64
+    ],
+    "protocols": [
+      "6in4",
+      "gre",
+      "wireguard"
+    ],
+    "public": true,
+    "remark": "Free dual-stack broker (Next.js/Supabase frontend, Go backend); three /64s per tunnel plus BGP-routed /48s; per-tunnel dyndns2 token for dynamic endpoints; tunnel space announced via sponsor AS198889 (JERDA-NET); hosted on gigahost.no.",
+    "since": 2025,
+    "status": "active",
+    "tunnel_limit": 2,
+    "type": "free",
+    "url": "https://tb.tahio.eu/"
+  },
+  "tunnel64.net": {
+    "asn": 35100,
+    "bandwidth_mbps": 100,
+    "bgp": true,
+    "byoip": true,
+    "endpoint_update": "dyndns2",
+    "jurisdiction": "SE",
+    "locations": [
+      "Stockholm, SE",
+      "Singapore, SG",
+      "Amsterdam, NL",
+      "Los Angeles, US"
+    ],
+    "nat": false,
+    "pops": 4,
+    "prefixes": [
+      64
+    ],
+    "protocols": [
+      "6in4"
+    ],
+    "public": true,
+    "rdns": true,
+    "remark": "AS35100 (Patrik Lagerman); static routed /64 per tunnel; paid /48 and site-to-site product announced; nodes deployed to order; BYOIP announcements under AS35100 or own-ASN BGP.",
+    "status": "active",
+    "tunnel_limit": 5,
+    "type": "free",
+    "url": "https://tunnel64.net/"
+  },
+  "tunnelbroker.ch": {
+    "allocation": [
+      "2a09:4c0::/32"
+    ],
+    "asn": 58057,
+    "bandwidth_mbps": 100,
+    "bgp": true,
+    "byoip": true,
+    "jurisdiction": "CH",
+    "protocols": [
+      "6in4",
+      "gre",
+      "openvpn",
+      "vxlan",
+      "wireguard"
+    ],
+    "public": false,
+    "remark": "Swiss BGP tunnels by Securebit AG (AS58057) for verified network operators; relaunch announced 'coming soon' (Oct 2026); no prefix assignment - own ASN and authoritative-IRR-verified space required; strict routing policy (no RADB/ALTDB, RPKI-invalid rejected).",
+    "signup_verification": "other",
+    "status": "restricted",
+    "type": "free",
+    "url": "https://www.tunnelbroker.ch/"
+  },
+  "tunnelbroker.net": {
+    "allocation": [
+      "2001:470::/32"
+    ],
+    "asn": 6939,
+    "bgp": true,
+    "endpoint_update": "dyndns2",
+    "hosts": [
+      "he.net",
+      "tunnelbroker.org"
+    ],
+    "jurisdiction": "US",
+    "locations": [
+      "Amsterdam, NL",
+      "Ashburn, US",
+      "Berlin, DE",
+      "Bogota, CO",
+      "Budapest, HU",
+      "Calgary, CA",
+      "Chicago, US",
+      "Dallas, US",
+      "Denver, US",
+      "Djibouti City, DJ",
+      "Dubai, AE",
+      "Düsseldorf, DE",
+      "Frankfurt, DE",
+      "Fremont, US",
+      "Hong Kong, HK",
+      "Honolulu, US",
+      "Johannesburg, ZA",
+      "Kansas City, US",
+      "Lisbon, PT",
+      "London, GB",
+      "Los Angeles, US",
+      "Miami, US",
+      "New York, US",
+      "Palo Alto, US",
+      "Paris, FR",
+      "Phoenix, US",
+      "Prague, CZ",
+      "San Jose, US",
+      "Seattle, US",
+      "Singapore, SG",
+      "Stockholm, SE",
+      "Sydney, AU",
+      "Tokyo, JP",
+      "Toronto, CA",
+      "Warsaw, PL",
+      "Winnipeg, CA",
+      "Zurich, CH"
+    ],
+    "nat": false,
+    "pops": 36,
+    "prefixes": [
+      48,
+      64
+    ],
+    "protocols": [
+      "6in4"
+    ],
+    "public": true,
+    "rdns": true,
+    "remark": "Hurricane Electric; /64 per tunnel plus /48 on request; free BGP over tunnel on request; endpoint IPv4 must answer ICMP; dyndns2-compatible endpoint update at ipv4.tunnelbroker.net/nic/update.",
+    "signup_verification": "email",
+    "since": 2002,
+    "status": "active",
+    "tunnel_limit": 5,
+    "type": "free",
+    "url": "https://tunnelbroker.net/"
+  },
+  "tunnelbroker.netnam.vn": {
+    "asn": 24173,
+    "jurisdiction": "VN",
+    "prefixes": [
+      64
+    ],
+    "protocols": [
+      "6in4"
+    ],
+    "remark": "NetNam (Vietnam); service site only resolves via IPv6 (2401:e800::2) and was unreachable at check - status unverified.",
+    "since": 2011,
+    "status": "active",
+    "type": "free",
+    "url": "http://tunnelbroker.netnam.vn/"
+  },
+  "ukerna.ac.uk": {
+    "jurisdiction": "GB",
+    "prefixes": [
+      56,
+      64
+    ],
+    "protocols": [
+      "6in4",
+      "tsp"
+    ],
+    "public": false,
+    "remark": "UKERNA/JANET (now Jisc) tunnel broker for UK research and education; discontinued.",
+    "status": "discontinued",
+    "type": "free",
+    "url": "http://www.ukerna.ac.uk/"
+  }
+}
