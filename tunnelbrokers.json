@@ -826,10 +826,11 @@
     "protocols": [
       "6in4"
     ],
-    "remark": "NetNam (Vietnam); host alive (ICMP responds on 210.86.228.4 / 2401:e800::2, 443 refused) but TCP 80 times out on both stacks - web service dead, registration impossible (verified 2026-10).",
+    "remark": "NetNam (Vietnam); host alive (ICMP responds on 210.86.228.4 / 2401:e800::2, 443 refused) but TCP 80 times out on both stacks - web service dead (verified 2026-10); last archive.org snapshot 2017.",
     "since": 2011,
     "status": "discontinued",
     "type": "free",
+    "until": 2017,
     "url": "http://tunnelbroker.netnam.vn/"
   },
   "tunnelbroker.se": {
