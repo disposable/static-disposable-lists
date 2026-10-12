@@ -826,9 +826,9 @@
     "protocols": [
       "6in4"
     ],
-    "remark": "NetNam (Vietnam); service site resolves (210.86.228.4 / 2401:e800::2) but does not respond on either stack - status unverified.",
+    "remark": "NetNam (Vietnam); host alive (ICMP responds on 210.86.228.4 / 2401:e800::2, 443 refused) but TCP 80 times out on both stacks - web service dead, registration impossible (verified 2026-10).",
     "since": 2011,
-    "status": "active",
+    "status": "discontinued",
     "type": "free",
     "url": "http://tunnelbroker.netnam.vn/"
   },
