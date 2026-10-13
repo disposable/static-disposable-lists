@@ -384,7 +384,7 @@
       "wireguard"
     ],
     "public": true,
-    "remark": "Free WireGuard IPv6 connectivity by Taiwan Telecom, Inc. (AS38047); /128 single address per peer (no routed prefix); 100 GB free traffic per peer/month, paid add-ons (custom firewall $1/peer/mo, auto-renewal $1/peer/yr, extra traffic $3/TB); free peers expire unless manually renewed every 180 days (paid auto-renewal skips this); QR-code setup; free tier restricts ports 80/443 to Cloudflare traffic and blocks SMTP; LA PoP removed after a provider change; multilingual site (EN/zh-TW/zh-CN/VI/TH).",
+    "remark": "Free WireGuard IPv6 connectivity by Taiwan Telecom, Inc. (AS38047); /128 single address per peer (no routed prefix); 100 GB free traffic per peer/month, paid add-ons (custom firewall $1/peer/mo, auto-renewal $1/peer/yr, extra traffic $3/TB); free peers expire unless manually renewed every 180 days (paid auto-renewal skips this); QR-code setup; free tier restricts ports 80/443 to Cloudflare traffic and blocks SMTP; signup quirk: passwords containing special characters are rejected with a generic 'enter all required fields' error (verified 2026-10); LA PoP removed after a provider change; multilingual site (EN/zh-TW/zh-CN/VI/TH).",
     "signup_verification": "email",
     "since": 2024,
     "status": "active",
