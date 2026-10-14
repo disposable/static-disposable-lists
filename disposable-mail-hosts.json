@@ -39,6 +39,14 @@
       "erinn.biz"
     ]
   },
+  "fakemail.app": {
+    "ip_addresses": [
+      "173.212.194.219"
+    ],
+    "mx_hosts": [
+      "mail.fakemail.app"
+    ]
+  },
   "firstmail.ltd": {
     "ip_ranges": [
       "195.123.189.240/29",
