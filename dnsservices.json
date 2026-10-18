@@ -7399,6 +7399,7 @@
     "url": "https://freewebhostingarea.com/"
   },
   "frii.site": {
+    "api": true,
     "cloud": "AWS",
     "costs": "free",
     "hosted": "US",
@@ -7408,14 +7409,19 @@
     "jurisdiction": "US",
     "public": true,
     "record_types": [
-      "NS",
       "A",
-      "CNAME"
+      "AAAA",
+      "CNAME",
+      "NS",
+      "TXT"
     ],
-    "remark": "Free subdomain registration supporting NS records.",
+    "remark": "Free subdomain registrar with dashboard and documented REST API (api.frii.site, X-API-Token auth); supports A/AAAA/CNAME/TXT/NS records.",
     "signup_verification": "email",
     "status": "active",
     "type": "registry",
+    "update_protocols": [
+      "http"
+    ],
     "updates": "static",
     "url": "https://frii.site"
   },
