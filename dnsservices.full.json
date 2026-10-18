@@ -54160,10 +54160,10 @@
       "trycloudflare.com"
     ],
     "public": true,
-    "remark": "Cloudflare quick tunnels — Ephemeral random *.trycloudflare.com hostnames, no account",
+    "remark": "Cloudflare Quick Tunnels - ephemeral random *.trycloudflare.com hostnames for cloudflared tunnel endpoints, no account.",
     "signup_verification": "none",
     "status": "active",
-    "type": "ddns",
+    "type": "hosting",
     "updates": "static"
   },
   "tumblr.com": {
