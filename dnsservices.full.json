@@ -1401,7 +1401,7 @@
     "url": "https://www.angelcam.com/"
   },
   "anondns.net": {
-    "api": false,
+    "api": true,
     "costs": "free",
     "hosted": "US",
     "hosts": [
@@ -1412,12 +1412,15 @@
       "vital.sh"
     ],
     "public": true,
-    "remark": "AnonDNS - anonymous free DNS, no account needed.",
+    "remark": "AnonDNS - anonymous free dynamic DNS, no account needed; token-based HTTP update endpoint (/api/set/name/token/a/ip).",
     "signup_verification": [
       "none"
     ],
     "status": "active",
-    "type": "dns-only",
+    "type": "ddns",
+    "update_protocols": [
+      "http"
+    ],
     "updates": "both",
     "url": "https://anondns.net/"
   },
@@ -3640,9 +3643,9 @@
       "crafting.xyz"
     ],
     "public": true,
-    "remark": "Game/community dynamic DNS service",
+    "remark": "Game/community dynamic DNS service (Now-DNS-operated domain). Site defunct - domain showed a lander page since ~2025 and no longer responds.",
     "signup_verification": "email",
-    "status": "active",
+    "status": "discontinued",
     "type": "ddns",
     "updates": "both",
     "url": "https://crafting.xyz"
@@ -5401,7 +5404,7 @@
     "url": "http://dynip.com/"
   },
   "dynnamn.ru": {
-    "api": false,
+    "api": true,
     "costs": "free",
     "hosted": "DE",
     "hosts": [
@@ -5412,10 +5415,13 @@
       "alviy.com"
     ],
     "public": true,
-    "remark": "Russian dynamic-DNS service; now redirects to Alviy DNS services (alviy.com).",
+    "remark": "Russian dynamic-DNS service; now redirects to Alviy DNS services (alviy.com) - OpenAPI 3 REST API for zone management and DDNS updates.",
     "signup_verification": "email",
     "status": "active",
     "type": "ddns",
+    "update_protocols": [
+      "http"
+    ],
     "updates": "both",
     "url": "https://www.alviy.com/en/"
   },
@@ -6298,7 +6304,7 @@
     "url": "https://fermax.com/"
   },
   "feste-ip.net": {
-    "api": false,
+    "api": true,
     "costs": "paid",
     "hosted": "DE",
     "hosts": [
@@ -6310,13 +6316,16 @@
       "c-srv.de"
     ],
     "public": true,
-    "remark": "Fixed IPv4 via tunnel/VPN service (Germany).",
+    "remark": "Fixed IPv4 via tunnel/VPN service (Germany); DynDNS2-compatible update endpoint (members.feste-ip.net/nic/update), router-supported.",
     "signup_verification": [
       "payment"
     ],
     "status": "active",
     "type": "ddns",
-    "updates": "static",
+    "update_protocols": [
+      "dyndns2"
+    ],
+    "updates": "both",
     "url": "https://www.feste-ip.net/"
   },
   "fh-muenster.de": {
@@ -48250,7 +48259,7 @@
     "url": "https://localtonet.com/"
   },
   "lockip.net": {
-    "api": false,
+    "api": true,
     "cloud": "Hetzner",
     "costs": "freemium",
     "hosted": "US",
@@ -48262,10 +48271,14 @@
       "certadns.com"
     ],
     "public": true,
-    "remark": "LockIP DDNS — rebranded to CertaDNS (certadns.com). Free tier: 'Free for life — no monthly re-confirmation, no expiry.'",
+    "remark": "LockIP DDNS - rebranded to CertaDNS (certadns.com); DynDNS2/afraid.org-compatible update endpoints plus HTTP API (API-key auth on paid tiers). Free tier: 'Free for life — no monthly re-confirmation, no expiry.'",
     "signup_verification": "email",
     "status": "active",
     "type": "ddns",
+    "update_protocols": [
+      "dyndns2",
+      "http"
+    ],
     "updates": "both",
     "url": "https://certadns.com/"
   },
@@ -51187,11 +51200,11 @@
       "plako.net"
     ],
     "public": true,
-    "remark": "plako.net free DDNS/DNS hosting.",
+    "remark": "plako.net free DDNS/DNS hosting; natrofa.com zone still served by plako.net nameservers but the registration portal (dyndns.plako.net) is gone and the main site no longer mentions the service.",
     "signup_verification": [
       "email"
     ],
-    "status": "active",
+    "status": "no_new_registrations",
     "type": "ddns",
     "updates": "both",
     "url": "https://plako.net/"
@@ -52916,7 +52929,7 @@
     "url": "https://siteleaf.com/"
   },
   "sitelutions.com": {
-    "api": false,
+    "api": true,
     "cloud": "Cloudflare",
     "costs": "free",
     "hosted": "CA",
@@ -52935,12 +52948,16 @@
       "MX",
       "TXT"
     ],
-    "remark": "Sitelutions free DNS hosting and URL forwarding.",
+    "remark": "Sitelutions free DNS hosting and URL forwarding; DNS API access gated to Premium/Insider's Club membership, DDNS update clients supported.",
     "signup_verification": [
       "email"
     ],
     "status": "active",
     "type": "dns-only",
+    "update_protocols": [
+      "dyndns2",
+      "http"
+    ],
     "updates": "both",
     "url": "https://www.sitelutions.com/"
   },
@@ -55590,9 +55607,9 @@
       "yi.org"
     ],
     "public": true,
-    "remark": "Long-running free hostname service (since 1999); dynamic DNS capable. Zone resolves but www.yi.org site times out at check.",
+    "remark": "Long-running free hostname service (since 1999); dynamic DNS capable. Zone still delegated and answering (SOA serial 2026-08) but www.yi.org registration portal is unresponsive.",
     "signup_verification": "email",
-    "status": "active",
+    "status": "no_new_registrations",
     "type": "ddns",
     "updates": "both",
     "url": "http://www.yi.org"
