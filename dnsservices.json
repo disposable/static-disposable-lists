@@ -1534,7 +1534,7 @@
     "status": "active",
     "type": "hosting",
     "updates": "static",
-    "url": "https://appdomain.cloud/"
+    "url": "https://cloud.ibm.com/"
   },
   "apphud.com": {
     "cloud": "Cloudflare",
@@ -2659,7 +2659,7 @@
     "status": "active",
     "type": "registry",
     "updates": "static",
-    "url": "https://cc.ua"
+    "url": "https://nic.ua/"
   },
   "cctld.ru": {
     "hosted": "RU",
@@ -3123,8 +3123,8 @@
     ],
     "jurisdiction": "US",
     "public": true,
-    "remark": "CloudClusters hosting service hostnames.",
-    "status": "active",
+    "remark": "CloudClusters hosting service hostnames. Zone still served by own nameservers but web portal dead on all endpoints.",
+    "status": "no_new_registrations",
     "type": "hosting",
     "updates": "static",
     "url": "https://www.cloudclusters.net/"
@@ -3267,7 +3267,7 @@
     "status": "active",
     "type": "hosting",
     "updates": "static",
-    "url": "https://cloudwaysapps.com/"
+    "url": "https://www.cloudways.com/"
   },
   "clovyr.io": {
     "cloud": "Cloudflare",
@@ -3532,7 +3532,7 @@
     "status": "active",
     "type": "hosting",
     "updates": "static",
-    "url": "https://contaboserver.net/"
+    "url": "https://contabo.com/"
   },
   "contentful.com": {
     "cloud": "AWS",
@@ -6048,14 +6048,14 @@
       "ez-dns.com"
     ],
     "public": false,
-    "remark": "iDVR CCTV DDNS; hostnames created via vendor interface only.",
+    "remark": "iDVR CCTV DDNS; hostnames created via vendor interface only. Control panel at i-dvr.net (no www).",
     "signup_verification": [
       "other"
     ],
     "status": "active",
     "type": "vendor",
     "updates": "dynamic",
-    "url": "https://www.i-dvr.net/"
+    "url": "http://i-dvr.net/"
   },
   "ez-ip.net": {
     "api": true,
@@ -8586,7 +8586,7 @@
     "status": "active",
     "type": "hosting",
     "updates": "static",
-    "url": "https://hostingersite.com/"
+    "url": "https://www.hostinger.com/"
   },
   "hostyhosting.com": {
     "cloud": "AWS",
@@ -8595,11 +8595,11 @@
       "hostyhosting.io"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator HostyHosting.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator HostyHosting. Site shows dormant 'Coming Soon' page; public registration never opened.",
+    "status": "no_new_registrations",
     "type": "hosting",
     "updates": "static",
-    "url": "https://hostyhosting.com/"
+    "url": "https://www.hostyhosting.com/"
   },
   "hs-heilbronn.de": {
     "hosted": "DE",
@@ -8713,8 +8713,8 @@
     ],
     "jurisdiction": "JP",
     "public": true,
-    "remark": "Long-running Japanese free dynamic DNS service.",
-    "status": "active",
+    "remark": "Long-running Japanese free dynamic DNS service. Service dead: domain parked on registrar nameservers (value-domain.com), SOA frozen 2020, hostnames no longer resolve.",
+    "status": "discontinued",
     "type": "ddns",
     "updates": "dynamic",
     "url": "http://ieserver.net/"
@@ -9014,7 +9014,7 @@
     "status": "active",
     "type": "vendor",
     "updates": "static",
-    "url": "https://iodata.com/"
+    "url": "https://www.iodata.com/"
   },
   "ionos.com": {
     "api": true,
@@ -9405,7 +9405,7 @@
     "status": "active",
     "type": "hosting",
     "updates": "static",
-    "url": "https://jimdofree.com/"
+    "url": "https://www.jimdo.com/"
   },
   "jimdosite.com": {
     "api": true,
@@ -12157,7 +12157,7 @@
     "status": "active",
     "type": "hosting",
     "updates": "static",
-    "url": "https://nxcli.io/"
+    "url": "https://www.nexcess.net/"
   },
   "nya.je": {
     "api": true,
@@ -13987,11 +13987,11 @@
       "nz.basketball"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator Roar Domains LLC.",
-    "status": "active",
+    "remark": "Roar Domains LLC third-level suffixes under the .basketball gTLD (aus.basketball, nz.basketball). PSL-listed but suffix zones not delegated and get.basketball only sells .basketball gTLD names now.",
+    "status": "no_new_registrations",
     "type": "hosting",
     "updates": "static",
-    "url": "https://roar.basketball/"
+    "url": "https://get.basketball/"
   },
   "robotpayment.co.jp": {
     "cloud": "AWS",
@@ -14669,11 +14669,11 @@
       "shopitsite.com"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator Shopit.",
-    "status": "active",
+    "remark": "Shopit e-commerce shop subdomains (shopitsite.com). *.shopitsite.com still resolves via Google hosting; storefront site dead, operator alive at shopit.se.",
+    "status": "no_new_registrations",
     "type": "hosting",
     "updates": "static",
-    "url": "https://shopitcommerce.com/"
+    "url": "https://shopit.se/"
   },
   "shopware.com": {
     "cloud": "Fastly",
@@ -14863,7 +14863,7 @@
     "status": "active",
     "type": "registry",
     "updates": "static",
-    "url": "https://smallregistry.net/"
+    "url": "https://www.smallregistry.net/"
   },
   "smoove.io": {
     "cloud": "Cloudflare",
@@ -15005,8 +15005,8 @@
       "spawnbase.app"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator Spawnbase.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator Spawnbase. spawnbase.app zone lives on Cloudflare but all marketing URLs redirect to unresolvable apex - site misconfigured/unreachable.",
+    "status": "no_new_registrations",
     "type": "hosting",
     "updates": "static",
     "url": "https://spawnbase.ai/"
@@ -15245,8 +15245,8 @@
       "novecore.site"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator Staclar.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator Staclar (musician.io/novecore.site - Novecore music platform). Zones still delegated but SOA serials frozen 2021-12 and operator site dead.",
+    "status": "no_new_registrations",
     "type": "hosting",
     "updates": "static",
     "url": "https://staclar.com/"
@@ -16157,7 +16157,7 @@
     "status": "active",
     "type": "registry",
     "updates": "static",
-    "url": "https://udr.hk.com/"
+    "url": "https://www.hk.com/"
   },
   "udr.org.yt": {
     "cloud": "Cloudflare",
@@ -16404,7 +16404,7 @@
     "status": "active",
     "type": "registry",
     "updates": "static",
-    "url": "https://us.kg"
+    "url": "https://register.us.kg/"
   },
   "us.org": {
     "cloud": "AWS",
@@ -17012,8 +17012,8 @@
       "pages.wiardweb.com"
     ],
     "public": true,
-    "remark": "PSL-listed public suffix(es); operator WIARD Enterprises.",
-    "status": "active",
+    "remark": "PSL-listed public suffix(es); operator Wiard Web. Web service dead: apex, www and pages.wiardweb.com all unreachable though DNS still resolves.",
+    "status": "discontinued",
     "type": "hosting",
     "updates": "static",
     "url": "https://wiardweb.com/"
