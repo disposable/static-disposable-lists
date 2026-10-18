@@ -638,8 +638,7 @@
                         (currentFilters.region === 'eu' ? EU.has(juris) : juris && !EU.has(juris))) &&
                     (currentFilters.reval === 'all' ||
                         (currentFilters.reval === 'required' ? reval === 'required' : reval === 'none')) &&
-                    (!currentSearch ||
-                        row.dataset.name.includes(currentSearch) || row.dataset.hosts.includes(currentSearch));
+                    (!currentSearch || row.dataset.search.includes(currentSearch));
 
                 row.style.display = show ? '' : 'none';
                 if (show) visible++;
@@ -846,6 +845,7 @@
                             <tr class="service-row"
                                 data-name="${esc(s.name.toLowerCase())}"
                                 data-hosts="${esc((s.hosts || []).join(' ').toLowerCase())}"
+                                data-search="${esc([s.name, s.url, s.remark, ...(s.hosts || []), ...(s.ns_suffixes || []), ...(s.ns_hosts || []), ...(s.old_hosts || [])].filter(Boolean).join(' ').toLowerCase())}"
                                 data-status="${esc(status)}"
                                 data-type="${esc(s.type || 'unknown')}"
                                 data-costs="${esc(s.costs || 'unknown')}"

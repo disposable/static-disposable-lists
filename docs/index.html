@@ -627,8 +627,7 @@
                 const juris = row.dataset.juris;
                 const regionMatch = currentFilters.region === 'all' ||
                     (currentFilters.region === 'eu' ? EU.has(juris) : juris && !EU.has(juris));
-                const searchMatch = !currentSearch ||
-                    row.dataset.name.includes(currentSearch) || row.dataset.hosts.includes(currentSearch);
+                const searchMatch = !currentSearch || row.dataset.search.includes(currentSearch);
 
                 const show = typeMatch && costsMatch && verifyMatch && tierMatch && regionMatch && searchMatch;
                 row.style.display = show ? '' : 'none';
@@ -845,6 +844,7 @@
                                 <tr class="service-row"
                                     data-name="${esc(s.name.toLowerCase())}"
                                     data-hosts="${esc((s.hosts || []).join(' ').toLowerCase())}"
+                                    data-search="${esc([s.name, s.remark, ...(s.hosts || []), ...(s.mx_hosts || []), ...(s.old_hosts || [])].filter(Boolean).join(' ').toLowerCase())}"
                                     data-type="${esc(s.type || 'unknown')}"
                                     data-costs="${esc(s.costs || 'unknown')}"
                                     data-verify="${esc(verifications.join(',') || 'unset')}"
