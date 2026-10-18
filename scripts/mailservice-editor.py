@@ -33,19 +33,20 @@ def load_schema(schema_path: str) -> dict:
         return json.load(f)
 
 
-def get_allowed_values(schema_path: str = "schemas/mailservices.schema.json") -> tuple[list[str], list[str]]:
-    """Return (types, verifications) allowed by the schema."""
+def get_allowed_values(schema_path: str = "schemas/mailservices.schema.json") -> tuple[list[str], list[str], list[str]]:
+    """Return (costs, types, verifications) allowed by the schema."""
     schema = load_schema(schema_path)
     pattern_props = schema.get("patternProperties", {})
 
+    costs: list[str] = []
     types: list[str] = []
     verifications: set[str] = set()
 
     for prop_schema in pattern_props.values():
         props = prop_schema.get("properties", {})
 
-        type_prop = props.get("type", {})
-        types = type_prop.get("enum", [])
+        costs = props.get("costs", {}).get("enum", [])
+        types = props.get("type", {}).get("enum", [])
 
         verify_prop = props.get("signup_verification", {})
         if "enum" in verify_prop:
@@ -54,15 +55,17 @@ def get_allowed_values(schema_path: str = "schemas/mailservices.schema.json") ->
             for sub in verify_prop["oneOf"]:
                 verifications.update(sub.get("enum", []))
 
-    return types, sorted(verifications)
+    return costs, types, sorted(verifications)
 
 
 def _validate_and_normalize(
     service: str,
     hosts: list[str] | None,
     mx_hosts: list[str] | None,
-    account_type: str | None,
+    costs: str | None,
+    service_type: str | None,
     signup_verification: str | None,
+    allowed_costs: list[str],
     allowed_types: list[str],
     allowed_verifications: list[str],
 ) -> tuple[list[str] | None, list[str] | None]:
@@ -81,8 +84,12 @@ def _validate_and_normalize(
             sys.exit(1)
         mx_hosts = sorted(set(mx_hosts))
 
-    if account_type and account_type not in allowed_types:
-        print(f"Invalid account type: {account_type}. Allowed: {allowed_types}")
+    if costs and costs not in allowed_costs:
+        print(f"Invalid costs: {costs}. Allowed: {allowed_costs}")
+        sys.exit(1)
+
+    if service_type and service_type not in allowed_types:
+        print(f"Invalid service type: {service_type}. Allowed: {allowed_types}")
         sys.exit(1)
 
     if signup_verification and signup_verification not in allowed_verifications:
@@ -97,15 +104,16 @@ def update_json(
     service: str,
     hosts: list[str] | None = None,
     mx_hosts: list[str] | None = None,
-    account_type: str | None = None,
+    costs: str | None = None,
+    service_type: str | None = None,
     signup_verification: str | None = None,
     schema_path: str = "schemas/mailservices.schema.json",
 ) -> None:
     """Update or add a service entry in the JSON file."""
-    allowed_types, allowed_verifications = get_allowed_values(schema_path)
+    allowed_costs, allowed_types, allowed_verifications = get_allowed_values(schema_path)
     hosts, mx_hosts = _validate_and_normalize(
-        service, hosts, mx_hosts, account_type, signup_verification,
-        allowed_types, allowed_verifications,
+        service, hosts, mx_hosts, costs, service_type, signup_verification,
+        allowed_costs, allowed_types, allowed_verifications,
     )
 
     data = load_json(file_path)
@@ -128,8 +136,10 @@ def update_json(
         if mx_hosts:
             data[service]["mx_hosts"] = mx_hosts
 
-    if account_type:
-        data[service]["type"] = account_type
+    if costs:
+        data[service]["costs"] = costs
+    if service_type:
+        data[service]["type"] = service_type
     if signup_verification:
         data[service]["signup_verification"] = [signup_verification]
 
@@ -145,7 +155,8 @@ def main() -> None:
     parser.add_argument("--host", action="append", default=[], help="Hostnames (can be used multiple times).")
     parser.add_argument("--mx-host", action="append", default=[], help="MX hostnames (can be used multiple times).")
     parser.add_argument("--stdin", action="store_true", help="Read hosts from stdin (line by line).")
-    parser.add_argument("--type", help="Account type.")
+    parser.add_argument("--costs", help="Pricing classification (free/paid/freemium).")
+    parser.add_argument("--type", help="Service category (mailbox/forwarding/isp/hosting/reserved).")
     parser.add_argument("--verify", help="Signup verification type.")
     parser.add_argument("--schema", default="schemas/mailservices.schema.json", help="Path to the schema file.")
 
@@ -163,6 +174,7 @@ def main() -> None:
         args.service,
         all_hosts,
         all_mx_hosts,
+        args.costs,
         args.type,
         args.verify,
         args.schema,

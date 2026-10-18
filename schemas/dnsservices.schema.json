@@ -50,10 +50,15 @@
           "description": "Service lifecycle status: active = open registrations; restricted = signup gated (device ownership, invite-only, manual approval); no_new_registrations = existing hostnames resolve but new ones cannot be created; discontinued = service shut down",
           "enum": ["active", "restricted", "no_new_registrations", "discontinued"]
         },
+        "costs": {
+          "type": "string",
+          "description": "Pricing classification of the service itself",
+          "enum": ["free", "paid", "freemium"]
+        },
         "type": {
           "type": "string",
-          "description": "Pricing classification: free/paid/freemium providers, reserved = special-use domains",
-          "enum": ["free", "paid", "freemium", "reserved"]
+          "description": "Service category: ddns = dedicated dynamic-DNS hostname service; dns-only = authoritative DNS hosting for customer-owned domains; hosting = web hosting/PaaS/site-builder where subdomains are a product byproduct; registry = shared-suffix registry where the subdomain itself is the product; vendor = hostnames bound to vendor hardware/subscription; redirect = URL redirection/forwarding service; reserved = infrastructure/security-boundary suffix, not publicly registrable",
+          "enum": ["ddns", "dns-only", "hosting", "registry", "vendor", "redirect", "reserved"]
         },
         "updates": {
           "type": "string",

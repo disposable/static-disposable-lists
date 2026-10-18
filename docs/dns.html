@@ -197,6 +197,30 @@
             background: #f6f8fa;
             color: var(--text-secondary);
         }
+        .badge-ddns {
+            background: #ddf4ff;
+            color: #0969da;
+        }
+        .badge-dns-only {
+            background: #dafbe1;
+            color: var(--success-color);
+        }
+        .badge-hosting {
+            background: #ffe9d9;
+            color: #bc4c00;
+        }
+        .badge-registry {
+            background: #fbefff;
+            color: #8250df;
+        }
+        .badge-vendor {
+            background: #f6f8fa;
+            color: var(--text-secondary);
+        }
+        .badge-redirect {
+            background: #ffe4f0;
+            color: #bf3989;
+        }
         .badge-status-active {
             background: #dafbe1;
             color: var(--success-color);
@@ -470,10 +494,20 @@
                         <div class="filter-group">
                             <label>Type:</label>
                             <button class="filter-btn active" data-filter="type" data-value="all" title="Show services of all types">All</button>
-                            <button class="filter-btn" data-filter="type" data-value="free" title="Free providers">Free</button>
-                            <button class="filter-btn" data-filter="type" data-value="freemium" title="Free tier with paid upgrades">Freemium</button>
-                            <button class="filter-btn" data-filter="type" data-value="paid" title="Paid providers">Paid</button>
-                            <button class="filter-btn" data-filter="type" data-value="reserved" title="Special-use domains">Reserved</button>
+                            <button class="filter-btn" data-filter="type" data-value="ddns" title="Dedicated dynamic-DNS hostname services">DDNS</button>
+                            <button class="filter-btn" data-filter="type" data-value="dns-only" title="Authoritative DNS hosting for customer-owned domains">DNS-only</button>
+                            <button class="filter-btn" data-filter="type" data-value="hosting" title="Web hosting/PaaS/site-builder subdomains">Hosting</button>
+                            <button class="filter-btn" data-filter="type" data-value="registry" title="Shared-suffix registries - the subdomain itself is the product">Registry</button>
+                            <button class="filter-btn" data-filter="type" data-value="vendor" title="Hostnames bound to vendor hardware/subscription">Vendor</button>
+                            <button class="filter-btn" data-filter="type" data-value="redirect" title="URL redirection/forwarding services">Redirect</button>
+                            <button class="filter-btn" data-filter="type" data-value="reserved" title="Infrastructure/security-boundary suffixes - not publicly registrable">Reserved</button>
+                        </div>
+                        <div class="filter-group">
+                            <label>Costs:</label>
+                            <button class="filter-btn active" data-filter="costs" data-value="all" title="Show providers of all pricing classes">All</button>
+                            <button class="filter-btn" data-filter="costs" data-value="free" title="Free providers">Free</button>
+                            <button class="filter-btn" data-filter="costs" data-value="freemium" title="Free tier with paid upgrades">Freemium</button>
+                            <button class="filter-btn" data-filter="costs" data-value="paid" title="Paid providers">Paid</button>
                         </div>
                         <div class="filter-group">
                             <label>Updates:</label>
@@ -554,7 +588,7 @@
 
         initTheme();
 
-        let currentFilters = { status: 'all', type: 'all', updates: 'all', api: 'all', access: 'all', reval: 'all', region: 'all' };
+        let currentFilters = { status: 'all', type: 'all', costs: 'all', updates: 'all', api: 'all', access: 'all', reval: 'all', region: 'all' };
         let currentSearch = '';
         const EU = new Set(['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE']);
         function flag(cc) {
@@ -586,6 +620,7 @@
             rows.forEach(row => {
                 const status = row.dataset.status;
                 const type = row.dataset.type;
+                const costs = row.dataset.costs;
                 const updates = row.dataset.updates;
                 const api = row.dataset.api;
                 const access = row.dataset.access;
@@ -595,6 +630,7 @@
                 const show =
                     (currentFilters.status === 'all' || status === currentFilters.status) &&
                     (currentFilters.type === 'all' || type === currentFilters.type) &&
+                    (currentFilters.costs === 'all' || costs === currentFilters.costs) &&
                     (currentFilters.updates === 'all' || updates === currentFilters.updates) &&
                     (currentFilters.api === 'all' || api === currentFilters.api) &&
                     (currentFilters.access === 'all' || access === currentFilters.access) &&
@@ -720,7 +756,7 @@
 
             for (const data of Object.values(services)) {
                 totalDomains += data.hosts_total || (data.hosts || []).length;
-                if (data.type === 'free') freeProviders++;
+                if (data.costs === 'free') freeProviders++;
                 if (data.public !== false) publicProviders++;
                 if (data.api) apiProviders++;
                 if (statusOf(data) === 'discontinued') discontinued++;
@@ -812,6 +848,7 @@
                                 data-hosts="${esc((s.hosts || []).join(' ').toLowerCase())}"
                                 data-status="${esc(status)}"
                                 data-type="${esc(s.type || 'unknown')}"
+                                data-costs="${esc(s.costs || 'unknown')}"
                                 data-updates="${esc(s.updates || 'unknown')}"
                                 data-api="${apiYes ? 'yes' : 'no'}"
                                 data-access="${isPublic ? 'public' : 'private'}"
@@ -832,7 +869,8 @@
                                 </td>
                                 <td class="geo-cell">${s.jurisdiction ? `<span title="jurisdiction (legal seat): ${esc(s.jurisdiction)}">${flag(s.jurisdiction)}</span>` : '<span class="remark">?</span>'}${s.hosted || s.cloud ? `<span class="geo-sub" title="hosted: ${esc(s.hosted || 'unknown')}${s.cloud ? ', via ' + esc(s.cloud) : ''}">${s.hosted ? flag(s.hosted) : ''}${s.cloud ? ' ' + esc(s.cloud) : ''}</span>` : ''}</td>
                                 <td><span class="badge badge-status-${esc(status)}">${esc(STATUS_LABELS[status] || status)}</span></td>
-                                <td><span class="badge badge-${esc(s.type || 'unknown')}">${esc(s.type || 'unknown')}</span></td>
+                                <td><span class="badge badge-${esc(s.type || 'unknown')}">${esc(s.type || 'unknown')}</span>
+                                    ${s.costs ? `<span class="badge badge-${esc(s.costs)}">${esc(s.costs)}</span>` : ''}</td>
                                 <td><span class="badge badge-unknown">${esc(s.updates || '?')}</span></td>
                                 <td><span class="badge badge-${apiYes ? 'yes' : 'no'}">${apiYes ? 'yes' : 'no'}</span></td>
                                 <td><span class="badge badge-${isPublic ? 'yes' : 'private'}">${isPublic ? 'public' : 'private'}</span></td>
@@ -939,7 +977,7 @@
 
             let q = '';
             if (tabId === 'dns-services') {
-                ['status', 'type', 'updates', 'api', 'access', 'reval', 'region'].forEach(f => {
+                ['status', 'type', 'costs', 'updates', 'api', 'access', 'reval', 'region'].forEach(f => {
                     if (currentFilters[f] !== 'all') params.set(f, currentFilters[f]);
                 });
                 q = currentSearch;
@@ -964,7 +1002,7 @@
             const q = params.get('q') || '';
 
             if (tabId === 'dns-services') {
-                ['status', 'type', 'updates', 'api', 'access', 'reval', 'region'].forEach(f => {
+                ['status', 'type', 'costs', 'updates', 'api', 'access', 'reval', 'region'].forEach(f => {
                     const v = params.get(f);
                     if (!v) return;
                     const btn = document.querySelector(`.filter-btn[data-filter="${f}"][data-value="${CSS.escape(v)}"]`);

@@ -23,12 +23,12 @@ Static data repository for disposable email domains and mail service definitions
 
 ### mailservices.json classification
 
-The `type` and `signup_verification` fields determine how [disposable](https://github.com/disposable/disposable) treats each provider's hosts:
+The `type` (service category: `mailbox`/`forwarding`/`isp`/`hosting`/`reserved`), `costs` (pricing: `free`/`paid`/`freemium`) and `signup_verification` fields determine how [disposable](https://github.com/disposable/disposable) treats each provider's hosts:
 
 | Classification | Rule |
 |----------------|------|
-| whitelist | `free`/`paid`/`reserved` with verified signup (`mobile`/`phone`/`sms`/`payment`/`other`) or unset verification |
-| strict tier (greylist) | `forwarding` always; `free`/`paid` offering `none` or `email` signup verification |
+| whitelist | priced services (`free`/`paid`/`freemium` costs) or `type: reserved` with verified signup (`mobile`/`phone`/`sms`/`payment`/`other`) or unset verification |
+| strict tier (greylist) | `type: forwarding` always; priced services offering `none` or `email` signup verification |
 | excluded entirely | `discontinued: true` services feed neither tier |
 
 `free.txt`/`free.csv` remain as broad reference lists when researching new catalog entries.
@@ -43,7 +43,8 @@ Key fields per provider:
 |-------|---------|
 | `hosts` / `old_hosts` | Domains under which hostnames are issued / retired domains |
 | `status` | `active`, `restricted` (gated signup), `no_new_registrations`, `discontinued` |
-| `type` | `free`, `paid`, `freemium`, `reserved` |
+| `type` | Service category: `ddns` (dedicated dynamic-DNS hostnames), `dns-only` (authoritative DNS for own domains), `hosting` (web hosting/PaaS/site-builder subdomains), `registry` (shared-suffix registries), `vendor` (hardware/subscription-bound hostnames), `redirect` (URL forwarding), `reserved` (non-registrable infra suffixes) |
+| `costs` | `free`, `paid`, `freemium` |
 | `updates` | `dynamic` (DDNS clients), `static` (records only), `both` |
 | `public` | `false` when hostnames can only be created via vendor hardware/interface or gated access |
 | `api` / `update_protocols` | Programmatic access (`dyndns2`, `http`, `rfc2136`, `acme-dns01`) |
@@ -107,7 +108,7 @@ Key fields per provider:
 | `api` | Programmatic provisioning/management |
 | `services` | Extras beyond plain tunnels: `transit`, `anycast`, `static_ips`, `ix_peering` |
 | `since` / `until` | Activity window (`until` for discontinued providers) |
-| `status` / `type` / `public` / `signup_verification` | Same semantics as `dnsservices.json` |
+| `status` / `costs` / `public` / `signup_verification` | Same semantics as `dnsservices.json`; `type` is `broker`, `vpn` (overlay-only) or `isp` (carrier-operated) |
 | `jurisdiction` | ISO country of the provider's legal seat; hand-curated (no `hosted`/`cloud` fields here) |
 
 

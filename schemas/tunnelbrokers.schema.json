@@ -18,10 +18,15 @@
           "description": "Service lifecycle status: active = open registrations; restricted = signup gated (own ASN required, verified operators, manual approval); no_new_registrations = existing tunnels work but new ones cannot be created; discontinued = service shut down",
           "enum": ["active", "restricted", "no_new_registrations", "discontinued"]
         },
-        "type": {
+        "costs": {
           "type": "string",
           "description": "Pricing classification of the tunnel service itself",
-          "enum": ["free", "paid", "freemium", "reserved"]
+          "enum": ["free", "paid", "freemium"]
+        },
+        "type": {
+          "type": "string",
+          "description": "Service category: broker = classic tunnel broker; vpn = overlay/VPN-style tunnels only (WireGuard/OpenVPN/ZeroTier etc.); isp = ISP/carrier-operated transition service",
+          "enum": ["broker", "vpn", "isp"]
         },
         "protocols": {
           "type": "array",
@@ -157,7 +162,7 @@
           "description": "Additional notes about the provider"
         }
       },
-      "required": ["url", "status", "type", "protocols"],
+      "required": ["url", "status", "costs", "type", "protocols"],
       "additionalProperties": false
     }
   },

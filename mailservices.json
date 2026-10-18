@@ -1,5 +1,6 @@
 {
   "013net.net": {
+    "costs": "paid",
     "hosted": "IL",
     "hosts": [
       "013net.net"
@@ -12,9 +13,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "139.com": {
+    "costs": "free",
     "hosted": "CN",
     "hosts": [
       "139.com"
@@ -28,9 +30,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "isp"
   },
   "21cn.com": {
+    "costs": "free",
     "hosted": "CN",
     "hosts": [
       "189.cn",
@@ -53,9 +56,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "24-mail.com": {
+    "costs": "free",
     "hosted": "US",
     "hosts": [
       "24-mail.com"
@@ -68,10 +72,11 @@
       "email",
       "other"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "2925.com": {
     "cloud": "Alibaba Cloud",
+    "costs": "free",
     "hosted": "JP",
     "hosts": [
       "2925.com"
@@ -85,9 +90,10 @@
     "signup_verification": [
       "other"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "2980.com": {
+    "costs": "free",
     "hosted": "CN",
     "hosts": [
       "2980.com"
@@ -100,10 +106,11 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "2mail.co": {
     "cloud": "Cloudflare",
+    "costs": "free",
     "hosted": "CA",
     "hosts": [
       "2mail.co",
@@ -118,10 +125,11 @@
       "mxmail.onionmail.org"
     ],
     "remark": "OnionMail anonymous Tor mail; 2mail.co redirects to onionmail.org (service of Onion Search Engine LLC); signup page Cloudflare-blocked, verification unconfirmed.",
-    "type": "free"
+    "type": "mailbox"
   },
   "33mail.com": {
     "cloud": "AWS",
+    "costs": "freemium",
     "hosted": "US",
     "hosts": [
       "33mail.com"
@@ -142,6 +150,7 @@
     "type": "forwarding"
   },
   "a1.net": {
+    "costs": "paid",
     "hosted": "AT",
     "hosts": [
       "a1.net"
@@ -154,9 +163,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "aaahawk.com": {
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "aaahawk.com",
@@ -248,9 +258,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "absamail.co.za": {
+    "costs": "paid",
     "hosted": "ZA",
     "hosts": [
       "absamail.co.za"
@@ -263,9 +274,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "abv.bg": {
+    "costs": "free",
     "hosted": "BG",
     "hosts": [
       "abv.bg",
@@ -280,10 +292,11 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "addy.io": {
     "cloud": "UpCloud",
+    "costs": "freemium",
     "hosted": "PL",
     "hosts": [
       "addy.io",
@@ -304,6 +317,7 @@
     "type": "forwarding"
   },
   "afrihost.co.za": {
+    "costs": "paid",
     "hosted": "ZA",
     "hosts": [
       "afrihost.co.za"
@@ -316,9 +330,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "aland.net": {
+    "costs": "paid",
     "hosted": "FI",
     "hosts": [
       "aland.net"
@@ -330,10 +345,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "aliasvault.net": {
     "cloud": "Leaseweb",
+    "costs": "freemium",
     "hosted": "NL",
     "hosts": [
       "aliasvault.net"
@@ -350,6 +366,7 @@
   },
   "alice.it": {
     "cloud": "Google Cloud",
+    "costs": "paid",
     "hosted": "IT",
     "hosts": [
       "alice.it"
@@ -362,10 +379,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "aliyun.com": {
     "cloud": "Alibaba Cloud",
+    "costs": "free",
     "hosted": "CN",
     "hosts": [
       "aliyun.com"
@@ -378,9 +396,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "altiboxmail.dk": {
+    "costs": "paid",
     "hosted": "DK",
     "hosts": [
       "altiboxmail.dk",
@@ -399,9 +418,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "anonymail.hu": {
+    "costs": "free",
     "hosted": "HU",
     "hosts": [
       "anonymail.hu",
@@ -416,9 +436,10 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "anvianet.fi": {
+    "costs": "paid",
     "hosted": "FI",
     "hosts": [
       "anvianet.fi",
@@ -440,9 +461,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "aon.at": {
+    "costs": "free",
     "hosted": "AT",
     "hosts": [
       "aon.at"
@@ -454,9 +476,10 @@
     "signup_verification": [
       "other"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "apple": {
+    "costs": "paid",
     "hosts": [
       "privaterelay.appleid.com"
     ],
@@ -475,6 +498,7 @@
   },
   "asahi-net.jp": {
     "cloud": "AWS",
+    "costs": "paid",
     "hosted": "DE",
     "hosts": [
       "asahi-net.jp"
@@ -491,10 +515,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "astermail.org": {
     "cloud": "Cloudflare",
+    "costs": "free",
     "hosted": "CA",
     "hosts": [
       "aster.cx",
@@ -509,9 +534,10 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "atlanticbb.net": {
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "atlanticbb.net"
@@ -524,10 +550,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "atomicmail.io": {
     "cloud": "Cloudflare",
+    "costs": "free",
     "hosted": "CA",
     "hosts": [
       "atomicmail.io"
@@ -540,9 +567,10 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "au.com": {
+    "costs": "paid",
     "hosted": "JP",
     "hosts": [
       "au.com",
@@ -568,9 +596,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "autistici.org": {
+    "costs": "free",
     "hosts": [
       "inventati.org"
     ],
@@ -587,10 +616,11 @@
     "signup_verification": [
       "other"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "ayna.com": {
     "cloud": "Cloudflare",
+    "costs": "free",
     "discontinued": true,
     "hosted": "CA",
     "hosts": [
@@ -605,9 +635,10 @@
       "aspmx.l.google.com"
     ],
     "remark": "Former Saudi freemail; domain repurposed (drone software company). Service discontinued.",
-    "type": "free"
+    "type": "mailbox"
   },
   "azet.sk": {
+    "costs": "free",
     "hosted": "SK",
     "hosts": [
       "azet.sk"
@@ -620,9 +651,10 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "balticom.lv": {
+    "costs": "paid",
     "hosted": "LV",
     "hosts": [
       "balticom.lv"
@@ -635,9 +667,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "bbox.fr": {
+    "costs": "paid",
     "hosts": [
       "bbox.fr"
     ],
@@ -650,9 +683,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "bbsyd.dk": {
+    "costs": "paid",
     "hosts": [
       "bbsyd.dk",
       "stofanet.dk"
@@ -665,10 +699,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "beeble.com": {
     "cloud": "Hetzner",
+    "costs": "free",
     "hosted": "FI",
     "hosts": [
       "beeble.com"
@@ -681,9 +716,10 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "bestweb.net": {
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "bestweb.net"
@@ -699,10 +735,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "bezeqint.net": {
     "cloud": "AWS",
+    "costs": "paid",
     "hosted": "CA",
     "hosts": [
       "bezeqint.net"
@@ -716,10 +753,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "biglobe.jp": {
     "cloud": "AWS",
+    "costs": "paid",
     "hosted": "JP",
     "hosts": [
       "biglobe.jp",
@@ -736,9 +774,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "bigpond.com": {
+    "costs": "paid",
     "hosted": "AU",
     "hosts": [
       "bigpond.com",
@@ -753,10 +792,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "black.com": {
     "cloud": "Cloudflare",
+    "costs": "paid",
     "hosted": "CA",
     "hosts": [
       "black.com"
@@ -768,9 +808,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "mailbox"
   },
   "blacksburg.net": {
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "blacksburg.net"
@@ -785,9 +826,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "bluewin.ch": {
+    "costs": "free",
     "hosted": "CH",
     "hosts": [
       "bluemail.ch",
@@ -802,10 +844,11 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "bmail.ag": {
     "cloud": "OVH",
+    "costs": "free",
     "hosted": "US",
     "hosts": [
       "bmail.ag"
@@ -817,9 +860,10 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "bol.com.br": {
+    "costs": "free",
     "hosted": "BR",
     "hosts": [
       "bol.com.br"
@@ -832,10 +876,11 @@
     "signup_verification": [
       "other"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "bravealias.com": {
     "cloud": "AWS",
+    "costs": "free",
     "hosted": "DE",
     "hosts": [
       "bravealias.com"
@@ -851,6 +896,7 @@
     "type": "forwarding"
   },
   "btinternet.com": {
+    "costs": "paid",
     "hosted": "GB",
     "hosts": [
       "btinternet.com",
@@ -861,9 +907,10 @@
     "mx_hosts": [
       "mx.bt.prod.cloud.openwave.ai"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "bulc.club": {
+    "costs": "free",
     "hosted": "US",
     "hosts": [
       "bulc.club"
@@ -879,6 +926,7 @@
   },
   "bump.email": {
     "cloud": "Cloudflare",
+    "costs": "free",
     "hosted": "CA",
     "hosts": [
       "bump.email",
@@ -898,6 +946,7 @@
   },
   "burnermail.io": {
     "cloud": "Cloudflare",
+    "costs": "freemium",
     "hosted": "CA",
     "hosts": [
       "burnermail.io"
@@ -912,6 +961,7 @@
     "type": "forwarding"
   },
   "c2.hu": {
+    "costs": "free",
     "hosted": "HU",
     "hosts": [
       "c2.hu"
@@ -924,9 +974,10 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "centrum.cz": {
+    "costs": "free",
     "hosted": "CZ",
     "hosts": [
       "centrum.cz",
@@ -952,10 +1003,11 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "centrum.sk": {
     "cloud": "Cloudflare",
+    "costs": "free",
     "hosted": "CA",
     "hosts": [
       "centrum.sk",
@@ -973,10 +1025,11 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "centurylink.net": {
     "cloud": "Oracle Cloud",
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "centurylink.net",
@@ -990,10 +1043,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "charter.net": {
     "cloud": "AWS",
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "adelphia.net",
@@ -1038,9 +1092,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "chello.at": {
+    "costs": "paid",
     "hosted": "NL",
     "hosts": [
       "chello.at"
@@ -1053,10 +1108,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "chello.nl": {
     "cloud": "AWS",
+    "costs": "paid",
     "hosted": "DE",
     "hosts": [
       "chello.nl"
@@ -1070,9 +1126,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "clix.pt": {
+    "costs": "free",
     "hosted": "PT",
     "hosts": [
       "clix.pt",
@@ -1087,9 +1144,10 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "club-internet.fr": {
+    "costs": "paid",
     "hosted": "FR",
     "hosts": [
       "club-internet.fr"
@@ -1102,9 +1160,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "cock.li": {
+    "costs": "free",
     "hosted": "RO",
     "hosts": [
       "420blaze.it",
@@ -1148,9 +1207,10 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "cogeco.ca": {
+    "costs": "paid",
     "hosted": "CA",
     "hosts": [
       "cogeco.ca"
@@ -1164,9 +1224,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "comcast.net": {
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "comcast.net"
@@ -1185,10 +1246,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "concentric.net": {
     "cloud": "UltraDNS",
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "concentric.net"
@@ -1204,10 +1266,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "countermail.com": {
     "cloud": "Cloudflare",
+    "costs": "paid",
     "hosted": "CA",
     "hosts": [
       "countermail.com",
@@ -1220,9 +1283,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "mailbox"
   },
   "daum.net": {
+    "costs": "free",
     "hosted": "KR",
     "hosts": [
       "hanmail.net",
@@ -1251,9 +1315,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "dial-up.net": {
+    "costs": "paid",
     "hosts": [
       "dial-up.net",
       "isdsl.net"
@@ -1266,9 +1331,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "digi.ro": {
+    "costs": "paid",
     "hosted": "RO",
     "hosts": [
       "digi.ro"
@@ -1281,10 +1347,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "dismail.de": {
     "cloud": "Hetzner",
+    "costs": "free",
     "hosted": "DE",
     "hosts": [
       "dismail.de"
@@ -1298,9 +1365,10 @@
     "signup_verification": [
       "other"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "disroot.org": {
+    "costs": "free",
     "hosted": "NL",
     "hosts": [
       "disroot.org"
@@ -1312,9 +1380,10 @@
     "signup_verification": [
       "other"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "dnainternet.net": {
+    "costs": "paid",
     "hosts": [
       "dnainternet.net",
       "welho.com"
@@ -1327,10 +1396,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "dslextreme.com": {
     "cloud": "Cloudflare",
+    "costs": "paid",
     "hosted": "CA",
     "hosts": [
       "dslextreme.com"
@@ -1343,9 +1413,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "du.ae": {
+    "costs": "paid",
     "hosted": "AE",
     "hosts": [
       "du.ae"
@@ -1358,10 +1429,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "duck.com": {
     "cloud": "Azure",
+    "costs": "free",
     "hosted": "IE",
     "hosts": [
       "duck.com"
@@ -1377,6 +1449,7 @@
     "type": "forwarding"
   },
   "e-mail.jp": {
+    "costs": "free",
     "hosted": "JP",
     "hosts": [
       "e-mail.jp"
@@ -1394,10 +1467,11 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "e4ward.com": {
     "cloud": "Cloudflare",
+    "costs": "freemium",
     "hosted": "CA",
     "hosts": [
       "e4ward.com"
@@ -1416,6 +1490,7 @@
     "type": "forwarding"
   },
   "eclipso.de": {
+    "costs": "free",
     "hosted": "DE",
     "hosts": [
       "eclipso.at",
@@ -1452,9 +1527,10 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "elektrine.com": {
+    "costs": "free",
     "hosted": "US",
     "hosts": [
       "elektrine.com"
@@ -1469,10 +1545,11 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "emailalias.io": {
     "cloud": "DigitalOcean",
+    "costs": "freemium",
     "hosted": "US",
     "hosts": [
       "emailalias.io"
@@ -1488,6 +1565,7 @@
     "type": "forwarding"
   },
   "emailn.de": {
+    "costs": "free",
     "hosted": "DE",
     "hosts": [
       "emailn.de",
@@ -1503,10 +1581,11 @@
     "signup_verification": [
       "email"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "erine.email": {
     "cloud": "Cloudflare",
+    "costs": "free",
     "hosted": "CA",
     "hosts": [
       "erine.email"
@@ -1521,6 +1600,7 @@
     "type": "forwarding"
   },
   "ese.kr": {
+    "costs": "free",
     "hosted": "KR",
     "hosts": [
       "lko.co.kr",
@@ -1536,9 +1616,10 @@
     "signup_verification": [
       "other"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "etisalat": {
+    "costs": "paid",
     "hosts": [
       "emirates.net.ae",
       "etisalat.ae",
@@ -1557,9 +1638,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "everyone.net": {
+    "costs": "paid",
     "hosted": "CA",
     "hosts": [
       "1nsyncfan.com",
@@ -1608,9 +1690,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "hosting"
   },
   "fastmail.com": {
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "123mail.org",
@@ -1762,9 +1845,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "mailbox"
   },
   "fibertel.com.ar": {
+    "costs": "paid",
     "hosted": "AR",
     "hosts": [
       "fibertel.com.ar"
@@ -1777,10 +1861,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "firemail.de": {
     "cloud": "Hetzner",
+    "costs": "free",
     "hosted": "DE",
     "hosts": [
       "firemail.de",
@@ -1796,9 +1881,10 @@
       "email",
       "other"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "forthnet.gr": {
+    "costs": "paid",
     "hosted": "GR",
     "hosts": [
       "forthnet.gr"
@@ -1812,9 +1898,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "forwardemail.net": {
+    "costs": "freemium",
     "hosted": "US",
     "hosts": [
       "forwardemail.net"
@@ -1831,6 +1918,7 @@
     "type": "forwarding"
   },
   "fpt.vn": {
+    "costs": "paid",
     "hosted": "VN",
     "hosts": [
       "fpt.vn"
@@ -1843,9 +1931,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "free.fr": {
+    "costs": "paid",
     "hosted": "FR",
     "hosts": [
       "aliceadsl.fr",
@@ -1857,9 +1946,10 @@
       "mx1.free.fr",
       "mx2.free.fr"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "freemail.hu": {
+    "costs": "free",
     "hosted": "HU",
     "hosts": [
       "freemail.hu",
@@ -1872,9 +1962,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "freenet.de": {
+    "costs": "free",
     "hosted": "DE",
     "hosts": [
       "bossmail.de",
@@ -1891,10 +1982,11 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "freeola.com": {
     "cloud": "Cloudflare",
+    "costs": "free",
     "hosted": "CA",
     "hosts": [
       "1me.net",
@@ -1934,9 +2026,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "gazeta.pl": {
+    "costs": "free",
     "hosts": [
       "gazeta.pl"
     ],
@@ -1948,10 +2041,11 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "gmail.com": {
     "cloud": "Google Cloud",
+    "costs": "free",
     "hosted": "US",
     "hosts": [
       "gmail.com",
@@ -1968,9 +2062,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "godmail.dk": {
+    "costs": "freemium",
     "hosted": "NL",
     "hosts": [
       "godmail.dk"
@@ -1980,9 +2075,10 @@
       "mx.dka.mailcore.net"
     ],
     "remark": "Godmail.dk Danish freemium mail; free signup (\"Ingen betalingskort. Ingen forpligtelser\"), paid tiers exist.",
-    "type": "free"
+    "type": "mailbox"
   },
   "gvdnet.dk": {
+    "costs": "paid",
     "hosted": "DK",
     "hosts": [
       "gvdnet.dk"
@@ -1997,10 +2093,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "hosting"
   },
   "hetnet.nl": {
     "cloud": "AWS",
+    "costs": "paid",
     "hosted": "IE",
     "hosts": [
       "hetnet.nl"
@@ -2013,10 +2110,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "hey.com": {
     "cloud": "Cloudflare",
+    "costs": "paid",
     "hosted": "CA",
     "hosts": [
       "hey.com",
@@ -2030,10 +2128,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "mailbox"
   },
   "hidemail.app": {
     "cloud": "Cloudflare",
+    "costs": "paid",
     "hosted": "CA",
     "hosts": [
       "hidemail.app",
@@ -2053,6 +2152,7 @@
   },
   "home.nl": {
     "cloud": "AWS",
+    "costs": "paid",
     "hosted": "IE",
     "hosts": [
       "home.nl"
@@ -2066,10 +2166,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "hushmail.com": {
     "cloud": "Cloudflare",
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "hush.ai",
@@ -2086,9 +2187,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "mailbox"
   },
   "i.softbank.jp": {
+    "costs": "paid",
     "hosts": [
       "i.softbank.jp"
     ],
@@ -2100,10 +2202,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "i.ua": {
     "cloud": "Cloudflare",
+    "costs": "free",
     "hosted": "CA",
     "hosts": [
       "i.ua"
@@ -2117,9 +2220,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "iam.net.ma": {
+    "costs": "paid",
     "hosts": [
       "iam.net.ma",
       "menara.ma"
@@ -2136,7 +2240,7 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "iana": {
     "hosts": [
@@ -2159,6 +2263,7 @@
   },
   "ice.email": {
     "cloud": "Hetzner",
+    "costs": "free",
     "hosted": "FI",
     "hosts": [
       "ice.email"
@@ -2170,10 +2275,11 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "ichimail.com": {
     "cloud": "Cloudflare",
+    "costs": "free",
     "hosted": "CA",
     "hosts": [
       "ichimail.com"
@@ -2186,10 +2292,11 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "ig.com.br": {
     "cloud": "AWS",
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "ig.com.br"
@@ -2202,10 +2309,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "mailbox"
   },
   "iinet.net.au": {
     "cloud": "AWS",
+    "costs": "paid",
     "hosted": "AU",
     "hosts": [
       "iinet.net.au",
@@ -2221,9 +2329,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "ik.me": {
+    "costs": "free",
     "hosted": "CH",
     "hosts": [
       "ik.me",
@@ -2238,9 +2347,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "iki.fi": {
+    "costs": "paid",
     "hosted": "FI",
     "hosts": [
       "iki.fi"
@@ -2259,6 +2369,7 @@
   },
   "inbox.com": {
     "cloud": "DigitalOcean",
+    "costs": "paid",
     "hosted": "DE",
     "hosts": [
       "ak47.hu",
@@ -2297,9 +2408,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "mailbox"
   },
   "inbox.lv": {
+    "costs": "free",
     "hosted": "LV",
     "hosts": [
       "inbox.eu",
@@ -2319,9 +2431,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "indapass.hu": {
+    "costs": "free",
     "discontinued": true,
     "hosted": "HU",
     "hosts": [
@@ -2337,10 +2450,11 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "india.com": {
     "cloud": "Akamai",
+    "costs": "free",
     "discontinued": true,
     "hosted": "DE",
     "hosts": [
@@ -2351,10 +2465,11 @@
       "india-com.mail.protection.outlook.com"
     ],
     "remark": "Former freemail portal; domain is now Zee Media corporate. No public signup.",
-    "type": "free"
+    "type": "mailbox"
   },
   "inet.fi": {
     "cloud": "DigitalOcean",
+    "costs": "paid",
     "hosted": "DE",
     "hosts": [
       "inet.fi",
@@ -2378,10 +2493,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "mailbox"
   },
   "inleed.com": {
     "cloud": "Cloudflare",
+    "costs": "free",
     "hosted": "CA",
     "hosts": [
       "inleed.xyz",
@@ -2396,9 +2512,10 @@
     "signup_verification": [
       "email"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "interia.pl": {
+    "costs": "free",
     "hosted": "PL",
     "hosts": [
       "adresik.net",
@@ -2422,9 +2539,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "intnet.mu": {
+    "costs": "paid",
     "hosted": "MU",
     "hosts": [
       "intnet.mu"
@@ -2438,9 +2556,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "inwi.ma": {
+    "costs": "paid",
     "hosted": "MA",
     "hosts": [
       "inwi.ma"
@@ -2454,9 +2573,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "iol.it": {
+    "costs": "paid",
     "hosted": "IT",
     "hosts": [
       "inwind.it",
@@ -2470,10 +2590,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "mailbox"
   },
   "iol.pt": {
     "cloud": "Cloudflare",
+    "costs": "free",
     "hosted": "CA",
     "hosts": [
       "iol.pt"
@@ -2486,9 +2607,10 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "ironvest": {
+    "costs": "freemium",
     "hosts": [
       "opayq.com"
     ],
@@ -2506,6 +2628,7 @@
   },
   "japan.com": {
     "cloud": "Cloudflare",
+    "costs": "free",
     "discontinued": true,
     "hosted": "CA",
     "hosts": [
@@ -2517,9 +2640,10 @@
       "webmail.pear.com"
     ],
     "remark": "Former freemail; domain repurposed as travel site. Mail service discontinued.",
-    "type": "free"
+    "type": "mailbox"
   },
   "jetable.org": {
+    "costs": "free",
     "hosts": [
       "jetable.org"
     ],
@@ -2534,6 +2658,7 @@
   },
   "jubii.dk": {
     "cloud": "DigitalOcean",
+    "costs": "free",
     "hosted": "DE",
     "hosts": [
       "123mail.dk",
@@ -2704,9 +2829,10 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "juno.com": {
+    "costs": "free",
     "hosted": "US",
     "hosts": [
       "juno.com",
@@ -2721,9 +2847,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "kabelmail.de": {
+    "costs": "paid",
     "hosted": "DE",
     "hosts": [
       "kabelmail.de"
@@ -2737,10 +2864,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "keko.com.ar": {
     "cloud": "Hetzner",
+    "costs": "free",
     "hosted": "FI",
     "hosts": [
       "keko.com.ar"
@@ -2751,9 +2879,10 @@
       "mail.keko.com.ar"
     ],
     "remark": "Argentinian freemail (Keko).",
-    "type": "free"
+    "type": "mailbox"
   },
   "kolabnow.com": {
+    "costs": "paid",
     "hosted": "CH",
     "hosts": [
       "kolabnow.com"
@@ -2769,9 +2898,10 @@
       "email",
       "payment"
     ],
-    "type": "paid"
+    "type": "mailbox"
   },
   "kpnmail": {
+    "costs": "paid",
     "hosts": [
       "freeler.nl",
       "kpnmail.nl",
@@ -2786,9 +2916,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "lantic.net": {
+    "costs": "paid",
     "hosted": "ZA",
     "hosts": [
       "lantic.net"
@@ -2800,10 +2931,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "laposte.net": {
     "cloud": "Google Cloud",
+    "costs": "free",
     "hosted": "US",
     "hosts": [
       "laposte.net"
@@ -2815,9 +2947,10 @@
     "signup_verification": [
       "other"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "latino.com": {
+    "costs": "free",
     "discontinued": true,
     "hosted": "US",
     "hosts": [
@@ -2828,9 +2961,10 @@
       "mail.latino.com"
     ],
     "remark": "Former freemail; domain parked (WordPress placeholder). No signup.",
-    "type": "free"
+    "type": "mailbox"
   },
   "lavabit.com": {
+    "costs": "paid",
     "hosted": "NL",
     "hosts": [
       "lavabit.com"
@@ -2843,9 +2977,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "mailbox"
   },
   "libero.it": {
+    "costs": "free",
     "hosted": "IT",
     "hosts": [
       "libero.it",
@@ -2861,10 +2996,11 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "librem.one": {
     "cloud": "DigitalOcean",
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "librem.one"
@@ -2877,9 +3013,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "mailbox"
   },
   "link.net": {
+    "costs": "paid",
     "hosted": "EG",
     "hosts": [
       "link.net"
@@ -2891,9 +3028,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "liveinternet.ru": {
+    "costs": "free",
     "hosted": "RU",
     "hosts": [
       "liveinternet.ru"
@@ -2906,10 +3044,11 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "love.cz": {
     "cloud": "Hetzner",
+    "costs": "free",
     "hosted": "DE",
     "hosts": [
       "love.cz"
@@ -2920,10 +3059,11 @@
       "mailin2.love.cz"
     ],
     "remark": "Czech freemail (love.cz).",
-    "type": "free"
+    "type": "mailbox"
   },
   "lycos.com": {
     "cloud": "Cloudflare",
+    "costs": "free",
     "discontinued": true,
     "hosted": "CA",
     "hosts": [
@@ -2945,10 +3085,11 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "mail-online.cz": {
     "cloud": "AWS",
+    "costs": "free",
     "hosted": "CA",
     "hosts": [
       "mail-online.cz",
@@ -2970,9 +3111,10 @@
       "mail.weekonline.com"
     ],
     "remark": "Mail-Online.dk group; free public signup page exists (offers @mail-online.dk/@post-online.dk). Verification method unconfirmed.",
-    "type": "free"
+    "type": "mailbox"
   },
   "mail.bg": {
+    "costs": "free",
     "hosted": "BG",
     "hosts": [
       "mail.bg"
@@ -2986,10 +3128,11 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "mail.com": {
     "cloud": "IONOS",
+    "costs": "free",
     "hosted": "DE",
     "hosts": [
       "2trom.com",
@@ -3197,9 +3340,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "mail.de": {
+    "costs": "free",
     "hosted": "DE",
     "hosts": [
       "mail.de",
@@ -3217,10 +3361,11 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "mail.dk": {
     "cloud": "AWS",
+    "costs": "paid",
     "hosted": "DE",
     "hosts": [
       "c.dk",
@@ -3246,10 +3391,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "mail.io": {
     "cloud": "DigitalOcean",
+    "costs": "free",
     "hosted": "NL",
     "hosts": [
       "mail.io"
@@ -3261,9 +3407,10 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "mail.kz": {
+    "costs": "free",
     "hosted": "KZ",
     "hosts": [
       "mail.kz",
@@ -3289,9 +3436,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "mail.ru": {
+    "costs": "free",
     "hosted": "RU",
     "hosts": [
       "aport2000.ru",
@@ -3342,9 +3490,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "mail2world.com": {
+    "costs": "free",
     "hosted": "US",
     "hosts": [
       "correoinfinitum.com",
@@ -4071,9 +4220,10 @@
       "email",
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "mailbox.hu": {
+    "costs": "paid",
     "hosted": "HU",
     "hosts": [
       "mailbox.hu"
@@ -4086,9 +4236,10 @@
     "signup_verification": [
       "email"
     ],
-    "type": "paid"
+    "type": "mailbox"
   },
   "mailbox.org": {
+    "costs": "paid",
     "hosted": "DE",
     "hosts": [
       "mailbox.org",
@@ -4107,9 +4258,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "mailbox"
   },
   "mailerhost.net": {
+    "costs": "free",
     "hosts": [
       "deskmail.com",
       "hookup.net",
@@ -4126,9 +4278,10 @@
     "signup_verification": [
       "other"
     ],
-    "type": "free"
+    "type": "hosting"
   },
   "mailexpire.com": {
+    "costs": "free",
     "hosted": "US",
     "hosts": [
       "mailexpire.com"
@@ -4144,6 +4297,7 @@
   },
   "mailfence.com": {
     "cloud": "OVH",
+    "costs": "free",
     "hosted": "IT",
     "hosts": [
       "mailfence.com"
@@ -4157,9 +4311,10 @@
     "signup_verification": [
       "email"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "mailgenie.net": {
+    "costs": "free",
     "hosts": [
       "bikeracers.net",
       "boyzoneclub.com",
@@ -4186,10 +4341,11 @@
     "signup_verification": [
       "other"
     ],
-    "type": "free"
+    "type": "hosting"
   },
   "mailnull.com": {
     "cloud": "AWS",
+    "costs": "free",
     "hosted": "US",
     "hosts": [
       "mailnull.com"
@@ -4205,6 +4361,7 @@
     "type": "forwarding"
   },
   "mailo.com": {
+    "costs": "free",
     "hosted": "FR",
     "hosts": [
       "africamel.net",
@@ -4264,10 +4421,11 @@
       "email",
       "other"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "manyme.com": {
     "cloud": "AWS",
+    "costs": "free",
     "hosted": "DE",
     "hosts": [
       "manyme.com"
@@ -4284,6 +4442,7 @@
   },
   "me.com": {
     "cloud": "Apple",
+    "costs": "free",
     "hosted": "US",
     "hosts": [
       "icloud.com",
@@ -4299,10 +4458,11 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "memail.com": {
     "cloud": "Azure",
+    "costs": "paid",
     "hosted": "DE",
     "hosts": [
       "memail.com",
@@ -4641,10 +4801,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "mailbox"
   },
   "meta.ua": {
     "cloud": "Cloudflare",
+    "costs": "free",
     "hosted": "CA",
     "hosts": [
       "meta.ua"
@@ -4658,9 +4819,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "mobily.com.sa": {
+    "costs": "paid",
     "hosted": "SA",
     "hosts": [
       "mobily.com.sa"
@@ -4681,10 +4843,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "mozmail.com": {
     "cloud": "Google Cloud",
+    "costs": "freemium",
     "hosted": "US",
     "hosts": [
       "mozmail.com",
@@ -4701,6 +4864,7 @@
     "type": "forwarding"
   },
   "mtnonline.com": {
+    "costs": "paid",
     "hosted": "NG",
     "hosts": [
       "mtnonline.com"
@@ -4714,9 +4878,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "mts.rs": {
+    "costs": "paid",
     "hosted": "RS",
     "hosts": [
       "mts.rs"
@@ -4729,9 +4894,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "munkebonet.dk": {
+    "costs": "paid",
     "hosted": "DK",
     "hosts": [
       "munkebonet.dk"
@@ -4746,10 +4912,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "murena.io": {
     "cloud": "Hetzner",
+    "costs": "free",
     "hosted": "FI",
     "hosts": [
       "murena.io",
@@ -4763,9 +4930,10 @@
     "signup_verification": [
       "email"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "mweb.co.za": {
+    "costs": "paid",
     "hosted": "ZA",
     "hosts": [
       "iafrica.com",
@@ -4783,9 +4951,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "my.id": {
+    "costs": "free",
     "discontinued": true,
     "hosts": [],
     "jurisdiction": "ID",
@@ -4797,9 +4966,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "mynet.com": {
+    "costs": "free",
     "hosted": "TR",
     "hosts": [
       "mynet.com"
@@ -4812,9 +4982,10 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "nate.com": {
+    "costs": "free",
     "hosted": "KR",
     "hosts": [
       "nate.com",
@@ -4829,9 +5000,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "neomail.co.za": {
+    "costs": "free",
     "discontinued": true,
     "hosted": "ZA",
     "hosts": [
@@ -4842,10 +5014,11 @@
       "neomail.co.za"
     ],
     "remark": "Former ZA freemail; bare web server index, service dead. No signup.",
-    "type": "free"
+    "type": "mailbox"
   },
   "neonmail.io": {
     "cloud": "Contabo",
+    "costs": "free",
     "hosted": "DE",
     "hosts": [
       "neonmail.io"
@@ -4857,10 +5030,11 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "netcabo.pt": {
     "cloud": "Cloudflare",
+    "costs": "paid",
     "hosted": "CA",
     "hosts": [
       "netcabo.pt"
@@ -4873,9 +5047,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "netease": {
+    "costs": "free",
     "hosts": [
       "163.com",
       "126.com",
@@ -4907,10 +5082,11 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "netins.net": {
     "cloud": "AWS",
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "netins.net"
@@ -4923,9 +5099,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "netvigator.com": {
+    "costs": "paid",
     "hosted": "HK",
     "hosts": [
       "netvigator.com"
@@ -4939,10 +5116,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "nifty.com": {
     "cloud": "AWS",
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "nifty.com",
@@ -4956,9 +5134,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "o2.pl": {
+    "costs": "free",
     "hosted": "PL",
     "hosts": [
       "o2.pl",
@@ -4976,10 +5155,11 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "ocn.ne.jp": {
     "cloud": "AWS",
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "ocn.ne.jp"
@@ -4992,9 +5172,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "oi.com.br": {
+    "costs": "paid",
     "hosted": "BR",
     "hosts": [
       "oi.com.br",
@@ -5009,10 +5190,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "onet.pl": {
     "cloud": "AWS",
+    "costs": "free",
     "hosted": "DE",
     "hosts": [
       "op.pl",
@@ -5035,10 +5217,11 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "online.de": {
     "cloud": "IONOS",
+    "costs": "free",
     "hosted": "DE",
     "hosts": [
       "online.de"
@@ -5052,10 +5235,11 @@
     "signup_verification": [
       "other"
     ],
-    "type": "free"
+    "type": "isp"
   },
   "online.nl": {
     "cloud": "Cloudflare",
+    "costs": "paid",
     "hosted": "NL",
     "hosts": [
       "online.nl"
@@ -5069,10 +5253,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "online.no": {
     "cloud": "Azure",
+    "costs": "free",
     "hosted": "NO",
     "hosts": [
       "online.no"
@@ -5088,10 +5273,11 @@
     "signup_verification": [
       "other"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "onsmail.com": {
     "cloud": "Contabo",
+    "costs": "free",
     "hosted": "DE",
     "hosts": [
       "onsmail.com"
@@ -5103,9 +5289,10 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "optimum.net": {
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "optimum.net"
@@ -5118,9 +5305,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "optonline.net": {
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "optonline.net"
@@ -5133,9 +5321,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "optusnet.com.au": {
+    "costs": "paid",
     "hosted": "AU",
     "hosts": [
       "optusnet.com.au"
@@ -5149,9 +5338,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "orange.fr": {
+    "costs": "paid",
     "hosted": "FR",
     "hosts": [
       "orange.fr",
@@ -5164,9 +5354,10 @@
       "smtp-in.orange.fr",
       "smtp-in2.orange.fr"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "orange.ma": {
+    "costs": "paid",
     "hosted": "MA",
     "hosts": [
       "orange.ma"
@@ -5180,9 +5371,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "orange.ro": {
+    "costs": "free",
     "hosted": "RO",
     "hosts": [
       "orange.ro"
@@ -5195,9 +5387,10 @@
     "signup_verification": [
       "other"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "otenet.gr": {
+    "costs": "paid",
     "hosted": "GR",
     "hosts": [
       "otenet.gr"
@@ -5213,10 +5406,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "outlook.com": {
     "cloud": "Azure",
+    "costs": "free",
     "hosted": "CA",
     "hosts": [
       "hotmail.at",
@@ -5356,9 +5550,10 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "overmail.de": {
+    "costs": "free",
     "hosted": "DE",
     "hosts": [
       "overmail.de",
@@ -5376,10 +5571,11 @@
     "signup_verification": [
       "other"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "ownmail.ai": {
     "cloud": "Hetzner",
+    "costs": "free",
     "hosted": "FI",
     "hosts": [
       "ownmail.ai"
@@ -5391,10 +5587,11 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "paced.email": {
     "cloud": "Cloudflare",
+    "costs": "freemium",
     "hosted": "CA",
     "hosts": [
       "paced.email"
@@ -5412,6 +5609,7 @@
   },
   "passagen.se": {
     "cloud": "Cloudflare",
+    "costs": "free",
     "hosted": "CA",
     "hosts": [
       "passagen.se"
@@ -5425,10 +5623,11 @@
     "signup_verification": [
       "other"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "pissmail.com": {
     "cloud": "Contabo",
+    "costs": "free",
     "discontinued": true,
     "hosted": "DE",
     "hosts": [
@@ -5447,10 +5646,11 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "planet.nl": {
     "cloud": "AWS",
+    "costs": "paid",
     "hosted": "IE",
     "hosts": [
       "planet.nl"
@@ -5463,9 +5663,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "ploud.fr": {
+    "costs": "paid",
     "hosted": "FR",
     "hosts": [
       "ploud.fr"
@@ -5479,10 +5680,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "pobox.hu": {
     "cloud": "Contabo",
+    "costs": "free",
     "hosted": "DE",
     "hosts": [
       "pobox.hu"
@@ -5492,9 +5694,10 @@
       "pobox.hu"
     ],
     "remark": "Hungarian freemail (Pobox).",
-    "type": "free"
+    "type": "mailbox"
   },
   "portugalmail.pt": {
+    "costs": "free",
     "hosted": "PT",
     "hosts": [
       "portugalmail.pt"
@@ -5509,9 +5712,10 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "posteo.de": {
+    "costs": "paid",
     "hosted": "DE",
     "hosts": [
       "posteo.at",
@@ -5577,10 +5781,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "mailbox"
   },
   "privatemail.com": {
     "cloud": "Cloudflare",
+    "costs": "free",
     "hosted": "CA",
     "hosts": [
       "private-mail.com",
@@ -5594,9 +5799,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "proton.me": {
+    "costs": "free",
     "hosted": "DE",
     "hosts": [
       "proton.me",
@@ -5613,10 +5819,11 @@
     "signup_verification": [
       "email"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "proxiedmail.com": {
     "cloud": "DigitalOcean",
+    "costs": "freemium",
     "hosted": "NL",
     "hosts": [
       "proxiedmail.com"
@@ -5632,6 +5839,7 @@
     "type": "forwarding"
   },
   "pt.lu": {
+    "costs": "paid",
     "hosted": "LU",
     "hosts": [
       "pt.lu"
@@ -5644,9 +5852,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "ptt.rs": {
+    "costs": "paid",
     "hosted": "RS",
     "hosts": [
       "ptt.rs"
@@ -5659,10 +5868,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "purelymail.com": {
     "cloud": "AWS",
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "purelymail.com"
@@ -5675,9 +5885,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "mailbox"
   },
   "qip.ru": {
+    "costs": "free",
     "hosted": "RU",
     "hosts": [
       "qip.ru"
@@ -5690,9 +5901,10 @@
     "signup_verification": [
       "other"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "qis.net": {
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "qis.net"
@@ -5705,10 +5917,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "qq.com": {
     "cloud": "Tencent Cloud",
+    "costs": "free",
     "hosted": "CN",
     "hosts": [
       "foxmail.com",
@@ -5729,9 +5942,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "qrypty.com": {
+    "costs": "free",
     "hosted": "IS",
     "hosts": [
       "qrypty.com"
@@ -5744,9 +5958,10 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "rambler.ru": {
+    "costs": "free",
     "hosted": "RU",
     "hosts": [
       "autorambler.ru",
@@ -5762,9 +5977,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "rcn.com": {
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "erols.com",
@@ -5779,10 +5995,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "rediff.com": {
     "cloud": "Akamai",
+    "costs": "free",
     "hosted": "DE",
     "hosts": [
       "rediff.com",
@@ -5797,9 +6014,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "riseup.net": {
+    "costs": "free",
     "hosted": "US",
     "hosts": [
       "riseup.net"
@@ -5812,10 +6030,11 @@
     "signup_verification": [
       "other"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "rogers.com": {
     "cloud": "Azure",
+    "costs": "paid",
     "hosted": "CA",
     "hosts": [
       "rogers.com"
@@ -5828,9 +6047,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "runbox.com": {
+    "costs": "paid",
     "hosted": "NO",
     "hosts": [
       "mailhost.work",
@@ -5879,9 +6099,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "mailbox"
   },
   "safaricom.co.ke": {
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "safaricom.co.ke"
@@ -5895,9 +6116,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "safe-mail.net": {
+    "costs": "free",
     "hosted": "IL",
     "hosts": [
       "safe-mail.net"
@@ -5907,9 +6129,10 @@
     "signup_verification": [
       "email"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "salzburg.co.at": {
+    "costs": "paid",
     "hosted": "AT",
     "hosts": [
       "salzburg.co.at"
@@ -5922,9 +6145,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "sanipass.com": {
+    "costs": "free",
     "discontinued": true,
     "hosted": "FR",
     "hosts": [
@@ -5938,9 +6162,10 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "sapo.pt": {
+    "costs": "free",
     "hosted": "PT",
     "hosts": [
       "sapo.pt"
@@ -5952,9 +6177,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "sasktel.net": {
+    "costs": "paid",
     "hosted": "CA",
     "hosts": [
       "sasktel.net"
@@ -5969,10 +6195,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "scarlet.nl": {
     "cloud": "Hetzner",
+    "costs": "paid",
     "hosted": "FI",
     "hosts": [
       "scarlet.nl"
@@ -5985,9 +6212,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "seckinmail.com": {
+    "costs": "free",
     "hosted": "US",
     "hosts": [
       "seckinmail.com"
@@ -6000,9 +6228,10 @@
     "signup_verification": [
       "other"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "seznam.cz": {
+    "costs": "free",
     "hosted": "CZ",
     "hosts": [
       "seznam.cz",
@@ -6017,9 +6246,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "sfr.fr": {
+    "costs": "paid",
     "hosted": "FR",
     "hosts": [
       "neuf.fr",
@@ -6034,10 +6264,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "shaw.ca": {
     "cloud": "Akamai",
+    "costs": "paid",
     "hosted": "CA",
     "hosts": [
       "shaw.ca"
@@ -6050,9 +6281,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "sibnet.ru": {
+    "costs": "free",
     "hosted": "RU",
     "hosts": [
       "sibnet.ru"
@@ -6066,9 +6298,10 @@
       "email",
       "other"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "simplelogin": {
+    "costs": "freemium",
     "hosts": [
       "8alias.com",
       "8shield.net",
@@ -6098,6 +6331,7 @@
     "type": "forwarding"
   },
   "sina.com": {
+    "costs": "free",
     "hosted": "US",
     "hosts": [
       "sina.com",
@@ -6118,9 +6352,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "sitepro.email": {
+    "costs": "free",
     "discontinued": true,
     "hosted": "DE",
     "hosts": [
@@ -6135,10 +6370,11 @@
     "signup_verification": [
       "other"
     ],
-    "type": "free"
+    "type": "hosting"
   },
   "skiff.com": {
     "cloud": "Cloudflare",
+    "costs": "paid",
     "hosted": "CA",
     "hosts": [
       "skiff.com"
@@ -6151,9 +6387,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "mailbox"
   },
   "sky.com": {
+    "costs": "paid",
     "hosted": "GB",
     "hosts": [
       "sky.com"
@@ -6166,9 +6403,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "sky.it": {
+    "costs": "paid",
     "hosted": "IT",
     "hosts": [
       "sky.it"
@@ -6182,9 +6420,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "sky.sannet.ne.jp": {
+    "costs": "paid",
     "hosts": [
       "sky.sannet.ne.jp"
     ],
@@ -6197,10 +6436,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "skymail.de": {
     "cloud": "Hetzner",
+    "costs": "free",
     "hosted": "DE",
     "hosts": [
       "skymail.de",
@@ -6222,9 +6462,10 @@
       "email",
       "other"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "skynet.be": {
+    "costs": "paid",
     "hosted": "BE",
     "hosts": [
       "skynet.be"
@@ -6237,9 +6478,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "sltnet.lk": {
+    "costs": "paid",
     "hosts": [
       "sltnet.lk"
     ],
@@ -6255,10 +6497,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "sneakemail.com": {
     "cloud": "AWS",
+    "costs": "freemium",
     "hosted": "US",
     "hosts": [
       "sneakemail.com",
@@ -6275,6 +6518,7 @@
   },
   "so-net.ne.jp": {
     "cloud": "AWS",
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "so-net.ne.jp"
@@ -6287,10 +6531,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "sohu.com": {
     "cloud": "Tencent Cloud",
+    "costs": "free",
     "hosted": "CN",
     "hosts": [
       "sohu.com"
@@ -6304,10 +6549,11 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "solcon.nl": {
     "cloud": "Leaseweb",
+    "costs": "paid",
     "hosted": "NL",
     "hosts": [
       "solcon.nl"
@@ -6323,9 +6569,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "soverin.net": {
+    "costs": "paid",
     "hosted": "NL",
     "hosts": [
       "soverin.net"
@@ -6339,10 +6586,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "mailbox"
   },
   "spamex.com": {
     "cloud": "AWS",
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "spamex.com"
@@ -6357,6 +6605,7 @@
     "type": "forwarding"
   },
   "spamgourmet.com": {
+    "costs": "free",
     "hosted": "US",
     "hosts": [
       "spamgourmet.com",
@@ -6383,6 +6632,7 @@
     "type": "forwarding"
   },
   "speedy.com.ar": {
+    "costs": "paid",
     "hosted": "AR",
     "hosts": [
       "speedy.com.ar"
@@ -6395,10 +6645,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "spike.team": {
     "cloud": "AWS",
+    "costs": "free",
     "discontinued": true,
     "hosted": "US",
     "hosts": [
@@ -6409,9 +6660,10 @@
       "mxd.bolt.im"
     ],
     "remark": "Spike mail domain; site returns 404. No public signup.",
-    "type": "free"
+    "type": "mailbox"
   },
   "startmail.com": {
+    "costs": "paid",
     "hosted": "NL",
     "hosts": [
       "startmail.com",
@@ -6427,10 +6679,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "mailbox"
   },
   "stc.com.sa": {
     "cloud": "Akamai",
+    "costs": "paid",
     "hosted": "DE",
     "hosts": [
       "stc.com.sa"
@@ -6444,10 +6697,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "stipte.nl": {
     "cloud": "Hetzner",
+    "costs": "paid",
     "hosted": "FI",
     "hosts": [
       "stipte.nl"
@@ -6460,10 +6714,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "sudomail.com": {
     "cloud": "Cloudflare",
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "sudomail.com"
@@ -6476,9 +6731,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "mailbox"
   },
   "sunrise.ch": {
+    "costs": "paid",
     "hosted": "CH",
     "hosts": [
       "hispeed.ch",
@@ -6495,9 +6751,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "swva.net": {
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "swva.net"
@@ -6509,10 +6766,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "sympatico.ca": {
     "cloud": "AWS",
+    "costs": "paid",
     "hosted": "CA",
     "hosts": [
       "sympatico.ca"
@@ -6525,9 +6783,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "systemli.org": {
+    "costs": "free",
     "hosted": "SE",
     "hosts": [
       "systemli.org"
@@ -6540,9 +6799,10 @@
     "signup_verification": [
       "other"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "t-com.hr": {
+    "costs": "paid",
     "hosted": "HR",
     "hosts": [
       "t-com.hr"
@@ -6557,10 +6817,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "t-online.de": {
     "cloud": "AWS",
+    "costs": "free",
     "hosted": "IE",
     "hosts": [
       "t-online.de",
@@ -6580,9 +6841,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "t-online.hu": {
+    "costs": "paid",
     "hosted": "HU",
     "hosts": [
       "t-online.hu"
@@ -6595,9 +6857,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "talktalk.co.uk": {
+    "costs": "paid",
     "hosted": "FR",
     "hosts": [
       "talktalk.co.uk",
@@ -6616,9 +6879,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "tb9.de": {
+    "costs": "free",
     "discontinued": true,
     "hosted": "DE",
     "hosts": [
@@ -6632,10 +6896,11 @@
     "signup_verification": [
       "other"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "tdc.dk": {
     "cloud": "AWS",
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "tdc.dk"
@@ -6649,9 +6914,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "tedata.net": {
+    "costs": "paid",
     "hosts": [
       "tedata.net"
     ],
@@ -6663,10 +6929,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "tele2.nl": {
     "cloud": "Azure",
+    "costs": "paid",
     "hosted": "NL",
     "hosts": [
       "tele2.nl"
@@ -6680,9 +6947,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "telecom.com.ar": {
+    "costs": "paid",
     "hosted": "AR",
     "hosts": [
       "personal.com.ar",
@@ -6696,9 +6964,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "telenet.be": {
+    "costs": "paid",
     "hosted": "BE",
     "hosts": [
       "telenet.be"
@@ -6712,9 +6981,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "telenor": {
+    "costs": "paid",
     "hosts": [
       "telenor.dk",
       "telenor.no",
@@ -6730,9 +7000,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "telia.com": {
+    "costs": "paid",
     "hosted": "SE",
     "hosts": [
       "telia.com"
@@ -6745,9 +7016,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "telkomsa.net": {
+    "costs": "paid",
     "hosted": "ZA",
     "hosts": [
       "telkomsa.net"
@@ -6761,10 +7033,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "telus.net": {
     "cloud": "AWS",
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "telus.net"
@@ -6781,10 +7054,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "terra.com.br": {
     "cloud": "Azure",
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "terra.com.br"
@@ -6797,9 +7071,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "mailbox"
   },
   "thexyz.com": {
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "thexyz.com"
@@ -6812,9 +7087,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "mailbox"
   },
   "tildamail.com": {
+    "costs": "free",
     "discontinued": true,
     "hosts": [
       "tildamail.com"
@@ -6826,9 +7102,10 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "tin.it": {
+    "costs": "paid",
     "hosted": "IT",
     "hosts": [
       "tin.it"
@@ -6841,10 +7118,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "tinkmail.me": {
     "cloud": "Cloudflare",
+    "costs": "free",
     "hosted": "CA",
     "hosts": [
       "tinkmail.me"
@@ -6858,9 +7136,10 @@
     "signup_verification": [
       "email"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "tiscali.cz": {
+    "costs": "free",
     "hosted": "CZ",
     "hosts": [
       "tiscali.cz"
@@ -6876,9 +7155,10 @@
     "signup_verification": [
       "email"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "tiscali.it": {
+    "costs": "free",
     "discontinued": true,
     "hosted": "IT",
     "hosts": [
@@ -6896,9 +7176,10 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "tungmail.com": {
+    "costs": "free",
     "hosted": "US",
     "hosts": [
       "tungmail.com"
@@ -6910,9 +7191,10 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "turknet.com.tr": {
+    "costs": "paid",
     "hosted": "TR",
     "hosts": [
       "turknet.com.tr"
@@ -6926,9 +7208,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "tutanota.com": {
+    "costs": "free",
     "hosted": "DE",
     "hosts": [
       "keemail.me",
@@ -6946,9 +7229,10 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "tvnet.lv": {
+    "costs": "free",
     "hosted": "EE",
     "hosts": [
       "tvnet.lv"
@@ -6961,10 +7245,11 @@
     "signup_verification": [
       "other"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "ubbi.com.br": {
     "cloud": "Oracle Cloud",
+    "costs": "free",
     "discontinued": true,
     "hosted": "GB",
     "hosts": [
@@ -6975,10 +7260,11 @@
       "mail.ubbi.com.br"
     ],
     "remark": "Former Brazilian freemail; domain parked. No signup.",
-    "type": "free"
+    "type": "mailbox"
   },
   "ubikom.cc": {
     "cloud": "AWS",
+    "costs": "free",
     "hosted": "DE",
     "hosts": [
       "ubikom.cc"
@@ -6990,10 +7276,11 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "ukr.net": {
     "cloud": "Google Cloud",
+    "costs": "free",
     "hosted": "US",
     "hosts": [
       "ukr.net"
@@ -7005,9 +7292,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "uol.com.br": {
+    "costs": "paid",
     "hosted": "BR",
     "hosts": [
       "uol.com.br"
@@ -7020,9 +7308,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "usa.net": {
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "usa.net"
@@ -7035,9 +7324,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "mailbox"
   },
   "utanet.at": {
+    "costs": "paid",
     "hosts": [
       "utanet.at"
     ],
@@ -7049,10 +7339,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "uu.me": {
     "cloud": "Cloudflare",
+    "costs": "free",
     "hosted": "CA",
     "hosts": [
       "uu.me"
@@ -7068,6 +7359,7 @@
     "type": "forwarding"
   },
   "versatel.nl": {
+    "costs": "paid",
     "hosted": "NL",
     "hosts": [
       "versatel.nl"
@@ -7082,10 +7374,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "vfemail.net": {
     "cloud": "Cloudflare",
+    "costs": "free",
     "hosted": "CA",
     "hosts": [
       "vfemail.net",
@@ -7114,10 +7407,11 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "videotron.ca": {
     "cloud": "AWS",
+    "costs": "paid",
     "hosted": "CA",
     "hosts": [
       "videotron.ca"
@@ -7130,9 +7424,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "viettel.vn": {
+    "costs": "paid",
     "hosted": "VN",
     "hosts": [
       "viettel.vn"
@@ -7146,9 +7441,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "vip.163.com": {
+    "costs": "paid",
     "hosted": "CN",
     "hosts": [
       "vip.163.com"
@@ -7162,10 +7458,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "mailbox"
   },
   "virginmedia.com": {
     "cloud": "Google Cloud",
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "blueyonder.co.uk",
@@ -7182,10 +7479,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "vivaldi.net": {
     "cloud": "Cloudflare",
+    "costs": "free",
     "hosted": "CA",
     "hosts": [
       "vivaldi.net"
@@ -7199,9 +7497,10 @@
     "signup_verification": [
       "other"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "vnpt.vn": {
+    "costs": "paid",
     "hosted": "VN",
     "hosts": [
       "vnpt.vn"
@@ -7214,9 +7513,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "vodafone": {
+    "costs": "paid",
     "hosts": [
       "vodafone.com.eg",
       "vodafone.pt"
@@ -7230,9 +7530,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "vodafonemail.de": {
+    "costs": "free",
     "hosted": "DE",
     "hosts": [
       "vodafonemail.de",
@@ -7247,9 +7548,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "vodamail.co.za": {
+    "costs": "paid",
     "hosted": "ZA",
     "hosts": [
       "vodamail.co.za"
@@ -7265,10 +7567,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "voo.be": {
     "cloud": "Cloudflare",
+    "costs": "paid",
     "hosted": "CA",
     "hosts": [
       "voo.be"
@@ -7281,10 +7584,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "walla.co.il": {
     "cloud": "Google Cloud",
+    "costs": "free",
     "hosted": "US",
     "hosts": [
       "walla.co.il"
@@ -7298,10 +7602,11 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "walla.com": {
     "cloud": "Google Cloud",
+    "costs": "free",
     "hosted": "US",
     "hosts": [
       "walla.com"
@@ -7312,9 +7617,10 @@
       "mx2.hc49497.c3s2.iphmx.com"
     ],
     "remark": "Israeli portal freemail (Walla!).",
-    "type": "free"
+    "type": "mailbox"
   },
   "wananchi.com": {
+    "costs": "paid",
     "hosted": "KE",
     "hosts": [
       "wananchi.com"
@@ -7328,9 +7634,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "waoo.dk": {
+    "costs": "paid",
     "hosted": "DK",
     "hosts": [
       "waoo.dk"
@@ -7343,10 +7650,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "web-mail.de": {
     "cloud": "IONOS",
+    "costs": "free",
     "hosted": "DE",
     "hosts": [
       "web-mail.de"
@@ -7360,10 +7668,11 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "webafrica.org.za": {
     "cloud": "Cloudflare",
+    "costs": "paid",
     "hosted": "CA",
     "hosts": [
       "webafrica.org.za"
@@ -7378,9 +7687,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "webgmx": {
+    "costs": "free",
     "hosts": [
       "abwesend.de",
       "alpenjodel.de",
@@ -7537,10 +7847,11 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "windstream.net": {
     "cloud": "Oracle Cloud",
+    "costs": "paid",
     "hosted": "US",
     "hosts": [
       "windstream.net"
@@ -7553,10 +7864,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "wiwimail.com": {
     "cloud": "DigitalOcean",
+    "costs": "free",
     "hosted": "US",
     "hosts": [
       "wiwimail.com"
@@ -7569,10 +7881,11 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "xmail.com": {
     "cloud": "Cloudflare",
+    "costs": "free",
     "hosted": "CA",
     "hosts": [
       "xmail.com"
@@ -7586,9 +7899,10 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "xmail.net": {
+    "costs": "free",
     "hosted": "CA",
     "hosts": [
       "xmail.net"
@@ -7601,9 +7915,10 @@
     "signup_verification": [
       "none"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "xms.nl": {
+    "costs": "paid",
     "hosted": "DE",
     "hosts": [
       "xms.nl"
@@ -7616,9 +7931,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "xtra.co.nz": {
+    "costs": "paid",
     "hosted": "NZ",
     "hosts": [
       "xtra.co.nz"
@@ -7631,9 +7947,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "yaanimail.com": {
+    "costs": "paid",
     "hosted": "TR",
     "hosts": [
       "superonline.com",
@@ -7648,9 +7965,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "yahoo.co.jp": {
+    "costs": "free",
     "hosted": "JP",
     "hosts": [
       "yahoo.co.jp",
@@ -7668,9 +7986,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "yahoo/aol": {
+    "costs": "free",
     "hosts": [
       "aim.com",
       "ameritech.net",
@@ -7775,10 +8094,11 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "yandex.ru": {
     "cloud": "Yandex Cloud",
+    "costs": "free",
     "hosted": "RU",
     "hosts": [
       "dezigner.ru",
@@ -7810,9 +8130,10 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   },
   "yousee.dk": {
+    "costs": "paid",
     "hosted": "DK",
     "hosts": [
       "yousee.dk"
@@ -7826,10 +8147,11 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "zaclys.com": {
     "cloud": "OVH",
+    "costs": "paid",
     "hosted": "FR",
     "hosts": [
       "zaclys.com"
@@ -7841,9 +8163,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "mailbox"
   },
   "ziggo.nl": {
+    "costs": "paid",
     "hosted": "NL",
     "hosts": [
       "casema.nl",
@@ -7863,9 +8186,10 @@
     "signup_verification": [
       "payment"
     ],
-    "type": "paid"
+    "type": "isp"
   },
   "zohomail.com": {
+    "costs": "free",
     "hosted": "US",
     "hosts": [
       "zoho.com",
@@ -7889,6 +8213,6 @@
     "signup_verification": [
       "mobile"
     ],
-    "type": "free"
+    "type": "mailbox"
   }
 }

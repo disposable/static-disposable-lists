@@ -198,6 +198,18 @@
             background: #f6f8fa;
             color: var(--text-secondary);
         }
+        .badge-broker {
+            background: #ddf4ff;
+            color: #0969da;
+        }
+        .badge-vpn {
+            background: #fbefff;
+            color: #8250df;
+        }
+        .badge-isp {
+            background: #ffe9d9;
+            color: #bc4c00;
+        }
         .badge-status-active {
             background: #dafbe1;
             color: var(--success-color);
@@ -437,9 +449,16 @@
                     <div class="filter-group">
                         <label>Type:</label>
                         <button class="filter-btn active" data-filter="type" data-value="all" title="Show services of all types">All</button>
-                        <button class="filter-btn" data-filter="type" data-value="free" title="Free providers">Free</button>
-                        <button class="filter-btn" data-filter="type" data-value="freemium" title="Free tier with paid upgrades">Freemium</button>
-                        <button class="filter-btn" data-filter="type" data-value="paid" title="Paid providers">Paid</button>
+                        <button class="filter-btn" data-filter="type" data-value="broker" title="Classic tunnel broker services">Broker</button>
+                        <button class="filter-btn" data-filter="type" data-value="vpn" title="Overlay/VPN-style tunnels only (WireGuard/OpenVPN/ZeroTier etc.)">VPN</button>
+                        <button class="filter-btn" data-filter="type" data-value="isp" title="ISP/carrier-operated transition services">ISP</button>
+                    </div>
+                    <div class="filter-group">
+                        <label>Costs:</label>
+                        <button class="filter-btn active" data-filter="costs" data-value="all" title="Show providers of all pricing classes">All</button>
+                        <button class="filter-btn" data-filter="costs" data-value="free" title="Free providers">Free</button>
+                        <button class="filter-btn" data-filter="costs" data-value="freemium" title="Free tier with paid upgrades">Freemium</button>
+                        <button class="filter-btn" data-filter="costs" data-value="paid" title="Paid providers">Paid</button>
                     </div>
                     <div class="filter-group">
                         <label>Protocol:</label>
@@ -518,7 +537,7 @@
 
         initTheme();
 
-        let currentFilters = { status: 'all', type: 'all', proto: 'all', bgp: 'all', nat: 'all', api: 'all', access: 'all', region: 'all' };
+        let currentFilters = { status: 'all', type: 'all', costs: 'all', proto: 'all', bgp: 'all', nat: 'all', api: 'all', access: 'all', region: 'all' };
         let currentSearch = '';
         const EU = new Set(['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE']);
         const MAIN_PROTOS = new Set(['6in4', 'wireguard', 'gre', 'gretap', 'openvpn']);
@@ -567,6 +586,7 @@
                 const show =
                     (currentFilters.status === 'all' || row.dataset.status === currentFilters.status) &&
                     (currentFilters.type === 'all' || row.dataset.type === currentFilters.type) &&
+                    (currentFilters.costs === 'all' || row.dataset.costs === currentFilters.costs) &&
                     protoMatches(protos, currentFilters.proto) &&
                     (currentFilters.bgp === 'all' || row.dataset.bgp === currentFilters.bgp) &&
                     (currentFilters.nat === 'all' || row.dataset.nat === currentFilters.nat) &&
@@ -769,6 +789,7 @@
                                 data-hosts="${esc((s.hosts || []).join(' ').toLowerCase())}"
                                 data-status="${esc(status)}"
                                 data-type="${esc(s.type || 'unknown')}"
+                                data-costs="${esc(s.costs || 'unknown')}"
                                 data-proto="${esc(protos.join(' '))}"
                                 data-bgp="${s.bgp === true ? 'yes' : 'no'}"
                                 data-nat="${s.nat === true ? 'yes' : 'no'}"
@@ -791,7 +812,8 @@
                                 </td>
                                 <td class="geo-cell">${s.jurisdiction ? `<span title="jurisdiction (legal seat): ${esc(s.jurisdiction)}">${flag(s.jurisdiction)}</span>` : '<span class="remark">?</span>'}</td>
                                 <td><span class="badge badge-status-${esc(status)}">${esc(STATUS_LABELS[status] || status)}</span></td>
-                                <td><span class="badge badge-${esc(s.type || 'unknown')}">${esc(s.type || 'unknown')}</span></td>
+                                <td><span class="badge badge-${esc(s.type || 'unknown')}">${esc(s.type || 'unknown')}</span>
+                                    ${s.costs ? `<span class="badge badge-${esc(s.costs)}">${esc(s.costs)}</span>` : ''}</td>
                                 <td>${protos.length ? protos.map(p => `<span class="badge badge-proto">${esc(p)}</span>`).join(' ') : '<span class="remark">-</span>'}</td>
                                 <td>${prefixes.length ? prefixes.map(p => `<span class="badge badge-prefix">/${esc(p)}</span>`).join(' ') : '<span class="remark">-</span>'}</td>
                                 <td>${boolCell(s.bgp)}</td>
@@ -812,7 +834,7 @@
 
         function updateHash() {
             const params = new URLSearchParams();
-            ['status', 'type', 'proto', 'bgp', 'nat', 'api', 'access', 'region'].forEach(f => {
+            ['status', 'type', 'costs', 'proto', 'bgp', 'nat', 'api', 'access', 'region'].forEach(f => {
                 if (currentFilters[f] !== 'all') params.set(f, currentFilters[f]);
             });
             if (currentSearch.trim()) params.set('q', currentSearch.trim().toLowerCase());
@@ -826,7 +848,7 @@
             const qs = raw.startsWith('?') ? raw.slice(1) : raw;
             const params = new URLSearchParams(qs);
 
-            ['status', 'type', 'proto', 'bgp', 'nat', 'api', 'access', 'region'].forEach(f => {
+            ['status', 'type', 'costs', 'proto', 'bgp', 'nat', 'api', 'access', 'region'].forEach(f => {
                 const v = params.get(f);
                 if (!v) return;
                 const btn = document.querySelector(`.filter-btn[data-filter="${f}"][data-value="${CSS.escape(v)}"]`);

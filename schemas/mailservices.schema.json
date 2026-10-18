@@ -24,10 +24,15 @@
             "format": "hostname"
           }
         },
+        "costs": {
+          "type": "string",
+          "description": "Pricing classification of the service itself",
+          "enum": ["free", "paid", "freemium"]
+        },
         "type": {
           "type": "string",
-          "description": "Service type classification: free/paid providers, forwarding/alias services (always strict-tier for consumers), reserved = special-use names",
-          "enum": ["free", "paid", "forwarding", "reserved"]
+          "description": "Service category: mailbox = real mailbox provider (webmail/IMAP storage); forwarding = alias/forwarding only (always strict-tier for consumers); isp = ISP/carrier-bundled mailbox; hosting = custom-domain/business email hosting; reserved = special-use names",
+          "enum": ["mailbox", "forwarding", "isp", "hosting", "reserved"]
         },
         "signup_verification": {
           "oneOf": [

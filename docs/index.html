@@ -193,6 +193,22 @@
             background: var(--accent-light);
             color: var(--accent-color);
         }
+        .badge-mailbox {
+            background: #ddf4ff;
+            color: #0969da;
+        }
+        .badge-isp {
+            background: #fbefff;
+            color: #8250df;
+        }
+        .badge-hosting {
+            background: #ffe9d9;
+            color: #bc4c00;
+        }
+        .badge-freemium {
+            background: #ffe9c7;
+            color: #9a6700;
+        }
         .badge-reserved {
             background: #f6f8fa;
             color: var(--text-secondary);
@@ -463,11 +479,19 @@
                         <div class="filter-group">
                             <label>Type:</label>
                             <button class="filter-btn active" data-filter="type" data-value="all" title="Show services of all types">All</button>
-                            <button class="filter-btn" data-filter="type" data-value="free" title="Free email providers">Free</button>
-                            <button class="filter-btn" data-filter="type" data-value="paid" title="Paid email providers">Paid</button>
+                            <button class="filter-btn" data-filter="type" data-value="mailbox" title="Mailbox providers (webmail/IMAP)">Mailbox</button>
                             <button class="filter-btn" data-filter="type" data-value="forwarding" title="Email forwarding/alias services - always strict-tier">Forwarding</button>
+                            <button class="filter-btn" data-filter="type" data-value="isp" title="ISP/carrier-bundled mailboxes">ISP</button>
+                            <button class="filter-btn" data-filter="type" data-value="hosting" title="Hosted/B2B email platforms">Hosting</button>
                             <button class="filter-btn" data-filter="type" data-value="reserved" title="Special-use reserved names">Reserved</button>
                             <button class="filter-btn" data-filter="type" data-value="discontinued" title="Services that have been discontinued">Discontinued</button>
+                        </div>
+                        <div class="filter-group">
+                            <label>Costs:</label>
+                            <button class="filter-btn active" data-filter="costs" data-value="all" title="Show services of all pricing classes">All</button>
+                            <button class="filter-btn" data-filter="costs" data-value="free" title="Free services">Free</button>
+                            <button class="filter-btn" data-filter="costs" data-value="paid" title="Paid services">Paid</button>
+                            <button class="filter-btn" data-filter="costs" data-value="freemium" title="Free tier with paid upgrades">Freemium</button>
                         </div>
                         <div class="filter-group">
                             <label>Verification:</label>
@@ -488,8 +512,8 @@
                         <div class="filter-group">
                             <label>Tier:</label>
                             <button class="filter-btn active" data-filter="tier" data-value="all" title="Show services of all tiers">All</button>
-                            <button class="filter-btn" data-filter="tier" data-value="whitelist" title="Whitelist-tier: free/paid/reserved with verified signup or unset verification">Whitelist</button>
-                            <button class="filter-btn" data-filter="tier" data-value="strict" title="Strict-tier (greylist): forwarding services, plus free/paid allowing anonymous signup (none/email verification)">Strict</button>
+                            <button class="filter-btn" data-filter="tier" data-value="whitelist" title="Whitelist-tier: priced/reserved services with verified signup or unset verification">Whitelist</button>
+                            <button class="filter-btn" data-filter="tier" data-value="strict" title="Strict-tier (greylist): forwarding services, plus priced providers allowing anonymous signup (none/email verification)">Strict</button>
                             <button class="filter-btn" data-filter="tier" data-value="excluded" title="Discontinued services - excluded from both tiers">Excluded</button>
                         </div>
                     </div>
@@ -549,7 +573,7 @@
 
         initTheme();
 
-        let currentFilters = { type: 'all', verify: 'all', tier: 'all', region: 'all' };
+        let currentFilters = { type: 'all', costs: 'all', verify: 'all', tier: 'all', region: 'all' };
         let currentSearch = '';
         const EU = new Set(['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE']);
         function flag(cc) {
@@ -567,17 +591,20 @@
         }
 
         // Tier derivation - mirrors disposable's mailservices preprocessing:
-        // forwarding is always strict-tier; free/paid with anonymous signup
-        // ('none'/'email') is strict-tier; discontinued feeds neither tier.
+        // forwarding is always strict-tier; priced services (free/paid/freemium)
+        // with anonymous signup ('none'/'email') are strict-tier; discontinued
+        // feeds neither tier. Reserved/special-use stays whitelist.
         function tierOf(service) {
             if (service.discontinued) return 'excluded';
             const type = service.type;
+            const costs = service.costs;
             const verifications = verificationSet(service);
+            const priced = costs === 'free' || costs === 'paid' || costs === 'freemium';
             if (type === 'forwarding' ||
-                ((type === 'free' || type === 'paid') && verifications.some(v => ANON_VERIFICATIONS.includes(v)))) {
+                (priced && verifications.some(v => ANON_VERIFICATIONS.includes(v)))) {
                 return 'strict';
             }
-            if (type === 'free' || type === 'paid' || type === 'reserved') return 'whitelist';
+            if (priced || type === 'reserved') return 'whitelist';
             return 'unknown';
         }
 
@@ -586,12 +613,14 @@
             let visible = 0;
             rows.forEach(row => {
                 const type = row.dataset.type;
+                const costs = row.dataset.costs;
                 const verifyList = row.dataset.verify;
                 const discontinued = row.dataset.discontinued === 'true';
                 const tier = row.dataset.tier;
 
                 const typeMatch = currentFilters.type === 'all' ||
                     (currentFilters.type === 'discontinued' ? discontinued : type === currentFilters.type);
+                const costsMatch = currentFilters.costs === 'all' || costs === currentFilters.costs;
                 const verifyMatch = currentFilters.verify === 'all' ||
                     (currentFilters.verify === 'unset' ? verifyList === 'unset' : verifyList.split(',').includes(currentFilters.verify));
                 const tierMatch = currentFilters.tier === 'all' || tier === currentFilters.tier;
@@ -601,7 +630,7 @@
                 const searchMatch = !currentSearch ||
                     row.dataset.name.includes(currentSearch) || row.dataset.hosts.includes(currentSearch);
 
-                const show = typeMatch && verifyMatch && tierMatch && regionMatch && searchMatch;
+                const show = typeMatch && costsMatch && verifyMatch && tierMatch && regionMatch && searchMatch;
                 row.style.display = show ? '' : 'none';
                 if (show) visible++;
             });
@@ -761,11 +790,10 @@
                 byType[type].sort((a, b) => a.name.localeCompare(b.name));
             }
 
-            const emailServices = [...(byType['free'] || []), ...(byType['paid'] || [])];
-            emailServices.sort((a, b) => a.name.localeCompare(b.name));
-
             const sections = [
-                { key: 'email', label: 'Email Services', items: emailServices },
+                { key: 'mailbox', label: 'Mailbox Providers', items: byType['mailbox'] || [] },
+                { key: 'isp', label: 'ISP / Carrier Mailboxes', items: byType['isp'] || [] },
+                { key: 'hosting', label: 'Email Hosting Platforms', items: byType['hosting'] || [] },
                 { key: 'forwarding', label: 'Email Forwarding Services', items: byType['forwarding'] || [] },
                 { key: 'reserved', label: 'Reserved / Special-Use', items: byType['reserved'] || [] },
                 { key: 'unknown', label: 'Other Services', items: byType['unknown'] || [] }
@@ -818,6 +846,7 @@
                                     data-name="${esc(s.name.toLowerCase())}"
                                     data-hosts="${esc((s.hosts || []).join(' ').toLowerCase())}"
                                     data-type="${esc(s.type || 'unknown')}"
+                                    data-costs="${esc(s.costs || 'unknown')}"
                                     data-verify="${esc(verifications.join(',') || 'unset')}"
                                     data-tier="${tier}"
                                     data-juris="${esc(s.jurisdiction || '')}"
@@ -833,7 +862,8 @@
                                         ${s.discontinued ? '<span class="badge badge-discontinued">discontinued</span>' : ''}
                                     </td>
                                     <td class="geo-cell">${s.jurisdiction ? `<span title="jurisdiction (legal seat): ${esc(s.jurisdiction)}">${flag(s.jurisdiction)}</span>` : '<span class="remark">?</span>'}${s.hosted || s.cloud ? `<span class="geo-sub" title="hosted: ${esc(s.hosted || 'unknown')}${s.cloud ? ', via ' + esc(s.cloud) : ''}">${s.hosted ? flag(s.hosted) : ''}${s.cloud ? ' ' + esc(s.cloud) : ''}</span>` : ''}</td>
-                                    <td><span class="badge badge-${esc(s.type || 'unknown')}">${esc(s.type || 'unknown')}</span></td>
+                                    <td><span class="badge badge-${esc(s.type || 'unknown')}">${esc(s.type || 'unknown')}</span>
+                                        ${s.costs ? `<span class="badge badge-${esc(s.costs)}">${esc(s.costs)}</span>` : ''}</td>
                                     <td><span class="badge badge-tier-${tier}">${TIER_LABELS[tier]}</span></td>
                                     <td class="hosts-list">
                                         ${renderHostsCollapsible(s.hosts || [])}
@@ -997,7 +1027,7 @@
 
             let q = '';
             if (tabId === 'mail-services') {
-                ['type', 'verify', 'tier', 'region'].forEach(f => {
+                ['type', 'costs', 'verify', 'tier', 'region'].forEach(f => {
                     if (currentFilters[f] !== 'all') params.set(f, currentFilters[f]);
                 });
                 q = currentSearch;
@@ -1024,7 +1054,7 @@
             const q = params.get('q') || '';
 
             if (tabId === 'mail-services') {
-                ['type', 'verify', 'tier', 'region'].forEach(f => {
+                ['type', 'costs', 'verify', 'tier', 'region'].forEach(f => {
                     const v = params.get(f);
                     if (!v) return;
                     const btn = document.querySelector(`.filter-btn[data-filter="${f}"][data-value="${CSS.escape(v)}"]`);
