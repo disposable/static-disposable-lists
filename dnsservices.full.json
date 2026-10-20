@@ -54054,7 +54054,7 @@
     ],
     "jurisdiction": "KR",
     "public": true,
-    "remark": "Free DDNS service (TOPS); zone no longer resolves — nameservers delegated but not answering.",
+    "remark": "Free DDNS service (TOPS; MintDNS 2009 panel, unchanged since 2017). Dead since ~2026-09: registry delegation and glue still point to ns1/ns2.topsddns.net (94.177.187.14, Aruba Cloud) but the server is offline; passive DNS last saw user subdomains 2026-09-14. Domain paid through 2027-07.",
     "status": "discontinued",
     "type": "ddns",
     "updates": "dynamic",
