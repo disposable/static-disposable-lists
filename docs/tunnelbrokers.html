@@ -279,19 +279,14 @@
             gap: 15px;
             align-items: center;
         }
-        .filter-group {
+        .filter-select {
+            position: relative;
+        }
+        .filter-select-btn {
             display: flex;
-            gap: 8px;
             align-items: center;
-            flex-wrap: wrap;
-        }
-        .filter-group label {
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--text-secondary);
-            text-transform: uppercase;
-        }
-        .filter-btn {
+            gap: 8px;
+            width: 100%;
             padding: 6px 12px;
             border: 1px solid var(--border-color);
             background: var(--card-bg);
@@ -301,14 +296,60 @@
             font-size: 0.85rem;
             transition: all 0.2s;
         }
-        .filter-btn:hover {
+        .filter-select-btn:hover {
             background: var(--bg-color);
             border-color: var(--accent-color);
         }
-        .filter-btn.active {
-            background: var(--accent-color);
-            color: white;
+        .filter-select.open .filter-select-btn,
+        .filter-select.filtered .filter-select-btn {
             border-color: var(--accent-color);
+        }
+        .filter-select.filtered .filter-select-btn {
+            background: var(--accent-light);
+        }
+        .filter-select-label {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 260px;
+        }
+        .filter-select-arrow {
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            flex-shrink: 0;
+        }
+        .filter-select-menu {
+            display: none;
+            position: absolute;
+            top: calc(100% + 4px);
+            left: 0;
+            z-index: 20;
+            min-width: 180px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+            padding: 4px;
+        }
+        .filter-select.open .filter-select-menu {
+            display: block;
+        }
+        .filter-select-menu .filter-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        .filter-select-menu .filter-option:hover {
+            background: var(--bg-color);
+        }
+        .filter-select-menu .filter-option input {
+            accent-color: var(--accent-color);
+            margin: 0;
         }
         .hosts-list {
             max-width: 220px;
@@ -398,6 +439,13 @@
             .hosts-list, .remark {
                 max-width: 150px;
             }
+            .filter-select-menu {
+                position: fixed;
+                left: 10px;
+                right: 10px;
+                top: auto;
+                min-width: 0;
+            }
         }
         @media (min-width: 769px) {
             thead th {
@@ -438,66 +486,96 @@
                     <input type="text" id="brokerSearch" placeholder="Search providers or domains...">
                 </div>
                 <div class="filter-bar">
-                    <div class="filter-group">
-                        <label>Status:</label>
-                        <button class="filter-btn active" data-filter="status" data-value="all" title="Show services of all statuses">All</button>
-                        <button class="filter-btn" data-filter="status" data-value="active" title="Open registrations">Active</button>
-                        <button class="filter-btn" data-filter="status" data-value="restricted" title="Signup gated - own ASN required, verified operators, or manual approval">Restricted</button>
-                        <button class="filter-btn" data-filter="status" data-value="no_new_registrations" title="New tunnels cannot be created">No New Reg.</button>
-                        <button class="filter-btn" data-filter="status" data-value="discontinued" title="Service shut down">Discontinued</button>
+                    <div class="filter-select" data-filter="status" data-name="Status">
+                        <button type="button" class="filter-select-btn" aria-expanded="false">
+                            <span class="filter-select-label">Status: All</span><span class="filter-select-arrow">▾</span>
+                        </button>
+                        <div class="filter-select-menu">
+                            <label class="filter-option" title="Open registrations"><input type="checkbox" value="active" checked>Active</label>
+                            <label class="filter-option" title="Signup gated - own ASN required, verified operators, or manual approval"><input type="checkbox" value="restricted" checked>Restricted</label>
+                            <label class="filter-option" title="New tunnels cannot be created"><input type="checkbox" value="no_new_registrations" checked>No New Reg.</label>
+                            <label class="filter-option" title="Service shut down"><input type="checkbox" value="discontinued" checked>Discontinued</label>
+                        </div>
                     </div>
-                    <div class="filter-group">
-                        <label>Type:</label>
-                        <button class="filter-btn active" data-filter="type" data-value="all" title="Show services of all types">All</button>
-                        <button class="filter-btn" data-filter="type" data-value="broker" title="Classic tunnel broker services">Broker</button>
-                        <button class="filter-btn" data-filter="type" data-value="vpn" title="Overlay/VPN-style tunnels only (WireGuard/OpenVPN/ZeroTier etc.)">VPN</button>
-                        <button class="filter-btn" data-filter="type" data-value="isp" title="ISP/carrier-operated transition services">ISP</button>
+                    <div class="filter-select" data-filter="type" data-name="Type">
+                        <button type="button" class="filter-select-btn" aria-expanded="false">
+                            <span class="filter-select-label">Type: All</span><span class="filter-select-arrow">▾</span>
+                        </button>
+                        <div class="filter-select-menu">
+                            <label class="filter-option" title="Classic tunnel broker services"><input type="checkbox" value="broker" checked>Broker</label>
+                            <label class="filter-option" title="Overlay/VPN-style tunnels only (WireGuard/OpenVPN/ZeroTier etc.)"><input type="checkbox" value="vpn" checked>VPN</label>
+                            <label class="filter-option" title="ISP/carrier-operated transition services"><input type="checkbox" value="isp" checked>ISP</label>
+                            <label class="filter-option" title="Services without a recorded type"><input type="checkbox" value="unknown" checked>Unknown</label>
+                        </div>
                     </div>
-                    <div class="filter-group">
-                        <label>Costs:</label>
-                        <button class="filter-btn active" data-filter="costs" data-value="all" title="Show providers of all pricing classes">All</button>
-                        <button class="filter-btn" data-filter="costs" data-value="free" title="Free providers">Free</button>
-                        <button class="filter-btn" data-filter="costs" data-value="freemium" title="Free tier with paid upgrades">Freemium</button>
-                        <button class="filter-btn" data-filter="costs" data-value="paid" title="Paid providers">Paid</button>
+                    <div class="filter-select" data-filter="costs" data-name="Costs">
+                        <button type="button" class="filter-select-btn" aria-expanded="false">
+                            <span class="filter-select-label">Costs: All</span><span class="filter-select-arrow">▾</span>
+                        </button>
+                        <div class="filter-select-menu">
+                            <label class="filter-option" title="Free providers"><input type="checkbox" value="free" checked>Free</label>
+                            <label class="filter-option" title="Free tier with paid upgrades"><input type="checkbox" value="freemium" checked>Freemium</label>
+                            <label class="filter-option" title="Paid providers"><input type="checkbox" value="paid" checked>Paid</label>
+                            <label class="filter-option" title="Pricing class not recorded"><input type="checkbox" value="unknown" checked>Unknown</label>
+                        </div>
                     </div>
-                    <div class="filter-group">
-                        <label>Protocol:</label>
-                        <button class="filter-btn active" data-filter="proto" data-value="all" title="Show all tunnel protocols">All</button>
-                        <button class="filter-btn" data-filter="proto" data-value="6in4" title="IPv6-in-IPv4 proto-41 (incl. SIT)">6in4</button>
-                        <button class="filter-btn" data-filter="proto" data-value="wireguard" title="WireGuard tunnels">WireGuard</button>
-                        <button class="filter-btn" data-filter="proto" data-value="gre" title="GRE/GRETAP tunnels">GRE</button>
-                        <button class="filter-btn" data-filter="proto" data-value="openvpn" title="OpenVPN tunnels">OpenVPN</button>
-                        <button class="filter-btn" data-filter="proto" data-value="other" title="Other protocols (AYIYA, TSP, TIC, VXLAN, IPIP, IPsec, ...)">Other</button>
+                    <div class="filter-select" data-filter="proto" data-name="Protocol">
+                        <button type="button" class="filter-select-btn" aria-expanded="false">
+                            <span class="filter-select-label">Protocol: All</span><span class="filter-select-arrow">▾</span>
+                        </button>
+                        <div class="filter-select-menu">
+                            <label class="filter-option" title="IPv6-in-IPv4 proto-41 (incl. SIT)"><input type="checkbox" value="6in4" checked>6in4</label>
+                            <label class="filter-option" title="WireGuard tunnels"><input type="checkbox" value="wireguard" checked>WireGuard</label>
+                            <label class="filter-option" title="GRE/GRETAP tunnels"><input type="checkbox" value="gre" checked>GRE</label>
+                            <label class="filter-option" title="OpenVPN tunnels"><input type="checkbox" value="openvpn" checked>OpenVPN</label>
+                            <label class="filter-option" title="Other protocols (AYIYA, TSP, TIC, VXLAN, IPIP, IPsec, ...)"><input type="checkbox" value="other" checked>Other</label>
+                        </div>
                     </div>
-                    <div class="filter-group">
-                        <label>BGP:</label>
-                        <button class="filter-btn active" data-filter="bgp" data-value="all" title="Show with or without BGP peering">All</button>
-                        <button class="filter-btn" data-filter="bgp" data-value="yes" title="BGP peering over the tunnel offered">Yes</button>
-                        <button class="filter-btn" data-filter="bgp" data-value="no" title="No BGP peering">No</button>
+                    <div class="filter-select" data-filter="bgp" data-name="BGP">
+                        <button type="button" class="filter-select-btn" aria-expanded="false">
+                            <span class="filter-select-label">BGP: All</span><span class="filter-select-arrow">▾</span>
+                        </button>
+                        <div class="filter-select-menu">
+                            <label class="filter-option" title="BGP peering over the tunnel offered"><input type="checkbox" value="yes" checked>Yes</label>
+                            <label class="filter-option" title="No BGP peering"><input type="checkbox" value="no" checked>No</label>
+                        </div>
                     </div>
-                    <div class="filter-group">
-                        <label>NAT:</label>
-                        <button class="filter-btn active" data-filter="nat" data-value="all" title="Show all NAT compatibility">All</button>
-                        <button class="filter-btn" data-filter="nat" data-value="yes" title="Works behind NAT/CGNAT">Works</button>
-                        <button class="filter-btn" data-filter="nat" data-value="no" title="Requires public IPv4 endpoint">No</button>
+                    <div class="filter-select" data-filter="nat" data-name="NAT">
+                        <button type="button" class="filter-select-btn" aria-expanded="false">
+                            <span class="filter-select-label">NAT: All</span><span class="filter-select-arrow">▾</span>
+                        </button>
+                        <div class="filter-select-menu">
+                            <label class="filter-option" title="Works behind NAT/CGNAT"><input type="checkbox" value="yes" checked>Works</label>
+                            <label class="filter-option" title="Requires public IPv4 endpoint"><input type="checkbox" value="no" checked>No</label>
+                        </div>
                     </div>
-                    <div class="filter-group">
-                        <label>API:</label>
-                        <button class="filter-btn active" data-filter="api" data-value="all" title="Show services with or without an API">All</button>
-                        <button class="filter-btn" data-filter="api" data-value="yes" title="Programmatic provisioning API exists">Yes</button>
-                        <button class="filter-btn" data-filter="api" data-value="no" title="No programmatic API">No</button>
+                    <div class="filter-select" data-filter="api" data-name="API">
+                        <button type="button" class="filter-select-btn" aria-expanded="false">
+                            <span class="filter-select-label">API: All</span><span class="filter-select-arrow">▾</span>
+                        </button>
+                        <div class="filter-select-menu">
+                            <label class="filter-option" title="Programmatic provisioning API exists"><input type="checkbox" value="yes" checked>Yes</label>
+                            <label class="filter-option" title="No programmatic API"><input type="checkbox" value="no" checked>No</label>
+                        </div>
                     </div>
-                    <div class="filter-group">
-                        <label>Access:</label>
-                        <button class="filter-btn active" data-filter="access" data-value="all" title="Show public and private services">All</button>
-                        <button class="filter-btn" data-filter="access" data-value="public" title="Tunnels can be requested publicly on the provider website">Public</button>
-                        <button class="filter-btn" data-filter="access" data-value="private" title="Customer-only, member-only, or invite-only">Private</button>
+                    <div class="filter-select" data-filter="access" data-name="Access">
+                        <button type="button" class="filter-select-btn" aria-expanded="false">
+                            <span class="filter-select-label">Access: All</span><span class="filter-select-arrow">▾</span>
+                        </button>
+                        <div class="filter-select-menu">
+                            <label class="filter-option" title="Tunnels can be requested publicly on the provider website"><input type="checkbox" value="public" checked>Public</label>
+                            <label class="filter-option" title="Customer-only, member-only, or invite-only"><input type="checkbox" value="private" checked>Private</label>
+                        </div>
                     </div>
-                    <div class="filter-group">
-                        <label>Region:</label>
-                        <button class="filter-btn active" data-filter="region" data-value="all" title="Show providers in all jurisdictions">All</button>
-                        <button class="filter-btn" data-filter="region" data-value="eu" title="Provider legal seat in the European Union">EU</button>
-                        <button class="filter-btn" data-filter="region" data-value="non-eu" title="Provider legal seat outside the European Union">non-EU</button>
+                    <div class="filter-select" data-filter="region" data-name="Region">
+                        <button type="button" class="filter-select-btn" aria-expanded="false">
+                            <span class="filter-select-label">Region: All</span><span class="filter-select-arrow">▾</span>
+                        </button>
+                        <div class="filter-select-menu">
+                            <label class="filter-option" title="Provider legal seat in the European Union"><input type="checkbox" value="eu" checked>EU</label>
+                            <label class="filter-option" title="Provider legal seat outside the European Union"><input type="checkbox" value="non-eu" checked>non-EU</label>
+                            <label class="filter-option" title="Provider legal seat not recorded"><input type="checkbox" value="unknown" checked>Unknown</label>
+                        </div>
                     </div>
                 </div>
                 <div id="brokers-content">
@@ -566,10 +644,11 @@
 
         function protoMatches(protoList, sel) {
             if (sel === 'all') return true;
-            if (sel === 'other') return protoList.some(p => !MAIN_PROTOS.has(p));
-            if (sel === 'gre') return protoList.some(p => p === 'gre' || p === 'gretap');
-            if (sel === '6in4') return protoList.some(p => p === '6in4' || p === 'heartbeat');
-            return protoList.includes(sel);
+            return sel.some(opt =>
+                opt === 'other' ? protoList.some(p => !MAIN_PROTOS.has(p)) :
+                opt === 'gre' ? protoList.some(p => p === 'gre' || p === 'gretap') :
+                opt === '6in4' ? protoList.some(p => p === '6in4' || p === 'heartbeat') :
+                protoList.includes(opt));
         }
 
         function boolCell(v) {
@@ -578,22 +657,34 @@
                  : '<span class="remark">-</span>';
         }
 
+        function filterSet(name) {
+            return currentFilters[name] === 'all' ? null : new Set(currentFilters[name]);
+        }
+
         function applyFilters() {
+            const statusSel = filterSet('status');
+            const typeSel = filterSet('type');
+            const costsSel = filterSet('costs');
+            const bgpSel = filterSet('bgp');
+            const natSel = filterSet('nat');
+            const apiSel = filterSet('api');
+            const accessSel = filterSet('access');
+            const regionSel = filterSet('region');
             const rows = document.querySelectorAll('.service-row');
             let visible = 0;
             rows.forEach(row => {
                 const protos = (row.dataset.proto || '').split(' ').filter(Boolean);
+                const juris = row.dataset.juris;
                 const show =
-                    (currentFilters.status === 'all' || row.dataset.status === currentFilters.status) &&
-                    (currentFilters.type === 'all' || row.dataset.type === currentFilters.type) &&
-                    (currentFilters.costs === 'all' || row.dataset.costs === currentFilters.costs) &&
+                    (!statusSel || statusSel.has(row.dataset.status)) &&
+                    (!typeSel || typeSel.has(row.dataset.type)) &&
+                    (!costsSel || costsSel.has(row.dataset.costs)) &&
                     protoMatches(protos, currentFilters.proto) &&
-                    (currentFilters.bgp === 'all' || row.dataset.bgp === currentFilters.bgp) &&
-                    (currentFilters.nat === 'all' || row.dataset.nat === currentFilters.nat) &&
-                    (currentFilters.api === 'all' || row.dataset.api === currentFilters.api) &&
-                    (currentFilters.access === 'all' || row.dataset.access === currentFilters.access) &&
-                    (currentFilters.region === 'all' ||
-                        (currentFilters.region === 'eu' ? EU.has(row.dataset.juris) : row.dataset.juris && !EU.has(row.dataset.juris))) &&
+                    (!bgpSel || bgpSel.has(row.dataset.bgp)) &&
+                    (!natSel || natSel.has(row.dataset.nat)) &&
+                    (!apiSel || apiSel.has(row.dataset.api)) &&
+                    (!accessSel || accessSel.has(row.dataset.access)) &&
+                    (!regionSel || regionSel.has(juris ? (EU.has(juris) ? 'eu' : 'non-eu') : 'unknown')) &&
                     (!currentSearch ||
                         row.dataset.search.includes(currentSearch));
 
@@ -610,19 +701,68 @@
             }
         }
 
+        function closeFilterMenus() {
+            document.querySelectorAll('.filter-select.open').forEach(sel => {
+                sel.classList.remove('open');
+                sel.querySelector('.filter-select-btn').setAttribute('aria-expanded', 'false');
+            });
+        }
+
+        function syncFilter(sel) {
+            const boxes = [...sel.querySelectorAll('input[type="checkbox"]')];
+            const checked = boxes.filter(b => b.checked);
+            currentFilters[sel.dataset.filter] =
+                checked.length === boxes.length ? 'all' : checked.map(b => b.value);
+
+            const labelEl = sel.querySelector('.filter-select-label');
+            const name = sel.dataset.name;
+            if (checked.length === boxes.length) {
+                labelEl.textContent = name + ': All';
+            } else if (checked.length === 0) {
+                labelEl.textContent = name + ': None';
+            } else {
+                labelEl.textContent = name + ': ' +
+                    checked.map(b => b.closest('.filter-option').textContent.trim()).join(', ');
+            }
+            sel.querySelector('.filter-select-btn').title = labelEl.textContent;
+            sel.classList.toggle('filtered', checked.length !== boxes.length);
+        }
+
+        function setFilterValues(name, values) {
+            const sel = document.querySelector(`.filter-select[data-filter="${name}"]`);
+            if (!sel) return;
+            const wanted = new Set(values);
+            sel.querySelectorAll('input[type="checkbox"]').forEach(b => {
+                b.checked = wanted.has(b.value);
+            });
+            syncFilter(sel);
+        }
+
         function setupFilters() {
-            document.querySelectorAll('.filter-btn').forEach(btn => {
-                btn.addEventListener('click', () => {
-                    const filterType = btn.dataset.filter;
-                    const value = btn.dataset.value;
-
-                    document.querySelectorAll(`.filter-btn[data-filter="${filterType}"]`).forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
-
-                    currentFilters[filterType] = value;
-                    applyFilters();
-                    updateHash();
+            document.querySelectorAll('.filter-select').forEach(sel => {
+                const btn = sel.querySelector('.filter-select-btn');
+                btn.addEventListener('click', e => {
+                    e.stopPropagation();
+                    const opening = !sel.classList.contains('open');
+                    closeFilterMenus();
+                    if (opening) {
+                        sel.classList.add('open');
+                        btn.setAttribute('aria-expanded', 'true');
+                    }
                 });
+                sel.querySelector('.filter-select-menu').addEventListener('click', e => e.stopPropagation());
+                sel.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+                    cb.addEventListener('change', () => {
+                        syncFilter(sel);
+                        applyFilters();
+                        updateHash();
+                    });
+                });
+                syncFilter(sel);
+            });
+            document.addEventListener('click', closeFilterMenus);
+            document.addEventListener('keydown', e => {
+                if (e.key === 'Escape') closeFilterMenus();
             });
         }
 
@@ -836,7 +976,7 @@
         function updateHash() {
             const params = new URLSearchParams();
             ['status', 'type', 'costs', 'proto', 'bgp', 'nat', 'api', 'access', 'region'].forEach(f => {
-                if (currentFilters[f] !== 'all') params.set(f, currentFilters[f]);
+                if (currentFilters[f] !== 'all') params.set(f, currentFilters[f].join(','));
             });
             if (currentSearch.trim()) params.set('q', currentSearch.trim().toLowerCase());
             const qs = params.toString();
@@ -851,12 +991,8 @@
 
             ['status', 'type', 'costs', 'proto', 'bgp', 'nat', 'api', 'access', 'region'].forEach(f => {
                 const v = params.get(f);
-                if (!v) return;
-                const btn = document.querySelector(`.filter-btn[data-filter="${f}"][data-value="${CSS.escape(v)}"]`);
-                if (!btn) return;
-                currentFilters[f] = v;
-                document.querySelectorAll(`.filter-btn[data-filter="${f}"]`).forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
+                if (v === null) return;
+                setFilterValues(f, v ? v.split(',') : []);
             });
             const q = params.get('q') || '';
             document.getElementById('brokerSearch').value = q;

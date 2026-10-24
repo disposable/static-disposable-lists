@@ -279,19 +279,14 @@
             gap: 15px;
             align-items: center;
         }
-        .filter-group {
+        .filter-select {
+            position: relative;
+        }
+        .filter-select-btn {
             display: flex;
-            gap: 8px;
             align-items: center;
-            flex-wrap: wrap;
-        }
-        .filter-group label {
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--text-secondary);
-            text-transform: uppercase;
-        }
-        .filter-btn {
+            gap: 8px;
+            width: 100%;
             padding: 6px 12px;
             border: 1px solid var(--border-color);
             background: var(--card-bg);
@@ -301,14 +296,60 @@
             font-size: 0.85rem;
             transition: all 0.2s;
         }
-        .filter-btn:hover {
+        .filter-select-btn:hover {
             background: var(--bg-color);
             border-color: var(--accent-color);
         }
-        .filter-btn.active {
-            background: var(--accent-color);
-            color: white;
+        .filter-select.open .filter-select-btn,
+        .filter-select.filtered .filter-select-btn {
             border-color: var(--accent-color);
+        }
+        .filter-select.filtered .filter-select-btn {
+            background: var(--accent-light);
+        }
+        .filter-select-label {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 260px;
+        }
+        .filter-select-arrow {
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            flex-shrink: 0;
+        }
+        .filter-select-menu {
+            display: none;
+            position: absolute;
+            top: calc(100% + 4px);
+            left: 0;
+            z-index: 20;
+            min-width: 180px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+            padding: 4px;
+        }
+        .filter-select.open .filter-select-menu {
+            display: block;
+        }
+        .filter-select-menu .filter-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        .filter-select-menu .filter-option:hover {
+            background: var(--bg-color);
+        }
+        .filter-select-menu .filter-option input {
+            accent-color: var(--accent-color);
+            margin: 0;
         }
         .geo-cell {
             white-space: nowrap;
@@ -437,6 +478,13 @@
             .hosts-list, .remark {
                 max-width: 150px;
             }
+            .filter-select-menu {
+                position: fixed;
+                left: 10px;
+                right: 10px;
+                top: auto;
+                min-width: 0;
+            }
         }
         @media (min-width: 769px) {
             thead th {
@@ -483,62 +531,90 @@
                         <input type="text" id="dnsSearch" placeholder="Search providers or domains...">
                     </div>
                     <div class="filter-bar">
-                        <div class="filter-group">
-                            <label>Status:</label>
-                            <button class="filter-btn active" data-filter="status" data-value="all" title="Show services of all statuses">All</button>
-                            <button class="filter-btn" data-filter="status" data-value="active" title="Open registrations">Active</button>
-                            <button class="filter-btn" data-filter="status" data-value="restricted" title="Signup gated - device ownership, invite-only, or manual approval">Restricted</button>
-                            <button class="filter-btn" data-filter="status" data-value="no_new_registrations" title="Existing hostnames still resolve but new ones cannot be created">No New Reg.</button>
-                            <button class="filter-btn" data-filter="status" data-value="discontinued" title="Service shut down">Discontinued</button>
+                        <div class="filter-select" data-filter="status" data-name="Status">
+                            <button type="button" class="filter-select-btn" aria-expanded="false">
+                                <span class="filter-select-label">Status: All</span><span class="filter-select-arrow">▾</span>
+                            </button>
+                            <div class="filter-select-menu">
+                                <label class="filter-option" title="Open registrations"><input type="checkbox" value="active" checked>Active</label>
+                                <label class="filter-option" title="Signup gated - device ownership, invite-only, or manual approval"><input type="checkbox" value="restricted" checked>Restricted</label>
+                                <label class="filter-option" title="Existing hostnames still resolve but new ones cannot be created"><input type="checkbox" value="no_new_registrations" checked>No New Reg.</label>
+                                <label class="filter-option" title="Service shut down"><input type="checkbox" value="discontinued" checked>Discontinued</label>
+                            </div>
                         </div>
-                        <div class="filter-group">
-                            <label>Type:</label>
-                            <button class="filter-btn active" data-filter="type" data-value="all" title="Show services of all types">All</button>
-                            <button class="filter-btn" data-filter="type" data-value="ddns" title="Dedicated dynamic-DNS hostname services">DDNS</button>
-                            <button class="filter-btn" data-filter="type" data-value="dns-only" title="Authoritative DNS hosting for customer-owned domains">DNS-only</button>
-                            <button class="filter-btn" data-filter="type" data-value="hosting" title="Web hosting/PaaS/site-builder subdomains">Hosting</button>
-                            <button class="filter-btn" data-filter="type" data-value="registry" title="Shared-suffix registries - the subdomain itself is the product">Registry</button>
-                            <button class="filter-btn" data-filter="type" data-value="vendor" title="Hostnames bound to vendor hardware/subscription">Vendor</button>
-                            <button class="filter-btn" data-filter="type" data-value="redirect" title="URL redirection/forwarding services">Redirect</button>
-                            <button class="filter-btn" data-filter="type" data-value="reserved" title="Infrastructure/security-boundary suffixes - not publicly registrable">Reserved</button>
+                        <div class="filter-select" data-filter="type" data-name="Type">
+                            <button type="button" class="filter-select-btn" aria-expanded="false">
+                                <span class="filter-select-label">Type: All</span><span class="filter-select-arrow">▾</span>
+                            </button>
+                            <div class="filter-select-menu">
+                                <label class="filter-option" title="Dedicated dynamic-DNS hostname services"><input type="checkbox" value="ddns" checked>DDNS</label>
+                                <label class="filter-option" title="Authoritative DNS hosting for customer-owned domains"><input type="checkbox" value="dns-only" checked>DNS-only</label>
+                                <label class="filter-option" title="Web hosting/PaaS/site-builder subdomains"><input type="checkbox" value="hosting" checked>Hosting</label>
+                                <label class="filter-option" title="Shared-suffix registries - the subdomain itself is the product"><input type="checkbox" value="registry" checked>Registry</label>
+                                <label class="filter-option" title="Hostnames bound to vendor hardware/subscription"><input type="checkbox" value="vendor" checked>Vendor</label>
+                                <label class="filter-option" title="URL redirection/forwarding services"><input type="checkbox" value="redirect" checked>Redirect</label>
+                                <label class="filter-option" title="Infrastructure/security-boundary suffixes - not publicly registrable"><input type="checkbox" value="reserved" checked>Reserved</label>
+                                <label class="filter-option" title="Services without a recorded type"><input type="checkbox" value="unknown" checked>Unknown</label>
+                            </div>
                         </div>
-                        <div class="filter-group">
-                            <label>Costs:</label>
-                            <button class="filter-btn active" data-filter="costs" data-value="all" title="Show providers of all pricing classes">All</button>
-                            <button class="filter-btn" data-filter="costs" data-value="free" title="Free providers">Free</button>
-                            <button class="filter-btn" data-filter="costs" data-value="freemium" title="Free tier with paid upgrades">Freemium</button>
-                            <button class="filter-btn" data-filter="costs" data-value="paid" title="Paid providers">Paid</button>
+                        <div class="filter-select" data-filter="costs" data-name="Costs">
+                            <button type="button" class="filter-select-btn" aria-expanded="false">
+                                <span class="filter-select-label">Costs: All</span><span class="filter-select-arrow">▾</span>
+                            </button>
+                            <div class="filter-select-menu">
+                                <label class="filter-option" title="Free providers"><input type="checkbox" value="free" checked>Free</label>
+                                <label class="filter-option" title="Free tier with paid upgrades"><input type="checkbox" value="freemium" checked>Freemium</label>
+                                <label class="filter-option" title="Paid providers"><input type="checkbox" value="paid" checked>Paid</label>
+                                <label class="filter-option" title="Pricing class not recorded"><input type="checkbox" value="unknown" checked>Unknown</label>
+                            </div>
                         </div>
-                        <div class="filter-group">
-                            <label>Updates:</label>
-                            <button class="filter-btn active" data-filter="updates" data-value="all" title="Show all update modes">All</button>
-                            <button class="filter-btn" data-filter="updates" data-value="dynamic" title="Supports DDNS update clients">Dynamic</button>
-                            <button class="filter-btn" data-filter="updates" data-value="static" title="Records editable but no update protocol">Static</button>
-                            <button class="filter-btn" data-filter="updates" data-value="both" title="Dynamic updates plus full static record editing">Both</button>
+                        <div class="filter-select" data-filter="updates" data-name="Updates">
+                            <button type="button" class="filter-select-btn" aria-expanded="false">
+                                <span class="filter-select-label">Updates: All</span><span class="filter-select-arrow">▾</span>
+                            </button>
+                            <div class="filter-select-menu">
+                                <label class="filter-option" title="Supports DDNS update clients"><input type="checkbox" value="dynamic" checked>Dynamic</label>
+                                <label class="filter-option" title="Records editable but no update protocol"><input type="checkbox" value="static" checked>Static</label>
+                                <label class="filter-option" title="Dynamic updates plus full static record editing"><input type="checkbox" value="both" checked>Both</label>
+                                <label class="filter-option" title="Update mode not recorded"><input type="checkbox" value="unknown" checked>Unknown</label>
+                            </div>
                         </div>
-                        <div class="filter-group">
-                            <label>API:</label>
-                            <button class="filter-btn active" data-filter="api" data-value="all" title="Show services with or without an API">All</button>
-                            <button class="filter-btn" data-filter="api" data-value="yes" title="Programmatic HTTP/DNS API for record management or updates">Yes</button>
-                            <button class="filter-btn" data-filter="api" data-value="no" title="No programmatic API for record management">No</button>
+                        <div class="filter-select" data-filter="api" data-name="API">
+                            <button type="button" class="filter-select-btn" aria-expanded="false">
+                                <span class="filter-select-label">API: All</span><span class="filter-select-arrow">▾</span>
+                            </button>
+                            <div class="filter-select-menu">
+                                <label class="filter-option" title="Programmatic HTTP/DNS API for record management or updates"><input type="checkbox" value="yes" checked>Yes</label>
+                                <label class="filter-option" title="No programmatic API for record management"><input type="checkbox" value="no" checked>No</label>
+                            </div>
                         </div>
-                        <div class="filter-group">
-                            <label>Access:</label>
-                            <button class="filter-btn active" data-filter="access" data-value="all" title="Show public and private services">All</button>
-                            <button class="filter-btn" data-filter="access" data-value="public" title="Hostnames can be registered publicly on the provider website">Public</button>
-                            <button class="filter-btn" data-filter="access" data-value="private" title="Registration only via vendor hardware/interface, customer-only, or invite-only">Private</button>
+                        <div class="filter-select" data-filter="access" data-name="Access">
+                            <button type="button" class="filter-select-btn" aria-expanded="false">
+                                <span class="filter-select-label">Access: All</span><span class="filter-select-arrow">▾</span>
+                            </button>
+                            <div class="filter-select-menu">
+                                <label class="filter-option" title="Hostnames can be registered publicly on the provider website"><input type="checkbox" value="public" checked>Public</label>
+                                <label class="filter-option" title="Registration only via vendor hardware/interface, customer-only, or invite-only"><input type="checkbox" value="private" checked>Private</label>
+                            </div>
                         </div>
-                        <div class="filter-group">
-                            <label>Region:</label>
-                            <button class="filter-btn active" data-filter="region" data-value="all" title="Show providers in all jurisdictions">All</button>
-                            <button class="filter-btn" data-filter="region" data-value="eu" title="Provider legal seat in the European Union">EU</button>
-                            <button class="filter-btn" data-filter="region" data-value="non-eu" title="Provider legal seat outside the European Union">non-EU</button>
+                        <div class="filter-select" data-filter="region" data-name="Region">
+                            <button type="button" class="filter-select-btn" aria-expanded="false">
+                                <span class="filter-select-label">Region: All</span><span class="filter-select-arrow">▾</span>
+                            </button>
+                            <div class="filter-select-menu">
+                                <label class="filter-option" title="Provider legal seat in the European Union"><input type="checkbox" value="eu" checked>EU</label>
+                                <label class="filter-option" title="Provider legal seat outside the European Union"><input type="checkbox" value="non-eu" checked>non-EU</label>
+                                <label class="filter-option" title="Provider legal seat not recorded"><input type="checkbox" value="unknown" checked>Unknown</label>
+                            </div>
                         </div>
-                        <div class="filter-group">
-                            <label>Revalidation:</label>
-                            <button class="filter-btn active" data-filter="reval" data-value="all" title="Show services with or without revalidation">All</button>
-                            <button class="filter-btn" data-filter="reval" data-value="required" title="Free hostnames/accounts must be manually re-confirmed periodically">Required</button>
-                            <button class="filter-btn" data-filter="reval" data-value="none" title="No periodic re-confirmation required">None</button>
+                        <div class="filter-select" data-filter="reval" data-name="Revalidation">
+                            <button type="button" class="filter-select-btn" aria-expanded="false">
+                                <span class="filter-select-label">Revalidation: All</span><span class="filter-select-arrow">▾</span>
+                            </button>
+                            <div class="filter-select-menu">
+                                <label class="filter-option" title="Free hostnames/accounts must be manually re-confirmed periodically"><input type="checkbox" value="required" checked>Required</label>
+                                <label class="filter-option" title="No periodic re-confirmation required"><input type="checkbox" value="none" checked>None</label>
+                            </div>
                         </div>
                     </div>
                     <div id="dns-services-content">
@@ -614,30 +690,33 @@
             return service.status || (service.discontinued ? 'discontinued' : 'active');
         }
 
+        function filterSet(name) {
+            return currentFilters[name] === 'all' ? null : new Set(currentFilters[name]);
+        }
+
         function applyFilters() {
+            const statusSel = filterSet('status');
+            const typeSel = filterSet('type');
+            const costsSel = filterSet('costs');
+            const updatesSel = filterSet('updates');
+            const apiSel = filterSet('api');
+            const accessSel = filterSet('access');
+            const regionSel = filterSet('region');
+            const revalSel = filterSet('reval');
             const rows = document.querySelectorAll('.service-row');
             let visible = 0;
             rows.forEach(row => {
-                const status = row.dataset.status;
-                const type = row.dataset.type;
-                const costs = row.dataset.costs;
-                const updates = row.dataset.updates;
-                const api = row.dataset.api;
-                const access = row.dataset.access;
-                const reval = row.dataset.reval;
                 const juris = row.dataset.juris;
 
                 const show =
-                    (currentFilters.status === 'all' || status === currentFilters.status) &&
-                    (currentFilters.type === 'all' || type === currentFilters.type) &&
-                    (currentFilters.costs === 'all' || costs === currentFilters.costs) &&
-                    (currentFilters.updates === 'all' || updates === currentFilters.updates) &&
-                    (currentFilters.api === 'all' || api === currentFilters.api) &&
-                    (currentFilters.access === 'all' || access === currentFilters.access) &&
-                    (currentFilters.region === 'all' ||
-                        (currentFilters.region === 'eu' ? EU.has(juris) : juris && !EU.has(juris))) &&
-                    (currentFilters.reval === 'all' ||
-                        (currentFilters.reval === 'required' ? reval === 'required' : reval === 'none')) &&
+                    (!statusSel || statusSel.has(row.dataset.status)) &&
+                    (!typeSel || typeSel.has(row.dataset.type)) &&
+                    (!costsSel || costsSel.has(row.dataset.costs)) &&
+                    (!updatesSel || updatesSel.has(row.dataset.updates)) &&
+                    (!apiSel || apiSel.has(row.dataset.api)) &&
+                    (!accessSel || accessSel.has(row.dataset.access)) &&
+                    (!regionSel || regionSel.has(juris ? (EU.has(juris) ? 'eu' : 'non-eu') : 'unknown')) &&
+                    (!revalSel || revalSel.has(row.dataset.reval)) &&
                     (!currentSearch || row.dataset.search.includes(currentSearch));
 
                 row.style.display = show ? '' : 'none';
@@ -653,19 +732,68 @@
             }
         }
 
+        function closeFilterMenus() {
+            document.querySelectorAll('.filter-select.open').forEach(sel => {
+                sel.classList.remove('open');
+                sel.querySelector('.filter-select-btn').setAttribute('aria-expanded', 'false');
+            });
+        }
+
+        function syncFilter(sel) {
+            const boxes = [...sel.querySelectorAll('input[type="checkbox"]')];
+            const checked = boxes.filter(b => b.checked);
+            currentFilters[sel.dataset.filter] =
+                checked.length === boxes.length ? 'all' : checked.map(b => b.value);
+
+            const labelEl = sel.querySelector('.filter-select-label');
+            const name = sel.dataset.name;
+            if (checked.length === boxes.length) {
+                labelEl.textContent = name + ': All';
+            } else if (checked.length === 0) {
+                labelEl.textContent = name + ': None';
+            } else {
+                labelEl.textContent = name + ': ' +
+                    checked.map(b => b.closest('.filter-option').textContent.trim()).join(', ');
+            }
+            sel.querySelector('.filter-select-btn').title = labelEl.textContent;
+            sel.classList.toggle('filtered', checked.length !== boxes.length);
+        }
+
+        function setFilterValues(name, values) {
+            const sel = document.querySelector(`.filter-select[data-filter="${name}"]`);
+            if (!sel) return;
+            const wanted = new Set(values);
+            sel.querySelectorAll('input[type="checkbox"]').forEach(b => {
+                b.checked = wanted.has(b.value);
+            });
+            syncFilter(sel);
+        }
+
         function setupFilters() {
-            document.querySelectorAll('.filter-btn').forEach(btn => {
-                btn.addEventListener('click', () => {
-                    const filterType = btn.dataset.filter;
-                    const value = btn.dataset.value;
-
-                    document.querySelectorAll(`.filter-btn[data-filter="${filterType}"]`).forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
-
-                    currentFilters[filterType] = value;
-                    applyFilters();
-                    updateHash();
+            document.querySelectorAll('.filter-select').forEach(sel => {
+                const btn = sel.querySelector('.filter-select-btn');
+                btn.addEventListener('click', e => {
+                    e.stopPropagation();
+                    const opening = !sel.classList.contains('open');
+                    closeFilterMenus();
+                    if (opening) {
+                        sel.classList.add('open');
+                        btn.setAttribute('aria-expanded', 'true');
+                    }
                 });
+                sel.querySelector('.filter-select-menu').addEventListener('click', e => e.stopPropagation());
+                sel.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+                    cb.addEventListener('change', () => {
+                        syncFilter(sel);
+                        applyFilters();
+                        updateHash();
+                    });
+                });
+                syncFilter(sel);
+            });
+            document.addEventListener('click', closeFilterMenus);
+            document.addEventListener('keydown', e => {
+                if (e.key === 'Escape') closeFilterMenus();
             });
         }
 
@@ -978,7 +1106,7 @@
             let q = '';
             if (tabId === 'dns-services') {
                 ['status', 'type', 'costs', 'updates', 'api', 'access', 'reval', 'region'].forEach(f => {
-                    if (currentFilters[f] !== 'all') params.set(f, currentFilters[f]);
+                    if (currentFilters[f] !== 'all') params.set(f, currentFilters[f].join(','));
                 });
                 q = currentSearch;
             } else if (tabId === 'old-hosts') {
@@ -1004,12 +1132,8 @@
             if (tabId === 'dns-services') {
                 ['status', 'type', 'costs', 'updates', 'api', 'access', 'reval', 'region'].forEach(f => {
                     const v = params.get(f);
-                    if (!v) return;
-                    const btn = document.querySelector(`.filter-btn[data-filter="${f}"][data-value="${CSS.escape(v)}"]`);
-                    if (!btn) return;
-                    currentFilters[f] = v;
-                    document.querySelectorAll(`.filter-btn[data-filter="${f}"]`).forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
+                    if (v === null) return;
+                    setFilterValues(f, v ? v.split(',') : []);
                 });
                 document.getElementById('dnsSearch').value = q;
                 currentSearch = q;

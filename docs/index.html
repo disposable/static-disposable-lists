@@ -257,19 +257,14 @@
             gap: 15px;
             align-items: center;
         }
-        .filter-group {
+        .filter-select {
+            position: relative;
+        }
+        .filter-select-btn {
             display: flex;
-            gap: 8px;
             align-items: center;
-            flex-wrap: wrap;
-        }
-        .filter-group label {
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--text-secondary);
-            text-transform: uppercase;
-        }
-        .filter-btn {
+            gap: 8px;
+            width: 100%;
             padding: 6px 12px;
             border: 1px solid var(--border-color);
             background: var(--card-bg);
@@ -279,14 +274,60 @@
             font-size: 0.85rem;
             transition: all 0.2s;
         }
-        .filter-btn:hover {
+        .filter-select-btn:hover {
             background: var(--bg-color);
             border-color: var(--accent-color);
         }
-        .filter-btn.active {
-            background: var(--accent-color);
-            color: white;
+        .filter-select.open .filter-select-btn,
+        .filter-select.filtered .filter-select-btn {
             border-color: var(--accent-color);
+        }
+        .filter-select.filtered .filter-select-btn {
+            background: var(--accent-light);
+        }
+        .filter-select-label {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 260px;
+        }
+        .filter-select-arrow {
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            flex-shrink: 0;
+        }
+        .filter-select-menu {
+            display: none;
+            position: absolute;
+            top: calc(100% + 4px);
+            left: 0;
+            z-index: 20;
+            min-width: 180px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+            padding: 4px;
+        }
+        .filter-select.open .filter-select-menu {
+            display: block;
+        }
+        .filter-select-menu .filter-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        .filter-select-menu .filter-option:hover {
+            background: var(--bg-color);
+        }
+        .filter-select-menu .filter-option input {
+            accent-color: var(--accent-color);
+            margin: 0;
         }
         .hosts-list, .mx-list {
             max-width: 220px;
@@ -429,6 +470,13 @@
             .hosts-list, .mx-list, .remark {
                 max-width: 150px;
             }
+            .filter-select-menu {
+                position: fixed;
+                left: 10px;
+                right: 10px;
+                top: auto;
+                min-width: 0;
+            }
         }
         @media (min-width: 769px) {
             thead th {
@@ -476,45 +524,64 @@
                         <input type="text" id="mailSearch" placeholder="Search mail services...">
                     </div>
                     <div class="filter-bar">
-                        <div class="filter-group">
-                            <label>Type:</label>
-                            <button class="filter-btn active" data-filter="type" data-value="all" title="Show services of all types">All</button>
-                            <button class="filter-btn" data-filter="type" data-value="mailbox" title="Mailbox providers (webmail/IMAP)">Mailbox</button>
-                            <button class="filter-btn" data-filter="type" data-value="forwarding" title="Email forwarding/alias services - always strict-tier">Forwarding</button>
-                            <button class="filter-btn" data-filter="type" data-value="isp" title="ISP/carrier-bundled mailboxes">ISP</button>
-                            <button class="filter-btn" data-filter="type" data-value="hosting" title="Hosted/B2B email platforms">Hosting</button>
-                            <button class="filter-btn" data-filter="type" data-value="reserved" title="Special-use reserved names">Reserved</button>
-                            <button class="filter-btn" data-filter="type" data-value="discontinued" title="Services that have been discontinued">Discontinued</button>
+                        <div class="filter-select" data-filter="type" data-name="Type">
+                            <button type="button" class="filter-select-btn" aria-expanded="false">
+                                <span class="filter-select-label">Type: All</span><span class="filter-select-arrow">▾</span>
+                            </button>
+                            <div class="filter-select-menu">
+                                <label class="filter-option" title="Mailbox providers (webmail/IMAP)"><input type="checkbox" value="mailbox" checked>Mailbox</label>
+                                <label class="filter-option" title="Email forwarding/alias services - always strict-tier"><input type="checkbox" value="forwarding" checked>Forwarding</label>
+                                <label class="filter-option" title="ISP/carrier-bundled mailboxes"><input type="checkbox" value="isp" checked>ISP</label>
+                                <label class="filter-option" title="Hosted/B2B email platforms"><input type="checkbox" value="hosting" checked>Hosting</label>
+                                <label class="filter-option" title="Special-use reserved names"><input type="checkbox" value="reserved" checked>Reserved</label>
+                                <label class="filter-option" title="Services that have been discontinued"><input type="checkbox" value="discontinued" checked>Discontinued</label>
+                                <label class="filter-option" title="Services without a recorded type"><input type="checkbox" value="unknown" checked>Unknown</label>
+                            </div>
                         </div>
-                        <div class="filter-group">
-                            <label>Costs:</label>
-                            <button class="filter-btn active" data-filter="costs" data-value="all" title="Show services of all pricing classes">All</button>
-                            <button class="filter-btn" data-filter="costs" data-value="free" title="Free services">Free</button>
-                            <button class="filter-btn" data-filter="costs" data-value="paid" title="Paid services">Paid</button>
-                            <button class="filter-btn" data-filter="costs" data-value="freemium" title="Free tier with paid upgrades">Freemium</button>
+                        <div class="filter-select" data-filter="costs" data-name="Costs">
+                            <button type="button" class="filter-select-btn" aria-expanded="false">
+                                <span class="filter-select-label">Costs: All</span><span class="filter-select-arrow">▾</span>
+                            </button>
+                            <div class="filter-select-menu">
+                                <label class="filter-option" title="Free services"><input type="checkbox" value="free" checked>Free</label>
+                                <label class="filter-option" title="Paid services"><input type="checkbox" value="paid" checked>Paid</label>
+                                <label class="filter-option" title="Free tier with paid upgrades"><input type="checkbox" value="freemium" checked>Freemium</label>
+                                <label class="filter-option" title="Pricing class not recorded"><input type="checkbox" value="unknown" checked>Unknown</label>
+                            </div>
                         </div>
-                        <div class="filter-group">
-                            <label>Verification:</label>
-                            <button class="filter-btn active" data-filter="verify" data-value="all" title="Show services with any signup verification">All</button>
-                            <button class="filter-btn" data-filter="verify" data-value="none" title="No verification required at signup - anonymous use possible (strict-tier)">None</button>
-                            <button class="filter-btn" data-filter="verify" data-value="mobile" title="Mobile number verification required at signup (whitelist-tier)">Mobile</button>
-                            <button class="filter-btn" data-filter="verify" data-value="email" title="Email verification at signup - anonymous use still possible (strict-tier)">Email</button>
-                            <button class="filter-btn" data-filter="verify" data-value="payment" title="Payment verification required at signup (whitelist-tier)">Payment</button>
-                            <button class="filter-btn" data-filter="verify" data-value="other" title="Other identity verification required at signup (whitelist-tier)">Other</button>
-                            <button class="filter-btn" data-filter="verify" data-value="unset" title="Verification method not recorded - treated as verified (whitelist-tier)">Unset</button>
+                        <div class="filter-select" data-filter="verify" data-name="Verification">
+                            <button type="button" class="filter-select-btn" aria-expanded="false">
+                                <span class="filter-select-label">Verification: All</span><span class="filter-select-arrow">▾</span>
+                            </button>
+                            <div class="filter-select-menu">
+                                <label class="filter-option" title="No verification required at signup - anonymous use possible (strict-tier)"><input type="checkbox" value="none" checked>None</label>
+                                <label class="filter-option" title="Mobile number verification required at signup (whitelist-tier)"><input type="checkbox" value="mobile" checked>Mobile</label>
+                                <label class="filter-option" title="Email verification at signup - anonymous use still possible (strict-tier)"><input type="checkbox" value="email" checked>Email</label>
+                                <label class="filter-option" title="Payment verification required at signup (whitelist-tier)"><input type="checkbox" value="payment" checked>Payment</label>
+                                <label class="filter-option" title="Other identity verification required at signup (whitelist-tier)"><input type="checkbox" value="other" checked>Other</label>
+                                <label class="filter-option" title="Verification method not recorded - treated as verified (whitelist-tier)"><input type="checkbox" value="unset" checked>Unset</label>
+                            </div>
                         </div>
-                        <div class="filter-group">
-                            <label>Region:</label>
-                            <button class="filter-btn active" data-filter="region" data-value="all" title="Show providers in all jurisdictions">All</button>
-                            <button class="filter-btn" data-filter="region" data-value="eu" title="Provider legal seat in the European Union">EU</button>
-                            <button class="filter-btn" data-filter="region" data-value="non-eu" title="Provider legal seat outside the European Union">non-EU</button>
+                        <div class="filter-select" data-filter="region" data-name="Region">
+                            <button type="button" class="filter-select-btn" aria-expanded="false">
+                                <span class="filter-select-label">Region: All</span><span class="filter-select-arrow">▾</span>
+                            </button>
+                            <div class="filter-select-menu">
+                                <label class="filter-option" title="Provider legal seat in the European Union"><input type="checkbox" value="eu" checked>EU</label>
+                                <label class="filter-option" title="Provider legal seat outside the European Union"><input type="checkbox" value="non-eu" checked>non-EU</label>
+                                <label class="filter-option" title="Provider legal seat not recorded"><input type="checkbox" value="unknown" checked>Unknown</label>
+                            </div>
                         </div>
-                        <div class="filter-group">
-                            <label>Tier:</label>
-                            <button class="filter-btn active" data-filter="tier" data-value="all" title="Show services of all tiers">All</button>
-                            <button class="filter-btn" data-filter="tier" data-value="whitelist" title="Whitelist-tier: priced/reserved services with verified signup or unset verification">Whitelist</button>
-                            <button class="filter-btn" data-filter="tier" data-value="strict" title="Strict-tier (greylist): forwarding services, plus priced providers allowing anonymous signup (none/email verification)">Strict</button>
-                            <button class="filter-btn" data-filter="tier" data-value="excluded" title="Discontinued services - excluded from both tiers">Excluded</button>
+                        <div class="filter-select" data-filter="tier" data-name="Tier">
+                            <button type="button" class="filter-select-btn" aria-expanded="false">
+                                <span class="filter-select-label">Tier: All</span><span class="filter-select-arrow">▾</span>
+                            </button>
+                            <div class="filter-select-menu">
+                                <label class="filter-option" title="Whitelist-tier: priced/reserved services with verified signup or unset verification"><input type="checkbox" value="whitelist" checked>Whitelist</label>
+                                <label class="filter-option" title="Strict-tier (greylist): forwarding services, plus priced providers allowing anonymous signup (none/email verification)"><input type="checkbox" value="strict" checked>Strict</label>
+                                <label class="filter-option" title="Discontinued services - excluded from both tiers"><input type="checkbox" value="excluded" checked>Excluded</label>
+                                <label class="filter-option" title="Services that could not be classified into a tier"><input type="checkbox" value="unknown" checked>Unknown</label>
+                            </div>
                         </div>
                     </div>
                     <div id="mail-services-content">
@@ -608,7 +675,16 @@
             return 'unknown';
         }
 
+        function filterSet(name) {
+            return currentFilters[name] === 'all' ? null : new Set(currentFilters[name]);
+        }
+
         function applyFilters() {
+            const typeSel = filterSet('type');
+            const costsSel = filterSet('costs');
+            const verifySel = filterSet('verify');
+            const tierSel = filterSet('tier');
+            const regionSel = filterSet('region');
             const rows = document.querySelectorAll('.service-row');
             let visible = 0;
             rows.forEach(row => {
@@ -617,16 +693,13 @@
                 const verifyList = row.dataset.verify;
                 const discontinued = row.dataset.discontinued === 'true';
                 const tier = row.dataset.tier;
-
-                const typeMatch = currentFilters.type === 'all' ||
-                    (currentFilters.type === 'discontinued' ? discontinued : type === currentFilters.type);
-                const costsMatch = currentFilters.costs === 'all' || costs === currentFilters.costs;
-                const verifyMatch = currentFilters.verify === 'all' ||
-                    (currentFilters.verify === 'unset' ? verifyList === 'unset' : verifyList.split(',').includes(currentFilters.verify));
-                const tierMatch = currentFilters.tier === 'all' || tier === currentFilters.tier;
                 const juris = row.dataset.juris;
-                const regionMatch = currentFilters.region === 'all' ||
-                    (currentFilters.region === 'eu' ? EU.has(juris) : juris && !EU.has(juris));
+
+                const typeMatch = !typeSel || typeSel.has(type) || (discontinued && typeSel.has('discontinued'));
+                const costsMatch = !costsSel || costsSel.has(costs);
+                const verifyMatch = !verifySel || verifyList.split(',').some(v => verifySel.has(v));
+                const tierMatch = !tierSel || tierSel.has(tier);
+                const regionMatch = !regionSel || regionSel.has(juris ? (EU.has(juris) ? 'eu' : 'non-eu') : 'unknown');
                 const searchMatch = !currentSearch || row.dataset.search.includes(currentSearch);
 
                 const show = typeMatch && costsMatch && verifyMatch && tierMatch && regionMatch && searchMatch;
@@ -643,19 +716,68 @@
             }
         }
 
+        function closeFilterMenus() {
+            document.querySelectorAll('.filter-select.open').forEach(sel => {
+                sel.classList.remove('open');
+                sel.querySelector('.filter-select-btn').setAttribute('aria-expanded', 'false');
+            });
+        }
+
+        function syncFilter(sel) {
+            const boxes = [...sel.querySelectorAll('input[type="checkbox"]')];
+            const checked = boxes.filter(b => b.checked);
+            currentFilters[sel.dataset.filter] =
+                checked.length === boxes.length ? 'all' : checked.map(b => b.value);
+
+            const labelEl = sel.querySelector('.filter-select-label');
+            const name = sel.dataset.name;
+            if (checked.length === boxes.length) {
+                labelEl.textContent = name + ': All';
+            } else if (checked.length === 0) {
+                labelEl.textContent = name + ': None';
+            } else {
+                labelEl.textContent = name + ': ' +
+                    checked.map(b => b.closest('.filter-option').textContent.trim()).join(', ');
+            }
+            sel.querySelector('.filter-select-btn').title = labelEl.textContent;
+            sel.classList.toggle('filtered', checked.length !== boxes.length);
+        }
+
+        function setFilterValues(name, values) {
+            const sel = document.querySelector(`.filter-select[data-filter="${name}"]`);
+            if (!sel) return;
+            const wanted = new Set(values);
+            sel.querySelectorAll('input[type="checkbox"]').forEach(b => {
+                b.checked = wanted.has(b.value);
+            });
+            syncFilter(sel);
+        }
+
         function setupFilters() {
-            document.querySelectorAll('.filter-btn').forEach(btn => {
-                btn.addEventListener('click', () => {
-                    const filterType = btn.dataset.filter;
-                    const value = btn.dataset.value;
-
-                    document.querySelectorAll(`.filter-btn[data-filter="${filterType}"]`).forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
-
-                    currentFilters[filterType] = value;
-                    applyFilters();
-                    updateHash();
+            document.querySelectorAll('.filter-select').forEach(sel => {
+                const btn = sel.querySelector('.filter-select-btn');
+                btn.addEventListener('click', e => {
+                    e.stopPropagation();
+                    const opening = !sel.classList.contains('open');
+                    closeFilterMenus();
+                    if (opening) {
+                        sel.classList.add('open');
+                        btn.setAttribute('aria-expanded', 'true');
+                    }
                 });
+                sel.querySelector('.filter-select-menu').addEventListener('click', e => e.stopPropagation());
+                sel.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+                    cb.addEventListener('change', () => {
+                        syncFilter(sel);
+                        applyFilters();
+                        updateHash();
+                    });
+                });
+                syncFilter(sel);
+            });
+            document.addEventListener('click', closeFilterMenus);
+            document.addEventListener('keydown', e => {
+                if (e.key === 'Escape') closeFilterMenus();
             });
         }
 
@@ -1028,7 +1150,7 @@
             let q = '';
             if (tabId === 'mail-services') {
                 ['type', 'costs', 'verify', 'tier', 'region'].forEach(f => {
-                    if (currentFilters[f] !== 'all') params.set(f, currentFilters[f]);
+                    if (currentFilters[f] !== 'all') params.set(f, currentFilters[f].join(','));
                 });
                 q = currentSearch;
             } else if (tabId === 'disposable') {
@@ -1056,12 +1178,8 @@
             if (tabId === 'mail-services') {
                 ['type', 'costs', 'verify', 'tier', 'region'].forEach(f => {
                     const v = params.get(f);
-                    if (!v) return;
-                    const btn = document.querySelector(`.filter-btn[data-filter="${f}"][data-value="${CSS.escape(v)}"]`);
-                    if (!btn) return;
-                    currentFilters[f] = v;
-                    document.querySelectorAll(`.filter-btn[data-filter="${f}"]`).forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
+                    if (v === null) return;
+                    setFilterValues(f, v ? v.split(',') : []);
                 });
                 document.getElementById('mailSearch').value = q;
                 currentSearch = q;
