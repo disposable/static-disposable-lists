@@ -580,6 +580,9 @@
       "airflow.us-east-2.on.aws",
       "airflow.us-west-1.on.aws",
       "airflow.us-west-2.on.aws",
+      "amazoncognito.com",
+      "amazonlightsail.com",
+      "amazonwebservices.eu",
       "amplifyapp.com",
       "analytics-gateway.ap-northeast-1.amazonaws.com",
       "analytics-gateway.ap-northeast-2.amazonaws.com",
@@ -928,6 +931,7 @@
       "notebook.us-gov-west-1.sagemaker.aws",
       "notebook.us-west-1.sagemaker.aws",
       "notebook.us-west-2.sagemaker.aws",
+      "on.aws",
       "private.repost.aws",
       "rds.cn-north-1.amazonaws.com.cn",
       "rds.cn-northwest-1.amazonaws.com.cn",
@@ -2763,17 +2767,21 @@
       "changeip.co.uk",
       "changeip.com",
       "changeip.me",
+      "changeip.name",
       "changeip.net",
       "changeip.org",
       "changeip.us",
       "ddns.com.co",
       "ddns.info",
+      "ddns.me.uk",
+      "ddns.name",
       "dns-report.com",
       "dnset.com",
       "dnsfailover.net",
       "dubya.info",
       "dubya.net",
       "dynamicdns.com.co",
+      "dyndns.pro",
       "freeddns.me",
       "freeddns.tokyo",
       "h1x.com",
@@ -11324,6 +11332,21 @@
     "updates": "static",
     "url": "https://natfrp.com/"
   },
+  "ncloud.com": {
+    "costs": "paid",
+    "hosted": "KR",
+    "hosts": [
+      "ncloudstorage.com",
+      "ncpstorage.com"
+    ],
+    "jurisdiction": "KR",
+    "public": true,
+    "remark": "Naver Cloud Platform customer endpoints - object storage bucket hostnames under {zone}.object[.private].ncloudstorage.com / *.ncpstorage.com and static-website hosting under {zone}.website.ncloudstorage.com.",
+    "status": "active",
+    "type": "hosting",
+    "updates": "static",
+    "url": "https://www.ncloud.com/"
+  },
   "ndjp.net": {
     "api": true,
     "costs": "free",
@@ -14108,6 +14131,21 @@
     "updates": "static",
     "url": "https://resin.io/"
   },
+  "retool.app": {
+    "cloud": "Cloudflare",
+    "costs": "freemium",
+    "hosted": "US",
+    "hosts": [
+      "retool.app"
+    ],
+    "jurisdiction": "US",
+    "public": true,
+    "remark": "Retool app-delivery suffix - user-built apps are served under *.<workspace>.retool.app (wildcard on Cloudflare); apex redirects to retool.com.",
+    "status": "active",
+    "type": "hosting",
+    "updates": "static",
+    "url": "https://retool.com/"
+  },
   "riseup.net": {
     "costs": "free",
     "hosted": "US",
@@ -15890,6 +15928,26 @@
     "type": "registry",
     "updates": "static",
     "url": "https://teaminternet.com/"
+  },
+  "techproddns.com": {
+    "api": true,
+    "costs": "free",
+    "hosted": "US",
+    "hosts": [
+      "techproddns.com"
+    ],
+    "public": true,
+    "remark": "TechPro Security free Dynamic DNS portal on the Sierra/MintDNS platform (nameserver win-4fs18cac3gj.ddns.local shared with sieraddns.com/4khdcamera.com). Login and registration pages live, dyndns2 endpoint (nic/update) answers; test.techproddns.com resolves to a real user record.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "ddns",
+    "update_protocols": [
+      "dyndns2"
+    ],
+    "updates": "dynamic",
+    "url": "http://techproddns.com/"
   },
   "teckids.org": {
     "hosted": "DE",

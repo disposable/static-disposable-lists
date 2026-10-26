@@ -56,7 +56,7 @@
   },
   "2p.fm": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "no NS delegation",
     "resolves": true,
     "sources": [
@@ -190,13 +190,14 @@
   "airflow.ap-southeast-7.on.aws": {
     "added_on": "2026-10-19",
     "hint": "psl:Amazon Managed Workflows for Apache Airflow",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "allowed.org": {
     "added_on": "2026-10-06",
@@ -212,13 +213,14 @@
   "amazonlightsail.com": {
     "added_on": "2026-10-12",
     "hint": "psl:Amazon Lightsail",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "anastasion.com": {
     "added_on": "2026-10-06",
@@ -267,123 +269,134 @@
   "ap-east-1.cs.amazonlightsail.com": {
     "added_on": "2026-10-12",
     "hint": "psl:Amazon Lightsail",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "ap-northeast-1.cs.amazonlightsail.com": {
     "added_on": "2026-10-12",
     "hint": "psl:Amazon Lightsail",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "ap-northeast-2.cs.amazonlightsail.com": {
     "added_on": "2026-10-12",
     "hint": "psl:Amazon Lightsail",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "ap-south-1.cs.amazonlightsail.com": {
     "added_on": "2026-10-12",
     "hint": "psl:Amazon Lightsail",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "ap-south-2.elasticbeanstalk.com": {
     "added_on": "2026-10-12",
     "hint": "psl:AWS Elastic Beanstalk",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "ap-southeast-1.cs.amazonlightsail.com": {
     "added_on": "2026-10-12",
     "hint": "psl:Amazon Lightsail",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "ap-southeast-2.cs.amazonlightsail.com": {
     "added_on": "2026-10-12",
     "hint": "psl:Amazon Lightsail",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "ap-southeast-3.cs.amazonlightsail.com": {
     "added_on": "2026-10-12",
     "hint": "psl:Amazon Lightsail",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "ap-southeast-4.elasticbeanstalk.com": {
     "added_on": "2026-10-12",
     "hint": "psl:AWS Elastic Beanstalk",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "ap-southeast-5.cs.amazonlightsail.com": {
     "added_on": "2026-10-12",
     "hint": "psl:Amazon Lightsail",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "ap-southeast-6.elasticbeanstalk.com": {
     "added_on": "2026-10-12",
     "hint": "psl:AWS Elastic Beanstalk",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "arenaceballos.com": {
     "added_on": "2026-10-06",
@@ -476,7 +489,7 @@
   "australia.ai": {
     "added_on": "2026-10-06",
     "hint": "freedns.afraid.org",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "does not resolve",
     "resolves": true,
     "sources": [
@@ -488,29 +501,31 @@
   "auth.ap-east-2.amazoncognito.com": {
     "added_on": "2026-10-12",
     "hint": "psl:Amazon Cognito",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "auth.ap-southeast-6.amazoncognito.com": {
     "added_on": "2026-10-12",
     "hint": "psl:Amazon Cognito",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "ax.lt": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "domain parked (parking NS) - not an active hostname service",
+    "last_checked": "2026-10-26",
+    "remark": "Cloudflare-fronted domain, site returns 526 (origin cert invalid) - no issuer evidence",
     "resolves": true,
     "sources": [
       "hagezi"
@@ -642,7 +657,7 @@
   },
   "burlingtondrywall.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -653,7 +668,7 @@
   },
   "buz-host.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "no NS delegation",
     "resolves": true,
     "sources": [
@@ -665,28 +680,30 @@
   "ca-central-1.cs.amazonlightsail.com": {
     "added_on": "2026-10-12",
     "hint": "psl:Amazon Lightsail",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "ca-west-1.elasticbeanstalk.com": {
     "added_on": "2026-10-12",
     "hint": "psl:AWS Elastic Beanstalk",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "cashit.info": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -708,7 +725,7 @@
   },
   "celltrak.mobi": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -721,18 +738,6 @@
     "added_on": "2026-10-06",
     "last_checked": "2026-10-19",
     "remark": "for-sale landing (Squadhelp)",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "rejected",
-    "validated": true
-  },
-  "changeip.name": {
-    "added_on": "2026-10-06",
-    "hint": "changeip.com",
-    "last_checked": "2026-10-19",
-    "remark": "no NS delegation",
     "resolves": true,
     "sources": [
       "hagezi"
@@ -753,7 +758,7 @@
   },
   "chavo.biz": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -764,7 +769,7 @@
   },
   "clawmap.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -786,7 +791,7 @@
   },
   "cloudwebncw.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "does not resolve",
     "resolves": false,
     "sources": [
@@ -808,13 +813,14 @@
   },
   "cmirg.com": {
     "added_on": "2026-10-19",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "parked/redirect domain (dns-redirect NS, parking wildcard)",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "coalnet.ru": {
     "added_on": "2026-10-06",
@@ -852,244 +858,266 @@
   "consent-portal.bedrock-agentcore.ap-northeast-1.amazonaws.com": {
     "added_on": "2026-10-19",
     "hint": "psl:Amazon Bedrock AgentCore Identity Consent Portal",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "subdomain of cataloged amazonaws.com (AWS service endpoint zone)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "consent-portal.bedrock-agentcore.ap-northeast-2.amazonaws.com": {
     "added_on": "2026-10-19",
     "hint": "psl:Amazon Bedrock AgentCore Identity Consent Portal",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "subdomain of cataloged amazonaws.com (AWS service endpoint zone)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "consent-portal.bedrock-agentcore.ap-south-1.amazonaws.com": {
     "added_on": "2026-10-19",
     "hint": "psl:Amazon Bedrock AgentCore Identity Consent Portal",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "subdomain of cataloged amazonaws.com (AWS service endpoint zone)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "consent-portal.bedrock-agentcore.ap-south-2.amazonaws.com": {
     "added_on": "2026-10-19",
     "hint": "psl:Amazon Bedrock AgentCore Identity Consent Portal",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "subdomain of cataloged amazonaws.com (AWS service endpoint zone)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "consent-portal.bedrock-agentcore.ap-southeast-1.amazonaws.com": {
     "added_on": "2026-10-19",
     "hint": "psl:Amazon Bedrock AgentCore Identity Consent Portal",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "subdomain of cataloged amazonaws.com (AWS service endpoint zone)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "consent-portal.bedrock-agentcore.ap-southeast-2.amazonaws.com": {
     "added_on": "2026-10-19",
     "hint": "psl:Amazon Bedrock AgentCore Identity Consent Portal",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "subdomain of cataloged amazonaws.com (AWS service endpoint zone)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "consent-portal.bedrock-agentcore.ap-southeast-5.amazonaws.com": {
     "added_on": "2026-10-19",
     "hint": "psl:Amazon Bedrock AgentCore Identity Consent Portal",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "subdomain of cataloged amazonaws.com (AWS service endpoint zone)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "consent-portal.bedrock-agentcore.ap-southeast-7.amazonaws.com": {
     "added_on": "2026-10-19",
     "hint": "psl:Amazon Bedrock AgentCore Identity Consent Portal",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "subdomain of cataloged amazonaws.com (AWS service endpoint zone)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "consent-portal.bedrock-agentcore.ca-central-1.amazonaws.com": {
     "added_on": "2026-10-19",
     "hint": "psl:Amazon Bedrock AgentCore Identity Consent Portal",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "subdomain of cataloged amazonaws.com (AWS service endpoint zone)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "consent-portal.bedrock-agentcore.eu-central-1.amazonaws.com": {
     "added_on": "2026-10-19",
     "hint": "psl:Amazon Bedrock AgentCore Identity Consent Portal",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "subdomain of cataloged amazonaws.com (AWS service endpoint zone)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "consent-portal.bedrock-agentcore.eu-north-1.amazonaws.com": {
     "added_on": "2026-10-19",
     "hint": "psl:Amazon Bedrock AgentCore Identity Consent Portal",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "subdomain of cataloged amazonaws.com (AWS service endpoint zone)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "consent-portal.bedrock-agentcore.eu-south-1.amazonaws.com": {
     "added_on": "2026-10-19",
     "hint": "psl:Amazon Bedrock AgentCore Identity Consent Portal",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "subdomain of cataloged amazonaws.com (AWS service endpoint zone)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "consent-portal.bedrock-agentcore.eu-south-2.amazonaws.com": {
     "added_on": "2026-10-19",
     "hint": "psl:Amazon Bedrock AgentCore Identity Consent Portal",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "subdomain of cataloged amazonaws.com (AWS service endpoint zone)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "consent-portal.bedrock-agentcore.eu-west-1.amazonaws.com": {
     "added_on": "2026-10-19",
     "hint": "psl:Amazon Bedrock AgentCore Identity Consent Portal",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "subdomain of cataloged amazonaws.com (AWS service endpoint zone)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "consent-portal.bedrock-agentcore.eu-west-2.amazonaws.com": {
     "added_on": "2026-10-19",
     "hint": "psl:Amazon Bedrock AgentCore Identity Consent Portal",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "subdomain of cataloged amazonaws.com (AWS service endpoint zone)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "consent-portal.bedrock-agentcore.eu-west-3.amazonaws.com": {
     "added_on": "2026-10-19",
     "hint": "psl:Amazon Bedrock AgentCore Identity Consent Portal",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "subdomain of cataloged amazonaws.com (AWS service endpoint zone)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "consent-portal.bedrock-agentcore.sa-east-1.amazonaws.com": {
     "added_on": "2026-10-19",
     "hint": "psl:Amazon Bedrock AgentCore Identity Consent Portal",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "subdomain of cataloged amazonaws.com (AWS service endpoint zone)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "consent-portal.bedrock-agentcore.us-east-1.amazonaws.com": {
     "added_on": "2026-10-19",
     "hint": "psl:Amazon Bedrock AgentCore Identity Consent Portal",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "subdomain of cataloged amazonaws.com (AWS service endpoint zone)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "consent-portal.bedrock-agentcore.us-east-2.amazonaws.com": {
     "added_on": "2026-10-19",
     "hint": "psl:Amazon Bedrock AgentCore Identity Consent Portal",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "subdomain of cataloged amazonaws.com (AWS service endpoint zone)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "consent-portal.bedrock-agentcore.us-gov-west-1.amazonaws.com": {
     "added_on": "2026-10-19",
     "hint": "psl:Amazon Bedrock AgentCore Identity Consent Portal",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "subdomain of cataloged amazonaws.com (AWS service endpoint zone)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "consent-portal.bedrock-agentcore.us-west-1.amazonaws.com": {
     "added_on": "2026-10-19",
     "hint": "psl:Amazon Bedrock AgentCore Identity Consent Portal",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "subdomain of cataloged amazonaws.com (AWS service endpoint zone)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "consent-portal.bedrock-agentcore.us-west-2.amazonaws.com": {
     "added_on": "2026-10-19",
     "hint": "psl:Amazon Bedrock AgentCore Identity Consent Portal",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "subdomain of cataloged amazonaws.com (AWS service endpoint zone)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "coplien.org": {
     "added_on": "2026-10-06",
@@ -1137,7 +1165,7 @@
   },
   "crackedsidewalks.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -1159,7 +1187,7 @@
   },
   "cuesinc.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -1183,30 +1211,6 @@
     "added_on": "2026-10-06",
     "last_checked": "2026-10-26",
     "remark": "private domain - redirects to mws.rocks personal site",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "rejected",
-    "validated": true
-  },
-  "ddns.me.uk": {
-    "added_on": "2026-10-06",
-    "hint": "changeip.com",
-    "last_checked": "2026-10-19",
-    "remark": "no NS delegation",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "rejected",
-    "validated": true
-  },
-  "ddns.name": {
-    "added_on": "2026-10-06",
-    "hint": "changeip.com",
-    "last_checked": "2026-10-19",
-    "remark": "no NS delegation",
     "resolves": true,
     "sources": [
       "hagezi"
@@ -1238,8 +1242,8 @@
   },
   "ddnslive.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "domain parked (parking NS) - not an active hostname service",
+    "last_checked": "2026-10-26",
+    "remark": "no NS delegation - domain now undelegated",
     "resolves": false,
     "sources": [
       "hagezi",
@@ -1251,13 +1255,14 @@
   "de.object.ncloudstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "dh3.com": {
     "added_on": "2026-10-06",
@@ -1272,7 +1277,7 @@
   },
   "digikabel.hu": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -1305,7 +1310,7 @@
   },
   "divx.se": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "does not resolve",
     "resolves": false,
     "sources": [
@@ -1349,7 +1354,7 @@
   },
   "donkeyhot.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -1360,7 +1365,7 @@
   },
   "doyleandprendergast.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -1371,7 +1376,7 @@
   },
   "dp76.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -1523,22 +1528,10 @@
     "status": "rejected",
     "validated": true
   },
-  "dyndns.pro": {
-    "added_on": "2026-10-06",
-    "hint": "changeip.com",
-    "last_checked": "2026-10-19",
-    "remark": "does not resolve",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "rejected",
-    "validated": true
-  },
   "dyndns.za.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "does not resolve",
+    "last_checked": "2026-10-26",
+    "remark": "lame/broken delegation - resolvers time out",
     "resolves": false,
     "sources": [
       "hagezi"
@@ -1592,7 +1585,7 @@
   },
   "dyns.cx": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "does not resolve",
     "resolves": false,
     "sources": [
@@ -1759,83 +1752,90 @@
   "eu-central-1.cs.amazonlightsail.com": {
     "added_on": "2026-10-12",
     "hint": "psl:Amazon Lightsail",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "eu-central-2.elasticbeanstalk.com": {
     "added_on": "2026-10-12",
     "hint": "psl:AWS Elastic Beanstalk",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "eu-north-1.cs.amazonlightsail.com": {
     "added_on": "2026-10-12",
     "hint": "psl:Amazon Lightsail",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "eu-south-2.cs.amazonlightsail.com": {
     "added_on": "2026-10-12",
     "hint": "psl:Amazon Lightsail",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "eu-west-1.cs.amazonlightsail.com": {
     "added_on": "2026-10-12",
     "hint": "psl:Amazon Lightsail",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "eu-west-2.cs.amazonlightsail.com": {
     "added_on": "2026-10-12",
     "hint": "psl:Amazon Lightsail",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "eu-west-3.cs.amazonlightsail.com": {
     "added_on": "2026-10-12",
     "hint": "psl:Amazon Lightsail",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "eurotank.ro": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -1879,7 +1879,7 @@
   },
   "falcongreen.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -1912,8 +1912,8 @@
   },
   "flat4free.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "private/parked/defunct site - not a hostname issuer",
+    "last_checked": "2026-10-26",
+    "remark": "dying domain - resolves via stale delegation, no service",
     "resolves": true,
     "sources": [
       "hagezi"
@@ -1967,7 +1967,7 @@
   },
   "freeserverhostingweb.club": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -2011,7 +2011,7 @@
   },
   "garypatel.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "does not resolve",
     "resolves": true,
     "sources": [
@@ -2055,7 +2055,7 @@
   },
   "goldcrestcc.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -2066,7 +2066,7 @@
   },
   "grandmasgossip.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -2099,7 +2099,7 @@
   },
   "gteksecurity.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -2110,7 +2110,7 @@
   },
   "guardz.ru": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "does not resolve",
     "resolves": true,
     "sources": [
@@ -2121,7 +2121,7 @@
   },
   "gurcanozturk.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -2165,7 +2165,7 @@
   },
   "her.name": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "does not resolve",
     "resolves": false,
     "sources": [
@@ -2177,7 +2177,7 @@
   },
   "herodias.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -2210,7 +2210,7 @@
   },
   "his.name": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "does not resolve",
     "resolves": false,
     "sources": [
@@ -2222,7 +2222,7 @@
   },
   "hmao.pro": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -2244,7 +2244,7 @@
   },
   "homeplex.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -2255,7 +2255,7 @@
   },
   "hop.ru": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "does not resolve",
     "resolves": true,
     "sources": [
@@ -2288,7 +2288,7 @@
   },
   "hulichicken.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -2299,7 +2299,7 @@
   },
   "humorme.info": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "does not resolve",
     "resolves": false,
     "sources": [
@@ -2321,7 +2321,7 @@
   },
   "ideasciviles.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -2332,7 +2332,7 @@
   },
   "imprendum.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -2343,7 +2343,7 @@
   },
   "independentonline.ro": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -2376,7 +2376,7 @@
   },
   "innograph.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -2387,7 +2387,7 @@
   },
   "invitee.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -2398,8 +2398,8 @@
   },
   "ip-dynamic.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "private/parked/defunct site - not a hostname issuer",
+    "last_checked": "2026-10-26",
+    "remark": "Indonesian ISP info/service site (IndiHome dynamic IP) - not a public issuer",
     "resolves": true,
     "sources": [
       "hagezi"
@@ -2420,7 +2420,7 @@
   },
   "ipupdater.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "does not resolve",
     "resolves": true,
     "sources": [
@@ -2431,7 +2431,7 @@
   },
   "isamotherfucking.ninja": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -2442,7 +2442,7 @@
   },
   "iu4ever.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -2453,7 +2453,7 @@
   },
   "ivc.cc": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -2486,7 +2486,7 @@
   },
   "jdfinancialserver.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -2520,68 +2520,74 @@
   "jp.jp4.object.ncpstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "jp.jp4.object.private.ncpstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "jp.jp5.object.ncpstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "jp.jp5.object.private.ncpstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "jp.object.ncpstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "jp.object.private.ncpstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "justns.ru": {
     "added_on": "2026-10-06",
@@ -2596,7 +2602,7 @@
   },
   "jvogt.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -2618,7 +2624,7 @@
   },
   "klapa.eu": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -2641,222 +2647,242 @@
   "kr-naver-dev.ncloudstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "kr-naver-dev.website.ncloudstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "kr-naver.ncloudstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "kr-naver.website.ncloudstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "kr-private.gov-ncloudstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "kr-private.ncloudstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "kr.gov-ncloudstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "kr.ncloudstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "kr.object.fin-ncloudstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "kr.object.gov-ncloudstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "kr.object.ncloudstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "kr.object.ncpstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "kr.object.private.fin-ncloudstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "kr.object.private.gov-ncloudstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "kr.object.private.ncloudstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "kr.object.private.ncpstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "kr.objectstorage.ncloud.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "kr.website.ncloudstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "krs.object.gov-ncloudstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "krs.object.private.gov-ncloudstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "ksk-saratov.ru": {
     "added_on": "2026-10-06",
@@ -2882,7 +2908,7 @@
   },
   "lessmiths.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -2937,7 +2963,7 @@
   },
   "ljack.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -2948,7 +2974,7 @@
   },
   "logisoft-cy.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -2959,7 +2985,7 @@
   },
   "lundellnet.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -3003,8 +3029,8 @@
   },
   "metadns.cx": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "private/parked/defunct site - not a hostname issuer",
+    "last_checked": "2026-10-26",
+    "remark": "domain repurposed - redirects to Vietnamese casino affiliate site",
     "resolves": true,
     "sources": [
       "hagezi"
@@ -3036,7 +3062,7 @@
   },
   "mikecartwright.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -3047,7 +3073,7 @@
   },
   "mirolnet.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -3091,8 +3117,8 @@
   },
   "moonfruit.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "private/parked/defunct site - not a hostname issuer",
+    "last_checked": "2026-10-26",
+    "remark": "ex-Moonfruit site-builder domain - service dead, domain now an SEO content farm; wildcard is operator-controlled, no public issuance",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
@@ -3135,7 +3161,7 @@
   },
   "mwop.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -3146,7 +3172,7 @@
   },
   "my-board.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "no NS delegation",
     "resolves": true,
     "sources": [
@@ -3223,7 +3249,7 @@
   },
   "n4t.co": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "does not resolve",
     "resolves": false,
     "sources": [
@@ -3445,7 +3471,7 @@
   },
   "php-dev.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -3467,7 +3493,7 @@
   },
   "piroge.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -3523,8 +3549,8 @@
   "portrelay.com": {
     "added_on": "2026-10-06",
     "hint": "changeip.com",
-    "last_checked": "2026-10-19",
-    "remark": "no NS delegation",
+    "last_checked": "2026-10-26",
+    "remark": "lame/broken delegation - resolvers time out",
     "resolves": true,
     "sources": [
       "hagezi"
@@ -3600,7 +3626,7 @@
   },
   "pudim.info": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -3622,7 +3648,7 @@
   },
   "radiogirl.fm": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -3664,16 +3690,6 @@
     "status": "rejected",
     "validated": true
   },
-  "retool.app": {
-    "added_on": "2026-10-12",
-    "last_checked": "2026-10-19",
-    "resolves": true,
-    "sources": [
-      "psl"
-    ],
-    "status": "new",
-    "validated": false
-  },
   "ro.lt": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-19",
@@ -3711,8 +3727,8 @@
   "routemehome.com": {
     "added_on": "2026-10-06",
     "hint": "freedns.afraid.org",
-    "last_checked": "2026-10-19",
-    "remark": "does not resolve",
+    "last_checked": "2026-10-26",
+    "remark": "lame/broken delegation - resolvers time out",
     "resolves": true,
     "sources": [
       "hagezi"
@@ -3734,12 +3750,13 @@
   "rr.nu": {
     "added_on": "2026-10-19",
     "hint": "sitelutions.com",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "historically a free-subdomain service on Sitelutions DNS - apex now answers 127.0.0.1, web dead, no issued records found",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
+    "status": "deferred",
     "validated": false
   },
   "rs6.net": {
@@ -3767,112 +3784,122 @@
   "russkoeumea.com": {
     "added_on": "2026-10-19",
     "hint": "julydns.com",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "dead - no A record (julydns NS)",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "s3-website-jp.object.ncpstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "s3-website.de.object.ncloudstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "s3-website.kr.object.fin-ncloudstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "s3-website.kr.object.gov-ncloudstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "s3-website.kr.object.ncloudstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "s3-website.krs.object.gov-ncloudstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "s3-website.sg.object.ncloudstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "s3-website.us.object.ncloudstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "sa-east-1.cs.amazonlightsail.com": {
     "added_on": "2026-10-12",
     "hint": "psl:Amazon Lightsail",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "sannon-stamm.com": {
     "added_on": "2026-10-06",
@@ -3976,35 +4003,38 @@
   "sg.object.ncloudstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "sg.object.private.ncloudstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "sg.objectstorage.ncloud.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "sharkltd.com": {
     "added_on": "2026-10-06",
@@ -4107,7 +4137,7 @@
   },
   "solidmation.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -4173,8 +4203,8 @@
   },
   "ssl443.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "domain parked (parking NS) - not an active hostname service",
+    "last_checked": "2026-10-26",
+    "remark": "no NS delegation - domain now undelegated",
     "resolves": false,
     "sources": [
       "hagezi",
@@ -4218,13 +4248,14 @@
   },
   "stroyexpert.org": {
     "added_on": "2026-10-19",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "parked (spaceship.net parking NS)",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "subwayhost.com": {
     "added_on": "2026-10-06",
@@ -4303,17 +4334,6 @@
     "status": "rejected",
     "validated": true
   },
-  "techproddns.com": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "domain parked (parking NS) - not an active hostname service",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "rejected",
-    "validated": true
-  },
   "texasdollies.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-19",
@@ -4327,8 +4347,8 @@
   },
   "thaieasydns.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "does not resolve",
+    "last_checked": "2026-10-26",
+    "remark": "lame/broken delegation - resolvers time out",
     "resolves": false,
     "sources": [
       "hagezi"
@@ -4371,7 +4391,7 @@
   },
   "thenest.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -4438,35 +4458,38 @@
   "transfer-webapp.ap-east-2.on.aws": {
     "added_on": "2026-10-19",
     "hint": "psl:AWS Transfer Family web apps",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "transfer-webapp.ap-southeast-6.on.aws": {
     "added_on": "2026-10-19",
     "hint": "psl:AWS Transfer Family web apps",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "transfer-webapp.eusc-de-east-1.on.amazonwebservices.eu": {
     "added_on": "2026-10-19",
     "hint": "psl:AWS Transfer Family web apps",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "transfer.sh": {
     "added_on": "2026-10-06",
@@ -4514,7 +4537,7 @@
   },
   "truthvid.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private site",
     "resolves": true,
     "sources": [
@@ -4592,46 +4615,50 @@
   "us-east-1.cs.amazonlightsail.com": {
     "added_on": "2026-10-12",
     "hint": "psl:Amazon Lightsail",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "us-east-2.cs.amazonlightsail.com": {
     "added_on": "2026-10-12",
     "hint": "psl:Amazon Lightsail",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "us-west-2.cs.amazonlightsail.com": {
     "added_on": "2026-10-12",
     "hint": "psl:Amazon Lightsail",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged AWS service suffix (amazonaws.com)",
     "resolves": true,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "us.object.ncloudstorage.com": {
     "added_on": "2026-10-19",
     "hint": "psl:NAVER Cloud",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
+    "remark": "regional zone of cataloged Naver Cloud storage suffix (ncloud.com)",
     "resolves": false,
     "sources": [
       "psl"
     ],
-    "status": "new",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "v13clan.com": {
     "added_on": "2026-10-06",
@@ -4713,7 +4740,7 @@
   "warp9computers.com": {
     "added_on": "2026-10-06",
     "hint": "no-ip.com",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "does not resolve",
     "resolves": true,
     "sources": [
@@ -4889,7 +4916,7 @@
   },
   "yngling.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private/parked/defunct site - not a hostname issuer",
     "resolves": true,
     "sources": [
@@ -4900,7 +4927,7 @@
   },
   "z0d.eu": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
+    "last_checked": "2026-10-26",
     "remark": "private site",
     "resolves": true,
     "sources": [
