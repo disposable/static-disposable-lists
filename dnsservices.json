@@ -1,4 +1,16 @@
 {
+  "000nethost.com": {
+    "costs": "free",
+    "hosts": [
+      "000nethost.com"
+    ],
+    "public": true,
+    "remark": "Free-hosting suffix in the 000webhost family - mass tenant subdomains under *.nethost-NNNN.000nethost.com are issued and resolve (e.g. *.nethost-4611 names certed in CT 2026 and resolving); heavy abuse/phishing usage.",
+    "status": "restricted",
+    "type": "hosting",
+    "updates": "static",
+    "url": "http://000nethost.com/"
+  },
   "10web.io": {
     "cloud": "Cloudflare",
     "costs": "paid",
@@ -182,6 +194,21 @@
     "type": "registry",
     "updates": "both",
     "url": "https://aa.am/"
+  },
+  "activehosted.com": {
+    "cloud": "Cloudflare",
+    "costs": "paid",
+    "hosted": "US",
+    "hosts": [
+      "activehosted.com"
+    ],
+    "jurisdiction": "US",
+    "public": true,
+    "remark": "ActiveCampaign customer-hosted domain - accounts get <name>.activehosted.com landing/form hosts (customer names certed in CT 2026).",
+    "status": "active",
+    "type": "hosting",
+    "updates": "static",
+    "url": "https://www.activecampaign.com/"
   },
   "activetrail.biz": {
     "hosted": "IL",
@@ -3901,6 +3928,19 @@
     "updates": "static",
     "url": "https://datto.com/"
   },
+  "ddnsapp.com": {
+    "cloud": "Cloudflare",
+    "costs": "free",
+    "hosts": [
+      "ddnsapp.com"
+    ],
+    "public": true,
+    "remark": "Free DDNS suffix - customer hostnames keep resolving to real user IPs (stalbertpbx.ddnsapp.com -> 47.6.9.80 etc., certed in CT 2026), but the apex no longer resolves and no portal is reachable, so new hostnames cannot be requested.",
+    "status": "no_new_registrations",
+    "type": "ddns",
+    "updates": "dynamic",
+    "url": "http://ddnsapp.com/"
+  },
   "ddnss.de": {
     "api": true,
     "costs": "freemium",
@@ -5488,6 +5528,17 @@
     ],
     "updates": "dynamic",
     "url": "http://dynip.com/"
+  },
+  "dynme.ovh": {
+    "hosts": [
+      "dynme.ovh"
+    ],
+    "public": true,
+    "remark": "Personal-project dynamic DNS suffix on own nameservers (ebenbeck.org) - user subdomains certed in CT 2026 and resolving (bitrix.dynme.ovh -> 185.239.48.201); apex does not resolve so new registrations are not possible.",
+    "status": "no_new_registrations",
+    "type": "ddns",
+    "updates": "dynamic",
+    "url": "http://dynme.ovh/"
   },
   "dynnamn.ru": {
     "api": true,
@@ -7523,6 +7574,18 @@
     "updates": "static",
     "url": "https://www.freenom.com"
   },
+  "freeserverhostingweb.club": {
+    "costs": "free",
+    "hosts": [
+      "freeserverhostingweb.club"
+    ],
+    "public": true,
+    "remark": "Free web host issuing account subdomains (hex account names and mail/webmail hosts certed in CT 2026).",
+    "status": "active",
+    "type": "hosting",
+    "updates": "static",
+    "url": "http://freeserverhostingweb.club/"
+  },
   "freewebhostingarea.com": {
     "costs": "free",
     "expire_days": 30,
@@ -8672,6 +8735,19 @@
     "updates": "static",
     "url": "https://hostbip.com/"
   },
+  "hoster-test.ru": {
+    "costs": "paid",
+    "hosts": [
+      "hoster-test.ru"
+    ],
+    "jurisdiction": "RU",
+    "public": true,
+    "remark": "Russian hoster.ru test/VPS platform - numbered customer hosts under *.hoster-test.ru are certed and resolving (186247.hoster-test.ru -> 31.28.24.110).",
+    "status": "active",
+    "type": "hosting",
+    "updates": "static",
+    "url": "http://hoster-test.ru/"
+  },
   "hosting.de": {
     "api": true,
     "costs": "paid",
@@ -9052,6 +9128,21 @@
     "updates": "static",
     "url": "https://ing.ng/"
   },
+  "inmotionhosting.com": {
+    "cloud": "Cloudflare",
+    "costs": "paid",
+    "hosted": "US",
+    "hosts": [
+      "inmotionhosting.com"
+    ],
+    "jurisdiction": "US",
+    "public": true,
+    "remark": "InMotion Hosting shared-server fleet - customer cPanel/temp hosts under advancedNNNN.inmotionhosting.com resolve to real servers (advanced1053 -> 173.247.250.32).",
+    "status": "active",
+    "type": "hosting",
+    "updates": "static",
+    "url": "https://www.inmotionhosting.com/"
+  },
   "interlegis.leg.br": {
     "hosted": "BR",
     "hosts": [
@@ -9205,6 +9296,20 @@
     "type": "vendor",
     "updates": "static",
     "url": "https://iopsys.eu/"
+  },
+  "ip-dynamic.com": {
+    "costs": "free",
+    "hosted": "ID",
+    "hosts": [
+      "ip-dynamic.com"
+    ],
+    "jurisdiction": "ID",
+    "public": true,
+    "remark": "Indonesian dynamic-IP service ('Solusi IP Dynamic IndiHome & IndiBiz') - customer hostnames under *.ip-dynamic.com are certed in CT 2026; records are ephemeral (appear/disappear with subscriber sessions).",
+    "status": "active",
+    "type": "ddns",
+    "updates": "dynamic",
+    "url": "http://ip-dynamic.com/"
   },
   "ipfs.tech": {
     "cloud": "Fastly",
@@ -14015,6 +14120,19 @@
     "updates": "static",
     "url": "https://registry.godaddy/"
   },
+  "regruhosting.ru": {
+    "costs": "paid",
+    "hosts": [
+      "regruhosting.ru"
+    ],
+    "jurisdiction": "RU",
+    "public": true,
+    "remark": "REG.RU VPS platform suffix - customer VPS rDNS hostnames under {ip}.cloudvps/xen.vps/ovz.vps.regruhosting.ru resolve (134-0-112-7.cloudvps.regruhosting.ru -> 134.0.112.7).",
+    "status": "active",
+    "type": "hosting",
+    "updates": "static",
+    "url": "https://www.reg.ru/"
+  },
   "render.com": {
     "cloud": "Render",
     "hosted": "US",
@@ -17055,6 +17173,20 @@
     "type": "hosting",
     "updates": "static",
     "url": "https://webhare.com/"
+  },
+  "webhostinghub.com": {
+    "costs": "paid",
+    "hosted": "US",
+    "hosts": [
+      "webhostinghub.com"
+    ],
+    "jurisdiction": "US",
+    "public": true,
+    "remark": "WebHostingHub shared-server fleet - customer hosts like secure5/sudoNN.webhostinghub.com resolve to real servers (secure5 -> 173.231.218.146).",
+    "status": "active",
+    "type": "hosting",
+    "updates": "static",
+    "url": "https://www.webhostinghub.com/"
   },
   "webhotelier.net": {
     "cloud": "AWS",

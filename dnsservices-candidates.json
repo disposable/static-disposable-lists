@@ -1,15 +1,4 @@
 {
-  "000nethost.com": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "dead Hostinger-era free hosting domain",
-    "resolves": true,
-    "sources": [
-      "korlabsio:psp"
-    ],
-    "status": "rejected",
-    "validated": true
-  },
   "000webhost.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-19",
@@ -138,17 +127,6 @@
     "resolves": true,
     "sources": [
       "hagezi"
-    ],
-    "status": "rejected",
-    "validated": true
-  },
-  "activehosted.com": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "ESP/marketing link domain - not publicly issuable",
-    "resolves": true,
-    "sources": [
-      "korlabsio:psp"
     ],
     "status": "rejected",
     "validated": true
@@ -558,7 +536,7 @@
   "benzahosting.cl": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-26",
-    "remark": "hosting brand - no public subdomain issuance found",
+    "remark": "hosting brand - srvNN server infra names only, no public issuance",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
@@ -1229,17 +1207,6 @@
     "status": "rejected",
     "validated": true
   },
-  "ddnsapp.com": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "unverifiable DDNS domain",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "rejected",
-    "validated": true
-  },
   "ddnslive.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-26",
@@ -1321,8 +1288,8 @@
   },
   "dlinkddns.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "domain parked (parking NS) - not an active hostname service",
+    "last_checked": "2026-10-26",
+    "remark": "parked (ParkLogic) - parked-wildcard subdomains attract phishing certs in CT, not service issuance",
     "resolves": true,
     "sources": [
       "hagezi"
@@ -1454,7 +1421,7 @@
   "dw3host.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-26",
-    "remark": "hosting brand - no public subdomain issuance found",
+    "remark": "hosting infra names only (cpanel/server) - no public issuance",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
@@ -1475,8 +1442,8 @@
   },
   "dynadot.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "service apex/infrastructure domain - subdomains not publicly issuable",
+    "last_checked": "2026-10-26",
+    "remark": "registrar infra names only - no public issuance",
     "resolves": true,
     "sources": [
       "korlabsio:fsp"
@@ -1541,8 +1508,8 @@
   },
   "dyndnss.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "domain parked (parking NS) - not an active hostname service",
+    "last_checked": "2026-10-26",
+    "remark": "parked (ParkingCrew) - parking-side wildcard certs minted for arbitrary names in CT; no service issuance",
     "resolves": true,
     "sources": [
       "hagezi"
@@ -1552,19 +1519,8 @@
   },
   "dyndnsservices.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "GoDaddy-parked/customer domain",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "rejected",
-    "validated": true
-  },
-  "dynme.ovh": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "private domain (ebenbeck.org NS)",
+    "last_checked": "2026-10-26",
+    "remark": "MintDNS-operator infrastructure domain - redirects to dynamic.domains vendor site",
     "resolves": true,
     "sources": [
       "hagezi"
@@ -1586,7 +1542,7 @@
   "dyns.cx": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-26",
-    "remark": "does not resolve",
+    "remark": "was a live DDNS suffix (certed user names in CT) but domain is now fully undelegated",
     "resolves": false,
     "sources": [
       "hagezi"
@@ -1608,7 +1564,7 @@
   "dynup.net": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-26",
-    "remark": "domain parked (worldnic/consent lander) - wildcard points at park IP",
+    "remark": "parked (worldnic) - *.gr.dynup.net SEO-farm names all resolve to parking IP",
     "resolves": true,
     "sources": [
       "hagezi"
@@ -1618,8 +1574,8 @@
   },
   "easydns.info": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "easyDNS service domain",
+    "last_checked": "2026-10-26",
+    "remark": "easyDNS operator domain - no public subdomain issuance",
     "resolves": true,
     "sources": [
       "hagezi"
@@ -1629,8 +1585,8 @@
   },
   "easydns.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "easyDNS service domain",
+    "last_checked": "2026-10-26",
+    "remark": "easyDNS operator infra names only - no public subdomain issuance",
     "resolves": true,
     "sources": [
       "hagezi"
@@ -1640,8 +1596,8 @@
   },
   "easydns.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "easyDNS service domain",
+    "last_checked": "2026-10-26",
+    "remark": "easyDNS operator domain - no public subdomain issuance",
     "resolves": true,
     "sources": [
       "hagezi"
@@ -1965,17 +1921,6 @@
     "status": "rejected",
     "validated": true
   },
-  "freeserverhostingweb.club": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-26",
-    "remark": "private/parked/defunct site - not a hostname issuer",
-    "resolves": true,
-    "sources": [
-      "korlabsio:fsp"
-    ],
-    "status": "rejected",
-    "validated": true
-  },
   "freewebhostmost.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-19",
@@ -2264,17 +2209,6 @@
     "status": "rejected",
     "validated": true
   },
-  "hoster-test.ru": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "hoster.ru customer",
-    "resolves": true,
-    "sources": [
-      "korlabsio:fsp"
-    ],
-    "status": "rejected",
-    "validated": true
-  },
   "hsforms.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-19",
@@ -2363,17 +2297,6 @@
     "status": "rejected",
     "validated": true
   },
-  "inmotionhosting.com": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "hosting apex - not issuable",
-    "resolves": true,
-    "sources": [
-      "korlabsio:psp"
-    ],
-    "status": "rejected",
-    "validated": true
-  },
   "innograph.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-26",
@@ -2389,17 +2312,6 @@
     "added_on": "2026-10-06",
     "last_checked": "2026-10-26",
     "remark": "private site",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "rejected",
-    "validated": true
-  },
-  "ip-dynamic.com": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-26",
-    "remark": "Indonesian ISP info/service site (IndiHome dynamic IP) - not a public issuer",
     "resolves": true,
     "sources": [
       "hagezi"
@@ -2465,7 +2377,7 @@
   "ixirhost.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-26",
-    "remark": "hosting brand - no public subdomain issuance found",
+    "remark": "hosting infra names only (server fleet) - no public issuance",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
@@ -3338,8 +3250,8 @@
   "opendns.com": {
     "added_on": "2026-10-06",
     "hint": "new-provider",
-    "last_checked": "2026-10-19",
-    "remark": "OpenWrt OpenDNS updater entry; OpenDNS issues no user hostnames",
+    "last_checked": "2026-10-26",
+    "remark": "Cisco/OpenDNS internal platform subdomains (bot.vinz.s1.*) - not publicly issuable",
     "resolves": true,
     "sources": [
       "openwrt"
@@ -3427,8 +3339,8 @@
   },
   "pdns.cz": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "domain parked (parking NS) - not an active hostname service",
+    "last_checked": "2026-10-26",
+    "remark": "parked (Bodis wwNN pattern) - parking-side certs, not issuance",
     "resolves": true,
     "sources": [
       "hagezi"
@@ -3560,8 +3472,8 @@
   },
   "privatedns.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "LeaseWeb customer domain",
+    "last_checked": "2026-10-26",
+    "remark": "operator infra names only - no public issuance",
     "resolves": true,
     "sources": [
       "hagezi"
@@ -3653,17 +3565,6 @@
     "resolves": true,
     "sources": [
       "hagezi"
-    ],
-    "status": "rejected",
-    "validated": true
-  },
-  "regruhosting.ru": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "private/customer domain - not a service suffix",
-    "resolves": true,
-    "sources": [
-      "korlabsio:fsp"
     ],
     "status": "rejected",
     "validated": true
@@ -4204,7 +4105,7 @@
   "ssl443.org": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-26",
-    "remark": "no NS delegation - domain now undelegated",
+    "remark": "domain undelegated now; spam-pattern subdomain certs seen in CT 2026",
     "resolves": false,
     "sources": [
       "hagezi",
@@ -4762,8 +4663,8 @@
   },
   "wcomhost.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "private/customer domain - not a service suffix",
+    "last_checked": "2026-10-26",
+    "remark": "parked (worldnic) - tenant-code names resolve to parking IP, not real hosts",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
@@ -4778,17 +4679,6 @@
     "resolves": false,
     "sources": [
       "korlabsio:fsp"
-    ],
-    "status": "rejected",
-    "validated": true
-  },
-  "webhostinghub.com": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-26",
-    "remark": "hosting brand - no public subdomain issuance found",
-    "resolves": true,
-    "sources": [
-      "korlabsio:psp"
     ],
     "status": "rejected",
     "validated": true
