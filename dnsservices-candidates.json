@@ -542,14 +542,14 @@
   },
   "benzahosting.cl": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "live/hosting brand - subdomain issuance unverified",
+    "last_checked": "2026-10-26",
+    "remark": "hosting brand - no public subdomain issuance found",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
     ],
-    "status": "deferred",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "bero-webspace.de": {
     "added_on": "2026-10-06",
@@ -620,25 +620,25 @@
   },
   "brweb.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "DDNS-named domain, site unverifiable",
+    "last_checked": "2026-10-26",
+    "remark": "hosting brand - no public subdomain issuance found",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "deferred",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "builderallwppro.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "live/hosting brand - subdomain issuance unverified",
+    "last_checked": "2026-10-26",
+    "remark": "Builderall WP platform infrastructure domain - no public issuance",
     "resolves": true,
     "sources": [
       "korlabsio:fsp"
     ],
-    "status": "deferred",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "burlingtondrywall.com": {
     "added_on": "2026-10-06",
@@ -826,17 +826,6 @@
     ],
     "status": "rejected",
     "validated": true
-  },
-  "codeanyapp.com": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "live/hosting brand - subdomain issuance unverified",
-    "resolves": true,
-    "sources": [
-      "korlabsio:fsp"
-    ],
-    "status": "deferred",
-    "validated": false
   },
   "compress.to": {
     "added_on": "2026-10-06",
@@ -1192,14 +1181,14 @@
   },
   "darksair.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "live/hosting brand - subdomain issuance unverified",
+    "last_checked": "2026-10-26",
+    "remark": "private domain - redirects to mws.rocks personal site",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "deferred",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "ddns.me.uk": {
     "added_on": "2026-10-06",
@@ -1457,27 +1446,16 @@
     "status": "rejected",
     "validated": true
   },
-  "dtdns.net": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "dtdns family remnant, unverifiable",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "deferred",
-    "validated": false
-  },
   "dw3host.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "live/hosting brand - subdomain issuance unverified",
+    "last_checked": "2026-10-26",
+    "remark": "hosting brand - no public subdomain issuance found",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
     ],
-    "status": "deferred",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "dyn.columbia.edu": {
     "added_on": "2026-10-06",
@@ -1536,14 +1514,14 @@
   },
   "dyndns-ip.org": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "DDNS-named domain, site unverifiable",
+    "last_checked": "2026-10-26",
+    "remark": "dead - no A/AAAA records despite Cloudflare NS",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "deferred",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "dyndns.pro": {
     "added_on": "2026-10-06",
@@ -1636,14 +1614,14 @@
   },
   "dynup.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "live/hosting brand - subdomain issuance unverified",
+    "last_checked": "2026-10-26",
+    "remark": "domain parked (worldnic/consent lander) - wildcard points at park IP",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "deferred",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "easydns.info": {
     "added_on": "2026-10-06",
@@ -1678,17 +1656,6 @@
     "status": "rejected",
     "validated": true
   },
-  "ehost.pl": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "live/hosting brand - subdomain issuance unverified",
-    "resolves": true,
-    "sources": [
-      "korlabsio:psp"
-    ],
-    "status": "deferred",
-    "validated": false
-  },
   "elchemi.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-19",
@@ -1712,17 +1679,6 @@
     "status": "rejected",
     "validated": true
   },
-  "elfsig.ht": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "live/hosting brand - subdomain issuance unverified",
-    "resolves": true,
-    "sources": [
-      "korlabsio:fsp"
-    ],
-    "status": "deferred",
-    "validated": false
-  },
   "emlnk.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-19",
@@ -1744,18 +1700,6 @@
     ],
     "status": "rejected",
     "validated": true
-  },
-  "epac.to": {
-    "added_on": "2026-10-06",
-    "hint": "changeip.com",
-    "last_checked": "2026-10-19",
-    "remark": "SOA-only, site unverifiable",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "deferred",
-    "validated": false
   },
   "epicmilk.com": {
     "added_on": "2026-10-06",
@@ -2010,17 +1954,6 @@
     "status": "rejected",
     "validated": true
   },
-  "freedns.tech": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "DDNS-named domain, site unverifiable",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "deferred",
-    "validated": false
-  },
   "freesa.org": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-19",
@@ -2056,14 +1989,14 @@
   },
   "freifunk.net": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "live/hosting brand - subdomain issuance unverified",
+    "last_checked": "2026-10-26",
+    "remark": "community org domain - delegations are internal, not publicly issuable",
     "resolves": true,
     "sources": [
       "korlabsio:fsp"
     ],
-    "status": "deferred",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "gamingcontrol.de": {
     "added_on": "2026-10-06",
@@ -2089,14 +2022,14 @@
   },
   "gccwebhosting.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "live/hosting brand - subdomain issuance unverified",
+    "last_checked": "2026-10-26",
+    "remark": "hosting brand - no public subdomain issuance found",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
     ],
-    "status": "deferred",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "gettrails.com": {
     "added_on": "2026-10-06",
@@ -2144,14 +2077,14 @@
   },
   "greyh.at": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "live/hosting brand - subdomain issuance unverified",
+    "last_checked": "2026-10-26",
+    "remark": "private personal domain",
     "resolves": true,
     "sources": [
       "korlabsio:ipfs"
     ],
-    "status": "deferred",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "grupoimpulsora.com": {
     "added_on": "2026-10-06",
@@ -2300,14 +2233,14 @@
   },
   "holhost.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "live/hosting brand - subdomain issuance unverified",
+    "last_checked": "2026-10-26",
+    "remark": "hosting brand - no public subdomain issuance found",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
     ],
-    "status": "deferred",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "homeplex.org": {
     "added_on": "2026-10-06",
@@ -2531,14 +2464,14 @@
   },
   "ixirhost.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "live/hosting brand - subdomain issuance unverified",
+    "last_checked": "2026-10-26",
+    "remark": "hosting brand - no public subdomain issuance found",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
     ],
-    "status": "deferred",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "javafaq.nu": {
     "added_on": "2026-10-06",
@@ -2993,14 +2926,14 @@
   },
   "liveonhosting.com.br": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "live/hosting brand - subdomain issuance unverified",
+    "last_checked": "2026-10-26",
+    "remark": "hosting brand - no public subdomain issuance found",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
     ],
-    "status": "deferred",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "ljack.com": {
     "added_on": "2026-10-06",
@@ -3147,14 +3080,14 @@
   },
   "monovm.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "live/hosting brand - subdomain issuance unverified",
+    "last_checked": "2026-10-26",
+    "remark": "hosting brand - no public subdomain issuance found",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
     ],
-    "status": "deferred",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "moonfruit.com": {
     "added_on": "2026-10-06",
@@ -3345,14 +3278,14 @@
   },
   "no-ip.fr": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "French no-ip variant, site unverifiable",
+    "last_checked": "2026-10-26",
+    "remark": "parked - redirects to venez.fr, wildcard points at OVH parking IP",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "deferred",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "now.im": {
     "added_on": "2026-10-06",
@@ -3787,17 +3720,6 @@
     "status": "rejected",
     "validated": true
   },
-  "royalwebhosting.net": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "live/hosting brand - subdomain issuance unverified",
-    "resolves": true,
-    "sources": [
-      "korlabsio:fsp"
-    ],
-    "status": "deferred",
-    "validated": false
-  },
   "rpz.su": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-19",
@@ -3954,14 +3876,14 @@
   },
   "sannon-stamm.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "live/hosting brand - subdomain issuance unverified",
+    "last_checked": "2026-10-26",
+    "remark": "private business site",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "deferred",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "scottlewisonline.com": {
     "added_on": "2026-10-06",
@@ -4306,14 +4228,14 @@
   },
   "subwayhost.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "live/hosting brand - subdomain issuance unverified",
+    "last_checked": "2026-10-26",
+    "remark": "hosting brand - no public subdomain issuance found",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
     ],
-    "status": "deferred",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "suroot.com": {
     "added_on": "2026-10-06",
@@ -4603,14 +4525,14 @@
   },
   "tth.cl": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "live/hosting brand - subdomain issuance unverified",
+    "last_checked": "2026-10-26",
+    "remark": "private blog",
     "resolves": true,
     "sources": [
       "hagezi"
     ],
-    "status": "deferred",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "uk.ms": {
     "added_on": "2026-10-06",
@@ -4636,14 +4558,14 @@
   },
   "umbler.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "live/hosting brand - subdomain issuance unverified",
+    "last_checked": "2026-10-26",
+    "remark": "hosting brand - no public subdomain issuance found",
     "resolves": true,
     "sources": [
       "korlabsio:fsp"
     ],
-    "status": "deferred",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "upir.ir": {
     "added_on": "2026-10-06",
@@ -4709,17 +4631,6 @@
       "psl"
     ],
     "status": "new",
-    "validated": false
-  },
-  "usa.cc": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "does not resolve",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "deferred",
     "validated": false
   },
   "v13clan.com": {
@@ -4846,14 +4757,14 @@
   },
   "webhostinghub.com": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "live/hosting brand - subdomain issuance unverified",
+    "last_checked": "2026-10-26",
+    "remark": "hosting brand - no public subdomain issuance found",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
     ],
-    "status": "deferred",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "websitetestlink.com": {
     "added_on": "2026-10-06",
@@ -4868,14 +4779,14 @@
   },
   "webspace.re": {
     "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "Austrian webspace service, unverifiable",
+    "last_checked": "2026-10-26",
+    "remark": "dead - no HTTP(S) response",
     "resolves": true,
     "sources": [
       "korlabsio:fsp"
     ],
-    "status": "deferred",
-    "validated": false
+    "status": "rejected",
+    "validated": true
   },
   "westblade.com": {
     "added_on": "2026-10-06",

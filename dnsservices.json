@@ -3407,6 +3407,21 @@
     "updates": "static",
     "url": "https://co.pl/"
   },
+  "codeanyapp.com": {
+    "cloud": "DigitalOcean",
+    "costs": "freemium",
+    "hosted": "US",
+    "hosts": [
+      "codeanyapp.com"
+    ],
+    "jurisdiction": "US",
+    "public": true,
+    "remark": "Codeanywhere container-preview suffix - every user container is exposed under *.codeanyapp.com (wildcard -> 198.199.109.95). Apex does not answer HTTP(S); the suffix is assigned programmatically when dev containers run.",
+    "status": "active",
+    "type": "hosting",
+    "updates": "static",
+    "url": "https://codeanywhere.com/"
+  },
   "codeberg.page": {
     "api": false,
     "costs": "free",
@@ -4797,6 +4812,20 @@
     "updates": "both",
     "url": "https://www.dtdns.com/"
   },
+  "dtdns.net": {
+    "cloud": "Leaseweb",
+    "hosted": "SG",
+    "hosts": [
+      "dtdns.net"
+    ],
+    "jurisdiction": "US",
+    "public": true,
+    "remark": "Legacy DtDNS suffix now operated as an SEO-spam doorway network - the site itself lists 976+ auto-generated 'networks' (Thai casino/gambling keyword subdomains), wildcard resolves to the same hawkhost box. No public signup; subdomains are minted by the operator.",
+    "status": "restricted",
+    "type": "ddns",
+    "updates": "dynamic",
+    "url": "http://dtdns.net/"
+  },
   "duckdns.org": {
     "api": true,
     "cloud": "AWS",
@@ -5738,6 +5767,20 @@
     "updates": "static",
     "url": "https://edgeone.app/"
   },
+  "ehost.pl": {
+    "costs": "freemium",
+    "hosted": "PL",
+    "hosts": [
+      "ehost.pl"
+    ],
+    "jurisdiction": "PL",
+    "public": true,
+    "remark": "Polish eHOST provider - customer subdomains live under *.ehost.pl on distinct per-account IPs (test.ehost.pl -> 193.143.77.14).",
+    "status": "active",
+    "type": "hosting",
+    "updates": "static",
+    "url": "https://www.ehost.pl/"
+  },
   "elefunc.com": {
     "cloud": "Cloudflare",
     "hosted": "CA",
@@ -5766,6 +5809,20 @@
     "status": "active",
     "type": "hosting",
     "url": "https://elementor.com/"
+  },
+  "elfsig.ht": {
+    "cloud": "Google Cloud",
+    "costs": "freemium",
+    "hosted": "US",
+    "hosts": [
+      "elfsig.ht"
+    ],
+    "public": true,
+    "remark": "Elfsight widget-delivery suffix - customer widget instances are served under *.elfsig.ht (wildcard on Cloudflare); apex redirects to elfsight.com.",
+    "status": "active",
+    "type": "hosting",
+    "updates": "static",
+    "url": "https://elfsight.com/"
   },
   "eliv.kr": {
     "cloud": "Cloudflare",
@@ -5901,6 +5958,18 @@
     ],
     "updates": "both",
     "url": "https://entrydns.net/"
+  },
+  "epac.to": {
+    "hosted": "US",
+    "hosts": [
+      "epac.to"
+    ],
+    "public": true,
+    "remark": "Free .to redirection/subdomain service remnant - issued records still resolve (test.epac.to -> 113.119.105.244) but the apex serves a bare 404 and no portal answers, so new hostnames cannot be requested.",
+    "status": "no_new_registrations",
+    "type": "redirect",
+    "updates": "dynamic",
+    "url": "http://epac.to/"
   },
   "eth.limo": {
     "cloud": "AWS",
@@ -7363,6 +7432,19 @@
     ],
     "updates": "both",
     "url": "https://freedns.afraid.org/"
+  },
+  "freedns.tech": {
+    "cloud": "Cloudflare",
+    "hosted": "CA",
+    "hosts": [
+      "freedns.tech"
+    ],
+    "public": true,
+    "remark": "Free DNS service - issued records still resolve (test.freedns.tech -> 115.204.123.6) but the apex sits behind Cloudflare and the origin returns 522 (dead), so new hostnames cannot be requested.",
+    "status": "no_new_registrations",
+    "type": "ddns",
+    "updates": "dynamic",
+    "url": "https://freedns.tech/"
   },
   "freehostia.com": {
     "costs": "freemium",
@@ -14111,6 +14193,19 @@
     "updates": "static",
     "url": "https://rootlayer.net"
   },
+  "royalwebhosting.net": {
+    "costs": "freemium",
+    "hosted": "BG",
+    "hosts": [
+      "royalwebhosting.net"
+    ],
+    "public": true,
+    "remark": "Royal Web Hosting - free and paid web hosting with public signup; customer subdomains issued under *.royalwebhosting.net (test.royalwebhosting.net -> 185.176.43.64 on a separate host IP).",
+    "status": "active",
+    "type": "hosting",
+    "updates": "static",
+    "url": "https://royalwebhosting.net/"
+  },
   "ruhr-uni-bochum.de": {
     "hosted": "DE",
     "hosts": [
@@ -16514,6 +16609,19 @@
     "type": "registry",
     "updates": "static",
     "url": "https://us.org/"
+  },
+  "usa.cc": {
+    "cloud": "Akamai",
+    "hosted": "US",
+    "hosts": [
+      "usa.cc"
+    ],
+    "public": true,
+    "remark": "Long-running free .cc subdomain service - issued records still resolve (test.usa.cc -> 172.233.219.123) but the apex now sits on ParkLogic parking, so new registrations are not possible.",
+    "status": "no_new_registrations",
+    "type": "ddns",
+    "updates": "dynamic",
+    "url": "https://usa.cc/"
   },
   "uswriting.co": {
     "cloud": "Cloudflare",
