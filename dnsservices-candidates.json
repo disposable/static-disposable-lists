@@ -3626,18 +3626,6 @@
     "status": "rejected",
     "validated": true
   },
-  "rr.nu": {
-    "added_on": "2026-10-19",
-    "hint": "sitelutions.com",
-    "last_checked": "2026-10-26",
-    "remark": "historically a free-subdomain service on Sitelutions DNS - apex now answers 127.0.0.1, web dead, no issued records found",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "deferred",
-    "validated": false
-  },
   "rs6.net": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-26",
