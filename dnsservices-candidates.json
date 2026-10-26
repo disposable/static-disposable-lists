@@ -2,7 +2,7 @@
   "000webhost.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-26",
-    "remark": "Hostinger's 000webhost discontinued July 2024",
+    "remark": "Hostinger's 000webhost discontinued - only mg.account/mg.email infra certs in CT, no customer subs",
     "resolves": true,
     "sources": [
       "korlabsio:fsp"
@@ -537,17 +537,6 @@
     "added_on": "2026-10-06",
     "last_checked": "2026-10-26",
     "remark": "hosting brand - srvNN server infra names only, no public issuance",
-    "resolves": true,
-    "sources": [
-      "korlabsio:psp"
-    ],
-    "status": "rejected",
-    "validated": true
-  },
-  "bero-webspace.de": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-26",
-    "remark": "hosting customer domain",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
@@ -1166,7 +1155,7 @@
   "crazydomains.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-26",
-    "remark": "registrar apex - not issuable",
+    "remark": "internal builder-svcs env infra only - no public subdomain issuance",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
@@ -1954,17 +1943,6 @@
     "status": "rejected",
     "validated": true
   },
-  "gamingcontrol.de": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-26",
-    "remark": "hosting customer domain",
-    "resolves": true,
-    "sources": [
-      "korlabsio:fsp"
-    ],
-    "status": "rejected",
-    "validated": true
-  },
   "garypatel.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-26",
@@ -2333,7 +2311,7 @@
   "ipower.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-26",
-    "remark": "hosting apex - not issuable",
+    "remark": "brand absorbed - apex redirects to networksolutions.com; no issued subdomains",
     "resolves": true,
     "sources": [
       "korlabsio:fsp"
@@ -2519,17 +2497,6 @@
     "resolves": false,
     "sources": [
       "psl"
-    ],
-    "status": "rejected",
-    "validated": true
-  },
-  "justns.ru": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-26",
-    "remark": "JustHost customer",
-    "resolves": true,
-    "sources": [
-      "korlabsio:psp"
     ],
     "status": "rejected",
     "validated": true
@@ -3041,7 +3008,7 @@
   "monovm.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-26",
-    "remark": "hosting brand - no public subdomain issuance found",
+    "remark": "operator infra names only (abuse/chat/dashboard) - no public issuance",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
@@ -3206,7 +3173,7 @@
   "netlify.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-26",
-    "remark": "service apex/infrastructure domain - subdomains not publicly issuable",
+    "remark": "operator infra only (db/services/community subdomains in CT) - user sites live on netlify.app (cataloged); *.netlify.com wildcard is legacy",
     "resolves": true,
     "sources": [
       "korlabsio:csp"
@@ -3254,17 +3221,6 @@
     "resolves": true,
     "sources": [
       "hagezi"
-    ],
-    "status": "rejected",
-    "validated": true
-  },
-  "onlinehome-server.info": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-26",
-    "remark": "IONOS customer DDNS record",
-    "resolves": true,
-    "sources": [
-      "korlabsio:fsp"
     ],
     "status": "rejected",
     "validated": true
@@ -4083,7 +4039,7 @@
   "spectrumnet.bg": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-26",
-    "remark": "ISP domain",
+    "remark": "ISP customer-IP rDNS names (pon.*, pool IPs) - not publicly issuable",
     "resolves": true,
     "sources": [
       "hagezi"
@@ -4491,21 +4447,10 @@
     "status": "rejected",
     "validated": true
   },
-  "ultasrv.com": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-26",
-    "remark": "hosting apex - not issuable",
-    "resolves": true,
-    "sources": [
-      "korlabsio:fsp"
-    ],
-    "status": "rejected",
-    "validated": true
-  },
   "umbler.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-26",
-    "remark": "hosting brand - no public subdomain issuance found",
+    "remark": "internal service names only (eucalyptus/app/api) - customer sites use umbler.net (cataloged)",
     "resolves": true,
     "sources": [
       "korlabsio:fsp"
@@ -4683,17 +4628,6 @@
     "status": "rejected",
     "validated": true
   },
-  "wbsprt.com": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-26",
-    "remark": "Websupport customer",
-    "resolves": true,
-    "sources": [
-      "korlabsio:fsp"
-    ],
-    "status": "rejected",
-    "validated": true
-  },
   "wcomhost.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-26",
@@ -4712,17 +4646,6 @@
     "resolves": false,
     "sources": [
       "korlabsio:fsp"
-    ],
-    "status": "rejected",
-    "validated": true
-  },
-  "websitetestlink.com": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-26",
-    "remark": "LiquidWeb customer domain",
-    "resolves": true,
-    "sources": [
-      "korlabsio:psp"
     ],
     "status": "rejected",
     "validated": true
@@ -4752,7 +4675,7 @@
   "whogohost.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-26",
-    "remark": "hosting apex - not issuable",
+    "remark": "operator infra names only - no public issuance",
     "resolves": true,
     "sources": [
       "korlabsio:psp"
@@ -4811,17 +4734,6 @@
     "resolves": true,
     "sources": [
       "hagezi"
-    ],
-    "status": "rejected",
-    "validated": true
-  },
-  "xsph.ru": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-26",
-    "remark": "Sprinthost customer",
-    "resolves": true,
-    "sources": [
-      "korlabsio:fsp"
     ],
     "status": "rejected",
     "validated": true

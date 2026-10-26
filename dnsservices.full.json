@@ -2076,6 +2076,20 @@
     "updates": "static",
     "url": "https://beget.com"
   },
+  "bero-webspace.de": {
+    "costs": "paid",
+    "hosted": "DE",
+    "hosts": [
+      "bero-webspace.de"
+    ],
+    "jurisdiction": "DE",
+    "public": true,
+    "remark": "bero-host shared-hosting customer hostnames - {user}.webNNNN.webNN.bero-webspace.de certed and resolving.",
+    "status": "active",
+    "type": "hosting",
+    "updates": "static",
+    "url": "https://bero-host.de/"
+  },
   "besties.house": {
     "cloud": "Hetzner",
     "costs": "free",
@@ -45924,6 +45938,20 @@
     "updates": "static",
     "url": "https://gadget.dev/"
   },
+  "gamingcontrol.de": {
+    "costs": "paid",
+    "hosted": "DE",
+    "hosts": [
+      "gamingcontrol.de"
+    ],
+    "jurisdiction": "DE",
+    "public": true,
+    "remark": "mc-host24 shared-hosting customer hostnames - {user}.webNNNNN.cwebNN.gamingcontrol.de (mail/site records) certed and resolving to real server IPs.",
+    "status": "active",
+    "type": "hosting",
+    "updates": "static",
+    "url": "https://mc-host24.de/"
+  },
   "gandi.net": {
     "api": true,
     "costs": "paid",
@@ -47974,6 +48002,20 @@
     "type": "ddns",
     "updates": "dynamic",
     "url": "https://www.julydns.com/"
+  },
+  "justns.ru": {
+    "costs": "paid",
+    "hosted": "RU",
+    "hosts": [
+      "justns.ru"
+    ],
+    "jurisdiction": "RU",
+    "public": true,
+    "remark": "JustHost customer hostname suffix - arbitrary user names under *.justns.ru certed and resolving; heavy phishing abuse observed.",
+    "status": "restricted",
+    "type": "hosting",
+    "updates": "static",
+    "url": "https://justhost.ru/"
   },
   "k2.cloud": {
     "hosted": "RU",
@@ -50797,6 +50839,20 @@
     "type": "registry",
     "updates": "both",
     "url": "https://one.pl"
+  },
+  "onlinehome-server.info": {
+    "costs": "paid",
+    "hosted": "DE",
+    "hosts": [
+      "onlinehome-server.info"
+    ],
+    "jurisdiction": "DE",
+    "public": true,
+    "remark": "IONOS/1&1 dedicated-server customer hostnames - {name}.sNNNNNNNN.onlinehome-server.info certed and resolving to IONOS IPs.",
+    "status": "active",
+    "type": "hosting",
+    "updates": "static",
+    "url": "https://www.ionos.de/"
   },
   "onrender.com": {
     "api": true,
@@ -54782,6 +54838,20 @@
     "updates": "static",
     "url": "https://ukit.com/"
   },
+  "ultasrv.com": {
+    "costs": "paid",
+    "hosted": "US",
+    "hosts": [
+      "ultasrv.com"
+    ],
+    "jurisdiction": "US",
+    "public": true,
+    "remark": "UltaHost VPS node hostname domain - srvNNNNN.ultasrv.com customer VPS hosts and operator naming; issued names certed in CT 2026 and resolve.",
+    "status": "active",
+    "type": "hosting",
+    "updates": "static",
+    "url": "https://ultahost.com/"
+  },
   "umbler.net": {
     "costs": "paid",
     "hosted": "BR",
@@ -55295,6 +55365,20 @@
     "updates": "static",
     "url": "https://wasmer.io/"
   },
+  "wbsprt.com": {
+    "costs": "paid",
+    "hosted": "SK",
+    "hosts": [
+      "wbsprt.com"
+    ],
+    "jurisdiction": "SK",
+    "public": true,
+    "remark": "Websupport (SK) customer hostnames - {service}.{project}.vps/server/vdc.wbsprt.com (adminer, app hosts) certed and resolving to Websupport IPs.",
+    "status": "active",
+    "type": "hosting",
+    "updates": "static",
+    "url": "https://www.websupport.sk/"
+  },
   "wdc.com": {
     "cloud": "Akamai",
     "hosted": "PL",
@@ -55449,6 +55533,20 @@
     "type": "hosting",
     "updates": "static",
     "url": "https://webpros.com/"
+  },
+  "websitetestlink.com": {
+    "costs": "paid",
+    "hosted": "US",
+    "hosts": [
+      "websitetestlink.com"
+    ],
+    "jurisdiction": "US",
+    "public": true,
+    "remark": "Liquid Web/Nexcess customer preview hostnames - <domain>.php<ver>-<n>.lan<n>-1.websitetestlink.com records resolve to real servers and serve sites (certed in CT 2026).",
+    "status": "active",
+    "type": "hosting",
+    "updates": "static",
+    "url": "https://www.liquidweb.com/"
   },
   "webstarts.com": {
     "cloud": "AWS",
@@ -55933,6 +56031,20 @@
     "type": "hosting",
     "updates": "static",
     "url": "https://xs4all.nl/"
+  },
+  "xsph.ru": {
+    "costs": "paid",
+    "hosted": "RU",
+    "hosts": [
+      "xsph.ru"
+    ],
+    "jurisdiction": "RU",
+    "public": true,
+    "remark": "Sprinthost customer suffix - account hostnames (aNNNNNNN and user names) certed and resolving to Sprinthost IPs.",
+    "status": "active",
+    "type": "hosting",
+    "updates": "static",
+    "url": "https://sprinthost.ru/"
   },
   "xtool.com": {
     "cloud": "Cloudflare",
