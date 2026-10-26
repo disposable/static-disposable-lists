@@ -104,6 +104,24 @@
     "type": "hosting",
     "url": "https://www.4everland.org/"
   },
+  "4khdcamera.com": {
+    "api": true,
+    "costs": "free",
+    "hosted": "US",
+    "hosts": [
+      "4khdcamera.com"
+    ],
+    "jurisdiction": "US",
+    "public": true,
+    "remark": "Free Dynamic DNS portal (HD Security Store) on the Sierra/MintDNS platform, sharing nameserver win-4fs18cac3gj.ddns.local with sieraddns.com. HTTP-only ASP.NET site. Login portal and dyndns2 endpoint (nic/update) answer, but reg.aspx is gated behind HTTP Basic auth (realm=DDNS) so new accounts cannot self-register; existing records still resolve (test.4khdcamera.com -> 64.251.23.133).",
+    "status": "no_new_registrations",
+    "type": "ddns",
+    "update_protocols": [
+      "dyndns2"
+    ],
+    "updates": "dynamic",
+    "url": "http://4khdcamera.com/"
+  },
   "4u.com": {
     "costs": "paid",
     "hosted": "US",
@@ -1810,6 +1828,24 @@
     "type": "ddns",
     "updates": "dynamic",
     "url": "https://autoipset.com/"
+  },
+  "avandns.com": {
+    "api": true,
+    "costs": "free",
+    "hosted": "US",
+    "hosts": [
+      "avandns.com"
+    ],
+    "jurisdiction": "US",
+    "public": true,
+    "remark": "AvanDNS - Spanish-language free DDNS portal on the Sierra/MintDNS platform (nameserver win-firjpgkf3vr.nddns.local); site marks the service as 'en pruebas' (in testing). HTTP-only ASP.NET site with login/registration pages; dyndns2 endpoint (nic/update) answers and test.avandns.com resolves.",
+    "status": "active",
+    "type": "ddns",
+    "update_protocols": [
+      "dyndns2"
+    ],
+    "updates": "dynamic",
+    "url": "http://www.avandns.com/"
   },
   "avm.de": {
     "hosted": "DE",
@@ -5271,6 +5307,19 @@
     "status": "no_new_registrations",
     "type": "ddns",
     "updates": "dynamic"
+  },
+  "dynamic-dns.us": {
+    "hosted": "US",
+    "hosts": [
+      "dynamic-dns.us"
+    ],
+    "jurisdiction": "US",
+    "public": true,
+    "remark": "Dynamic DNS suffix delegated to the Sierra/MintDNS platform (nameserver win-firjpgkf3vr.nddns.local, same as avandns.com). Issued records resolve (test.dynamic-dns.us -> 64.251.17.52) but no portal answers on the apex or www host - all pages and the nic/update path return 404 - so new hostnames cannot be requested.",
+    "status": "no_new_registrations",
+    "type": "ddns",
+    "updates": "dynamic",
+    "url": "http://dynamic-dns.us/"
   },
   "dynamix.run": {
     "api": true,
@@ -49268,6 +49317,20 @@
     "updates": "dynamic",
     "url": "https://mythic-beasts.com"
   },
+  "mywebsites360.com": {
+    "costs": "paid",
+    "hosted": "US",
+    "hosts": [
+      "mywebsites360.com"
+    ],
+    "jurisdiction": "US",
+    "public": true,
+    "remark": "Websites360 white-label site builder; customer sites are issued under *.mywebsites360.com (wildcard resolves to a Google Cloud frontend, e.g. test./demo.mywebsites360.com).",
+    "status": "active",
+    "type": "hosting",
+    "updates": "static",
+    "url": "http://www.mywebsites360.com/"
+  },
   "myxop.com": {
     "costs": "free",
     "hosted": "US",
@@ -52899,6 +52962,27 @@
     "type": "reserved",
     "updates": "static",
     "url": "https://sie.com/"
+  },
+  "sieraddns.com": {
+    "api": true,
+    "costs": "free",
+    "hosted": "US",
+    "hosts": [
+      "sieraddns.com"
+    ],
+    "jurisdiction": "GB",
+    "public": true,
+    "remark": "Sierra Electronics free DDNS; HTTP-only ASP.NET site (HTTPS does not answer). Account signup, login and email verification still work, but hostname creation fails with \"An error occured: You must enable WebRTC to use this service\" even with WebRTC enabled. Existing records still resolve; dyndns2 update endpoint (nic/update) still answers.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "no_new_registrations",
+    "type": "ddns",
+    "update_protocols": [
+      "dyndns2"
+    ],
+    "updates": "dynamic",
+    "url": "http://www.sieraddns.com/"
   },
   "simply.com": {
     "api": true,

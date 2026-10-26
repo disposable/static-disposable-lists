@@ -87,17 +87,6 @@
     "status": "rejected",
     "validated": true
   },
-  "4khdcamera.com": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "private/customer domain - not a service suffix",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "rejected",
-    "validated": true
-  },
   "4mydomain.com": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-19",
@@ -517,17 +506,6 @@
     ],
     "status": "new",
     "validated": false
-  },
-  "avandns.com": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "private/customer domain - not a service suffix",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "rejected",
-    "validated": true
   },
   "ax.lt": {
     "added_on": "2026-10-06",
@@ -1527,17 +1505,6 @@
     "added_on": "2026-10-06",
     "last_checked": "2026-10-19",
     "remark": "domain parked (parking NS) - not an active hostname service",
-    "resolves": true,
-    "sources": [
-      "hagezi"
-    ],
-    "status": "rejected",
-    "validated": true
-  },
-  "dynamic-dns.us": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "private/customer domain - not a service suffix",
     "resolves": true,
     "sources": [
       "hagezi"
@@ -3321,17 +3288,6 @@
     "status": "rejected",
     "validated": true
   },
-  "mywebsites360.com": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "private/customer domain - not a service suffix",
-    "resolves": true,
-    "sources": [
-      "korlabsio:fsp"
-    ],
-    "status": "rejected",
-    "validated": true
-  },
   "n4t.co": {
     "added_on": "2026-10-06",
     "last_checked": "2026-10-19",
@@ -4168,17 +4124,6 @@
     "resolves": true,
     "sources": [
       "korlabsio:lrs"
-    ],
-    "status": "rejected",
-    "validated": true
-  },
-  "sieraddns.com": {
-    "added_on": "2026-10-06",
-    "last_checked": "2026-10-19",
-    "remark": "private/customer domain - not a service suffix",
-    "resolves": true,
-    "sources": [
-      "hagezi"
     ],
     "status": "rejected",
     "validated": true
