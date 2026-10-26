@@ -5659,7 +5659,8 @@
     "costs": "free",
     "hosted": "DE",
     "hosts": [
-      "dynv6.com"
+      "dynv6.com",
+      "dynv6.net"
     ],
     "jurisdiction": "DE",
     "ns_suffixes": [
@@ -5670,7 +5671,6 @@
     "old_hosts": [
       "dns.army",
       "dns.navy",
-      "dynv6.net",
       "v6.army",
       "v6.navy",
       "v6.rocks"
@@ -5684,7 +5684,7 @@
       "MX",
       "TXT"
     ],
-    "remark": "Free DDNS by Digineo, IPv6-friendly. Sister domains dns.army/dns.navy/v6.* not delegated at check (Oct 2026).",
+    "remark": "Free DDNS by Digineo, IPv6-friendly. Issues user subdomains on dynv6.com and dynv6.net (both live - apex serves, test.dynv6.net resolves to user-set records). Retired sister domains dns.army/dns.navy/v6.* not delegated at check (Oct 2026).",
     "signup_verification": [
       "email"
     ],
