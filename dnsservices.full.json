@@ -53357,6 +53357,9 @@
     "costs": "free",
     "hosted": "CA",
     "hosts": [
+      "byinter.net",
+      "findhere.org",
+      "myfw.us",
       "rr.nu",
       "sitelutions.com"
     ],
@@ -53372,7 +53375,7 @@
       "MX",
       "TXT"
     ],
-    "remark": "Sitelutions free DNS hosting and URL forwarding; DNS API access gated to Premium/Insider's Club membership, DDNS update clients supported. Shared suffix domains include rr.nu (apex is null-routed to 127.0.0.1 but user subdomains are issued - real-world usage on Vercel and live CT certs e.g. www.rr3.rr.nu).",
+    "remark": "Sitelutions free DNS hosting and URL forwarding; DNS API access gated to Premium/Insider's Club membership, DDNS update clients supported. Shared suffix domains include rr.nu, myfw.us, byinter.net, findhere.org (apexes are null-routed but user subdomains are issued - live CT certs and records e.g. test.byinter.net -> 4.4.4.4); most of the historical ~20-domain free pool is expired/sold.",
     "signup_verification": [
       "email"
     ],
