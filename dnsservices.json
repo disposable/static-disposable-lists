@@ -11668,12 +11668,17 @@
     "hosted": "RU",
     "hosts": [
       "crazedns.ru",
+      "netcraze.link",
       "netcraze.pro"
     ],
-    "public": true,
-    "remark": "CrazeDNS dynamic DNS service.",
+    "jurisdiction": "RU",
+    "public": false,
+    "remark": "CrazeDNS - Keenetic router DDNS for EAEU countries (successor of KeenDNS on updated EAEU infrastructure; NETCRAZE LLC). Hostnames like home.netcraze.link / sweethome.crazedns.ru are created via the router interface only - the website is just an explainer page. All three suffix zones live on omni.ru nameservers with resolving records; free, works even behind NAT/4G via Keenetic cloud relay.",
+    "signup_verification": [
+      "other"
+    ],
     "status": "active",
-    "type": "ddns",
+    "type": "vendor",
     "updates": "dynamic",
     "url": "https://netcraze.pro/"
   },
