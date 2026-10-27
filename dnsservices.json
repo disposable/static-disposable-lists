@@ -5500,14 +5500,14 @@
   "dyndns.it": {
     "api": true,
     "cloud": "AWS",
-    "costs": "free",
+    "costs": "freemium",
     "hosted": "IE",
     "hosts": [
       "dyndns.it"
     ],
     "jurisdiction": "IT",
     "public": true,
-    "remark": "Italian free DDNS (dynDNS.it).",
+    "remark": "Italian DDNS (dynDNS.it). Registration via 'Attiva DDNS' order flow: FREE tier (unsupported, hobbyist use on modems that natively list dyndns.it), 14-day TRIAL, and paid UNICO (single host) / MULTI-X (36 hosts) plans payable by card, PayPal or bank transfer. Paid services do not auto-renew.",
     "signup_verification": [
       "email"
     ],
