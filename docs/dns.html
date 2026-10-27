@@ -607,13 +607,14 @@
                                 <label class="filter-option" title="Provider legal seat not recorded"><input type="checkbox" value="unknown" checked>Unknown</label>
                             </div>
                         </div>
-                        <div class="filter-select" data-filter="reval" data-name="Revalidation">
+                        <div class="filter-select" data-filter="reval" data-name="Expiry">
                             <button type="button" class="filter-select-btn" aria-expanded="false">
-                                <span class="filter-select-label">Revalidation: All</span><span class="filter-select-arrow">▾</span>
+                                <span class="filter-select-label">Expiry: All</span><span class="filter-select-arrow">▾</span>
                             </button>
                             <div class="filter-select-menu">
-                                <label class="filter-option" title="Free hostnames/accounts must be manually re-confirmed periodically"><input type="checkbox" value="required" checked>Required</label>
-                                <label class="filter-option" title="No periodic re-confirmation required"><input type="checkbox" value="none" checked>None</label>
+                                <label class="filter-option" title="Hostnames auto-deleted after N days without updates"><input type="checkbox" value="purge" checked>Auto-purge</label>
+                                <label class="filter-option" title="Free hostnames/accounts must be manually re-confirmed periodically"><input type="checkbox" value="revalidate" checked>Revalidation</label>
+                                <label class="filter-option" title="No automatic expiry"><input type="checkbox" value="none" checked>None</label>
                             </div>
                         </div>
                     </div>
@@ -762,7 +763,7 @@
         function setFilterValues(name, values) {
             const sel = document.querySelector(`.filter-select[data-filter="${name}"]`);
             if (!sel) return;
-            const wanted = new Set(values);
+            const wanted = new Set(values.map(v => (name === 'reval' && v === 'required') ? 'revalidate' : v));
             sel.querySelectorAll('input[type="checkbox"]').forEach(b => {
                 b.checked = wanted.has(b.value);
             });
@@ -950,7 +951,7 @@
                             <th class="sortable" data-sort="Updates">Updates<span class="sort-arrow">▲</span></th>
                             <th class="sortable" data-sort="Api">API<span class="sort-arrow">▲</span></th>
                             <th class="sortable" data-sort="Access">Access<span class="sort-arrow">▲</span></th>
-                            <th class="sortable" data-sort="Reval">Revalid.<span class="sort-arrow">▲</span></th>
+                            <th class="sortable" data-sort="Reval">Expiry<span class="sort-arrow">▲</span></th>
                             <th class="sortable" data-sort="Hosts" data-numeric="true">Domains<span class="sort-arrow">▲</span></th>
                             <th>Notes</th>
                         </tr>
@@ -960,6 +961,8 @@
                             const status = statusOf(s);
                             const verifications = verificationSet(s);
                             const reval = s.revalidation_days;
+                            const expire = s.expire_days;
+                            const expiryKind = expire ? 'purge' : (reval ? 'revalidate' : 'none');
                             const isPublic = s.public !== false;
                             const apiYes = s.api === true;
                             const extra = [];
@@ -980,7 +983,7 @@
                                 data-updates="${esc(s.updates || 'unknown')}"
                                 data-api="${apiYes ? 'yes' : 'no'}"
                                 data-access="${isPublic ? 'public' : 'private'}"
-                                data-reval="${reval ? 'required' : 'none'}"
+                                data-reval="${expiryKind}"
                                 data-juris="${esc(s.jurisdiction || '')}"
                                 data-sort-juris="${esc(s.jurisdiction || '')}"
                                 data-sort-name="${esc(s.name.toLowerCase())}"
@@ -989,7 +992,7 @@
                                 data-sort-updates="${esc(s.updates || 'unknown')}"
                                 data-sort-api="${apiYes ? '1' : '0'}"
                                 data-sort-access="${isPublic ? 'public' : 'private'}"
-                                data-sort-reval="${reval || 0}"
+                                data-sort-reval="${expire || reval || 0}"
                                 data-sort-hosts="${s.hosts_total || (s.hosts || []).length}">
                                 <td>
                                     ${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener"><strong>${esc(s.name)}</strong></a>` : `<strong>${esc(s.name)}</strong>`}
@@ -1002,7 +1005,7 @@
                                 <td><span class="badge badge-unknown">${esc(s.updates || '?')}</span></td>
                                 <td><span class="badge badge-${apiYes ? 'yes' : 'no'}">${apiYes ? 'yes' : 'no'}</span></td>
                                 <td><span class="badge badge-${isPublic ? 'yes' : 'private'}">${isPublic ? 'public' : 'private'}</span></td>
-                                <td>${reval ? `<span class="badge badge-status-restricted">every ${esc(reval)}d</span>` : '<span class="badge badge-no">none</span>'}</td>
+                                <td>${expire ? `<span class="badge badge-status-discontinued" title="hostnames auto-deleted after ${esc(expire)} days without updates">auto-expire ${esc(expire)}d</span>` : ''}${reval ? `<span class="badge badge-status-restricted" title="must be manually re-confirmed">every ${esc(reval)}d</span>` : ''}${!expire && !reval ? '<span class="badge badge-no">none</span>' : ''}</td>
                                 <td class="hosts-list">
                                     ${(s.hosts || []).length ? renderHostsCollapsible(s.hosts) + (s.hosts_total && s.hosts_total > s.hosts.length ? `<div class="remark">first ${s.hosts.length.toLocaleString()} of ${s.hosts_total.toLocaleString()}</div>` : '') : (s.own_domains ? '<span class="remark">own domains only</span>' : '-')}
                                 </td>
