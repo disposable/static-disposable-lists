@@ -49806,6 +49806,27 @@
     "type": "hosting",
     "updates": "static"
   },
+  "nerdcamp.net": {
+    "costs": "free",
+    "expire_days": 365,
+    "hosted": "DE",
+    "hosts": [
+      "nerdcamp.net"
+    ],
+    "jurisdiction": "DE",
+    "ns_suffixes": [
+      "bytecamp.net"
+    ],
+    "public": true,
+    "remark": "Nerdcamp free dynamic DNS by bytecamp GmbH (Germany) - issues ihrhost.nerdcamp.net subdomains. Site states 'Im Moment nehmen wir keine Neuanmeldungen an' (no new registrations); existing user records still resolve (home.nerdcamp.net -> 109.42.114.81). Accounts inactive for more than 1 year are automatically deleted.",
+    "status": "no_new_registrations",
+    "type": "ddns",
+    "update_protocols": [
+      "http"
+    ],
+    "updates": "dynamic",
+    "url": "https://nerdcamp.net/"
+  },
   "netangels.ru": {
     "hosted": "RU",
     "hosts": [
