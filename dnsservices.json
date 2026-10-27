@@ -9802,12 +9802,12 @@
     "ns_suffixes": [
       "julydns.com"
     ],
-    "public": true,
-    "remark": "JulyDNS free DDNS.",
+    "public": false,
+    "remark": "JulyDNS (China) - domain self-management panel issuing DNS zones on shared suffixes (cjtooling.com, dnsbed.com). No public registration exists on the site: the panel only offers login by domain name + management password; zones are issued by the operator via an off-site channel. Existing zones resolve (test.dnsbed.com -> 154.213.96.26).",
     "signup_verification": [
       "email"
     ],
-    "status": "active",
+    "status": "restricted",
     "type": "ddns",
     "updates": "dynamic",
     "url": "https://www.julydns.com/"
