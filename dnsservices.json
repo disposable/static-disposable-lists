@@ -11530,11 +11530,11 @@
       "ndsplitter.com"
     ],
     "public": true,
-    "remark": "Namesplitter free DDNS.",
+    "remark": "Namesplitter free DDNS issuing *.hamshack.info. Service backend is down - site returns '{\"outcome\":false,\"message\":\"Unable to connect main\"}' and all paths 403; hamshack.info zone still serves user records (ham.hamshack.info -> 159.69.42.212, test -> 127.0.0.1).",
     "signup_verification": [
       "email"
     ],
-    "status": "active",
+    "status": "no_new_registrations",
     "type": "ddns",
     "updates": "dynamic",
     "url": "http://ndsplitter.com/"
