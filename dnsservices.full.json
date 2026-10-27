@@ -3465,8 +3465,8 @@
     ],
     "jurisdiction": "US",
     "public": true,
-    "remark": "Codeanywhere container-preview suffix - every user container is exposed under *.codeanyapp.com (wildcard -> 198.199.109.95). Apex does not answer HTTP(S); the suffix is assigned programmatically when dev containers run.",
-    "status": "active",
+    "remark": "Codeanywhere container-preview suffix - every user container was exposed under *.codeanyapp.com (wildcard -> 198.199.109.95). Codeanywhere announced its sunset on 2026-06-07 and went offline 2026-07-01; the wildcard record still resolves to a stale DigitalOcean IP but no HTTP(S) service answers.",
+    "status": "discontinued",
     "type": "hosting",
     "updates": "static",
     "url": "https://codeanywhere.com/"
