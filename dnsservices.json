@@ -14825,14 +14825,16 @@
     "ns_suffixes": [
       "securepoint.de"
     ],
-    "public": true,
+    "public": false,
     "record_types": [
       "A"
     ],
-    "remark": "Free DynDNS by German firewall vendor Securepoint; hostnames under firewall-gateway.*.",
-    "signup_verification": "email",
+    "remark": "DynDNS by German firewall vendor Securepoint; hostnames under firewall-gateway.* / my-firewall.org / my-router.de / my-gateway.de / myfirewall.org are created via Securepoint UTM firewall / customer portal - the former public dyndns portal (dyndns.securepoint.de) is gone. Existing records still resolve (demo.my-firewall.org -> 109.91.37.133); sibling public service spdyn.de remains open.",
+    "signup_verification": [
+      "other"
+    ],
     "status": "active",
-    "type": "ddns",
+    "type": "vendor",
     "update_protocols": [
       "dyndns2"
     ],
