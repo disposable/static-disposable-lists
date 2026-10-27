@@ -1869,8 +1869,8 @@
     ],
     "jurisdiction": "US",
     "public": true,
-    "remark": "AvanDNS - Spanish-language free DDNS portal on the Sierra/MintDNS platform (nameserver win-firjpgkf3vr.nddns.local); site marks the service as 'en pruebas' (in testing). HTTP-only ASP.NET site with login/registration pages; dyndns2 endpoint (nic/update) answers and test.avandns.com resolves.",
-    "status": "active",
+    "remark": "AvanDNS - Spanish-language free DDNS portal on the Sierra/MintDNS platform (nameserver win-firjpgkf3vr.nddns.local); site marks the service as 'en pruebas' (in testing). Login, dyndns2 endpoint (nic/update) and existing records work (test.avandns.com resolves), but reg.aspx only renders the login form - new account registration is not possible.",
+    "status": "no_new_registrations",
     "type": "ddns",
     "update_protocols": [
       "dyndns2"
