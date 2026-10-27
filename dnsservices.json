@@ -9405,9 +9405,9 @@
       "ipq.co"
     ],
     "public": true,
-    "remark": "Instant DNS records under ipq.co / fdns.uk; no account needed (email optional).",
+    "remark": "IPQuick - instant DNS records under ipq.co / fdns.uk with no account needed. Record creation is broken: POST /records returns nginx 403, so new names cannot be created; existing records still resolve (test.ipq.co -> 95.211.71.44).",
     "signup_verification": "none",
-    "status": "active",
+    "status": "no_new_registrations",
     "type": "ddns",
     "update_protocols": [
       "http"
