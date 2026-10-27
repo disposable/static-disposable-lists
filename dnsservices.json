@@ -15462,17 +15462,17 @@
       "securepoint.de",
       "m-online.net"
     ],
-    "public": true,
+    "public": false,
     "record_types": [
       "A",
       "AAAA"
     ],
-    "remark": "SecurePoint free dynamic DNS (Germany).",
+    "remark": "spDYN dynamic DNS by Securepoint (Germany). Registration is now customer-gated - /register redirects to /register/disabled stating 'Die Registrierung ist nur fur Securepoint Kunden moglich' (registration only possible for Securepoint customers). Existing customer hostnames still work (test.spdyn.de resolves); update endpoints remain live.",
     "signup_verification": [
       "email"
     ],
-    "status": "active",
-    "type": "ddns",
+    "status": "restricted",
+    "type": "vendor",
     "update_protocols": [
       "dyndns2",
       "http"
