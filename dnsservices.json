@@ -5706,7 +5706,7 @@
       "dyyndns.net"
     ],
     "public": true,
-    "remark": "Free DDNS suffix (own nameservers ns2/ns3.dyyndns.net). Website is reduced to an IP-echo page (index.php returns the client IP) - no registration, login or update UI exists anywhere; existing user records still resolve (test.dyyndns.net -> 88.198.6.156). HTTP-only.",
+    "remark": "Free DDNS suffix operated by dyndns.it (same Italian DDNS operator; own nameservers ns2/ns3.dyyndns.net). Website is reduced to an IP-echo page (index.php returns the client IP) - no registration, login or update UI exists anywhere; existing user records still resolve (test.dyyndns.net -> 88.198.6.156). HTTP-only.",
     "signup_verification": [
       "email"
     ],
@@ -8700,7 +8700,7 @@
       "chkz.net"
     ],
     "public": true,
-    "remark": "homepc.it free DDNS (Italy) on the chkz.net platform (nameservers ddns2/ddns3.chkz.net). Website is reduced to a 'Current IP Check' echo page - no registration or login UI exists; dyndns2 endpoint /nic/update answers (401 auth), so existing accounts can still update records.",
+    "remark": "homepc.it free DDNS operated by dyndns.it (same Italian DDNS operator, chkz.net platform - nameservers ddns2/ddns3.chkz.net). Website is reduced to a 'Current IP Check' echo page - no registration or login UI exists; dyndns2 endpoint /nic/update answers (401 auth), so existing accounts can still update records.",
     "signup_verification": [
       "email"
     ],
