@@ -9329,14 +9329,14 @@
     "url": "https://iopsys.eu/"
   },
   "ip-dynamic.com": {
-    "costs": "free",
+    "costs": "freemium",
     "hosted": "ID",
     "hosts": [
       "ip-dynamic.com"
     ],
     "jurisdiction": "ID",
     "public": true,
-    "remark": "Indonesian dynamic-IP service ('Solusi IP Dynamic IndiHome & IndiBiz') - customer hostnames under *.ip-dynamic.com are certed in CT 2026; records are ephemeral (appear/disappear with subscriber sessions).",
+    "remark": "Indonesian dynamic-IP service for IndiHome/IndiBiz subscribers - customer hostnames under *.ip-dynamic.com (certed in CT 2026; records are ephemeral with subscriber sessions). Freemium: 30-day free trial for new customers, then paid plans Rp.10.000/month, Rp.30.000/3 months, Rp.100.000/year for 10 hostnames; integrates with IndiHome RADIUS for automatic IP detection.",
     "status": "active",
     "type": "ddns",
     "updates": "dynamic",
