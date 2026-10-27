@@ -5029,11 +5029,11 @@
     ],
     "jurisdiction": "FI",
     "public": true,
-    "remark": "Finnish veteran free DDNS (since 2000s); subdomains under dy.fi.",
+    "remark": "Finnish veteran free DDNS (since 2000s); subdomains under dy.fi and tunk.org. Web portal www.dy.fi is unreachable (DNS resolves, TCP 80/443 time out) - no new registrations or web updates possible; existing user records still resolve (home.dy.fi/server.dy.fi -> 84.231.29.114). Sibling tunk.org site still answers.",
     "signup_verification": [
       "email"
     ],
-    "status": "active",
+    "status": "no_new_registrations",
     "type": "ddns",
     "update_protocols": [
       "dyndns2",
