@@ -5706,11 +5706,11 @@
       "dyyndns.net"
     ],
     "public": true,
-    "remark": "Free DDNS.",
+    "remark": "Free DDNS suffix (own nameservers ns2/ns3.dyyndns.net). Website is reduced to an IP-echo page (index.php returns the client IP) - no registration, login or update UI exists anywhere; existing user records still resolve (test.dyyndns.net -> 88.198.6.156). HTTP-only.",
     "signup_verification": [
       "email"
     ],
-    "status": "active",
+    "status": "no_new_registrations",
     "type": "ddns",
     "updates": "dynamic",
     "url": "http://dyyndns.net/"
