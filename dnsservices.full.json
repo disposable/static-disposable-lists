@@ -54311,11 +54311,11 @@
       "techproddns.com"
     ],
     "public": true,
-    "remark": "TechPro Security free Dynamic DNS portal on the Sierra/MintDNS platform (nameserver win-4fs18cac3gj.ddns.local shared with sieraddns.com/4khdcamera.com). Login and registration pages live, dyndns2 endpoint (nic/update) answers; test.techproddns.com resolves to a real user record.",
+    "remark": "TechPro Security free Dynamic DNS portal on the Sierra/MintDNS platform (nameserver win-4fs18cac3gj.ddns.local shared with sieraddns.com/4khdcamera.com). Registration form accepts signups but new accounts report 'Your account is not active. An administrator must approve your account'; dyndns2 endpoint (nic/update) answers and existing records still resolve (test.techproddns.com -> 50.73.6.13). Login page currently returns 500.",
     "signup_verification": [
       "email"
     ],
-    "status": "active",
+    "status": "no_new_registrations",
     "type": "ddns",
     "update_protocols": [
       "dyndns2"
