@@ -15258,8 +15258,8 @@
       "slyip.net"
     ],
     "public": true,
-    "remark": "SlyIP dynamic DNS hostname domain.",
-    "status": "active",
+    "remark": "SlyIP dynamic DNS (BrainyDNS platform, ns1/ns2.brainydns.com). Website is now a Bodis parking lander (redirects to ww547.slyip.net ad page) and the brainydns.com operator domain does not resolve - no registration or management possible; the zone still serves existing user records (router.slyip.net -> 212.92.104.11).",
+    "status": "no_new_registrations",
     "type": "ddns",
     "updates": "dynamic",
     "url": "https://slyip.net/"
