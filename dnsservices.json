@@ -8700,12 +8700,15 @@
       "chkz.net"
     ],
     "public": true,
-    "remark": "homepc.it free DDNS (Italy).",
+    "remark": "homepc.it free DDNS (Italy) on the chkz.net platform (nameservers ddns2/ddns3.chkz.net). Website is reduced to a 'Current IP Check' echo page - no registration or login UI exists; dyndns2 endpoint /nic/update answers (401 auth), so existing accounts can still update records.",
     "signup_verification": [
       "email"
     ],
-    "status": "active",
+    "status": "no_new_registrations",
     "type": "ddns",
+    "update_protocols": [
+      "dyndns2"
+    ],
     "updates": "dynamic",
     "url": "http://homepc.it/"
   },
