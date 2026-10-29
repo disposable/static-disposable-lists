@@ -50443,7 +50443,7 @@
       "no-ip.pl"
     ],
     "public": true,
-    "remark": "Polish free DDNS (unrelated to no-ip.com).",
+    "remark": "Polish free DDNS (unrelated to no-ip.com). Signup broken on noip.pl - reCAPTCHA key only authorized for no-ip.pl (Invalid domain for site key); register via no-ip.pl.",
     "signup_verification": [
       "email"
     ],
@@ -50453,7 +50453,7 @@
       "dyndns2"
     ],
     "updates": "dynamic",
-    "url": "https://noip.pl/"
+    "url": "https://no-ip.pl/"
   },
   "nom.za": {
     "costs": "free",
