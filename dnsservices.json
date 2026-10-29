@@ -17061,7 +17061,7 @@
   },
   "vietnamddns.com": {
     "cloud": "Contabo",
-    "costs": "free",
+    "costs": "freemium",
     "hosted": "GB",
     "hosts": [
       "vietnamddns.com"
@@ -17070,7 +17070,7 @@
       "vietnamddns.com"
     ],
     "public": true,
-    "remark": "VietnamDDNS (Vietnam).",
+    "remark": "VietnamDDNS (Vietnam). Free tier 1 hostname; paid 300k/600k VND-yr for 10/60 hostnames. No inactivity expiry - marketed as lifetime free.",
     "signup_verification": [
       "email"
     ],
