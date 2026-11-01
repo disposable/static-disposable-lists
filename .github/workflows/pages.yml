@@ -39,6 +39,8 @@ jobs:
           cp disposable-mail-hosts.json _site/
           cp dnsservices.json _site/
           cp dnsservices.full.json _site/
+          cp hosting.json _site/
+          cp hosting.full.json _site/
           cp tunnelbrokers.json _site/
 
       - name: Fix paths in html files
@@ -47,6 +49,7 @@ jobs:
           sed -i 's|\.\./mailservices\.json|mailservices.json|g' _site/index.html
           sed -i 's|\.\./disposable-mail-hosts\.json|disposable-mail-hosts.json|g' _site/index.html
           sed -i 's|\.\./dnsservices\.json|dnsservices.json|g' _site/dns.html
+          sed -i 's|\.\./hosting\.json|hosting.json|g' _site/dns.html
           sed -i 's|\.\./tunnelbrokers\.json|tunnelbrokers.json|g' _site/tunnelbrokers.html
 
       - name: Upload artifact
