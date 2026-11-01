@@ -1770,6 +1770,19 @@
     "type": "blog",
     "url": "https://blog.sina.com.cn/"
   },
+  "blogcn.com": {
+    "costs": "freemium",
+    "hosts": [
+      "blogcn.com"
+    ],
+    "jurisdiction": "CN",
+    "public": false,
+    "remark": "BlogCN (博客网) - one of China's oldest blog hosts, user blogs on *.blogcn.com; last content captures 2020, domain now unreachable.",
+    "status": "discontinued",
+    "type": "blog",
+    "until": 2020,
+    "url": "http://www.blogcn.com/"
+  },
   "blogfa.com": {
     "costs": "free",
     "feeds": [
@@ -3183,6 +3196,22 @@
     "status": "active",
     "type": "blog",
     "url": "https://www.dreamwidth.org/"
+  },
+  "drivetoweb.com": {
+    "costs": "free",
+    "hosts": [
+      "drv.tw"
+    ],
+    "post_methods": [
+      "external-sync"
+    ],
+    "public": false,
+    "remark": "DriveToWeb - served website files straight from Google Drive/Dropbox at *.on.drv.tw / *.drv.tw; service gone, domain unreachable.",
+    "status": "discontinued",
+    "type": "pages",
+    "until": 2020,
+    "updates": "static",
+    "url": "https://drivetoweb.com/"
   },
   "durumis.com": {
     "cloud": "Google Cloud",
@@ -6011,6 +6040,29 @@
     "type": "web",
     "updates": "static",
     "url": "https://mchost.ru/"
+  },
+  "mdbgo.com": {
+    "api": true,
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "mdbgo.io"
+    ],
+    "jurisdiction": "PL",
+    "post_methods": [
+      "web",
+      "api",
+      "git"
+    ],
+    "public": true,
+    "remark": "MDB GO (MDBootstrap) - free hosting for apps/sites/DBs; 'mdb publish' CLI deploys to *.mdbgo.io draft subdomains; WP/Node/PHP/Python, MySQL/Mongo, SFTP, custom domains+SSL.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "paas",
+    "updates": "both",
+    "url": "https://mdbgo.com/"
   },
   "mediatech.by": {
     "hosted": "BY",
@@ -8983,6 +9035,19 @@
     "updates": "static",
     "url": "https://srcf.net/"
   },
+  "ss-blog.jp": {
+    "costs": "free",
+    "hosts": [
+      "ss-blog.jp"
+    ],
+    "jurisdiction": "JP",
+    "public": false,
+    "remark": "ss-blog - JP free blog host; DNS dead (NXDOMAIN), no recent Wayback captures; listed on free directories as free blog service.",
+    "status": "discontinued",
+    "type": "blog",
+    "until": 2026,
+    "url": "http://ss-blog.jp/"
+  },
   "stackblitz.com": {
     "cloud": "AWS",
     "hosted": "DE",
@@ -9517,6 +9582,24 @@
     "type": "notes",
     "url": "https://telegra.ph/"
   },
+  "theendlessweb.com": {
+    "costs": "freemium",
+    "hosts": [
+      "endl.site"
+    ],
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Endless Hosting (Endless Group nonprofit) - free DirectAdmin shared hosting, user sites on *.endl.site; $3 setup fee on free plan (waivable); paid VPS from $3/mo.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "web",
+    "updates": "dynamic",
+    "url": "https://theendlessweb.com/"
+  },
   "ticket.io": {
     "cloud": "AWS",
     "hosted": "DE",
@@ -9992,6 +10075,22 @@
     "updates": "static",
     "url": "https://united-gameserver.de/"
   },
+  "updog.co": {
+    "costs": "free",
+    "hosts": [
+      "updog.co"
+    ],
+    "post_methods": [
+      "external-sync"
+    ],
+    "public": false,
+    "remark": "UpDog - turned a Dropbox folder into a site at *.updog.co (ca. 2013-2016); domain now an unrelated 'coming soon' placeholder.",
+    "status": "discontinued",
+    "type": "pages",
+    "until": 2016,
+    "updates": "static",
+    "url": "https://updog.co/"
+  },
   "uswriting.co": {
     "cloud": "Cloudflare",
     "hosted": "CA",
@@ -10279,6 +10378,18 @@
     "type": "builder",
     "updates": "static",
     "url": "https://webhotelier.net/"
+  },
+  "weblogs.co": {
+    "costs": "free",
+    "hosts": [
+      "weblogs.co"
+    ],
+    "public": false,
+    "remark": "weblogs.co - TypePad-powered free blog host on *.weblogs.co; parked/for-sale since ~2012.",
+    "status": "discontinued",
+    "type": "blog",
+    "until": 2012,
+    "url": "http://weblogs.co/"
   },
   "webnode.com": {
     "api": true,
@@ -10602,6 +10713,18 @@
     "updates": "static",
     "url": "https://woodsvalldata.co.uk/"
   },
+  "woomhost.com": {
+    "costs": "freemium",
+    "hosts": [
+      "woomhost.com"
+    ],
+    "public": false,
+    "remark": "WoomHost - free cPanel hosting (750MB shared / 500MB cloud, premium $4.99/mo); user sites on *.woomhost.com (wildcard still resolves); site now 302s to /404.html - hollow since ~2026.",
+    "status": "discontinued",
+    "type": "web",
+    "until": 2026,
+    "url": "https://woomhost.com/"
+  },
   "wordpress.com": {
     "api": true,
     "cloud": "Automattic",
@@ -10740,6 +10863,27 @@
     "type": "web",
     "updates": "static",
     "url": "https://xenoncloud.net/"
+  },
+  "xlog.app": {
+    "costs": "free",
+    "custom_domain": true,
+    "feeds": [
+      "rss"
+    ],
+    "hosts": [
+      "xlog.app"
+    ],
+    "markdown": true,
+    "post_methods": [
+      "web",
+      "api"
+    ],
+    "public": false,
+    "remark": "xLog - Crossbell-blockchain blog platform, blogs on *.xlog.app; live until ~Aug 2026, now Cloudflare 530 origin error (possibly transient - posts persist on-chain/IPFS).",
+    "status": "discontinued",
+    "type": "blog",
+    "until": 2026,
+    "url": "https://xlog.app/"
   },
   "xrea.com": {
     "ads": true,
