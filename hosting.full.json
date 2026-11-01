@@ -43,6 +43,7 @@
     "url": "https://10web.io/"
   },
   "4everland.io": {
+    "ads": false,
     "cloud": "Cloudflare",
     "costs": "freemium",
     "hosted": "CA",
@@ -51,7 +52,7 @@
       "4everland.io"
     ],
     "public": true,
-    "remark": "Web3 hosting/IPFS gateway; sites served on free subdomains.",
+    "remark": "Web3 hosting/IPFS gateway; sites served on free subdomains. | ad-free: decentralized static hosting, verbatim serving",
     "status": "active",
     "type": "pages",
     "url": "https://www.4everland.org/"
@@ -1437,13 +1438,14 @@
     "url": "https://www.arvancloud.ir/"
   },
   "arweave.net": {
+    "ads": false,
     "costs": "free",
     "hosted": "FI",
     "hosts": [
       "arweave.net"
     ],
     "public": true,
-    "remark": "Arweave permaweb gateway subdomains.",
+    "remark": "Arweave permaweb gateway subdomains. | ad-free: permaweb gateway, verbatim serving",
     "status": "active",
     "type": "pages",
     "updates": "static",
@@ -1622,6 +1624,7 @@
     "url": "https://beacons.ai/"
   },
   "bearblog.dev": {
+    "ads": false,
     "cloud": "Cloudflare",
     "costs": "freemium",
     "custom_domain": true,
@@ -1639,7 +1642,7 @@
       "web"
     ],
     "public": true,
-    "remark": "Minimal no-tracking markdown blogging (Herman Martinus).",
+    "remark": "Minimal no-tracking markdown blogging (Herman Martinus). | ad-free: frontpage claim: \"No trackers, ads, or scripts\"",
     "signup_verification": [
       "email"
     ],
@@ -1824,6 +1827,7 @@
     "url": "https://www.bitballoon.com/"
   },
   "bitbucket.io": {
+    "ads": false,
     "api": true,
     "cloud": "AWS",
     "costs": "free",
@@ -1832,7 +1836,7 @@
       "bitbucket.io"
     ],
     "public": true,
-    "remark": "Bitbucket Cloud — Atlassian account required; *.<workspace>.bitbucket.io",
+    "remark": "Bitbucket Cloud — Atlassian account required; *.<workspace>.bitbucket.io | ad-free: static verbatim serving, no injection",
     "signup_verification": "other",
     "status": "active",
     "type": "pages",
@@ -2026,6 +2030,7 @@
     "url": "https://www.blogfa.com/"
   },
   "blogfreely.net": {
+    "ads": false,
     "cloud": "Cloudflare",
     "costs": "free",
     "custom_domain": true,
@@ -2042,7 +2047,7 @@
       "api"
     ],
     "public": true,
-    "remark": "Blog Freely - WriteFreely instance; blogfreely.net/<user>, signup with user+pass (email optional); ActivityPub federation.",
+    "remark": "Blog Freely - WriteFreely instance; blogfreely.net/<user>, signup with user+pass (email optional); ActivityPub federation. | ad-free: WriteFreely instance, donation-funded, no ads",
     "signup_verification": [
       "email"
     ],
@@ -2207,6 +2212,7 @@
     "url": "http://bloguje.pl/"
   },
   "blot.im": {
+    "ads": false,
     "costs": "paid",
     "custom_domain": true,
     "feeds": [
@@ -2222,7 +2228,7 @@
       "external-sync"
     ],
     "public": true,
-    "remark": "Folder-sync blogging: Dropbox/Git/Google Drive folder becomes the blog.",
+    "remark": "Folder-sync blogging: Dropbox/Git/Google Drive folder becomes the blog. | ad-free: paid, no ad injection",
     "signup_verification": [
       "email"
     ],
@@ -2944,6 +2950,7 @@
     "url": "https://codeanywhere.com/"
   },
   "codeberg.page": {
+    "ads": false,
     "api": false,
     "costs": "free",
     "custom_domain": true,
@@ -2956,7 +2963,7 @@
       "git"
     ],
     "public": true,
-    "remark": "Codeberg Pages; static hosting, blogging via own generator. Codeberg e.V.",
+    "remark": "Codeberg Pages; static hosting, blogging via own generator. Codeberg e.V. | ad-free: Codeberg nonprofit static pages, no injection",
     "signup_verification": [
       "email"
     ],
@@ -3412,6 +3419,7 @@
     "url": "https://deploybase.io/"
   },
   "deuxfleurs.fr": {
+    "ads": false,
     "hosted": "FR",
     "hosts": [
       "deuxfleurs.eu",
@@ -3419,7 +3427,7 @@
     ],
     "jurisdiction": "FR",
     "public": true,
-    "remark": "Deuxfleurs - Association qui œuvre pour un internet convivial en utilisant des infrastructures et outils sobres. PSL-listed public suffix(es).",
+    "remark": "Deuxfleurs - Association qui œuvre pour un internet convivial en utilisant des infrastructures et outils sobres. PSL-listed public suffix(es). | ad-free: nonprofit collective hosting, no ads",
     "status": "active",
     "type": "pages",
     "updates": "static",
@@ -3691,6 +3699,7 @@
     "url": "https://dreamhost.com/"
   },
   "dreamwidth.org": {
+    "ads": false,
     "costs": "freemium",
     "custom_domain": true,
     "feeds": [
@@ -3705,7 +3714,7 @@
       "web"
     ],
     "public": true,
-    "remark": "LiveJournal-codebase fork; user.dreamwidth.org.",
+    "remark": "LiveJournal-codebase fork; user.dreamwidth.org. | ad-free: nonprofit, no-advertising charter",
     "signup_verification": [
       "email"
     ],
@@ -4062,6 +4071,7 @@
     "url": "https://envs.net/"
   },
   "eth.limo": {
+    "ads": false,
     "cloud": "AWS",
     "hosted": "CA",
     "hosts": [
@@ -4070,7 +4080,7 @@
     ],
     "jurisdiction": "US",
     "public": true,
-    "remark": "Last Mile Labs, Inc - Making decentralized websites accessible again · Everything you need to effortlessly access content built with the Ethereum Name Service. PSL-listed public suffix(es).",
+    "remark": "Last Mile Labs, Inc - Making decentralized websites accessible again · Everything you need to effortlessly access content built with the Ethereum Name Service. PSL-listed public suffix(es). | ad-free: IPFS gateway, verbatim serving",
     "status": "active",
     "type": "web",
     "updates": "static",
@@ -4373,6 +4383,7 @@
     "url": "https://filess.io/"
   },
   "firebaseapp.com": {
+    "ads": false,
     "api": true,
     "cloud": "Fastly",
     "costs": "freemium",
@@ -4382,7 +4393,7 @@
     ],
     "jurisdiction": "US",
     "public": true,
-    "remark": "Firebase Hosting — Google account required; sibling of web.app",
+    "remark": "Firebase Hosting — Google account required; sibling of web.app | ad-free: Firebase static serving, no injection",
     "signup_verification": "other",
     "status": "active",
     "type": "web",
@@ -4431,6 +4442,7 @@
     "url": "https://flazio.com/"
   },
   "fleek.co": {
+    "ads": false,
     "costs": "freemium",
     "hosted": "DE",
     "hosts": [
@@ -4438,20 +4450,21 @@
     ],
     "jurisdiction": "US",
     "public": true,
-    "remark": "Fleek Web3/IPFS hosting subdomains.",
+    "remark": "Fleek Web3/IPFS hosting subdomains. | ad-free: IPFS static hosting, verbatim serving",
     "status": "active",
     "type": "web",
     "updates": "static",
     "url": "https://fleek.co/"
   },
   "fleek.xyz": {
+    "ads": false,
     "cloud": "Cloudflare",
     "hosted": "CA",
     "hosts": [
       "on-fleek.app"
     ],
     "public": true,
-    "remark": "Fleek Labs Inc - We've been building something new. We're excited to share more soon. PSL-listed public suffix(es).",
+    "remark": "Fleek Labs Inc - We've been building something new. We're excited to share more soon. PSL-listed public suffix(es). | ad-free: IPFS static hosting, verbatim serving",
     "status": "active",
     "type": "web",
     "updates": "static",
@@ -4815,6 +4828,7 @@
     "url": "https://frusky.de/"
   },
   "fspages.org": {
+    "ads": false,
     "api": false,
     "costs": "free",
     "hosted": "DE",
@@ -4823,7 +4837,7 @@
     ],
     "jurisdiction": "US",
     "public": true,
-    "remark": "FSPages free static hosting subdomains (fachschaften.org).",
+    "remark": "FSPages free static hosting subdomains (fachschaften.org). | ad-free: free-software pages hosting, no ads",
     "signup_verification": [
       "email"
     ],
@@ -5065,6 +5079,7 @@
     "url": "https://github.com/"
   },
   "github.io": {
+    "ads": false,
     "api": true,
     "cloud": "GitHub",
     "costs": "free",
@@ -5078,7 +5093,7 @@
       "git"
     ],
     "public": true,
-    "remark": "GitHub Pages; static hosting, blogging via Jekyll/Hugo/etc. Feeds depend on generator.",
+    "remark": "GitHub Pages; static hosting, blogging via Jekyll/Hugo/etc. Feeds depend on generator. | ad-free: static verbatim serving, no injection",
     "signup_verification": [
       "email"
     ],
@@ -5088,6 +5103,7 @@
     "url": "https://pages.github.com/"
   },
   "gitlab.io": {
+    "ads": false,
     "api": true,
     "cloud": "Cloudflare",
     "costs": "free",
@@ -5101,7 +5117,7 @@
       "git"
     ],
     "public": true,
-    "remark": "GitLab Pages; static hosting, blogging via own generator.",
+    "remark": "GitLab Pages; static hosting, blogging via own generator. | ad-free: static verbatim serving, no injection",
     "signup_verification": [
       "email"
     ],
@@ -5436,6 +5452,7 @@
     "url": "https://hackclub.app/"
   },
   "hashbang.sh": {
+    "ads": false,
     "api": false,
     "cloud": "DigitalOcean",
     "costs": "free",
@@ -5445,7 +5462,7 @@
     ],
     "jurisdiction": "US",
     "public": true,
-    "remark": "Hashbang (#!) - community free Unix shell accounts with web hosting, email and IRC; user services under *.hashbang.sh; signup via GPG-signed script or JSON provisioning API (/server/stats, /user/create).",
+    "remark": "Hashbang (#!) - community free Unix shell accounts with web hosting, email and IRC; user services under *.hashbang.sh; signup via GPG-signed script or JSON provisioning API (/server/stats, /user/create). | ad-free: pubnix, no ads",
     "signup_verification": [
       "other"
     ],
@@ -6041,6 +6058,7 @@
     "url": "https://imcreator.com/"
   },
   "in-berlin.de": {
+    "ads": false,
     "costs": "free",
     "hosted": "DE",
     "hosts": [
@@ -6057,7 +6075,7 @@
     ],
     "jurisdiction": "DE",
     "public": true,
-    "remark": "IN-Berlin - Berlin community ISP/hosting; user hostnames. PSL-listed public suffix(es).",
+    "remark": "IN-Berlin - Berlin community ISP/hosting; user hostnames. PSL-listed public suffix(es). | ad-free: ISP cooperative, no ads",
     "status": "active",
     "type": "web",
     "updates": "static",
@@ -6234,6 +6252,7 @@
     "url": "https://involve.me/"
   },
   "ipfs.tech": {
+    "ads": false,
     "cloud": "Fastly",
     "costs": "free",
     "hosted": "US",
@@ -6244,7 +6263,7 @@
       "ipfs.io"
     ],
     "public": true,
-    "remark": "IPFS - InterPlanetary File System project; gateway/infra hostnames. PSL-listed public suffix(es).",
+    "remark": "IPFS - InterPlanetary File System project; gateway/infra hostnames. PSL-listed public suffix(es). | ad-free: IPFS gateway, verbatim serving",
     "status": "active",
     "type": "web",
     "updates": "static",
@@ -6499,6 +6518,7 @@
     "url": "https://kaashosting.nl/"
   },
   "kapsi.fi": {
+    "ads": false,
     "costs": "free",
     "hosted": "FI",
     "hosts": [
@@ -6506,7 +6526,7 @@
     ],
     "jurisdiction": "FI",
     "public": true,
-    "remark": "Kapsi Internet-käyttäjät ry - Etusivu PSL-listed public suffix(es).",
+    "remark": "Kapsi Internet-käyttäjät ry - Etusivu PSL-listed public suffix(es). | ad-free: Finnish member association hosting, no ads",
     "status": "active",
     "type": "web",
     "updates": "static",
@@ -6897,6 +6917,7 @@
     "url": "https://linode.com/"
   },
   "listed.to": {
+    "ads": false,
     "costs": "free",
     "feeds": [
       "rss"
@@ -6909,7 +6930,7 @@
       "external-sync"
     ],
     "public": true,
-    "remark": "Standard Notes blogging - posts authored in the Standard Notes app and published via sync.",
+    "remark": "Standard Notes blogging - posts authored in the Standard Notes app and published via sync. | ad-free: Standard Notes-linked, ad-free",
     "signup_verification": [
       "email"
     ],
@@ -7069,6 +7090,7 @@
     "url": "https://lovable.dev/"
   },
   "lug.org.uk": {
+    "ads": false,
     "hosted": "GB",
     "hosts": [
       "glug.org.uk",
@@ -7077,7 +7099,7 @@
     ],
     "jurisdiction": "GB",
     "public": true,
-    "remark": "lug.org.uk - UK Linux User Group community hosting; free project sites. PSL-listed public suffix(es).",
+    "remark": "lug.org.uk - UK Linux User Group community hosting; free project sites. PSL-listed public suffix(es). | ad-free: UK LUG community hosting, no ads",
     "status": "active",
     "type": "pages",
     "updates": "static",
@@ -7208,6 +7230,7 @@
     "url": "https://marketing.sav.com/"
   },
   "mataroa.blog": {
+    "ads": false,
     "costs": "free",
     "feeds": [
       "rss"
@@ -7221,7 +7244,7 @@
       "web"
     ],
     "public": true,
-    "remark": "Naked blogging - minimal, donation-supported.",
+    "remark": "Naked blogging - minimal, donation-supported. | ad-free: frontpage claim: \"Never ads\"",
     "signup_verification": [
       "email"
     ],
@@ -7247,6 +7270,7 @@
     "url": "https://mathworks.com/"
   },
   "mayfirst.org": {
+    "ads": false,
     "costs": "free",
     "hosted": "US",
     "hosts": [
@@ -7254,7 +7278,7 @@
     ],
     "jurisdiction": "US",
     "public": true,
-    "remark": "May First Movement Technology PSL-listed public suffix(es).",
+    "remark": "May First Movement Technology PSL-listed public suffix(es). | ad-free: nonprofit coop, no ads",
     "status": "active",
     "type": "pages",
     "updates": "static",
@@ -7474,6 +7498,7 @@
     "url": "https://miarroba.com/"
   },
   "micro.blog": {
+    "ads": false,
     "costs": "paid",
     "custom_domain": true,
     "feeds": [
@@ -7491,7 +7516,7 @@
       "mobile-app"
     ],
     "public": true,
-    "remark": "Manton Reece's microblog+longform host; Micropub API.",
+    "remark": "Manton Reece's microblog+longform host; Micropub API. | ad-free: paid indie platform, no injected ads",
     "signup_verification": [
       "payment"
     ],
@@ -7634,13 +7659,14 @@
     "post_methods": [
       "web"
     ],
-    "public": true,
-    "remark": "Iranian blog host; user.mihanblog.com.",
+    "public": false,
+    "remark": "Iranian blog host (user.mihanblog.com). Unreachable from abroad since ~2021 - TCP timeout on 80/443, last Wayback capture Oct 2021; DNS zone still served, possibly geo-restricted to Iran rather than fully shut down.",
     "signup_verification": [
       "email"
     ],
-    "status": "active",
+    "status": "discontinued",
     "type": "blog",
+    "until": 2021,
     "url": "https://mihanblog.com/"
   },
   "million.dev": {
@@ -7906,13 +7932,14 @@
     "url": "https://www.ncloud.com/"
   },
   "nearlyfreespeech.net": {
+    "ads": false,
     "hosted": "US",
     "hosts": [
       "nfshost.com"
     ],
     "jurisdiction": "US",
     "public": true,
-    "remark": "NFSN, Inc - Width=device-width, initial-scale=1.0\" name=\"viewport\"><meta charset=\"UTF-8\"><link href=\"/css/main.css\" rel=\"stylesheet\"><link.. PSL-listed public suffix(es).",
+    "remark": "NFSN, Inc - Width=device-width, initial-scale=1.0\" name=\"viewport\"><meta charset=\"UTF-8\"><link href=\"/css/main.css\" rel=\"stylesheet\"><link.. PSL-listed public suffix(es). | ad-free: paid static hosting, verbatim serving",
     "status": "active",
     "type": "web",
     "updates": "static",
@@ -7952,6 +7979,7 @@
     "url": "https://nekoweb.org"
   },
   "neocities.org": {
+    "ads": false,
     "api": true,
     "costs": "freemium",
     "custom_domain": true,
@@ -7965,7 +7993,7 @@
       "api"
     ],
     "public": true,
-    "remark": "Static site host; hand-written blogs. Custom domain on supporter plan.",
+    "remark": "Static site host; hand-written blogs. Custom domain on supporter plan. | ad-free: claim: \"will never put advertising on your site\"",
     "signup_verification": [
       "email"
     ],
@@ -8020,6 +8048,7 @@
     "url": "https://www.nethely.hu/ingyenes-tarhely"
   },
   "netlify.app": {
+    "ads": false,
     "api": true,
     "cloud": "AWS",
     "costs": "freemium",
@@ -8029,7 +8058,7 @@
     ],
     "jurisdiction": "US",
     "public": true,
-    "remark": "Netlify — *.<site>.netlify.app deploy subdomains",
+    "remark": "Netlify — *.<site>.netlify.app deploy subdomains | ad-free: static verbatim serving, no injection",
     "signup_verification": "email",
     "status": "active",
     "type": "paas",
@@ -8121,6 +8150,7 @@
     "url": "https://nimbushosting.co.uk/"
   },
   "nippy.host": {
+    "ads": false,
     "costs": "freemium",
     "custom_domain": true,
     "hosts": [
@@ -8130,7 +8160,7 @@
       "web"
     ],
     "public": true,
-    "remark": "Nippy - drag-drop file/photo publishing; free site 25MB on your-name.nippy.site.",
+    "remark": "Nippy - drag-drop file/photo publishing; free site 25MB on your-name.nippy.site. | ad-free: drag-drop publishing, no ad injection on free plan",
     "signup_verification": [
       "email"
     ],
@@ -8318,6 +8348,7 @@
     "url": "https://obsidian.md/publish"
   },
   "omg.lol": {
+    "ads": false,
     "api": true,
     "cloud": "Hetzner",
     "costs": "paid",
@@ -8337,7 +8368,7 @@
       "api"
     ],
     "public": true,
-    "remark": "omg.lol membership (~$20/yr) includes weblog.lol.",
+    "remark": "omg.lol membership (~$20/yr) includes weblog.lol. | ad-free: paid indie pages, no ads",
     "signup_verification": [
       "payment"
     ],
@@ -8592,6 +8623,7 @@
     "url": "https://pagefog.com/"
   },
   "pages.dev": {
+    "ads": false,
     "api": true,
     "cloud": "Cloudflare",
     "costs": "freemium",
@@ -8601,7 +8633,7 @@
     ],
     "jurisdiction": "US",
     "public": true,
-    "remark": "Cloudflare Pages — Cloudflare account required",
+    "remark": "Cloudflare Pages — Cloudflare account required | ad-free: Cloudflare Pages static serving, no injection",
     "signup_verification": "other",
     "status": "active",
     "type": "pages",
@@ -9146,6 +9178,7 @@
     "url": "https://postach.io/"
   },
   "posthaven.com": {
+    "ads": false,
     "costs": "paid",
     "custom_domain": true,
     "feeds": [
@@ -9160,7 +9193,7 @@
       "email"
     ],
     "public": true,
-    "remark": "Posterous successor; pledged to keep blogs online.",
+    "remark": "Posterous successor; pledged to keep blogs online. | ad-free: paid, founding pitch \"no ads, $5/mo forever\"",
     "signup_verification": [
       "payment"
     ],
@@ -9186,6 +9219,7 @@
     "url": "https://postman.com/"
   },
   "potager.org": {
+    "ads": false,
     "hosted": "FR",
     "hosts": [
       "pimienta.org",
@@ -9194,7 +9228,7 @@
       "sweetpepper.org"
     ],
     "public": true,
-    "remark": "potager.org - French community hosting service. PSL-listed public suffix(es).",
+    "remark": "potager.org - French community hosting service. PSL-listed public suffix(es). | ad-free: collective hosting, no ads",
     "status": "active",
     "type": "pages",
     "updates": "static",
@@ -9799,6 +9833,7 @@
     "url": "https://retool.com/"
   },
   "riseup.net": {
+    "ads": false,
     "costs": "free",
     "hosted": "US",
     "hosts": [
@@ -9806,7 +9841,7 @@
     ],
     "jurisdiction": "US",
     "public": true,
-    "remark": "Riseup Networks - Width=device-width, initial-scale=1.0' name='viewport'> <meta charset='UTF-8'> <meta content= PSL-listed public suffix(es).",
+    "remark": "Riseup Networks - Width=device-width, initial-scale=1.0' name='viewport'> <meta charset='UTF-8'> <meta content= PSL-listed public suffix(es). | ad-free: radical collective, no ads",
     "status": "active",
     "type": "web",
     "updates": "static",
@@ -10590,13 +10625,14 @@
     "url": "https://soup.io/"
   },
   "sourcehut.org": {
+    "ads": false,
     "hosted": "NL",
     "hosts": [
       "srht.site"
     ],
     "jurisdiction": "US",
     "public": true,
-    "remark": "Sourcehut is a network of useful open source tools for software project maintainers and collaborators, including git repos, bug tracking,.. PSL-listed public suffix(es).",
+    "remark": "Sourcehut is a network of useful open source tools for software project maintainers and collaborators, including git repos, bug tracking,.. PSL-listed public suffix(es). | ad-free: srht.site static pages, paid, verbatim",
     "status": "active",
     "type": "web",
     "updates": "static",
@@ -10725,13 +10761,14 @@
     "until": 2024
   },
   "srcf.net": {
+    "ads": false,
     "hosted": "GB",
     "hosts": [
       "soc.srcf.net",
       "user.srcf.net"
     ],
     "public": true,
-    "remark": "Student-Run Computing Facility - The Student-Run Computing Facility is a volunteer-run student society that provides free, useful and flexible computing and network services for.. PSL-listed public suffix(es).",
+    "remark": "Student-Run Computing Facility - The Student-Run Computing Facility is a volunteer-run student society that provides free, useful and flexible computing and network services for.. PSL-listed public suffix(es). | ad-free: Cambridge SRCF society hosting, no ads",
     "status": "active",
     "type": "pages",
     "updates": "static",
@@ -10864,6 +10901,7 @@
     "url": "https://buffer.com/start-page"
   },
   "static.run": {
+    "ads": false,
     "cloud": "Hetzner",
     "costs": "free",
     "custom_domain": true,
@@ -10875,7 +10913,7 @@
       "web"
     ],
     "public": true,
-    "remark": "Static.run - free static site/file hosting; uploads get live demo URL (*.static.run); sites stay live if logged in every 90 days; zip/folder upload + online editor.",
+    "remark": "Static.run - free static site/file hosting; uploads get live demo URL (*.static.run); sites stay live if logged in every 90 days; zip/folder upload + online editor. | ad-free: static hosting, verbatim serving",
     "signup_verification": [
       "email"
     ],
@@ -10885,18 +10923,20 @@
     "url": "https://static.run/"
   },
   "statichost.eu": {
+    "ads": false,
     "hosted": "DE",
     "hosts": [
       "statichost.page"
     ],
     "public": true,
-    "remark": "Static hosting for frontend developers who care where their sites live. Git push, custom domain, done PSL-listed public suffix(es).",
+    "remark": "Static hosting for frontend developers who care where their sites live. Git push, custom domain, done PSL-listed public suffix(es). | ad-free: static verbatim serving, no injection",
     "status": "active",
     "type": "pages",
     "updates": "static",
     "url": "https://statichost.eu/"
   },
   "statichost.se": {
+    "ads": false,
     "cloud": "Cloudflare",
     "costs": "paid",
     "custom_domain": true,
@@ -10909,7 +10949,7 @@
       "git"
     ],
     "public": true,
-    "remark": "StaticHost.se - SE static hosting; preview URLs at *.phphost.se; paid plans ~$7+/mo; zip upload, CLI (statichost deploy), GitHub connect, rollback.",
+    "remark": "StaticHost.se - SE static hosting; preview URLs at *.phphost.se; paid plans ~$7+/mo; zip upload, CLI (statichost deploy), GitHub connect, rollback. | ad-free: static verbatim serving, no injection",
     "signup_verification": [
       "email"
     ],
@@ -11050,6 +11090,7 @@
     "url": "https://sub6.com/"
   },
   "substack.com": {
+    "ads": false,
     "costs": "free",
     "custom_domain": true,
     "feeds": [
@@ -11064,7 +11105,7 @@
       "mobile-app"
     ],
     "public": true,
-    "remark": "Free publishing, rev-share on paid subscriptions; custom domain $50 one-time.",
+    "remark": "Free publishing, rev-share on paid subscriptions; custom domain $50 one-time. | ad-free: no injected ads on newsletters",
     "signup_verification": [
       "email"
     ],
@@ -11090,6 +11131,7 @@
     "url": "https://supabase.io/"
   },
   "surge.sh": {
+    "ads": false,
     "api": true,
     "cloud": "DigitalOcean",
     "costs": "freemium",
@@ -11099,7 +11141,7 @@
     ],
     "jurisdiction": "US",
     "public": true,
-    "remark": "Surge — CLI static publishing; custom <name>.surge.sh",
+    "remark": "Surge — CLI static publishing; custom <name>.surge.sh | ad-free: static verbatim serving, no injection",
     "signup_verification": "email",
     "status": "active",
     "type": "pages",
@@ -11338,6 +11380,7 @@
     "url": "https://team.blue/"
   },
   "teckids.org": {
+    "ads": false,
     "hosted": "DE",
     "hosts": [
       "edugit.io",
@@ -11345,7 +11388,7 @@
     ],
     "jurisdiction": "DE",
     "public": true,
-    "remark": "Teckids e.V - Eine verstehbare (digitale) Welt - gemeinsam, für Alle. PSL-listed public suffix(es).",
+    "remark": "Teckids e.V - Eine verstehbare (digitale) Welt - gemeinsam, für Alle. PSL-listed public suffix(es). | ad-free: youth-education nonprofit hosting, no ads",
     "status": "active",
     "type": "web",
     "updates": "static",
@@ -11367,6 +11410,7 @@
     "url": "https://telebit.cloud/"
   },
   "telegra.ph": {
+    "ads": false,
     "costs": "free",
     "hosts": [
       "telegra.ph"
@@ -11377,7 +11421,7 @@
       "telegram-bot"
     ],
     "public": true,
-    "remark": "Telegram's anonymous single-article publishing; no account, no feeds.",
+    "remark": "Telegram's anonymous single-article publishing; no account, no feeds. | ad-free: Telegram minimal publishing, no ads injected",
     "signup_verification": [
       "none"
     ],
@@ -11775,13 +11819,14 @@
     "url": "https://tunnelmole.com/"
   },
   "tuxfamily.org": {
+    "ads": false,
     "costs": "free",
     "hosted": "FR",
     "hosts": [
       "tuxfamily.org"
     ],
     "public": true,
-    "remark": "TuxFamily: Free hosting for free people PSL-listed public suffix(es).",
+    "remark": "TuxFamily: Free hosting for free people PSL-listed public suffix(es). | ad-free: nonprofit hosting collective, no-ads charter",
     "status": "active",
     "type": "pages",
     "updates": "static",
@@ -11837,13 +11882,14 @@
     "url": "https://www.typepad.com/"
   },
   "uberspace.de": {
+    "ads": false,
     "hosted": "DE",
     "hosts": [
       "uber.space"
     ],
     "jurisdiction": "DE",
     "public": true,
-    "remark": "Uberspace - Hosting on Asteroids PSL-listed public suffix(es).",
+    "remark": "Uberspace - Hosting on Asteroids PSL-listed public suffix(es). | ad-free: paid shell/web hosting, no injection",
     "status": "active",
     "type": "web",
     "updates": "static",
@@ -12086,6 +12132,7 @@
     "url": "https://val.town/"
   },
   "vercel.app": {
+    "ads": false,
     "api": true,
     "cloud": "AWS",
     "costs": "freemium",
@@ -12094,7 +12141,7 @@
       "vercel.app"
     ],
     "public": true,
-    "remark": "Vercel — *.<project>.vercel.app deploy subdomains",
+    "remark": "Vercel — *.<project>.vercel.app deploy subdomains | ad-free: static/SSR verbatim serving, no injection",
     "signup_verification": "email",
     "status": "active",
     "type": "paas",
@@ -12266,13 +12313,14 @@
     "url": "https://www.w3schools.com/spaces/"
   },
   "walrus.xyz": {
+    "ads": false,
     "cloud": "AWS",
     "hosted": "US",
     "hosts": [
       "wal.app"
     ],
     "public": true,
-    "remark": "Walrus is the data platform built for the demands of AI, where data is portable, protected, and verifiable. PSL-listed public suffix(es).",
+    "remark": "Walrus is the data platform built for the demands of AI, where data is portable, protected, and verifiable. PSL-listed public suffix(es). | ad-free: decentralized storage gateway, verbatim serving",
     "status": "active",
     "type": "pages",
     "updates": "static",
@@ -12306,6 +12354,7 @@
     "url": "https://www.websupport.sk/"
   },
   "web.app": {
+    "ads": false,
     "api": true,
     "cloud": "Fastly",
     "costs": "freemium",
@@ -12315,7 +12364,7 @@
     ],
     "jurisdiction": "US",
     "public": true,
-    "remark": "Firebase Hosting — Google account required; *.web.app + *.firebaseapp.com",
+    "remark": "Firebase Hosting — Google account required; *.web.app + *.firebaseapp.com | ad-free: Firebase static serving, no injection",
     "signup_verification": "other",
     "status": "active",
     "type": "paas",
@@ -12948,6 +12997,7 @@
     "url": "https://wpengine.com/"
   },
   "write.as": {
+    "ads": false,
     "costs": "freemium",
     "custom_domain": true,
     "feeds": [
@@ -12964,7 +13014,7 @@
       "api"
     ],
     "public": true,
-    "remark": "WriteFreely flagship; user.write.as. Anonymous single posts also possible.",
+    "remark": "WriteFreely flagship; user.write.as. Anonymous single posts also possible. | ad-free: frontpage claim: \"Ad-free\"",
     "signup_verification": [
       "email"
     ],
