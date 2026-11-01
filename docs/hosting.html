@@ -526,7 +526,7 @@
 
             <div class="section">
                 <div class="tab-container">
-                    <div class="tab active" data-tab="hosting-services">DNS Services</div>
+                    <div class="tab active" data-tab="hosting-services">Hosting Services</div>
                     <div class="tab" data-tab="old-hosts">Old Domains</div>
                 </div>
 
@@ -591,6 +591,17 @@
                                 <label class="filter-option" title="Provider injects ads or modifies served output"><input type="checkbox" value="yes" checked>Injected</label>
                                 <label class="filter-option" title="Verified ad-free output"><input type="checkbox" value="no" checked>Ad-free</label>
                                 <label class="filter-option" title="Ad behavior not recorded"><input type="checkbox" value="unknown" checked>Unknown</label>
+                            </div>
+                        </div>
+                        <div class="filter-select" data-filter="feeds" data-name="Feeds">
+                            <button type="button" class="filter-select-btn" aria-expanded="false">
+                                <span class="filter-select-label">Feeds: All</span><span class="filter-select-arrow">▾</span>
+                            </button>
+                            <div class="filter-select-menu">
+                                <label class="filter-option" title="RSS feed available"><input type="checkbox" value="rss" checked>RSS</label>
+                                <label class="filter-option" title="Atom feed available"><input type="checkbox" value="atom" checked>Atom</label>
+                                <label class="filter-option" title="JSON Feed available"><input type="checkbox" value="json" checked>JSON</label>
+                                <label class="filter-option" title="No feed recorded"><input type="checkbox" value="none" checked>None</label>
                             </div>
                         </div>
                         <div class="filter-select" data-filter="access" data-name="Access">
@@ -670,7 +681,7 @@
 
         initTheme();
 
-        let currentFilters = { status: 'all', type: 'all', costs: 'all', updates: 'all', api: 'all', ads: 'all', access: 'all', reval: 'all', region: 'all' };
+        let currentFilters = { status: 'all', type: 'all', costs: 'all', updates: 'all', api: 'all', ads: 'all', feeds: 'all', access: 'all', reval: 'all', region: 'all' };
         let currentSearch = '';
         const EU = new Set(['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE']);
         function flag(cc) {
@@ -707,6 +718,7 @@
             const updatesSel = filterSet('updates');
             const apiSel = filterSet('api');
             const adsSel = filterSet('ads');
+            const feedsSel = filterSet('feeds');
             const accessSel = filterSet('access');
             const regionSel = filterSet('region');
             const revalSel = filterSet('reval');
@@ -722,6 +734,7 @@
                     (!updatesSel || updatesSel.has(row.dataset.updates)) &&
                     (!apiSel || apiSel.has(row.dataset.api)) &&
                     (!adsSel || adsSel.has(row.dataset.ads)) &&
+                    (!feedsSel || row.dataset.feeds.split(' ').some(f => feedsSel.has(f))) &&
                     (!accessSel || accessSel.has(row.dataset.access)) &&
                     (!regionSel || regionSel.has(juris ? (EU.has(juris) ? 'eu' : 'non-eu') : 'unknown')) &&
                     (!revalSel || revalSel.has(row.dataset.reval)) &&
@@ -1000,6 +1013,7 @@
                             const isPublic = s.public !== false;
                             const apiYes = s.api === true;
                             const ads = s.ads === true ? 'yes' : (s.ads === false ? 'no' : 'unknown');
+                            const feedsStr = (s.feeds && s.feeds.length) ? s.feeds.join(' ') : 'none';
                             const extra = [];
                             if (s.own_domains) extra.push('own domains');
                             if (s.feeds && s.feeds.length) extra.push('feeds: ' + s.feeds.join('/'));
@@ -1022,6 +1036,7 @@
                                 data-updates="${esc(s.updates || 'unknown')}"
                                 data-api="${apiYes ? 'yes' : 'no'}"
                                 data-ads="${ads}"
+                                data-feeds="${feedsStr}"
                                 data-access="${isPublic ? 'public' : 'private'}"
                                 data-reval="${expiryKind}"
                                 data-juris="${esc(s.jurisdiction || '')}"
@@ -1150,7 +1165,7 @@
 
             let q = '';
             if (tabId === 'hosting-services') {
-                ['status', 'type', 'costs', 'updates', 'api', 'ads', 'access', 'reval', 'region'].forEach(f => {
+                ['status', 'type', 'costs', 'updates', 'api', 'ads', 'feeds', 'access', 'reval', 'region'].forEach(f => {
                     if (currentFilters[f] !== 'all') params.set(f, currentFilters[f].join(','));
                 });
                 q = currentSearch;
@@ -1175,7 +1190,7 @@
             const q = params.get('q') || '';
 
             if (tabId === 'hosting-services') {
-                ['status', 'type', 'costs', 'updates', 'api', 'ads', 'access', 'reval', 'region'].forEach(f => {
+                ['status', 'type', 'costs', 'updates', 'api', 'ads', 'feeds', 'access', 'reval', 'region'].forEach(f => {
                     const v = params.get(f);
                     if (v === null) return;
                     setFilterValues(f, v ? v.split(',') : []);
