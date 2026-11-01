@@ -3541,13 +3541,14 @@
     "post_methods": [
       "web"
     ],
-    "public": true,
-    "remark": "DiaryNote - JP diary service, diaries at diarynote.jp/<user> path; free.",
+    "public": false,
+    "remark": "DiaryNote - JP diary service at diarynote.jp/<user>; shut down 2026 per official notice (aging system, security-risk prevention).",
     "signup_verification": [
       "email"
     ],
-    "status": "active",
+    "status": "discontinued",
     "type": "blog",
+    "until": 2026,
     "updates": "dynamic",
     "url": "https://diarynote.jp/"
   },
@@ -6168,6 +6169,9 @@
   },
   "insanejournal.com": {
     "costs": "free",
+    "feeds": [
+      "rss"
+    ],
     "hosts": [
       "insanejournal.com",
       "asylums.insanejournal.com"
