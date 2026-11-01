@@ -11,6 +11,20 @@
     "updates": "static",
     "url": "http://000nethost.com/"
   },
+  "000webhost.com": {
+    "ads": true,
+    "costs": "free",
+    "hosts": [
+      "000webhostapp.com"
+    ],
+    "jurisdiction": "LT",
+    "public": false,
+    "remark": "000webhost - free hosting pioneer (*.<user>.000webhostapp.com); domain now redirects to Hostinger - free tier discontinued; was known for injected JS/ads.",
+    "status": "discontinued",
+    "type": "web",
+    "until": 2024,
+    "url": "https://www.000webhost.com/"
+  },
   "10web.io": {
     "cloud": "Cloudflare",
     "costs": "paid",
@@ -188,6 +202,28 @@
     "type": "paas",
     "updates": "static",
     "url": "https://alces-software.com/"
+  },
+  "alchosting.net": {
+    "ads": false,
+    "cloud": "Cloudflare",
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "alc.onl"
+    ],
+    "jurisdiction": "PH",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "ALC Hosting (PH) - free VistaPanel/cPanel tier, *.alc.onl subdomains (+more); 'no ads' claimed; iFastNet-backed infra (byet.org NS).",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "web",
+    "updates": "dynamic",
+    "url": "https://www.alchosting.net/"
   },
   "alibabacloud.com": {
     "api": true,
@@ -1420,6 +1456,7 @@
     "url": "https://authgear.com/"
   },
   "awardspace.com": {
+    "ads": false,
     "cloud": "Akamai",
     "costs": "freemium",
     "hosted": "US",
@@ -1710,6 +1747,29 @@
     "type": "blog",
     "url": "https://blog.ir/"
   },
+  "blog.sina.com.cn": {
+    "costs": "free",
+    "feeds": [
+      "rss"
+    ],
+    "hosted": "CN",
+    "hosts": [
+      "blog.sina.com.cn"
+    ],
+    "jurisdiction": "CN",
+    "post_methods": [
+      "web",
+      "mobile-app"
+    ],
+    "public": true,
+    "remark": "Sina Blog (新浪博客) - major CN blog platform, path-based blog.sina.com.cn/<name>; requires Sina account; active daily posting.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "blog",
+    "url": "https://blog.sina.com.cn/"
+  },
   "blogfa.com": {
     "costs": "free",
     "feeds": [
@@ -1730,6 +1790,31 @@
     "status": "active",
     "type": "blog",
     "url": "https://www.blogfa.com/"
+  },
+  "blogfreely.net": {
+    "cloud": "Cloudflare",
+    "costs": "free",
+    "custom_domain": true,
+    "feeds": [
+      "rss",
+      "atom"
+    ],
+    "hosts": [
+      "blogfreely.net"
+    ],
+    "markdown": true,
+    "post_methods": [
+      "web",
+      "api"
+    ],
+    "public": true,
+    "remark": "Blog Freely - WriteFreely instance; blogfreely.net/<user>, signup with user+pass (email optional); ActivityPub federation.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "blog",
+    "url": "https://blogfreely.net/"
   },
   "blogg.no": {
     "costs": "free",
@@ -2102,6 +2187,7 @@
     "url": "https://bwcloud-os.de/"
   },
   "byethost.com": {
+    "ads": false,
     "api": false,
     "cloud": "Cloudflare",
     "costs": "free",
@@ -2834,6 +2920,29 @@
     "updates": "static",
     "url": "https://deployagent.com/"
   },
+  "deploybase.io": {
+    "api": true,
+    "cloud": "Hetzner",
+    "costs": "paid",
+    "custom_domain": true,
+    "hosted": "FI",
+    "hosts": [
+      "deploybase.io"
+    ],
+    "post_methods": [
+      "git",
+      "api"
+    ],
+    "public": true,
+    "remark": "DeployBase - WP/Laravel/Node/PHP PaaS (Helsinki EU); app + tunnel-*.deploybase.io preview URLs; paid plans, 7-day trial.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "paas",
+    "updates": "dynamic",
+    "url": "https://deploybase.io/"
+  },
   "deuxfleurs.fr": {
     "hosted": "FR",
     "hosts": [
@@ -2934,6 +3043,32 @@
     "type": "blog",
     "url": "https://diary.ru/"
   },
+  "digitalpress.blog": {
+    "ads": true,
+    "cloud": "OVH",
+    "costs": "paid",
+    "custom_domain": true,
+    "feeds": [
+      "rss"
+    ],
+    "hosted": "DE",
+    "hosts": [
+      "digitalpress.blog"
+    ],
+    "markdown": true,
+    "post_methods": [
+      "web",
+      "api"
+    ],
+    "public": true,
+    "remark": "DigitalPress - managed Ghost 6 hosting on *.digitalpress.blog; from EUR1/mo (ad-supported Easy tier), EUR6.90+ ad-free; newsletters.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "blog",
+    "url": "https://www.digitalpress.blog/"
+  },
   "discord.com": {
     "cloud": "Cloudflare",
     "hosted": "CA",
@@ -2989,6 +3124,28 @@
     "type": "web",
     "updates": "static",
     "url": "https://domena.pl/"
+  },
+  "dothome.co.kr": {
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosted": "KR",
+    "hosts": [
+      "dothome.co.kr"
+    ],
+    "jurisdiction": "KR",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Dothome (Anysecure) - KR free hosting, account.dothome.co.kr; 500MB/15G free PHP+MySQL, 6-month terms extendable free; DomainPlus 500KRW/mo for custom domain.",
+    "revalidation_days": 180,
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "web",
+    "updates": "dynamic",
+    "url": "https://www.dothome.co.kr/"
   },
   "dreamhost.com": {
     "cloud": "AWS",
@@ -3530,6 +3687,30 @@
     "updates": "static",
     "url": "https://files.com/"
   },
+  "filess.io": {
+    "api": true,
+    "cloud": "Cloudflare",
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "filess.app",
+      "filesstunnel.com"
+    ],
+    "post_methods": [
+      "git",
+      "api",
+      "web"
+    ],
+    "public": true,
+    "remark": "Filess - dev platform: app deploys on *.filess.app, TCP/HTTP tunnels on *.filesstunnel.com (ssh -R), managed DBs; free tier; REST API + CLI.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "paas",
+    "updates": "dynamic",
+    "url": "https://filess.io/"
+  },
   "firebaseapp.com": {
     "api": true,
     "cloud": "Fastly",
@@ -3731,6 +3912,7 @@
     "url": "https://freedesktop.org/"
   },
   "freehostia.com": {
+    "ads": false,
     "costs": "freemium",
     "hosted": "US",
     "hosts": [
@@ -3915,6 +4097,22 @@
     "type": "web",
     "updates": "static",
     "url": "https://gentlent.com/"
+  },
+  "geocities.ws": {
+    "cloud": "Cloudflare",
+    "costs": "free",
+    "hosts": [
+      "geocities.ws"
+    ],
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "GeoCities.ws - free homepage host (GeoCities revival); site under relaunch ('something new is on the way'), existing members FTP works but no public signup shown; *.geocities.ws sites.",
+    "status": "no_new_registrations",
+    "type": "pages",
+    "updates": "static",
+    "url": "https://www.geocities.ws/"
   },
   "get.onid.ca": {
     "cloud": "Cloudflare",
@@ -4234,6 +4432,27 @@
     "type": "web",
     "updates": "static",
     "url": "https://grebedoc.dev/"
+  },
+  "grupo.jp": {
+    "ads": true,
+    "cloud": "Cloudflare",
+    "costs": "freemium",
+    "hosts": [
+      "grupo.jp"
+    ],
+    "jurisdiction": "JP",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Grupo - JP homepage builder (Locanavi), *.grupo.jp sites; free ad-supported + premium ad-free; active user base (hourly updates).",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "builder",
+    "updates": "dynamic",
+    "url": "https://grupo.jp/"
   },
   "gsj.bz": {
     "cloud": "AWS",
@@ -4635,6 +4854,26 @@
     "updates": "static",
     "url": "https://www.hubside.fr/"
   },
+  "hubuhost.com": {
+    "ads": false,
+    "costs": "free",
+    "hosted": "DE",
+    "hosts": [
+      "hubuhost.com"
+    ],
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "HubuHost - free cPanel-style webhosting (Missouri US + Frankfurt DE); accounts get h<N>.hubuhost.com containers (CT-verified); ads optional earn-money feature.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "web",
+    "updates": "dynamic",
+    "url": "https://hubuhost.com/"
+  },
   "huggingface.co": {
     "cloud": "AWS",
     "hosted": "DE",
@@ -4661,6 +4900,23 @@
     "type": "web",
     "updates": "static",
     "url": "https://hypernode.com/"
+  },
+  "hz.cz": {
+    "costs": "free",
+    "hosted": "CZ",
+    "hosts": [
+      "hz.cz"
+    ],
+    "jurisdiction": "CZ",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "HZ.CZ (Hosting Zdarma) - Czech free web hosting on *.hz.cz subdomains; test.hz.cz resolves (77.78.104.100). co.cz subdomains are i-registry/Gransy-operated (see dnsservices).",
+    "status": "active",
+    "type": "web",
+    "updates": "dynamic",
+    "url": "https://hz.cz/"
   },
   "icilalune.com": {
     "cloud": "AWS",
@@ -4745,6 +5001,7 @@
     "url": "https://inferno.co.uk/"
   },
   "infinityfree.com": {
+    "ads": false,
     "cloud": "Cloudflare",
     "costs": "free",
     "expire_days": 60,
@@ -5438,6 +5695,29 @@
     "type": "blog",
     "url": "https://blog.livedoor.com/"
   },
+  "liveinternet.ru": {
+    "costs": "free",
+    "feeds": [
+      "rss"
+    ],
+    "hosted": "RU",
+    "hosts": [
+      "liveinternet.ru"
+    ],
+    "jurisdiction": "RU",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "LiveInternet (RU) - diary/blog platform, user.liveinternet.ru; ~5M diaries; RSS at /users/<name>/rss/; also stat counter service.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "blog",
+    "updates": "dynamic",
+    "url": "https://www.liveinternet.ru/"
+  },
   "livejournal.com": {
     "costs": "freemium",
     "custom_domain": true,
@@ -5883,6 +6163,28 @@
     "updates": "static",
     "url": "https://methods.dev/"
   },
+  "miarroba.com": {
+    "cloud": "Cloudflare",
+    "costs": "free",
+    "hosts": [
+      "mforos.com",
+      "webcindario.com",
+      "miarroba.com"
+    ],
+    "jurisdiction": "ES",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Miarroba (ES) - free forums *.mforos.com (~9000 active), blogs.miarroba.com blogs and *.webcindario.com webspace; community since 2000.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "forum",
+    "updates": "dynamic",
+    "url": "https://miarroba.com/"
+  },
   "micro.blog": {
     "costs": "paid",
     "custom_domain": true,
@@ -6318,6 +6620,36 @@
     "updates": "static",
     "url": "https://netatwork.de/"
   },
+  "nethely.hu": {
+    "ads": false,
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosted": "HU",
+    "hosts": [
+      "nhely.hu",
+      "webtelek.hu",
+      "probaljaki.hu",
+      "infora.hu",
+      "szakdoga.net",
+      "szakdolgozat.net",
+      "fejlessz.hu",
+      "testhosting.hu",
+      "tarhelyingyen.hu"
+    ],
+    "jurisdiction": "HU",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Nethely free hosting (HU) - ad-free 256-512MB, choice of 9 free suffixes; own domain on paid plans; no free SSL on free suffix.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "web",
+    "updates": "dynamic",
+    "url": "https://www.nethely.hu/ingyenes-tarhely"
+  },
   "netlify.app": {
     "api": true,
     "cloud": "AWS",
@@ -6436,6 +6768,29 @@
     "type": "paas",
     "updates": "static",
     "url": "https://northflank.com/"
+  },
+  "note.com": {
+    "cloud": "AWS",
+    "costs": "freemium",
+    "feeds": [
+      "rss"
+    ],
+    "hosts": [
+      "note.com"
+    ],
+    "jurisdiction": "JP",
+    "post_methods": [
+      "web",
+      "mobile-app"
+    ],
+    "public": true,
+    "remark": "note - major JP creator publishing platform, path-based note.com/<user> pages; articles, magazines, paid content; RSS at /<user>/rss.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "blog",
+    "url": "https://note.com/"
   },
   "noticeable.io": {
     "cloud": "Cloudflare",
@@ -7276,6 +7631,26 @@
     "updates": "static",
     "url": "https://prgmr.com/"
   },
+  "profreehost.com": {
+    "ads": false,
+    "cloud": "Cloudflare",
+    "costs": "free",
+    "hosts": [
+      "unaux.com"
+    ],
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "ProFreeHost - iFastNet-powered free PHP/MySQL hosting; issues free subdomains from the shared iFastNet pool (unaux.com etc.); 'no forced ads' per site.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "web",
+    "updates": "dynamic",
+    "url": "https://profreehost.com/"
+  },
   "prohoster.biz": {
     "costs": "freemium",
     "hosted": "NL",
@@ -7427,6 +7802,26 @@
     "type": "web",
     "updates": "static",
     "url": "https://qutheory.io/"
+  },
+  "qzone.qq.com": {
+    "costs": "free",
+    "hosted": "CN",
+    "hosts": [
+      "qzone.qq.com"
+    ],
+    "jurisdiction": "CN",
+    "post_methods": [
+      "web",
+      "mobile-app"
+    ],
+    "public": true,
+    "remark": "QQ Qzone (QQ空间) - Tencent social/blog space at user.qzone.qq.com; tied to QQ account; posts, albums, diary.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "microblog",
+    "url": "https://qzone.qq.com/"
   },
   "rackmaze.com": {
     "cloud": "Azure",
@@ -8267,6 +8662,26 @@
     "updates": "static",
     "url": "https://siteleaf.com/"
   },
+  "siterubix.com": {
+    "cloud": "AWS",
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "siterubix.com"
+    ],
+    "jurisdiction": "CA",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "SiteRubix - Wealthy Affiliate site builder issuing *.siterubix.com (NS mywahosting.com); free starter sites, premium ties to WA membership.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "builder",
+    "url": "https://siterubix.com/"
+  },
   "sites.google.com": {
     "cloud": "Google",
     "costs": "free",
@@ -8391,6 +8806,26 @@
     "type": "pages",
     "updates": "static",
     "url": "https://snt.utwente.nl/"
+  },
+  "sound.jp": {
+    "cloud": "Cloudflare",
+    "costs": "freemium",
+    "hosts": [
+      "sound.jp"
+    ],
+    "jurisdiction": "JP",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "@sound.jp - JP free homepage space, path-based sound.jp/<user>, FTP upload, max 1GB; paid plans available.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "web",
+    "updates": "dynamic",
+    "url": "https://app.sound.jp/"
   },
   "soup.io": {
     "costs": "free",
@@ -8638,6 +9073,27 @@
     "updates": "static",
     "url": "https://buffer.com/start-page"
   },
+  "static.run": {
+    "cloud": "Hetzner",
+    "costs": "free",
+    "custom_domain": true,
+    "expire_days": 90,
+    "hosts": [
+      "static.run"
+    ],
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Static.run - free static site/file hosting; uploads get live demo URL (*.static.run); sites stay live if logged in every 90 days; zip/folder upload + online editor.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "static",
+    "url": "https://static.run/"
+  },
   "statichost.eu": {
     "hosted": "DE",
     "hosts": [
@@ -8649,6 +9105,28 @@
     "type": "pages",
     "updates": "static",
     "url": "https://statichost.eu/"
+  },
+  "statichost.se": {
+    "cloud": "Cloudflare",
+    "costs": "paid",
+    "custom_domain": true,
+    "hosts": [
+      "phphost.se"
+    ],
+    "jurisdiction": "SE",
+    "post_methods": [
+      "web",
+      "git"
+    ],
+    "public": true,
+    "remark": "StaticHost.se - SE static hosting; preview URLs at *.phphost.se; paid plans ~$7+/mo; zip upload, CLI (statichost deploy), GitHub connect, rollback.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "static",
+    "url": "https://statichost.se/"
   },
   "storacha.network": {
     "cloud": "Cloudflare",
@@ -8817,6 +9295,24 @@
     "type": "pages",
     "updates": "static"
   },
+  "sweb.ru": {
+    "costs": "paid",
+    "custom_domain": true,
+    "hosted": "RU",
+    "hosts": [
+      "swtest.ru"
+    ],
+    "jurisdiction": "RU",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "SpaceWeb (sweb.ru) - paid RU hosting from 119RUB/mo, 14-day trial; accounts get *.swtest.ru test domains; free site builder tier advertised.",
+    "status": "active",
+    "type": "web",
+    "updates": "dynamic",
+    "url": "https://sweb.ru/"
+  },
   "swtest.ru": {
     "costs": "paid",
     "hosted": "RU",
@@ -8882,6 +9378,39 @@
     "type": "app",
     "updates": "static",
     "url": "https://tailor.tech/"
+  },
+  "tap.bio": {
+    "costs": "free",
+    "hosts": [
+      "tap.bio"
+    ],
+    "post_methods": [
+      "web"
+    ],
+    "public": false,
+    "remark": "Tap Bio - link-in-bio card pages tap.bio/<user>; SHUT DOWN Oct 31, 2026 - all profiles offline; successor: linkinprofile.com (paid).",
+    "status": "discontinued",
+    "type": "pages",
+    "until": 2026,
+    "url": "https://tap.bio/"
+  },
+  "tastewp.com": {
+    "cloud": "Cloudflare",
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "tastewp.com"
+    ],
+    "jurisdiction": "DE",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "TasteWP - instant WordPress test/staging sites at *.tastewp.com; anonymous creation (no registration), free sites expire; premium $2.98/mo keeps sites + custom domains; Inisev.",
+    "status": "active",
+    "type": "devtool",
+    "updates": "dynamic",
+    "url": "https://tastewp.com/"
   },
   "tave.com": {
     "cloud": "AWS",
@@ -9014,6 +9543,26 @@
     "type": "storage",
     "updates": "static",
     "url": "https://tigrisdata.com/"
+  },
+  "tiiny.host": {
+    "cloud": "AWS",
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "tiiny.site"
+    ],
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "tiiny.host - static file/site sharing at *.tiiny.site; free tier ($0), paid $5-74/mo for custom domains/analytics; zip/file upload.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "static",
+    "url": "https://tiiny.host/"
   },
   "timeweb.ru": {
     "costs": "paid",
@@ -9283,6 +9832,7 @@
     "url": "https://uberspace.de/"
   },
   "ucoz.com": {
+    "ads": true,
     "costs": "freemium",
     "custom_domain": true,
     "feeds": [
@@ -9528,6 +10078,29 @@
     "updates": "static",
     "url": "https://vistablog.ir/"
   },
+  "vivaldi.net": {
+    "cloud": "Cloudflare",
+    "costs": "free",
+    "custom_domain": false,
+    "feeds": [
+      "rss"
+    ],
+    "hosts": [
+      "vivaldi.net"
+    ],
+    "jurisdiction": "NO",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Vivaldi Community blogs - WordPress multisite at user.vivaldi.net (travellinbob.vivaldi.net etc.); free with Vivaldi account; also Mastodon (social.vivaldi.net) + forum.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "blog",
+    "url": "https://vivaldi.net/"
+  },
   "vivenu.com": {
     "cloud": "Cloudflare",
     "hosted": "CA",
@@ -9766,6 +10339,7 @@
     "url": "https://www.liquidweb.com/"
   },
   "webstarts.com": {
+    "ads": true,
     "cloud": "AWS",
     "costs": "freemium",
     "hosted": "US",
@@ -10165,6 +10739,30 @@
     "type": "web",
     "updates": "static",
     "url": "https://xenoncloud.net/"
+  },
+  "xrea.com": {
+    "ads": true,
+    "cloud": "Cloudflare",
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosted": "JP",
+    "hosts": [
+      "xrea.com"
+    ],
+    "jurisdiction": "JP",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "XREA (Value-Domain/GMO) free rental server - user.xrea.com; Free plan 10GB w/ ads, Plus ~240JPY/mo; requires Value-Domain account + SMS verification.",
+    "signup_verification": [
+      "email",
+      "sms"
+    ],
+    "status": "active",
+    "type": "web",
+    "updates": "dynamic",
+    "url": "https://www.xrea.com/"
   },
   "xs4all.nl": {
     "cloud": "AWS",

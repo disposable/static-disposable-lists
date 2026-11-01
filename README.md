@@ -137,6 +137,7 @@ Key fields per provider:
 | `feeds` | Syndication feed formats emitted per site/blog: `rss`, `atom`, `json` (JSON Feed); absent = none |
 | `post_methods` | How content is created: `web`, `api`, `email` (post-by-email), `git` (push-deployed), `external-sync` (authored in an external app/notebook: Evernote→Postach.io, Standard Notes→Listed, Obsidian→Publish), `mobile-app`, `telegram-bot` |
 | `markdown` / `custom_domain` | Markdown authoring / own-domain support |
+| `ads` | `true` = provider injects ads or modifies served output (forced banners/footers, JS injection); `false` = explicitly ad-free; absent = unknown |
 | `updates` | `static` = hosted sites are static content, `dynamic` = server-side apps, `both` |
 | `expire_days` / `revalidation_days` | Auto-delete / manual revalidation periods for free sites (same semantics as `dnsservices.json`) |
 | `status` / `costs` / `public` / `signup_verification` / `jurisdiction` / `hosted` / `cloud` / `ns_suffixes` | Same semantics as `dnsservices.json` |

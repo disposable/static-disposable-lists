@@ -1,161 +1,233 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://disposable.github.io/static-disposable-lists/schemas/hosting.schema.json",
-  "type": "object",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
   "description": "Hosting and publishing service definitions: issued host suffixes, pricing, feed and publishing metadata",
   "patternProperties": {
     "^[^:]+$": {
-      "type": "object",
+      "additionalProperties": false,
       "description": "Hosting service provider",
       "properties": {
-        "hosts": {
-          "type": "array",
-          "description": "Domain suffixes under which user sites/blogs/apps are served",
-          "items": {
-            "type": "string",
-            "format": "hostname"
-          }
-        },
-        "old_hosts": {
-          "type": "array",
-          "description": "Retired/discontinued suffixes",
-          "items": {
-            "type": "string",
-            "format": "hostname"
-          }
-        },
-        "hosts_total": {
-          "type": "integer",
-          "description": "Real host count, only present in hosting.json when hosts was truncated",
-          "minimum": 0
-        },
-        "url": {
-          "type": "string",
-          "description": "Service website URL"
-        },
-        "costs": {
-          "type": "string",
-          "description": "Pricing classification of the service itself",
-          "enum": ["free", "paid", "freemium"]
-        },
-        "type": {
-          "type": "string",
-          "description": "Service subtype: web = generic/shared web hosting; paas = deploy-your-code platform; pages = static site hosting; builder = WYSIWYG site builder; store = e-commerce/shop platform; app = SaaS product issuing user subdomains; devtool = online IDE/playground; tunnel = localhost tunnel/exposure; storage = object/CDN storage; forum = hosted forum/community; blog = classic blog platform; microblog = tumblelog/short-form; newsletter = email-first publishing; notes = single-page/anonymous publishing",
-          "enum": ["web", "paas", "pages", "builder", "store", "app", "devtool", "tunnel", "storage", "forum", "blog", "microblog", "newsletter", "notes"]
-        },
-        "status": {
-          "type": "string",
-          "description": "active = signups and publishing work; restricted = issuance limited to certain users; no_new_registrations = existing sites live, no new signups; discontinued = service shut down",
-          "enum": ["active", "restricted", "no_new_registrations", "discontinued"]
-        },
-        "public": {
-          "type": "boolean",
-          "description": "Whether anyone can sign up and publish"
-        },
-        "updates": {
-          "type": "string",
-          "description": "Whether hosted sites are static content or dynamic (server-side) apps",
-          "enum": ["dynamic", "static", "both"]
-        },
-        "feeds": {
-          "type": "array",
-          "description": "Syndication feed formats emitted per site/blog; absent = none",
-          "items": {
-            "type": "string",
-            "enum": ["rss", "atom", "json"]
-          }
-        },
-        "post_methods": {
-          "type": "array",
-          "description": "How content is created: web = browser editor; api = programmatic API; email = post-by-email; git = git push (static generators); external-sync = authored in an external app/notebook that syncs; mobile-app = dedicated app; telegram-bot = via Telegram bot",
-          "items": {
-            "type": "string",
-            "enum": ["web", "api", "email", "git", "external-sync", "mobile-app", "telegram-bot"]
-          }
-        },
-        "markdown": {
-          "type": "boolean",
-          "description": "Content can be authored in Markdown"
-        },
-        "custom_domain": {
-          "type": "boolean",
-          "description": "Users can attach their own domain (free or paid)"
+        "ads": {
+          "description": "true = provider injects ads or modifies served output on the issued hostname (forced banners/footers, JS injection); false = explicitly ad-free; absent = unknown",
+          "type": "boolean"
         },
         "api": {
-          "type": "boolean",
-          "description": "Programmatic provisioning/management API"
+          "description": "Programmatic provisioning/management API",
+          "type": "boolean"
+        },
+        "cloud": {
+          "description": "Cloud/CDN operator hosting the service site",
+          "type": "string"
+        },
+        "costs": {
+          "description": "Pricing classification of the service itself",
+          "enum": [
+            "free",
+            "paid",
+            "freemium"
+          ],
+          "type": "string"
+        },
+        "custom_domain": {
+          "description": "Users can attach their own domain (free or paid)",
+          "type": "boolean"
+        },
+        "expire_days": {
+          "description": "Days without update/visit after which free sites are auto-deleted",
+          "minimum": 1,
+          "type": "integer"
+        },
+        "feeds": {
+          "description": "Syndication feed formats emitted per site/blog; absent = none",
+          "items": {
+            "enum": [
+              "rss",
+              "atom",
+              "json"
+            ],
+            "type": "string"
+          },
+          "type": "array"
         },
         "free_hostname_limit": {
-          "type": "integer",
           "description": "Max free sites/hostnames per account",
-          "minimum": 1
+          "minimum": 1,
+          "type": "integer"
+        },
+        "hosted": {
+          "description": "ISO 3166-1 alpha-2 country where the provider's service site resolves",
+          "pattern": "^[A-Z]{2}$",
+          "type": "string"
+        },
+        "hosts": {
+          "description": "Domain suffixes under which user sites/blogs/apps are served",
+          "items": {
+            "format": "hostname",
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "hosts_total": {
+          "description": "Real host count, only present in hosting.json when hosts was truncated",
+          "minimum": 0,
+          "type": "integer"
+        },
+        "jurisdiction": {
+          "description": "ISO 3166-1 alpha-2 country of the provider's legal seat",
+          "pattern": "^[A-Z]{2}$",
+          "type": "string"
+        },
+        "markdown": {
+          "description": "Content can be authored in Markdown",
+          "type": "boolean"
         },
         "ns_suffixes": {
-          "type": "array",
           "description": "Operator name-server suffixes serving the issued hosts",
           "items": {
-            "type": "string",
-            "format": "hostname"
-          }
+            "format": "hostname",
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "old_hosts": {
+          "description": "Retired/discontinued suffixes",
+          "items": {
+            "format": "hostname",
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "own_domains": {
+          "description": "Deprecated alias of custom_domain on imported records",
+          "type": "boolean"
+        },
+        "post_methods": {
+          "description": "How content is created: web = browser editor; api = programmatic API; email = post-by-email; git = git push (static generators); external-sync = authored in an external app/notebook that syncs; mobile-app = dedicated app; telegram-bot = via Telegram bot",
+          "items": {
+            "enum": [
+              "web",
+              "api",
+              "email",
+              "git",
+              "external-sync",
+              "mobile-app",
+              "telegram-bot"
+            ],
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "public": {
+          "description": "Whether anyone can sign up and publish",
+          "type": "boolean"
         },
         "record_types": {
-          "type": "array",
           "description": "DNS record types users can set (where the service also offers DNS control)",
           "items": {
             "type": "string"
-          }
+          },
+          "type": "array"
         },
-        "expire_days": {
-          "type": "integer",
-          "description": "Days without update/visit after which free sites are auto-deleted",
-          "minimum": 1
+        "remark": {
+          "description": "Additional notes about the service",
+          "type": "string"
         },
         "revalidation_days": {
-          "type": "integer",
           "description": "Days after which users must manually revalidate to keep sites",
-          "minimum": 1
-        },
-        "own_domains": {
-          "type": "boolean",
-          "description": "Deprecated alias of custom_domain on imported records"
+          "minimum": 1,
+          "type": "integer"
         },
         "signup_verification": {
           "oneOf": [
             {
-              "type": "string",
-              "enum": ["none", "email", "mobile", "payment", "other", "phone", "sms"]
+              "enum": [
+                "none",
+                "email",
+                "mobile",
+                "payment",
+                "other",
+                "phone",
+                "sms"
+              ],
+              "type": "string"
             },
             {
-              "type": "array",
               "items": {
-                "type": "string",
-                "enum": ["none", "email", "mobile", "payment", "other", "sms", "phone"]
-              }
+                "enum": [
+                  "none",
+                  "email",
+                  "mobile",
+                  "payment",
+                  "other",
+                  "sms",
+                  "phone"
+                ],
+                "type": "string"
+              },
+              "type": "array"
             }
           ]
         },
-        "jurisdiction": {
-          "type": "string",
-          "description": "ISO 3166-1 alpha-2 country of the provider's legal seat",
-          "pattern": "^[A-Z]{2}$"
+        "since": {
+          "description": "Year the service started",
+          "minimum": 1990,
+          "type": "integer"
         },
-        "hosted": {
-          "type": "string",
-          "description": "ISO 3166-1 alpha-2 country where the provider's service site resolves",
-          "pattern": "^[A-Z]{2}$"
+        "status": {
+          "description": "active = signups and publishing work; restricted = issuance limited to certain users; no_new_registrations = existing sites live, no new signups; discontinued = service shut down",
+          "enum": [
+            "active",
+            "restricted",
+            "no_new_registrations",
+            "discontinued"
+          ],
+          "type": "string"
         },
-        "cloud": {
-          "type": "string",
-          "description": "Cloud/CDN operator hosting the service site"
+        "type": {
+          "description": "Service subtype: web = generic/shared web hosting; paas = deploy-your-code platform; pages = static site hosting; builder = WYSIWYG site builder; store = e-commerce/shop platform; app = SaaS product issuing user subdomains; devtool = online IDE/playground; tunnel = localhost tunnel/exposure; storage = object/CDN storage; forum = hosted forum/community; blog = classic blog platform; microblog = tumblelog/short-form; newsletter = email-first publishing; notes = single-page/anonymous publishing",
+          "enum": [
+            "web",
+            "paas",
+            "pages",
+            "builder",
+            "store",
+            "app",
+            "devtool",
+            "tunnel",
+            "storage",
+            "forum",
+            "blog",
+            "microblog",
+            "newsletter",
+            "notes"
+          ],
+          "type": "string"
         },
-        "remark": {
-          "type": "string",
-          "description": "Additional notes about the service"
+        "until": {
+          "description": "Year the service ended (for discontinued providers)",
+          "minimum": 1990,
+          "type": "integer"
+        },
+        "updates": {
+          "description": "Whether hosted sites are static content or dynamic (server-side) apps",
+          "enum": [
+            "dynamic",
+            "static",
+            "both"
+          ],
+          "type": "string"
+        },
+        "url": {
+          "description": "Service website URL",
+          "type": "string"
         }
       },
-      "required": ["hosts"],
-      "additionalProperties": false
+      "required": [
+        "hosts"
+      ],
+      "type": "object"
     }
   },
-  "additionalProperties": false
+  "type": "object"
 }
