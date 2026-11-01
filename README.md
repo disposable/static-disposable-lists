@@ -15,6 +15,7 @@ Static data repository for disposable email domains and mail service definitions
 | [dnsservices-candidates.json](dnsservices-candidates.json) | Generated staging file: domains seen in upstream DNS lists but not yet cataloged, with provider hint, `added_on`/`last_checked`/`resolves` state and review marks (`status`, `validated`); review and promote into `dnsservices.json` |
 | [disposable-mail-hosts.json](disposable-mail-hosts.json) | Disposable mail-backend fingerprints: MX hostnames, hostname suffixes, IPv4 addresses and CIDR ranges used to attribute disposable domains to a provider |
 | [tunnelbrokers.json](tunnelbrokers.json) | IPv6 tunnel broker catalog (RFC 3053-style services): protocols, routed prefixes, BGP/rDNS/BYOIP support, endpoint update methods, PoPs and limits. Hand-curated; includes discontinued providers for reference |
+| [blogservices.json](blogservices.json) | Blog hosting service catalog (Blogger, WordPress.com, Tumblr, Postach.io, ...): issued hosts, pricing, feed formats, post creation methods, custom-domain support. Hand-curated; includes discontinued platforms for reference |
 | [mail-data-hosts-net.txt](mail-data-hosts-net.txt) | Hostnames from mx.mail-data.net |
 | [manual.txt](manual.txt) | Manually curated list of disposable email domains |
 | [free.txt](free.txt) / [free.csv](free.csv) | Free email provider domain lists (staging resource for new `mailservices.json` entries, not consumed directly) |
@@ -111,6 +112,31 @@ Key fields per provider:
 | `status` / `costs` / `public` / `signup_verification` | Same semantics as `dnsservices.json`; `type` is `broker`, `vpn` (overlay-only) or `isp` (carrier-operated) |
 | `jurisdiction` | ISO country of the provider's legal seat; hand-curated (no `hosted`/`cloud` fields here) |
 
+### blogservices.json
+
+Catalog of hosted blogging and publishing platforms - services that give each user a public
+site or feed under a shared suffix (`user.blogspot.com`, `*.tumblr.com`, `*.wordpress.com`,
+path-based like `dev.to/user`). Covers classic blog platforms (Blogger, LiveJournal, Hatena,
+FC2, regional hosts like over-blog/blog.hu/blogfa), newsletter platforms (Substack, beehiiv,
+Buttondown), note/anonymous publishing (telegra.ph), sync-based platforms (Postach.io, Blot,
+Listed, Obsidian Publish), static page hosts usable for blogs (GitHub/GitLab/Codeberg Pages,
+Neocities, Notion Sites) and WYSIWYG builders with blog modules (Wix, Weebly, uCoz, Jimdo...).
+Dead platforms (Typepad, soup.io, Skyrock, blox.pl) are kept as reference with
+`status: "discontinued"`. Hand-edited - no automated imports.
+
+Key fields per provider:
+
+| Field | Meaning |
+|-------|---------|
+| `hosts` | Domain suffixes under which user blogs are served (subdomain- or path-based) |
+| `old_hosts` | Retired/discontinued suffixes |
+| `type` | `blog` (classic platform), `microblog` (tumblelog/short-form), `newsletter` (email-first), `notes` (single-page/anonymous), `pages` (static host, bring-your-own generator), `builder` (site builder with blog module) |
+| `feeds` | Syndication feed formats emitted per blog: `rss`, `atom`, `json` (JSON Feed); absent = none |
+| `post_methods` | How posts are created: `web`, `api`, `email` (post-by-email), `git` (push-deployed), `external-sync` (authored in an external app/notebook: Evernote→Postach.io, Standard Notes→Listed, Obsidian→Publish), `mobile-app`, `telegram-bot` |
+| `markdown` | Posts can be authored in Markdown |
+| `custom_domain` | Users can attach their own domain (free or paid) |
+| `status` / `costs` / `public` / `signup_verification` / `jurisdiction` / `hosted` / `cloud` | Same semantics as `dnsservices.json` |
+
 
 ## JSON Schemas
 
@@ -124,6 +150,7 @@ All JSON data files are validated against schemas:
 | [schemas/dnsservices-candidates.schema.json](schemas/dnsservices-candidates.schema.json) | `dnsservices-candidates.json` |
 | [schemas/jurisdiction-overrides.schema.json](schemas/jurisdiction-overrides.schema.json) | `data/jurisdiction_overrides.json` |
 | [schemas/tunnelbrokers.schema.json](schemas/tunnelbrokers.schema.json) | `tunnelbrokers.json` |
+| [schemas/blogservices.schema.json](schemas/blogservices.schema.json) | `blogservices.json` |
 
 
 ## Scripts
