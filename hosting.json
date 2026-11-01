@@ -91,6 +91,26 @@
     "type": "web",
     "url": "https://www.a2hosting.com/"
   },
+  "about.me": {
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "about.me"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "about.me - personal profile pages at about.me/<user>; free + Pro (custom domain, no branding).",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "dynamic",
+    "url": "https://about.me/"
+  },
   "activehosted.com": {
     "cloud": "Cloudflare",
     "costs": "paid",
@@ -159,6 +179,19 @@
     "type": "builder",
     "updates": "static",
     "url": "https://advisorwebsites.com/"
+  },
+  "aerobatic.com": {
+    "costs": "paid",
+    "hosts": [
+      "aerobatic.io",
+      "aerobaticapp.com"
+    ],
+    "public": false,
+    "remark": "Aerobatic - static site host w/ wildcard SSL on *.aerobatic.io; shut ~2019.",
+    "status": "discontinued",
+    "type": "pages",
+    "until": 2019,
+    "url": "https://www.aerobatic.com/"
   },
   "aiven.io": {
     "cloud": "Cloudflare",
@@ -241,6 +274,25 @@
     "status": "active",
     "type": "web",
     "url": "https://www.alibabacloud.com/"
+  },
+  "allmylinks.com": {
+    "costs": "free",
+    "hosts": [
+      "allmylinks.com"
+    ],
+    "jurisdiction": "FR",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "AllMyLinks - free link-in-bio at allmylinks.com/<user>, popular in creator community.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "dynamic",
+    "url": "https://allmylinks.com/"
   },
   "altervista.org": {
     "cloud": "AWS",
@@ -1187,6 +1239,21 @@
     "type": "blog",
     "url": "https://ameblo.jp/"
   },
+  "angelfire.com": {
+    "ads": true,
+    "costs": "free",
+    "hosts": [
+      "angelfire.com"
+    ],
+    "jurisdiction": "US",
+    "public": false,
+    "remark": "Angelfire (Lycos) - classic free homepage host on *.angelfire.com; portal dead (lycos unreachable).",
+    "since": 1996,
+    "status": "discontinued",
+    "type": "web",
+    "until": 2025,
+    "url": "http://www.angelfire.com/"
+  },
   "antagonist.nl": {
     "hosted": "NL",
     "hosts": [
@@ -1534,6 +1601,26 @@
     "updates": "static",
     "url": "https://www.backblaze.com/"
   },
+  "beacons.ai": {
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "beacons.ai"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Beacons - creator link-in-bio + media kit at beacons.ai/<user>; free + paid tiers.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "dynamic",
+    "url": "https://beacons.ai/"
+  },
   "bearblog.dev": {
     "cloud": "Cloudflare",
     "costs": "freemium",
@@ -1608,6 +1695,19 @@
     "updates": "static",
     "url": "https://beget.com"
   },
+  "beon.ru": {
+    "costs": "free",
+    "hosts": [
+      "beon.ru"
+    ],
+    "jurisdiction": "RU",
+    "public": false,
+    "remark": "BeOn - RU community w/ user diaries/tests at *.beon.ru; NXDOMAIN.",
+    "status": "discontinued",
+    "type": "blog",
+    "until": 2025,
+    "url": "https://beon.ru/"
+  },
   "bero-webspace.de": {
     "costs": "paid",
     "hosted": "DE",
@@ -1635,6 +1735,26 @@
     "type": "web",
     "updates": "static",
     "url": "https://besties.house/"
+  },
+  "bigcartel.com": {
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "bigcartel.com"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Big Cartel - indie-artist shops on *.bigcartel.com; free plan 5 products, paid up to 500.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "store",
+    "updates": "dynamic",
+    "url": "https://www.bigcartel.com/"
   },
   "binarylane.com": {
     "hosted": "AU",
@@ -1672,6 +1792,37 @@
     "updates": "static",
     "url": "https://binc.jp/"
   },
+  "bio.link": {
+    "costs": "freemium",
+    "hosts": [
+      "bio.link"
+    ],
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "bio.link - link-in-bio pages at bio.link/<user>; free + Pro.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "dynamic",
+    "url": "https://bio.link/"
+  },
+  "bitballoon.com": {
+    "costs": "freemium",
+    "hosts": [
+      "bitballoon.com"
+    ],
+    "jurisdiction": "US",
+    "public": false,
+    "remark": "BitBalloon - drag-drop static host; acquired by Netlify 2015, service merged.",
+    "status": "discontinued",
+    "type": "pages",
+    "until": 2015,
+    "url": "https://www.bitballoon.com/"
+  },
   "bitbucket.io": {
     "api": true,
     "cloud": "AWS",
@@ -1686,6 +1837,53 @@
     "status": "active",
     "type": "pages",
     "updates": "static"
+  },
+  "biz.nf": {
+    "ads": false,
+    "costs": "free",
+    "custom_domain": true,
+    "hosts": [
+      "biz.nf",
+      "co.nf"
+    ],
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Biz.nf - free PHP/MySQL hosting on *.biz.nf and *.co.nf; claims ad-free.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "web",
+    "updates": "dynamic",
+    "url": "https://www.biz.nf/"
+  },
+  "blinkenshell.org": {
+    "ads": false,
+    "costs": "free",
+    "hosts": [
+      "blinkenshell.org",
+      "shells.red-pill.eu",
+      "xcvbsd.org",
+      "junkyard.cc",
+      "paranoia.so",
+      "spooks.us",
+      "baseindustries.net",
+      "deadbeef.se"
+    ],
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Blinkenshell - free shell accounts w/ user webspace; multi-domain (~user paths); donation-based.",
+    "signup_verification": [
+      "other"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "static",
+    "url": "https://blinkenshell.org/"
   },
   "blog.cz": {
     "costs": "free",
@@ -1770,6 +1968,29 @@
     "type": "blog",
     "url": "https://blog.sina.com.cn/"
   },
+  "blog4ever.com": {
+    "costs": "freemium",
+    "custom_domain": true,
+    "feeds": [
+      "rss"
+    ],
+    "hosts": [
+      "blog4ever.com"
+    ],
+    "jurisdiction": "FR",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Blog4Ever - FR free blog host on *.blog4ever.com; premium removes limits.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "blog",
+    "updates": "dynamic",
+    "url": "https://www.blog4ever.com/"
+  },
   "blogcn.com": {
     "costs": "freemium",
     "hosts": [
@@ -1849,6 +2070,28 @@
     "status": "active",
     "type": "blog",
     "url": "https://blogg.no/"
+  },
+  "bloggang.com": {
+    "costs": "free",
+    "feeds": [
+      "rss"
+    ],
+    "hosts": [
+      "bloggang.com"
+    ],
+    "jurisdiction": "TH",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "BlogGang - major Thai free blog host on *.bloggang.com.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "blog",
+    "updates": "dynamic",
+    "url": "https://www.bloggang.com/"
   },
   "blogger.com": {
     "api": true,
@@ -1950,6 +2193,19 @@
     "updates": "static",
     "url": "https://www.blogger.com/"
   },
+  "bloguje.pl": {
+    "costs": "free",
+    "hosts": [
+      "bloguje.pl"
+    ],
+    "jurisdiction": "PL",
+    "public": false,
+    "remark": "Bloguje.pl - PL free blog host; site dead.",
+    "status": "discontinued",
+    "type": "blog",
+    "until": 2024,
+    "url": "http://bloguje.pl/"
+  },
   "blot.im": {
     "costs": "paid",
     "custom_domain": true,
@@ -1991,6 +2247,41 @@
     "status": "discontinued",
     "type": "blog",
     "url": "https://blox.pl/"
+  },
+  "bluewin.ch": {
+    "costs": "free",
+    "hosts": [
+      "bluewin.ch"
+    ],
+    "jurisdiction": "CH",
+    "post_methods": [
+      "web"
+    ],
+    "public": false,
+    "remark": "Bluewin - Swisscom customer homepage space; customer-only.",
+    "status": "restricted",
+    "type": "web",
+    "updates": "static",
+    "url": "https://www.bluewin.ch/"
+  },
+  "boardhost.com": {
+    "costs": "free",
+    "hosts": [
+      "boardhost.com"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "BoardHost - free message-board hosting on *.boardhost.com.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "forum",
+    "updates": "dynamic",
+    "url": "https://boardhost.com/"
   },
   "boomla.com": {
     "hosted": "HU",
@@ -2101,6 +2392,17 @@
     "updates": "static",
     "url": "https://bravenet.com/"
   },
+  "breadpunk.club": {
+    "costs": "free",
+    "hosts": [
+      "breadpunk.club"
+    ],
+    "public": false,
+    "remark": "breadpunk.club - tilde pubnix for bakers; DNS dead.",
+    "status": "discontinued",
+    "type": "pages",
+    "until": 2025
+  },
   "brendly.rs": {
     "cloud": "Hetzner",
     "hosted": "DE",
@@ -2185,6 +2487,26 @@
     "status": "active",
     "type": "newsletter",
     "url": "https://buttondown.email/"
+  },
+  "buymeacoffee.com": {
+    "costs": "free",
+    "hosts": [
+      "buymeacoffee.com"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web",
+      "mobile-app"
+    ],
+    "public": true,
+    "remark": "Buy Me a Coffee - creator support pages + posts at buymeacoffee.com/<user>; free, platform fee.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "dynamic",
+    "url": "https://www.buymeacoffee.com/"
   },
   "bwcloud-os.de": {
     "hosted": "DE",
@@ -2282,6 +2604,26 @@
     "type": "paas",
     "updates": "static",
     "url": "https://cafjs.com/"
+  },
+  "campsite.bio": {
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "campsite.bio"
+    ],
+    "jurisdiction": "CA",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Campsite - link-in-bio at campsite.bio/<user>; free + Pro.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "dynamic",
+    "url": "https://campsite.bio/"
   },
   "canalblog.com": {
     "costs": "freemium",
@@ -2743,6 +3085,25 @@
     "updates": "static",
     "url": "https://corespeed.io/"
   },
+  "cosmic.voyage": {
+    "ads": false,
+    "costs": "free",
+    "hosts": [
+      "cosmic.voyage"
+    ],
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "cosmic.voyage - tilde pubnix (collaborative sci-fi writing theme); user pages at cosmic.voyage/~user.",
+    "signup_verification": [
+      "other"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "static",
+    "url": "https://cosmic.voyage/"
+  },
   "craft.do": {
     "cloud": "AWS",
     "hosted": "DE",
@@ -2756,6 +3117,62 @@
     "type": "web",
     "updates": "static",
     "url": "https://craft.do/"
+  },
+  "createaforum.com": {
+    "costs": "freemium",
+    "hosts": [
+      "createaforum.com"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "CreateAForum - free hosted forums on *.createaforum.com.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "forum",
+    "updates": "dynamic",
+    "url": "https://www.createaforum.com/"
+  },
+  "crevado.com": {
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "crevado.com"
+    ],
+    "jurisdiction": "IE",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Crevado - portfolio builder; free plan on *.crevado.com + Premium.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "dynamic",
+    "url": "https://crevado.com/"
+  },
+  "cruzio.com": {
+    "costs": "paid",
+    "hosts": [
+      "cruzio.com"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": false,
+    "remark": "Cruzio - Santa Cruz ISP; customer web space.",
+    "since": 1989,
+    "status": "restricted",
+    "type": "web",
+    "updates": "both",
+    "url": "https://www.cruzio.com/"
   },
   "csb.app": {
     "api": true,
@@ -2772,6 +3189,25 @@
     "status": "active",
     "type": "devtool",
     "updates": "static"
+  },
+  "ctrl-c.club": {
+    "ads": false,
+    "costs": "free",
+    "hosts": [
+      "ctrl-c.club"
+    ],
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "ctrl-c.club - tilde pubnix; user pages at ctrl-c.club/~user; application-based signup.",
+    "signup_verification": [
+      "other"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "static",
+    "url": "https://ctrl-c.club/"
   },
   "cursor.com": {
     "cloud": "AWS",
@@ -2901,6 +3337,25 @@
     "type": "web",
     "updates": "static",
     "url": "https://definima.com/"
+  },
+  "delphiforums.com": {
+    "costs": "freemium",
+    "hosts": [
+      "delphiforums.com"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Delphi Forums - venerable free forum host, path-based forums delphiforums.com/<name>; paid Plus removes ads.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "forum",
+    "updates": "dynamic",
+    "url": "https://www.delphiforums.com/"
   },
   "deno.com": {
     "hosted": "NL",
@@ -3056,6 +3511,46 @@
     "type": "blog",
     "url": "https://diary.ru/"
   },
+  "diaryland.com": {
+    "ads": true,
+    "costs": "free",
+    "hosts": [
+      "diaryland.com"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Diaryland - classic diary host on *.diaryland.com; moribund but signup still open.",
+    "signup_verification": [
+      "email"
+    ],
+    "since": 1999,
+    "status": "active",
+    "type": "blog",
+    "updates": "dynamic",
+    "url": "http://www.diaryland.com/"
+  },
+  "diarynote.jp": {
+    "costs": "free",
+    "hosts": [
+      "diarynote.jp"
+    ],
+    "jurisdiction": "JP",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "DiaryNote - JP diary service, diaries at diarynote.jp/<user> path; free.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "blog",
+    "updates": "dynamic",
+    "url": "https://diarynote.jp/"
+  },
   "digitalpress.blog": {
     "ads": true,
     "cloud": "OVH",
@@ -3137,6 +3632,26 @@
     "type": "web",
     "updates": "static",
     "url": "https://domena.pl/"
+  },
+  "doodlekit.com": {
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "doodlekit.com"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Doodlekit - drag-drop site builder; free sites on *.doodlekit.com.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "builder",
+    "updates": "dynamic",
+    "url": "https://doodlekit.com/"
   },
   "dothome.co.kr": {
     "costs": "freemium",
@@ -3397,6 +3912,26 @@
     "updates": "static",
     "url": "https://eliv.kr/"
   },
+  "ello.co": {
+    "ads": false,
+    "costs": "free",
+    "hosts": [
+      "ello.co"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Ello - ad-free artist/creator network, profiles at ello.co/<user>.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "microblog",
+    "updates": "dynamic",
+    "url": "https://ello.co/"
+  },
   "emergent.sh": {
     "cloud": "Cloudflare",
     "hosted": "CA",
@@ -3486,6 +4021,45 @@
     "updates": "static",
     "url": "https://encoway.de/"
   },
+  "endora.cz": {
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "endora.cz"
+    ],
+    "jurisdiction": "CZ",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Endora - CZ freehosting (FREE/FUN/MAX tiers) on *.endora.cz; cheap paid upgrade.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "web",
+    "updates": "dynamic",
+    "url": "https://www.endora.cz/"
+  },
+  "envs.net": {
+    "ads": false,
+    "costs": "free",
+    "hosts": [
+      "envs.net"
+    ],
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "envs.net - pubnix community; user pages at envs.net/~user; application-based signup.",
+    "signup_verification": [
+      "other"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "both",
+    "url": "https://envs.net/"
+  },
   "eth.limo": {
     "cloud": "AWS",
     "hosted": "CA",
@@ -3549,6 +4123,28 @@
     "updates": "static",
     "url": "https://evervault.com/"
   },
+  "exblog.jp": {
+    "costs": "freemium",
+    "feeds": [
+      "rss"
+    ],
+    "hosts": [
+      "exblog.jp"
+    ],
+    "jurisdiction": "JP",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Excite Blog (エキサイトブログ) - JP blog host on *.exblog.jp; free + paid ad-free.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "blog",
+    "updates": "dynamic",
+    "url": "https://www.exblog.jp/"
+  },
   "exe.dev": {
     "cloud": "AWS",
     "hosted": "US",
@@ -3578,6 +4174,41 @@
     "type": "web",
     "updates": "static",
     "url": "https://expo.dev/"
+  },
+  "exteen.com": {
+    "costs": "free",
+    "feeds": [
+      "rss"
+    ],
+    "hosts": [
+      "exteen.com"
+    ],
+    "jurisdiction": "TH",
+    "public": false,
+    "remark": "Exteen - Thai free blog host on *.exteen.com (836 user certs in CT); DNS now dead.",
+    "status": "discontinued",
+    "type": "blog",
+    "until": 2026,
+    "url": "https://www.exteen.com/"
+  },
+  "fakaheda.eu": {
+    "costs": "freemium",
+    "hosts": [
+      "fakaheda.eu"
+    ],
+    "jurisdiction": "CZ",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "FakaHeda - CZ free webhosting + game servers; sites on *.fakaheda.eu.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "web",
+    "updates": "dynamic",
+    "url": "https://www.fakaheda.eu/"
   },
   "fastly.com": {
     "cloud": "Fastly",
@@ -3770,6 +4401,19 @@
     "updates": "static",
     "url": "https://flashdrive.io/"
   },
+  "flavors.me": {
+    "costs": "free",
+    "hosts": [
+      "flavors.me"
+    ],
+    "jurisdiction": "US",
+    "public": false,
+    "remark": "Flavors.me - social-profile splash pages; absorbed into about.me, NXDOMAIN.",
+    "status": "discontinued",
+    "type": "pages",
+    "until": 2019,
+    "url": "http://flavors.me/"
+  },
   "flazio.com": {
     "cloud": "Google Cloud",
     "costs": "freemium",
@@ -3885,6 +4529,72 @@
     "updates": "static",
     "url": "https://formstack.com/"
   },
+  "forum24.cz": {
+    "costs": "free",
+    "hosts": [
+      "forum24.cz"
+    ],
+    "jurisdiction": "CZ",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Forum24 - CZ opinion-blog newspaper, author blogs at forum24.cz/<author> path; free on approval.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "blog",
+    "updates": "dynamic",
+    "url": "https://www.forum24.cz/"
+  },
+  "forumfree.it": {
+    "costs": "free",
+    "hosts": [
+      "forumfree.it",
+      "forumcommunity.net"
+    ],
+    "jurisdiction": "IT",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "ForumFree/ForumCommunity - Italian free forum host, forums on *.forumfree.it and *.forumcommunity.net (same operator).",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "forum",
+    "updates": "dynamic",
+    "url": "https://forumfree.it/"
+  },
+  "forumotion.com": {
+    "ads": true,
+    "costs": "free",
+    "hosts": [
+      "forumotion.com",
+      "freeforums.net",
+      "forumactif.com",
+      "foroactivo.com",
+      "forumieren.de",
+      "forumeiros.com",
+      "foroactivo.net",
+      "forumotion.net"
+    ],
+    "jurisdiction": "FR",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Forumotion - free forum host (phpBB/Invision/phpBB3 skins); regional suffixes per language: freeforums.net EN, forumactif.com FR, foroactivo.com ES, forumieren.de DE, forumeiros.com PT; ad-supported.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "forum",
+    "updates": "dynamic",
+    "url": "https://www.forumotion.com/"
+  },
   "framer.com": {
     "api": true,
     "cloud": "AWS",
@@ -3962,6 +4672,67 @@
     "updates": "static",
     "url": "https://www.freehostia.com"
   },
+  "freehosting.com": {
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "freehosting.com"
+    ],
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "FreeHosting.com - free/cheap PHP host; currently returning Cloudflare 520 (origin down) - re-verify.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "web",
+    "updates": "dynamic",
+    "url": "https://www.freehosting.com/"
+  },
+  "freehostingeu.com": {
+    "ads": false,
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "freehostingeu.com",
+      "eu5.net",
+      "eu5.org",
+      "6te.net"
+    ],
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "FreeHostingEU - 'No Ads + FREE domain' PHP hosting; free subdomains on eu5.net/eu5.org/6te.net per homepage.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "web",
+    "updates": "dynamic",
+    "url": "https://www.freehostingeu.com/"
+  },
+  "freenet.de": {
+    "costs": "free",
+    "hosts": [
+      "freenet.de"
+    ],
+    "jurisdiction": "DE",
+    "post_methods": [
+      "web"
+    ],
+    "public": false,
+    "remark": "freenet Homepage - ISP-bundled site builder; requires freenet account.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "restricted",
+    "type": "web",
+    "updates": "dynamic",
+    "url": "https://freenet.de/"
+  },
   "freeserverhostingweb.club": {
     "costs": "free",
     "hosts": [
@@ -3973,6 +4744,26 @@
     "type": "web",
     "updates": "static",
     "url": "http://freeserverhostingweb.club/"
+  },
+  "freeshell.de": {
+    "ads": false,
+    "costs": "free",
+    "hosts": [
+      "freeshell.de"
+    ],
+    "jurisdiction": "DE",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "freeshell.de - German free shell/webspace pubnix; user pages at freeshell.de/~user.",
+    "signup_verification": [
+      "other"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "static",
+    "url": "https://freeshell.de/"
   },
   "freewebhostingarea.com": {
     "costs": "free",
@@ -3987,6 +4778,26 @@
     "type": "web",
     "updates": "static",
     "url": "https://freewebhostingarea.com/"
+  },
+  "freewebstore.com": {
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "freewebstore.com"
+    ],
+    "jurisdiction": "GB",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "FreeWebstore - free ecommerce stores on *.freewebstore.com; paid upgrades.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "store",
+    "updates": "dynamic",
+    "url": "https://freewebstore.com/"
   },
   "frusky.de": {
     "cloud": "Contabo",
@@ -4157,6 +4968,18 @@
     "updates": "static",
     "url": "https://get.onid.ca/"
   },
+  "getforge.com": {
+    "costs": "free",
+    "hosts": [
+      "getforge.com"
+    ],
+    "public": false,
+    "remark": "Forge - static site host (Dropbox/Git deploys); pivoted to 'Extensibility as a Service', hosting dead.",
+    "status": "discontinued",
+    "type": "pages",
+    "until": 2020,
+    "url": "https://getforge.com/"
+  },
   "getmocha.com": {
     "cloud": "Cloudflare",
     "hosted": "CA",
@@ -4325,11 +5148,31 @@
     ],
     "jurisdiction": "US",
     "public": true,
-    "remark": "Glitch — *.<project>.glitch.me",
+    "remark": "Glitch — *.<project>.glitch.me | App/project hosting ended July 2025 (company announcement); glitch.com now blog-only.",
     "signup_verification": "email",
-    "status": "active",
+    "status": "discontinued",
     "type": "web",
+    "until": 2025,
     "updates": "static"
+  },
+  "gmx.net": {
+    "costs": "free",
+    "hosts": [
+      "gmx.net"
+    ],
+    "jurisdiction": "DE",
+    "post_methods": [
+      "web"
+    ],
+    "public": false,
+    "remark": "GMX Homepage - mail-account-bundled site builder; requires GMX mail account.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "restricted",
+    "type": "web",
+    "updates": "dynamic",
+    "url": "https://www.gmx.net/"
   },
   "gntc.com": {
     "cloud": "Cloudflare",
@@ -4359,6 +5202,48 @@
     "status": "active",
     "type": "web",
     "updates": "static"
+  },
+  "goo.ne.jp": {
+    "costs": "free",
+    "feeds": [
+      "rss"
+    ],
+    "hosts": [
+      "goo.ne.jp"
+    ],
+    "jurisdiction": "JP",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "gooブログ - JP blog platform at blog.goo.ne.jp/<user>; main portal NX for goo.ne.jp, service at blog.goo.ne.jp.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "blog",
+    "updates": "dynamic",
+    "url": "https://blog.goo.ne.jp/"
+  },
+  "googiehost.com": {
+    "ads": false,
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "googiehost.com"
+    ],
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "GoogieHost - free hosting w/ cPanel+SSL 'zero ads', free subdomain; upsells paid plans.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "web",
+    "updates": "dynamic",
+    "url": "https://googiehost.com/"
   },
   "google.com": {
     "api": true,
@@ -4462,6 +5347,24 @@
     "updates": "static",
     "url": "https://grebedoc.dev/"
   },
+  "grex.org": {
+    "ads": false,
+    "costs": "free",
+    "hosts": [
+      "grex.org"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "grex.org - the original open pubnix (1991); user pages grex.org/~user; signup currently intermittent/limited.",
+    "since": 1991,
+    "status": "no_new_registrations",
+    "type": "pages",
+    "updates": "static",
+    "url": "https://grex.org/"
+  },
   "grupo.jp": {
     "ads": true,
     "cloud": "Cloudflare",
@@ -4495,6 +5398,26 @@
     "type": "web",
     "updates": "static",
     "url": "https://gsj.bz/"
+  },
+  "gumroad.com": {
+    "costs": "free",
+    "custom_domain": true,
+    "hosts": [
+      "gumroad.com"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Gumroad - digital-product storefronts on username.gumroad.com; free, revenue-share fees.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "store",
+    "updates": "dynamic",
+    "url": "https://gumroad.com/"
   },
   "hackclub.app": {
     "cloud": "Hetzner",
@@ -4751,6 +5674,27 @@
     "updates": "static",
     "url": "https://homebase.id/"
   },
+  "homestead.com": {
+    "costs": "paid",
+    "custom_domain": true,
+    "hosts": [
+      "homestead.com",
+      "homesteadcloud.com"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Homestead (Web.com) - legacy paid site builder on *.homestead.com; no free tier.",
+    "signup_verification": [
+      "payment"
+    ],
+    "status": "active",
+    "type": "builder",
+    "updates": "dynamic",
+    "url": "https://www.homestead.com/"
+  },
   "hoplix.com": {
     "cloud": "Cloudflare",
     "hosted": "CA",
@@ -4765,6 +5709,22 @@
     "updates": "static",
     "url": "https://hoplix.com/"
   },
+  "host.sk": {
+    "costs": "free",
+    "hosts": [
+      "host.sk",
+      "s5.sk",
+      "s3.sk",
+      "host3.sk"
+    ],
+    "jurisdiction": "SK",
+    "public": false,
+    "remark": "host.sk - SK free PHP hosting (subdomains on host.sk/s5.sk/s3.sk); NXDOMAIN.",
+    "status": "discontinued",
+    "type": "web",
+    "until": 2023,
+    "url": "http://www.host.sk/"
+  },
   "hoster-test.ru": {
     "costs": "paid",
     "hosts": [
@@ -4777,6 +5737,27 @@
     "type": "web",
     "updates": "static",
     "url": "http://hoster-test.ru/"
+  },
+  "hostim.dev": {
+    "api": true,
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "hostim.dev"
+    ],
+    "post_methods": [
+      "git",
+      "api"
+    ],
+    "public": true,
+    "remark": "Hostim.dev - Docker app hosting, 5-day app trial + always-free managed DBs (256MB PG/MySQL, 128MB Redis).",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "paas",
+    "updates": "dynamic",
+    "url": "https://hostim.dev/"
   },
   "hosting.url.com.tw": {
     "cloud": "Chunghwa",
@@ -4835,6 +5816,27 @@
     "type": "web",
     "updates": "static",
     "url": "https://www.hostyhosting.com/"
+  },
+  "hpage.com": {
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "hpage.com",
+      "npage.de"
+    ],
+    "jurisdiction": "DE",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "hPage - German site builder; user sites on *.npage.de (DE) and *.hpage.com (INT); free + premium.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "builder",
+    "updates": "dynamic",
+    "url": "https://www.hpage.com/"
   },
   "hs-heilbronn.de": {
     "hosted": "DE",
@@ -4947,6 +5949,27 @@
     "updates": "dynamic",
     "url": "https://hz.cz/"
   },
+  "ic.cz": {
+    "ads": true,
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "ic.cz"
+    ],
+    "jurisdiction": "CZ",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "IC.cz - CZ free hosting on *.ic.cz (4550+ user certs); ad banner on free sites + paid tiers.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "web",
+    "updates": "dynamic",
+    "url": "https://www.ic.cz/"
+  },
   "icilalune.com": {
     "cloud": "AWS",
     "hosted": "US",
@@ -4961,6 +5984,26 @@
     "updates": "static",
     "url": "https://icilalune.com/"
   },
+  "ilbello.com": {
+    "costs": "free",
+    "custom_domain": true,
+    "hosts": [
+      "ilbello.com"
+    ],
+    "jurisdiction": "IT",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "ilBello (team.blue) - IT 'Hosting Gratis'; free sites on *.ilbello.com.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "web",
+    "updates": "dynamic",
+    "url": "https://www.ilbello.com/"
+  },
   "imagine.dev": {
     "cloud": "Cloudflare",
     "hosted": "CA",
@@ -4974,6 +6017,27 @@
     "type": "web",
     "updates": "static",
     "url": "https://imagine.dev/"
+  },
+  "imcreator.com": {
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "imcreator.com",
+      "im-creator.com"
+    ],
+    "jurisdiction": "IL",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "IM Creator - designer site builder; free for students/artists/nonprofits (application), Pro from ~$10/mo.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "builder",
+    "updates": "dynamic",
+    "url": "https://imcreator.com/"
   },
   "in-berlin.de": {
     "costs": "free",
@@ -5102,6 +6166,27 @@
     "updates": "static",
     "url": "https://www.inmotionhosting.com/"
   },
+  "insanejournal.com": {
+    "costs": "free",
+    "hosts": [
+      "insanejournal.com",
+      "asylums.insanejournal.com"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "InsaneJournal - LJ-codebase diary host on *.insanejournal.com (asylums.insanejournal.com for communities); moribund.",
+    "signup_verification": [
+      "email"
+    ],
+    "since": 2005,
+    "status": "active",
+    "type": "blog",
+    "updates": "dynamic",
+    "url": "https://www.insanejournal.com/"
+  },
   "inventor.gg": {
     "cloud": "Cloudflare",
     "hosted": "CA",
@@ -5174,6 +6259,27 @@
     "type": "web",
     "updates": "static",
     "url": "https://iqhost.pl/"
+  },
+  "jcink.net": {
+    "ads": true,
+    "costs": "free",
+    "hosts": [
+      "jcink.net",
+      "jcink.com"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Jcink - free forum hosting on *.jcink.net / *.jcink.com; ad-supported.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "forum",
+    "updates": "dynamic",
+    "url": "https://jcink.net/"
   },
   "jelastic.com": {
     "cloud": "Cloudflare",
@@ -5486,6 +6592,29 @@
     "updates": "static",
     "url": "https://knightpoint.com/"
   },
+  "ko-fi.com": {
+    "costs": "freemium",
+    "feeds": [
+      "rss"
+    ],
+    "hosts": [
+      "ko-fi.com"
+    ],
+    "jurisdiction": "GB",
+    "post_methods": [
+      "web",
+      "mobile-app"
+    ],
+    "public": true,
+    "remark": "Ko-fi - creator tip/donation pages + posts at ko-fi.com/<user>; free + Gold removes fees/branding.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "dynamic",
+    "url": "https://ko-fi.com/"
+  },
   "koobin.com": {
     "cloud": "AWS",
     "hosted": "DE",
@@ -5498,6 +6627,48 @@
     "type": "web",
     "updates": "static",
     "url": "https://koobin.com/"
+  },
+  "koyeb.com": {
+    "api": true,
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "koyeb.app"
+    ],
+    "jurisdiction": "FR",
+    "post_methods": [
+      "git",
+      "api"
+    ],
+    "public": true,
+    "remark": "Koyeb - serverless PaaS, free nano instance w/o CC; apps on *.koyeb.app.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "paas",
+    "updates": "dynamic",
+    "url": "https://www.koyeb.com/"
+  },
+  "kuberns.com": {
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "kuberns.cloud"
+    ],
+    "post_methods": [
+      "git",
+      "web"
+    ],
+    "public": true,
+    "remark": "Kuberns - AI agentic deploy platform; $0 platform fee free tier (pay cloud costs), *.kuberns.cloud app URLs - verify suffix.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "paas",
+    "updates": "dynamic",
+    "url": "https://www.kuberns.com/"
   },
   "kuleuven.be": {
     "hosted": "BE",
@@ -5588,6 +6759,26 @@
     "updates": "static",
     "url": "https://leapcell.io/"
   },
+  "lemonsqueezy.com": {
+    "costs": "free",
+    "custom_domain": true,
+    "hosts": [
+      "lemonsqueezy.com"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Lemon Squeezy (Stripe-owned) - creator stores on *.lemonsqueezy.com; free, revenue-share fees.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "store",
+    "updates": "dynamic",
+    "url": "https://www.lemonsqueezy.com/"
+  },
   "liara.ir": {
     "hosted": "IR",
     "hosts": [
@@ -5646,6 +6837,27 @@
     "type": "web",
     "updates": "static",
     "url": "https://www.lima-city.de"
+  },
+  "linktr.ee": {
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "linktr.ee"
+    ],
+    "jurisdiction": "AU",
+    "post_methods": [
+      "web",
+      "mobile-app"
+    ],
+    "public": true,
+    "remark": "Linktree - original link-in-bio service, pages at linktr.ee/<user>; free + Pro branding removal.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "dynamic",
+    "url": "https://linktr.ee/"
   },
   "linkyard.ch": {
     "cloud": "Cloudflare",
@@ -5771,6 +6983,25 @@
     "status": "active",
     "type": "blog",
     "url": "https://www.livejournal.com/"
+  },
+  "lnk.bio": {
+    "costs": "freemium",
+    "hosts": [
+      "lnk.bio"
+    ],
+    "jurisdiction": "IT",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Lnk.Bio - link-in-bio at lnk.bio/<user>; free + paid.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "dynamic",
+    "url": "https://lnk.bio/"
   },
   "localtonet.com": {
     "cloud": "Oracle Cloud",
@@ -6422,6 +7653,31 @@
     "updates": "static",
     "url": "https://million.dev/"
   },
+  "miraheze.org": {
+    "ads": false,
+    "costs": "free",
+    "custom_domain": true,
+    "feeds": [
+      "rss",
+      "atom"
+    ],
+    "hosts": [
+      "miraheze.org"
+    ],
+    "jurisdiction": "GB",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Miraheze - nonprofit MediaWiki farm on *.miraheze.org; donation-funded, no ads, request-based wiki creation.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "app",
+    "updates": "dynamic",
+    "url": "https://miraheze.org/"
+  },
   "miren.dev": {
     "cloud": "Hetzner",
     "hosted": "DE",
@@ -6481,6 +7737,19 @@
     "updates": "static",
     "url": "https://modx.com/"
   },
+  "moonfruit.com": {
+    "costs": "free",
+    "hosts": [
+      "moonfruit.com"
+    ],
+    "jurisdiction": "GB",
+    "public": false,
+    "remark": "Moonfruit - UK Flash/HTML5 site builder; shut down by Yell ~2021, domain now a content farm.",
+    "status": "discontinued",
+    "type": "builder",
+    "until": 2021,
+    "url": "http://www.moonfruit.com/"
+  },
   "motocms.com": {
     "cloud": "Cloudflare",
     "costs": "paid",
@@ -6537,6 +7806,29 @@
     "type": "web",
     "updates": "static",
     "url": "http://www.myxop.com/"
+  },
+  "nabble.com": {
+    "costs": "free",
+    "feeds": [
+      "rss"
+    ],
+    "hosts": [
+      "nabble.com"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web",
+      "email"
+    ],
+    "public": true,
+    "remark": "Nabble - free embeddable forums/mailing-list archives on *.nabble.com.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "forum",
+    "updates": "dynamic",
+    "url": "http://www.nabble.com/"
   },
   "natfrp.com": {
     "cloud": "Cloudflare",
@@ -6719,6 +8011,61 @@
     "type": "paas",
     "updates": "static"
   },
+  "netsons.com": {
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "netsons.org"
+    ],
+    "jurisdiction": "IT",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Netsons - IT free hosting tier; free sites on *.netsons.org (2500+ user certs).",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "web",
+    "updates": "dynamic",
+    "url": "https://www.netsons.com/"
+  },
+  "netvibes.com": {
+    "costs": "freemium",
+    "feeds": [
+      "rss"
+    ],
+    "hosts": [
+      "netvibes.com"
+    ],
+    "jurisdiction": "FR",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Netvibes - classic RSS dashboard/startpage, public pages at netvibes.com/<name>; free + VIP.",
+    "status": "active",
+    "type": "pages",
+    "updates": "dynamic",
+    "url": "https://www.netvibes.com/"
+  },
+  "network54.com": {
+    "costs": "free",
+    "hosts": [
+      "network54.com"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Network54 - long-running free forum host, path-based network54.com/Forum/<id>.",
+    "status": "active",
+    "type": "forum",
+    "updates": "dynamic",
+    "url": "https://www.network54.com/"
+  },
   "nft.storage": {
     "cloud": "AWS",
     "costs": "free",
@@ -6748,6 +8095,25 @@
     "type": "web",
     "updates": "static",
     "url": "https://nimbushosting.co.uk/"
+  },
+  "nippy.host": {
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "nippy.site"
+    ],
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Nippy - drag-drop file/photo publishing; free site 25MB on your-name.nippy.site.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "static",
+    "url": "https://nippy.host/"
   },
   "nitrado.hosting": {
     "costs": "paid",
@@ -7067,6 +8433,19 @@
     "updates": "static",
     "url": "https://opencraft.com/"
   },
+  "opendiary.com": {
+    "costs": "freemium",
+    "hosts": [
+      "opendiary.com"
+    ],
+    "jurisdiction": "US",
+    "public": false,
+    "remark": "Open Diary - pioneering diary community on *.opendiary.com; shut down 2018 (partial relaunch fizzled).",
+    "status": "discontinued",
+    "type": "blog",
+    "until": 2018,
+    "url": "https://www.opendiary.com/"
+  },
   "openresearch.com": {
     "cloud": "AWS",
     "hosted": "DE",
@@ -7204,6 +8583,39 @@
     "type": "pages",
     "updates": "static"
   },
+  "pagesperso-orange.fr": {
+    "costs": "free",
+    "hosts": [
+      "pagesperso-orange.fr"
+    ],
+    "jurisdiction": "FR",
+    "post_methods": [
+      "web"
+    ],
+    "public": false,
+    "remark": "Pages perso Orange - FR ISP personal pages at *.pagesperso-orange.fr; requires Orange account.",
+    "status": "restricted",
+    "type": "web",
+    "updates": "static",
+    "url": "https://pagesperso-orange.fr/"
+  },
+  "panix.com": {
+    "costs": "paid",
+    "hosts": [
+      "panix.com"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": false,
+    "remark": "Panix - historic NYC ISP; shell+web space for customers at panix.com/~user.",
+    "since": 1989,
+    "status": "restricted",
+    "type": "web",
+    "updates": "both",
+    "url": "https://www.panix.com/"
+  },
   "pantheon.io": {
     "cloud": "Fastly",
     "hosted": "US",
@@ -7231,6 +8643,26 @@
     "type": "app",
     "updates": "static",
     "url": "https://paywhirl.com/"
+  },
+  "pbworks.com": {
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "pbworks.com"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "PBworks (formerly PBwiki) - wiki workspaces on *.pbworks.com; free basic + paid business tiers.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "app",
+    "updates": "dynamic",
+    "url": "https://www.pbworks.com/"
   },
   "pcarrier.ca": {
     "cloud": "Hetzner",
@@ -7403,6 +8835,22 @@
     "type": "blog",
     "url": "https://persianblog.ir/"
   },
+  "perso.free.fr": {
+    "costs": "free",
+    "hosts": [
+      "free.fr"
+    ],
+    "jurisdiction": "FR",
+    "post_methods": [
+      "web"
+    ],
+    "public": false,
+    "remark": "Pages perso Free (Free.fr) - classic FR ISP personal pages at *.free.fr; requires Free.fr ISP account - customer-only.",
+    "status": "restricted",
+    "type": "web",
+    "updates": "static",
+    "url": "http://www.free.fr/"
+  },
   "phplist.com": {
     "cloud": "Akamai",
     "costs": "free",
@@ -7468,6 +8916,30 @@
     "type": "app",
     "updates": "static",
     "url": "https://pingidentity.com/"
+  },
+  "pixnet.net": {
+    "ads": true,
+    "costs": "freemium",
+    "feeds": [
+      "rss"
+    ],
+    "hosts": [
+      "pixnet.net"
+    ],
+    "jurisdiction": "TW",
+    "post_methods": [
+      "web",
+      "mobile-app"
+    ],
+    "public": true,
+    "remark": "痞客邦 PIXNET - largest Taiwanese blog platform, blogs on *.pixnet.net; ad-supported free + VIP.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "blog",
+    "updates": "dynamic",
+    "url": "https://www.pixnet.net/"
   },
   "pixolino.com": {
     "cloud": "Google Cloud",
@@ -7554,6 +9026,46 @@
     "updates": "static",
     "url": "https://pley.com/"
   },
+  "plurk.com": {
+    "costs": "free",
+    "hosts": [
+      "plurk.com"
+    ],
+    "jurisdiction": "TW",
+    "post_methods": [
+      "web",
+      "mobile-app"
+    ],
+    "public": true,
+    "remark": "Plurk - microblog timeline service, profiles at plurk.com/<user>; popular in TW/SEA.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "microblog",
+    "updates": "dynamic",
+    "url": "https://www.plurk.com/"
+  },
+  "podia.com": {
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "podia.com"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Podia - course/digital-product storefronts on *.podia.com; free plan w/ fees, paid tiers.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "store",
+    "updates": "dynamic",
+    "url": "https://www.podia.com/"
+  },
   "porter.run": {
     "cloud": "Cloudflare",
     "hosted": "US",
@@ -7566,6 +9078,26 @@
     "type": "paas",
     "updates": "static",
     "url": "https://porter.run/"
+  },
+  "portfoliobox.net": {
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "portfoliobox.net"
+    ],
+    "jurisdiction": "SE",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Portfoliobox - portfolio builder for creatives; free site on *.portfoliobox.net + Pro.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "dynamic",
+    "url": "https://www.portfoliobox.net/"
   },
   "postach.io": {
     "costs": "freemium",
@@ -7684,6 +9216,28 @@
     "updates": "static",
     "url": "https://prgmr.com/"
   },
+  "proboards.com": {
+    "ads": true,
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "proboards.com",
+      "boards.net"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "ProBoards - free hosted forums on *.proboards.com / *.boards.net; ads on free plan; premium removes ads + custom domains.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "forum",
+    "updates": "dynamic",
+    "url": "https://www.proboards.com/"
+  },
   "profreehost.com": {
     "ads": false,
     "cloud": "Cloudflare",
@@ -7727,6 +9281,25 @@
     "type": "devtool",
     "updates": "static",
     "url": "https://project-study.com/"
+  },
+  "protopage.com": {
+    "costs": "freemium",
+    "feeds": [
+      "rss"
+    ],
+    "hosts": [
+      "protopage.com"
+    ],
+    "jurisdiction": "GB",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Protopage - RSS startpages, public pages at protopage.com/<name>; free w/ ads, paid ad-free.",
+    "status": "active",
+    "type": "pages",
+    "updates": "dynamic",
+    "url": "https://www.protopage.com/"
   },
   "pubtls.org": {
     "cloud": "Google Cloud",
@@ -7995,6 +9568,25 @@
     "type": "builder",
     "updates": "static",
     "url": "https://ravpage.co.il/"
+  },
+  "rawtext.club": {
+    "ads": false,
+    "costs": "free",
+    "hosts": [
+      "rawtext.club"
+    ],
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "rawtext.club - pubnix; user pages at rawtext.club/~user; application-based signup.",
+    "signup_verification": [
+      "other"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "static",
+    "url": "https://rawtext.club/"
   },
   "readthedocs.io": {
     "api": true,
@@ -8423,6 +10015,25 @@
     "updates": "static",
     "url": "https://salesforce.com/"
   },
+  "salon24.pl": {
+    "costs": "free",
+    "hosts": [
+      "salon24.pl"
+    ],
+    "jurisdiction": "PL",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Salon24 - PL opinion-blog platform, blogs at salon24.pl/u/<user> path; free.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "blog",
+    "updates": "dynamic",
+    "url": "https://salon24.pl/"
+  },
   "sasf.org.cn": {
     "cloud": "Cloudflare",
     "hosted": "CA",
@@ -8467,6 +10078,28 @@
     "type": "web",
     "updates": "static",
     "url": "https://scrysec.com/"
+  },
+  "sdf.org": {
+    "ads": false,
+    "costs": "free",
+    "hosts": [
+      "sdf.org",
+      "freeshell.org"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "SDF Public Access UNIX - free shell accounts w/ user pages at sdf.org/~user (freeshell.org); prevalidated (donation) accounts.",
+    "signup_verification": [
+      "other"
+    ],
+    "since": 1987,
+    "status": "active",
+    "type": "pages",
+    "updates": "dynamic",
+    "url": "https://sdf.org/"
   },
   "seesaa.net": {
     "costs": "free",
@@ -8860,6 +10493,40 @@
     "updates": "static",
     "url": "https://snt.utwente.nl/"
   },
+  "solo.to": {
+    "costs": "freemium",
+    "hosts": [
+      "solo.to"
+    ],
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "solo.to - link-in-bio pages at solo.to/<user>.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "dynamic",
+    "url": "https://solo.to/"
+  },
+  "sonic.net": {
+    "costs": "paid",
+    "hosts": [
+      "sonic.net"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": false,
+    "remark": "Sonic.net - NorCal ISP; customer web space.",
+    "status": "restricted",
+    "type": "web",
+    "updates": "both",
+    "url": "https://www.sonic.net/"
+  },
   "sound.jp": {
     "cloud": "Cloudflare",
     "costs": "freemium",
@@ -9022,6 +10689,17 @@
     "updates": "static",
     "url": "https://www.squarespace.com/"
   },
+  "squiggle.city": {
+    "costs": "free",
+    "hosts": [
+      "squiggle.city"
+    ],
+    "public": false,
+    "remark": "squiggle.city - tilde pubnix; domain unreachable.",
+    "status": "discontinued",
+    "type": "pages",
+    "until": 2024
+  },
   "srcf.net": {
     "hosted": "GB",
     "hosts": [
@@ -9124,6 +10802,28 @@
     "updates": "static",
     "url": "https://staclar.com/"
   },
+  "start.me": {
+    "costs": "freemium",
+    "feeds": [
+      "rss"
+    ],
+    "hosts": [
+      "start.me"
+    ],
+    "jurisdiction": "NL",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "start.me - startpage/bookmark dashboards, public pages at start.me/p/<id>; free + Pro.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "dynamic",
+    "url": "https://start.me/"
+  },
   "start.page": {
     "cloud": "Cloudflare",
     "costs": "freemium",
@@ -9223,6 +10923,26 @@
     "type": "store",
     "updates": "static",
     "url": "https://storebase.io/"
+  },
+  "storenvy.com": {
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "storenvy.com"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Storenvy - free indie storefronts on *.storenvy.com + marketplace; paid custom domain/features.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "store",
+    "updates": "dynamic",
+    "url": "https://www.storenvy.com/"
   },
   "strapi.io": {
     "cloud": "AWS",
@@ -9401,6 +11121,26 @@
     "updates": "static",
     "url": "https://swtest.ru"
   },
+  "symbaloo.com": {
+    "ads": true,
+    "costs": "free",
+    "hosts": [
+      "symbaloo.com"
+    ],
+    "jurisdiction": "NL",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Symbaloo - visual bookmark startpages, public webmixes at symbaloo.com/<name>; ad-supported free.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "dynamic",
+    "url": "https://www.symbaloo.com/"
+  },
   "systeme.io": {
     "cloud": "AWS",
     "costs": "freemium",
@@ -9415,6 +11155,25 @@
     "type": "builder",
     "updates": "static",
     "url": "https://systeme.io/"
+  },
+  "t35.com": {
+    "costs": "freemium",
+    "hosts": [
+      "t35.com"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "T35 Hosting - long-running free web host turned mostly-paid; *.t35.com accounts still resolve.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "web",
+    "updates": "dynamic",
+    "url": "https://www.t35.com/"
   },
   "tabit.cloud": {
     "hosted": "US",
@@ -9459,6 +11218,26 @@
     "type": "pages",
     "until": 2026,
     "url": "https://tap.bio/"
+  },
+  "taplink.cc": {
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "taplink.cc",
+      "taplink.at"
+    ],
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Taplink - link-in-bio/mini-site builder at taplink.cc/<user> (+ taplink.at), popular in RU/EU markets.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "dynamic",
+    "url": "https://taplink.cc/"
   },
   "tastewp.com": {
     "cloud": "Cloudflare",
@@ -9582,6 +11361,26 @@
     "type": "notes",
     "url": "https://telegra.ph/"
   },
+  "teletype.in": {
+    "costs": "free",
+    "hosts": [
+      "teletype.in"
+    ],
+    "jurisdiction": "RU",
+    "markdown": true,
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Teletype - minimalist RU publishing, pages at teletype.in/@user; free.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "notes",
+    "updates": "dynamic",
+    "url": "https://teletype.in/"
+  },
   "theendlessweb.com": {
     "costs": "freemium",
     "hosts": [
@@ -9599,6 +11398,44 @@
     "type": "web",
     "updates": "dynamic",
     "url": "https://theendlessweb.com/"
+  },
+  "theworld.com": {
+    "costs": "paid",
+    "hosts": [
+      "theworld.com",
+      "world.std.com"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": false,
+    "remark": "The World (world.std.com) - first commercial ISP; user pages for shell customers.",
+    "since": 1989,
+    "status": "restricted",
+    "type": "web",
+    "updates": "both",
+    "url": "https://www.theworld.com/"
+  },
+  "thunix.net": {
+    "ads": false,
+    "costs": "free",
+    "hosts": [
+      "thunix.net",
+      "thunix.com"
+    ],
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "thunix - pubnix; user pages at thunix.net/~user; application-based signup.",
+    "signup_verification": [
+      "other"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "static",
+    "url": "https://thunix.net/"
   },
   "ticket.io": {
     "cloud": "AWS",
@@ -9647,6 +11484,64 @@
     "type": "pages",
     "updates": "static",
     "url": "https://tiiny.host/"
+  },
+  "tilde.club": {
+    "ads": false,
+    "costs": "free",
+    "hosts": [
+      "tilde.club"
+    ],
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "tilde.club - original tilde pubnix (2014); user pages at tilde.club/~user.",
+    "signup_verification": [
+      "other"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "static",
+    "url": "http://tilde.club/"
+  },
+  "tilde.team": {
+    "ads": false,
+    "costs": "free",
+    "hosts": [
+      "tilde.team"
+    ],
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "tilde.team - pubnix community; user pages at tilde.team/~user; application-based signup.",
+    "signup_verification": [
+      "other"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "static",
+    "url": "https://tilde.team/"
+  },
+  "tilde.town": {
+    "ads": false,
+    "costs": "free",
+    "hosts": [
+      "tilde.town"
+    ],
+    "post_methods": [
+      "web",
+      "git"
+    ],
+    "public": true,
+    "remark": "tilde.town - pubnix community; free shell account w/ personal page at tilde.town/~user; application-based signup.",
+    "signup_verification": [
+      "other"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "static",
+    "url": "https://tilde.town/"
   },
   "timeweb.ru": {
     "costs": "paid",
@@ -9770,6 +11665,21 @@
     "type": "web",
     "updates": "static",
     "url": "https://trafficplex.de/"
+  },
+  "tripod.com": {
+    "ads": true,
+    "costs": "free",
+    "hosts": [
+      "tripod.com"
+    ],
+    "jurisdiction": "US",
+    "public": false,
+    "remark": "Tripod (Lycos) - classic free homepage host on *.tripod.com; portal/NX dead, user sites may linger.",
+    "since": 1995,
+    "status": "discontinued",
+    "type": "web",
+    "until": 2025,
+    "url": "http://www.tripod.com/"
   },
   "tritondatacenter.com": {
     "cloud": "Google Cloud",
@@ -9943,6 +11853,28 @@
     "type": "builder",
     "url": "https://www.ucoz.com/"
   },
+  "ucraft.me": {
+    "ads": true,
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "ucraft.me",
+      "ucraft.com"
+    ],
+    "jurisdiction": "AM",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Ucraft - site builder; free plan on *.ucraft.me displays Ucraft branding/ads.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "builder",
+    "updates": "dynamic",
+    "url": "https://www.ucraft.com/"
+  },
   "ueuo.com": {
     "costs": "free",
     "expire_days": 30,
@@ -10031,6 +11963,17 @@
     "type": "builder",
     "updates": "static",
     "url": "https://umso.com/"
+  },
+  "unblog.fr": {
+    "costs": "free",
+    "hosts": [
+      "unblog.fr"
+    ],
+    "public": false,
+    "remark": "unblog.fr - FR WP-MU blogs on *.unblog.fr; dead.",
+    "status": "discontinued",
+    "type": "blog",
+    "until": 2024
   },
   "unbounce.com": {
     "cloud": "Cloudflare",
@@ -10152,6 +12095,29 @@
     "updates": "static",
     "url": "https://vercel.com/"
   },
+  "vern.cc": {
+    "ads": false,
+    "costs": "free",
+    "hosts": [
+      "vern.cc",
+      "vern.st",
+      "vern.su",
+      "vern.im",
+      "vern.buzz"
+    ],
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "~vern - privacy-focused pubnix offering web space, email, XMPP, gemini across several domains (vern.cc/.st/.su/.im/.buzz); user pages ~user.",
+    "signup_verification": [
+      "other"
+    ],
+    "status": "active",
+    "type": "pages",
+    "updates": "both",
+    "url": "https://vern.cc/"
+  },
   "virtual-info.info": {
     "cloud": "OVH",
     "hosted": "PL",
@@ -10227,6 +12193,25 @@
     "type": "web",
     "updates": "static",
     "url": "https://voorloper.com/"
+  },
+  "voy.com": {
+    "costs": "free",
+    "hosts": [
+      "voy.com"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "VoyForums - free forum hosting since 1997, path-based voy.com/<id>.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "forum",
+    "updates": "dynamic",
+    "url": "https://www.voy.com/"
   },
   "vultr.com": {
     "hosted": "US",
@@ -10312,6 +12297,45 @@
     "type": "paas",
     "updates": "static"
   },
+  "web.de": {
+    "costs": "free",
+    "hosts": [
+      "web.de"
+    ],
+    "jurisdiction": "DE",
+    "post_methods": [
+      "web"
+    ],
+    "public": false,
+    "remark": "WEB.DE Homepage - mail-account-bundled site builder; requires WEB.DE account.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "restricted",
+    "type": "web",
+    "updates": "dynamic",
+    "url": "https://web.de/"
+  },
+  "webador.com": {
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "webador.com"
+    ],
+    "jurisdiction": "NL",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Webador - NL site builder; free plan includes webador subdomain; paid Lite/Business.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "builder",
+    "updates": "dynamic",
+    "url": "https://www.webador.com/"
+  },
   "webflow.com": {
     "api": true,
     "cloud": "AWS",
@@ -10391,6 +12415,19 @@
     "until": 2012,
     "url": "http://weblogs.co/"
   },
+  "weblogy.cz": {
+    "costs": "free",
+    "hosts": [
+      "weblogy.cz"
+    ],
+    "jurisdiction": "CZ",
+    "public": false,
+    "remark": "Weblogy.cz - early CZ blog host; domain now redirects to lupa.cz.",
+    "status": "discontinued",
+    "type": "blog",
+    "until": 2019,
+    "url": "http://weblogy.cz/"
+  },
   "webnode.com": {
     "api": true,
     "cloud": "AWS",
@@ -10435,6 +12472,20 @@
     "type": "web",
     "updates": "static",
     "url": "https://webpros.com/"
+  },
+  "webs.com": {
+    "ads": true,
+    "costs": "free",
+    "hosts": [
+      "webs.com"
+    ],
+    "jurisdiction": "US",
+    "public": false,
+    "remark": "Webs.com (ex-Freewebs) - classic free builder on *.webs.com; shut down by Vistaprint 2021, redirects to Vistaprint.",
+    "status": "discontinued",
+    "type": "builder",
+    "until": 2021,
+    "url": "https://www.webs.com/"
   },
   "websitetestlink.com": {
     "costs": "paid",
@@ -10505,6 +12556,27 @@
     "type": "builder",
     "updates": "static",
     "url": "https://www.webydo.com/"
+  },
+  "webzdarma.cz": {
+    "ads": true,
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "wz.cz"
+    ],
+    "jurisdiction": "CZ",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Webzdarma (WZ.CZ) - classic CZ free hosting on *.wz.cz (3550 user certs); ad-supported free + paid ad-free.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "web",
+    "updates": "dynamic",
+    "url": "https://www.webzdarma.cz/"
   },
   "weebly.com": {
     "api": true,
@@ -10586,6 +12658,71 @@
     "type": "web",
     "updates": "static",
     "url": "https://wiardweb.com/"
+  },
+  "wiki.gg": {
+    "ads": false,
+    "costs": "free",
+    "custom_domain": true,
+    "hosts": [
+      "wiki.gg"
+    ],
+    "jurisdiction": "DE",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "wiki.gg - ad-free gaming wiki farm on *.wiki.gg; wikis onboarded via partnership with game communities.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "app",
+    "updates": "dynamic",
+    "url": "https://www.wiki.gg/"
+  },
+  "wikidot.com": {
+    "ads": true,
+    "costs": "freemium",
+    "custom_domain": true,
+    "feeds": [
+      "rss"
+    ],
+    "hosts": [
+      "wikidot.com",
+      "wdfiles.com"
+    ],
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Wikidot - wiki farm on *.wikidot.com (wdfiles.com for attachments); free with ads, paid ad-free.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "app",
+    "updates": "dynamic",
+    "url": "https://www.wikidot.com/"
+  },
+  "wikifab.org": {
+    "ads": false,
+    "costs": "free",
+    "hosts": [
+      "wikifab.org"
+    ],
+    "jurisdiction": "FR",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Wikifab - open knowledge-sharing wiki on *.wikifab.org for DIY/tutorials documentation.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "app",
+    "updates": "dynamic",
+    "url": "https://wikifab.org/"
   },
   "wikitech.wikimedia.org": {
     "hosted": "NL",
@@ -10885,6 +13022,54 @@
     "until": 2026,
     "url": "https://xlog.app/"
   },
+  "xmission.com": {
+    "costs": "paid",
+    "hosts": [
+      "xmission.com"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": false,
+    "remark": "XMission - Utah ISP; customer web space users.xmission.com/~user.",
+    "status": "restricted",
+    "type": "web",
+    "updates": "both",
+    "url": "https://xmission.com/"
+  },
+  "xobor.de": {
+    "costs": "freemium",
+    "hosts": [
+      "xobor.de"
+    ],
+    "jurisdiction": "DE",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Xobor - German free forum host on *.xobor.de; premium tiers.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "forum",
+    "updates": "dynamic",
+    "url": "https://www.xobor.de/"
+  },
+  "xoom.it": {
+    "costs": "free",
+    "hosts": [
+      "xoom.it"
+    ],
+    "jurisdiction": "IT",
+    "public": false,
+    "remark": "Xoom.it - historic IT free host (Virgilio); redirects to register.it now.",
+    "status": "discontinued",
+    "type": "web",
+    "until": 2016,
+    "url": "http://www.xoom.it/"
+  },
   "xrea.com": {
     "ads": true,
     "cloud": "Cloudflare",
@@ -10965,6 +13150,26 @@
     "type": "web",
     "updates": "static",
     "url": "https://yo.fr/"
+  },
+  "yola.com": {
+    "ads": true,
+    "costs": "freemium",
+    "custom_domain": true,
+    "hosts": [
+      "yolasite.com"
+    ],
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "Yola - site builder; free sites on *.yolasite.com show Yola ads (removal is paid).",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "builder",
+    "updates": "dynamic",
+    "url": "https://www.yola.com/"
   },
   "yolasite.com": {
     "api": true,
