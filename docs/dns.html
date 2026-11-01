@@ -205,7 +205,11 @@
             background: #dafbe1;
             color: var(--success-color);
         }
-        .badge-hosting {
+        .badge-hosting,
+        .badge-web, .badge-paas, .badge-pages, .badge-builder,
+        .badge-store, .badge-app, .badge-devtool, .badge-tunnel,
+        .badge-storage, .badge-forum, .badge-blog, .badge-microblog,
+        .badge-newsletter, .badge-notes {
             background: #ffe9d9;
             color: #bc4c00;
         }
@@ -546,16 +550,7 @@
                             <button type="button" class="filter-select-btn" aria-expanded="false">
                                 <span class="filter-select-label">Type: All</span><span class="filter-select-arrow">▾</span>
                             </button>
-                            <div class="filter-select-menu">
-                                <label class="filter-option" title="Dedicated dynamic-DNS hostname services"><input type="checkbox" value="ddns" checked>DDNS</label>
-                                <label class="filter-option" title="Authoritative DNS hosting for customer-owned domains"><input type="checkbox" value="dns-only" checked>DNS-only</label>
-                                <label class="filter-option" title="Web hosting/PaaS/site-builder subdomains"><input type="checkbox" value="hosting" checked>Hosting</label>
-                                <label class="filter-option" title="Shared-suffix registries - the subdomain itself is the product"><input type="checkbox" value="registry" checked>Registry</label>
-                                <label class="filter-option" title="Hostnames bound to vendor hardware/subscription"><input type="checkbox" value="vendor" checked>Vendor</label>
-                                <label class="filter-option" title="URL redirection/forwarding services"><input type="checkbox" value="redirect" checked>Redirect</label>
-                                <label class="filter-option" title="Infrastructure/security-boundary suffixes - not publicly registrable"><input type="checkbox" value="reserved" checked>Reserved</label>
-                                <label class="filter-option" title="Services without a recorded type"><input type="checkbox" value="unknown" checked>Unknown</label>
-                            </div>
+                            <div class="filter-select-menu" id="type-menu"></div>
                         </div>
                         <div class="filter-select" data-filter="costs" data-name="Costs">
                             <button type="button" class="filter-select-btn" aria-expanded="false">
@@ -637,7 +632,7 @@
 
     <footer>
         <div class="container">
-            <p>Data sourced from <a href="https://github.com/disposable/static-disposable-lists">static-disposable-lists</a> — dnsservices.json</p>
+            <p>Data sourced from <a href="https://github.com/disposable/static-disposable-lists">static-disposable-lists</a> — dnsservices.json + hosting.json</p>
             <p id="last-updated"></p>
         </div>
     </footer>
@@ -763,7 +758,12 @@
         function setFilterValues(name, values) {
             const sel = document.querySelector(`.filter-select[data-filter="${name}"]`);
             if (!sel) return;
-            const wanted = new Set(values.map(v => (name === 'reval' && v === 'required') ? 'revalidate' : v));
+            const hostingTypes = new Set(['web', 'paas', 'pages', 'builder', 'store', 'app', 'devtool', 'tunnel', 'storage', 'forum', 'blog', 'microblog', 'newsletter', 'notes']);
+            const wanted = new Set(values.flatMap(v => {
+                if (name === 'reval' && v === 'required') return ['revalidate'];
+                if (name === 'type' && v === 'hosting') return [...hostingTypes];
+                return [v];
+            }));
             sel.querySelectorAll('input[type="checkbox"]').forEach(b => {
                 b.checked = wanted.has(b.value);
             });
@@ -823,14 +823,36 @@
             rows.forEach(r => tbody.appendChild(r));
         }
 
+        const TYPE_LABELS = {
+            'ddns': 'DDNS', 'dns-only': 'DNS-only', 'registry': 'Registry',
+            'vendor': 'Vendor', 'redirect': 'Redirect', 'reserved': 'Reserved',
+            'web': 'Web', 'paas': 'PaaS', 'pages': 'Pages', 'builder': 'Builder',
+            'store': 'Store', 'app': 'App', 'devtool': 'Dev tool', 'tunnel': 'Tunnel',
+            'storage': 'Storage', 'forum': 'Forum', 'blog': 'Blog',
+            'microblog': 'Microblog', 'newsletter': 'Newsletter', 'notes': 'Notes',
+            'unknown': 'Unknown'
+        };
+
+        function buildTypeFilter(services) {
+            const types = [...new Set(Object.values(services).map(s => s.type || 'unknown'))];
+            types.sort((a, b) => a.localeCompare(b));
+            document.getElementById('type-menu').innerHTML = types.map(t =>
+                `<label class="filter-option"><input type="checkbox" value="${esc(t)}" checked>${esc(TYPE_LABELS[t] || t)}</label>`
+            ).join('');
+        }
+
         async function loadData() {
             try {
-                const response = await fetch('../dnsservices.json');
-                const services = await response.json();
+                const [dnsRes, hostRes] = await Promise.all([
+                    fetch('../dnsservices.json'),
+                    fetch('../hosting.json')
+                ]);
+                const services = { ...await dnsRes.json(), ...await hostRes.json() };
 
                 document.getElementById('loading').style.display = 'none';
                 document.getElementById('content').style.display = 'block';
 
+                buildTypeFilter(services);
                 renderStats(services);
                 renderServices(services);
                 renderOldHosts(services);
@@ -841,7 +863,7 @@
                 restoreFromHash();
                 setupSorting();
 
-                const lastModified = response.headers.get('Last-Modified');
+                const lastModified = dnsRes.headers.get('Last-Modified');
                 if (lastModified) {
                     document.getElementById('last-updated').textContent =
                         'Data last updated: ' + new Date(lastModified).toLocaleDateString();
@@ -891,7 +913,7 @@
             }
 
             const stats = [
-                { number: Object.keys(services).length, label: 'DNS Providers' },
+                { number: Object.keys(services).length, label: 'Providers' },
                 { number: totalDomains, label: 'Total Domains' },
                 { number: publicProviders, label: 'Public Signup' },
                 { number: apiProviders, label: 'With API' },
@@ -917,12 +939,12 @@
             const html = `
                 <div class="section-header">
                     <h2>
-                        DNS Service Providers
+                        Service Providers
                         <span class="count">${items.length}</span>
                     </h2>
                 </div>
                 <p class="empty-note">
-                    Dynamic DNS and free hostname providers.
+                    Dynamic DNS, free hostname and hosting providers.
                     <strong>public</strong> = hostnames registerable on the website;
                     <strong>private</strong> = registration only via vendor hardware/interface or gated access.
                     Domains list shows the parent domains under which hostnames are issued.

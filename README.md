@@ -15,7 +15,8 @@ Static data repository for disposable email domains and mail service definitions
 | [dnsservices-candidates.json](dnsservices-candidates.json) | Generated staging file: domains seen in upstream DNS lists but not yet cataloged, with provider hint, `added_on`/`last_checked`/`resolves` state and review marks (`status`, `validated`); review and promote into `dnsservices.json` |
 | [disposable-mail-hosts.json](disposable-mail-hosts.json) | Disposable mail-backend fingerprints: MX hostnames, hostname suffixes, IPv4 addresses and CIDR ranges used to attribute disposable domains to a provider |
 | [tunnelbrokers.json](tunnelbrokers.json) | IPv6 tunnel broker catalog (RFC 3053-style services): protocols, routed prefixes, BGP/rDNS/BYOIP support, endpoint update methods, PoPs and limits. Hand-curated; includes discontinued providers for reference |
-| [blogservices.json](blogservices.json) | Blog hosting service catalog (Blogger, WordPress.com, Tumblr, Postach.io, ...): issued hosts, pricing, feed formats, post creation methods, custom-domain support. Hand-curated; includes discontinued platforms for reference |
+| [hosting.json](hosting.json) | Hosting & publishing service catalog (web hosts, PaaS, site builders, blog platforms, newsletter/notes platforms, tunnels, SaaS subdomains, ...): issued hosts, pricing, feed formats, post creation methods, custom-domain support. Source of truth — hand-edited; `hosts` capped at 500 per provider. Includes discontinued platforms for reference |
+| [hosting.full.json](hosting.full.json) | Generated artifact — same records, `hosts` extended with every imported upstream domain |
 | [mail-data-hosts-net.txt](mail-data-hosts-net.txt) | Hostnames from mx.mail-data.net |
 | [manual.txt](manual.txt) | Manually curated list of disposable email domains |
 | [free.txt](free.txt) / [free.csv](free.csv) | Free email provider domain lists (staging resource for new `mailservices.json` entries, not consumed directly) |
@@ -112,30 +113,33 @@ Key fields per provider:
 | `status` / `costs` / `public` / `signup_verification` | Same semantics as `dnsservices.json`; `type` is `broker`, `vpn` (overlay-only) or `isp` (carrier-operated) |
 | `jurisdiction` | ISO country of the provider's legal seat; hand-curated (no `hosted`/`cloud` fields here) |
 
-### blogservices.json
+### hosting.json
 
-Catalog of hosted blogging and publishing platforms - services that give each user a public
-site or feed under a shared suffix (`user.blogspot.com`, `*.tumblr.com`, `*.wordpress.com`,
-path-based like `dev.to/user`). Covers classic blog platforms (Blogger, LiveJournal, Hatena,
-FC2, regional hosts like over-blog/blog.hu/blogfa), newsletter platforms (Substack, beehiiv,
-Buttondown), note/anonymous publishing (telegra.ph), sync-based platforms (Postach.io, Blot,
-Listed, Obsidian Publish), static page hosts usable for blogs (GitHub/GitLab/Codeberg Pages,
-Neocities, Notion Sites) and WYSIWYG builders with blog modules (Wix, Weebly, uCoz, Jimdo...).
+Catalog of hosted-site and publishing services - providers that give each user a public
+site, app, blog or feed under a shared suffix (`user.vercel.app`, `*.byethost.com`,
+`user.blogspot.com`, `*.tumblr.com`, `x.webflow.io`, ...). Covers classic web hosting
+(Byethost, Awardspace, bplaced, regional free hosts), deploy/PaaS platforms (Vercel, Netlify,
+Render, Workers), static page hosts (GitHub/GitLab Pages, Neocities, surge.sh), site builders
+(carrd, Webnode, Zyro, Weebly), e-commerce shops (myshopify, sellfy), SaaS-issued user
+subdomains (Retool, Typeform, Discord activities), tunnels (localtonet, trycloudflare) and
+publishing platforms (Blogger, WordPress.com, Tumblr, Substack, telegra.ph, Postach.io).
 Dead platforms (Typepad, soup.io, Skyrock, blox.pl) are kept as reference with
-`status: "discontinued"`. Hand-edited - no automated imports.
+`status: "discontinued"`. Hand-edited like `dnsservices.json` - `hosting.full.json` is the
+generated uncapped artifact.
 
 Key fields per provider:
 
 | Field | Meaning |
 |-------|---------|
-| `hosts` | Domain suffixes under which user blogs are served (subdomain- or path-based) |
+| `hosts` | Domain suffixes under which user sites/blogs/apps are served (subdomain- or path-based) |
 | `old_hosts` | Retired/discontinued suffixes |
-| `type` | `blog` (classic platform), `microblog` (tumblelog/short-form), `newsletter` (email-first), `notes` (single-page/anonymous), `pages` (static host, bring-your-own generator), `builder` (site builder with blog module) |
-| `feeds` | Syndication feed formats emitted per blog: `rss`, `atom`, `json` (JSON Feed); absent = none |
-| `post_methods` | How posts are created: `web`, `api`, `email` (post-by-email), `git` (push-deployed), `external-sync` (authored in an external app/notebook: Evernote→Postach.io, Standard Notes→Listed, Obsidian→Publish), `mobile-app`, `telegram-bot` |
-| `markdown` | Posts can be authored in Markdown |
-| `custom_domain` | Users can attach their own domain (free or paid) |
-| `status` / `costs` / `public` / `signup_verification` / `jurisdiction` / `hosted` / `cloud` | Same semantics as `dnsservices.json` |
+| `type` | Service subtype: `web` (generic/shared hosting), `paas` (deploy-your-code), `pages` (static hosting), `builder` (WYSIWYG site builder), `store` (e-commerce), `app` (SaaS user subdomains), `devtool` (online IDE/playground), `tunnel` (localhost exposure), `storage` (object/CDN), `forum` (hosted forum/community), `blog`, `microblog`, `newsletter`, `notes` |
+| `feeds` | Syndication feed formats emitted per site/blog: `rss`, `atom`, `json` (JSON Feed); absent = none |
+| `post_methods` | How content is created: `web`, `api`, `email` (post-by-email), `git` (push-deployed), `external-sync` (authored in an external app/notebook: Evernote→Postach.io, Standard Notes→Listed, Obsidian→Publish), `mobile-app`, `telegram-bot` |
+| `markdown` / `custom_domain` | Markdown authoring / own-domain support |
+| `updates` | `static` = hosted sites are static content, `dynamic` = server-side apps, `both` |
+| `expire_days` / `revalidation_days` | Auto-delete / manual revalidation periods for free sites (same semantics as `dnsservices.json`) |
+| `status` / `costs` / `public` / `signup_verification` / `jurisdiction` / `hosted` / `cloud` / `ns_suffixes` | Same semantics as `dnsservices.json` |
 
 
 ## JSON Schemas
@@ -150,7 +154,7 @@ All JSON data files are validated against schemas:
 | [schemas/dnsservices-candidates.schema.json](schemas/dnsservices-candidates.schema.json) | `dnsservices-candidates.json` |
 | [schemas/jurisdiction-overrides.schema.json](schemas/jurisdiction-overrides.schema.json) | `data/jurisdiction_overrides.json` |
 | [schemas/tunnelbrokers.schema.json](schemas/tunnelbrokers.schema.json) | `tunnelbrokers.json` |
-| [schemas/blogservices.schema.json](schemas/blogservices.schema.json) | `blogservices.json` |
+| [schemas/hosting.schema.json](schemas/hosting.schema.json) | `hosting.json`, `hosting.full.json` |
 
 
 ## Scripts

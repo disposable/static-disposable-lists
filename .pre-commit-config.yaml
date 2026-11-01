@@ -5,7 +5,7 @@ repos:
         name: Sort JSON keys alphabetically
         entry: python scripts/sort_json_keys.py
         language: python
-        files: ^(mailservices|disposable-mail-hosts|dnsservices|dnsservices-candidates|tunnelbrokers|blogservices)(\.full)?\.json$|^data/jurisdiction_overrides\.json$
+        files: ^(mailservices|disposable-mail-hosts|dnsservices|dnsservices-candidates|tunnelbrokers|hosting)(\.full)?\.json$|^data/jurisdiction_overrides\.json$
   - repo: https://github.com/python-jsonschema/check-jsonschema
     rev: 0.38.0
     hooks:
@@ -35,9 +35,9 @@ repos:
         args: ["--schemafile", "schemas/tunnelbrokers.schema.json"]
         additional_dependencies: []
       - id: check-jsonschema
-        name: Validate blogservices.json
-        files: ^blogservices\.json$
-        args: ["--schemafile", "schemas/blogservices.schema.json"]
+        name: Validate hosting.json
+        files: ^hosting(\.full)?\.json$
+        args: ["--schemafile", "schemas/hosting.schema.json"]
         additional_dependencies: []
       - id: check-jsonschema
         name: Validate jurisdiction_overrides.json

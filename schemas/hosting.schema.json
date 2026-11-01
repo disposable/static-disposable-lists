@@ -1,0 +1,161 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://disposable.github.io/static-disposable-lists/schemas/hosting.schema.json",
+  "type": "object",
+  "description": "Hosting and publishing service definitions: issued host suffixes, pricing, feed and publishing metadata",
+  "patternProperties": {
+    "^[^:]+$": {
+      "type": "object",
+      "description": "Hosting service provider",
+      "properties": {
+        "hosts": {
+          "type": "array",
+          "description": "Domain suffixes under which user sites/blogs/apps are served",
+          "items": {
+            "type": "string",
+            "format": "hostname"
+          }
+        },
+        "old_hosts": {
+          "type": "array",
+          "description": "Retired/discontinued suffixes",
+          "items": {
+            "type": "string",
+            "format": "hostname"
+          }
+        },
+        "hosts_total": {
+          "type": "integer",
+          "description": "Real host count, only present in hosting.json when hosts was truncated",
+          "minimum": 0
+        },
+        "url": {
+          "type": "string",
+          "description": "Service website URL"
+        },
+        "costs": {
+          "type": "string",
+          "description": "Pricing classification of the service itself",
+          "enum": ["free", "paid", "freemium"]
+        },
+        "type": {
+          "type": "string",
+          "description": "Service subtype: web = generic/shared web hosting; paas = deploy-your-code platform; pages = static site hosting; builder = WYSIWYG site builder; store = e-commerce/shop platform; app = SaaS product issuing user subdomains; devtool = online IDE/playground; tunnel = localhost tunnel/exposure; storage = object/CDN storage; forum = hosted forum/community; blog = classic blog platform; microblog = tumblelog/short-form; newsletter = email-first publishing; notes = single-page/anonymous publishing",
+          "enum": ["web", "paas", "pages", "builder", "store", "app", "devtool", "tunnel", "storage", "forum", "blog", "microblog", "newsletter", "notes"]
+        },
+        "status": {
+          "type": "string",
+          "description": "active = signups and publishing work; restricted = issuance limited to certain users; no_new_registrations = existing sites live, no new signups; discontinued = service shut down",
+          "enum": ["active", "restricted", "no_new_registrations", "discontinued"]
+        },
+        "public": {
+          "type": "boolean",
+          "description": "Whether anyone can sign up and publish"
+        },
+        "updates": {
+          "type": "string",
+          "description": "Whether hosted sites are static content or dynamic (server-side) apps",
+          "enum": ["dynamic", "static", "both"]
+        },
+        "feeds": {
+          "type": "array",
+          "description": "Syndication feed formats emitted per site/blog; absent = none",
+          "items": {
+            "type": "string",
+            "enum": ["rss", "atom", "json"]
+          }
+        },
+        "post_methods": {
+          "type": "array",
+          "description": "How content is created: web = browser editor; api = programmatic API; email = post-by-email; git = git push (static generators); external-sync = authored in an external app/notebook that syncs; mobile-app = dedicated app; telegram-bot = via Telegram bot",
+          "items": {
+            "type": "string",
+            "enum": ["web", "api", "email", "git", "external-sync", "mobile-app", "telegram-bot"]
+          }
+        },
+        "markdown": {
+          "type": "boolean",
+          "description": "Content can be authored in Markdown"
+        },
+        "custom_domain": {
+          "type": "boolean",
+          "description": "Users can attach their own domain (free or paid)"
+        },
+        "api": {
+          "type": "boolean",
+          "description": "Programmatic provisioning/management API"
+        },
+        "free_hostname_limit": {
+          "type": "integer",
+          "description": "Max free sites/hostnames per account",
+          "minimum": 1
+        },
+        "ns_suffixes": {
+          "type": "array",
+          "description": "Operator name-server suffixes serving the issued hosts",
+          "items": {
+            "type": "string",
+            "format": "hostname"
+          }
+        },
+        "record_types": {
+          "type": "array",
+          "description": "DNS record types users can set (where the service also offers DNS control)",
+          "items": {
+            "type": "string"
+          }
+        },
+        "expire_days": {
+          "type": "integer",
+          "description": "Days without update/visit after which free sites are auto-deleted",
+          "minimum": 1
+        },
+        "revalidation_days": {
+          "type": "integer",
+          "description": "Days after which users must manually revalidate to keep sites",
+          "minimum": 1
+        },
+        "own_domains": {
+          "type": "boolean",
+          "description": "Deprecated alias of custom_domain on imported records"
+        },
+        "signup_verification": {
+          "oneOf": [
+            {
+              "type": "string",
+              "enum": ["none", "email", "mobile", "payment", "other", "phone", "sms"]
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["none", "email", "mobile", "payment", "other", "sms", "phone"]
+              }
+            }
+          ]
+        },
+        "jurisdiction": {
+          "type": "string",
+          "description": "ISO 3166-1 alpha-2 country of the provider's legal seat",
+          "pattern": "^[A-Z]{2}$"
+        },
+        "hosted": {
+          "type": "string",
+          "description": "ISO 3166-1 alpha-2 country where the provider's service site resolves",
+          "pattern": "^[A-Z]{2}$"
+        },
+        "cloud": {
+          "type": "string",
+          "description": "Cloud/CDN operator hosting the service site"
+        },
+        "remark": {
+          "type": "string",
+          "description": "Additional notes about the service"
+        }
+      },
+      "required": ["hosts"],
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

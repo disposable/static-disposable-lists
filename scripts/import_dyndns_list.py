@@ -1,18 +1,21 @@
 #!/usr/bin/env python3
-"""Import domains from alexandrosmagos/dyn-dns-list into dnsservices.json
-and generate the uncapped dnsservices.full.json.
+"""Import domains from alexandrosmagos/dyn-dns-list into dnsservices.json and
+hosting.json, and generate the uncapped *.full.json artifacts.
 
 Upstream: https://github.com/alexandrosmagos/dyn-dns-list
 Source file: links.json (daily-generated, per-domain provider provenance)
 
 Files:
-  dnsservices.json      - source of truth, hand-edited and web-facing.
-                          Existing `hosts` are preserved verbatim; new upstream
-                          domains fill each provider's list up to CAP entries,
-                          with `hosts_total` recording the real count.
-  dnsservices.full.json - generated; identical records but `hosts` extended
-                          with every imported upstream domain (multi-MB, do
-                          not edit by hand).
+  dnsservices.json / hosting.json - source of truth, hand-edited and
+                          web-facing. Existing `hosts` are preserved verbatim;
+                          new upstream domains fill each provider's list up to
+                          CAP entries, with `hosts_total` recording the real
+                          count. Upstream providers are matched against BOTH
+                          catalogs; their domains land in whichever catalog
+                          owns the provider.
+  dnsservices.full.json / hosting.full.json - generated; identical records
+                          but `hosts` extended with every imported upstream
+                          domain (multi-MB, do not edit by hand).
 
 Note: the import is append-only. Domains dropped upstream are kept, matching
 the repo's habit of retaining retired names; domains sourced from upstream
@@ -26,8 +29,11 @@ UPSTREAM_URL = (
     "https://raw.githubusercontent.com/alexandrosmagos/dyn-dns-list/"
     "refs/heads/master/links.json"
 )
-SOURCE_FILE = "dnsservices.json"
-FULL_FILE = "dnsservices.full.json"
+# (source of truth file, generated full file)
+CATALOGS = [
+    ("dnsservices.json", "dnsservices.full.json"),
+    ("hosting.json", "hosting.full.json"),
+]
 CAP = 500
 
 # upstream provider name -> catalog key, only where they differ;
@@ -64,15 +70,22 @@ def main():
     records = upstream.get("domains", [])
     print(f"upstream: {len(records)} domains (generatedAt {upstream.get('generatedAt')})")
 
-    catalog = load_json(SOURCE_FILE)
-    try:
-        prev_full = load_json(FULL_FILE)
-    except FileNotFoundError:
-        prev_full = {}
-    prev_known = known_domains(prev_full)
+    # load all catalogs; providers resolve against the union
+    catalogs = [(src, full, load_json(src)) for src, full, _ in
+                [(s, f, None) for s, f in CATALOGS]]
+    providers = {}
+    prev_known = set()
+    known = set()
+    for src, full, cat in catalogs:
+        for key in cat:
+            providers[key] = (src, full, cat)
+        known |= known_domains(cat)
+        try:
+            prev_known |= known_domains(load_json(full))
+        except FileNotFoundError:
+            pass
 
-    # group new upstream domains by catalog provider, preserving upstream order
-    known = known_domains(catalog)
+    # group new upstream domains by owning catalog provider
     incoming = {}
     skipped_provider = set()
     for rec in records:
@@ -81,8 +94,8 @@ def main():
             continue
         target = None
         for prov in rec.get("providers", []):
-            key = prov if prov in catalog else PROVIDER_MAP.get(prov)
-            if key and key in catalog:
+            key = prov if prov in providers else PROVIDER_MAP.get(prov)
+            if key and key in providers:
                 target = key
                 break
         if target is None:
@@ -91,36 +104,37 @@ def main():
         incoming.setdefault(target, []).append(domain)
         known.add(domain)
 
-    # full catalog: existing hosts + all new upstream domains
-    full = {}
-    for key, svc in catalog.items():
-        svc = dict(svc)
-        svc["hosts"] = list(svc.get("hosts") or []) + incoming.get(key, [])
-        svc.pop("hosts_total", None)
-        full[key] = svc
-    full = dict(sorted(full.items()))
-    dump_json(FULL_FILE, full)
+    for src_file, full_file, catalog in catalogs:
+        # full catalog: existing hosts + all new upstream domains
+        full = {}
+        for key, svc in catalog.items():
+            svc = dict(svc)
+            svc["hosts"] = list(svc.get("hosts") or []) + incoming.get(key, [])
+            svc.pop("hosts_total", None)
+            full[key] = svc
+        full = dict(sorted(full.items()))
+        dump_json(full_file, full)
 
-    # web-facing catalog: existing hosts preserved, upstream fills up to CAP
-    capped = {}
-    truncated = 0
-    for key, svc_full in full.items():
-        svc = dict(svc_full)
-        existing = (catalog[key].get("hosts") or [])
-        hosts = svc_full["hosts"]
-        svc["hosts"] = existing if len(existing) >= CAP else hosts[:CAP]
-        if len(svc["hosts"]) < len(hosts):
-            svc["hosts_total"] = len(hosts)
-            truncated += 1
-        capped[key] = svc
-    dump_json(SOURCE_FILE, capped)
+        # web-facing catalog: existing hosts preserved, upstream fills up to CAP
+        capped = {}
+        truncated = 0
+        for key, svc_full in full.items():
+            svc = dict(svc_full)
+            existing = (catalog[key].get("hosts") or [])
+            hosts = svc_full["hosts"]
+            svc["hosts"] = existing if len(existing) >= CAP else hosts[:CAP]
+            if len(svc["hosts"]) < len(hosts):
+                svc["hosts_total"] = len(hosts)
+                truncated += 1
+            capped[key] = svc
+        dump_json(src_file, capped)
+        print(f"{src_file}: {truncated} providers capped at {CAP} hosts")
 
     new_to_full = sum(1 for d in known if d not in prev_known)
-    print(f"new domains in {FULL_FILE}: {new_to_full} "
+    print(f"new domains across full catalogs: {new_to_full} "
           f"({sum(len(v) for v in incoming.values())} unlisted upstream domains processed)")
     if skipped_provider:
         print("unmapped upstream providers:", ", ".join(sorted(skipped_provider)))
-    print(f"{SOURCE_FILE}: {truncated} providers capped at {CAP} hosts")
 
 
 if __name__ == "__main__":

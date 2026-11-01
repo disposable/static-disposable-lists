@@ -57,8 +57,8 @@
         },
         "type": {
           "type": "string",
-          "description": "Service category: ddns = dedicated dynamic-DNS hostname service; dns-only = authoritative DNS hosting for customer-owned domains; hosting = web hosting/PaaS/site-builder where subdomains are a product byproduct; registry = shared-suffix registry where the subdomain itself is the product; vendor = hostnames bound to vendor hardware/subscription; redirect = URL redirection/forwarding service; reserved = infrastructure/security-boundary suffix, not publicly registrable",
-          "enum": ["ddns", "dns-only", "hosting", "registry", "vendor", "redirect", "reserved"]
+          "description": "Service category: ddns = dedicated dynamic-DNS hostname service; dns-only = authoritative DNS hosting for customer-owned domains; registry = shared-suffix registry where the subdomain itself is the product; vendor = hostnames bound to vendor hardware/subscription; redirect = URL redirection/forwarding service; reserved = infrastructure/security-boundary suffix, not publicly registrable. Web hosting/PaaS/site-builder/publishing services live in hosting.json",
+          "enum": ["ddns", "dns-only", "registry", "vendor", "redirect", "reserved"]
         },
         "updates": {
           "type": "string",
