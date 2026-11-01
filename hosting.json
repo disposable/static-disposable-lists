@@ -7794,6 +7794,26 @@
     "updates": "static",
     "url": "http://www.mywebsites360.com/"
   },
+  "mywikis.com": {
+    "costs": "paid",
+    "custom_domain": true,
+    "hosts": [
+      "mywikis.net"
+    ],
+    "jurisdiction": "US",
+    "post_methods": [
+      "web"
+    ],
+    "public": true,
+    "remark": "MyWikis - managed MediaWiki hosting; wikis on *.mywikis.net (2500 user certs); paid plans only.",
+    "signup_verification": [
+      "email"
+    ],
+    "status": "active",
+    "type": "app",
+    "updates": "dynamic",
+    "url": "https://mywikis.com/"
+  },
   "myxop.com": {
     "costs": "free",
     "hosted": "US",
