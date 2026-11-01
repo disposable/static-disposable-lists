@@ -33,6 +33,7 @@ jobs:
           # Copy the main site files to root
           cp docs/index.html _site/
           cp docs/dns.html _site/
+          cp docs/hosting.html _site/
           cp docs/tunnelbrokers.html _site/
           # Copy JSON files to root (adjust paths in html files to remove ../)
           cp mailservices.json _site/
@@ -50,6 +51,7 @@ jobs:
           sed -i 's|\.\./disposable-mail-hosts\.json|disposable-mail-hosts.json|g' _site/index.html
           sed -i 's|\.\./dnsservices\.json|dnsservices.json|g' _site/dns.html
           sed -i 's|\.\./hosting\.json|hosting.json|g' _site/dns.html
+          sed -i 's|\.\./hosting\.json|hosting.json|g' _site/hosting.html
           sed -i 's|\.\./tunnelbrokers\.json|tunnelbrokers.json|g' _site/tunnelbrokers.html
 
       - name: Upload artifact

@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Disposable Lists - Hosting Services Database</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
+    <style>
+        :root {
+            --bg-color: #f6f8fa;
+            --card-bg: #ffffff;
+            --text-color: #24292f;
+            --text-secondary: #57606a;
+            --border-color: #d0d7de;
+            --accent-color: #0969da;
+            --accent-light: #ddf4ff;
+            --success-color: #1a7f37;
+            --warning-color: #9a6700;
+            --danger-color: #cf222e;
+        }
+        [data-theme="dark"] {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-color: #c9d1d9;
+            --text-secondary: #8b949e;
+            --border-color: #30363d;
+            --accent-color: #58a6ff;
+            --accent-light: #388bfd26;
+            --success-color: #3fb950;
+            --warning-color: #d29922;
+            --danger-color: #f85149;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            padding: 20px 0;
+            background: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 30px;
+        }
+        header h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .stat-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+        .stat-card .number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+        .stat-card .label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+        .section {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 30px;
+            overflow: clip;
+        }
+        .section-header {
+            background: var(--accent-light);
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .section-header h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-header h2 .count {
+            background: var(--accent-color);
+            color: white;
+            font-size: 0.8rem;
+            padding: 2px 8px;
+            border-radius: 12px;
+        }
+        .search-box {
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .search-box input {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 0.95rem;
+            background: var(--card-bg);
+            color: var(--text-color);
+        }
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
+        .table-wrap {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        th, td {
+            padding: 10px 14px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        th {
+            background: var(--bg-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        th.sortable {
+            cursor: pointer;
+            user-select: none;
+            white-space: nowrap;
+        }
+        th.sortable:hover {
+            color: var(--accent-color);
+        }
+        th.sortable .sort-arrow {
+            font-size: 0.75rem;
+            margin-left: 4px;
+            opacity: 0.4;
+        }
+        th.sortable.sort-asc .sort-arrow,
+        th.sortable.sort-desc .sort-arrow {
+            opacity: 1;
+        }
+        td {
+            font-size: 0.95rem;
+            vertical-align: top;
+        }
+        tr:hover {
+            background: var(--bg-color);
+        }
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .badge-free {
+            background: #dafbe1;
+            color: var(--success-color);
+        }
+        .badge-paid {
+            background: #fff8c5;
+            color: var(--warning-color);
+        }
+        .badge-freemium {
+            background: var(--accent-light);
+            color: var(--accent-color);
+        }
+        .badge-reserved {
+            background: #f6f8fa;
+            color: var(--text-secondary);
+        }
+        .badge-ddns {
+            background: #ddf4ff;
+            color: #0969da;
+        }
+        .badge-dns-only {
+            background: #dafbe1;
+            color: var(--success-color);
+        }
+        .badge-hosting,
+        .badge-web, .badge-paas, .badge-pages, .badge-builder,
+        .badge-store, .badge-app, .badge-devtool, .badge-tunnel,
+        .badge-storage, .badge-forum, .badge-blog, .badge-microblog,
+        .badge-newsletter, .badge-notes {
+            background: #ffe9d9;
+            color: #bc4c00;
+        }
+        .badge-registry {
+            background: #fbefff;
+            color: #8250df;
+        }
+        .badge-vendor {
+            background: #f6f8fa;
+            color: var(--text-secondary);
+        }
+        .badge-redirect {
+            background: #ffe4f0;
+            color: #bf3989;
+        }
+        .badge-status-active {
+            background: #dafbe1;
+            color: var(--success-color);
+        }
+        .badge-status-restricted {
+            background: #fff8c5;
+            color: var(--warning-color);
+        }
+        .badge-status-no_new_registrations {
+            background: var(--accent-light);
+            color: var(--accent-color);
+        }
+        .badge-status-discontinued,
+        .badge-discontinued {
+            background: #ffebe9;
+            color: var(--danger-color);
+        }
+        .badge-yes {
+            background: #dafbe1;
+            color: var(--success-color);
+        }
+        .badge-no {
+            background: #f6f8fa;
+            color: var(--text-secondary);
+        }
+        .badge-private {
+            background: #ffebe9;
+            color: var(--danger-color);
+        }
+        .badge-unknown {
+            background: #f6f8fa;
+            color: var(--text-secondary);
+        }
+        [data-theme="dark"] .badge-unknown,
+        [data-theme="dark"] .badge-reserved,
+        [data-theme="dark"] .badge-no {
+            background: #21262d;
+        }
+        .theme-toggle {
+            background: var(--accent-light);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 8px 12px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: all 0.2s;
+        }
+        .theme-toggle:hover {
+            background: var(--border-color);
+        }
+        .filter-bar {
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            align-items: center;
+        }
+        .filter-select {
+            position: relative;
+        }
+        .filter-select-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+            padding: 6px 12px;
+            border: 1px solid var(--border-color);
+            background: var(--card-bg);
+            color: var(--text-color);
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+        .filter-select-btn:hover {
+            background: var(--bg-color);
+            border-color: var(--accent-color);
+        }
+        .filter-select.open .filter-select-btn,
+        .filter-select.filtered .filter-select-btn {
+            border-color: var(--accent-color);
+        }
+        .filter-select.filtered .filter-select-btn {
+            background: var(--accent-light);
+        }
+        .filter-select-label {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 260px;
+        }
+        .filter-select-arrow {
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            flex-shrink: 0;
+        }
+        .filter-select-menu {
+            display: none;
+            position: absolute;
+            top: calc(100% + 4px);
+            left: 0;
+            z-index: 20;
+            min-width: 180px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+            padding: 4px;
+        }
+        .filter-select.open .filter-select-menu {
+            display: block;
+        }
+        .filter-select-menu .filter-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        .filter-select-menu .filter-option:hover {
+            background: var(--bg-color);
+        }
+        .filter-select-menu .filter-option input {
+            accent-color: var(--accent-color);
+            margin: 0;
+        }
+        .geo-cell {
+            white-space: nowrap;
+            font-size: 0.9rem;
+        }
+        .geo-cell .geo-sub {
+            display: block;
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+        .hosts-list {
+            max-width: 220px;
+            font-size: 0.85rem;
+        }
+        .hosts-list .host {
+            display: inline-block;
+            background: var(--bg-color);
+            padding: 2px 6px;
+            margin: 2px;
+            border-radius: 3px;
+            font-family: monospace;
+            overflow-wrap: anywhere;
+        }
+        .hosts-collapsible {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+        .hosts-collapsible.collapsed .host:nth-child(n+11) {
+            display: none;
+        }
+        .hosts-toggle {
+            background: var(--accent-light);
+            border: 1px solid var(--border-color);
+            color: var(--accent-color);
+            padding: 2px 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-top: 4px;
+        }
+        .hosts-toggle:hover {
+            background: var(--accent-color);
+            color: white;
+        }
+        .remark {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            overflow-wrap: anywhere;
+        }
+        .tag-list {
+            font-size: 0.85rem;
+        }
+        .tab-container {
+            display: flex;
+            border-bottom: 1px solid var(--border-color);
+            background: var(--bg-color);
+        }
+        .tab {
+            padding: 12px 20px;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        .tab:hover {
+            background: rgba(9, 105, 218, 0.05);
+        }
+        .tab.active {
+            border-bottom-color: var(--accent-color);
+            color: var(--accent-color);
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-secondary);
+        }
+        .error {
+            background: #ffebe9;
+            border: 1px solid #ffcecb;
+            color: var(--danger-color);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .empty-note {
+            padding: 15px 20px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        .nav-link {
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+        footer {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            padding-bottom: 20px;
+        }
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            table {
+                font-size: 0.85rem;
+            }
+            th, td {
+                padding: 8px 12px;
+            }
+            .hosts-list, .remark {
+                max-width: 150px;
+            }
+            .filter-select-menu {
+                position: fixed;
+                left: 10px;
+                right: 10px;
+                top: auto;
+                min-width: 0;
+            }
+        }
+        @media (min-width: 769px) {
+            thead th {
+                position: sticky;
+                top: 0;
+                z-index: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                <div>
+                    <h1>🏠 Static Disposable Lists — Hosting Services</h1>
+                    <p>A catalog of web hosting, blog, forum, wiki and publishing providers issuing user hostnames</p>
+                    <p><a class="nav-link" href="index.html">← Mail Services</a> &nbsp; <a class="nav-link" href="dns.html">DNS Services</a> &nbsp; <a class="nav-link" href="tunnelbrokers.html">Tunnel Brokers →</a></p>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    🌙
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="loading" class="loading">Loading data...</div>
+        <div id="error" class="error" style="display: none;"></div>
+
+        <div id="content" style="display: none;">
+            <div class="stats-grid" id="stats">
+                <!-- Stats populated by JS -->
+            </div>
+
+            <div class="section">
+                <div class="tab-container">
+                    <div class="tab active" data-tab="hosting-services">DNS Services</div>
+                    <div class="tab" data-tab="old-hosts">Old Domains</div>
+                </div>
+
+                <div id="hosting-services" class="tab-content active">
+                    <div class="search-box">
+                        <input type="text" id="hostSearch" placeholder="Search providers or domains...">
+                    </div>
+                    <div class="filter-bar">
+                        <div class="filter-select" data-filter="status" data-name="Status">
+                            <button type="button" class="filter-select-btn" aria-expanded="false">
+                                <span class="filter-select-label">Status: All</span><span class="filter-select-arrow">▾</span>
+                            </button>
+                            <div class="filter-select-menu">
+                                <label class="filter-option" title="Open registrations"><input type="checkbox" value="active" checked>Active</label>
+                                <label class="filter-option" title="Signup gated - device ownership, invite-only, or manual approval"><input type="checkbox" value="restricted" checked>Restricted</label>
+                                <label class="filter-option" title="Existing hostnames still resolve but new ones cannot be created"><input type="checkbox" value="no_new_registrations" checked>No New Reg.</label>
+                                <label class="filter-option" title="Service shut down"><input type="checkbox" value="discontinued" checked>Discontinued</label>
+                            </div>
+                        </div>
+                        <div class="filter-select" data-filter="type" data-name="Type">
+                            <button type="button" class="filter-select-btn" aria-expanded="false">
+                                <span class="filter-select-label">Type: All</span><span class="filter-select-arrow">▾</span>
+                            </button>
+                            <div class="filter-select-menu" id="type-menu"></div>
+                        </div>
+                        <div class="filter-select" data-filter="costs" data-name="Costs">
+                            <button type="button" class="filter-select-btn" aria-expanded="false">
+                                <span class="filter-select-label">Costs: All</span><span class="filter-select-arrow">▾</span>
+                            </button>
+                            <div class="filter-select-menu">
+                                <label class="filter-option" title="Free providers"><input type="checkbox" value="free" checked>Free</label>
+                                <label class="filter-option" title="Free tier with paid upgrades"><input type="checkbox" value="freemium" checked>Freemium</label>
+                                <label class="filter-option" title="Paid providers"><input type="checkbox" value="paid" checked>Paid</label>
+                                <label class="filter-option" title="Pricing class not recorded"><input type="checkbox" value="unknown" checked>Unknown</label>
+                            </div>
+                        </div>
+                        <div class="filter-select" data-filter="updates" data-name="Updates">
+                            <button type="button" class="filter-select-btn" aria-expanded="false">
+                                <span class="filter-select-label">Updates: All</span><span class="filter-select-arrow">▾</span>
+                            </button>
+                            <div class="filter-select-menu">
+                                <label class="filter-option" title="Supports DDNS update clients"><input type="checkbox" value="dynamic" checked>Dynamic</label>
+                                <label class="filter-option" title="Records editable but no update protocol"><input type="checkbox" value="static" checked>Static</label>
+                                <label class="filter-option" title="Dynamic updates plus full static record editing"><input type="checkbox" value="both" checked>Both</label>
+                                <label class="filter-option" title="Update mode not recorded"><input type="checkbox" value="unknown" checked>Unknown</label>
+                            </div>
+                        </div>
+                        <div class="filter-select" data-filter="api" data-name="API">
+                            <button type="button" class="filter-select-btn" aria-expanded="false">
+                                <span class="filter-select-label">API: All</span><span class="filter-select-arrow">▾</span>
+                            </button>
+                            <div class="filter-select-menu">
+                                <label class="filter-option" title="Programmatic HTTP/DNS API for record management or updates"><input type="checkbox" value="yes" checked>Yes</label>
+                                <label class="filter-option" title="No programmatic API for record management"><input type="checkbox" value="no" checked>No</label>
+                            </div>
+                        </div>
+                        <div class="filter-select" data-filter="ads" data-name="Ads">
+                            <button type="button" class="filter-select-btn" aria-expanded="false">
+                                <span class="filter-select-label">Ads: All</span><span class="filter-select-arrow">▾</span>
+                            </button>
+                            <div class="filter-select-menu">
+                                <label class="filter-option" title="Provider injects ads or modifies served output"><input type="checkbox" value="yes" checked>Injected</label>
+                                <label class="filter-option" title="Verified ad-free output"><input type="checkbox" value="no" checked>Ad-free</label>
+                                <label class="filter-option" title="Ad behavior not recorded"><input type="checkbox" value="unknown" checked>Unknown</label>
+                            </div>
+                        </div>
+                        <div class="filter-select" data-filter="access" data-name="Access">
+                            <button type="button" class="filter-select-btn" aria-expanded="false">
+                                <span class="filter-select-label">Access: All</span><span class="filter-select-arrow">▾</span>
+                            </button>
+                            <div class="filter-select-menu">
+                                <label class="filter-option" title="Hostnames can be registered publicly on the provider website"><input type="checkbox" value="public" checked>Public</label>
+                                <label class="filter-option" title="Registration only via vendor hardware/interface, customer-only, or invite-only"><input type="checkbox" value="private" checked>Private</label>
+                            </div>
+                        </div>
+                        <div class="filter-select" data-filter="region" data-name="Region">
+                            <button type="button" class="filter-select-btn" aria-expanded="false">
+                                <span class="filter-select-label">Region: All</span><span class="filter-select-arrow">▾</span>
+                            </button>
+                            <div class="filter-select-menu">
+                                <label class="filter-option" title="Provider legal seat in the European Union"><input type="checkbox" value="eu" checked>EU</label>
+                                <label class="filter-option" title="Provider legal seat outside the European Union"><input type="checkbox" value="non-eu" checked>non-EU</label>
+                                <label class="filter-option" title="Provider legal seat not recorded"><input type="checkbox" value="unknown" checked>Unknown</label>
+                            </div>
+                        </div>
+                        <div class="filter-select" data-filter="reval" data-name="Expiry">
+                            <button type="button" class="filter-select-btn" aria-expanded="false">
+                                <span class="filter-select-label">Expiry: All</span><span class="filter-select-arrow">▾</span>
+                            </button>
+                            <div class="filter-select-menu">
+                                <label class="filter-option" title="Hostnames auto-deleted after N days without updates"><input type="checkbox" value="purge" checked>Auto-purge</label>
+                                <label class="filter-option" title="Free hostnames/accounts must be manually re-confirmed periodically"><input type="checkbox" value="revalidate" checked>Revalidation</label>
+                                <label class="filter-option" title="No automatic expiry"><input type="checkbox" value="none" checked>None</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="hosting-services-content">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+
+                <div id="old-hosts" class="tab-content">
+                    <div class="search-box">
+                        <input type="text" id="oldSearch" placeholder="Search old domains...">
+                    </div>
+                    <div id="old-hosts-content">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Data sourced from <a href="https://github.com/disposable/static-disposable-lists">static-disposable-lists</a> — hosting.json</p>
+            <p id="last-updated"></p>
+        </div>
+    </footer>
+
+    <script>
+        function initTheme() {
+            const saved = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = saved || (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+            updateThemeIcon(theme);
+        }
+
+        function updateThemeIcon(theme) {
+            document.getElementById('theme-toggle').textContent = theme === 'dark' ? '☀️' : '🌙';
+        }
+
+        document.getElementById('theme-toggle').addEventListener('click', () => {
+            const current = document.documentElement.getAttribute('data-theme');
+            const next = current === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+            updateThemeIcon(next);
+        });
+
+        initTheme();
+
+        let currentFilters = { status: 'all', type: 'all', costs: 'all', updates: 'all', api: 'all', ads: 'all', access: 'all', reval: 'all', region: 'all' };
+        let currentSearch = '';
+        const EU = new Set(['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE']);
+        function flag(cc) {
+            return cc && cc.length === 2 ? String.fromCodePoint(...[...cc].map(c => 0x1F1E6 + c.charCodeAt(0) - 65)) : '';
+        }
+        let sortState = { column: null, asc: true };
+
+        const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+        const STATUS_LABELS = {
+            active: 'active',
+            restricted: 'restricted',
+            no_new_registrations: 'no new reg.',
+            discontinued: 'discontinued'
+        };
+
+        function verificationSet(service) {
+            const sv = service.signup_verification;
+            return Array.isArray(sv) ? sv : (sv ? [sv] : []);
+        }
+
+        function statusOf(service) {
+            return service.status || (service.discontinued ? 'discontinued' : 'active');
+        }
+
+        function filterSet(name) {
+            return currentFilters[name] === 'all' ? null : new Set(currentFilters[name]);
+        }
+
+        function applyFilters() {
+            const statusSel = filterSet('status');
+            const typeSel = filterSet('type');
+            const costsSel = filterSet('costs');
+            const updatesSel = filterSet('updates');
+            const apiSel = filterSet('api');
+            const adsSel = filterSet('ads');
+            const accessSel = filterSet('access');
+            const regionSel = filterSet('region');
+            const revalSel = filterSet('reval');
+            const rows = document.querySelectorAll('.service-row');
+            let visible = 0;
+            rows.forEach(row => {
+                const juris = row.dataset.juris;
+
+                const show =
+                    (!statusSel || statusSel.has(row.dataset.status)) &&
+                    (!typeSel || typeSel.has(row.dataset.type)) &&
+                    (!costsSel || costsSel.has(row.dataset.costs)) &&
+                    (!updatesSel || updatesSel.has(row.dataset.updates)) &&
+                    (!apiSel || apiSel.has(row.dataset.api)) &&
+                    (!adsSel || adsSel.has(row.dataset.ads)) &&
+                    (!accessSel || accessSel.has(row.dataset.access)) &&
+                    (!regionSel || regionSel.has(juris ? (EU.has(juris) ? 'eu' : 'non-eu') : 'unknown')) &&
+                    (!revalSel || revalSel.has(row.dataset.reval)) &&
+                    (!currentSearch || row.dataset.search.includes(currentSearch));
+
+                row.style.display = show ? '' : 'none';
+                if (show) visible++;
+            });
+            document.querySelectorAll('.section-header .visible-count').forEach(el => el.remove());
+            const shown = document.querySelector('#hosting-services-content .section-header h2');
+            if (shown && (currentSearch || Object.values(currentFilters).some(f => f !== 'all'))) {
+                const span = document.createElement('span');
+                span.className = 'count visible-count';
+                span.textContent = visible + ' shown';
+                shown.appendChild(span);
+            }
+        }
+
+        function closeFilterMenus() {
+            document.querySelectorAll('.filter-select.open').forEach(sel => {
+                sel.classList.remove('open');
+                sel.querySelector('.filter-select-btn').setAttribute('aria-expanded', 'false');
+            });
+        }
+
+        function syncFilter(sel) {
+            const boxes = [...sel.querySelectorAll('input[type="checkbox"]')];
+            const checked = boxes.filter(b => b.checked);
+            currentFilters[sel.dataset.filter] =
+                checked.length === boxes.length ? 'all' : checked.map(b => b.value);
+
+            const labelEl = sel.querySelector('.filter-select-label');
+            const name = sel.dataset.name;
+            if (checked.length === boxes.length) {
+                labelEl.textContent = name + ': All';
+            } else if (checked.length === 0) {
+                labelEl.textContent = name + ': None';
+            } else {
+                labelEl.textContent = name + ': ' +
+                    checked.map(b => b.closest('.filter-option').textContent.trim()).join(', ');
+            }
+            sel.querySelector('.filter-select-btn').title = labelEl.textContent;
+            sel.classList.toggle('filtered', checked.length !== boxes.length);
+        }
+
+        function setFilterValues(name, values) {
+            const sel = document.querySelector(`.filter-select[data-filter="${name}"]`);
+            if (!sel) return;
+            const hostingTypes = new Set(['web', 'paas', 'pages', 'builder', 'store', 'app', 'devtool', 'tunnel', 'storage', 'forum', 'blog', 'microblog', 'newsletter', 'notes']);
+            const wanted = new Set(values.flatMap(v => {
+                if (name === 'reval' && v === 'required') return ['revalidate'];
+                if (name === 'type' && v === 'hosting') return [...hostingTypes];
+                return [v];
+            }));
+            sel.querySelectorAll('input[type="checkbox"]').forEach(b => {
+                b.checked = wanted.has(b.value);
+            });
+            syncFilter(sel);
+        }
+
+        function setupFilters() {
+            document.querySelectorAll('.filter-select').forEach(sel => {
+                const btn = sel.querySelector('.filter-select-btn');
+                btn.addEventListener('click', e => {
+                    e.stopPropagation();
+                    const opening = !sel.classList.contains('open');
+                    closeFilterMenus();
+                    if (opening) {
+                        sel.classList.add('open');
+                        btn.setAttribute('aria-expanded', 'true');
+                    }
+                });
+                sel.querySelector('.filter-select-menu').addEventListener('click', e => e.stopPropagation());
+                sel.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+                    cb.addEventListener('change', () => {
+                        syncFilter(sel);
+                        applyFilters();
+                        updateHash();
+                    });
+                });
+                syncFilter(sel);
+            });
+            document.addEventListener('click', closeFilterMenus);
+            document.addEventListener('keydown', e => {
+                if (e.key === 'Escape') closeFilterMenus();
+            });
+        }
+
+        function setupSorting() {
+            document.querySelectorAll('th.sortable').forEach(th => {
+                th.addEventListener('click', () => {
+                    const key = th.dataset.sort;
+                    sortState = { column: key, asc: sortState.column === key ? !sortState.asc : true };
+                    document.querySelectorAll('th.sortable').forEach(h => h.classList.remove('sort-asc', 'sort-desc'));
+                    th.classList.add(sortState.asc ? 'sort-asc' : 'sort-desc');
+                    sortTable(th);
+                });
+            });
+        }
+
+        function sortTable(th) {
+            const tbody = th.closest('table').querySelector('tbody');
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+            const numeric = th.dataset.numeric === 'true';
+            rows.sort((a, b) => {
+                const av = a.dataset['sort' + th.dataset.sort];
+                const bv = b.dataset['sort' + th.dataset.sort];
+                const cmp = numeric ? (Number(av) - Number(bv)) : String(av).localeCompare(String(bv));
+                return sortState.asc ? cmp : -cmp;
+            });
+            rows.forEach(r => tbody.appendChild(r));
+        }
+
+        const TYPE_LABELS = {
+            'ddns': 'DDNS', 'dns-only': 'DNS-only', 'registry': 'Registry',
+            'vendor': 'Vendor', 'redirect': 'Redirect', 'reserved': 'Reserved',
+            'web': 'Web', 'paas': 'PaaS', 'pages': 'Pages', 'builder': 'Builder',
+            'store': 'Store', 'app': 'App', 'devtool': 'Dev tool', 'tunnel': 'Tunnel',
+            'storage': 'Storage', 'forum': 'Forum', 'blog': 'Blog',
+            'microblog': 'Microblog', 'newsletter': 'Newsletter', 'notes': 'Notes',
+            'unknown': 'Unknown'
+        };
+
+        function buildTypeFilter(services) {
+            const types = [...new Set(Object.values(services).map(s => s.type || 'unknown'))];
+            types.sort((a, b) => a.localeCompare(b));
+            document.getElementById('type-menu').innerHTML = types.map(t =>
+                `<label class="filter-option"><input type="checkbox" value="${esc(t)}" checked>${esc(TYPE_LABELS[t] || t)}</label>`
+            ).join('');
+        }
+
+        async function loadData() {
+            try {
+                const hostRes = await fetch('../hosting.json');
+                const services = await hostRes.json();
+
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+
+                buildTypeFilter(services);
+                renderStats(services);
+                renderServices(services);
+                renderOldHosts(services);
+
+                setupTabs();
+                setupSearch();
+                setupFilters();
+                restoreFromHash();
+                setupSorting();
+
+                const lastModified = hostRes.headers.get('Last-Modified');
+                if (lastModified) {
+                    document.getElementById('last-updated').textContent =
+                        'Data last updated: ' + new Date(lastModified).toLocaleDateString();
+                }
+            } catch (err) {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('error').style.display = 'block';
+                document.getElementById('error').textContent = 'Error loading data: ' + err.message;
+            }
+        }
+
+        function renderHostsCollapsible(hosts, limit = 10) {
+            if (hosts.length <= limit) {
+                return hosts.map(h => `<span class="host">${esc(h)}</span>`).join('');
+            }
+            const id = 'hosts-' + Math.random().toString(36).substr(2, 9);
+            return `
+                <div class="hosts-collapsible collapsed" id="${id}">
+                    ${hosts.map(h => `<span class="host">${esc(h)}</span>`).join('')}
+                </div>
+                <button class="hosts-toggle" onclick="toggleHosts('${id}', this)">
+                    Show all ${hosts.length}
+                </button>
+            `;
+        }
+
+        function toggleHosts(id, btn) {
+            const container = document.getElementById(id);
+            const isCollapsed = container.classList.contains('collapsed');
+            container.classList.toggle('collapsed');
+            btn.textContent = isCollapsed ? 'Show less' : `Show all ${container.querySelectorAll('.host').length}`;
+        }
+
+        function renderStats(services) {
+            let totalDomains = 0;
+            let freeProviders = 0;
+            let publicProviders = 0;
+            let apiProviders = 0;
+            let discontinued = 0;
+
+            for (const data of Object.values(services)) {
+                totalDomains += data.hosts_total || (data.hosts || []).length;
+                if (data.costs === 'free') freeProviders++;
+                if (data.public !== false) publicProviders++;
+                if (data.api) apiProviders++;
+                if (statusOf(data) === 'discontinued') discontinued++;
+            }
+
+            const stats = [
+                { number: Object.keys(services).length, label: 'Providers' },
+                { number: totalDomains, label: 'Total Domains' },
+                { number: publicProviders, label: 'Public Signup' },
+                { number: apiProviders, label: 'With API' },
+            ];
+
+            if (discontinued > 0) {
+                stats.push({ number: discontinued, label: 'Discontinued' });
+            }
+
+            document.getElementById('stats').innerHTML = stats.map(s => `
+                <div class="stat-card">
+                    <div class="number">${s.number.toLocaleString()}</div>
+                    <div class="label">${s.label}</div>
+                </div>
+            `).join('');
+        }
+
+        function renderServices(data) {
+            const items = Object.entries(data)
+                .map(([name, service]) => ({ name, ...service }))
+                .sort((a, b) => a.name.localeCompare(b.name));
+
+            const html = `
+                <div class="section-header">
+                    <h2>
+                        Service Providers
+                        <span class="count">${items.length}</span>
+                    </h2>
+                </div>
+                <p class="empty-note">
+                    Web hosting, blog, forum, wiki and publishing providers that issue user hostnames.
+                    <strong>public</strong> = sites registerable on the website;
+                    <strong>private</strong> = registration gated (customer-only, invite, application).
+                    <strong>Ads</strong> = provider injects advertisements or modifies served output.
+                    Domains list shows the parent domains under which user sites are issued.
+                    Geo column: first flag = jurisdiction (legal seat), second flag = where the service is hosted; name = cloud operator.
+                </p>
+                <div class="table-wrap">
+                <table>
+                    <colgroup>
+                        <col style="width: 12%">
+                        <col style="width: 8%">
+                        <col style="width: 8%">
+                        <col style="width: 7%">
+                        <col style="width: 8%">
+                        <col style="width: 5%">
+                        <col style="width: 5%">
+                        <col style="width: 8%">
+                        <col style="width: 8%">
+                        <col style="width: 22%">
+                        <col style="width: 14%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="sortable" data-sort="Name">Provider<span class="sort-arrow">▲</span></th>
+                            <th class="sortable" data-sort="Juris">Geo<span class="sort-arrow">▲</span></th>
+                            <th class="sortable" data-sort="Status">Status<span class="sort-arrow">▲</span></th>
+                            <th class="sortable" data-sort="Type">Type<span class="sort-arrow">▲</span></th>
+                            <th class="sortable" data-sort="Updates">Updates<span class="sort-arrow">▲</span></th>
+                            <th class="sortable" data-sort="Api">API<span class="sort-arrow">▲</span></th>
+                            <th class="sortable" data-sort="Ads">Ads<span class="sort-arrow">▲</span></th>
+                            <th class="sortable" data-sort="Access">Access<span class="sort-arrow">▲</span></th>
+                            <th class="sortable" data-sort="Reval">Expiry<span class="sort-arrow">▲</span></th>
+                            <th class="sortable" data-sort="Hosts" data-numeric="true">Domains<span class="sort-arrow">▲</span></th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${items.map(s => {
+                            const status = statusOf(s);
+                            const verifications = verificationSet(s);
+                            const reval = s.revalidation_days;
+                            const expire = s.expire_days;
+                            const expiryKind = expire ? 'purge' : (reval ? 'revalidate' : 'none');
+                            const isPublic = s.public !== false;
+                            const apiYes = s.api === true;
+                            const ads = s.ads === true ? 'yes' : (s.ads === false ? 'no' : 'unknown');
+                            const extra = [];
+                            if (s.own_domains) extra.push('own domains');
+                            if (s.feeds && s.feeds.length) extra.push('feeds: ' + s.feeds.join('/'));
+                            if (s.post_methods && s.post_methods.length) extra.push('post via ' + s.post_methods.join('/'));
+                            if (s.markdown) extra.push('markdown');
+                            if (s.custom_domain) extra.push('custom domain');
+                            if (s.shared_registry) extra.push('shared registry');
+                            if (s.free_hostname_limit) extra.push('max ' + s.free_hostname_limit + ' hosts');
+                            if (s.expire_days) extra.push('expires after ' + s.expire_days + 'd idle');
+                            if (s.update_protocols && s.update_protocols.length) extra.push(s.update_protocols.join('/'));
+                            const note = [s.remark, extra.join(', ')].filter(Boolean).join(' — ');
+                            return `
+                            <tr class="service-row"
+                                data-name="${esc(s.name.toLowerCase())}"
+                                data-hosts="${esc((s.hosts || []).join(' ').toLowerCase())}"
+                                data-search="${esc([s.name, s.url, s.remark, ...(s.hosts || []), ...(s.ns_suffixes || []), ...(s.ns_hosts || []), ...(s.old_hosts || [])].filter(Boolean).join(' ').toLowerCase())}"
+                                data-status="${esc(status)}"
+                                data-type="${esc(s.type || 'unknown')}"
+                                data-costs="${esc(s.costs || 'unknown')}"
+                                data-updates="${esc(s.updates || 'unknown')}"
+                                data-api="${apiYes ? 'yes' : 'no'}"
+                                data-ads="${ads}"
+                                data-access="${isPublic ? 'public' : 'private'}"
+                                data-reval="${expiryKind}"
+                                data-juris="${esc(s.jurisdiction || '')}"
+                                data-sort-juris="${esc(s.jurisdiction || '')}"
+                                data-sort-name="${esc(s.name.toLowerCase())}"
+                                data-sort-status="${esc(status)}"
+                                data-sort-type="${esc(s.type || 'unknown')}"
+                                data-sort-updates="${esc(s.updates || 'unknown')}"
+                                data-sort-api="${apiYes ? '1' : '0'}"
+                                data-sort-ads="${ads === 'yes' ? '2' : (ads === 'no' ? '1' : '0')}"
+                                data-sort-access="${isPublic ? 'public' : 'private'}"
+                                data-sort-reval="${expire || reval || 0}"
+                                data-sort-hosts="${s.hosts_total || (s.hosts || []).length}">
+                                <td>
+                                    ${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener"><strong>${esc(s.name)}</strong></a>` : `<strong>${esc(s.name)}</strong>`}
+                                    ${verifications.length ? `<br><span class="tag-list">${verifications.map(v => `<span class="badge badge-unknown">${esc(v)}</span>`).join(' ')}</span>` : ''}
+                                </td>
+                                <td class="geo-cell">${s.jurisdiction ? `<span title="jurisdiction (legal seat): ${esc(s.jurisdiction)}">${flag(s.jurisdiction)}</span>` : '<span class="remark">?</span>'}${s.hosted || s.cloud ? `<span class="geo-sub" title="hosted: ${esc(s.hosted || 'unknown')}${s.cloud ? ', via ' + esc(s.cloud) : ''}">${s.hosted ? flag(s.hosted) : ''}${s.cloud ? ' ' + esc(s.cloud) : ''}</span>` : ''}</td>
+                                <td><span class="badge badge-status-${esc(status)}">${esc(STATUS_LABELS[status] || status)}</span></td>
+                                <td><span class="badge badge-${esc(s.type || 'unknown')}">${esc(s.type || 'unknown')}</span>
+                                    ${s.costs ? `<span class="badge badge-${esc(s.costs)}">${esc(s.costs)}</span>` : ''}</td>
+                                <td><span class="badge badge-unknown">${esc(s.updates || '?')}</span></td>
+                                <td><span class="badge badge-${apiYes ? 'yes' : 'no'}">${apiYes ? 'yes' : 'no'}</span></td>
+                                <td>${ads === 'unknown' ? '<span class="badge badge-unknown">?</span>' : `<span class="badge badge-${ads === 'yes' ? 'status-restricted' : 'yes'}" title="${ads === 'yes' ? 'injects ads / modifies output' : 'ad-free output'}">${ads === 'yes' ? 'injected' : 'no'}</span>`}</td>
+                                <td><span class="badge badge-${isPublic ? 'yes' : 'private'}">${isPublic ? 'public' : 'private'}</span></td>
+                                <td>${expire ? `<span class="badge badge-status-discontinued" title="hostnames auto-deleted after ${esc(expire)} days without updates">auto-expire ${esc(expire)}d</span>` : ''}${reval ? `<span class="badge badge-status-restricted" title="must be manually re-confirmed">every ${esc(reval)}d</span>` : ''}${!expire && !reval ? '<span class="badge badge-no">none</span>' : ''}</td>
+                                <td class="hosts-list">
+                                    ${(s.hosts || []).length ? renderHostsCollapsible(s.hosts) + (s.hosts_total && s.hosts_total > s.hosts.length ? `<div class="remark">first ${s.hosts.length.toLocaleString()} of ${s.hosts_total.toLocaleString()}</div>` : '') : (s.own_domains ? '<span class="remark">own domains only</span>' : '-')}
+                                </td>
+                                <td class="remark">${esc(note)}</td>
+                            </tr>`;
+                        }).join('')}
+                    </tbody>
+                </table>
+                </div>
+            `;
+
+            document.getElementById('hosting-services-content').innerHTML = html;
+        }
+
+        function renderOldHosts(data) {
+            const rows = Object.entries(data)
+                .map(([name, info]) => [
+                    name,
+                    info,
+                    [...new Set([...(info.old_hosts || []), ...(statusOf(info) === 'discontinued' ? (info.hosts || []) : [])])],
+                ])
+                .filter(([, , retired]) => retired.length > 0)
+                .sort((a, b) => a[0].localeCompare(b[0]));
+
+            const totalOld = rows.reduce((n, [, , retired]) => n + retired.length, 0);
+
+            const html = `
+                <div class="section-header">
+                    <h2>
+                        Old / Retired Domains
+                        <span class="count">${totalOld}</span>
+                    </h2>
+                </div>
+                <p class="empty-note">
+                    Retired domains (old_hosts) plus all domains of discontinued providers -
+                    kept for reference, not currently offered.
+                </p>
+                <div class="table-wrap">
+                <table>
+                    <colgroup>
+                        <col style="width: 22%">
+                        <col style="width: 48%">
+                        <col style="width: 30%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="sortable" data-sort="Name">Provider<span class="sort-arrow">▲</span></th>
+                            <th class="sortable" data-sort="Hosts" data-numeric="true">Old Domains<span class="sort-arrow">▲</span></th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${rows.map(([name, info, retired]) => `
+                            <tr class="oldhost-row"
+                                data-name="${esc(name.toLowerCase())}"
+                                data-hosts="${esc(retired.join(' ').toLowerCase())}"
+                                data-sort-name="${esc(name.toLowerCase())}"
+                                data-sort-hosts="${retired.length}">
+                                <td>
+                                    <strong>${esc(name)}</strong>
+                                    ${statusOf(info) === 'discontinued' ? '<span class="badge badge-discontinued">discontinued</span>' : ''}
+                                </td>
+                                <td class="hosts-list">${retired.map(h => `<span class="host">${esc(h)}</span>`).join('')}</td>
+                                <td class="remark">${esc(info.remark || '')}</td>
+                            </tr>`).join('')}
+                    </tbody>
+                </table>
+                </div>
+            `;
+
+            document.getElementById('old-hosts-content').innerHTML = html;
+        }
+
+        function activateTab(tabId) {
+            const tab = document.querySelector(`.tab[data-tab="${CSS.escape(tabId)}"]`);
+            const content = document.getElementById(tabId);
+            if (!tab || !content) return;
+
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
+            tab.classList.add('active');
+            content.classList.add('active');
+        }
+
+        function setupTabs() {
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.addEventListener('click', () => {
+                    activateTab(tab.dataset.tab);
+                    updateHash();
+                });
+            });
+        }
+
+        function updateHash() {
+            const active = document.querySelector('.tab.active');
+            if (!active) return;
+            const tabId = active.dataset.tab;
+            const params = new URLSearchParams();
+
+            let q = '';
+            if (tabId === 'hosting-services') {
+                ['status', 'type', 'costs', 'updates', 'api', 'ads', 'access', 'reval', 'region'].forEach(f => {
+                    if (currentFilters[f] !== 'all') params.set(f, currentFilters[f].join(','));
+                });
+                q = currentSearch;
+            } else if (tabId === 'old-hosts') {
+                q = document.getElementById('oldSearch').value;
+            }
+            if (q.trim()) params.set('q', q.trim().toLowerCase());
+
+            const qs = params.toString();
+            history.replaceState(null, '', '#' + tabId + (qs ? '?' + qs : ''));
+        }
+
+        function restoreFromHash() {
+            const raw = location.hash.slice(1);
+            if (!raw) return;
+            const [tabId, qs] = raw.split('?');
+            if (!document.querySelector(`.tab[data-tab="${CSS.escape(tabId)}"]`)) return;
+
+            activateTab(tabId);
+
+            const params = new URLSearchParams(qs || '');
+            const q = params.get('q') || '';
+
+            if (tabId === 'hosting-services') {
+                ['status', 'type', 'costs', 'updates', 'api', 'ads', 'access', 'reval', 'region'].forEach(f => {
+                    const v = params.get(f);
+                    if (v === null) return;
+                    setFilterValues(f, v ? v.split(',') : []);
+                });
+                document.getElementById('hostSearch').value = q;
+                currentSearch = q;
+                applyFilters();
+            } else if (tabId === 'old-hosts') {
+                const input = document.getElementById('oldSearch');
+                input.value = q;
+                input.dispatchEvent(new Event('input'));
+            }
+        }
+
+        function setupSearch() {
+            document.getElementById('hostSearch').addEventListener('input', (e) => {
+                currentSearch = e.target.value.toLowerCase();
+                applyFilters();
+                updateHash();
+            });
+
+            document.getElementById('oldSearch').addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase();
+                document.querySelectorAll('.oldhost-row').forEach(row => {
+                    const name = row.dataset.name;
+                    const hosts = row.dataset.hosts || '';
+                    row.style.display = (name.includes(query) || hosts.includes(query)) ? '' : 'none';
+                });
+                updateHash();
+            });
+        }
+
+        window.addEventListener('hashchange', restoreFromHash);
+
+        loadData();
+    </script>
+</body>
+</html>
