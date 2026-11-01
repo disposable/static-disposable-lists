@@ -5675,7 +5675,8 @@
       "rss"
     ],
     "hosts": [
-      "livedoor.blog"
+      "livedoor.blog",
+      "blog.jp"
     ],
     "jurisdiction": "JP",
     "post_methods": [
