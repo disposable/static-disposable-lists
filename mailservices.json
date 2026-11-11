@@ -67,7 +67,7 @@
     "mx_hosts": [
       "24-mail.com"
     ],
-    "remark": "Signup requires alternate email, CAPTCHA, and address fields.",
+    "remark": "b1gMail-family freemail (modern2026 template). Public signup: 3-stage wizard (cookie overlay -> account+password -> address incl. altmail -> TOS + Cloudflare Turnstile execute mode). altmail required - receives the Freischalt-Code activation mail. Must use canonical non-www host (www-bound Turnstile tokens are safecode-flagged). Free 1 GB; imap.24-mail.com:143 STARTTLS and pop.24-mail.com:110 answer live (:993/:587 filtered). Site IP-throttles after a successful registration.",
     "signup_verification": [
       "email",
       "other"
@@ -289,6 +289,7 @@
       "pmx.abv.bg",
       "smx.abv.bg"
     ],
+    "remark": "No reachable mail ports observed: imap.abv.bg NXDOMAIN, mail.abv.bg:993 timeout.",
     "signup_verification": [
       "mobile"
     ],
@@ -432,10 +433,7 @@
       "mx1.anonymail.hu",
       "mx2.anonymail.hu"
     ],
-    "remark": "Hungarian free anonymous email service. posta.net is an A-record alias.",
-    "signup_verification": [
-      "none"
-    ],
+    "remark": "Hungarian anonymous email (posta.net is an A-record alias). Appears abandoned/dead - parked/empty page.",
     "type": "mailbox"
   },
   "anvianet.fi": {
@@ -1021,7 +1019,7 @@
       "nm-sk-20mx1.eco-mx.cz",
       "nm-sk-20mx2.eco-mx.cz"
     ],
-    "remark": "Slovak Centrum/Atlas/Pobox freemail family.",
+    "remark": "Slovak Centrum/Atlas/Pobox freemail family. Registration at reg.centrum.sk carries mobile-verification signals. IMAP imap.centrum.sk:143/993 answers live.",
     "signup_verification": [
       "mobile"
     ],
@@ -1140,10 +1138,7 @@
       "a.mx.gtt.smail.eu",
       "b.mx.gtt.smail.eu"
     ],
-    "remark": "Portuguese free webmail providers (Clix and Mail.pt).",
-    "signup_verification": [
-      "none"
-    ],
+    "remark": "Portuguese free webmail (Clix/Mail.pt). No public signup - ISP-tied.",
     "type": "mailbox"
   },
   "club-internet.fr": {
@@ -1449,7 +1444,7 @@
     "type": "forwarding"
   },
   "e-mail.jp": {
-    "costs": "free",
+    "costs": "paid",
     "hosted": "JP",
     "hosts": [
       "e-mail.jp"
@@ -1463,9 +1458,9 @@
       "kddi145.e-mail.jp",
       "kddi146.e-mail.jp"
     ],
-    "remark": "Japanese free email address creation service.",
+    "remark": "Japanese freemail (CakePHP multi-step signup). Verified paid-only: all service_code plans are ~JPY 3,000/year.",
     "signup_verification": [
-      "none"
+      "payment"
     ],
     "type": "mailbox"
   },
@@ -1959,8 +1954,9 @@
     "mx_hosts": [
       "fmx.freemail.hu"
     ],
+    "remark": "Hungarian freemail (Mediaworks). Public registration at accounts.freemail.hu/a/register: 5-step wizard (cookie consent -> @freemail.hu local part + names -> password -> security Q/A + secondary email (required, not verified) + optional phone -> profile comboboxes -> TOS + Google reCAPTCHA v2). IMAP imap.freemail.hu:993 and freemail.hu:143 answer live.",
     "signup_verification": [
-      "mobile"
+      "email"
     ],
     "type": "mailbox"
   },
@@ -2074,7 +2070,10 @@
     "mx_hosts": [
       "mx.dka.mailcore.net"
     ],
-    "remark": "Godmail.dk Danish freemium mail; free signup (\"Ingen betalingskort. Ingen forpligtelser\"), paid tiers exist.",
+    "remark": "Godmail.dk Danish freemium mail; free signup (\"Ingen betalingskort. Ingen forpligtelser\"), paid tiers exist. Signup anchor (#signup) exists but the page carries phone/SMS/telephone requirement signals. IMAP imap.godmail.dk:143/993 answers live.",
+    "signup_verification": [
+      "mobile"
+    ],
     "type": "mailbox"
   },
   "gvdnet.dk": {
@@ -2603,7 +2602,7 @@
     "mx_hosts": [
       "smtp-box-01.iol.pt"
     ],
-    "remark": "IOL Portuguese portal free email.",
+    "remark": "IOL Portuguese portal free email. mail.iol.pt NXDOMAIN - no reachable IMAP/POP3 found.",
     "signup_verification": [
       "none"
     ],
@@ -2825,10 +2824,7 @@
     "mx_hosts": [
       "mx.dka.mailcore.net"
     ],
-    "remark": "Free Danish/international email service powered by MailCore. Now part of Inbox.com.",
-    "signup_verification": [
-      "none"
-    ],
+    "remark": "Danish/international email (MailCore, now part of Inbox.com). No public signup: portal is login-only.",
     "type": "mailbox"
   },
   "juno.com": {
@@ -2944,8 +2940,9 @@
     "mx_hosts": [
       "smtpz4.laposte.net"
     ],
+    "remark": "French La Poste mail. Signup is an SPA flow expected to need a French mobile; IMAP/POP3 answer live.",
     "signup_verification": [
-      "other"
+      "mobile"
     ],
     "type": "mailbox"
   },
@@ -3124,7 +3121,7 @@
       "mx2.mail.bg",
       "mx3.mail.bg"
     ],
-    "remark": "Mail.bg free Bulgarian mailbox provider.",
+    "remark": "Mail.bg free Bulgarian mailbox provider. Public signup at mail.bg/signup with hCaptcha; page advertises free IMAP/POP3/SMTP over SSL after activation (may require contacting support). IMAP on imap.mail.bg:143/993 answers.",
     "signup_verification": [
       "mobile"
     ],
@@ -4215,7 +4212,7 @@
       "publicms2.mail2world.com",
       "publicms3.mail2world.com"
     ],
-    "remark": "Free freemail w/ 600+ vanity domains (mail2*.com fleet selectable at signup); form includes phone + alt email + verification code fields.",
+    "remark": "Free freemail w/ 600+ vanity domains (mail2*.com fleet selectable at signup); form includes phone + alt email + verification code fields. No public signup CTA found on mail2world.com (portal login only); page carries phone/mobile signals. IMAP imap.mail2world.com:143 and pop3.mail2world.com:110 answer live.",
     "signup_verification": [
       "email",
       "mobile"
@@ -4232,9 +4229,9 @@
     "mx_hosts": [
       "mail.mailbox.hu"
     ],
-    "remark": "Hungarian ad-free freemail; email-only verification.",
+    "remark": "Hungarian ad-free freemail (Laravel signup form, honeypot + rendered_at timing check). Verified paid-only: arany/gyemant/orokos plans EUR 24-299.",
     "signup_verification": [
-      "email"
+      "payment"
     ],
     "type": "mailbox"
   },
@@ -5285,10 +5282,7 @@
     "mx_hosts": [
       "mail.onsmail.com"
     ],
-    "remark": "Zero-knowledge encrypted mail; email-only verification.",
-    "signup_verification": [
-      "none"
-    ],
+    "remark": "Former zero-knowledge encrypted mail; service dead. No signup.",
     "type": "mailbox"
   },
   "optimum.net": {
@@ -5620,6 +5614,7 @@
       "mx2.spray.mail2world.com",
       "mx3.spray.mail2world.com"
     ],
+    "remark": "Swedish Passagen/Spray mail; MX runs on mail2world.com infrastructure. imap.passagen.se NXDOMAIN - no reachable IMAP found.",
     "signup_verification": [
       "other"
     ],
@@ -6293,7 +6288,7 @@
     "mx_hosts": [
       "mx.sibnet.ru"
     ],
-    "remark": "Russian portal mail (Sibnet); email-only verification.",
+    "remark": "Russian portal mail (Sibnet); email-only verification. Registration page exists (/registration) but no mail ports reachable: imap.sibnet.ru NXDOMAIN, mail.sibnet.ru:143 timeout.",
     "signup_verification": [
       "email",
       "other"
@@ -7098,10 +7093,7 @@
     "mx_hosts": [
       "inbound-smtp.us-west-2.amazonaws.com"
     ],
-    "remark": "Decentralized E2EE email with self-sovereign storage. Optional recovery email, no password.",
-    "signup_verification": [
-      "none"
-    ],
+    "remark": "Former decentralized E2EE email; service dead. No signup.",
     "type": "mailbox"
   },
   "tin.it": {
@@ -7272,10 +7264,7 @@
     "mx_hosts": [
       "mail.ubikom.cc"
     ],
-    "remark": "Freemail; anonymous signup.",
-    "signup_verification": [
-      "none"
-    ],
+    "remark": "Former freemail; service dead. No signup.",
     "type": "mailbox"
   },
   "ukr.net": {
@@ -7289,6 +7278,7 @@
     "mx_hosts": [
       "mxs.ukr.net"
     ],
+    "remark": "Ukrainian FREEMAIL provider. Public registration at accounts.ukr.net: shape-matching captcha plus SMS code to a +380 mobile (verified field gates the submit button); recoveryEmail validated via a discover_email API. Free tier includes IMAP imap.ukr.net:993/143 (banners verified).",
     "signup_verification": [
       "mobile"
     ],
@@ -7598,10 +7588,7 @@
       "mx1.hc494-80.c3s2.iphmx.com",
       "mx2.hc494-80.c3s2.iphmx.com"
     ],
-    "remark": "Walla Israeli portal free email.",
-    "signup_verification": [
-      "none"
-    ],
+    "remark": "Walla Israeli portal free email. No public signup found (login-only).",
     "type": "mailbox"
   },
   "walla.com": {
@@ -7664,10 +7651,7 @@
       "mx00.ionos.de",
       "mx01.ionos.de"
     ],
-    "remark": "Free German email account with POP3 access.",
-    "signup_verification": [
-      "none"
-    ],
+    "remark": "Former German free email; domain for sale. No signup.",
     "type": "mailbox"
   },
   "webafrica.org.za": {
@@ -7895,14 +7879,14 @@
       "mx.xmail.com",
       "mx40.xmail.com"
     ],
-    "remark": "Free AI-assisted mail with @xmail.com addresses; anonymous signup.",
+    "remark": "Free AI-assisted mail with @xmail.com addresses; signup requires phone verification.",
     "signup_verification": [
-      "none"
+      "mobile"
     ],
     "type": "mailbox"
   },
   "xmail.net": {
-    "costs": "free",
+    "costs": "paid",
     "hosted": "CA",
     "hosts": [
       "xmail.net"
@@ -7911,9 +7895,9 @@
       "mail.xmail.net",
       "smtp-in.xmail.net"
     ],
-    "remark": "Freemail portal; anonymous signup.",
+    "remark": "Freemail portal (on-screen keyboard signup form). Verified paid-only: US$9.95/year, signup ends at \"Continue to Payment\".",
     "signup_verification": [
-      "none"
+      "payment"
     ],
     "type": "mailbox"
   },
