@@ -333,6 +333,20 @@
     ],
     "type": "isp"
   },
+  "agentmail.to": {
+    "costs": "freemium",
+    "hosts": [
+      "agentmail.to"
+    ],
+    "mx_hosts": [
+      "inbound-smtp.us-east-1.amazonaws.com"
+    ],
+    "remark": "Email API for AI agents. New inboxes get an agentmail.to address by default. IMAP/SMTP access. Free plan without a card, paid plans from $20/month.",
+    "signup_verification": [
+      "email"
+    ],
+    "type": "mailbox"
+  },
   "aland.net": {
     "costs": "paid",
     "hosted": "FI",
